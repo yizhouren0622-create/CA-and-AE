@@ -9673,6 +9673,1329 @@
           }
         },
         "figure": "ca-1-25-figure.png"
+      },
+      "CA-1-27": {
+        "id": "CA-1-27",
+        "bookId": "1-27",
+        "title": {
+          "zh": "受控电流源反馈：负解必须保留参考方向",
+          "en": "Controlled-current feedback: retain a negative reference result"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 35,
+          "pdfPage": 44,
+          "figurePrintedPage": 35,
+          "figurePdfPage": 44,
+          "figure": "题图1-25"
+        },
+        "statement": {
+          "zh": "电路题图1-25所示，求在下列条件下受控源的电流：(1) iₛ=1 A；(2) iₛ=3 A。",
+          "en": "For Fig. 1-25, find the dependent-source current when (1) iₛ = 1 A and (2) iₛ = 3 A."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "三支路并联：左独立电流源iₛ向上，中2 Ω电阻控制电流i₁向下，右受控电流源参考向上、数值4i₁。",
+            "en": "Three parallel branches: independent iₛ upward, central 2 Ω with control current i₁ downward, and dependent current 4i₁ upward."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL；受控源关系；负值表示反参考方向；欧姆定律。",
+          "en": "KCL, dependent-source control law, negative references and Ohm’s law."
+        },
+        "recognition": {
+          "zh": "受控源不是另一个独立已知电流。将其4i₁与电阻中的i₁一起代入同一节点KCL，先求控制量，再求受控输出。",
+          "en": "The dependent source is not a separately known current. Substitute 4i₁ in the same node KCL as i₁, solve the control current first, then the output."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "按原图方向列KCL",
+              "en": "Write KCL using the original references"
+            },
+            "text": {
+              "zh": "顶节点流入为iₛ和4i₁，流出为i₁。因此i₁=iₛ+4i₁，得到i₁=−iₛ/3。",
+              "en": "At the top, iₛ and 4i₁ enter while i₁ leaves. Thus i₁ = iₛ+4i₁ and i₁ = −iₛ/3."
+            },
+            "formula": "i_1=i_s+4i_1\\Rightarrow i_1=-\\frac{i_s}{3},\\qquad i_{\\rm dep}=4i_1=-\\frac{4i_s}{3}"
+          },
+          {
+            "title": {
+              "zh": "分别代入两个条件",
+              "en": "Evaluate both conditions"
+            },
+            "text": {
+              "zh": "iₛ=1 A时，受控源向上参考电流为−4/3 A；iₛ=3 A时为−4 A。两个负值都表示实际向下，不能改负号而保留原箭头。",
+              "en": "For iₛ = 1 A, the upward-reference dependent current is −4/3 A; for iₛ = 3 A it is −4 A. Both actually flow downward."
+            },
+            "formula": "(1)\\ i_{\\rm dep}=-\\frac43\\,\\mathrm A;\\qquad(2)\\ i_{\\rm dep}=-4\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "(1) −4/3 A；(2) −4 A，均按原图受控源向上参考方向，实际分别向下4/3 A、4 A。",
+          "en": "(1) −4/3 A; (2) −4 A in the original upward reference, actually downward with those magnitudes."
+        },
+        "pitfalls": [
+          {
+            "zh": "受控源4i₁与独立源iₛ箭头都向上，不能在KCL中给它们相反的参考符号。",
+            "en": "Both source reference arrows point up; do not assign them opposite KCL signs."
+          },
+          {
+            "zh": "先求i₁，再乘4；不能把iₛ直接当控制电流。",
+            "en": "Solve i₁ before multiplying by 4; iₛ is not the control current."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原拓扑MNA在2 Ω支路串入零伏电流传感器，严格按向下i₁控制向上4i₁；两条件分别得到i₁=−1/3、−1 A，输出−4/3、−4 A。令公共电压u=2i₁，电阻、独立源、受控源吸收功率分别2iₛ²/9、2iₛ²/3、−8iₛ²/9，总和0。附录第332页/PDF341页两问一致。",
+            "en": "Independent original-topology MNA uses a zero-volt sensor in the 2 Ω branch, measuring downward i₁ to control upward 4i₁. The two cases give i₁ = −1/3 and −1 A, and outputs −4/3 and −4 A. With common u = 2i₁, absorbed powers are 2iₛ²/9, 2iₛ²/3 and −8iₛ²/9, totaling zero. Both parts match the appendix on printed p. 332/PDF p. 341."
+          },
+          "appendixPrintedPage": 332,
+          "appendixPdfPage": 341,
+          "results": {
+            "controlCurrents_A": [
+              "-1/3",
+              -1
+            ],
+            "dependentUpwardReferenceCurrents_A": [
+              "-4/3",
+              -4
+            ],
+            "allTwoSubpartsVerified": true,
+            "powerResiduals_W": [
+              0,
+              0
+            ]
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-27-figure.png"
+      },
+      "CA-1-28": {
+        "id": "CA-1-28",
+        "bookId": "1-28",
+        "title": {
+          "zh": "受控电压源功率：先定控制电流，再定源电流",
+          "en": "Controlled-voltage power: find control and output currents"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 35,
+          "pdfPage": 44,
+          "figurePrintedPage": 35,
+          "figurePdfPage": 44,
+          "figure": "题图1-26"
+        },
+        "statement": {
+          "zh": "电路如题图1-26所示，求：(1) 当R=2 Ω时受控源提供的功率；(2) 欲使受控源吸收4 W的功率，则电阻R应为多少？",
+          "en": "For Fig. 1-26, find (1) the power supplied by the dependent source when R = 2 Ω; (2) R for which it absorbs 4 W."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左12 V源上正下负，顶端经R接中央4 V上正下负源，控制电流I从左经R向右；中央顶节点经1 Ω到右受控电压源上端。受控源电压2I，上正下负。所有下端共节点。",
+            "en": "A top-positive 12 V source connects through R to a top-positive 4 V source, with control I rightward through R. The 4 V node connects through 1 Ω to a top-positive dependent voltage source 2I; all lower terminals are common."
+          }
+        },
+        "prerequisites": {
+          "zh": "理想电压源定节点电位；受控电压2I；KCL确定源电流；区分提供与吸收。",
+          "en": "Ideal-source node voltages, dependent voltage 2I, KCL for source current and supplied versus absorbed power."
+        },
+        "recognition": {
+          "zh": "12 V和4 V直接固定R两端电压8 V，先得到I=8/R。受控源端电压随后已知，但其功率还需通过右侧1 Ω求实际电流。",
+          "en": "The 12 V and 4 V sources fix 8 V across R, giving I = 8/R. This fixes dependent voltage, but power also requires its current through the right 1 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "建立受控源的电压与电流",
+              "en": "Write dependent voltage and current"
+            },
+            "text": {
+              "zh": "控制电流I=8/R A，受控源上端V_D=2I=16/R V。定义受控源向下电流i_D，则i_D=(4−V_D)/1。",
+              "en": "Control I = 8/R A sets V_D = 2I = 16/R V. Define dependent-source current i_D downward; then i_D = (4−V_D)/1."
+            },
+            "formula": "I=\\frac8R,\\quad V_D=\\frac{16}{R},\\quad i_D=4-\\frac{16}{R},\\quad p_{D,\\rm abs}=V_D(4-V_D)"
+          },
+          {
+            "title": {
+              "zh": "(1) 求提供功率",
+              "en": "(1): supplied power"
+            },
+            "text": {
+              "zh": "R=2 Ω时I=4 A，V_D=8 V，i_D=−4 A，即实际向上4 A。吸收功率8×(−4)=−32 W，提供功率为32 W。",
+              "en": "At R = 2 Ω, I = 4 A, V_D = 8 V and i_D = −4 A, actually upward. Absorbed power is −32 W, so supplied power is 32 W."
+            },
+            "formula": "P_{D,\\rm supplied}=-p_{D,\\rm abs}=32\\,\\mathrm W"
+          },
+          {
+            "title": {
+              "zh": "(2) 按吸收4 W列方程",
+              "en": "(2): impose absorption of 4 W"
+            },
+            "text": {
+              "zh": "V_D(4−V_D)=4可改写为(V_D−2)²=0，只得V_D=2 V。因此16/R=2，R=8 Ω。此时i_D=2 A向下，确为吸收4 W。",
+              "en": "V_D(4−V_D) = 4 becomes (V_D−2)² = 0, so V_D = 2 V and R = 8 Ω. Then i_D = 2 A downward, indeed absorbing 4 W."
+            },
+            "formula": "V_D(4-V_D)=4\\Rightarrow(V_D-2)^2=0\\Rightarrow R=8\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "(1) 受控源提供32 W；(2) R=8 Ω。",
+          "en": "(1) The dependent source supplies 32 W. (2) R = 8 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "右侧菱形是受控电压源，2I是电压，不是支路电流。",
+            "en": "The diamond is a controlled voltage source: 2I is its voltage, not its current."
+          },
+          {
+            "zh": "第一问求提供功率、第二问给吸收功率，两者符号相反。",
+            "en": "Part (1) asks supplied power while part (2) specifies absorbed power; their signs are opposite."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立CCVS MNA用零伏传感器按R中向右电流控制2I电压。R=2 Ω时受控源吸收−32 W，R=8 Ω时吸收4 W；两条件下全部节点、控制约束及全电路功率和精确为0。第二问平方方程证明正电阻解唯一。附录第332页/PDF341页32 W、8 Ω均一致。",
+            "en": "Independent CCVS MNA uses a zero-volt sensor for rightward R current and dependent voltage 2I. It gives −32 W absorbed at R = 2 Ω and +4 W at R = 8 Ω; all node/control constraints and full power sums are exactly satisfied. The squared equation establishes uniqueness. Both 32 W and 8 Ω match the appendix on printed p. 332/PDF p. 341."
+          },
+          "appendixPrintedPage": 332,
+          "appendixPdfPage": 341,
+          "results": {
+            "part1SuppliedPower_W": 32,
+            "part2Resistance_ohm": 8,
+            "part2AbsorbedPower_W": 4,
+            "allTwoSubpartsVerified": true,
+            "powerResiduals_W": [
+              0,
+              0
+            ]
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-28-figure.png"
+      },
+      "CA-1-29": {
+        "id": "CA-1-29",
+        "bookId": "1-29",
+        "title": {
+          "zh": "受控电流源吸收功率：负值表示提供",
+          "en": "Dependent-current absorbed power: a negative result means delivery"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 35,
+          "pdfPage": 44,
+          "figurePrintedPage": 35,
+          "figurePdfPage": 44,
+          "figure": "题图1-27"
+        },
+        "statement": {
+          "zh": "求题图1-27所示电路中受控电流源吸收的功率。",
+          "en": "Find the power absorbed by the dependent current source in Fig. 1-27."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部共节点。左2 Ω上端A电压uₓ上正下负；右14 V源上端B为正。A、B间并联2 Ω和由A向B的受控电流源6uₓ；u₁左正右负。",
+            "en": "Bottom is common. Left 2 Ω has upper node A and top-positive control uₓ. A top-positive 14 V source fixes B. Between A and B are parallel 2 Ω and dependent current 6uₓ from A to B; u₁ is positive at A."
+          }
+        },
+        "prerequisites": {
+          "zh": "节点法；VCCS控制uₓ；电流流入电压正参考端时p吸收=ui；总功率。",
+          "en": "Nodal analysis, VCCS control uₓ, passive power p = ui and total power balance."
+        },
+        "recognition": {
+          "zh": "uₓ就是A相对底部的电位。对A列KCL即可求它；然后用源左右端电压差乘以源向右电流，得到有符号吸收功率。",
+          "en": "uₓ is A relative to the bottom. KCL at A determines it, then left-minus-right source voltage times rightward current gives signed absorbed power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "对控制节点A列KCL",
+              "en": "Apply KCL at control node A"
+            },
+            "text": {
+              "zh": "A向底部、向B电阻、向B受控源的流出电流相加为0。B=14 V，故uₓ/2+(uₓ−14)/2+6uₓ=0，得uₓ=1 V。",
+              "en": "Sum currents leaving A through its ground resistor, A–B resistor and dependent source. With B = 14 V, uₓ/2+(uₓ−14)/2+6uₓ = 0, yielding uₓ = 1 V."
+            },
+            "formula": "\\frac{u_x}{2}+\\frac{u_x-14}{2}+6u_x=0\\Rightarrow u_x=1\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "计算吸收功率",
+              "en": "Compute absorbed power"
+            },
+            "text": {
+              "zh": "受控电流为6 A向右，左正右负电压u₁=1−14=−13 V。电流从u₁正参考端流入，所以p吸收=u₁·6=−78 W。",
+              "en": "The source current is 6 A rightward and u₁ = 1−14 = −13 V. Current enters the positive reference terminal, so absorbed power is u₁×6 = −78 W."
+            },
+            "formula": "i_D=6\\,\\mathrm A,\\quad u_1=-13\\,\\mathrm V,\\quad p_{D,\\rm abs}=-78\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "受控源吸收功率为−78 W，即实际提供78 W。",
+          "en": "The dependent source absorbs −78 W, meaning it supplies 78 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "u₁是A相对B，不能只用左支路uₓ=1 V作源电压。",
+            "en": "The source voltage is A relative to B, not simply uₓ = 1 V."
+          },
+          {
+            "zh": "题目问吸收功率，负答案应保留，并解释为提供。",
+            "en": "Keep a negative absorbed-power answer and explain it as supplied power."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立VCCS原拓扑MNA得A=1 V、B=14 V、受控源6 A。两电阻共耗散0.5+84.5=85 W，14 V源吸收−7 W，受控源吸收−78 W，总和0；全部节点与控制约束精确满足。与附录第332页/PDF341页−78 W一致。",
+            "en": "Independent original-topology VCCS MNA gives A = 1 V, B = 14 V and source current 6 A. The resistors dissipate 0.5+84.5 = 85 W; the 14 V source absorbs −7 W and dependent source −78 W, totaling zero. All constraints are exact. This matches −78 W in the appendix on printed p. 332/PDF p. 341."
+          },
+          "appendixPrintedPage": 332,
+          "appendixPdfPage": 341,
+          "results": {
+            "controlUx_V": 1,
+            "dependentCurrent_A": 6,
+            "dependentVoltageLeftMinusRight_V": -13,
+            "dependentAbsorbedPower_W": -78,
+            "totalResistorPower_W": 85,
+            "independentVoltageSourceAbsorbedPower_W": -7,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-29-figure.png"
+      },
+      "CA-1-31": {
+        "id": "CA-1-31",
+        "bookId": "1-31",
+        "title": {
+          "zh": "同节点识别：两只6 Ω其实并联",
+          "en": "Recognize shared nodes: the two 6 Ω resistors are parallel"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 35,
+          "pdfPage": 44,
+          "figurePrintedPage": 35,
+          "figurePdfPage": 44,
+          "figure": "题图1-29"
+        },
+        "statement": {
+          "zh": "求题图1-29所示单口网络的等效电阻。",
+          "en": "Find the equivalent resistance of the one-port network in Fig. 1-29."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "上端口A通过上方及右侧导线直接连到右中节点。竖6 Ω与横6 Ω都跨A和左中C；C经7 Ω到底端口b；A另经右10 Ω到底端口b。",
+            "en": "Upper port A is directly wired around the top and right to the right-middle node. Both vertical and horizontal 6 Ω span A and left-middle C. C connects through 7 Ω to lower port b; A also connects directly through right 10 Ω to b."
+          }
+        },
+        "prerequisites": {
+          "zh": "理想导线等电位；并联端点判定；串并联等效；测试源法。",
+          "en": "Equipotential ideal wires, endpoint-based parallel recognition, series/parallel reduction and test sources."
+        },
+        "recognition": {
+          "zh": "不要按图形位置判断串联。先把上方绕到右侧的整段导线认作同一节点，就能看出两只6 Ω并联，随后与7 Ω串联，再与10 Ω并联。",
+          "en": "Do not infer series connection from placement. Trace the top/right wire as one node: the 6 Ω pair is parallel, then series with 7 Ω, and that path is parallel with 10 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "化简两个6 Ω",
+              "en": "Combine the two 6 Ω resistors"
+            },
+            "text": {
+              "zh": "两只6 Ω的两端分别是同一A、C节点，因此并联为3 Ω。",
+              "en": "Both 6 Ω resistors share endpoints A and C, so their parallel equivalent is 3 Ω."
+            },
+            "formula": "6\\parallel6=\\frac{6\\cdot6}{6+6}=3\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "完成串并联",
+              "en": "Finish the reduction"
+            },
+            "text": {
+              "zh": "3 Ω与7 Ω串联为10 Ω；这条支路与右10 Ω并联，总等效5 Ω。",
+              "en": "3 Ω and 7 Ω form a 10 Ω series path, parallel with the right 10 Ω, giving 5 Ω."
+            },
+            "formula": "R_{\\rm eq}=\\bigl[(6\\parallel6)+7\\bigr]\\parallel10=10\\parallel10=5\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_eq=5 Ω。",
+          "en": "R_eq = 5 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "横6 Ω右端与顶端口通过导线直接相连，不是新节点。",
+            "en": "The horizontal 6 Ω right terminal is directly wired to the top port; it is not a new node."
+          },
+          {
+            "zh": "两只6 Ω不是串联，因为公共节点还有7 Ω分支。",
+            "en": "The 6 Ω resistors are not series; their shared middle node also connects to 7 Ω."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立1 V测试源原拓扑MNA得C=0.7 V；两只6 Ω各流0.05 A，右10 Ω流0.1 A，总输入0.2 A，R=1/0.2=5 Ω。四电阻功率0.015+0.015+0.07+0.1=0.2 W，等于测试端输入功率。附录第332页/PDF341页为5 Ω。",
+            "en": "Independent original-topology MNA with a 1 V test gives C = 0.7 V, 0.05 A in each 6 Ω and 0.1 A in right 10 Ω. Input is 0.2 A, so R = 5 Ω. Resistor powers 0.015+0.015+0.07+0.1 = 0.2 W match port input power. The appendix on printed p. 332/PDF p. 341 gives 5 Ω."
+          },
+          "appendixPrintedPage": 332,
+          "appendixPdfPage": 341,
+          "results": {
+            "equivalentResistance_ohm": 5,
+            "testVoltage_V": 1,
+            "testInputCurrent_A": 0.2,
+            "intermediateNodeVoltage_V": 0.7,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-31-figure.png"
+      },
+      "CA-1-33": {
+        "id": "CA-1-33",
+        "bookId": "1-33",
+        "title": {
+          "zh": "两层分流：先分主支路，再分子支路",
+          "en": "Two-level current division: main branches, then subbranches"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 35,
+          "pdfPage": 44,
+          "figurePrintedPage": 35,
+          "figurePdfPage": 44,
+          "figure": "题图1-31"
+        },
+        "statement": {
+          "zh": "求题图1-31所示电路中的电流iₓ和iᵧ。",
+          "en": "Find iₓ and iᵧ in Fig. 1-31."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "12 A源向上接顶底公共节点。左支路3 Ω串联4 Ω与12 Ω并联，iₓ在左4 Ω向下；右支路12 Ω与6 Ω并联后串联底6 Ω，iᵧ在底6 Ω向下。",
+            "en": "An upward 12 A source feeds common top and bottom nodes. Left branch: 3 Ω in series with parallel 4 Ω and 12 Ω, with iₓ downward in 4 Ω. Right branch: parallel 12 Ω and 6 Ω in series with lower 6 Ω, with iᵧ downward through the lower 6 Ω."
+          }
+        },
+        "prerequisites": {
+          "zh": "串并联电阻；分流公式；并联共电压；两次KCL。",
+          "en": "Series/parallel resistance, current division, common parallel voltage and two levels of KCL."
+        },
+        "recognition": {
+          "zh": "先把左右主支路化成6 Ω和10 Ω，分配总12 A。iᵧ就是右主支路电流；iₓ还需在左4 Ω与12 Ω之间再分一次。",
+          "en": "First reduce the main branches to 6 Ω and 10 Ω and divide 12 A. iᵧ is the right main current; iₓ requires another split within the left 4 Ω/12 Ω pair."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求左右主支路电阻",
+              "en": "Reduce the main branches"
+            },
+            "text": {
+              "zh": "左侧4∥12=3 Ω，与顶3 Ω串联为6 Ω；右侧12∥6=4 Ω，与底6 Ω串联为10 Ω。",
+              "en": "Left: 4∥12 = 3 Ω plus upper 3 Ω gives 6 Ω. Right: 12∥6 = 4 Ω plus lower 6 Ω gives 10 Ω."
+            },
+            "formula": "R_L=3+(4\\parallel12)=6,\\qquad R_R=(12\\parallel6)+6=10\\quad(\\Omega)"
+          },
+          {
+            "title": {
+              "zh": "第一次分流",
+              "en": "Divide the main current"
+            },
+            "text": {
+              "zh": "左主支路I_L=12×10/(6+10)=7.5 A；右主支路iᵧ=12×6/(6+10)=4.5 A。",
+              "en": "The left main current is 12×10/16 = 7.5 A, and iᵧ is 12×6/16 = 4.5 A."
+            },
+            "formula": "I_L=\\frac{15}{2}\\,\\mathrm A,\\qquad i_y=\\frac92\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "第二次分流求iₓ",
+              "en": "Divide again for iₓ"
+            },
+            "text": {
+              "zh": "左7.5 A进入4 Ω与12 Ω并联，4 Ω得到I_L×12/(4+12)=5.625 A。",
+              "en": "The left 7.5 A enters parallel 4 Ω and 12 Ω, so iₓ = I_L×12/16 = 5.625 A."
+            },
+            "formula": "i_x=\\frac{15}{2}\\cdot\\frac{12}{16}=\\frac{45}{8}=5.625\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "iₓ=5.625 A，iᵧ=4.5 A，均按图向下。",
+          "en": "iₓ = 5.625 A and iᵧ = 4.5 A, both downward as drawn."
+        },
+        "pitfalls": [
+          {
+            "zh": "左主支路7.5 A还要分流，不能直接当iₓ。",
+            "en": "The left main 7.5 A splits again; it is not iₓ."
+          },
+          {
+            "zh": "分流与电阻成反比，4 Ω获得的电流大于12 Ω。",
+            "en": "Current divides inversely with resistance; 4 Ω takes more than 12 Ω."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原六电阻节点MNA得顶节点45 V、左中22.5 V、右中27 V；iₓ=22.5/4=45/8 A，iᵧ=27/6=9/2 A。总电阻耗散540 W，恰等于12 A源提供45×12=540 W。附录第332页/PDF341页两项一致。",
+            "en": "Independent MNA of all six original resistors gives top 45 V, left middle 22.5 V and right middle 27 V, yielding iₓ = 45/8 A and iᵧ = 9/2 A. Dissipation is 540 W, matching the source’s 45×12 = 540 W. Both values match the appendix on printed p. 332/PDF p. 341."
+          },
+          "appendixPrintedPage": 332,
+          "appendixPdfPage": 341,
+          "results": {
+            "ix_A": 5.625,
+            "iy_A": 4.5,
+            "topNodeVoltage_V": 45,
+            "totalResistorPower_W": 540,
+            "sourceSuppliedPower_W": 540,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-33-figure.png"
+      },
+      "CA-1-34": {
+        "id": "CA-1-34",
+        "bookId": "1-34",
+        "title": {
+          "zh": "反求未知电阻：分清并联分流和串联分压",
+          "en": "Recover unknown resistance: parallel current and series voltage"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-32(a)、(b)、(c)、(d)"
+        },
+        "statement": {
+          "zh": "求题图1-32所示各电路中的电阻R。\n(1) 图(a)电路中i=2/3 A；(2) 图(b)电路中i=2/3 A；\n(3) 图(c)电路中u=2/3 V；(4) 图(d)电路中u=2/3 V。",
+          "en": "Find R in each circuit of Fig. 1-32.\n(1) In (a), i = 2/3 A; (2) in (b), i = 2/3 A;\n(3) in (c), u = 2/3 V; (4) in (d), u = 2/3 V."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)3 A总电流注入2 Ω与R并联，i在R向下。(b)同样并联但总端电压3 V。(c)3 A通过串联R、2 Ω，u跨R上正下负。(d)同样串联但总电压3 V，u仍跨R。",
+            "en": "(a) 3 A enters parallel 2 Ω and R, with i downward in R. (b) The parallel pair has 3 V across it. (c) 3 A flows through series R and 2 Ω, with u positive at the top of R. (d) The series pair has total 3 V, again with u across R."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL；并联共电压；串联同电流；欧姆定律；精确分数。",
+          "en": "KCL, common parallel voltage, equal series current, Ohm’s law and exact fractions."
+        },
+        "recognition": {
+          "zh": "先判断每幅图给的是总电流还是总电压，测的是R支路电流还是R两端电压。四问不共享一个R，必须分别求。",
+          "en": "Identify whether each panel gives total current or voltage and whether the measurement is R current or voltage. The four R values are independent."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1) 并联给总电流",
+              "en": "(1): parallel pair with known total current"
+            },
+            "text": {
+              "zh": "2 Ω电流为3−2/3=7/3 A，所以并联电压14/3 V，R=(14/3)/(2/3)=7 Ω。",
+              "en": "The 2 Ω current is 7/3 A, giving common voltage 14/3 V and R = 7 Ω."
+            },
+            "formula": "R_{(a)}=\\frac{2(3-2/3)}{2/3}=7\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(2) 并联给端电压",
+              "en": "(2): parallel pair with known voltage"
+            },
+            "text": {
+              "zh": "R直接承受3 V，电流2/3 A，因此R=3/(2/3)=4.5 Ω。",
+              "en": "R directly has 3 V with 2/3 A, so R = 4.5 Ω."
+            },
+            "formula": "R_{(b)}=\\frac3{2/3}=\\frac92\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(3) 串联给总电流",
+              "en": "(3): series pair with known current"
+            },
+            "text": {
+              "zh": "R流过3 A，压降2/3 V，因此R=(2/3)/3=2/9 Ω。",
+              "en": "R carries 3 A and drops 2/3 V, so R = 2/9 Ω."
+            },
+            "formula": "R_{(c)}=\\frac{2/3}{3}=\\frac29\\,\\Omega\\approx0.2222\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(4) 串联给总电压",
+              "en": "(4): series pair with known total voltage"
+            },
+            "text": {
+              "zh": "2 Ω压降为3−2/3=7/3 V，串联电流为7/6 A。R=(2/3)/(7/6)=4/7 Ω。",
+              "en": "The 2 Ω drop is 7/3 V and the series current 7/6 A, giving R = 4/7 Ω."
+            },
+            "formula": "R_{(d)}=\\frac{2/3}{(3-2/3)/2}=\\frac47\\,\\Omega\\approx0.5714\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "(1) 7 Ω；(2) 9/2 Ω=4.5 Ω；(3) 2/9 Ω≈0.2222 Ω；(4) 4/7 Ω≈0.5714 Ω。",
+          "en": "(1) 7 Ω; (2) 9/2 Ω = 4.5 Ω; (3) 2/9 Ω ≈ 0.2222 Ω; (4) 4/7 Ω ≈ 0.5714 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "(a)的3 A是总电流，不能当R支路电流。",
+            "en": "The 3 A in (a) is total current, not the R-branch current."
+          },
+          {
+            "zh": "(d)的u只跨R，不能把总3 V直接当u。",
+            "en": "In (d), u is across R only, not the total 3 V."
+          },
+          {
+            "zh": "先保留2/9、4/7等精确值，最后再按题目需要舍入。",
+            "en": "Retain exact fractions such as 2/9 and 4/7 until final rounding."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "四个原拓扑分别恢复所得R，并用3 A测试注入或3 V源独立MNA：两并联问的R电流均严格2/3 A，两串联问的R压降均严格2/3 V；每问全部元件功率相加精确为0。附录第333页/PDF342页为7、4.5、0.22、0.57 Ω，后两值是精确分数的舍入。",
+            "en": "Independent original-topology MNA restores each R using either 3 A injection or a 3 V source. Both parallel R currents are exactly 2/3 A; both series R drops are exactly 2/3 V, and full power balances vanish. The appendix on printed p. 333/PDF p. 342 gives 7, 4.5, 0.22 and 0.57 Ω, with the latter two rounded from the exact fractions."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "resistances_ohm": [
+              7,
+              4.5,
+              "2/9",
+              "4/7"
+            ],
+            "allFourSubpartsVerified": true,
+            "restoredConditions": [
+              "i=2/3 A",
+              "i=2/3 A",
+              "u=2/3 V",
+              "u=2/3 V"
+            ],
+            "powerResiduals_W": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "appendixComparison": {
+            "status": "matched-with-given-rounding",
+            "reason": "Appendix 0.22 and 0.57 ohm round exact values 2/9 and 4/7 ohm."
+          }
+        },
+        "figure": "ca-1-34-figure.png"
+      },
+      "CA-1-35": {
+        "id": "CA-1-35",
+        "bookId": "1-35",
+        "title": {
+          "zh": "非直接串并联网络：用Δ-Y化简并以测试源复核",
+          "en": "A non-series-parallel network: Δ-Y and a test-source audit"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-33"
+        },
+        "statement": {
+          "zh": "求题图1-33所示电路ab端口的等效电阻。",
+          "en": "Find the equivalent resistance at port ab of Fig. 1-33."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "上顶点A为端口a，内中心C为端口b，外左L、外右D。六电阻：A-L为2 Ω，A-C为2 Ω，A-D为4 Ω，L-C为2 Ω，D-C为2 Ω，L-D为4 Ω。从C向右的b引线与A-D斜边交叉处没有连接点。",
+            "en": "Top A is port a and center C port b; outer vertices are L and D. Resistors: A-L 2 Ω, A-C 2 Ω, A-D 4 Ω, L-C 2 Ω, D-C 2 Ω and L-D 4 Ω. The b lead crossing the A-D diagonal has no junction dot."
+          }
+        },
+        "prerequisites": {
+          "zh": "按节点识别连接；Δ-Y变换；串并联；端口1 V测试源与节点法。",
+          "en": "Node-based connectivity, Δ-Y transformation, series/parallel reduction and a 1 V port test."
+        },
+        "recognition": {
+          "zh": "不能按图中交叉线虚构连接点。外圈是2、4、4 Ω三角形，转成星形后可直接串并联；最后用完整六电阻节点法独立核验。",
+          "en": "Do not create a node at an unmarked crossing. Transform the outer 2–4–4 Ω triangle into a star, reduce the result, then independently check the original six-resistor graph."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "外三角形Δ→Y",
+              "en": "Transform the outer triangle to a star"
+            },
+            "text": {
+              "zh": "外三角形边A-L=2、A-D=4、L-D=4 Ω，总和10 Ω。新增星点O，三臂分别A-O=0.8、L-O=0.8、D-O=1.6 Ω。",
+              "en": "The outer triangle has edges 2, 4 and 4 Ω, totaling 10 Ω. With star center O, its A, L and D arms are 0.8, 0.8 and 1.6 Ω."
+            },
+            "formula": "R_{AO}=\\frac{2\\cdot4}{10}=\\frac45,\\quad R_{LO}=\\frac{2\\cdot4}{10}=\\frac45,\\quad R_{DO}=\\frac{4\\cdot4}{10}=\\frac85\\quad(\\Omega)"
+          },
+          {
+            "title": {
+              "zh": "O到b的两条路径并联",
+              "en": "Combine the two O-to-b paths"
+            },
+            "text": {
+              "zh": "O-L-b为0.8+2=14/5 Ω；O-D-b为1.6+2=18/5 Ω。并联得到63/40 Ω，再与A-O的4/5 Ω串联得19/8 Ω。",
+              "en": "O-L-b is 14/5 Ω and O-D-b is 18/5 Ω. In parallel they give 63/40 Ω; adding A-O = 4/5 Ω yields an A-to-b path of 19/8 Ω."
+            },
+            "formula": "R_{OC}=\\frac{14}{5}\\parallel\\frac{18}{5}=\\frac{63}{40},\\qquad R_{AOC}=\\frac45+\\frac{63}{40}=\\frac{19}{8}\\quad(\\Omega)"
+          },
+          {
+            "title": {
+              "zh": "与直接2 Ω支路并联",
+              "en": "Combine with the direct 2 Ω branch"
+            },
+            "text": {
+              "zh": "原有A-C的2 Ω仍在，最终与19/8 Ω并联。",
+              "en": "The original A-C 2 Ω remains and is parallel with 19/8 Ω."
+            },
+            "formula": "R_{ab}=2\\parallel\\frac{19}{8}=\\frac{38}{35}\\,\\Omega\\approx1.085714\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_ab=38/35 Ω≈1.085714 Ω；按一位小数为1.1 Ω。",
+          "en": "R_ab = 38/35 Ω ≈ 1.085714 Ω, or 1.1 Ω to one decimal place."
+        },
+        "pitfalls": [
+          {
+            "zh": "b引线跨过外斜边但没有连接点，不可将外右4 Ω短接。",
+            "en": "The b lead crosses an outer edge without a junction; do not short the outer 4 Ω."
+          },
+          {
+            "zh": "原图不是直接串并联网络，两个相邻2 Ω不能不看分支就相加。",
+            "en": "The original graph is not directly series-parallel; adjacent 2 Ω resistors cannot be combined without checking branches."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立在原六电阻网络a-b加1 V，以b=0。精确节点法得V_L=9/19、V_D=7/19 V，端口电流35/38 A，R=38/35 Ω，与Δ-Y结果完全相同；全部电阻功率之和等于35/38 W端口输入。附录第333页/PDF342页的1.1 Ω为一位小数舍入。",
+            "en": "An independent 1 V test on the original six-resistor network with b = 0 gives V_L = 9/19 and V_D = 7/19 V by exact nodal analysis. Port current is 35/38 A, giving R = 38/35 Ω, exactly matching Δ-Y. Total dissipation equals port input 35/38 W. The appendix’s 1.1 Ω on printed p. 333/PDF p. 342 is rounded to one decimal place."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "equivalentResistance_ohm": "38/35",
+            "equivalentResistanceDecimal_ohm": 1.0857142857142856,
+            "testVoltage_V": 1,
+            "testInputCurrent_A": "35/38",
+            "internalNodeVoltages_V": {
+              "L": "9/19",
+              "D": "7/19"
+            },
+            "deltaYAndOriginalNodalAgree": true,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched-with-given-rounding",
+            "reason": "Exact 38/35 ohm = 1.085714... ohm rounds to appendix 1.1 ohm."
+          }
+        },
+        "figure": "ca-1-35-figure.png"
+      },
+      "CA-1-36": {
+        "id": "CA-1-36",
+        "bookId": "1-36",
+        "title": {
+          "zh": "桥接电阻网络：先求输入电阻再求源电流",
+          "en": "A bridged resistor network: recover its input resistance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-34"
+        },
+        "statement": {
+          "zh": "求题图1-34所示电路中的电流i。",
+          "en": "Find current i in Fig. 1-34."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 V源上正下负，顶端经2 Ω到T，i向右。T经1 Ω到C、C经4 Ω到底左地节点；T经右4 Ω到D、D经底4 Ω到地；C、D间有8 Ω。",
+            "en": "A top-positive 10 V source connects through top 2 Ω to T, with i rightward. T connects through 1 Ω to C and C through 4 Ω to ground; T through right 4 Ω to D and D through bottom 4 Ω to ground; C and D are joined by 8 Ω."
+          }
+        },
+        "prerequisites": {
+          "zh": "桥接网络节点法；同节点判定；输入电阻测试；串联总电阻。",
+          "en": "Nodal analysis of a bridge, shared-node identification, input-resistance tests and series total resistance."
+        },
+        "recognition": {
+          "zh": "中间4 Ω与8 Ω的下端不是同一节点，不能直接并联。先把顶端2 Ω以右的桥网络作为一端口，用任意端电压v求其输入电流，再得到等效3 Ω。",
+          "en": "The lower ends of the central 4 Ω and 8 Ω are different nodes, so they are not parallel. Apply arbitrary voltage v to the network after the top 2 Ω and find its input current; its equivalent is 3 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "桥网络节点方程",
+              "en": "Write the bridge-node equations"
+            },
+            "text": {
+              "zh": "令T电位为v、底部0。C点：(V_C−v)/1+V_C/4+(V_C−V_D)/8=0；D点：(V_D−v)/4+V_D/4+(V_D−V_C)/8=0。",
+              "en": "Set T to v and bottom to zero. KCL at C and D yields the two equations shown."
+            },
+            "formula": "11V_C-V_D=8v,\\qquad -V_C+5V_D=2v"
+          },
+          {
+            "title": {
+              "zh": "求桥网络等效电阻",
+              "en": "Find the bridge input resistance"
+            },
+            "text": {
+              "zh": "解得V_C=7v/9、V_D=5v/9。输入电流为(v−V_C)/1+(v−V_D)/4=v/3，因此桥网络等效3 Ω。",
+              "en": "Solving gives V_C = 7v/9 and V_D = 5v/9. Input current is (v−V_C)/1+(v−V_D)/4 = v/3, so the bridge equivalent is 3 Ω."
+            },
+            "formula": "I_{\\rm bridge}=\\frac{v-7v/9}{1}+\\frac{v-5v/9}{4}=\\frac v3,\\qquad R_{\\rm bridge}=3\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "加顶端2 Ω求i",
+              "en": "Include the top 2 Ω to obtain i"
+            },
+            "text": {
+              "zh": "10 V源看到2+3=5 Ω，因此i=10/5=2 A，按图向右。",
+              "en": "The 10 V source sees 2+3 = 5 Ω, so i = 2 A rightward."
+            },
+            "formula": "i=\\frac{10}{2+3}=2\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "i=2 A，按原图向右。",
+          "en": "i = 2 A, rightward as drawn."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能将中央4 Ω和8 Ω直接并联，它们底端之间还有4 Ω。",
+            "en": "The central 4 Ω and 8 Ω are not parallel; a 4 Ω separates their lower nodes."
+          },
+          {
+            "zh": "该桥的1/4和4/4不成比例，不能擅自令8 Ω无电流。",
+            "en": "Bridge ratios 1/4 and 4/4 do not match; do not assume zero current in 8 Ω."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原六电阻MNA恢复10 V源，解得T=6 V、C=14/3 V、D=10/3 V，顶2 Ω电流2 A；8 Ω电流1/6 A，确非0。源提供20 W，六电阻总耗散20 W，全部节点残差精确为0。与附录第333页/PDF342页2 A一致。",
+            "en": "Independent MNA of all six original resistors with 10 V gives T = 6 V, C = 14/3 V and D = 10/3 V, hence 2 A through the top resistor. The 8 Ω current is 1/6 A, not zero. The source supplies 20 W and all resistors dissipate 20 W, with exact nodal residuals. This matches 2 A in the appendix on printed p. 333/PDF p. 342."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "current_A": 2,
+            "bridgeEquivalentResistance_ohm": 3,
+            "totalResistance_ohm": 5,
+            "nodeVoltages_V": {
+              "T": 6,
+              "C": "14/3",
+              "D": "10/3"
+            },
+            "bridge8Current_A": "1/6",
+            "totalResistorPower_W": 20,
+            "sourceSuppliedPower_W": 20,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-36-figure.png"
+      },
+      "CA-1-37": {
+        "id": "CA-1-37",
+        "bookId": "1-37",
+        "title": {
+          "zh": "电流源功率：不能漏掉串联电阻的端电压",
+          "en": "Current-source power: include its series resistor drop"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-35"
+        },
+        "statement": {
+          "zh": "求题图1-35所示电路中电流源提供的功率。",
+          "en": "Find the power supplied by the current source in Fig. 1-35."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左支路上2 Ω、下2 Ω，中点L；右内支路上1 Ω、下1 Ω，中点M；外右1 Ω跨顶T与底0。中横支路5 A源由L向右到X，再经2 Ω到M。",
+            "en": "Left vertical branch has 2 Ω above and below midpoint L; inner-right branch has 1 Ω above and below M; outer-right 1 Ω spans top T and bottom 0. The middle branch has a 5 A source from L to X, then 2 Ω from X to M."
+          }
+        },
+        "prerequisites": {
+          "zh": "节点法；电流源串联支路电流固定；源端电压；提供功率为−p吸收。",
+          "en": "Nodal analysis, fixed current in a current-source series branch, source terminal voltage and supplied power = −absorbed power."
+        },
+        "recognition": {
+          "zh": "5 A经中间2 Ω流向M，其源右端X比M高10 V。要计算电流源功率，必须求L与X之间电压，不能仅用L与M之间电压。",
+          "en": "The 5 A through middle 2 Ω makes source terminal X 10 V above M. Source power needs the L-to-X voltage, not just L-to-M."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求三个主要节点电位",
+              "en": "Find the three main node potentials"
+            },
+            "text": {
+              "zh": "底部设0。L点KCL给2V_L−V_T=−10；M点给2V_M−V_T=5；T点给5V_T−V_L−2V_M=0。解得V_T=0、V_L=−5、V_M=2.5 V。",
+              "en": "With bottom zero, KCL gives 2V_L−V_T = −10, 2V_M−V_T = 5 and 5V_T−V_L−2V_M = 0. Thus V_T = 0, V_L = −5 and V_M = 2.5 V."
+            },
+            "formula": "V_T=0,\\qquad V_L=-5,\\qquad V_M=\\frac52\\quad(\\mathrm V)"
+          },
+          {
+            "title": {
+              "zh": "加上中间2 Ω压降",
+              "en": "Include the middle 2 Ω drop"
+            },
+            "text": {
+              "zh": "中间2 Ω流过5 A，X到M降10 V，因此V_X=2.5+10=12.5 V。",
+              "en": "Middle 2 Ω carries 5 A and drops 10 V from X to M, so V_X = 12.5 V."
+            },
+            "formula": "V_X=V_M+5(2)=12.5\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "计算提供功率",
+              "en": "Compute supplied power"
+            },
+            "text": {
+              "zh": "源电流从L向X，沿电流电位升高12.5−(−5)=17.5 V。吸收功率(V_L−V_X)×5=−87.5 W，提供87.5 W。",
+              "en": "Current runs from L to X through a 17.5 V rise. Absorbed power is (V_L−V_X)×5 = −87.5 W, so supplied power is 87.5 W."
+            },
+            "formula": "P_{I,\\rm supplied}=5(V_X-V_L)=87.5\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "5 A电流源提供87.5 W。",
+          "en": "The 5 A current source supplies 87.5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "中间2 Ω与电流源串联，源端X和右中M不是同一节点。",
+            "en": "Source terminal X and right-middle M are separated by the series 2 Ω."
+          },
+          {
+            "zh": "V_T=0是解方程的结果，不是顶底导线直接短接。",
+            "en": "V_T = 0 is a solved result, not a physical short between top and bottom."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立保留源与中间2 Ω之间节点X的完整MNA，得到T=0、L=−5、M=2.5、X=12.5 V。六电阻耗散分别12.5、12.5、6.25、6.25、0、50 W，总87.5 W；电流源吸收−87.5 W，功率和0。与附录第333页/PDF342页87.5 W一致。",
+            "en": "Independent full MNA retains X between source and series resistor and gives T = 0, L = −5, M = 2.5 and X = 12.5 V. Resistor powers 12.5, 12.5, 6.25, 6.25, 0 and 50 W total 87.5 W; source absorption is −87.5 W, balancing power. This matches 87.5 W in the appendix on printed p. 333/PDF p. 342."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "suppliedPower_W": 87.5,
+            "nodeVoltages_V": {
+              "T": 0,
+              "L": -5,
+              "M": 2.5,
+              "X": 12.5
+            },
+            "sourceVoltageRise_V": 17.5,
+            "totalResistorPower_W": 87.5,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-37-figure.png"
+      },
+      "CA-1-38": {
+        "id": "CA-1-38",
+        "bookId": "1-38",
+        "title": {
+          "zh": "无限梯形电路：自相似方程与正根",
+          "en": "Infinite ladder: self-similarity and the positive root"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-36"
+        },
+        "statement": {
+          "zh": "题图1-36所示电路为具有无限多级的梯形电路，求输入端a、b之间的等效电阻R_ab。",
+          "en": "Fig. 1-36 is an infinite ladder. Find the equivalent resistance R_ab between input a and b."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "从a先串联R到c，c经竖R到底导线b；c向右又串联R并在下一节点经R到底，逐级无限重复。底部为公共返回线，所有电阻均为正值R。",
+            "en": "From a, series R leads to c, where shunt R connects to common bottom b. The series-R/shunt-R pattern repeats infinitely to the right. All resistors have positive value R."
+          }
+        },
+        "prerequisites": {
+          "zh": "串并联；无限网络自相似；二次方程；无源网络电阻非负；有限截断收敛。",
+          "en": "Series/parallel reduction, infinite self-similarity, a quadratic, passive nonnegative resistance and convergence of finite truncations."
+        },
+        "recognition": {
+          "zh": "从第一段串联R后看，当前竖R与右侧剩余无限梯形并联；右侧剩余网络与整个输入网络同形。令整体为x，即可建立一个标量方程。",
+          "en": "After the first series R, the local shunt R is parallel with an unchanged copy of the remaining infinite ladder. Calling the full resistance x gives one scalar equation."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写自相似关系",
+              "en": "Write the self-similarity relation"
+            },
+            "text": {
+              "zh": "整个输入等效x等于第一只串联R，加上当前竖R与同形剩余网络x的并联。",
+              "en": "The full x equals the first series R plus the parallel combination of the local shunt R and remaining copy x."
+            },
+            "formula": "x=R+(R\\parallel x)=R+\\frac{Rx}{R+x}"
+          },
+          {
+            "title": {
+              "zh": "解二次方程",
+              "en": "Solve the quadratic"
+            },
+            "text": {
+              "zh": "整理为x²−Rx−R²=0，得到x=[(1±√5)/2]R。",
+              "en": "Rearrangement gives x²−Rx−R² = 0, with roots [(1±√5)/2]R."
+            },
+            "formula": "x^2-Rx-R^2=0\\Rightarrow x=\\frac{1\\pm\\sqrt5}{2}R"
+          },
+          {
+            "title": {
+              "zh": "用无源性选择正根",
+              "en": "Select the passive positive root"
+            },
+            "text": {
+              "zh": "所有电阻为正，等效电阻必须为正，所以舍弃负根，R_ab=(1+√5)R/2≈1.618034R。",
+              "en": "Every resistor is positive, so the equivalent must be positive. Reject the negative root and retain R_ab = (1+√5)R/2."
+            },
+            "formula": "R_{ab}=\\frac{1+\\sqrt5}{2}R\\approx1.618034R"
+          }
+        ],
+        "answer": {
+          "zh": "R_ab=(1+√5)R/2≈1.618034R，按两位小数为1.62R。",
+          "en": "R_ab = (1+√5)R/2 ≈ 1.618034R, or 1.62R to two decimals."
+        },
+        "pitfalls": [
+          {
+            "zh": "自相似剩余网络已含它自己的第一只串联R，不要重复加一只。",
+            "en": "The remaining copy already includes its own first series R; do not count it twice."
+          },
+          {
+            "zh": "二次方程的负根不适用于全正电阻无源网络。",
+            "en": "The negative root cannot represent this all-positive passive network."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立搭建20级原梯形网络并加1 V测试源，以有理数MNA求其输入电阻；同时从末端短路/开路截断生成精确下界/上界。上界与20级MNA完全一致，界宽约1.55×10⁻¹⁶R，夹住(1+√5)R/2；有限网络各节点及功率残差精确为0。附录第333页/PDF342页1.62R为两位小数舍入。",
+            "en": "An independently stamped 20-stage ladder with a 1 V test is solved by exact rational MNA. Short/open terminal truncations provide exact lower/upper bounds. The upper bound exactly matches the finite MNA result; the gap is about 1.55×10⁻¹⁶R and encloses (1+√5)R/2. All finite-network node and power residuals vanish. The appendix’s 1.62R on printed p. 333/PDF p. 342 is rounded to two decimals."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "ratioExact": "(1+sqrt(5))/2",
+            "ratioDecimal": 1.618033988749895,
+            "finiteLadderVerifiedStages": 20,
+            "boundGapPerR": 1.5450638257016152e-16,
+            "passivePositiveRootSelected": true,
+            "finiteNodalAndPowerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched-with-given-rounding",
+            "reason": "Exact golden-ratio coefficient 1.618033... rounds to appendix 1.62."
+          }
+        },
+        "figure": "ca-1-38-figure.png"
+      },
+      "CA-1-39": {
+        "id": "CA-1-39",
+        "bookId": "1-39",
+        "title": {
+          "zh": "含受控源的输入电阻：允许负值并保留受控源",
+          "en": "Input resistance with a dependent source: negative is possible"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-37"
+        },
+        "statement": {
+          "zh": "求题图1-37所示单口网络的输入电阻。",
+          "en": "Find the input resistance of the one-port network in Fig. 1-37."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "端口电压u上正下负，输入电流i从上端向右流入节点A。A经5 Ω到底，并经顶3 Ω到右节点B；右受控电流源2u从底向上流入B。",
+            "en": "Port u is positive at the top and i enters rightward into A. A connects through 5 Ω to bottom and through top 3 Ω to B. A dependent current source 2u runs upward from bottom into B."
+          }
+        },
+        "prerequisites": {
+          "zh": "受控源不置零；测试源求u/i；节点KCL；负输入电阻的有源意义。",
+          "en": "Keep dependent sources active, use a test source for u/i, nodal KCL and the active meaning of negative input resistance."
+        },
+        "recognition": {
+          "zh": "用端口电压u控制原受控源，求输入电流i。受控源能够向端口供能，所以输入电阻不必为正；负值应由方程与功率共同确认。",
+          "en": "Use port voltage u to control the original source and solve input i. A dependent source can deliver energy at the port, so input resistance need not be positive; confirm a negative result by equations and power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "右节点KCL求V_B",
+              "en": "Use right-node KCL for V_B"
+            },
+            "text": {
+              "zh": "受控源向B注入2u，全部经3 Ω流向A。因此(V_B−u)/3=2u，得V_B=7u。",
+              "en": "The source injects 2u into B, all returning through 3 Ω to A. Thus (V_B−u)/3 = 2u and V_B = 7u."
+            },
+            "formula": "\\frac{V_B-u}{3}=2u\\Rightarrow V_B=7u"
+          },
+          {
+            "title": {
+              "zh": "求端口输入电流",
+              "en": "Find port input current"
+            },
+            "text": {
+              "zh": "A流向5 Ω的电流u/5，加上A流向B电流(u−7u)/3，得到i=−9u/5。",
+              "en": "Add current u/5 from A to ground and (u−7u)/3 from A to B to obtain i = −9u/5."
+            },
+            "formula": "i=\\frac u5+\\frac{u-7u}{3}=-\\frac95u"
+          },
+          {
+            "title": {
+              "zh": "求输入电阻并解释符号",
+              "en": "Find input resistance and interpret the sign"
+            },
+            "text": {
+              "zh": "按流入端口正端的参考方向，R_in=u/i=−5/9 Ω。u>0时i<0，网络向外送电，符合有源受控网络的行为。",
+              "en": "With current referenced into the positive port, R_in = u/i = −5/9 Ω. For u > 0, i < 0, so the network delivers power outward, as an active controlled network can."
+            },
+            "formula": "R_{\\rm in}=-\\frac59\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_in=−5/9 Ω≈−0.5556 Ω。",
+          "en": "R_in = −5/9 Ω ≈ −0.5556 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "求输入电阻时保留受控源及u控制关系，不能把它开路。",
+            "en": "Keep the dependent source and its u control active; do not open it."
+          },
+          {
+            "zh": "无源电阻仍耗能，负输入电阻的能量来自受控源。",
+            "en": "The ordinary resistors still dissipate energy; the dependent source supplies the negative port resistance’s energy."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立1 V端口测试原VCCS MNA得A=1、B=7 V，输入i=−1.8 A，R=−5/9 Ω。5 Ω和3 Ω共耗散12.2 W，受控源提供14 W，余1.8 W由网络送入测试电压源，全部功率和0。与附录第333页/PDF342页−5/9 Ω一致。",
+            "en": "Independent original-VCCS MNA with a 1 V port test gives A = 1 V, B = 7 V and i = −1.8 A, hence R = −5/9 Ω. The resistors dissipate 12.2 W and dependent source supplies 14 W, leaving 1.8 W delivered to the test voltage source. All powers balance. This matches −5/9 Ω in the appendix on printed p. 333/PDF p. 342."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "inputResistance_ohm": "-5/9",
+            "testVoltage_V": 1,
+            "testInputCurrent_A": -1.8,
+            "rightNodeVoltage_V": 7,
+            "totalResistorPower_W": 12.2,
+            "dependentSourceSuppliedPower_W": 14,
+            "networkDeliveredPortPower_W": 1.8,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-39-figure.png"
+      },
+      "CA-1-40": {
+        "id": "CA-1-40",
+        "bookId": "1-40",
+        "title": {
+          "zh": "受输入电流控制的源：先做节点KCL再求端电压",
+          "en": "A source controlled by input current: KCL before port voltage"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-38"
+        },
+        "statement": {
+          "zh": "求题图1-38所示单口网络的输入电阻。",
+          "en": "Find the input resistance of the one-port network in Fig. 1-38."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入电流i由上端向右，经8 Ω到节点B。B经3 Ω到底，另有受控电流源3i由B向下到底。端口电压u上正下负。",
+            "en": "Input i enters rightward through 8 Ω to B. B connects through 3 Ω to bottom and through dependent current 3i directed downward. Port u is top-positive."
+          }
+        },
+        "prerequisites": {
+          "zh": "受控源关系；KCL分流；输入串联压降；测试源法。",
+          "en": "Dependent-current law, KCL current splitting, input series drop and test sources."
+        },
+        "recognition": {
+          "zh": "8 Ω流过的就是控制电流i，但3 Ω不流i：受控源向下取3i，迫使3 Ω的参考向下电流为−2i。求出B电位后再加8 Ω压降。",
+          "en": "The 8 Ω current is the control i, but the 3 Ω current is not i. The dependent source takes 3i downward, forcing the 3 Ω downward-reference current to −2i. Find B, then add the 8 Ω drop."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "右节点KCL确定3 Ω电流",
+              "en": "Use B-node KCL for the 3 Ω current"
+            },
+            "text": {
+              "zh": "节点B流入i，流出i₃及3i，所以i₃=i−3i=−2i，V_B=3i₃=−6i。",
+              "en": "At B, i enters and i₃ plus 3i leave, so i₃ = −2i and V_B = 3i₃ = −6i."
+            },
+            "formula": "i_3=i-3i=-2i,\\qquad V_B=-6i"
+          },
+          {
+            "title": {
+              "zh": "恢复端口电压",
+              "en": "Recover port voltage"
+            },
+            "text": {
+              "zh": "从端口到B经8 Ω压降8i，因此u=8i+V_B=2i。",
+              "en": "The 8 Ω drops 8i from port to B, so u = 8i+V_B = 2i."
+            },
+            "formula": "u=8i-6i=2i\\Rightarrow R_{\\rm in}=\\frac ui=2\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_in=2 Ω。",
+          "en": "R_in = 2 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "8 Ω与3 Ω不串联，因为它们之间节点还有受控源支路。",
+            "en": "8 Ω and 3 Ω are not series; their junction also connects the dependent source."
+          },
+          {
+            "zh": "控制量是流入端口的i，不能误用3 Ω中的−2i去控制3i源。",
+            "en": "The control is input i, not the −2i current in 3 Ω."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立在输入支路放零伏电流传感器，按流入端口方向控制向下3i，并施加1 V测试源。精确MNA得i=0.5 A、B=−3 V、受控源1.5 A向下，故R=2 Ω。电阻共耗散5 W，受控源提供4.5 W，端口输入0.5 W，功率平衡。附录第333页/PDF342页为2 Ω。",
+            "en": "Independent MNA inserts a zero-volt input-current sensor with the original inward reference to control downward 3i, then applies 1 V. It gives i = 0.5 A, B = −3 V and dependent current 1.5 A downward, hence R = 2 Ω. Resistors dissipate 5 W, the controlled source supplies 4.5 W and the port supplies 0.5 W, balancing power. The appendix on printed p. 333/PDF p. 342 gives 2 Ω."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "inputResistance_ohm": 2,
+            "testVoltage_V": 1,
+            "testInputCurrent_A": 0.5,
+            "rightNodeVoltage_V": -3,
+            "dependentDownwardCurrent_A": 1.5,
+            "totalResistorPower_W": 5,
+            "dependentSourceSuppliedPower_W": 4.5,
+            "portInputPower_W": 0.5,
+            "powerResidual_W": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-1-40-figure.png"
       }
     }
   },
@@ -22505,6 +23828,1230 @@
           }
         },
         "figure": "figure-2.4.8.png"
+      },
+      "AE-2.4.10": {
+        "id": "AE-2.4.10",
+        "bookId": "2.4.10",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "电阻失配：先写一般求差式，再找最坏角点",
+          "en": "Resistor mismatch: derive the general subtractor before testing corners"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 48,
+          "pdfPage": 81,
+          "figure": "正文图2.4.5（不是图题2.4.5）",
+          "figurePrintedPage": 36,
+          "figurePdfPage": 69
+        },
+        "statement": {
+          "zh": "在图2.4.5所示的仪用放大器中，已知R₁=2 kΩ，R₂=50 kΩ，R₃=30 kΩ，R₄=90 kΩ。（1）求差模电压增益A_vd；（2）如果R₃有±5%的误差，求最大共模电压增益|A_vc|和共模抑制比K_CMR。",
+          "en": "In the instrumentation amplifier of body Fig. 2.4.5, R₁=2 kΩ, R₂=50 kΩ, R₃=30 kΩ and R₄=90 kΩ. (1) Find differential gain A_vd. (2) If R₃ has ±5% tolerance, find maximum common-mode gain magnitude and CMRR."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "引用正文图2.4.5三运放仪用放大器：首级反馈各R₂，反相端之间R₁；末级两输入串联电阻各标R₃，反馈及同相接地电阻各R₄。",
+            "en": "Uses the three-op-amp body Fig. 2.4.5: first-stage feedback R₂ and a shared R₁; final-stage input resistors are both R₃, with R₄ feedback and R₄ from the noninverting node to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "虚短与虚断；节点KCL；差模与共模输入定义。",
+          "en": "Equal input voltages and zero input currents; nodal KCL; differential and common-mode definitions."
+        },
+        "recognition": {
+          "zh": "“R₃有±5%误差”必须说明两只R₃的关系。主结果按两只独立取±5%且其他电阻精确；共同等比例偏移不会引入电阻失配共模增益。",
+          "en": "Specify how the two R₃ errors relate. The main result uses independent ±5% tolerances with other resistors exact; identical tracking errors create no resistor-mismatch common-mode gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）标称差模增益",
+              "en": "(1) Nominal differential gain"
+            },
+            "text": {
+              "zh": "以v_id=v₁−v₂为差模输入，首级差值放大51倍，末级反相3倍。若把差模输入定义反向，增益符号也反向。",
+              "en": "For v_id=v₁−v₂, the first stage multiplies the difference by 51 and the final stage inverts with magnitude 3. Reversing the differential-input definition reverses the gain sign."
+            },
+            "formula": "A_{vd}=-\\frac{R_4}{R_3}\\left(1+\\frac{2R_2}{R_1}\\right)=-3(51)=-153"
+          },
+          {
+            "title": {
+              "zh": "不匹配末级的一般表达式",
+              "en": "General expression for the mismatched last stage"
+            },
+            "text": {
+              "zh": "记反相输入串联电阻为r_a，同相输入串联电阻为r_b，F=90 kΩ。节点KCL给v_o=bv₄−av₃；共同输入下首级两个输出均等于v_c。",
+              "en": "Let r_a be the inverting input resistor, r_b the noninverting input resistor and F=90 kΩ. Nodal KCL gives v_o=bv₄−av₃; equal common-mode inputs make both first-stage outputs v_c."
+            },
+            "formula": "a=\\frac F{r_a},\\quad b=\\left(1+\\frac F{r_a}\\right)\\frac F{r_b+F},\\quad A_{vc}=b-a=\\frac{F(r_a-r_b)}{r_a(r_b+F)}"
+          },
+          {
+            "title": {
+              "zh": "两只独立误差的最坏共模角点",
+              "en": "Worst common-mode corner for independent errors"
+            },
+            "text": {
+              "zh": "r_a、r_b各在28.5～31.5 kΩ。|A_vc|最大在r_a=28.5、r_b=31.5 kΩ；反向角点略小。",
+              "en": "Each resistor lies in 28.5–31.5 kΩ. Maximum |A_vc| occurs at r_a=28.5 and r_b=31.5 kΩ; the opposite corner is slightly smaller."
+            },
+            "formula": "|A_{vc}|_{\\max}=\\frac{90(31.5-28.5)}{28.5(31.5+90)}\\approx0.07797271"
+          },
+          {
+            "title": {
+              "zh": "用同一实际电路的差模增益求CMRR",
+              "en": "Use differential and common-mode gains of the same actual circuit"
+            },
+            "text": {
+              "zh": "对称差模输入v₁=+v_id/2、v₂=−v_id/2，实际A_vd=−(51/2)(a+b)。比值简化后，两只误差独立时最坏CMRR在两个反向角点，均为2040。不要用一个电路的标称差模增益与另一个电路的实际共模增益混成“精确CMRR”。",
+              "en": "For symmetric differential excitation v₁=+v_id/2 and v₂=−v_id/2, actual A_vd=−(51/2)(a+b). The ratio simplifies; its worst value is 2040 at either opposite corner. A nominal differential gain divided by another circuit’s actual common-mode gain is not an exact CMRR."
+            },
+            "formula": "K_{\\mathrm{CMR}}=\\left|\\frac{A_{vd}}{A_{vc}}\\right|=\\frac{51}{2}\\frac{r_a+r_b+2F}{|r_a-r_b|},\\qquad K_{\\min}=2040\\approx66.19\\,\\mathrm{dB}"
+          },
+          {
+            "title": {
+              "zh": "说明其他误差解释与常用估算",
+              "en": "Other interpretations and the nominal-gain estimate"
+            },
+            "text": {
+              "zh": "若沿用标称|A_vd|=153估算，153/0.07797271≈1962.225，约65.85 dB，应注明是标称增益估算。若只有一只R₃偏差、另一只精确，最坏|A_vc|≈0.03947368，实际最坏CMRR=4054.5（72.16 dB）。若两只R₃同幅同向变化，则A_vc=0，理想电阻模型CMRR无限；真实运放本身有限CMRR未由本题给出。",
+              "en": "Using nominal |A_vd|=153 gives the explicitly nominal estimate 1962.225, about 65.85 dB. If only one R₃ varies and the other is exact, worst |A_vc|≈0.03947368 and worst actual CMRR=4054.5 (72.16 dB). Identical tracking gives A_vc=0 and infinite ideal resistor-model CMRR; real op-amp CMRR is not specified."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "（1）A_vd=−153（按v₁−v₂定义）。（2）两只R₃独立±5%时，最大|A_vc|≈0.07797271，实际最坏K_CMR=2040≈66.19 dB；用标称差模增益估算则约1962.225≈65.85 dB。误差共同跟踪或仅一只误差的结果另见步骤。",
+          "en": "(1) A_vd=−153 for v₁−v₂. (2) Independent ±5% errors give maximum |A_vc|≈0.07797271 and worst actual CMRR=2040≈66.19 dB. A nominal-differential-gain estimate is 1962.225≈65.85 dB. Tracking and single-resistor cases are explained separately."
+        },
+        "pitfalls": [
+          {
+            "zh": "两只同标号电阻不代表误差一定同向或完全一致。",
+            "en": "Two resistors sharing a label need not have tracking errors."
+          },
+          {
+            "zh": "CMRR必须说明用实际还是标称差模增益。",
+            "en": "State whether CMRR uses actual or nominal differential gain."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立原三运放节点矩阵分别施加共同和对称差模输入，扫描两个误差的二维网格及四角点；核对同向误差A_vc=0、单只误差和同电路增益比。",
+            "en": "Independent original three-op-amp matrices are excited with common and symmetric differential inputs over a two-dimensional error grid and corners, checking tracking, single-resistor and same-circuit gain ratios."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想线性运放；主结果为两只R₃独立±5%，其余电阻精确；差模定义v₁−v₂，实际增益以对称差模激励测量。",
+            "en": "Ideal linear op amps; main result uses independent ±5% errors in both R₃ values with other resistors exact; differential input is v₁−v₂ with symmetric excitation for actual gain."
+          },
+          "results": {
+            "nominalGain": -153,
+            "independentErrors": {
+              "maxCommonGain": 0.07797270955165692,
+              "minActualCMRR": 2040,
+              "nominalGainEstimate": 1962.2250000000001
+            },
+            "singleError": {
+              "maxCommonGain": 0.0394736842105263,
+              "minActualCMRR": 4054.5
+            },
+            "trackingCommonGain": 0
+          }
+        },
+        "figure": "figure-2.4.10.png"
+      },
+      "AE-2.4.11": {
+        "id": "AE-2.4.11",
+        "bookId": "2.4.11",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "先定抑制比，再用输出余量限制反馈增益",
+          "en": "Set suppression first, then limit feedback gain by output headroom"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 48,
+          "pdfPage": 81,
+          "figure": "正文图2.4.6a、b",
+          "figurePrintedPage": 37,
+          "figurePdfPage": 70
+        },
+        "statement": {
+          "zh": "在图2.4.6所示的心电信号放大电路中，设R₁/2=1 kΩ，R_si=120 kΩ，v_cm的最大幅值为20 V，所有运放的电源电压为±15 V，A₅的输出饱和压降为1 V。（1）求心电信号的增益；（2）若要求加到INA128输入端的共模电压是v_cm的1/800，求R₇的最大值和K的值。",
+          "en": "For the ECG amplifier in body Fig. 2.4.6, R₁/2=1 kΩ, R_si=120 kΩ, maximum v_cm amplitude is 20 V, all op-amp supplies are ±15 V, and A₅ output saturates 1 V from either rail. (1) Find ECG differential gain. (2) To reduce common-mode input at INA128 to v_cm/800, find maximum R₇ and gain K."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "正文图2.4.6：INA128的增益电阻R₁分为两个R₁/2，中心提取共模v_ic；A₄跟随v_ic；A₅以R₆/R₅=K反相输出v_oc，经过R₇返回共模节点；干扰v_cm经R_si到该节点。",
+            "en": "Body Fig. 2.4.6: INA128 gain resistor R₁ is split into two R₁/2 halves to sense v_ic. A₄ buffers it; A₅ inverts with K=R₆/R₅ to produce v_oc, returned through R₇. Interference v_cm reaches the common-mode node through R_si."
+          }
+        },
+        "prerequisites": {
+          "zh": "虚短与虚断；节点KCL；差模与共模输入定义。",
+          "en": "Equal input voltages and zero input currents; nodal KCL; differential and common-mode definitions."
+        },
+        "recognition": {
+          "zh": "R₁是两个1 kΩ串联的总值2 kΩ。共模环路先由KCL给抑制比，再用A₅的14 V输出边界确定最大允许K。",
+          "en": "R₁ is the total of two 1 kΩ halves, hence 2 kΩ. Common-mode KCL sets suppression, then A₅’s 14 V output boundary sets the largest K."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）差模信号增益",
+              "en": "(1) Differential signal gain"
+            },
+            "text": {
+              "zh": "教材图2.4.6与式2.4.15给INA128的增益大小1+50 kΩ/R₁；按v_la−v_ra定义为负。共模提取点在对称差模下为0，不改变该差模增益。",
+              "en": "Body Fig. 2.4.6 and Eq. 2.4.15 give gain magnitude 1+50 kΩ/R₁; it is negative for v_la−v_ra. The common-mode sensing point is zero under symmetric differential excitation, leaving differential gain unchanged."
+            },
+            "formula": "A_v=-\\left(1+\\frac{50\\,\\mathrm{k\\Omega}}{2\\,\\mathrm{k\\Omega}}\\right)=-26"
+          },
+          {
+            "title": {
+              "zh": "（2）建立准确的共模方程",
+              "en": "(2) Establish exact common-mode equations"
+            },
+            "text": {
+              "zh": "同相输入不取电流，A₄输出v_ic，A₅输出v_oc=−K v_ic。对干扰/返回节点列KCL。",
+              "en": "Inputs draw no current. A₄ outputs v_ic and A₅ outputs −K v_ic. Apply KCL at the interference/return node."
+            },
+            "formula": "\\frac{v_{cm}-v_{ic}}{R_{si}}=\\frac{v_{ic}-v_{oc}}{R_7},\\quad v_{oc}=-Kv_{ic}\\quad\\Rightarrow\\quad\\frac{v_{ic}}{v_{cm}}=\\frac1{1+(R_{si}/R_7)(1+K)}"
+          },
+          {
+            "title": {
+              "zh": "用1/800和14 V输出限制求边界",
+              "en": "Use 1/800 and the 14 V output limit"
+            },
+            "text": {
+              "zh": "最大共模输入变为20/800=0.025 V；|v_oc|=0.025K≤14，故K≤560。保持800倍抑制需R₇=R_si(1+K)/799，随K增大，因此最大值出现在K=560。",
+              "en": "Peak residual input is 20/800=0.025 V. Thus |v_oc|=0.025K≤14 gives K≤560. Suppression 800 requires R₇=R_si(1+K)/799, increasing with K, so the limiting maximum occurs at K=560."
+            },
+            "formula": "K=560,\\qquad R_{7,\\max}=120\\,\\mathrm{k\\Omega}\\frac{561}{799}\\approx84.255319\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "区分近似结果与实作余量",
+              "en": "Distinguish approximation and headroom"
+            },
+            "text": {
+              "zh": "若采用正文K远大于1+R₇/R_si的近似，则R₇≈14×120 kΩ/20=84 kΩ，K≈560。精确边界84.255 kΩ保留了1+K及分母799；要保证严格在线性区，R₇、K应略小于此边界，并重新检查元件误差。",
+              "en": "The body’s large-K approximation gives R₇≈14×120 kΩ/20=84 kΩ and K≈560. Exact limiting values retain 1+K and denominator 799. Strict linear headroom requires slightly smaller R₇/K and a tolerance check."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "（1）按v_la−v_ra定义，增益−26，大小26。（2）精确饱和边界K=560，R₇最大约84.2553 kΩ；教材大增益近似为R₇≈84 kΩ。实际线性设计需留输出余量。",
+          "en": "(1) Gain is −26 for v_la−v_ra, magnitude 26. (2) Exact saturation boundary: K=560 and maximum R₇≈84.2553 kΩ; large-gain approximation gives about 84 kΩ. A linear implementation needs headroom."
+        },
+        "pitfalls": [
+          {
+            "zh": "R₁/2=1 kΩ不是R₁=1 kΩ。",
+            "en": "R₁/2=1 kΩ means R₁=2 kΩ."
+          },
+          {
+            "zh": "A₅可用输出峰值为14 V，而非15 V。",
+            "en": "A₅ available peak output is 14 V, not 15 V."
+          },
+          {
+            "zh": "84 kΩ来自近似；代入完整方程时应区分精确边界。",
+            "en": "84 kΩ is approximate; distinguish it from the exact full-equation boundary."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "核读正文37～38页的图2.4.6与式2.4.15、2.4.18～20；独立解共模节点与A₅虚地KCL，回代20 V输入得v_ic=25 mV、v_oc=−14 V，两端返回电流均166.458333 μA。",
+            "en": "Read body pp. 37–38, Fig. 2.4.6 and Eqs. 2.4.15, 2.4.18–20. Independent common-node and A₅ KCL give v_ic=25 mV and v_oc=−14 V at 20 V input, with matching return/source currents 166.458333 μA."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "教材理想共模等效电路，忽略人体阻抗和输入偏置；K=R₆/R₅；A₅输出边界±14 V。仅为题设电路分析，非实际设备性能保证。",
+            "en": "Textbook ideal common-mode equivalent circuit, neglecting body impedance and input bias; K=R₆/R₅ and A₅ output boundary ±14 V. This analyzes the specified model and does not guarantee actual device performance."
+          },
+          "results": {
+            "differentialGain": -26,
+            "K": 560,
+            "R7max_ohm": 84255.31914893616,
+            "residualCommonPeak_V": 0.025,
+            "driverPeak_V": 14
+          }
+        },
+        "figure": "figure-2.4.11.png"
+      },
+      "AE-2.4.12": {
+        "id": "AE-2.4.12",
+        "bookId": "2.4.12",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "跟随器隔离输入，反相辅助级闭合负反馈",
+          "en": "Input buffers and an inverting auxiliary stage close the feedback loop"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 48,
+          "pdfPage": 81,
+          "figure": "图题2.4.12",
+          "figurePrintedPage": 48,
+          "figurePdfPage": 81
+        },
+        "statement": {
+          "zh": "图题2.4.12所示为一增益线性调节运放电路，试推导该电路的电压增益表达式A_v=v_o/(v_i1−v_i2)。",
+          "en": "For the linearly adjustable-gain circuit in Fig. 2.4.12, derive A_v=v_o/(v_i1−v_i2)."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "A₁、A₂跟随两个输入。A₃反相端经R₁接v_o1、经R₂接地；同相端经R₁接v_o2、经R₂接A₄输出v_o4。A₄同相端接地，反相端经R₃接其输出、经可调R₄接最终v_o。",
+            "en": "A₁/A₂ buffer both inputs. A₃ inverting node connects through R₁ to v_o1 and R₂ to ground; its noninverting node connects through R₁ to v_o2 and R₂ to A₄ output v_o4. A₄ noninverting input is grounded; its inverting node has R₃ feedback and adjustable R₄ to final v_o."
+          }
+        },
+        "prerequisites": {
+          "zh": "虚短与虚断；节点KCL；差模与共模输入定义。",
+          "en": "Equal input voltages and zero input currents; nodal KCL; differential and common-mode definitions."
+        },
+        "recognition": {
+          "zh": "A₃没有直接的普通反相反馈电阻；反馈经A₄反相后进入A₃同相端，整体仍是负反馈。先分别写两个中点与A₄虚地。",
+          "en": "A₃ does not use an ordinary direct inverting feedback resistor. Its feedback is inverted by A₄ before reaching A₃’s noninverting input, making the total loop negative. Write midpoint and A₄ virtual-ground constraints."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "输入缓冲和A₃反相分压",
+              "en": "Input buffers and A₃ inverting divider"
+            },
+            "text": {
+              "zh": "A₁、A₂电压增益1；A₃反相端分压为R₂/(R₁+R₂)倍v_i1，其同相端电位相等。",
+              "en": "A₁/A₂ have unity gain. A₃ inverting input divides v_i1 by R₂/(R₁+R₂); its noninverting input has the same potential."
+            },
+            "formula": "v_{o1}=v_{i1},\\quad v_{o2}=v_{i2},\\quad v_{n3}=v_{p3}=\\frac{R_2}{R_1+R_2}v_{i1}"
+          },
+          {
+            "title": {
+              "zh": "A₃同相节点KCL",
+              "en": "A₃ noninverting-node KCL"
+            },
+            "text": {
+              "zh": "该节点从两个源接入，解出辅助输出v_o4。",
+              "en": "The node connects to two sources; solve its KCL for auxiliary output v_o4."
+            },
+            "formula": "\\frac{v_{p3}-v_{i2}}{R_1}+\\frac{v_{p3}-v_{o4}}{R_2}=0\\quad\\Rightarrow\\quad v_{o4}=\\frac{R_2}{R_1}(v_{i1}-v_{i2})"
+          },
+          {
+            "title": {
+              "zh": "A₄反相关系给最终增益",
+              "en": "A₄ inversion gives the final gain"
+            },
+            "text": {
+              "zh": "A₄的输入电阻是可调R₄、反馈是R₃。由v_o4=−(R₃/R₄)v_o解v_o，结果随R₄线性变化。",
+              "en": "For A₄, the input resistor is adjustable R₄ and feedback is R₃. Invert v_o4=−(R₃/R₄)v_o to obtain an output gain linear in R₄."
+            },
+            "formula": "\\frac{v_o}{R_4}+\\frac{v_{o4}}{R_3}=0\\quad\\Rightarrow\\quad\\boxed{A_v=-\\frac{R_2R_4}{R_1R_3}}"
+          }
+        ],
+        "answer": {
+          "zh": "A_v=−R₂R₄/(R₁R₃)，电压增益随可调R₄线性变化；前提是各运放未饱和、环路稳定。",
+          "en": "A_v=−R₂R₄/(R₁R₃), linear in adjustable R₄, provided all amplifiers remain linear and the loop is stable."
+        },
+        "pitfalls": [
+          {
+            "zh": "R₄是A₄输入电阻，R₃才是A₄反馈电阻。",
+            "en": "R₄ is A₄’s input resistor; R₃ is its feedback resistor."
+          },
+          {
+            "zh": "A₃同相端不是地，不能套标准反相式。",
+            "en": "A₃ noninverting input is not grounded; do not use a standard inverter formula."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立构造四个未知量v_n3、v_p3、v_o4、v_o的原节点矩阵，扫描输入及正电阻，检查虚短、两个输入节点和A₄虚地KCL。",
+            "en": "An independent original-node matrix for v_n3, v_p3, v_o4 and v_o scans inputs and positive resistors, checking equal-input and original KCL constraints."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "gain": "-R2*R4/(R1*R3)"
+          }
+        },
+        "figure": "figure-2.4.12.png"
+      },
+      "AE-2.4.13": {
+        "id": "AE-2.4.13",
+        "bookId": "2.4.13",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "积分面积定斜率，脉冲宽度定峰值",
+          "en": "Input area determines slope and pulse width determines peak"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 48,
+          "pdfPage": 81,
+          "figure": "图题2.4.13",
+          "figurePrintedPage": 49,
+          "figurePdfPage": 82
+        },
+        "statement": {
+          "zh": "积分电路如图题2.4.13a所示。已知初始状态时v_C(0)=0，试回答下列问题：（1）当R=100 kΩ，C=2 μF时，若t=0时刻加入阶跃电压v_i(t)=1 V，求t=1 s时的v_o；（2）若C=0.47 μF，输入电压波形如图题2.4.13b所示，试定量画出v_o的波形。图b为0～60 ms输入+6 V、60～120 ms输入−6 V，随后为0。",
+          "en": "For the integrator in Fig. 2.4.13(a), v_C(0)=0. (1) With R=100 kΩ and C=2 μF, apply a 1 V step at t=0 and find v_o at 1 s. (2) With C=0.47 μF, draw a quantitative output for (b): +6 V over 0–60 ms, −6 V over 60–120 ms, then zero."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "反相积分器：v_i经R=100 kΩ接反相端，反馈C，同相端接地；图b的矩形脉冲高度±6 V、时间标记60、120 ms。",
+            "en": "Inverting integrator: R=100 kΩ connects input to the inverting node, C feeds back output, and the noninverting input is grounded. Pulse heights are ±6 V with times 60 and 120 ms."
+          }
+        },
+        "prerequisites": {
+          "zh": "电容电流；零初始条件；分段积分与连续性。",
+          "en": "Capacitor current; zero initial condition; piecewise integration and continuity."
+        },
+        "recognition": {
+          "zh": "先算RC，再用斜率−v_i/(RC)逐段累计；电容电压与输出在输入跳变处连续。",
+          "en": "Calculate RC, then accumulate slopes −v_i/(RC) interval by interval. Capacitor and output voltages stay continuous at input steps."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）1 V阶跃",
+              "en": "(1) A 1 V step"
+            },
+            "text": {
+              "zh": "RC=100 kΩ×2 μF=0.2 s，输出从0以−5 V/s下降。",
+              "en": "RC=100 kΩ×2 μF=0.2 s, so output starts at zero and falls at −5 V/s."
+            },
+            "formula": "v_o(t)=-\\frac1{RC}\\int_0^t v_i(\\tau)\\,d\\tau=-5t\\,\\mathrm V\\quad(t\\text{ in s}),\\qquad v_o(1\\,\\mathrm s)=-5\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "（2）首脉冲面积",
+              "en": "(2) First pulse area"
+            },
+            "text": {
+              "zh": "新的RC=0.047 s=47 ms。0～60 ms斜率−6/47 V/ms，60 ms时到达−360/47≈−7.659574 V。",
+              "en": "New RC is 0.047 s=47 ms. From 0 to 60 ms, slope is −6/47 V/ms, reaching −360/47≈−7.659574 V."
+            },
+            "formula": "v_o(60\\,\\mathrm{ms})=-6\\frac{60}{47}=-\\frac{360}{47}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "（2）负脉冲和完整分段式",
+              "en": "(2) Negative pulse and full piecewise result"
+            },
+            "text": {
+              "zh": "后一个脉冲面积相反，输出以+6/47 V/ms回升，120 ms恢复0，此后输入0使输出保持0。令t_ms为以ms计的时间，见附波形。",
+              "en": "The opposite pulse reverses the slope to +6/47 V/ms, returning to zero at 120 ms and remaining there. Let t_ms denote numerical time in ms; see the plot."
+            },
+            "formula": "v_o=\\begin{cases}-\\frac6{47}t_{\\mathrm{ms}},&0\\le t_{\\mathrm{ms}}\\le60\\\\\\frac6{47}(t_{\\mathrm{ms}}-120),&60<t_{\\mathrm{ms}}\\le120\\\\0,&t_{\\mathrm{ms}}>120\\end{cases}\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "（1）t=1 s时v_o=−5 V。（2）0→60 ms线性降至−7.659574 V，60→120 ms线性回到0，此后保持0；完整分段式及波形见上。",
+          "en": "(1) v_o(1 s)=−5 V. (2) Fall linearly to −7.659574 V at 60 ms, rise to zero at 120 ms, then remain zero; see the piecewise expression and waveform."
+        },
+        "pitfalls": [
+          {
+            "zh": "第二问将C改为0.47 μF，不要仍用2 μF。",
+            "en": "Part (2) changes C to 0.47 μF."
+          },
+          {
+            "zh": "时间刻度是ms，必须与RC单位一致。",
+            "en": "Time is in ms; match units to RC."
+          },
+          {
+            "zh": "输入跳变改变斜率，不让积分器输出瞬间跳变。",
+            "en": "Input steps change slope, not output voltage instantaneously."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "用电容电荷ΔQ=∫v_i/R dt独立核对每段端点，首脉冲3.6 μC使输出下降7.659574 V，等面积反脉冲使总电荷恢复；另以离散节点电容积分检查连续性。",
+            "en": "Independent capacitor-charge integration verifies endpoints: the first pulse supplies 3.6 μC, corresponding to a 7.659574 V output fall; the equal opposite pulse restores charge. Discrete nodal integration also checks continuity."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "part1_V": -5,
+            "tau2_s": 0.047,
+            "part2Minimum_V": -7.659574468085107,
+            "part2Final_V": 0,
+            "firstPulseCharge_C": 3.6e-06
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "analytical-waveform",
+            "caption": {
+              "zh": "按题设参数推导的理想电路波形；不是SPICE仿真。",
+              "en": "Ideal-circuit waveform derived from the stated parameters; not a SPICE simulation."
+            },
+            "alt": {
+              "zh": "本题输入、输出波形及时间与电压刻度，数值与解析中的分段式一致。",
+              "en": "Input/output waveforms with labeled time and voltage scales, matching the derived piecewise expressions."
+            },
+            "figure": "solution-2.4.13.svg"
+          }
+        ],
+        "figure": "figure-2.4.13.png"
+      },
+      "AE-2.4.14": {
+        "id": "AE-2.4.14",
+        "bookId": "2.4.14",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "先求差分级，再对加权和积分",
+          "en": "Solve the subtractor, then integrate the weighted sum"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 49,
+          "pdfPage": 82,
+          "figure": "图题2.4.14",
+          "figurePrintedPage": 49,
+          "figurePdfPage": 82
+        },
+        "statement": {
+          "zh": "电路如图题2.4.14所示，设电容的初始电压v_C(0)=0。（1）写出v_o与v_i1、v_i2和v_i3之间的关系式；（2）当电阻满足R₁=R₂=R₃=R₄=R₅=R₆=R时，写出输出电压v_o的表达式。",
+          "en": "For Fig. 2.4.14 with capacitor initial voltage v_C(0)=0: (1) relate v_o to v_i1, v_i2 and v_i3; (2) specialize to all six resistors equal to R."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "A₁：v_i1经R₁接反相端、R₄反馈；v_i2经R₂接同相端、R₃接地。A₂：v_o1经R₅、v_i3经R₆接反相虚地，C反馈，同相端接地。",
+            "en": "A₁: v_i1 enters through R₁, with R₄ feedback; v_i2 reaches the noninverting node through R₂ with R₃ to ground. A₂ sums v_o1 through R₅ and v_i3 through R₆ at virtual ground, with C feedback and grounded noninverting input."
+          }
+        },
+        "prerequisites": {
+          "zh": "虚短与虚断；节点KCL；差模与共模输入定义。",
+          "en": "Equal input voltages and zero input currents; nodal KCL; differential and common-mode definitions."
+        },
+        "recognition": {
+          "zh": "A₂是反相加法积分器，所以A₁产生的正负号还要整体反相一次。",
+          "en": "A₂ is an inverting summing integrator, so the signs from A₁ are inverted again."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "A₁通用求差式",
+              "en": "General A₁ subtractor relation"
+            },
+            "text": {
+              "zh": "先分压求同相电位，再列反相节点KCL。",
+              "en": "First divide for the noninverting voltage, then apply inverting-node KCL."
+            },
+            "formula": "v_{o1}=\\left(1+\\frac{R_4}{R_1}\\right)\\frac{R_3}{R_2+R_3}v_{i2}-\\frac{R_4}{R_1}v_{i1}"
+          },
+          {
+            "title": {
+              "zh": "A₂电容KCL并积分",
+              "en": "A₂ capacitor KCL and integration"
+            },
+            "text": {
+              "zh": "零初始电容电压给v_o(0)=0。输出导数等于两个输入支路电流之和的−1/C倍。",
+              "en": "Zero initial capacitor voltage gives v_o(0)=0. Output derivative is −1/C times the sum of the input branch currents."
+            },
+            "formula": "v_o(t)=\\frac1C\\int_0^t\\left[\\frac{R_4}{R_1R_5}v_{i1}(\\tau)-\\frac{(1+R_4/R_1)R_3}{(R_2+R_3)R_5}v_{i2}(\\tau)-\\frac{v_{i3}(\\tau)}{R_6}\\right]d\\tau"
+          },
+          {
+            "title": {
+              "zh": "等值电阻化简",
+              "en": "Equal-resistor simplification"
+            },
+            "text": {
+              "zh": "A₁输出v_i2−v_i1，积分级再反相，把符号整理为v_i1−v_i2−v_i3。",
+              "en": "A₁ gives v_i2−v_i1; integration inverts again to produce v_i1−v_i2−v_i3."
+            },
+            "formula": "\\boxed{v_o(t)=\\frac1{RC}\\int_0^t[v_{i1}(\\tau)-v_{i2}(\\tau)-v_{i3}(\\tau)]\\,d\\tau}"
+          }
+        ],
+        "answer": {
+          "zh": "一般式见步骤；六电阻相等时，v_o=(1/RC)∫₀ᵗ(v_i1−v_i2−v_i3)dτ，v_o(0)=0。",
+          "en": "Use the general expression above. For equal resistors, v_o=(1/RC)∫₀ᵗ(v_i1−v_i2−v_i3)dτ with v_o(0)=0."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把A₁的输入正负号直接当最终输出符号。",
+            "en": "Do not copy A₁’s signs directly to the final output."
+          },
+          {
+            "zh": "非等值时同相输入系数需保留分压和闭环增益。",
+            "en": "For unequal values, retain both the divider and feedback factors."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "随机正电阻与输入独立解A₁节点KCL，再用A₂虚地电容KCL求导数，与一般积分式的被积函数一致；等值时逐路单位输入检查+1、−1、−1。",
+            "en": "Independent A₁ node solves with random positive resistors and inputs followed by A₂ capacitor KCL match the general integrand; equal-resistor unit inputs verify +1/−1/−1 signs."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "equalIntegrandCoefficients": [
+              1,
+              -1,
+              -1
+            ]
+          }
+        },
+        "figure": "figure-2.4.14.png"
+      },
+      "AE-2.4.15": {
+        "id": "AE-2.4.15",
+        "bookId": "2.4.15",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "同相低通与反相积分恰好配平",
+          "en": "A matched low-pass input and integrator produce exact differencing"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 49,
+          "pdfPage": 82,
+          "figure": "图题2.4.15",
+          "figurePrintedPage": 49,
+          "figurePdfPage": 82
+        },
+        "statement": {
+          "zh": "差分式积分运算电路如图题2.4.15所示，设两电容器上的初始电压为零，且C₁=C₂=C，R₁=R₂=R。（1）当v_i1=0时，推导v_o与v_i2的关系；（2）当v_i2=0时，推导v_o与v_i1的关系；（3）求v_o与v_i1、v_i2的关系式。",
+          "en": "For the differential integrator in Fig. 2.4.15, both capacitors initially have zero voltage, C₁=C₂=C and R₁=R₂=R. (1) Derive the response to v_i2 with v_i1=0. (2) Derive the response to v_i1 with v_i2=0. (3) Combine both inputs."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "v_i1经R₁接反相端，C₁从输出反馈；v_i2经R₂接同相端，C₂由同相端接地。",
+            "en": "v_i1 reaches the inverting input through R₁ with capacitor C₁ feedback. v_i2 reaches the noninverting input through R₂, with C₂ from that node to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "叠加定理；RC低通；理想运放电容KCL；零初值拉普拉斯变换。",
+          "en": "Superposition; RC low-pass; op-amp capacitor KCL; zero-initial-condition Laplace transforms."
+        },
+        "recognition": {
+          "zh": "不能把同相端直接视为v_i2；它先经过RC低通。这个低通与同相闭环传输相乘后，恰好化成正积分。",
+          "en": "The noninverting node is not v_i2; it follows an RC low-pass. Multiplication by the noninverting closed-loop transfer yields a positive integrator."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）只加v_i2",
+              "en": "(1) Apply v_i2 alone"
+            },
+            "text": {
+              "zh": "同相节点传输为1/(1+sRC)，带电容反馈的同相增益为1+1/(sRC)。二者相乘后消去1+sRC。",
+              "en": "The noninverting node has transfer 1/(1+sRC), while the closed-loop gain from that node is 1+1/(sRC). Their product cancels 1+sRC."
+            },
+            "formula": "\\frac{V_o(s)}{V_{i2}(s)}=\\left(1+\\frac1{sRC}\\right)\\frac1{1+sRC}=\\frac1{sRC}\\quad\\Rightarrow\\quad v_o(t)=\\frac1{RC}\\int_0^t v_{i2}(\\tau)\\,d\\tau"
+          },
+          {
+            "title": {
+              "zh": "（2）只加v_i1",
+              "en": "(2) Apply v_i1 alone"
+            },
+            "text": {
+              "zh": "v_i2=0且C₂初压0，使同相端恒0，退化为普通反相积分器。",
+              "en": "With v_i2=0 and zero C₂ voltage, the noninverting node remains at zero, leaving an inverting integrator."
+            },
+            "formula": "\\frac{V_o(s)}{V_{i1}(s)}=-\\frac1{sRC}\\quad\\Rightarrow\\quad v_o(t)=-\\frac1{RC}\\int_0^t v_{i1}(\\tau)\\,d\\tau"
+          },
+          {
+            "title": {
+              "zh": "（3）叠加并用时域KCL核对",
+              "en": "(3) Superpose and check with time-domain KCL"
+            },
+            "text": {
+              "zh": "令v_p=v_n，C₂的KCL给RC·dv_p/dt=v_i2−v_p；C₁反馈给RC·dv_o/dt=RC·dv_p/dt+v_p−v_i1。相加抵消v_p，得到差分积分；两电容零初值使v_o(0)=0。",
+              "en": "C₂ KCL gives RC·dv_p/dt=v_i2−v_p. C₁ feedback gives RC·dv_o/dt=RC·dv_p/dt+v_p−v_i1. Substitution cancels v_p, yielding differential integration; both zero initial voltages imply v_o(0)=0."
+            },
+            "formula": "\\boxed{v_o(t)=\\frac1{RC}\\int_0^t[v_{i2}(\\tau)-v_{i1}(\\tau)]\\,d\\tau}"
+          }
+        ],
+        "answer": {
+          "zh": "分别为正积分v_i2、负积分v_i1；总输出v_o=(1/RC)∫₀ᵗ(v_i2−v_i1)dτ，v_o(0)=0。",
+          "en": "The two responses are positive integration of v_i2 and negative integration of v_i1; total v_o=(1/RC)∫₀ᵗ(v_i2−v_i1)dτ, with v_o(0)=0."
+        },
+        "pitfalls": [
+          {
+            "zh": "匹配R、C和零初值是抵消成立的条件。",
+            "en": "Matched R/C values and zero initial conditions are required for the cancellation."
+          },
+          {
+            "zh": "同相端先低通，不可跳过后恰好得到错误的额外直通项。",
+            "en": "Retain the noninverting low-pass to avoid an erroneous direct-feedthrough term."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立复频域双节点KCL扫描频率与输入，核对两个单输入传输及叠加；时域两个电容微分方程直接消元确认输出导数。",
+            "en": "Independent complex-frequency two-node KCL scans verify both single-input transfers and superposition; direct elimination of the two capacitor ODEs independently verifies the output derivative."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "transferVi1": "-1/(sRC)",
+            "transferVi2": "1/(sRC)"
+          }
+        },
+        "figure": "figure-2.4.15.png"
+      },
+      "AE-2.4.16": {
+        "id": "AE-2.4.16",
+        "bookId": "2.4.16",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "梯形求斜率，连续拐点不产生冲激",
+          "en": "Differentiate the trapezoid; continuous corners do not create impulses"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 49,
+          "pdfPage": 82,
+          "figure": "图题2.4.16",
+          "figurePrintedPage": 49,
+          "figurePdfPage": 82
+        },
+        "statement": {
+          "zh": "微分电路及其输入电压波形如图题2.4.16所示，设R=10 kΩ，C=100 μF，试定量画出输出电压v_o的波形。输入0～10 s从0线性升至1 V，10～30 s保持1 V，30～40 s线性降至0，随后为0。",
+          "en": "For the differentiator and input waveform in Fig. 2.4.16, R=10 kΩ and C=100 μF. Draw the quantitative output. Input rises from 0 to 1 V in 0–10 s, stays at 1 V in 10–30 s, falls to zero in 30–40 s, then stays zero."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "输入经C到反相端，反馈R，同相端接地；图b时间单位为秒，梯形顶端1 V、转折10、30、40 s。",
+            "en": "Input passes through C to the inverting node with R feedback and grounded noninverting input. Time is in seconds, with a 1 V trapezoid and corners at 10, 30 and 40 s."
+          }
+        },
+        "prerequisites": {
+          "zh": "电容电流i=C·dv_i/dt；反相虚地与KCL；分段斜率。",
+          "en": "Capacitor current i=C·dv_i/dt; virtual ground and KCL; piecewise slopes."
+        },
+        "recognition": {
+          "zh": "RC=1 s。输出看输入斜率，不看输入电平；1 V平顶的输出是0，不是−1 V。",
+          "en": "RC=1 s. Output follows input slope rather than input level; a flat 1 V top gives zero output."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "时间常数与微分关系",
+              "en": "Time constant and differentiation"
+            },
+            "text": {
+              "zh": "用统一单位计算10⁴ Ω×100×10⁻⁶ F=1 s。",
+              "en": "Consistent units give 10⁴ Ω×100×10⁻⁶ F=1 s."
+            },
+            "formula": "v_o=-RC\\frac{dv_i}{dt}=-1\\,\\mathrm s\\frac{dv_i}{dt}"
+          },
+          {
+            "title": {
+              "zh": "逐段输出",
+              "en": "Output by interval"
+            },
+            "text": {
+              "zh": "上升段斜率+0.1 V/s，输出−0.1 V；平顶0；下降段−0.1 V/s，输出+0.1 V；此后0。",
+              "en": "Rising slope +0.1 V/s gives −0.1 V output; the flat top gives zero; falling slope −0.1 V/s gives +0.1 V; then zero."
+            },
+            "formula": "v_o(t)=\\begin{cases}-0.1\\,\\mathrm V,&0<t<10\\,\\mathrm s\\\\0,&10<t<30\\,\\mathrm s\\\\+0.1\\,\\mathrm V,&30<t<40\\,\\mathrm s\\\\0,&t>40\\,\\mathrm s\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "转折点的理想化处理",
+              "en": "Ideal behavior at corners"
+            },
+            "text": {
+              "zh": "输入连续、只有斜率改变，所以输出是有限阶跃而非狄拉克冲激；理想导数在转折瞬间按左右极限说明，不给唯一瞬时值。真实运放转换受带宽约束。",
+              "en": "Input is continuous with slope changes, so output has finite steps rather than Dirac impulses. At corners use one-sided limits, without a unique ideal instantaneous derivative; real transitions have finite bandwidth."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "0～10 s输出−0.1 V；10～30 s为0；30～40 s为+0.1 V；之后0。转折点取单侧极限，输入连续所以无冲激。",
+          "en": "Output is −0.1 V in 0–10 s, zero in 10–30 s, +0.1 V in 30–40 s, then zero. Use one-sided limits at corners; continuous input gives no impulse."
+        },
+        "pitfalls": [
+          {
+            "zh": "C是100 μF，时间轴为s，不能改成nF或ms。",
+            "en": "C is 100 μF and time is in seconds."
+          },
+          {
+            "zh": "不要把输入斜率跳变误当输入电压跳变。",
+            "en": "A slope discontinuity is not a voltage discontinuity."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立由每段Δv/Δt求电容电流±10 μA，再由反馈电阻乘电流得∓0.1 V；输出全时段积分反向恢复原梯形的增减量。",
+            "en": "Independent Δv/Δt gives capacitor currents ±10 μA and resistor drops ∓0.1 V; reverse integration of the output recovers the trapezoid changes."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "RC_s": 1,
+            "levels_V": [
+              -0.1,
+              0,
+              0.1,
+              0
+            ],
+            "corners_s": [
+              0,
+              10,
+              30,
+              40
+            ],
+            "impulses": false
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "analytical-waveform",
+            "caption": {
+              "zh": "按题设参数推导的理想电路波形；不是SPICE仿真。",
+              "en": "Ideal-circuit waveform derived from the stated parameters; not a SPICE simulation."
+            },
+            "alt": {
+              "zh": "本题输入、输出波形及时间与电压刻度，数值与解析中的分段式一致。",
+              "en": "Input/output waveforms with labeled time and voltage scales, matching the derived piecewise expressions."
+            },
+            "figure": "solution-2.4.16.svg"
+          }
+        ],
+        "figure": "figure-2.4.16.png"
+      },
+      "AE-2.4.17": {
+        "id": "AE-2.4.17",
+        "bookId": "2.4.17",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "两个极点限制微分频带",
+          "en": "Two poles bound the useful differentiation band"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 50,
+          "pdfPage": 83,
+          "figure": "图题2.4.17",
+          "figurePrintedPage": 50,
+          "figurePdfPage": 83
+        },
+        "statement": {
+          "zh": "一实用微分电路如图题2.4.17所示，它具有衰减高频噪声的作用。（1）确定电路的传递函数V_o(s)/V_i(s)；（2）若R₁=R₂=R，C₁=C₂=C，试问应当怎样限制v_i的频率，才能使电路不失去微分功能？",
+          "en": "The practical differentiator in Fig. 2.4.17 attenuates high-frequency noise. (1) Determine V_o(s)/V_i(s). (2) If R₁=R₂=R and C₁=C₂=C, what input-frequency restriction preserves differentiation?"
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "输入串联R₁、C₁到反相虚地；反馈R₂与C₂并联，同相端接地。",
+            "en": "Input has series R₁/C₁ to virtual ground; feedback is parallel R₂/C₂, with the noninverting input grounded."
+          }
+        },
+        "prerequisites": {
+          "zh": "复阻抗；反相传输−Z_f/Z_i；低频近似与幅相误差。",
+          "en": "Complex impedance; inverting transfer −Z_f/Z_i; low-frequency approximation and magnitude/phase error."
+        },
+        "recognition": {
+          "zh": "先按串联输入、并联反馈分别写阻抗。微分要求两个分母因子都接近1；不能只要求频率低于截止而不说明远低于。",
+          "en": "Write series input and parallel feedback impedances separately. Differentiation requires both denominator factors near 1; merely being below cutoff is insufficient."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）阻抗与传递函数",
+              "en": "(1) Impedances and transfer function"
+            },
+            "text": {
+              "zh": "理想虚地反相式给−Z_f/Z_i，零初始条件下写s域表达式。",
+              "en": "The ideal virtual-ground inverter gives −Z_f/Z_i under zero initial conditions."
+            },
+            "formula": "Z_i=R_1+\\frac1{sC_1},\\quad Z_f=\\frac{R_2}{1+sR_2C_2},\\quad\\boxed{\\frac{V_o}{V_i}=-\\frac{sR_2C_1}{(1+sR_1C_1)(1+sR_2C_2)}}"
+          },
+          {
+            "title": {
+              "zh": "（2）匹配参数下的频带",
+              "en": "(2) Frequency band for matched components"
+            },
+            "text": {
+              "zh": "R、C相等时H(s)=−sRC/(1+sRC)²。只有输入中需要微分的频率成分满足ωRC远小于1，才近似H≈−sRC。",
+              "en": "Matching gives H(s)=−sRC/(1+sRC)². Desired input-frequency components must satisfy ωRC≪1 to approximate H≈−sRC."
+            },
+            "formula": "\\omega RC\\ll1\\quad\\Longleftrightarrow\\quad f\\ll\\frac1{2\\pi RC};\\qquad v_o\\approx-RC\\frac{dv_i}{dt}"
+          },
+          {
+            "title": {
+              "zh": "给可核查的误差尺度",
+              "en": "Quantify the approximation"
+            },
+            "text": {
+              "zh": "令x=ωRC，实际传输与理想微分的比为1/(1+jx)²，幅度比1/(1+x²)，额外相位−2 arctan x。x=0.1时幅度低约0.99%，仍有约−11.42°相位偏差；频率上限应由允许的幅相误差决定。",
+              "en": "For x=ωRC, actual/ideal transfer is 1/(1+jx)², with magnitude 1/(1+x²) and extra phase −2 arctan x. At x=0.1 magnitude is about 0.99% low but phase error is still −11.42°; select the band from acceptable magnitude and phase errors."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "高频噪声为何受到衰减",
+              "en": "Why high-frequency noise is attenuated"
+            },
+            "text": {
+              "zh": "高频时传输衰减为1/ω，而普通理想微分器增益随ω升高；两个极点抑制高频放大，但不能在高频仍称其精确微分。",
+              "en": "At high frequency the gain decays as 1/ω, unlike the increasing gain of an ideal differentiator. Its poles suppress high-frequency amplification, at the cost of losing high-frequency differentiation."
+            },
+            "formula": "|sRC|\\gg1:\\qquad H(s)\\approx-\\frac1{sRC}"
+          }
+        ],
+        "answer": {
+          "zh": "H(s)=−sR₂C₁/[(1+sR₁C₁)(1+sR₂C₂)]。匹配时H=−sRC/(1+sRC)²；输入需满足ωRC≪1，即f≪1/(2πRC)，具体范围取决于允许幅相误差。",
+          "en": "H(s)=−sR₂C₁/[(1+sR₁C₁)(1+sR₂C₂)]. For matched values H=−sRC/(1+sRC)²; require ωRC≪1 or f≪1/(2πRC), with the usable band determined by allowed magnitude/phase errors."
+        },
+        "pitfalls": [
+          {
+            "zh": "两个RC分母都要保留，不能把实用微分器写成理想−sRC。",
+            "en": "Retain both RC factors; the practical differentiator is not exactly −sRC."
+          },
+          {
+            "zh": "ω是rad/s，f是Hz，转换需要2π。",
+            "en": "ω is in rad/s and f in Hz; retain 2π."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立由输入支路电流和反馈支路电流KCL扫描复频率，核对传输的低频微分、高频衰减及x=0.1的幅相误差。",
+            "en": "Independent complex-frequency input/feedback branch KCL verifies low-frequency differentiation, high-frequency rolloff and magnitude/phase errors at x=0.1."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "transfer": "-s*R2*C1/((1+s*R1*C1)*(1+s*R2*C2))",
+            "ratioAtX01": {
+              "magnitude": 0.9900990099009901,
+              "phase_deg": -11.421186274999286
+            }
+          }
+        },
+        "figure": "figure-2.4.17.png"
+      },
+      "AE-2.4.18": {
+        "id": "AE-2.4.18",
+        "bookId": "2.4.18",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "本题全部小问已核读并独立验算，误差与理想模型条件另行说明。",
+          "en": "All parts were read and independently checked, with tolerance and ideal-model assumptions stated explicitly."
+        },
+        "title": {
+          "zh": "反相放大、反相积分，再做反相求和",
+          "en": "Invert, integrate, then invert their sum"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 50,
+          "pdfPage": 83,
+          "figure": "图题2.4.18",
+          "figurePrintedPage": 50,
+          "figurePdfPage": 83
+        },
+        "statement": {
+          "zh": "电路如图题2.4.18a所示，设电容器C上的初始电压为零。（1）求v_o1、v_o2、v_o与输入电压的关系；（2）当输入电压v_i1、v_i2如图题2.4.18b所示时，试定量画出v_o的波形。图中R₁=R₂=R₃=R₄=R₂₃=100 kΩ、R₂₁=300 kΩ、C=100 μF；0～5 s内v_i1=−0.1 V，v_i2从+3 V开始每1 s在±3 V之间切换。",
+          "en": "For Fig. 2.4.18(a), capacitor C initially has zero voltage. (1) Relate v_o1, v_o2 and v_o to the inputs. (2) Draw a quantitative v_o for (b). R₁=R₂=R₃=R₄=R₂₃=100 kΩ, R₂₁=300 kΩ and C=100 μF. Over 0–5 s, v_i1=−0.1 V and v_i2 alternates ±3 V every second, beginning positive."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "A₁反相增益−R₂₁/R₁；A₂输入R₂、反馈C为积分器；A₃从v_o1经R₃、v_o2经R₄求和，反馈R₂₃。图b为恒定−0.1 V及1 s间隔±3 V方波。",
+            "en": "A₁ inverts with −R₂₁/R₁; A₂ integrates through R₂/C; A₃ sums v_o1/R₃ and v_o2/R₄ with R₂₃ feedback. Figure (b) gives constant −0.1 V and an alternating ±3 V square wave at 1 s intervals."
+          }
+        },
+        "prerequisites": {
+          "zh": "反相放大；积分；求和；分段连续累计。",
+          "en": "Inverting gain; integration; summation; continuous piecewise accumulation."
+        },
+        "recognition": {
+          "zh": "每级先算中间输出，最后再做求和反相。C×R₂=10 s，所以积分斜率大小为0.3 V/s，不是3 V/s。",
+          "en": "Compute intermediate outputs before final inversion. R₂C=10 s gives integration slopes of 0.3 V/s, not 3 V/s."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）三个输出关系",
+              "en": "(1) Three output relations"
+            },
+            "text": {
+              "zh": "A₁为−3倍；A₂零初值积分；A₃两输入权重均−1。",
+              "en": "A₁ gain is −3, A₂ integrates from zero, and A₃ has −1 weights on both inputs."
+            },
+            "formula": "v_{o1}=-3v_{i1},\\qquad v_{o2}=-\\frac1{10\\,\\mathrm s}\\int_0^t v_{i2}(\\tau)\\,d\\tau,\\qquad v_o=-v_{o1}-v_{o2}=3v_{i1}+\\frac1{10\\,\\mathrm s}\\int_0^t v_{i2}(\\tau)\\,d\\tau"
+          },
+          {
+            "title": {
+              "zh": "（2）逐段累计积分输出",
+              "en": "(2) Accumulate the integrator output"
+            },
+            "text": {
+              "zh": "v_o1恒为+0.3 V；v_o2在每个+3 V区间以−0.3 V/s下降，在−3 V区间以+0.3 V/s上升，端点依次0、−0.3、0、−0.3、0、−0.3 V。",
+              "en": "v_o1 is +0.3 V. v_o2 falls at −0.3 V/s during +3 V intervals and rises at +0.3 V/s during −3 V intervals; values at t=0…5 s are 0, −0.3, 0, −0.3, 0, −0.3 V."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "最终输出及分段式",
+              "en": "Final output and piecewise waveform"
+            },
+            "text": {
+              "zh": "v_o=−0.3−v_o2，因此最终端点依次−0.3、0、−0.3、0、−0.3、0 V，连成连续三角波。时间t以秒计，只在原图0～5 s区间作答。",
+              "en": "v_o=−0.3−v_o2, giving endpoint values −0.3, 0, −0.3, 0, −0.3, 0 V, joined linearly as a continuous triangular waveform. Time t is in seconds; the result covers only the plotted 0–5 s interval."
+            },
+            "formula": "v_o(t)=\\begin{cases}-0.3+0.3(t-2k),&2k\\le t\\le2k+1,\\ k=0,1,2\\\\-0.3[t-(2k+1)],&2k+1<t\\le2k+2,\\ k=0,1\\end{cases}\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "v_o1=−3v_i1，v_o2=−(1/10 s)∫v_i2dτ，v_o=−v_o1−v_o2。给定输入下0～5 s输出在−0.3与0 V间线性往返，t=0、1、2、3、4、5 s处分别−0.3、0、−0.3、0、−0.3、0 V。",
+          "en": "v_o1=−3v_i1, v_o2=−(1/10 s)∫v_i2dτ and v_o=−v_o1−v_o2. For the given input, output ramps between −0.3 and 0 V, with values −0.3, 0, −0.3, 0, −0.3, 0 V at t=0…5 s."
+        },
+        "pitfalls": [
+          {
+            "zh": "积分器每段必须继承上一段末值，不能反复重置0。",
+            "en": "Carry each interval’s final value into the next; do not reset the integrator."
+          },
+          {
+            "zh": "方波先+3 V，最终输出先上升。",
+            "en": "The square wave begins at +3 V, so final output initially rises."
+          },
+          {
+            "zh": "原图只规定0～5 s，不擅自规定此后输入与输出。",
+            "en": "Do not invent input or output behavior beyond the plotted 0–5 s interval."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立以每段30 μC电容电荷计算v_o2端点，再由A₃原虚地KCL求最终输出；逐段检查连续性、斜率和1 s端点。",
+            "en": "Independent 30 μC capacitor-charge increments determine v_o2 endpoints, followed by original A₃ virtual-ground KCL for final output; continuity, slopes and all 1 s endpoints are checked."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想运放、输入电流为零、负反馈稳定且未饱和；电阻/电容按题设，实际输出余量须支持所得电压。",
+            "en": "Ideal op amps with zero input currents, stable negative feedback and no clipping; use the stated components and sufficient actual output compliance."
+          },
+          "results": {
+            "tau_s": 10,
+            "vo1_V": 0.3,
+            "vo2Endpoints_V": [
+              0,
+              -0.3,
+              0,
+              -0.3,
+              0,
+              -0.3
+            ],
+            "voEndpoints_V": [
+              -0.3,
+              0,
+              -0.3,
+              0,
+              -0.3,
+              0
+            ],
+            "times_s": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "analytical-waveform",
+            "caption": {
+              "zh": "按题设参数推导的理想电路波形；不是SPICE仿真。",
+              "en": "Ideal-circuit waveform derived from the stated parameters; not a SPICE simulation."
+            },
+            "alt": {
+              "zh": "本题输入、输出波形及时间与电压刻度，数值与解析中的分段式一致。",
+              "en": "Input/output waveforms with labeled time and voltage scales, matching the derived piecewise expressions."
+            },
+            "figure": "solution-2.4.18.svg"
+          }
+        ],
+        "figure": "figure-2.4.18.png"
       }
     }
   }
