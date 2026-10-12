@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="650" viewBox="0 0 840 650" role="img" aria-labelledby="title desc">
+  <title id="title">Exercise 1-4: exact current and absorbed-power waveforms</title>
+  <desc id="desc">i is 10t amperes for zero to one second, zero from one to two, minus five from two to three; absorbed power is minus twenty t watts, zero, then ten watts. Corner derivatives are not assigned: open circles show one-sided limits. A zero-charge continuation is shown after three seconds.</desc>
+  <defs><marker id="axis" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#536172"/></marker></defs>
+  <rect width="840" height="650" rx="20" fill="white"/>
+  <g font-family="Arial, sans-serif" fill="#192435">
+    <text x="420" y="35" font-size="23" text-anchor="middle">Current and absorbed power, u = −2 V</text>
+    <text x="95" y="70" font-size="20">i(t) / A</text>
+    <path d="M95 270V85M75 190H720" stroke="#536172" stroke-width="1.8" fill="none" marker-end="url(#axis)"/>
+    <path d="M95 110H605M95 230H605" stroke="#dce2ea" fill="none"/>
+    <g fill="#536172" font-size="17" text-anchor="end"><text x="80" y="116">10</text><text x="80" y="196">0</text><text x="80" y="236">−5</text></g>
+    <g stroke="#a8b1bd" stroke-dasharray="5 5" stroke-width="1.5"><path d="M265 110V190"/><path d="M435 190V230"/><path d="M605 190V230"/></g>
+    <g fill="none" stroke="#225ac7" stroke-width="4"><path d="M95 190L265 110M265 190H435M435 230H605M605 190H690"/></g>
+    <g fill="white" stroke="#225ac7" stroke-width="2.5"><circle cx="265" cy="110" r="5"/><circle cx="265" cy="190" r="5"/><circle cx="435" cy="190" r="5"/><circle cx="435" cy="230" r="5"/><circle cx="605" cy="230" r="5"/><circle cx="605" cy="190" r="5"/></g>
+    <g font-size="17" fill="#225ac7"><text x="165" y="130">10t</text><text x="337" y="176">0</text><text x="503" y="253">−5</text></g>
+    <g fill="#536172" font-size="17" text-anchor="middle"><text x="95" y="294">0</text><text x="265" y="294">1</text><text x="435" y="294">2</text><text x="605" y="294">3</text></g><text x="735" y="196" font-size="17" fill="#536172">t / s</text>
+    <text x="95" y="350" font-size="20">p_abs(t) / W</text>
+    <path d="M95 585V375M75 470H720" stroke="#536172" stroke-width="1.8" fill="none" marker-end="url(#axis)"/>
+    <path d="M95 430H605M95 550H605" stroke="#dce2ea" fill="none"/>
+    <g fill="#536172" font-size="17" text-anchor="end"><text x="80" y="436">10</text><text x="80" y="476">0</text><text x="80" y="556">−20</text></g>
+    <g stroke="#a8b1bd" stroke-dasharray="5 5" stroke-width="1.5"><path d="M265 470V550"/><path d="M435 430V470"/><path d="M605 430V470"/></g>
+    <g fill="none" stroke="#bb3c2c" stroke-width="4"><path d="M95 470L265 550M265 470H435M435 430H605M605 470H690"/></g>
+    <g fill="white" stroke="#bb3c2c" stroke-width="2.5"><circle cx="265" cy="550" r="5"/><circle cx="265" cy="470" r="5"/><circle cx="435" cy="470" r="5"/><circle cx="435" cy="430" r="5"/><circle cx="605" cy="430" r="5"/><circle cx="605" cy="470" r="5"/></g>
+    <g font-size="17" fill="#bb3c2c"><text x="163" y="538">−20t</text><text x="337" y="458">0</text><text x="504" y="416">10</text></g>
+    <g fill="#536172" font-size="17" text-anchor="middle"><text x="95" y="608">0</text><text x="265" y="608">1</text><text x="435" y="608">2</text><text x="605" y="608">3</text></g><text x="735" y="476" font-size="17" fill="#536172">t / s</text>
+    <text x="420" y="636" font-size="16" text-anchor="middle" fill="#536172">Open circles: one-sided limits. Dashed lines: jumps, not impulses.</text>
+  </g>
+</svg>

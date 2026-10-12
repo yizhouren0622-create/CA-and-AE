@@ -8,6 +8,8 @@ ROOT=Path(__file__).resolve().parent
 def read(name): return json.loads((ROOT/'data'/name).read_text())
 syllabus=read('syllabus.json'); lessons=read('lessons.json'); papers=read('exams.json')
 library=read('exercises.json')
+revision_files=[Path(__file__)]+sorted((ROOT/'data').glob('*.json'))
+SITE_REVISION=hashlib.sha256(b''.join(p.read_bytes() for p in revision_files)).hexdigest()[:12]
 courses={c['id']:c for c in syllabus['courses']}
 def complete(solution): return bool(solution) and not solution.get('pendingSubparts')
 def checked_count(lib): return sum(complete(s) for s in lib['solutions'].values())
@@ -26,7 +28,9 @@ def items(zh,en):
 def figure(name,alt=None,source=False,caption_text=None):
     caption=b(caption_text) if caption_text else (bi('教材原图；版本与页码见本题来源。','Source textbook figure; see the edition and page references for this exercise.') if source else bi('示意图中的符号及取值以题干为准。','Use the definitions and values stated in the question.'))
     caption+=bi('点图查看原尺寸。','Select the figure to view it at full size.')
-    return f'<figure><a class="figure-link" href="assets/{esc(name)}" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/{esc(name)}" alt="{esc(alt or "电路或特性示意图 / Circuit or characteristic diagram")}" loading="lazy"></a><figcaption>'+caption+'</figcaption></figure>'
+    image_revision=hashlib.sha256((ROOT/'assets'/name).read_bytes()).hexdigest()[:12]
+    image_url=f'assets/{esc(name)}?v={image_revision}'
+    return f'<figure><a class="figure-link" href="{image_url}" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="{image_url}" alt="{esc(alt or "电路或特性示意图 / Circuit or characteristic diagram")}" loading="lazy"></a><figcaption>'+caption+'</figcaption></figure>'
 def reveal(label,label_en,body,kind='solution'):
     return f'<details class="reveal {kind}"><summary>'+bi(label,label_en,'span')+f'</summary><div class="reveal-body">{body}</div></details>'
 def actions():
@@ -43,6 +47,7 @@ def page(filename,title,body,cid=None,kind='study'):
     for asset in ('site.css','course.css','site.js','course.js'):
         revision=hashlib.sha256((ROOT/'assets'/asset).read_bytes()).hexdigest()[:12]
         result=result.replace(f'assets/{asset}"',f'assets/{asset}?v={revision}"')
+    result=re.sub(r'href="([\w-]+\.html)(#[^"]*)?"',lambda m:f'href="{m[1]}?v={SITE_REVISION}{m[2] or ""}"',result)
     (ROOT/filename).write_text(result)
 def link(url,zh,en,desc,desc_en):
     return f'<a class="hub-link" href="{url}">'+bi(zh,en,'strong')+bi(desc,desc_en)+'</a>'
@@ -117,24 +122,29 @@ for cid,c in courses.items():
         if sol:
             body+=b(sol['title'],'h3')+bi('题目原文','Transcribed question','h4')+b(sol['statement'],'p')
             if sol.get('completionNote'):body+=b(sol['completionNote'],'p','source-line')
-            if sol.get('figure'):body+=figure(sol['figure'],sol['diagram']['alt']['zh']+' / '+sol['diagram']['alt']['en'],source=True)+b(sol['diagram']['alt'],'p','diagram-description')
+            if sol.get('figure'):
+                source_caption={'zh':'教材原题截图；版本与页码见本题来源。','en':'Original textbook statement crop; see this exercise’s edition and page references.'} if sol['diagram'].get('kind')=='statement-crop' else None
+                body+=figure(sol['figure'],sol['diagram']['alt']['zh']+' / '+sol['diagram']['alt']['en'],source=True,caption_text=source_caption)+b(sol['diagram']['alt'],'p','diagram-description')
             if sol.get('source',{}).get('figurePdfPage'):body+=bi(f'本题图在书第{sol["source"]["figurePrintedPage"]}页／PDF第{sol["source"]["figurePdfPage"]}页。',f'The source figure is on printed p. {sol["source"]["figurePrintedPage"]} / PDF p. {sol["source"]["figurePdfPage"]}.','p','source-line')
             hint=(bi('前置知识','Prerequisites','h4')+b(sol['prerequisites']) if isinstance(sol.get('prerequisites'),dict) else '')+b(sol['recognition'])
             body+=reveal('先想：怎么识别与起步','Hint: recognition and first step',hint,kind='hint')
             steps=''
             for st in sol['steps']:
                 steps+=b(st['title'],'h4')+b(st['text'],'p')
-                if st.get('formula'):steps+=math(st['formula'].replace('\\\\','\\'))
+                if st.get('formula'):steps+=math(st['formula'])
             for diagram in sol.get('solutionDiagrams',[]):
-                caption={'zh':'实际SPICE瞬态数据；运行条件和模型见本题解析。','en':'Executed SPICE transient data; see this solution for model and run conditions.'} if diagram.get('kind')=='executed-spice-waveforms' else None
+                caption=diagram.get('caption') or ({'zh':'实际SPICE数据；运行条件和模型见本题解析。','en':'Executed SPICE data; see this solution for model and run conditions.'} if diagram.get('kind','').startswith('executed-spice') else None)
                 steps+=figure(diagram['figure'],diagram['alt']['zh']+' / '+diagram['alt']['en'],caption_text=caption)+b(diagram['alt'],'p','diagram-description')
             steps+=b(sol['answer'],'p','key')+bi('易错点','Common errors','h4')+'<ul>'+''.join(b(x,'li') for x in sol['pitfalls'])+'</ul>'+bi('核验依据','Verification','h4')
             if isinstance(sol['verification'].get('assumptions'),dict):steps+=b(sol['verification']['assumptions'],'p','scope-note')
             steps+=b(sol['verification']['methods'],'p')
             if sol['verification'].get('externalReferences'):
                 steps+=bi('参考模型依据','Model references','h4')+'<ul>'+''.join(f'<li><a href="{esc(ref["url"])}" target="_blank" rel="noopener">{esc(ref["title"])}</a></li>' for ref in sol['verification']['externalReferences'])+'</ul>'
-            if sol.get('simulation',{}).get('netlist'):
+            if sol.get('simulation',{}).get('netlists'):
+                steps+=bi('下载SPICE网表','Download SPICE netlists','h4')+'<ul>'+''.join(f'<li><a href="assets/{esc(n["file"])}" download>'+b(n['label'],'span')+'</a></li>' for n in sol['simulation']['netlists'])+'</ul>'
+            elif sol.get('simulation',{}).get('netlist'):
                 steps+=f'<p><a href="assets/{esc(sol["simulation"]["netlist"])}" download>'+bi('下载本题SPICE网表','Download this exercise’s SPICE netlist','span')+'</a></p>'
+            if sol.get('simulation',{}).get('instructions'):steps+=b(sol['simulation']['instructions'],'p','scope-note')
             body+=reveal('完整解析与结果核验' if complete(sol) else '已完成小问的解析与核验','Full solution & verification' if complete(sol) else 'Checked subpart solutions & verification',steps)
             body+=f'<label for="progress-{id}">'+bi('我的练习状态','My practice state','span')+f'<select id="progress-{id}" data-progress="{id}"><option value="new">未做 / Not attempted</option><option value="done">已独立完成 / Completed independently</option><option value="revisit">需要重做 / Revisit</option></select></label>'
         else:

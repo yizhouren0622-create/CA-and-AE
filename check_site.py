@@ -13,14 +13,22 @@ class Page(HTMLParser):
     def __init__(self):
         super().__init__()
         self.ids, self.links, self.math, self.languages = [], [], 0, Counter()
+        self.exercise, self.tables, self.exercise_table_rows = None, [], {}
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if 'id' in a: self.ids.append(a['id'])
+        if tag=='details' and a.get('id','').startswith(('CA-','AE-')): self.exercise=a['id']
+        if tag=='mtable': self.tables.append([self.exercise,0])
+        if tag=='mtr' and self.tables: self.tables[-1][1]+=1
         if tag in ('a', 'link') and a.get('href'): self.links.append(a['href'])
         if tag in ('img', 'script') and a.get('src'): self.links.append(a['src'])
         if tag == 'math': self.math += 1
         if tag == 'merror': errors.append('MathML error element')
         if a.get('data-lang'): self.languages[a['data-lang']] += 1
+    def handle_endtag(self,tag):
+        if tag=='mtable' and self.tables:
+            exercise,rows=self.tables.pop()
+            if exercise:self.exercise_table_rows.setdefault(exercise,[]).append(rows)
 
 pages = {}
 for path in ROOT.glob('*.html'):
@@ -67,6 +75,9 @@ for cid, lib in library.items():
         if not sol.get('steps'): errors.append(f'{key}: missing derivation')
         for step in sol.get('steps', []):
             bilingual(step.get('title'), f'{key}.step.title'); bilingual(step.get('text'), f'{key}.step.text')
+        expected_rows=Counter(1+step['formula'].count('\\\\') for step in sol['steps'] if '\\begin{cases}' in step.get('formula',''))
+        actual_rows=Counter(pages[cid+'-exercises.html'].exercise_table_rows.get(key,[]))
+        if expected_rows-actual_rows: errors.append(f'{key}: piecewise formula rows missing or collapsed')
         if sol.get('figure') and not (ROOT / 'assets' / sol['figure']).is_file(): errors.append(f'{key}: source figure missing')
     raw = json.dumps(lib, ensure_ascii=False)
     if any(s in raw for s in ('/Users/', 'wxid_', 'privatePath')): errors.append(f'{cid}: private source metadata')
