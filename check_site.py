@@ -46,9 +46,11 @@ def bilingual(value, where):
 
 library = load('exercises.json'); lessons = load('lessons.json'); exams = load('exams.json')
 scope = load('syllabus.json')
-total = solved = 0
+total = solved = partial = 0
 for cid, lib in library.items():
-    ids = [e['id'] for e in lib['items']]; total += len(ids); solved += len(lib['solutions'])
+    ids = [e['id'] for e in lib['items']]; total += len(ids)
+    solved += sum(not s.get('pendingSubparts') for s in lib['solutions'].values())
+    partial += sum(bool(s.get('pendingSubparts')) for s in lib['solutions'].values())
     if len(ids) != len(set(ids)): errors.append(f'{cid}: duplicate exercise ID')
     if sum(c['count'] for c in lib['chapters']) != len(ids): errors.append(f'{cid}: chapter counts')
     for ex in lib['items']:
@@ -59,6 +61,9 @@ for cid, lib in library.items():
         for field in ('title', 'statement', 'recognition', 'answer'):
             bilingual(sol.get(field), f'{key}.{field}')
         bilingual(sol.get('verification', {}).get('methods'), f'{key}.verification')
+        if sol.get('pendingSubparts'):
+            bilingual(sol.get('completionNote'), f'{key}.completionNote')
+            if not isinstance(sol['pendingSubparts'],list): errors.append(f'{key}: pending parts must be listed')
         if not sol.get('steps'): errors.append(f'{key}: missing derivation')
         for step in sol.get('steps', []):
             bilingual(step.get('title'), f'{key}.step.title'); bilingual(step.get('text'), f'{key}.step.text')
@@ -74,4 +79,4 @@ for paper in exams:
         if not set(q['topics']).issubset(valid): errors.append(f'{q["id"]}: invalid diagnosis topic')
         if not q['steps']['zh'] or len(q['steps']['zh']) != len(q['steps']['en']): errors.append(f'{q["id"]}: incomplete bilingual derivation')
 if errors: raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(pages)} pages; all internal links and bilingual blocks valid; {total} exercise IDs, {solved} checked solutions; {sum(p.math for p in pages.values())} MathML equations.')
+print(f'PASS: {len(pages)} pages; all internal links and bilingual blocks valid; {total} exercise IDs, {solved} complete checked solutions, {partial} partial solutions; {sum(p.math for p in pages.values())} MathML equations.')

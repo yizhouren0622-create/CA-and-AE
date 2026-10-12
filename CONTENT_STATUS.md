@@ -2,31 +2,31 @@
 
 此文件按实际核验进度记录，不把题号清单计作完成解答。 / An indexed ID is not a completed solution.
 
-| 课程 / Course | 全书主习题 / Inventory | 完整核验 / Checked | 待整理 / Pending | 指定作业 / Assigned |
-| --- | ---: | ---: | ---: | ---: |
-| 电路分析 / Circuit | 360 | 11 | 349 | 31 |
-| 模电 / Analog | 298 | 12 | 286 | 34 |
+| 课程 / Course | 全书主习题 / Inventory | 完整核验 / Complete | 部分解析 / Partial | 未开始 / Not started | 指定作业 / Assigned |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 电路分析 / Circuit | 360 | 31 | 0 | 329 | 31 |
+| 模电 / Analog | 298 | 34 | 0 | 264 | 34 |
 
 已完成的网站功能：两门课分入口、20个知识主题、2套原创诊断卷（共20题）、三种语言显示、公式与配图、逐题提示/解析、查漏链接、计时、自评分与重做记录、导出导入、打印。
 
 Implemented: separate course entries, 20 concept guides, 2 original papers (20 problems), three language modes, equations/figures, independent hints/solutions, review links, timer, self-scores, revisit records, export/import and printing.
 
-## 已核验题目 / Checked exercises
+## 完整核验题目 / Complete checked exercises
 
 ### 电路分析 / Circuit
 
-[1-5](circuit-exercises.html#CA-1-5), [1-7](circuit-exercises.html#CA-1-7), [1-24](circuit-exercises.html#CA-1-24), [1-26](circuit-exercises.html#CA-1-26), [1-30](circuit-exercises.html#CA-1-30), [1-32](circuit-exercises.html#CA-1-32), [1-45](circuit-exercises.html#CA-1-45), [2-3](circuit-exercises.html#CA-2-3), [2-11](circuit-exercises.html#CA-2-11), [2-12](circuit-exercises.html#CA-2-12), [2-20](circuit-exercises.html#CA-2-20)
+[1-5](circuit-exercises.html#CA-1-5), [1-7](circuit-exercises.html#CA-1-7), [1-24](circuit-exercises.html#CA-1-24), [1-26](circuit-exercises.html#CA-1-26), [1-30](circuit-exercises.html#CA-1-30), [1-32](circuit-exercises.html#CA-1-32), [1-45](circuit-exercises.html#CA-1-45), [2-3](circuit-exercises.html#CA-2-3), [2-11](circuit-exercises.html#CA-2-11), [2-12](circuit-exercises.html#CA-2-12), [2-20](circuit-exercises.html#CA-2-20), [2-21](circuit-exercises.html#CA-2-21), [3-4](circuit-exercises.html#CA-3-4), [3-10](circuit-exercises.html#CA-3-10), [3-16](circuit-exercises.html#CA-3-16), [3-17](circuit-exercises.html#CA-3-17), [3-19](circuit-exercises.html#CA-3-19), [3-22](circuit-exercises.html#CA-3-22), [3-29](circuit-exercises.html#CA-3-29), [5-7](circuit-exercises.html#CA-5-7), [5-11](circuit-exercises.html#CA-5-11), [5-15](circuit-exercises.html#CA-5-15), [5-24](circuit-exercises.html#CA-5-24), [5-27](circuit-exercises.html#CA-5-27), [5-29](circuit-exercises.html#CA-5-29), [5-31](circuit-exercises.html#CA-5-31), [7-6](circuit-exercises.html#CA-7-6), [7-12](circuit-exercises.html#CA-7-12), [7-17](circuit-exercises.html#CA-7-17), [7-23](circuit-exercises.html#CA-7-23), [7-24](circuit-exercises.html#CA-7-24)
 
 ### 模电 / Analog
 
-[2.3.2](analog-exercises.html#AE-2.3.2), [2.3.7](analog-exercises.html#AE-2.3.7), [2.4.5](analog-exercises.html#AE-2.4.5), [2.4.9](analog-exercises.html#AE-2.4.9), [3.2.2](analog-exercises.html#AE-3.2.2), [3.4.2](analog-exercises.html#AE-3.4.2), [3.4.3](analog-exercises.html#AE-3.4.3), [3.4.12](analog-exercises.html#AE-3.4.12), [3.4.13](analog-exercises.html#AE-3.4.13), [3.4.14](analog-exercises.html#AE-3.4.14), [4.1.1](analog-exercises.html#AE-4.1.1), [4.1.4](analog-exercises.html#AE-4.1.4)
+[2.3.2](analog-exercises.html#AE-2.3.2), [2.3.7](analog-exercises.html#AE-2.3.7), [2.4.5](analog-exercises.html#AE-2.4.5), [2.4.9](analog-exercises.html#AE-2.4.9), [3.2.2](analog-exercises.html#AE-3.2.2), [3.4.2](analog-exercises.html#AE-3.4.2), [3.4.3](analog-exercises.html#AE-3.4.3), [3.4.12](analog-exercises.html#AE-3.4.12), [3.4.13](analog-exercises.html#AE-3.4.13), [3.4.14](analog-exercises.html#AE-3.4.14), [4.1.1](analog-exercises.html#AE-4.1.1), [4.1.4](analog-exercises.html#AE-4.1.4), [4.2.2](analog-exercises.html#AE-4.2.2), [4.2.3](analog-exercises.html#AE-4.2.3), [4.4.1](analog-exercises.html#AE-4.4.1), [4.4.3](analog-exercises.html#AE-4.4.3), [4.5.1](analog-exercises.html#AE-4.5.1), [4.5.5](analog-exercises.html#AE-4.5.5), [5.1.1](analog-exercises.html#AE-5.1.1), [5.1.3](analog-exercises.html#AE-5.1.3), [5.2.2](analog-exercises.html#AE-5.2.2), [5.2.4](analog-exercises.html#AE-5.2.4), [5.2.7](analog-exercises.html#AE-5.2.7), [5.2.8](analog-exercises.html#AE-5.2.8), [8.1.1](analog-exercises.html#AE-8.1.1), [8.1.2](analog-exercises.html#AE-8.1.2), [8.1.7](analog-exercises.html#AE-8.1.7), [8.2.1](analog-exercises.html#AE-8.2.1), [8.4.1](analog-exercises.html#AE-8.4.1), [8.4.3](analog-exercises.html#AE-8.4.3), [10.2.3](analog-exercises.html#AE-10.2.3), [10.3.4](analog-exercises.html#AE-10.3.4), [10.8.2](analog-exercises.html#AE-10.8.2), [10.8.4](analog-exercises.html#AE-10.8.4)
 
 ## 核验边界 / Verification limits
 
-电路已整理题目均与所提供第3版的书后参考答案对照，并以KCL/KVL、节点方程、测试源、图论或功率平衡独立复核。模电题目按明确的器件模型及工作区条件推导，使用节点方程、理想二极管互补条件或独立单位换算复核；未声称已与完整外部答案库对照。近似模型及参数写在对应题目中。
+电路已整理题目均与所提供第3版的书后参考答案对照，并以KCL/KVL、节点方程、测试源、图论或功率平衡独立复核；附录若与原图参数或方程不符，差异会在对应题目中单独说明。模电题目按明确的器件模型及工作区条件推导，使用节点方程、理想二极管互补条件或独立单位换算复核；未声称已与完整外部答案库对照。近似模型及参数写在对应题目中。4.4.3的SPICE问已实际运行ngspice 47，并与独立复数节点方程对照。
 
-Circuit solutions are checked against the supplied 3rd-edition appendix and independent equations/topology/power checks. Analog solutions are derived under stated device models and verified independently; they are not represented as checked against a complete external answer key. Approximations and parameters are documented per exercise.
+Circuit solutions are compared with the supplied 3rd-edition appendix and independently verified through equations, topology or power checks. Discrepancies with source diagrams or governing equations are documented per exercise. Analog solutions are derived under stated device models and checked independently, without claiming comparison against a complete external answer key. Exercise 4.4.3 has an executed ngspice 47 simulation cross-checked against independent complex nodal equations.
 
-尚未完成：剩余教材题干和解析、部分章节的逐题范围映射，以及更综合的考试训练卷。继续按指定作业优先，再补范围内其他习题，最后覆盖全书其余章节。
+课程指定的65道主习题已全部完成（电路31道、模电34道）。尚未完成：其余593道教材主习题的题干和解析、部分章节的逐题范围映射，以及更综合的考试训练卷。后续先补范围内其他习题，再覆盖全书其余章节。
 
-Remaining: textbook statements/solutions, individual scope mapping in partially taught chapters, and more integrated exam practice. Assigned exercises are prioritized, followed by other in-scope exercises and then the rest of the books.
+All 65 assigned main exercises are complete (31 circuit, 34 analog). Remaining: statements and solutions for 593 other textbook exercises, individual scope mapping in partially taught chapters, and more integrated exam practice. Other in-scope exercises come next, followed by the rest of the books.

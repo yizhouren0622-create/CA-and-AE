@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+<title id="title">Exercise 4.4.3 midband equivalent</title>
+<desc id="desc">Gate through 2 megaohms and 75 kiloohms in series to ground. Source through 2 kiloohms to ground. Drain through 10 kiloohms to ground. Controlled current source gm times vgs from drain to source. Output is the drain voltage.</desc>
+<rect width="960" height="480" fill="#fffdf9"/>
+<g stroke="#283d3b" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<path d="M230 130H310 M150 130V190 M150 260V360 M150 190h-12v70h24v-70h-12 M150 130h20v-12h60v24h-60v-12"/>
+<path d="M560 90V150 L595 200 560 250 525 200 560 150 M560 250V290 M560 90H780V150 M780 220V360 M780 150h-12v70h24v-70h-12"/>
+<path d="M560 290V310 M560 380V410 M560 310h-12v70h24v-70h-12"/>
+<path d="M560 90H870 M560 290H650"/>
+<path d="M560 175V223 M550 211L560 225 570 211"/>
+<path d="M132 360H168 M138 369H162 M144 378H156 M762 360H798 M768 369H792 M774 378H786 M542 410H578 M548 419H572 M554 428H566"/>
+</g>
+<g fill="#283d3b"><circle cx="310" cy="130" r="5"/><circle cx="560" cy="90" r="5"/><circle cx="560" cy="290" r="5"/><circle cx="780" cy="90" r="5"/><circle cx="150" cy="130" r="5"/></g>
+<g font-family="Arial, sans-serif" font-size="23" fill="#1c1915">
+<text x="285" y="103">vᵢ = vɢ</text><text x="130" y="78">Rg3 = 2 MΩ</text>
+<text x="180" y="205">Rg1 ∥ Rg2</text><text x="180" y="236">= 75 kΩ</text>
+<text x="480" y="71">d</text><text x="609" y="206">gₘvɢₛ</text>
+<text x="605" y="349">R1 = 2 kΩ</text><text x="640" y="296">s</text>
+<text x="800" y="190">Rd</text><text x="800" y="220">10 kΩ</text><text x="875" y="96">vₒ</text>
+<text x="48" y="445">vɢₛ = vᵢ − vₛ; rds → ∞; R2 bypassed by C; DC supply → AC ground</text>
+</g></svg>

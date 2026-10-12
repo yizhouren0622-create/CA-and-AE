@@ -41,7 +41,9 @@ python3 check_site.py
 
 ## GitHub Pages
 
-本目录可直接作为 GitHub Pages 的发布根目录，包含 `.nojekyll`，所有资源使用相对路径。仓库 Settings → Pages → Deploy from a branch，选择包含本站的分支及 `/(root)`。发布成功后的项目地址为 `https://yizhouren0622-create.github.io/CA-and-AE/`。
+网站已发布：[在线学习站](https://yizhouren0622-create.github.io/CA-and-AE/)。当前 Pages 来源为 `codex/exam-study-site` 分支的 `/(root)`；更新该分支会自动部署。
+
+本目录可直接作为 GitHub Pages 的发布根目录，包含 `.nojekyll`，所有资源使用相对路径。若以后改用主分支，在仓库 Settings → Pages → Deploy from a branch 中切换发布分支即可。
 
 ## English
 

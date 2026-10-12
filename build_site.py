@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build static bilingual pages. Browsing requires no Python or external services."""
 from pathlib import Path
-import html, json, re
+import hashlib, html, json, re
 from latex2mathml.converter import convert
 
 ROOT=Path(__file__).resolve().parent
@@ -11,6 +11,7 @@ library=read('exercises.json')
 courses={c['id']:c for c in syllabus['courses']}
 def complete(solution): return bool(solution) and not solution.get('pendingSubparts')
 def checked_count(lib): return sum(complete(s) for s in lib['solutions'].values())
+def partial_count(lib): return sum(bool(s) and not complete(s) for s in lib['solutions'].values())
 def esc(s): return html.escape(str(s),quote=True)
 def text(s):
     parts=re.split(r'(\$[^$]+\$)',str(s))
@@ -22,8 +23,8 @@ def math(s): return '<div class="math-display">'+convert(s)+'</div>'
 def items(zh,en):
     assert len(zh)==len(en)
     return '<ol class="steps">'+''.join(bi(a,c,'li') for a,c in zip(zh,en))+'</ol>'
-def figure(name,alt=None,source=False):
-    caption=bi('教材原图；版本与页码见本题来源。','Source textbook figure; see the edition and page references for this exercise.') if source else bi('示意图中的符号及取值以题干为准。','Use the definitions and values stated in the question.')
+def figure(name,alt=None,source=False,caption_text=None):
+    caption=b(caption_text) if caption_text else (bi('教材原图；版本与页码见本题来源。','Source textbook figure; see the edition and page references for this exercise.') if source else bi('示意图中的符号及取值以题干为准。','Use the definitions and values stated in the question.'))
     caption+=bi('点图查看原尺寸。','Select the figure to view it at full size.')
     return f'<figure><a class="figure-link" href="assets/{esc(name)}" target="_blank" rel="noopener" title="查看原尺寸 / View full size"><img src="assets/{esc(name)}" alt="{esc(alt or "电路或特性示意图 / Circuit or characteristic diagram")}" loading="lazy"></a><figcaption>'+caption+'</figcaption></figure>'
 def reveal(label,label_en,body,kind='solution'):
@@ -39,6 +40,9 @@ def page(filename,title,body,cid=None,kind='study'):
     tools='<div class="site-tools"><label for="site-language">'+bi('语言','Language','span')+'</label><select id="site-language" aria-label="语言 / Language"><option value="both">中英对照 / Bilingual</option><option value="zh">中文</option><option value="en">English</option></select><a href="scope.html">'+bi('范围以授课计划为准','Scope follows the course plan','span')+'</a></div>'
     footer='<footer class="site-footer">'+bi('依据20260913授课计划及所提供课件整理。模拟卷为本站原创；教材解析分别列明来源与核验方式。阅读无需外部公式服务。','Based on the 20260913 course plan and supplied slides. Mock papers are original practice; textbook solutions list sources and verification. Equations require no external service.')+'</footer>'
     result='<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#efeae2"><meta name="description" content="电路分析基础与模拟电子技术双语考试学习、模拟卷和教材逐题解析"><title>'+esc(title)+' · CA & AE</title><link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/course.css"></head><body><a class="skip" href="#content">跳至正文 / Skip to content</a>'+top+tools+(subnav(cid) if cid else '')+f'<main id="content" class="{kind}-page">{body}</main>'+footer+'<script defer src="assets/site.js"></script><script defer src="assets/course.js"></script></body></html>'
+    for asset in ('site.css','course.css','site.js','course.js'):
+        revision=hashlib.sha256((ROOT/'assets'/asset).read_bytes()).hexdigest()[:12]
+        result=result.replace(f'assets/{asset}"',f'assets/{asset}?v={revision}"')
     (ROOT/filename).write_text(result)
 def link(url,zh,en,desc,desc_en):
     return f'<a class="hub-link" href="{url}">'+bi(zh,en,'strong')+bi(desc,desc_en)+'</a>'
@@ -98,14 +102,15 @@ for cid,c in courses.items():
     page(f'{cid}-exam.html',c['zh']+'诊断卷','<article class="exam-paper">'+body+'</article>',cid,kind='exam')
     body=bi(c['zh']+' · 教材逐题',c['en']+' · Textbook exercise library','h1')+bi(f'全书{len(lib["items"])}道主习题清单，含范围外章节；现有{checked_count(lib)}道完整题干与核验解析。计数按主习题，不把小问另算一题。',f'{len(lib["items"])} numbered exercises across the full book, including chapters outside exam coverage. {checked_count(lib)} currently have complete statements and checked solutions. Subparts are not counted as separate main exercises.','p')
     body+=bi('“清单已核对”只表示题号与来源页已收录，不表示题干已抄录或答案已完成。部分章的范围需要逐题确认。','“Inventory checked” means that an ID and source page are indexed; it does not mean the statement or solution is complete. Coverage in partially taught chapters needs individual mapping.','p','scope-note')
+    if partial_count(lib):body+=bi(f'另有{partial_count(lib)}道题提供部分小问解析；未完成的小问及原因随题列出，未计入完整题数。',f'A further {partial_count(lib)} exercises have checked solutions for some subparts. Pending parts and reasons are listed explicitly and excluded from the complete count.','p','scope-note')
     chapters=lib['chapters']
-    body+='<div class="library-filters"><label for="chapter-filter">'+bi('章节','Chapter','span')+'</label><select id="chapter-filter"><option value="all">全部 / All</option>'+''.join(f'<option value="{ch["number"]}">{ch["number"]} · {esc(ch["title"]["zh"])} / {esc(ch["title"]["en"])}</option>' for ch in chapters)+'</select><label for="status-filter">'+bi('显示','Show','span')+'</label><select id="status-filter"><option value="all">全书清单 / Full inventory</option><option value="homework" selected>指定作业 / Assigned</option><option value="solved">已核验解析 / Checked solutions</option><option value="pending">待整理 / Pending</option><option value="weak">重做 / Revisit</option></select><label for="exercise-search">'+bi('题号','Exercise ID','span')+'</label><input id="exercise-search" type="search" placeholder="1-5 / 2.3.2" autocomplete="off"><output id="filter-count" aria-live="polite"></output><div><button data-export-progress>'+bi('导出练习记录','Export progress','span')+'</button><label class="import-label">'+bi('导入记录','Import progress','span')+'<input type="file" data-import-progress accept="application/json"></label></div></div>'
+    body+='<div class="library-filters"><label for="chapter-filter">'+bi('章节','Chapter','span')+'</label><select id="chapter-filter"><option value="all">全部 / All</option>'+''.join(f'<option value="{ch["number"]}">{ch["number"]} · {esc(ch["title"]["zh"])} / {esc(ch["title"]["en"])}</option>' for ch in chapters)+'</select><label for="status-filter">'+bi('显示','Show','span')+'</label><select id="status-filter"><option value="all">全书清单 / Full inventory</option><option value="homework" selected>指定作业 / Assigned</option><option value="solved">已有解析（含部分） / Available solutions</option><option value="complete">完整解析 / Complete solutions</option><option value="partial">部分小问解析 / Partial solutions</option><option value="pending">尚未完整 / Not complete</option><option value="weak">重做 / Revisit</option></select><label for="exercise-search">'+bi('题号','Exercise ID','span')+'</label><input id="exercise-search" type="search" placeholder="1-5 / 2.3.2" autocomplete="off"><output id="filter-count" aria-live="polite"></output><div><button data-export-progress>'+bi('导出练习记录','Export progress','span')+'</button><label class="import-label">'+bi('导入记录','Import progress','span')+'<input type="file" data-import-progress accept="application/json"></label></div></div>'
     body+='<p id="progress-message" role="status"></p><div class="exercise-list">'
     for ex in lib['items']:
         id=ex['id'];sol=solutions.get(id); hw=ex.get('priorityHomework',False)
         badge=bi('指定作业' if hw else '全书习题','Assigned' if hw else 'Book exercise','span','exercise-badge')
         state=bi(('已抄题并核验解析' if complete(sol) else '部分小问已核验') if sol else '清单已核对 · 题干与解析待整理',('Transcribed & solution checked' if complete(sol) else 'Some subparts checked') if sol else 'Inventory checked · transcription and solution pending','span','status')
-        body+=f'<details class="exercise-item" id="{id}" data-id="{id}" data-chapter="{ex["chapter"]}" data-homework="{str(hw).lower()}" data-solved="{str(complete(sol)).lower()}"><summary><strong>{esc(ex["bookId"])}</strong>{badge}{state}</summary><div class="exercise-content">'
+        body+=f'<details class="exercise-item" id="{id}" data-id="{id}" data-chapter="{ex["chapter"]}" data-homework="{str(hw).lower()}" data-solved="{str(bool(sol)).lower()}" data-complete="{str(complete(sol)).lower()}"><summary><strong>{esc(ex["bookId"])}</strong>{badge}{state}</summary><div class="exercise-content">'
         src=ex.get('printedPage','?');pdf=ex.get('pdfPage','?')
         body+=bi(f'来源：{c["book"]} · 书第{src}页／PDF第{pdf}页。范围状态：{ex.get("scopeLabelZh","待逐题映射")}。',f'Source: {lib["sourceTitleEn"]} · printed p. {src} / PDF p. {pdf}. Coverage: {ex.get("scopeLabelEn","individual mapping pending")}.','p','source-line')
         if hw and ex.get('assignedNote'):body+=bi('指定要求：'+ex['assignedNote'],'Assigned requirement: '+ex.get('assignedNoteEn',ex['assignedNote']),'p')
@@ -121,11 +126,16 @@ for cid,c in courses.items():
                 steps+=b(st['title'],'h4')+b(st['text'],'p')
                 if st.get('formula'):steps+=math(st['formula'].replace('\\\\','\\'))
             for diagram in sol.get('solutionDiagrams',[]):
-                steps+=figure(diagram['figure'],diagram['alt']['zh']+' / '+diagram['alt']['en'])+b(diagram['alt'],'p','diagram-description')
+                caption={'zh':'实际SPICE瞬态数据；运行条件和模型见本题解析。','en':'Executed SPICE transient data; see this solution for model and run conditions.'} if diagram.get('kind')=='executed-spice-waveforms' else None
+                steps+=figure(diagram['figure'],diagram['alt']['zh']+' / '+diagram['alt']['en'],caption_text=caption)+b(diagram['alt'],'p','diagram-description')
             steps+=b(sol['answer'],'p','key')+bi('易错点','Common errors','h4')+'<ul>'+''.join(b(x,'li') for x in sol['pitfalls'])+'</ul>'+bi('核验依据','Verification','h4')
             if isinstance(sol['verification'].get('assumptions'),dict):steps+=b(sol['verification']['assumptions'],'p','scope-note')
             steps+=b(sol['verification']['methods'],'p')
-            body+=reveal('完整解析与结果核验','Full solution & verification',steps)
+            if sol['verification'].get('externalReferences'):
+                steps+=bi('参考模型依据','Model references','h4')+'<ul>'+''.join(f'<li><a href="{esc(ref["url"])}" target="_blank" rel="noopener">{esc(ref["title"])}</a></li>' for ref in sol['verification']['externalReferences'])+'</ul>'
+            if sol.get('simulation',{}).get('netlist'):
+                steps+=f'<p><a href="assets/{esc(sol["simulation"]["netlist"])}" download>'+bi('下载本题SPICE网表','Download this exercise’s SPICE netlist','span')+'</a></p>'
+            body+=reveal('完整解析与结果核验' if complete(sol) else '已完成小问的解析与核验','Full solution & verification' if complete(sol) else 'Checked subpart solutions & verification',steps)
             body+=f'<label for="progress-{id}">'+bi('我的练习状态','My practice state','span')+f'<select id="progress-{id}" data-progress="{id}"><option value="new">未做 / Not attempted</option><option value="done">已独立完成 / Completed independently</option><option value="revisit">需要重做 / Revisit</option></select></label>'
         else:
             body+=bi('本题尚未完成题干抄录、图形核对和推导。不会用未核验的自动答案占位。按指定作业优先逐题补齐。','Statement transcription, figure checking and derivation are pending for this item. It has no unverified automatic answer. Assigned homework is prioritized.','p')

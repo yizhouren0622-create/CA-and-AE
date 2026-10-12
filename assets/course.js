@@ -75,10 +75,10 @@
     if(!chapter)return;
     const query=search.value.trim().toLowerCase();let visible=0;
     for(const ex of exercises) {
-      const mode=status.value,solved=ex.dataset.solved==='true';
+      const mode=status.value,solved=ex.dataset.solved==='true',complete=ex.dataset.complete==='true';
       const matching=(chapter.value==='all'||chapter.value===ex.dataset.chapter)
         &&(!query||ex.dataset.id.toLowerCase().includes(query))
-        &&(mode==='all'||mode==='homework'&&ex.dataset.homework==='true'||mode==='solved'&&solved||mode==='pending'&&!solved||mode==='weak'&&state.exercises[ex.dataset.id]==='revisit');
+        &&(mode==='all'||mode==='homework'&&ex.dataset.homework==='true'||mode==='solved'&&solved||mode==='complete'&&complete||mode==='partial'&&solved&&!complete||mode==='pending'&&!complete||mode==='weak'&&state.exercises[ex.dataset.id]==='revisit');
       ex.hidden=!matching;if(matching)visible++;
     }
     document.querySelector('#filter-count').replaceChildren(bilingual(visible+'道 / 共'+exercises.length+'道',visible+' shown / '+exercises.length+' total','span'));
