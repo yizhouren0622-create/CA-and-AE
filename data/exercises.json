@@ -612,8 +612,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-2",
@@ -622,8 +626,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-3",
@@ -643,8 +651,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-5",
@@ -653,8 +665,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-6",
@@ -663,8 +679,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-7",
@@ -673,8 +693,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（图论与基本分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: graph theory and basic analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-8",
@@ -12016,6 +12040,889 @@
           "all"
         ],
         "figure": "ca-1-49-figure.png"
+      },
+      "CA-2-1": {
+        "id": "CA-2-1",
+        "bookId": "2-1",
+        "title": {
+          "zh": "每图找5棵树：只保留连接全部节点的无环支路",
+          "en": "Five trees per graph: connected, spanning and acyclic"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 61,
+          "figurePdfPage": 70,
+          "figure": "题图2-1(a)、(b)"
+        },
+        "statement": {
+          "zh": "试找出题图2-1所示各连通图G的5个可能的树。",
+          "en": "Find five possible spanning trees for each connected graph G in Fig. 2-1."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)顶端从左到右四节点A、B、C、D，底节点E。支路1=A-E、2=A-B、3=B-E、4=B-C、5=C-E、6=C-D、7=D-E。(b)A左上、B中上、C右上、D左下、E右下；1=A-D、2=A-B、3=C-A弧线、4=D-B、5=B-C、6=B-E、7=E-C、8=E-D。",
+            "en": "(a) Four upper nodes A–D and lower E: edges 1=A-E, 2=A-B, 3=B-E, 4=B-C, 5=C-E, 6=C-D, 7=D-E. (b) A upper-left, B upper-middle, C upper-right, D lower-left, E lower-right: 1=A-D, 2=A-B, 3=C-A arc, 4=D-B, 5=B-C, 6=B-E, 7=E-C, 8=E-D."
+          }
+        },
+        "prerequisites": {
+          "zh": "树包含全部节点且连通、无回路；n节点树恰有n−1条树支；判断树时不考虑支路参考箭头。",
+          "en": "A spanning tree contains every vertex, is connected and acyclic, and has n−1 edges; edge-reference arrows do not affect tree membership."
+        },
+        "recognition": {
+          "zh": "两图都是5个节点，因此每棵树选4条边。先找一棵易识别的连通树，再交换一条边，确认既没有断开也没有闭环；每幅图需给5棵，共10棵。",
+          "en": "Both graphs have five vertices, so select four edges per tree. Start from an obvious tree, exchange edges while retaining connectivity and avoiding cycles, and provide five trees for each graph."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "固定判据",
+              "en": "Fix the criterion"
+            },
+            "text": {
+              "zh": "5个节点的连通子图若恰含4条边，自动无环，故只需逐组确认全部节点连通；不能漏掉孤立节点。",
+              "en": "A connected five-vertex subgraph with exactly four edges is acyclic. Check that every original vertex is connected, including any vertex that might otherwise become isolated."
+            },
+            "formula": "|T|=n-1=4,\\qquad T\\ \\text{connected}"
+          },
+          {
+            "title": {
+              "zh": "(a) 五棵可行树",
+              "en": "(a): five valid trees"
+            },
+            "text": {
+              "zh": "可选T₁={1,3,5,7}；T₂={2,3,5,7}；T₃={1,3,4,7}；T₄={1,3,5,6}；T₅={2,4,6,7}。T₁是以E为中心的星形树；T₅是沿A-B-C-D-E的路径树。",
+              "en": "Choose T₁={1,3,5,7}, T₂={2,3,5,7}, T₃={1,3,4,7}, T₄={1,3,5,6}, T₅={2,4,6,7}. T₁ is a star centered at E and T₅ the path A-B-C-D-E."
+            }
+          },
+          {
+            "title": {
+              "zh": "(b) 五棵可行树",
+              "en": "(b): five valid trees"
+            },
+            "text": {
+              "zh": "可选T₁={1,2,5,7}；T₂={2,4,5,6}；T₃={1,3,5,8}；T₄={2,4,6,7}；T₅={3,4,5,6}。例如T₂以B为中心连接A、C、D、E，明显无环。",
+              "en": "Choose T₁={1,2,5,7}, T₂={2,4,5,6}, T₃={1,3,5,8}, T₄={2,4,6,7}, T₅={3,4,5,6}. For example, T₂ is the star at B connecting A, C, D and E."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "(a) {1,3,5,7}、{2,3,5,7}、{1,3,4,7}、{1,3,5,6}、{2,4,6,7}；(b) {1,2,5,7}、{2,4,5,6}、{1,3,5,8}、{2,4,6,7}、{3,4,5,6}。答案不唯一，以上每组均为树。",
+          "en": "(a) {1,3,5,7}, {2,3,5,7}, {1,3,4,7}, {1,3,5,6}, {2,4,6,7}. (b) {1,2,5,7}, {2,4,5,6}, {1,3,5,8}, {2,4,6,7}, {3,4,5,6}. Many answers are possible; all ten listed sets are valid trees."
+        },
+        "pitfalls": [
+          {
+            "zh": "只数到4条边还不够，必须连接原图全部5个节点。",
+            "en": "Four edges alone are insufficient; all five original vertices must be connected."
+          },
+          {
+            "zh": "有向图的树采用底层无向连通性，不要求沿参考箭头可达。",
+            "en": "Tree membership uses underlying undirected connectivity, not reachability along reference arrows."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立枚举每图全部4边子集并做连通/无环检查，所列10组全部通过且每图5组互不重复。再用拉普拉斯矩阵余子式的矩阵树定理独立核对，全部树数为(a)21棵、(b)45棵，与穷举完全一致。附录第333页未列2-1，所列是经验证的可行答案而非声称唯一。",
+            "en": "Independent enumeration checks every four-edge subset and verifies all ten selected sets, with five distinct trees per graph. A separate Laplacian-minor matrix-tree calculation gives 21 and 45 total trees, exactly matching enumeration. The appendix omits 2-1; the listed answers are verified examples, not unique choices."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "treesA": [
+              [
+                1,
+                3,
+                5,
+                7
+              ],
+              [
+                2,
+                3,
+                5,
+                7
+              ],
+              [
+                1,
+                3,
+                4,
+                7
+              ],
+              [
+                1,
+                3,
+                5,
+                6
+              ],
+              [
+                2,
+                4,
+                6,
+                7
+              ]
+            ],
+            "treesB": [
+              [
+                1,
+                2,
+                5,
+                7
+              ],
+              [
+                2,
+                4,
+                5,
+                6
+              ],
+              [
+                1,
+                3,
+                5,
+                8
+              ],
+              [
+                2,
+                4,
+                6,
+                7
+              ],
+              [
+                3,
+                4,
+                5,
+                6
+              ]
+            ],
+            "verifiedExampleCount": 10,
+            "allSpanningTreeCounts": [
+              21,
+              45
+            ],
+            "enumerationAndMatrixTreeAgree": true
+          },
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": "No 2-1 answer is listed; ten example trees independently verified by connectivity and enumeration."
+          }
+        },
+        "figure": "ca-2-1-figure.png"
+      },
+      "CA-2-2": {
+        "id": "CA-2-2",
+        "bookId": "2-2",
+        "title": {
+          "zh": "树与割集分别判断：能断开还要没有冗余支路",
+          "en": "Classify trees and cutsets separately: disconnection must be minimal"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 61,
+          "figurePdfPage": 70,
+          "figure": "题图2-2"
+        },
+        "statement": {
+          "zh": "在题图2-2所示连通图G中，说明支路集合(4,5,8,9)、(1,4,6,7)、(1,4,6,7,8)、(3,4,9)、(2,5,6,8,9)、(2,6,7)哪些可以构成树，哪些可以构成割集。",
+          "en": "For connected graph G in Fig. 2-2, determine which branch sets (4,5,8,9), (1,4,6,7), (1,4,6,7,8), (3,4,9), (2,5,6,8,9) and (2,6,7) are spanning trees and which are cutsets."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "外三角顶T、左下L、右下R，内三角顶U、左V、右W。支路1=T-R、2=U-W、3=L-V、4=T-L、5=T-U、6=U-V、7=V-W、8=W-R、9=L-R。",
+            "en": "Outer triangle vertices T top, L lower-left, R lower-right; inner U top, V left, W right. Edges: 1=T-R, 2=U-W, 3=L-V, 4=T-L, 5=T-U, 6=U-V, 7=V-W, 8=W-R, 9=L-R."
+          }
+        },
+        "prerequisites": {
+          "zh": "6节点树须5条边且连通无环；本题割集采用包含意义下极小断开集；树与割集两种性质可同时成立。",
+          "en": "A six-vertex tree has five edges and is connected/acyclic. Here a cutset is an inclusion-minimal disconnecting set. Tree and cutset properties can overlap."
+        },
+        "recognition": {
+          "zh": "对每个集合做两个独立测试：保留这些边能否成为生成树；删除这些边能否断图，且少删其中任一条就不再断开。割集的“极小”不是说边数必须全图最少。",
+          "en": "Apply two independent tests: does keeping the set form a spanning tree, and does deleting it disconnect the graph minimally? Minimal means no selected edge is redundant, not globally fewest edges."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "逐项检查前两组",
+              "en": "Check the first two sets"
+            },
+            "text": {
+              "zh": "{4,5,8,9}只有4条边，不是6节点树；删去后形成{T,R}与{L,U,V,W}两块，四条都是跨块边，构成割集。{1,4,6,7}也只有4条边，且删去后原图仍连通，两者都不是。",
+              "en": "{4,5,8,9} has only four edges, so is not a tree. Deletion separates {T,R} and {L,U,V,W}, with all four removed edges crossing the partition: it is a cutset. {1,4,6,7} has only four edges and its deletion leaves the graph connected, so is neither."
+            }
+          },
+          {
+            "title": {
+              "zh": "第三组既是树又是割集",
+              "en": "The third set is both"
+            },
+            "text": {
+              "zh": "{1,4,6,7,8}连通全部6节点、共5条边，是树。删去后分成{T,U,W}和{L,V,R}，五条均为跨块边且无冗余，也是割集。",
+              "en": "{1,4,6,7,8} spans all six vertices with five edges, so is a tree. Its deletion separates {T,U,W} and {L,V,R}; every removed edge crosses the partition, so it is also a cutset."
+            }
+          },
+          {
+            "title": {
+              "zh": "第四组隔离左下节点",
+              "en": "The fourth set isolates the lower-left node"
+            },
+            "text": {
+              "zh": "{3,4,9}恰是外左节点L的三条关联边，删去后L孤立；少删任何一条L就仍接回其余图，故是割集。它不包含全部节点的生成树。",
+              "en": "{3,4,9} consists of the three edges incident to L. Removing all isolates L, while retaining any one reconnects it, so it is a cutset but not a spanning tree."
+            }
+          },
+          {
+            "title": {
+              "zh": "第五组有树性质，但断开集有冗余",
+              "en": "The fifth is a tree but its disconnection set is redundant"
+            },
+            "text": {
+              "zh": "{2,5,6,8,9}是5边连通生成树。删去它会断图，但只删{2,5,6}已能隔离内顶U，8、9是冗余边；按本题极小割集定义，它不是割集。",
+              "en": "{2,5,6,8,9} is a connected five-edge spanning tree. Deleting it disconnects the graph, but {2,5,6} alone already isolates U; edges 8 and 9 are redundant. Thus it is not a minimal cutset."
+            }
+          },
+          {
+            "title": {
+              "zh": "第六组两者都不是",
+              "en": "The sixth is neither"
+            },
+            "text": {
+              "zh": "{2,6,7}只是内三角形，既有回路又未连接外节点，不是树；删去后外三角和三根连接边仍连接所有节点，不是割集。",
+              "en": "{2,6,7} is only the inner triangle, cyclic and nonspanning, so not a tree. Deletion leaves the outer triangle and three links connecting every vertex, so it is not a cutset."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "树：{1,4,6,7,8}、{2,5,6,8,9}。割集：{4,5,8,9}、{1,4,6,7,8}、{3,4,9}。其余集合不属于相应类别；第三组同时属于两类。",
+          "en": "Trees: {1,4,6,7,8} and {2,5,6,8,9}. Cutsets: {4,5,8,9}, {1,4,6,7,8} and {3,4,9}. The third set belongs to both categories."
+        },
+        "pitfalls": [
+          {
+            "zh": "删除后断开只是必要条件，还须检验割集中每条边是否不可少。",
+            "en": "Disconnection alone is insufficient; every edge of the cutset must be necessary."
+          },
+          {
+            "zh": "同一边集合可以既是生成树又是割集，不能二选一。",
+            "en": "An edge set can be both a spanning tree and a cutset; the labels are not exclusive."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立图算法对6个集合分别做生成树连通性、删除后的连通分量、逐条恢复边的极小性检查。树判定依次为否、否、是、否、是、否；割集为是、否、是、是、否、否。对第五组另用真子集{2,5,6}反证极小性。与附录第333页/PDF342页完全一致。",
+            "en": "Independent graph tests check spanning connectivity, deletion components and minimality by restoring each removed edge. Tree results are F,F,T,F,T,F; cutsets T,F,T,T,F,F. The proper subset {2,5,6} independently disproves minimality of the fifth set. Results exactly match printed p. 333/PDF p. 342."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "treeFlags": [
+              false,
+              false,
+              true,
+              false,
+              true,
+              false
+            ],
+            "minimalCutsetFlags": [
+              true,
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "allSixSetsResolved": true,
+            "nonminimalDisconnectingExample": [
+              2,
+              5,
+              6,
+              8,
+              9
+            ],
+            "properDisconnectingSubset": [
+              2,
+              5,
+              6
+            ]
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-2-2-figure.png"
+      },
+      "CA-2-4": {
+        "id": "CA-2-4",
+        "bookId": "2-4",
+        "title": {
+          "zh": "基本割集与基本回路：逐条树支、逐条连支构造",
+          "en": "Fundamental cutsets and loops: one twig or chord at a time"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 61,
+          "figurePdfPage": 70,
+          "figure": "题图2-3"
+        },
+        "statement": {
+          "zh": "在题图2-3所示连通图中选树T(1,3,5,6,8)，分别找出对应的基本割集和基本回路。",
+          "en": "For Fig. 2-3, choose tree T={1,3,5,6,8}. Find the corresponding fundamental cutsets and fundamental loops."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "顶T、左中L、右中R、左下P、中下Q、右下S。有向边1=T→L、2=R→T、3=L→R、4=L→Q、5=P→L、6=Q→P、7=Q→R、8=R→S、9=S→Q。",
+            "en": "Vertices: top T, middle-left L, middle-right R, bottom-left P, bottom-middle Q, bottom-right S. Directed edges 1=T→L, 2=R→T, 3=L→R, 4=L→Q, 5=P→L, 6=Q→P, 7=Q→R, 8=R→S, 9=S→Q."
+          }
+        },
+        "prerequisites": {
+          "zh": "树支和连支；删一条树支形成基本割集；加一条连支形成唯一基本回路；集合不指定绕行方向。",
+          "en": "Twigs and chords, removing a twig for a fundamental cutset, adding a chord for a unique fundamental loop and unordered branch sets."
+        },
+        "recognition": {
+          "zh": "树有5条支路，故有5个基本割集；余下2、4、7、9为连支，故有4个基本回路。每个基本割集只含一条树支，每个基本回路只含一条连支。",
+          "en": "The five twigs give five fundamental cutsets. Chords 2,4,7,9 give four fundamental loops. Each cutset contains one twig; each fundamental loop contains one chord."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先核实树与连支",
+              "en": "Check the tree and chords"
+            },
+            "text": {
+              "zh": "T={1,3,5,6,8}连通6节点且无环，连支集合为{2,4,7,9}。",
+              "en": "T={1,3,5,6,8} connects all six vertices without a cycle; the chords are {2,4,7,9}."
+            },
+            "formula": "T=\\{1,3,5,6,8\\},\\qquad \\overline T=\\{2,4,7,9\\}"
+          },
+          {
+            "title": {
+              "zh": "逐条删树支求基本割集",
+              "en": "Remove each twig for its cutset"
+            },
+            "text": {
+              "zh": "分别删除树中的1、3、5、6、8，再把原图所有跨两块的边收集起来。对应割集为：Q₁={1,2}；Q₃={2,3,7,9}；Q₅={4,5,7,9}；Q₆={4,6,7,9}；Q₈={8,9}。",
+              "en": "Remove each twig from the tree and collect every original edge crossing its two components. The sets are Q₁={1,2}, Q₃={2,3,7,9}, Q₅={4,5,7,9}, Q₆={4,6,7,9}, Q₈={8,9}."
+            }
+          },
+          {
+            "title": {
+              "zh": "逐条加连支求基本回路",
+              "en": "Add each chord for its loop"
+            },
+            "text": {
+              "zh": "加连支2，配树中1、3，得L₂={1,2,3}；加4得L₄={4,5,6}；加7得L₇={3,5,6,7}；加9得L₉={3,5,6,8,9}。",
+              "en": "Adding chord 2 gives L₂={1,2,3}; chord 4 gives L₄={4,5,6}; chord 7 gives L₇={3,5,6,7}; chord 9 gives L₉={3,5,6,8,9}."
+            }
+          },
+          {
+            "title": {
+              "zh": "最后检查个数与唯一树支/连支",
+              "en": "Check counts and unique twig/chord"
+            },
+            "text": {
+              "zh": "共有5个割集、4个回路。每个Q只含其标号对应的那一条树支；每个L只含其标号对应的那一条连支，避免误把任意回路当基本回路。",
+              "en": "There are five cutsets and four loops. Each Q contains only its named twig and each L only its named chord, distinguishing fundamental sets from arbitrary ones."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "基本割集（按树支1、3、5、6、8）：{1,2}、{2,3,7,9}、{4,5,7,9}、{4,6,7,9}、{8,9}。基本回路（按连支2、4、7、9）：{1,2,3}、{4,5,6}、{3,5,6,7}、{3,5,6,8,9}。",
+          "en": "Fundamental cutsets for twigs 1,3,5,6,8: {1,2}, {2,3,7,9}, {4,5,7,9}, {4,6,7,9}, {8,9}. Fundamental loops for chords 2,4,7,9: {1,2,3}, {4,5,6}, {3,5,6,7}, {3,5,6,8,9}."
+        },
+        "pitfalls": [
+          {
+            "zh": "割集要收集原图跨分区的所有边，不只看树中剩余的边。",
+            "en": "Collect all original crossing edges for a cutset, not just tree edges."
+          },
+          {
+            "zh": "这里答案是支路集合，顺序不表示沿回路的走向；写KVL时再指定绕行方向。",
+            "en": "These are branch sets; their order does not specify traversal. Choose a direction separately when writing KVL."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "fundamental-cutsets",
+          "fundamental-loops"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立由端点图算法逐树支分区、逐连支搜索树上唯一路径得到全部9个集合。再按原箭头构造带符号基本割集矩阵Q_f和回路矩阵B_f，精确核验秩分别5、4，Q_f B_fᵀ=0及节点关联矩阵A B_fᵀ=0。与附录第333页/PDF342页全部集合一致；附录最后回路的排列顺序不同但集合相同。",
+            "en": "Independent endpoint algorithms partition the tree per twig and find the unique tree path per chord, reproducing all nine sets. Signed matrices have exact ranks 5 and 4 and satisfy Q_f B_fᵀ=0 and incidence A B_fᵀ=0. All sets match the appendix; its last loop is merely listed in a different order."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "fundamentalCutsets": {
+              "1": [
+                1,
+                2
+              ],
+              "3": [
+                2,
+                3,
+                7,
+                9
+              ],
+              "5": [
+                4,
+                5,
+                7,
+                9
+              ],
+              "6": [
+                4,
+                6,
+                7,
+                9
+              ],
+              "8": [
+                8,
+                9
+              ]
+            },
+            "fundamentalLoops": {
+              "2": [
+                1,
+                2,
+                3
+              ],
+              "4": [
+                4,
+                5,
+                6
+              ],
+              "7": [
+                3,
+                5,
+                6,
+                7
+              ],
+              "9": [
+                3,
+                5,
+                6,
+                8,
+                9
+              ]
+            },
+            "cutRank": 5,
+            "loopRank": 4,
+            "exactCutLoopOrthogonality": true
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-2-4-figure.png"
+      },
+      "CA-2-5": {
+        "id": "CA-2-5",
+        "bookId": "2-5",
+        "title": {
+          "zh": "独立KCL/KVL数：先数节点与支路",
+          "en": "Independent KCL/KVL counts: vertices and branches first"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 61,
+          "figurePdfPage": 70,
+          "figure": "题图2-1(b)"
+        },
+        "statement": {
+          "zh": "对题图2-1(b)连通图所对应的电路，可写出的独立KCL、KVL方程数分别是多少？",
+          "en": "For the circuit represented by connected graph Fig. 2-1(b), how many independent KCL and KVL equations can be written?"
+        },
+        "diagram": {
+          "alt": {
+            "zh": "有5个实心节点、8条编号支路，顶弧线3是单独一条支路，中间节点不在该弧线上。",
+            "en": "There are five filled vertices and eight numbered branches. Upper arc 3 is a separate branch and does not pass through the middle vertex."
+          }
+        },
+        "prerequisites": {
+          "zh": "连通图关联矩阵秩n−1；独立回路数b−n+1。",
+          "en": "Connected incidence rank n−1 and cycle-space dimension b−n+1."
+        },
+        "recognition": {
+          "zh": "先数图上真正的节点n=5和支路b=8。不要把参考箭头、弧线或分支标号当新节点。",
+          "en": "Count actual vertices n=5 and edges b=8. Arrows, curves and labels do not create vertices."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "独立KCL数",
+              "en": "Independent KCL count"
+            },
+            "text": {
+              "zh": "n个节点的全部KCL有一条总和为0的依赖关系，故独立方程n−1=4。",
+              "en": "The n node KCL equations have one sum dependency, leaving n−1 = 4 independent equations."
+            },
+            "formula": "N_{\\rm KCL}=n-1=5-1=4"
+          },
+          {
+            "title": {
+              "zh": "独立KVL数",
+              "en": "Independent KVL count"
+            },
+            "text": {
+              "zh": "生成树含n−1=4条边，其余b−(n−1)=4条连支分别生成4个基本回路。",
+              "en": "A tree has four twigs; the remaining four chords each generate a fundamental loop."
+            },
+            "formula": "N_{\\rm KVL}=b-n+1=8-5+1=4"
+          }
+        ],
+        "answer": {
+          "zh": "独立KCL方程4个；独立KVL方程4个。",
+          "en": "Four independent KCL equations and four independent KVL equations."
+        },
+        "pitfalls": [
+          {
+            "zh": "“共有几个节点”与“独立KCL几个”相差1。",
+            "en": "The independent KCL count is one less than the vertex count."
+          },
+          {
+            "zh": "KVL数是独立回路数，不是把所有能画出的回路全数一遍。",
+            "en": "Count independent loops, not every possible cycle."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "KCL",
+          "KVL"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立构造原图5×8有向关联矩阵，精确消元秩4，零空间维数8−4=4；与树/连支计数法独立吻合。附录第333页/PDF342页为4、4。",
+            "en": "Independent exact elimination of the original 5×8 oriented incidence matrix gives rank 4 and nullity 4, matching the tree/chord count. The appendix gives 4,4."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "vertexCount": 5,
+            "branchCount": 8,
+            "incidenceRank": 4,
+            "cycleSpaceDimension": 4,
+            "KCLCount": 4,
+            "KVLCount": 4
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-2-5-figure.png"
+      },
+      "CA-2-6": {
+        "id": "CA-2-6",
+        "bookId": "2-6",
+        "title": {
+          "zh": "完整2b方程：3条KCL、3条KVL、6条元件约束",
+          "en": "Complete 2b system: 3 KCL, 3 KVL, 6 branch laws"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 61,
+          "figurePdfPage": 70,
+          "figure": "题图2-4"
+        },
+        "statement": {
+          "zh": "试列出题图2-4所示电路的2b方程。",
+          "en": "Write the 2b equations for the circuit in Fig. 2-4."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "4节点a顶、b中左、c中右、d底。R₁支路a→b，R₂支路b→d，R₃支路c→d；左uₛ源a正d负，电流i₄沿d→a；iₛ₁从b→c，iₛ₂从c→a。",
+            "en": "Four nodes a top, b middle-left, c middle-right, d bottom. R₁ current a→b, R₂ b→d, R₃ c→d. Left uₛ is positive at a relative to d, with i₄ d→a. Sources iₛ₁ go b→c and iₛ₂ c→a."
+          }
+        },
+        "prerequisites": {
+          "zh": "2b法以每条支路的电流、电压为未知；n−1独立KCL、b−n+1独立KVL；各元件约束。",
+          "en": "The 2b method uses every branch current and voltage; n−1 KCL, b−n+1 KVL and one law per branch."
+        },
+        "recognition": {
+          "zh": "本图6条支路，所以未知量为6个电流与6个电压。保留原电流方向，补定义各支路电压为沿电流的关联参考方向；尤其左源电流向上，其关联电压u₄=−uₛ。",
+          "en": "There are six branches and twelve unknowns. Preserve original current directions and define each voltage in the passive reference along its current; the upward left-source current then has u₄ = −uₛ."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "定义12个未知量",
+              "en": "Define the twelve unknowns"
+            },
+            "text": {
+              "zh": "按支路1至6依次为R₁、R₂、R₃、uₛ源、iₛ₁源、iₛ₂源。i₅参考b→c、i₆参考c→a；电压依次u₁=V_a−V_b、u₂=V_b−V_d、u₃=V_c−V_d、u₄=V_d−V_a、u₅=V_b−V_c、u₆=V_c−V_a。",
+              "en": "Branches 1–6 are R₁, R₂, R₃, uₛ, iₛ₁ and iₛ₂. Define i₅ b→c and i₆ c→a. Voltages are V_a−V_b, V_b−V_d, V_c−V_d, V_d−V_a, V_b−V_c and V_c−V_a."
+            },
+            "formula": "(i_1,\\ldots,i_6,\\ u_1,\\ldots,u_6),\\qquad b=6,\\quad 2b=12"
+          },
+          {
+            "title": {
+              "zh": "三条独立KCL",
+              "en": "Three independent KCL equations"
+            },
+            "text": {
+              "zh": "分别在a、b、c列KCL，d节点的KCL由它们相加得到，不再重复列。",
+              "en": "Apply KCL at a, b and c. Node d is dependent and is not repeated."
+            },
+            "formula": "i_4+i_6-i_1=0,\\qquad i_1-i_2-i_5=0,\\qquad i_5-i_3-i_6=0"
+          },
+          {
+            "title": {
+              "zh": "三条独立KVL",
+              "en": "Three independent KVL equations"
+            },
+            "text": {
+              "zh": "取树支1、2、3，以连支4、5、6各生成一个基本回路。按各连支方向绕行，电压相加为0。",
+              "en": "Choose tree branches 1,2,3 and form one loop per chord 4,5,6. Follow each chord reference for loop traversal."
+            },
+            "formula": "u_4+u_1+u_2=0,\\qquad u_5+u_3-u_2=0,\\qquad u_6+u_1+u_2-u_3=0"
+          },
+          {
+            "title": {
+              "zh": "六条支路元件约束",
+              "en": "Six branch constitutive equations"
+            },
+            "text": {
+              "zh": "三只电阻用欧姆定律；左源关联电压与题给uₛ反向；两个电流源固定各自支路电流。",
+              "en": "Use Ohm’s law for the resistors, opposite polarity for the left source’s passive voltage and fixed currents for the two current sources."
+            },
+            "formula": "u_1=R_1i_1,\\quad u_2=R_2i_2,\\quad u_3=R_3i_3,\\quad u_4=-u_s,\\quad i_5=i_{s1},\\quad i_6=i_{s2}"
+          },
+          {
+            "title": {
+              "zh": "检查方程数量",
+              "en": "Check completeness"
+            },
+            "text": {
+              "zh": "共3+3+6=12个方程，对应12个未知。电流源电压u₅、u₆并非0，而是由整个电路决定，必须保留为未知。",
+              "en": "There are 3+3+6 = 12 equations for twelve unknowns. Current-source voltages u₅ and u₆ are not zero; the circuit determines them."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "取上述支路方向，完整系统为所列3条KCL、3条KVL及6条元件约束，共12个方程。特别u₄=−uₛ、i₅=iₛ₁、i₆=iₛ₂。",
+          "en": "With the defined references, the listed 3 KCL, 3 KVL and 6 branch laws form the complete twelve-equation system. In particular u₄=−uₛ, i₅=iₛ₁ and i₆=iₛ₂."
+        },
+        "pitfalls": [
+          {
+            "zh": "u₄沿d→a关联定义，所以等于−uₛ；不能忽略原电压源极性。",
+            "en": "u₄ is passively referenced d→a and equals −uₛ."
+          },
+          {
+            "zh": "只列KCL和KVL还不够，2b方程还包括每支路的元件关系。",
+            "en": "KCL/KVL alone are insufficient; include every branch constitutive relation."
+          },
+          {
+            "zh": "理想电流源固定电流，不固定为零电压。",
+            "en": "An ideal current source fixes its current, not zero voltage."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立把上述12式组装成12×12有理数系统，3组正电阻及正负源参数均秩12。另按原图独立搭建节点MNA，恢复出的全部6电流、6电压逐项完全相同，Σuₖiₖ=0及全电路功率和精确为0。附录未列2-6，完整方程与独立原拓扑检查提供依据。",
+            "en": "The twelve equations independently form a full-rank 12×12 exact-rational system for three sets of positive resistors and signed sources. Separately stamped original-node MNA reproduces all six currents and six voltages exactly, with Σuₖiₖ=0 and zero full power residual. The appendix omits 2-6; completeness and independent topology checks support the answer."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "branchCount": 6,
+            "unknownCount": 12,
+            "equationCounts": {
+              "KCL": 3,
+              "KVL": 3,
+              "constitutive": 6
+            },
+            "voltageReferences": [
+              "a-b",
+              "b-d",
+              "c-d",
+              "d-a",
+              "b-c",
+              "c-a"
+            ],
+            "matrixRanks": [
+              12,
+              12,
+              12
+            ],
+            "independentMnaAgreement": true,
+            "allPowerResiduals": 0
+          },
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": "No 2-6 answer is listed; all 12 equations checked against independent MNA and power."
+          }
+        },
+        "figure": "ca-2-6-figure.png"
+      },
+      "CA-2-7": {
+        "id": "CA-2-7",
+        "bookId": "2-7",
+        "title": {
+          "zh": "支路电流法：两个回路与顶节点KCL",
+          "en": "Branch-current method: KCL and loop-voltage equality"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-5"
+        },
+        "statement": {
+          "zh": "试用支路电流法求解题图2-5所示电路中各支路的电流。",
+          "en": "Use the branch-current method to find all branch currents in Fig. 2-5."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部公共。左6 V源上正下负，上端经2 Ω接顶中节点M，i₁从左向M。右4 V源上正下负，上端经4 Ω接M，i₂从右向M。中间1 A源由底向上流入M。",
+            "en": "Bottom is common. A top-positive 6 V source connects through 2 Ω to middle-top M, with i₁ toward M from the left. A top-positive 4 V source connects through 4 Ω toward M from the right, with i₂ toward M. A central 1 A source injects upward into M."
+          }
+        },
+        "prerequisites": {
+          "zh": "支路电流法；KCL；KVL；负电流的实际方向；电源吸收功率。",
+          "en": "Branch-current analysis, KCL, KVL, actual directions of negative currents and absorbed source power."
+        },
+        "recognition": {
+          "zh": "i₁、i₂都按图流入顶节点，1 A源也流入，因此两未知必有负值。先按参考方向列KCL，再用左右路径计算同一顶节点电压，联立两式。",
+          "en": "Both i₁ and i₂ are referenced into the top node, as is the 1 A source, so negative unknowns are expected. Apply KCL, then equate the middle voltage found from left and right paths."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "顶节点KCL",
+              "en": "Top-node KCL"
+            },
+            "text": {
+              "zh": "三个参考电流均流入M，所以i₁+i₂+1=0，即i₁+i₂=−1 A。",
+              "en": "All three reference currents enter M, so i₁+i₂+1 = 0."
+            },
+            "formula": "i_1+i_2=-1"
+          },
+          {
+            "title": {
+              "zh": "左右路径KVL",
+              "en": "KVL through left and right paths"
+            },
+            "text": {
+              "zh": "从底部经左6 V源和2 Ω到M，V_M=6−2i₁；从右4 V源和4 Ω到M，V_M=4−4i₂。相等得2i₁−4i₂=2。",
+              "en": "The left path gives V_M = 6−2i₁ and right path V_M = 4−4i₂. Equality gives 2i₁−4i₂ = 2."
+            },
+            "formula": "6-2i_1=4-4i_2\\Rightarrow2i_1-4i_2=2"
+          },
+          {
+            "title": {
+              "zh": "联立求解并说明全部支路",
+              "en": "Solve and state all branch directions"
+            },
+            "text": {
+              "zh": "解得i₁=−1/3 A、i₂=−2/3 A。实际从M向左流1/3 A、向右流2/3 A，然后均经各自电压源向下回到底部；中央源仍向上1 A。",
+              "en": "Solving gives i₁ = −1/3 A and i₂ = −2/3 A. Actual currents leave M leftward by 1/3 A and rightward by 2/3 A, then pass downward through the voltage sources; the middle source remains 1 A upward."
+            },
+            "formula": "i_1=-\\frac13\\,\\mathrm A,\\qquad i_2=-\\frac23\\,\\mathrm A,\\qquad i_s=1\\,\\mathrm A\\ \\text{upward}"
+          }
+        ],
+        "answer": {
+          "zh": "i₁=−1/3 A，i₂=−2/3 A；实际分别从顶中节点向左1/3 A、向右2/3 A。中央支路为1 A向上。",
+          "en": "i₁ = −1/3 A and i₂ = −2/3 A, actually outward from the middle node leftward and rightward. The central branch is 1 A upward."
+        },
+        "pitfalls": [
+          {
+            "zh": "i₂的原箭头向左、指向M，不能当成由M向右。",
+            "en": "The original i₂ arrow points leftward toward M."
+          },
+          {
+            "zh": "负答案应保留，再另述实际方向，不要只取绝对值。",
+            "en": "Retain negative referenced values and state actual directions separately."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原图MNA得M=20/3 V，大于左6 V与右4 V，故实际确从M向两侧流。两电阻共耗散2 W，6 V源吸收2 W、4 V源吸收8/3 W，1 A源提供20/3 W，功率完全平衡。支路方程和MNA结果一致，附录第333页/PDF342页为−1/3、−2/3 A。",
+            "en": "Independent original-topology MNA gives M = 20/3 V, above both 6 V and 4 V, confirming outward actual currents. Resistors dissipate 2 W, the voltage sources absorb 2 and 8/3 W, and the current source supplies 20/3 W. Branch equations and MNA agree with the appendix values −1/3 and −2/3 A."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "i1_A": "-1/3",
+            "i2_A": "-2/3",
+            "centralCurrentUp_A": 1,
+            "middleVoltage_V": "20/3",
+            "resistorDissipation_W": 2,
+            "voltageSourceAbsorbedPowers_W": [
+              2,
+              "8/3"
+            ],
+            "currentSourceSuppliedPower_W": "20/3",
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "figure": "ca-2-7-figure.png"
       }
     }
   },
@@ -26966,6 +27873,174 @@
           }
         },
         "figure": "figure-4.2.5.png"
+      },
+      "AE-4.4.2": {
+        "id": "AE-4.4.2",
+        "bookId": "4.4.2",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "PMOS偏置与增益：先声明λ的处理",
+          "en": "PMOS bias and gain: state how λ is treated"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 147,
+          "pdfPage": 180,
+          "figure": "图题4.4.2",
+          "figurePrintedPage": 148,
+          "figurePdfPage": 181
+        },
+        "statement": {
+          "zh": "电路如图题4.4.2所示，设所有电容对信号而言都可视为短路。已知MOS管V_TP=−0.4 V，K_p=0.8 mA/V²，λ=0.02 V⁻¹。试求：（1）I_DQ和V_DSQ；（2）电压增益A_v=v_o/v_i。图中R_s=1.2 kΩ接+3 V，R_d=2 kΩ接−3 V，R_g=100 kΩ接地，源极有旁路电容C_s。",
+          "en": "For Fig. 4.4.2, all capacitors are shorts for signals. The MOS parameters are V_TP=−0.4 V, K_p=0.8 mA/V² and λ=0.02 V⁻¹. Find (1) I_DQ and V_DSQ and (2) A_v=v_o/v_i. R_s=1.2 kΩ connects to +3 V, R_d=2 kΩ to −3 V, R_g=100 kΩ to ground, and C_s bypasses the source."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "PMOS源经1.2 kΩ接+3 V并经C_s交流接地；栅由耦合电容接v_i，100 kΩ接地；漏经2 kΩ接−3 V并经电容输出v_o，i_D图示方向向下。",
+            "en": "PMOS source connects through 1.2 kΩ to +3 V and is AC-grounded by C_s. The gate is AC-coupled to v_i and grounded through 100 kΩ. The drain connects through 2 kΩ to −3 V and is AC-coupled to v_o; the indicated drain-branch current is downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "PMOS电压参考；电容直流开路、交流短路；由器件电流偏导得到g_m和r_o。",
+          "en": "PMOS voltage references; capacitors open for DC and short for AC; g_m and r_o from terminal-current derivatives."
+        },
+        "recognition": {
+          "zh": "用正的源到漏电流I书写偏置，V_DS仍按漏减源为负。主结果在直流与小信号中一致保留题给λ；另列教材常用的直流忽略λ近似，不能混用两套模型的中间量。",
+          "en": "Write bias with positive source-to-drain current I while keeping V_DS negative. The main result consistently retains λ for both DC and small signals. The common DC-neglects-λ approximation is listed separately; do not mix intermediate values from the two models."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）原节点直流关系",
+              "en": "(1) Original DC node relations"
+            },
+            "text": {
+              "zh": "直流耦合与旁路电容均开路，栅电位为0。以下I用mA、电阻用kΩ，电压自然为V。图中向下支路电流大小I为正，若定义流入PMOS漏极则i_D=−I。",
+              "en": "All capacitors are open for DC and V_G=0. Use I in mA and resistance in kΩ below, giving volts. Downward branch-current magnitude I is positive; a drain-entering PMOS current reference would be −I."
+            },
+            "formula": "V_S=3-1.2I,\\quad V_D=-3+2I,\\quad V_{SG}=3-1.2I,\\quad V_{SD}=6-3.2I"
+          },
+          {
+            "title": {
+              "zh": "保留λ求物理解",
+              "en": "Retain λ and select the physical root"
+            },
+            "text": {
+              "zh": "采用I=K_p(V_SG−|V_TP|)²(1+λV_SD)。求根后必须满足V_SG>0.4且V_SD≥V_SG−0.4；其余两个三次方程根不符合正常偏置。",
+              "en": "Use I=K_p(V_SG−|V_TP|)²(1+λV_SD). Enforce V_SG>0.4 and V_SD≥V_SG−0.4 after root finding; the other two cubic roots are not valid normal-bias solutions."
+            },
+            "formula": "I=0.8(2.6-1.2I)^2[1+0.02(6-3.2I)]\\quad\\Rightarrow\\quad I\\approx1.177498\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "回查工作区和极性",
+              "en": "Check region and polarity"
+            },
+            "text": {
+              "zh": "得到V_S≈1.587003 V、V_D≈−0.645004 V，所以V_DSQ≈−2.232007 V。V_SG≈1.587003>0.4，V_SD≈2.232007大于过驱动1.187003 V，恒流区成立。",
+              "en": "V_S≈1.587003 V and V_D≈−0.645004 V give V_DSQ≈−2.232007 V. V_SG≈1.587003 exceeds 0.4 and V_SD≈2.232007 exceeds the 1.187003 V overdrive, confirming saturation."
+            },
+            "formula": "\\boxed{I_{DQ}\\approx1.177498\\,\\mathrm{mA}\\text{ downward},\\quad V_{DSQ}\\approx-2.232007\\,\\mathrm V}"
+          },
+          {
+            "title": {
+              "zh": "（2）电流偏导求小信号参数",
+              "en": "(2) Derive small-signal parameters from current derivatives"
+            },
+            "text": {
+              "zh": "源极旁路使交流源电位为0，双电源都为交流地。保留同一模型的偏导：g_m=2K_pV_OV(1+λV_SD)，g_ds=λK_pV_OV²。r_o=(1+λV_SD)/(λI)，不是不加说明地当成精确1/(λI)。",
+              "en": "The bypassed source and both supplies are AC ground. Differentiate the same model: g_m=2K_pV_OV(1+λV_SD), g_ds=λK_pV_OV². Thus r_o=(1+λV_SD)/(λI); 1/(λI) alone is an approximation."
+            },
+            "formula": "g_m\\approx1.983985\\,\\mathrm{mS},\\quad g_{ds}\\approx0.02254361\\,\\mathrm{mS},\\quad r_o\\approx44.35848\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "漏极KCL给反相增益",
+              "en": "Drain KCL gives inverting gain"
+            },
+            "text": {
+              "zh": "输出没有额外负载，输入v_i直接为栅极交流电压。栅压上升使PMOS向下电流减小，输出漏压下降，所以增益为负。",
+              "en": "There is no extra output load and v_i is the gate’s AC voltage. Rising gate voltage reduces downward PMOS current and lowers the drain voltage, so gain is negative."
+            },
+            "formula": "\\left(\\frac1{R_d}+g_{ds}\\right)v_o+g_mv_i=0,\\quad\\boxed{A_v=-g_m(R_d\\parallel r_o)\\approx-3.796784}"
+          },
+          {
+            "title": {
+              "zh": "常用工程近似另列",
+              "en": "State the common engineering approximation separately"
+            },
+            "text": {
+              "zh": "若静态计算忽略λ，则I≈1.162234 mA，V_DSQ≈−2.280850 V；再用g_m≈2K_pV_OV≈1.928510 mS与r_o≈1/(λI)≈43.02058 kΩ，得A_v≈−3.685675（约−3.7）。这是一套常用近似，并非前面完整含λ模型的同一精确结果。",
+              "en": "If λ is neglected in DC, I≈1.162234 mA and V_DSQ≈−2.280850 V. With g_m≈2K_pV_OV≈1.928510 mS and r_o≈1/(λI)≈43.02058 kΩ, A_v≈−3.685675 (about −3.7). This is a common approximation, not the exact result of the full λ model above."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "一致保留λ：I_DQ≈1.177498 mA（按图向下），V_DSQ≈−2.232007 V，A_v≈−3.796784。若采用静态忽略λ的常用近似：1.162234 mA、−2.280850 V及约−3.685675；两套处理方式分别说明。",
+          "en": "Consistently retaining λ gives I_DQ≈1.177498 mA downward, V_DSQ≈−2.232007 V and A_v≈−3.796784. The explicitly separate DC-neglects-λ approximation gives 1.162234 mA, −2.280850 V and gain about −3.685675."
+        },
+        "pitfalls": [
+          {
+            "zh": "图中PMOS向下电流为正的大小，与“流入漏极为正”的参考符号不同。",
+            "en": "The positive downward branch-current magnitude differs from a drain-entering current reference."
+          },
+          {
+            "zh": "C_s旁路R_s只对交流有效；直流仍须经过R_s求偏置。",
+            "en": "C_s bypasses R_s only for AC; DC bias still includes R_s."
+          },
+          {
+            "zh": "r_o不是R_s，也不是漏极电阻R_d。",
+            "en": "r_o is neither source resistor R_s nor drain resistor R_d."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立用区间二分及三次多项式全部根核对直流物理解，检查源/漏节点KCL与双电源功率；对完整端电流分别做栅压、漏压中央差分求g_m、g_ds，原漏极节点扰动给同一增益。另复算静态忽略λ的近似值。",
+            "en": "Independent bisection and all cubic roots identify the physical bias, with source/drain KCL and dual-supply power balance. Central differences of the full terminal current independently recover g_m/g_ds; original drain-node perturbations recover gain. The DC-neglects-λ approximation is separately recomputed."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "教材长沟道PMOS模型；K_p已含1/2，衬底接源，栅电流0，电容为理想交流短路，主结果保留λ；r_o与g_m均由同一模型求导。未给频率和电容值，不估计实际带宽。",
+            "en": "Textbook long-channel PMOS, K_p includes 1/2, body tied to source and zero gate current. Capacitors are ideal AC shorts. Main values retain λ, with r_o/g_m derived from the same model. No actual bandwidth is inferred without capacitor values or frequency."
+          },
+          "results": {
+            "fullLambdaModel": {
+              "ID_mA": 1.177497770271192,
+              "VDS_V": -2.2320071351321857,
+              "VS_V": 1.5870026756745697,
+              "VD_V": -0.6450044594576161,
+              "gm_mS": 1.9839850312081642,
+              "ro_kohm": 44.358476469218694,
+              "gain": -3.796783674742393
+            },
+            "DCneglectLambdaApproximation": {
+              "ID_mA": 1.162234452327961,
+              "VDS_V": -2.2808497525505245,
+              "gain": -3.6856749660362307
+            }
+          }
+        },
+        "figure": "figure-4.4.2.png"
       }
     }
   }
