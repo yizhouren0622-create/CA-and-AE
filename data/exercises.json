@@ -10996,6 +10996,1026 @@
           }
         },
         "figure": "ca-1-40-figure.png"
+      },
+      "CA-1-41": {
+        "id": "CA-1-41",
+        "bookId": "1-41",
+        "title": {
+          "zh": "端口电压：沿源极性相加，优先识别直接并联",
+          "en": "Port voltage: source polarities and direct parallel constraints"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-39(a)、(b)"
+        },
+        "statement": {
+          "zh": "写出题图1-39所示各电路的端口电压u与各独立电源参数的关系。",
+          "en": "Express port voltage u in terms of the independent source parameters for each circuit in Fig. 1-39."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)上u₁源上正下负，下u₂源上负下正，两源串联；端口u上正下负。(b)u₁直接跨端口，上正下负；左u₂也上正下负，其上端经向左i₁源接端口上端。",
+            "en": "(a) Series voltage sources: u₁ top-positive, u₂ bottom-positive; port u top-positive. (b) u₁ is directly across the port with the same polarity. Left u₂ is top-positive and its upper node connects through leftward i₁ to the upper port."
+          }
+        },
+        "prerequisites": {
+          "zh": "电压源端电压约束；串联电压代数和；并联同压；不以书后答案覆盖原图。",
+          "en": "Ideal voltage constraints, signed series sums, equal parallel voltage and checking the original figure."
+        },
+        "recognition": {
+          "zh": "(a)按端口从下到上累加电压升降。(b)先看直接并联端口的理想电压源，它固定u，左侧支路只影响内部电流。",
+          "en": "For (a), sum voltage rises from lower to upper port. For (b), the ideal source directly across the port fixes u; the left branch affects internal currents."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a) 串联反向电压",
+              "en": "(a): opposed series voltages"
+            },
+            "text": {
+              "zh": "从下端向上先经过u₂的正端到负端，电位降低u₂；再经过u₁的负端到正端，升高u₁，因此u=u₁−u₂。",
+              "en": "Moving upward crosses u₂ from positive to negative, then u₁ from negative to positive, giving u = u₁−u₂."
+            },
+            "formula": "u_{(a)}=u_1-u_2"
+          },
+          {
+            "title": {
+              "zh": "(b) 直接并联定端电压",
+              "en": "(b): direct parallel source"
+            },
+            "text": {
+              "zh": "端口u和u₁源都上正下负，且端点由导线直接相连，所以u=u₁，与u₂、i₁无关。",
+              "en": "Port u and source u₁ share both nodes and are both top-positive, so u = u₁, independent of u₂ and i₁."
+            },
+            "formula": "u_{(b)}=u_1"
+          },
+          {
+            "title": {
+              "zh": "核对附录符号",
+              "en": "Check the appendix sign"
+            },
+            "text": {
+              "zh": "附录第333页把(b)印成−u₁，但原图端口与u₁的极性相同，没有反向；该负号不应照抄。",
+              "en": "The appendix prints −u₁ for (b), but the original port and u₁ have identical polarity. That minus sign conflicts with the diagram."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "(a) u=u₁−u₂；(b) u=u₁。附录(b)的负号错误。",
+          "en": "(a) u = u₁−u₂; (b) u = u₁. The appendix’s minus sign in (b) is incorrect."
+        },
+        "pitfalls": [
+          {
+            "zh": "串联源要按正负端相加，不能把两个源幅值一律相加。",
+            "en": "Sum series sources by their polarities, not magnitudes alone."
+          },
+          {
+            "zh": "并联源与端口同极性时直接相等，不会因另一支路电流方向改变符号。",
+            "en": "A same-polarity parallel source equals the port voltage regardless of another branch’s current direction."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原图MNA在3组有正有负的源参数、每组3个负载下核验两图，分别恒得u₁−u₂及u₁，全部节点及功率残差为0。(b)取u₁=7 V时端口为+7 V，直接反证附录−7 V。原图PDF45与附录PDF342高分辨率证据均保留。",
+            "en": "Independent original-topology MNA uses three source-parameter sets, including negative values, and three loads per set. The two results remain u₁−u₂ and u₁ with zero node and power residuals. In (b), u₁ = 7 V gives +7 V at the port, directly contradicting −7 V. High-resolution original PDF45 and appendix PDF342 evidence is retained."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "relations": [
+              "u=u1-u2",
+              "u=u1"
+            ],
+            "allTwoSubpartsVerified": true,
+            "originalLoadChecks": 18,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "discrepancy",
+            "subpart": "b",
+            "appendix": "u=-u1",
+            "correct": "u=u1",
+            "reason": "Port and directly parallel u1 have identical top-positive polarity."
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b"
+        ],
+        "figure": "ca-1-41-figure.png"
+      },
+      "CA-1-42": {
+        "id": "CA-1-42",
+        "bookId": "1-42",
+        "title": {
+          "zh": "端口电流：对整个两端网络列KCL",
+          "en": "Port current: apply KCL to the whole two-terminal network"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 36,
+          "pdfPage": 45,
+          "figurePrintedPage": 36,
+          "figurePdfPage": 45,
+          "figure": "题图1-40(a)、(b)"
+        },
+        "statement": {
+          "zh": "写出题图1-40所示各电路的端口电流i与各独立电源参数的关系。",
+          "en": "Express port current i in terms of the independent source parameters for each circuit in Fig. 1-40."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)左i₂向上并联u₁电压源，内部下节点经向右i₁源接下端口；上端口电流i向右流出。(b)并联i₁向上、i₂向下，端口i从上端向右流出。",
+            "en": "(a) Upward i₂ is parallel with u₁. The lower internal node connects through rightward i₁ to the lower port; upper-port i is outward. (b) Parallel i₁ upward and i₂ downward feed outward upper-port i."
+          }
+        },
+        "prerequisites": {
+          "zh": "两端口边界KCL；参考方向；电流源串并联约束。",
+          "en": "Boundary KCL, reference directions and ideal current-source constraints."
+        },
+        "recognition": {
+          "zh": "(a)上下端的外流参考箭头同为从内部流向外部，故代数和为0。(b)按上节点净注入相减。",
+          "en": "In (a), both terminal reference arrows point outward from the internal network, so their sum is zero. In (b), subtract the downward source from the upward injection."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a) 端口边界守恒",
+              "en": "(a): boundary current conservation"
+            },
+            "text": {
+              "zh": "上端流出i，下端流出i₁，整个两端网络不积累净电荷，故i+i₁=0。内部u₁、i₂只调整内部支路量。",
+              "en": "Upper current i and lower current i₁ both leave, so i+i₁ = 0. Internal u₁ and i₂ only affect internal branch quantities."
+            },
+            "formula": "i_{(a)}=-i_1"
+          },
+          {
+            "title": {
+              "zh": "(b) 上节点KCL",
+              "en": "(b): upper-node KCL"
+            },
+            "text": {
+              "zh": "i₁从下流入顶节点，i₂向下流出，剩余经端口流出的电流i=i₁−i₂。",
+              "en": "i₁ enters the upper node and i₂ leaves downward; the remaining outward port current is i₁−i₂."
+            },
+            "formula": "i_{(b)}=i_1-i_2"
+          }
+        ],
+        "answer": {
+          "zh": "(a) i=−i₁；(b) i=i₁−i₂。",
+          "en": "(a) i = −i₁; (b) i = i₁−i₂."
+        },
+        "pitfalls": [
+          {
+            "zh": "(a)的i₁箭头朝下端口外侧，不是从负端流入网络。",
+            "en": "In (a), i₁ points outward toward the lower port, not inward."
+          },
+          {
+            "zh": "端口电流参考方向是向外，不能改成向内后仍保留原答案。",
+            "en": "The port-current reference is outward; reversing it reverses the answer."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原图MNA用3组源参数及3个有限负载，得到i=−i₁和i=i₁−i₂，全部原电源、负载功率总和为0。与附录第333页/PDF342页两问一致。",
+            "en": "Independent original-topology MNA with three parameter sets and three finite loads reproduces i = −i₁ and i = i₁−i₂, with all original source/load powers balancing. Both parts match printed p. 333/PDF p. 342."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "relations": [
+              "i=-i1",
+              "i=i1-i2"
+            ],
+            "allTwoSubpartsVerified": true,
+            "originalLoadChecks": 18,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b"
+        ],
+        "figure": "ca-1-42-figure.png"
+      },
+      "CA-1-43": {
+        "id": "CA-1-43",
+        "bookId": "1-43",
+        "title": {
+          "zh": "理想源网络最简化：保留端口约束",
+          "en": "Simplify ideal-source networks by preserving the port law"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-41(a)、(b)、(c)、(d)"
+        },
+        "statement": {
+          "zh": "将题图1-41所示各电路化为最简形式。",
+          "en": "Reduce each circuit in Fig. 1-41 to its simplest form."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)u₁上正下负直接跨端口，另一支路u₂串联向右i₁。(b)u₁并联向上i₂，底部向右i₁源串接负端口。(c)i₁向上与i₂向下并联，负端口串接u₁左负右正。(d)u₁上正下负，顶u₂左正右负，端口另并联向下i₁。",
+            "en": "(a) u₁ directly spans the port; another branch has u₂ and rightward i₁. (b) u₁ is parallel with upward i₂, and rightward i₁ is series with the lower port. (c) Upward i₁ and downward i₂ are parallel, with bottom-positive-port series u₁. (d) Series u₁ top-positive and u₂ left-positive set the port, with downward i₁ parallel."
+          }
+        },
+        "prerequisites": {
+          "zh": "理想电压源固定端电压；理想电流源固定端电流；源串并联端口等效；参考方向。",
+          "en": "Ideal voltage/current constraints, source equivalence and port references."
+        },
+        "recognition": {
+          "zh": "判断端口最后受固定电压还是固定电流约束，保留该约束即可。内部源的电流或电压不必保持，但端口u、i关系必须对任何允许负载相同。",
+          "en": "Identify whether the port is fixed by a voltage or current law and retain that law. Internal quantities can change, but the port u–i relation must hold for any admissible load."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a) 并联理想电压源",
+              "en": "(a): a directly parallel voltage source"
+            },
+            "text": {
+              "zh": "u₁直接跨端口，故最简为上正下负电压源u₁。",
+              "en": "u₁ directly spans the port, so the equivalent is a top-positive ideal voltage source u₁."
+            },
+            "formula": "u_{(a)}=u_1"
+          },
+          {
+            "title": {
+              "zh": "(b) 串联电流源决定端口流量",
+              "en": "(b): a series current source fixes terminal flow"
+            },
+            "text": {
+              "zh": "底部i₁向右流出网络，上端流出i=−i₁。可画向下i₁的电流源；等价于向上参考值−i₁。",
+              "en": "Bottom i₁ leaves rightward, so upper outward current is −i₁. Draw a downward i₁ source, equivalently an upward-reference −i₁ source."
+            },
+            "formula": "i_{(b)}=-i_1"
+          },
+          {
+            "title": {
+              "zh": "(c) 并联电流源代数合成",
+              "en": "(c): combine parallel current sources"
+            },
+            "text": {
+              "zh": "上节点净注入i₁−i₂，底部串联电压源不改变端口电流。最简为从下端向上端的电流源i₁−i₂。",
+              "en": "Net upper injection is i₁−i₂; the series lower voltage source does not alter port current. The equivalent current source is i₁−i₂ upward."
+            },
+            "formula": "i_{(c)}=i_1-i_2"
+          },
+          {
+            "title": {
+              "zh": "(d) 串联电压源相减",
+              "en": "(d): subtract opposed series voltages"
+            },
+            "text": {
+              "zh": "端口上节点电位为u₁−u₂，向下并联电流源只改变内部源电流。最简为上正下负电压源u₁−u₂。",
+              "en": "The upper-port potential is u₁−u₂. The parallel current source changes only internal source currents, so use a top-positive voltage source u₁−u₂."
+            },
+            "formula": "u_{(d)}=u_1-u_2"
+          }
+        ],
+        "answer": {
+          "zh": "(a) 电压源u₁；(b) 向下电流源i₁（或向上−i₁）；(c) 向上电流源i₁−i₂；(d) 上正下负电压源u₁−u₂。图示保留原端口方向。",
+          "en": "(a) Voltage source u₁; (b) downward current source i₁, or upward −i₁; (c) upward current source i₁−i₂; (d) top-positive voltage source u₁−u₂. See equivalent diagrams with original port references."
+        },
+        "pitfalls": [
+          {
+            "zh": "最简等效保证端口关系，不保证每个内部源功率相同。",
+            "en": "A simplest equivalent preserves port behavior, not every original source’s power."
+          },
+          {
+            "zh": "(b)若画向上的源，应标−i₁；若画向下，应标i₁。",
+            "en": "In (b), label an upward source −i₁ or a downward source i₁."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立对四个原拓扑各取3组参数、3个负载，36个原电路MNA均符合相应最简端口律，全部原源与负载功率和为0。四结果与附录第333页/PDF342页一致；另绘原生SVG最简电路，标出极性与源箭头。",
+            "en": "Independent original-topology MNA checks four circuits with three parameter sets and three loads each. All 36 match the simplest port laws and have zero full power residuals. All four agree with printed p. 333/PDF p. 342. Native SVG equivalents show polarities and current arrows."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "equivalents": [
+              "voltage u1",
+              "downward current i1",
+              "upward current i1-i2",
+              "voltage u1-u2"
+            ],
+            "allFourSubpartsVerified": true,
+            "originalLoadChecks": 36,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "simplest-equivalents",
+            "alt": {
+              "zh": "四图最简等效：(a)u₁电压源上正下负；(b)i₁电流源向下，端口外流为−i₁；(c)i₁−i₂电流源向上；(d)u₁−u₂电压源上正下负。",
+              "en": "Four equivalents: (a) top-positive voltage u₁; (b) current i₁ downward, outward port current −i₁; (c) current i₁−i₂ upward; (d) top-positive voltage u₁−u₂."
+            },
+            "figure": "ca-1-43-simplified.svg"
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "figure": "ca-1-43-figure.png"
+      },
+      "CA-1-44": {
+        "id": "CA-1-44",
+        "bookId": "1-44",
+        "title": {
+          "zh": "画最简戴维南电路：开路电压与去源电阻",
+          "en": "Draw the simplest Thevenin forms: open voltage and resistance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-42(a)、(b)、(c)"
+        },
+        "statement": {
+          "zh": "画出题图1-42所示各电路的最简形式。",
+          "en": "Draw the simplest forms of the circuits in Fig. 1-42."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "(a)a经5 V左正右负源到C，C经2 Ω到b且有2 A由b向上注入C。(b)a经1 Ω到10 V源上负下正的上端C，1 A从b向上注入a。(c)8 V上正下负源经4 Ω到C，C经4 Ω到b、经3 Ω到a，a经5 Ω到b。",
+            "en": "(a) a connects through left-positive 5 V to C, with 2 Ω C-to-b and 2 A upward b-to-C. (b) a connects through 1 Ω to C at the negative top of a 10 V source; 1 A enters a from b. (c) A top-positive 8 V source feeds 4 Ω to C; C has 4 Ω to b and 3 Ω to a; a has internal 5 Ω to b."
+          }
+        },
+        "prerequisites": {
+          "zh": "戴维南等效；开路电压；独立电压源短路、电流源开路求电阻；端口外流电流。",
+          "en": "Thevenin equivalence, open-circuit voltage, source deactivation and outward port current."
+        },
+        "recognition": {
+          "zh": "分别求a对b的开路电压V_th与去源后的R_th，再画理想电压源串联电阻。(c)的5 Ω属于网络内部，开路外端口时不能删掉。",
+          "en": "Find V_th from a to b and R_th after deactivation, then draw a series voltage source and resistor. In (c), the 5 Ω is internal and remains when the external port is open."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a) Norton部分先变成电压源",
+              "en": "(a): transform the Norton part"
+            },
+            "text": {
+              "zh": "2 A并联2 Ω给C对b开路4 V，再加a对C的5 V，V_th=9 V。去源后5 V短路、2 A开路，只剩2 Ω。",
+              "en": "The 2 A/2 Ω Norton part gives C-to-b open voltage 4 V. Adding 5 V from C to a gives V_th = 9 V. Deactivation leaves 2 Ω."
+            },
+            "formula": "V_{{\\rm th},a}=9\\,\\mathrm V,\\qquad R_{{\\rm th},a}=2\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(b) 注意10 V源反极性",
+              "en": "(b): retain the reversed 10 V polarity"
+            },
+            "text": {
+              "zh": "C对b为−10 V。开路时1 A经1 Ω从a流向C，a比C高1 V，所以V_th=−9 V，去源后R_th=1 Ω。图中用9 V源下正上负表示。",
+              "en": "C is −10 V relative to b. With the port open, 1 A runs from a through 1 Ω to C, so a is 1 V higher: V_th = −9 V and R_th = 1 Ω. The diagram uses a 9 V source positive at the bottom."
+            },
+            "formula": "V_{{\\rm th},b}=-9\\,\\mathrm V,\\qquad R_{{\\rm th},b}=1\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(c) 先简化左半，再保留内部5 Ω",
+              "en": "(c): reduce the left part and retain internal 5 Ω"
+            },
+            "text": {
+              "zh": "左8 V与两个4 Ω对C-b等效为4 V串联2 Ω，再串3 Ω得到4 V串5 Ω。它与内部5 Ω连接，开路a-b电压分为2 V；去源后两条5 Ω并联，R_th=2.5 Ω。",
+              "en": "The left 8 V/two-4 Ω part is 4 V in series with 2 Ω at C-b. Adding 3 Ω gives 4 V with series 5 Ω. Internal 5 Ω halves the open output to 2 V; after deactivation two 5 Ω paths are parallel, giving 2.5 Ω."
+            },
+            "formula": "V_{{\\rm th},c}=4\\frac5{5+5}=2\\,\\mathrm V,\\qquad R_{{\\rm th},c}=5\\parallel5=\\frac52\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "写端口律并画电路",
+              "en": "Write the port laws and draw"
+            },
+            "text": {
+              "zh": "定义i_out从a向负载流出，三图依次满足u=9−2i_out、u=−9−i_out、u=2−2.5i_out。最简图中源极性与这些符号保持一致。",
+              "en": "With i_out leaving a, the three laws are u = 9−2i_out, u = −9−i_out and u = 2−2.5i_out. Source polarities in the simplest diagrams preserve these signs."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "(a) 9 V上正下负源串2 Ω；(b) 9 V下正上负源串1 Ω；(c) 2 V上正下负源串2.5 Ω。",
+          "en": "(a) Top-positive 9 V in series with 2 Ω; (b) bottom-positive 9 V in series with 1 Ω; (c) top-positive 2 V in series with 2.5 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "端口外部开路不等于删除网络内部5 Ω。",
+            "en": "Opening the external port does not remove internal 5 Ω."
+          },
+          {
+            "zh": "(b)开路电压是−9 V，不能只因源标10 V就写正值。",
+            "en": "The open voltage in (b) is −9 V; preserve source polarity."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立保留每图所有原元件，分别检查开路及2、5、10 Ω负载，12个MNA结果严格满足对应戴维南端口律。再独立去源加1 V测试，得到2、1、5/2 Ω；所有原电路功率和为0。附录第333页未列1-44，原图与两种独立端口检查构成依据。",
+            "en": "Independent MNA retains every original element under open circuit and 2, 5 and 10 Ω loads. All 12 satisfy the Thevenin laws exactly. Separate deactivated-source 1 V tests give 2, 1 and 5/2 Ω, and all original powers balance. The appendix omits 1-44; the original figures and both independent port checks support these results."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "openCircuitVoltages_V": [
+              9,
+              -9,
+              2
+            ],
+            "TheveninResistances_ohm": [
+              2,
+              1,
+              2.5
+            ],
+            "allThreeSubpartsVerified": true,
+            "originalLoadChecks": 12,
+            "deactivatedTestChecks": 3,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": "The appendix jumps from 1-43 to 1-45; 1-44 is independently verified."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "simplest-equivalents",
+            "alt": {
+              "zh": "三个最简戴维南电路：(a)9 V源上正下负串2 Ω；(b)9 V源上负下正串1 Ω；(c)2 V源上正下负串2.5 Ω。端口a在上、b在下。",
+              "en": "Three simplest Thevenin circuits: (a) top-positive 9 V with 2 Ω; (b) bottom-positive 9 V with 1 Ω; (c) top-positive 2 V with 2.5 Ω. Port a is upper, b lower."
+            },
+            "figure": "ca-1-44-simplified.svg"
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c"
+        ],
+        "figure": "ca-1-44-figure.png"
+      },
+      "CA-1-46": {
+        "id": "CA-1-46",
+        "bookId": "1-46",
+        "title": {
+          "zh": "电源等效变换求电流：两边化成戴维南支路",
+          "en": "Source transformations: reduce both sides to Thevenin branches"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-44"
+        },
+        "statement": {
+          "zh": "利用电源等效变换求题图1-44所示电路中的电流i。",
+          "en": "Use source transformations to find current i in Fig. 1-44."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左3 A源向上，经顶2 Ω接15 V源正端A，源负端B经底2 Ω到公共底节点0；A经3 Ω到M，M经6 Ω到底且i向下。M经10 Ω到C；C有5 A向下源，并有4 Ω、4 V上负下正源、4 Ω串联回到底。",
+            "en": "Upward 3 A feeds top 2 Ω into A at the positive terminal of 15 V; its negative B connects through bottom 2 Ω to ground. A connects through 3 Ω to M, with 6 Ω to ground carrying downward i. M connects through 10 Ω to C, which has downward 5 A and a series path of 4 Ω, bottom-positive 4 V, and 4 Ω to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "理想源支路端口等效；Norton/戴维南变换；串联电阻；节点法核验。",
+          "en": "Ideal-source port equivalence, Norton/Thevenin transformations, series resistors and nodal verification."
+        },
+        "recognition": {
+          "zh": "以6 Ω两端为观察端口。左15 V理想源固定自身电压，旁边3 A串2 Ω只影响内部电流；左侧对端口可化15 V串5 Ω。右侧先把两4 Ω及反向4 V源化简，再与5 A源合并。",
+          "en": "View the network from the 6 Ω terminals. The left 15 V source fixes its voltage, making the side 3 A/2 Ω branch irrelevant to that port law; the left branch is 15 V in series with 5 Ω. On the right, reduce the two 4 Ω and reversed 4 V source, then combine with 5 A."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "左侧化成15 V串5 Ω",
+              "en": "Reduce the left side to 15 V and 5 Ω"
+            },
+            "text": {
+              "zh": "左支路3 Ω、15 V源和底2 Ω串联，对M到底的关系为I_L=(V_M−15)/5。左端3 A支路并在理想15 V源旁，只改变该电压源电流。",
+              "en": "The left path contains 3 Ω, the 15 V source and bottom 2 Ω, giving I_L = (V_M−15)/5. The adjacent 3 A branch changes the ideal voltage-source current but not this port relation."
+            },
+            "formula": "I_L=\\frac{V_M-15}{5}"
+          },
+          {
+            "title": {
+              "zh": "右侧化成−44 V串18 Ω",
+              "en": "Reduce the right side to −44 V and 18 Ω"
+            },
+            "text": {
+              "zh": "C到底的串联支路总电阻8 Ω，电压源沿向下为−4 V，故电流(V_C+4)/8。再加向下5 A，总电流=V_C/8+11/2，对应戴维南开路−44 V、内阻8 Ω。再串顶10 Ω，得到−44 V串18 Ω。",
+              "en": "The C-to-ground series path has 8 Ω and a −4 V downward source drop, so its current is (V_C+4)/8. Adding downward 5 A gives V_C/8+11/2, equivalent to open voltage −44 V and 8 Ω. Adding top 10 Ω yields −44 V in series with 18 Ω."
+            },
+            "formula": "I_R=\\frac{V_M+44}{18}"
+          },
+          {
+            "title": {
+              "zh": "并联三支路求负载电流",
+              "en": "Solve the three parallel branches"
+            },
+            "text": {
+              "zh": "M点列KCL：(V_M−15)/5+(V_M+44)/18+V_M/6=0，解得V_M=25/19 V，i=V_M/6=25/114 A。",
+              "en": "KCL at M gives (V_M−15)/5+(V_M+44)/18+V_M/6 = 0, hence V_M = 25/19 V and i = 25/114 A."
+            },
+            "formula": "\\frac{V_M-15}{5}+\\frac{V_M+44}{18}+\\frac{V_M}{6}=0\\Rightarrow i=\\frac{25}{114}\\,\\mathrm A\\approx0.219298\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "i=25/114 A≈0.2193 A，按原图向下；按两位小数约0.22 A。",
+          "en": "i = 25/114 A ≈ 0.2193 A downward, or 0.22 A to two decimals."
+        },
+        "pitfalls": [
+          {
+            "zh": "右4 V源上负下正，等效开路电压为−44 V，不能取+44 V。",
+            "en": "The right 4 V source is bottom-positive, making the reduced open voltage −44 V."
+          },
+          {
+            "zh": "左底2 Ω不与顶2 Ω同属一个无分支串联路径，应从端口保留正确3+2 Ω。",
+            "en": "Do not combine the two left 2 Ω blindly; the relevant port series path is 3+2 Ω."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立完整七节点MNA保留3 A、15 V、5 A、反向4 V及全部七电阻，得到M=25/19 V、i=25/114 A；与等效三支路KCL完全一致，所有原元件吸收功率总和精确为0。附录第333页/PDF342页0.22 A是两位小数舍入。",
+            "en": "Independent full seven-node MNA retains all sources and seven resistors, giving M = 25/19 V and i = 25/114 A. It exactly matches reduced-branch KCL, with zero sum of all original absorbed powers. The appendix’s 0.22 A on printed p. 333/PDF p. 342 is rounded to two decimals."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "currentDown_A": "25/114",
+            "currentDownDecimal_A": 0.21929824561403508,
+            "loadVoltage_V": "25/19",
+            "leftEquivalent": {
+              "openVoltage_V": 15,
+              "seriesResistance_ohm": 5
+            },
+            "rightEquivalentIncluding10ohm": {
+              "openVoltage_V": -44,
+              "seriesResistance_ohm": 18
+            },
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched-with-given-rounding",
+            "reason": "25/114 A = 0.219298... A rounds to appendix 0.22 A."
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "figure": "ca-1-46-figure.png"
+      },
+      "CA-1-47": {
+        "id": "CA-1-47",
+        "bookId": "1-47",
+        "title": {
+          "zh": "指定电压源零电流：先把其支路电阻压降置零",
+          "en": "Zero source current: set its series resistor drop to zero"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-45"
+        },
+        "statement": {
+          "zh": "如题图1-45所示电路，欲使电压源uₛ中的电流为零，试确定电阻Rₓ的值。",
+          "en": "For Fig. 1-45, determine Rₓ such that current through voltage source uₛ is zero."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部公共。右5 V源uₛ上正下负，经5 Ω接节点A，A经Rₓ到底、经顶2 Ω到T。T经4 Ω到N；N经2 Ω到底，控制u上正下负，并由0.5 A源向上注入。左受控电压源3.5u上正下负，经1 Ω接T。",
+            "en": "Bottom is common. A top-positive 5 V source uₛ connects through 5 Ω to A; A has Rₓ to ground and top 2 Ω to T. T connects through 4 Ω to N; N has 2 Ω to ground with top-positive control u and receives upward 0.5 A. A top-positive dependent source 3.5u connects through 1 Ω to T."
+          }
+        },
+        "prerequisites": {
+          "zh": "零电流串联支路压降为0；VCVS控制；节点KCL；反求电阻。",
+          "en": "Zero current implies zero series-resistor drop, VCVS control, nodal KCL and resistance recovery."
+        },
+        "recognition": {
+          "zh": "uₛ电流为0也使右5 Ω电流为0，故A直接等于5 V。先在这个目标条件下解T、N，再由A的KCL求Rₓ，最后接回原图验证。",
+          "en": "Zero uₛ current also makes the right 5 Ω current zero, fixing A = 5 V. Solve T and N under this target, use A-node KCL for Rₓ, then restore the full circuit to verify."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "把零电流目标化为A电位",
+              "en": "Convert the target into A potential"
+            },
+            "text": {
+              "zh": "右5 Ω无压降，因此V_A=5 V。令N电位u，左受控源上端K=3.5u。",
+              "en": "The right 5 Ω has no drop, so V_A = 5 V. Let N be u; the controlled source’s upper terminal K is 3.5u."
+            },
+            "formula": "V_A=5,\\qquad V_N=u,\\qquad V_K=\\frac72u"
+          },
+          {
+            "title": {
+              "zh": "对N和T列KCL",
+              "en": "Apply KCL at N and T"
+            },
+            "text": {
+              "zh": "N点：(u−V_T)/4+u/2=0.5，得V_T=3u−2。T点：(V_T−3.5u)+(V_T−u)/4+(V_T−5)/2=0。联立得u=4、V_T=10 V。",
+              "en": "At N, (u−V_T)/4+u/2 = 0.5, giving V_T = 3u−2. Combining with T-node KCL gives u = 4 V and V_T = 10 V."
+            },
+            "formula": "V_T=3u-2,\\quad 7V_T-15u=10\\Rightarrow u=4,\\ V_T=10\\quad(\\mathrm V)"
+          },
+          {
+            "title": {
+              "zh": "求Rₓ并回代目标",
+              "en": "Find Rₓ and restore the target"
+            },
+            "text": {
+              "zh": "T经2 Ω向A流(10−5)/2=2.5 A，右5 Ω不取电流，所以Rₓ承担全部2.5 A。Rₓ=5/2.5=2 Ω。",
+              "en": "The top 2 Ω sends (10−5)/2 = 2.5 A into A. With zero current in the right 5 Ω, all 2.5 A flows through Rₓ, giving 2 Ω."
+            },
+            "formula": "R_x=\\frac5{(10-5)/2}=2\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "Rₓ=2 Ω。",
+          "en": "Rₓ = 2 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "零的是5 V源支路电流，不是Rₓ或整个网络电流。",
+            "en": "Only the 5 V source-branch current is zero, not Rₓ current or all network current."
+          },
+          {
+            "zh": "受控源3.5u必须保留，不能在求Rₓ时去掉。",
+            "en": "Keep the dependent source 3.5u active."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原VCVS拓扑MNA恢复Rₓ=2 Ω，得N=4、T=10、K=14、A=5 V，5 V源电流精确为0。六电阻总耗散58 W；0.5 A源提供2 W，受控源提供56 W，5 V源功率0，完全平衡。与附录第333页/PDF342页2 Ω一致。",
+            "en": "Independent original-VCVS MNA with Rₓ = 2 Ω gives N = 4, T = 10, K = 14 and A = 5 V, with exactly zero current through the 5 V source. Six resistors dissipate 58 W; the current source supplies 2 W and dependent source 56 W, while the 5 V source exchanges zero power. This matches 2 Ω in the appendix."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "Rx_ohm": 2,
+            "restoredUsCurrent_A": 0,
+            "nodeVoltages_V": {
+              "N": 4,
+              "T": 10,
+              "K": 14,
+              "A": 5
+            },
+            "totalResistorPower_W": 58,
+            "dependentSourceSuppliedPower_W": 56,
+            "independentCurrentSourceSuppliedPower_W": 2,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "figure": "ca-1-47-figure.png"
+      },
+      "CA-1-48": {
+        "id": "CA-1-48",
+        "bookId": "1-48",
+        "title": {
+          "zh": "四端网络吸收功率：先补第4端电流再选参考",
+          "en": "Four-terminal absorbed power: recover the fourth current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-46"
+        },
+        "statement": {
+          "zh": "已知题图1-46所示四端网络的外部电压分别为U₁₂=5 V，U₃₂=10 V，U₄₁=−15 V，1、2、3端的电流分别如图中所示，试求此四端网络吸收的功率。",
+          "en": "For the four-terminal network in Fig. 1-46, U₁₂ = 5 V, U₃₂ = 10 V and U₄₁ = −15 V. Currents at terminals 1, 2 and 3 are shown. Find the power absorbed by the network."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "菱形四端网络：1在左，5 A向右流入；2在上，1 A向上流出；3在右，2 A向右流出；4在下，电流未知。",
+            "en": "A diamond four-terminal network: terminal 1 left has 5 A entering rightward; 2 top has 1 A leaving upward; 3 right has 2 A leaving rightward; terminal 4 bottom has unknown current."
+          }
+        },
+        "prerequisites": {
+          "zh": "多端网络KCL；电位差U_xy=V_x−V_y；向内电流功率求和；参考电位不变性。",
+          "en": "Multi-terminal KCL, U_xy = V_x−V_y, inward-current power sums and reference invariance."
+        },
+        "recognition": {
+          "zh": "把所有端电流统一定义为流入网络，再补第4端。任选一端作0 V，用已给电压恢复其他端电位，求ΣVₖiₖ。",
+          "en": "Define every terminal current inward, find the fourth by KCL, choose a voltage reference and evaluate ΣVₖiₖ."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "补第4端电流",
+              "en": "Recover terminal-4 current"
+            },
+            "text": {
+              "zh": "向内为正时i₁=5、i₂=−1、i₃=−2 A，总和0给i₄=−2 A，即第4端实际流出2 A。",
+              "en": "With inward positive, i₁ = 5, i₂ = −1 and i₃ = −2 A. Their total with i₄ is zero, so i₄ = −2 A, actually 2 A outward."
+            },
+            "formula": "i_4=-(5-1-2)=-2\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "恢复各端电位",
+              "en": "Recover terminal potentials"
+            },
+            "text": {
+              "zh": "取V₂=0，则V₁=5、V₃=10 V。U₄₁=V₄−V₁=−15 V，所以V₄=−10 V。",
+              "en": "Choose V₂ = 0. Then V₁ = 5 and V₃ = 10 V. Since U₄₁ = V₄−V₁ = −15 V, V₄ = −10 V."
+            },
+            "formula": "(V_1,V_2,V_3,V_4)=(5,0,10,-10)\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "求总吸收功率",
+              "en": "Sum absorbed terminal powers"
+            },
+            "text": {
+              "zh": "P=5×5+0×(−1)+10×(−2)+(−10)×(−2)=25 W，正值表示网络净吸收。",
+              "en": "P = 5×5+0×(−1)+10×(−2)+(−10)×(−2) = 25 W. Positive means net absorption."
+            },
+            "formula": "P_{\\rm abs}=\\sum_{k=1}^4V_ki_k=25\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "四端网络吸收25 W；第4端电流为流出2 A。",
+          "en": "The network absorbs 25 W; terminal 4 carries 2 A outward."
+        },
+        "pitfalls": [
+          {
+            "zh": "U₄₁是−15 V，且下标顺序表示V₄−V₁。",
+            "en": "U₄₁ is −15 V and means V₄−V₁."
+          },
+          {
+            "zh": "不能只算已给的三个端子，第四端也输送功率。",
+            "en": "Include the fourth terminal’s power even though its current was not initially given."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立KCL与参考平移核验：四个向内电流之和0；把所有电位共同平移0、7、−10、1.5 V后，全部给定电压差不变，ΣVₖiₖ始终精确25 W。与附录第333页/PDF342页25 W一致。",
+            "en": "Independent KCL and reference-shift checks: inward currents sum to zero. Shifting all potentials by 0, 7, −10 or 1.5 V preserves all given differences and leaves ΣVₖiₖ exactly 25 W. This matches 25 W in the appendix."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "inwardCurrents_A": [
+              5,
+              -1,
+              -2,
+              -2
+            ],
+            "referencePotentials_V": [
+              5,
+              0,
+              10,
+              -10
+            ],
+            "absorbedPower_W": 25,
+            "fourthOutwardCurrent_A": 2,
+            "referenceShiftChecks": 4
+          },
+          "appendixComparison": {
+            "status": "matched"
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "figure": "ca-1-48-figure.png"
+      },
+      "CA-1-49": {
+        "id": "CA-1-49",
+        "bookId": "1-49",
+        "title": {
+          "zh": "风扇四档设计：给定比值只能确定一个电阻解族",
+          "en": "Four-speed fan: ratios determine a family of resistor designs"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 37,
+          "pdfPage": 46,
+          "figurePrintedPage": 37,
+          "figurePdfPage": 46,
+          "figure": "题图1-47"
+        },
+        "statement": {
+          "zh": "题图1-47所示为散热风扇的转速控制电路原理图。假设开关置于1时的风扇转速为v₁，现要求开关置于2、3、4时风扇的转速分别为3v₁、4v₁和5v₁，且假设风扇转速与通过电动机的电流成比例，电动机看作电阻元件，电阻为R_L=100 Ω。试确定电阻R₁、R₂、R₃和R₄的标称电阻值。",
+          "en": "Fig. 1-47 shows a cooling-fan speed controller. Speed at switch position 1 is v₁; positions 2, 3 and 4 must give 3v₁, 4v₁ and 5v₁. Assume speed is proportional to motor current and model the motor as R_L = 100 Ω. Determine nominal R₁, R₂, R₃ and R₄."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "12 V电池经点火开关、30 A熔断器及四档转换开关供电。位置1接R₁上端，位置2接R₁/R₂间，位置3接R₂/R₃间，位置4接R₃/R₄间。下方R₄接100 Ω电动机回电池负端。",
+            "en": "A 12 V battery feeds an ignition switch, 30 A fuse and four-position selector. Positions 1–4 connect respectively above R₁ and at the R₁/R₂, R₂/R₃ and R₃/R₄ taps. R₄ connects through the 100 Ω motor back to battery negative."
+          }
+        },
+        "prerequisites": {
+          "zh": "速度比等于电流比；串联总电阻与电流反比；欠定设计与自由参数；区分熔断器额定值和工作电流。",
+          "en": "Speed ratios equal current ratios, series resistance is inverse to current, underdetermined design parameters and fuse rating versus operating current."
+        },
+        "recognition": {
+          "zh": "只给四档相对速度，没有给基准绝对电流或最高档绝对速度。三条独立比值约束不足以唯一确定四个电阻；应给完整解族，再明确选一个自由参数提供可行设计。",
+          "en": "Only relative speeds are given, with no absolute base current or highest speed. Three independent ratios cannot uniquely determine four resistors. Give the full family, then state a free-parameter choice for a valid design."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "把速度比变成总电阻比",
+              "en": "Convert speed ratios to total resistances"
+            },
+            "text": {
+              "zh": "设一档电流I₁，四档电流为I₁、3I₁、4I₁、5I₁。各档串联总电阻依次为12/I₁、12/(3I₁)、12/(4I₁)、12/(5I₁)。",
+              "en": "The four currents are I₁, 3I₁, 4I₁ and 5I₁, so their series totals are 12/I₁, 12/(3I₁), 12/(4I₁) and 12/(5I₁)."
+            },
+            "formula": "I_1:I_2:I_3:I_4=1:3:4:5"
+          },
+          {
+            "title": {
+              "zh": "保留R₄为自由设计量",
+              "en": "Retain R₄ as a free design variable"
+            },
+            "text": {
+              "zh": "令R₄=r≥0 Ω，最高档总电阻T₄=100+r。由电流比，T₁=5(100+r)、T₂=5(100+r)/3、T₃=5(100+r)/4。相邻档总电阻之差给各电阻。",
+              "en": "Let R₄ = r ≥ 0 Ω. Highest-position total T₄ = 100+r. The ratios imply T₁ = 5(100+r), T₂ = 5(100+r)/3 and T₃ = 5(100+r)/4. Differences of adjacent totals give the resistors."
+            },
+            "formula": "R_1=\\frac{10}{3}(100+r),\\quad R_2=\\frac5{12}(100+r),\\quad R_3=\\frac14(100+r),\\quad R_4=r\\quad(\\Omega)"
+          },
+          {
+            "title": {
+              "zh": "给一组明确条件下的可行值",
+              "en": "Give a design under an explicit choice"
+            },
+            "text": {
+              "zh": "例如选择r=20 Ω，则R₁=400、R₂=50、R₃=30、R₄=20 Ω。四档总电阻为600、200、150、120 Ω，电流为20、60、80、100 mA，速度比严格1:3:4:5。",
+              "en": "For example choose r = 20 Ω. Then R₁ = 400, R₂ = 50, R₃ = 30 and R₄ = 20 Ω. Totals are 600, 200, 150 and 120 Ω; currents are 20, 60, 80 and 100 mA, giving exactly 1:3:4:5."
+            },
+            "formula": "r=20\\,\\Omega\\Rightarrow(R_1,R_2,R_3,R_4)=(400,50,30,20)\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "说明欠定与标称值含义",
+              "en": "State the remaining design freedom"
+            },
+            "text": {
+              "zh": "上例是可行选择而非原题唯一答案。若要求唯一值，还须指定一档电流、某档绝对速度及电机比例常数，或指定一个电阻。30 A是熔断器标注，不是已知风扇工作电流，不能拿来补方程。若要求四电阻严格为正，取r>0。",
+              "en": "The example is a valid choice, not a uniquely implied answer. A unique design needs an absolute current, an absolute speed with motor proportionality constant, or one resistor value. The 30 A fuse rating is not operating current and supplies no missing equation. Choose r > 0 if all four resistors must be strictly positive."
+            }
+          }
+        ],
+        "answer": {
+          "zh": "原题欠定。完整非负电阻解族：R₄=r≥0，R₁=(10/3)(100+r)，R₂=(5/12)(100+r)，R₃=(1/4)(100+r)，单位Ω。选R₄=20 Ω可取(400,50,30,20) Ω，严格满足四档比值。",
+          "en": "The problem is underdetermined. For any r ≥ 0 Ω: R₄=r, R₁=(10/3)(100+r), R₂=(5/12)(100+r), R₃=(1/4)(100+r), in Ω. Choosing R₄=20 Ω gives (400,50,30,20) Ω and exactly meets all speed ratios."
+        },
+        "pitfalls": [
+          {
+            "zh": "四个电阻不能由三条独立速度比条件唯一解出。",
+            "en": "Three independent speed ratios do not uniquely determine four resistors."
+          },
+          {
+            "zh": "开关越往下接入，旁路的上方电阻越多，不是给电动机并联额外电阻。",
+            "en": "Lower switch taps bypass more upper series resistors; they do not place extra resistors parallel with the motor."
+          },
+          {
+            "zh": "不要把30 A熔断器额定电流当成风扇的实际电流。",
+            "en": "Do not use the 30 A fuse rating as the actual fan current."
+          }
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原抽头链路构建全部四电阻和100 Ω电机的MNA，分别选择r=20、60 Ω，再逐档接12 V，共8个原电路验证；每组电流比精确1:3:4:5，未接入的上段电阻电流为0，每档电源与各电阻功率总和平衡。两组不同的正电阻解直接证明非唯一。附录未列1-49，不补造唯一答案。",
+            "en": "Independent MNA retains the original tapped chain, all four resistors and the 100 Ω motor. Two choices r = 20 and 60 Ω are tested at all four 12 V switch connections: all eight circuits give exact ratios 1:3:4:5, zero current in inactive upper sections and full power balance. Two distinct positive designs directly demonstrate nonuniqueness. The appendix omits 1-49; no unique answer is invented."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "uniquelyDetermined": false,
+            "solutionScope": "complete parametric family plus explicit design, not a unique numeric answer",
+            "freeParameter": "R4=r>=0 ohm",
+            "family": {
+              "R1": "(10/3)*(100+r)",
+              "R2": "(5/12)*(100+r)",
+              "R3": "(1/4)*(100+r)",
+              "R4": "r"
+            },
+            "exampleCondition": "R4=20 ohm",
+            "exampleResistances_ohm": [
+              400,
+              50,
+              30,
+              20
+            ],
+            "exampleCurrents_mA": [
+              20,
+              60,
+              80,
+              100
+            ],
+            "speedRatios": [
+              1,
+              3,
+              4,
+              5
+            ],
+            "allFourPositionsVerified": true,
+            "independentDesignCount": 2,
+            "powerResidual": 0
+          },
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": "No 1-49 answer is listed. Three independent ratios leave one design parameter; full family and conditioned example are verified."
+          }
+        },
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "figure": "ca-1-49-figure.png"
       }
     }
   },
@@ -11781,7 +12801,11 @@
         "priorityHomework": true,
         "assignedNote": "4.1.1",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.1.2",
@@ -11790,8 +12814,12 @@
         "printedPage": 145,
         "pdfPage": 178,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.1.3",
@@ -11800,8 +12828,12 @@
         "printedPage": 145,
         "pdfPage": 178,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.1.4",
@@ -11812,7 +12844,11 @@
         "priorityHomework": true,
         "assignedNote": "4.1.4",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.1.5",
@@ -11821,8 +12857,12 @@
         "printedPage": 145,
         "pdfPage": 178,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.2.1",
@@ -11831,8 +12871,12 @@
         "printedPage": 145,
         "pdfPage": 178,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.2.2",
@@ -11843,7 +12887,11 @@
         "priorityHomework": true,
         "assignedNote": "4.2.2(1)(3)(5)(7)",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.2.3",
@@ -11854,7 +12902,11 @@
         "priorityHomework": true,
         "assignedNote": "4.2.3",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.2.4",
@@ -11863,8 +12915,12 @@
         "printedPage": 146,
         "pdfPage": 179,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.2.5",
@@ -11873,8 +12929,12 @@
         "printedPage": 146,
         "pdfPage": 179,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.3.1",
@@ -11883,8 +12943,12 @@
         "printedPage": 147,
         "pdfPage": 180,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.3.2",
@@ -11893,8 +12957,12 @@
         "printedPage": 147,
         "pdfPage": 180,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.3.3",
@@ -11903,8 +12971,12 @@
         "printedPage": 147,
         "pdfPage": 180,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.4.1",
@@ -11915,7 +12987,11 @@
         "priorityHomework": true,
         "assignedNote": "4.4.1",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.4.2",
@@ -11924,8 +13000,12 @@
         "printedPage": 147,
         "pdfPage": 180,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.4.3",
@@ -11936,7 +13016,11 @@
         "priorityHomework": true,
         "assignedNote": "4.4.3(1)(2)(3)",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.4.4",
@@ -11945,8 +13029,12 @@
         "printedPage": 148,
         "pdfPage": 181,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.4.5",
@@ -11955,8 +13043,12 @@
         "printedPage": 148,
         "pdfPage": 181,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.5.1",
@@ -11968,7 +13060,11 @@
         "assignedNote": "4.5.1（源电压增益不要求）",
         "scopeLabelZh": "指定作业（指定小问优先）",
         "scopeLabelEn": "assigned exercise; stated subparts take priority",
-        "assignedNoteEn": "4.5.1 (source voltage gain not required)"
+        "assignedNoteEn": "4.5.1 (source voltage gain not required)",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.5.2",
@@ -11977,8 +13073,12 @@
         "printedPage": 148,
         "pdfPage": 181,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.5.3",
@@ -11987,8 +13087,12 @@
         "printedPage": 149,
         "pdfPage": 182,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.5.4",
@@ -11997,8 +13101,12 @@
         "printedPage": 149,
         "pdfPage": 182,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.5.5",
@@ -12009,7 +13117,11 @@
         "priorityHomework": true,
         "assignedNote": "4.5.5",
         "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.6.1",
@@ -12018,8 +13130,12 @@
         "printedPage": 149,
         "pdfPage": 182,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.6.2",
@@ -12028,8 +13144,12 @@
         "printedPage": 149,
         "pdfPage": 182,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.7.1",
@@ -12038,8 +13158,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.7.2",
@@ -12048,8 +13172,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.7.3",
@@ -12058,8 +13186,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.7.4",
@@ -12068,8 +13200,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（课程纲领4.1～4.5、4.7）",
+        "scopeLabelEn": "required by course plan: 4.1–4.5 and 4.7",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.8.1",
@@ -12078,8 +13214,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.8.2",
@@ -12088,8 +13228,12 @@
         "printedPage": 150,
         "pdfPage": 183,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.8.3",
@@ -12098,8 +13242,12 @@
         "printedPage": 151,
         "pdfPage": 184,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-4.8.4",
@@ -12108,8 +13256,12 @@
         "printedPage": 151,
         "pdfPage": 184,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围（全书拓展；课程纲领未要求4.6、4.8）",
+        "scopeLabelEn": "outside exam scope; full-book extension: 4.6 and 4.8",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程范围PPT：模电第4章4.1～4.5、4.7 / Course-plan PPT: Analog 4.1–4.5 and 4.7"
+        }
       },
       {
         "id": "AE-5.1.1",
@@ -25052,6 +26204,768 @@
           }
         ],
         "figure": "figure-2.4.18.png"
+      },
+      "AE-4.1.2": {
+        "id": "AE-4.1.2",
+        "bookId": "4.1.2",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "从零漏源电压电导求可调电阻",
+          "en": "Find the adjustable resistance from zero-drain-voltage conductance"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 145,
+          "pdfPage": 178
+        },
+        "statement": {
+          "zh": "某增强型NMOS管在较低的v_DS电压下工作，以使MOS管工作在可变电阻区。已知K′_n=50 μA/V²，W=10 μm，L=1 μm，V_TN=1 V。当r_ds0在500 Ω到20 kΩ之间变化时，求v_GS的变化范围。",
+          "en": "An enhancement NMOS operates at low v_DS in the variable-resistance region. K′_n=50 μA/V², W=10 μm, L=1 μm and V_TN=1 V. Find the v_GS range for r_ds0 from 500 Ω to 20 kΩ."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": null,
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "下标0指v_DS趋于0时的电阻。先对可变电阻区电流求漏源电导，再反解过驱动电压，别把恒流区平方律当作欧姆定律。",
+          "en": "The subscript 0 denotes the resistance as v_DS tends to zero. Differentiate the triode-region current, then solve for overdrive; the saturation square law is not an Ohmic law."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写可变电阻区电流",
+              "en": "Write the triode-region current"
+            },
+            "text": {
+              "zh": "取k=K′_nW/L=500 μA/V²；题中K′_n不是已含W/L与1/2的K_n。",
+              "en": "Let k=K′_nW/L=500 μA/V². K′_n does not include W/L or the saturation factor 1/2."
+            },
+            "formula": "i_D=k\\left[(v_{GS}-V_{TN})v_{DS}-\\frac{v_{DS}^2}{2}\\right]"
+          },
+          {
+            "title": {
+              "zh": "在零漏源电压求电阻",
+              "en": "Evaluate resistance at zero drain voltage"
+            },
+            "text": {
+              "zh": "零点的微分电导为k(v_GS−V_TN)。正的有限电阻要求v_GS>V_TN。",
+              "en": "The zero-voltage differential conductance is k(v_GS−V_TN). A positive finite resistance requires v_GS>V_TN."
+            },
+            "formula": "r_{ds0}=\\left[\\left.\\frac{\\partial i_D}{\\partial v_{DS}}\\right|_0\\right]^{-1}=\\frac1{k(v_{GS}-V_{TN})},\\quad v_{GS}=1+\\frac1{(500\\times10^{-6})r_{ds0}}"
+          },
+          {
+            "title": {
+              "zh": "代入两端并检查小电压条件",
+              "en": "Evaluate endpoints and check the low-voltage condition"
+            },
+            "text": {
+              "zh": "500 Ω对应5 V，20 kΩ对应1.1 V；阻值随栅压上升而下降。全范围近似线性电阻需|v_DS|远小于最小过驱动0.1 V；单说v_DS较低不足以保证任意精度。",
+              "en": "500 Ω gives 5 V and 20 kΩ gives 1.1 V. Resistance decreases with gate voltage. For an approximately linear resistor over the whole range, |v_DS| must be much smaller than the minimum overdrive 0.1 V; an unspecified low voltage does not guarantee any chosen accuracy."
+            },
+            "formula": "\\boxed{1.1\\,\\mathrm V\\le v_{GS}\\le5\\,\\mathrm V}"
+          }
+        ],
+        "answer": {
+          "zh": "v_GS范围为1.1～5 V；500 Ω对应5 V，20 kΩ对应1.1 V。结果为v_DS→0的电阻条件。",
+          "en": "v_GS ranges from 1.1 to 5 V: 500 Ω at 5 V and 20 kΩ at 1.1 V, for resistance in the v_DS→0 limit."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要漏乘W/L=10，或多乘/漏乘1/2。",
+            "en": "Include W/L=10 and distinguish triode k from saturation K=k/2."
+          },
+          {
+            "zh": "r_ds0与有限v_DS下的静态v_DS/i_D并不完全相同。",
+            "en": "r_ds0 differs from the static v_DS/i_D at finite v_DS."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "用原可变电阻区方程的±h中央差分求导，并分别代入两个栅压核对500 Ω和20 kΩ；另检查有限漏压的电阻偏差随漏压趋零而消失。",
+            "en": "Central differences of the original triode equation independently reproduce 500 Ω and 20 kΩ; finite-drain-voltage resistance errors vanish as drain voltage tends to zero."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "长沟道低场模型，忽略体效应和沟道长度调制，r_ds0按v_DS=0的微分定义。",
+            "en": "Long-channel low-field model, neglecting body effect and channel-length modulation; r_ds0 is differential resistance at v_DS=0."
+          },
+          "results": {
+            "gateMin_V": 1.1,
+            "gateMax_V": 5,
+            "k_A_V2": 0.0005
+          }
+        }
+      },
+      "AE-4.1.3": {
+        "id": "AE-4.1.3",
+        "bookId": "4.1.3",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "耗尽型PMOS：先定电流符号，再求夹断边界",
+          "en": "Depletion PMOS: establish current sign, then find the pinch-off boundary"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 145,
+          "pdfPage": 178
+        },
+        "statement": {
+          "zh": "已知耗尽型PMOS管的参数为K_p=0.2 mA/V²，V_TP=0.5 V，i_D=−0.5 mA（参考方向为流进漏极）。试求此时的夹断点栅源电压v_GS和漏源电压v_DS。",
+          "en": "A depletion PMOS has K_p=0.2 mA/V², V_TP=+0.5 V and i_D=−0.5 mA, referenced into the drain. Find v_GS and v_DS at the pinch-off boundary."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": null,
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "耗尽型PMOS的阈值可以为正，不能擅自改成−0.5 V。“夹断点”指定恒流区与可变电阻区的边界，而非任意恒流区漏压。",
+          "en": "A depletion PMOS can have a positive threshold; do not change it to −0.5 V. Pinch-off specifies the boundary between triode and saturation, not an arbitrary saturation drain voltage."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用正的过驱动量求栅压",
+              "en": "Solve gate voltage with a positive overdrive"
+            },
+            "text": {
+              "zh": "PMOS导通要求v_GS<V_TP。记u=V_TP−v_GS>0，流进漏极的电流为负。",
+              "en": "A conducting PMOS requires v_GS<V_TP. Define u=V_TP−v_GS>0; drain-entering current is negative."
+            },
+            "formula": "i_D=-K_p(V_{TP}-v_{GS})^2,\\quad u=\\sqrt{\\frac{0.5}{0.2}}=\\sqrt{2.5}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "选择物理解并写夹断条件",
+              "en": "Select the physical root and impose pinch-off"
+            },
+            "text": {
+              "zh": "应取v_GS=V_TP−u，另一个平方根分支不满足导通条件。边界处漏栅电压为−V_TP=−0.5 V。",
+              "en": "Use v_GS=V_TP−u; the other square-root branch fails the conduction condition. At pinch-off the drain-to-gate voltage is −V_TP=−0.5 V."
+            },
+            "formula": "v_{GS}=0.5-\\sqrt{2.5}\\approx-1.081139\\,\\mathrm V,\\quad v_{DS}=v_{GS}-V_{TP}=-\\sqrt{2.5}\\approx-1.581139\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "区别夹断与截止",
+              "en": "Distinguish pinch-off from cutoff"
+            },
+            "text": {
+              "zh": "夹断后仍有−0.5 mA恒流区电流；本题理想恒流区满足v_DS≤−1.581139 V。截止则为v_GS≥+0.5 V。",
+              "en": "Pinch-off still supports −0.5 mA. Ideal saturation extends to v_DS≤−1.581139 V at this gate voltage. Cutoff instead requires v_GS≥+0.5 V."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "夹断边界v_GS≈−1.081139 V，v_DS≈−1.581139 V；不是截止点。",
+          "en": "At pinch-off, v_GS≈−1.081139 V and v_DS≈−1.581139 V; this is not cutoff."
+        },
+        "pitfalls": [
+          {
+            "zh": "i_D按流入漏极定义，PMOS正常电流为负。",
+            "en": "With current referenced into the drain, normal PMOS current is negative."
+          },
+          {
+            "zh": "正阈值是耗尽型PMOS的题设，不能改号。",
+            "en": "The positive threshold is intentional for the specified depletion PMOS."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "分别将所得电压代入PMOS恒流区平方律和可变电阻区方程，边界两者均得−0.5 mA；检查v_D−v_G=−0.5 V。",
+            "en": "The PMOS saturation square law and triode equation both give −0.5 mA at the boundary; v_D−v_G=−0.5 V is checked separately."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "教材长沟道平方律；K_p已含几何系数和1/2，忽略沟道长度调制及体效应。",
+            "en": "Textbook long-channel square law; K_p includes geometry and 1/2. Channel-length modulation and body effect are neglected."
+          },
+          "results": {
+            "vGS_V": -1.0811388300841898,
+            "vDS_V": -1.5811388300841898,
+            "iD_mA": -0.5
+          }
+        }
+      },
+      "AE-4.1.5": {
+        "id": "AE-4.1.5",
+        "bookId": "4.1.5",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1a",
+          "1b",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "栅漏短接：何时成立平方律“二极管”",
+          "en": "Gate–drain connection: when the square-law diode model applies"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 145,
+          "pdfPage": 178,
+          "figure": "图题4.1.5",
+          "figurePrintedPage": 145,
+          "figurePdfPage": 178
+        },
+        "statement": {
+          "zh": "接成“二极管”的MOS管如图题4.1.5所示。（1）试分别说明在什么情况下它们的i–v关系为i=K(v−|V_T|)²；（2）为什么可以称它们为“二极管”？（注：V_T表示V_TN或V_TP，K表示K_n或K_p。）图(a)为NMOS栅漏短接，图(b)为PMOS栅漏短接；端口电压上正下负，电流向下。",
+          "en": "The diode-connected MOS devices in Fig. 4.1.5 use voltage positive at the top and current downward. (1) State when i=K(v−|V_T|)² holds for each. (2) Explain why they are called diodes. V_T denotes V_TN or V_TP and K denotes K_n or K_p. (a) is gate–drain-connected NMOS; (b) is gate–drain-connected PMOS."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "(a)NMOS上端为栅/漏，下端为源及衬底；(b)PMOS上端为源及衬底，下端为栅/漏，两个端口均为上正下负、电流向下。",
+            "en": "(a) NMOS gate/drain is the upper terminal and source/body the lower. (b) PMOS source/body is upper and gate/drain lower. Both use downward port current and voltage positive at the top."
+          }
+        },
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "先把端口v转为每只管的v_GS、v_DS，再检查阈值与恒流区条件。栅漏短接本身不能让任意耗尽型MOS都自动满足恒流区平方律。",
+          "en": "Translate port v into v_GS and v_DS, then test threshold and saturation. A gate–drain connection alone does not put every depletion MOS in saturation."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1a）增强型NMOS",
+              "en": "(1a) Enhancement NMOS"
+            },
+            "text": {
+              "zh": "V_TN>0，且v≥V_TN时，v_GS=v_DS=v。恒流区条件v_DS≥v_GS−V_TN自动满足；阈值以上有向下电流。",
+              "en": "For V_TN>0 and v≥V_TN, v_GS=v_DS=v. Saturation inequality v_DS≥v_GS−V_TN is automatic, giving downward current above threshold."
+            },
+            "formula": "i=K_n(v-V_{TN})^2=K_n(v-|V_{TN}|)^2\\quad(v\\ge V_{TN}>0)"
+          },
+          {
+            "title": {
+              "zh": "（1b）增强型PMOS",
+              "en": "(1b) Enhancement PMOS"
+            },
+            "text": {
+              "zh": "V_TP<0，且v≥−V_TP时，v_GS=v_DS=−v。漏极流入电流i_D为负，但端口向下电流i=−i_D为正。",
+              "en": "For V_TP<0 and v≥−V_TP, v_GS=v_DS=−v. Drain-entering i_D is negative but downward port current i=−i_D is positive."
+            },
+            "formula": "i=-i_D=K_p(v+V_{TP})^2=K_p(v-|V_{TP}|)^2\\quad(v\\ge|V_{TP}|)"
+          },
+          {
+            "title": {
+              "zh": "适用区间之外",
+              "en": "Outside the square-law range"
+            },
+            "text": {
+              "zh": "在0≤v<|V_T|时，理想增强型沟道截止，不能把平方后的正数当成电流。耗尽型阈值符号相反，栅漏短接的正向工作通常在可变电阻区，不能直接套本式。反向v<0时还需考虑图示衬底与源短接所形成的体二极管，原题未给反向定量模型。",
+              "en": "For 0≤v<|V_T|, an ideal enhancement channel is off; squaring a negative overdrive does not create current. Depletion devices have the opposite threshold sign and generally operate in triode for this positive-port connection. Reverse v<0 additionally involves the source-tied-body diode; the problem supplies no quantitative reverse model."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "（2）两端非线性器件",
+              "en": "(2) A two-terminal nonlinear device"
+            },
+            "text": {
+              "zh": "栅漏短接后只剩两个独立端子；正向超过阈值有电流，阈值以下电流近似为零，因而有类似二极管的整流特性。这里的正向沟道特性是平方律，不是PN结指数律，也不是固定0.7 V压降。",
+              "en": "Connecting gate and drain leaves two independent terminals. Current flows above a forward threshold and is approximately zero below it, giving diode-like rectification. The forward channel follows a square law rather than a PN exponential or fixed 0.7 V drop."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "(a)增强型NMOS且v≥V_TN>0；(b)增强型PMOS且v≥|V_TP|、V_TP<0。两者此时均在恒流区且i=K(v−|V_T|)²。因栅漏短接构成两端非线性整流器件，称MOS“二极管”。",
+          "en": "(a) Enhancement NMOS with v≥V_TN>0; (b) enhancement PMOS with V_TP<0 and v≥|V_TP|. Both then satisfy saturation and i=K(v−|V_T|)². Gate–drain connection creates a two-terminal nonlinear rectifying device."
+        },
+        "pitfalls": [
+          {
+            "zh": "平方律有导通区间，不能延伸到阈值以下。",
+            "en": "The square law must not be extended below threshold."
+          },
+          {
+            "zh": "PMOS端口电流与流入漏极的i_D符号相反。",
+            "en": "PMOS port current has the opposite sign to drain-entering i_D."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "按原接线分别代入NMOS与PMOS三端电流式，扫描正向端口电压核对工作区及端口电流符号；对耗尽型检验恒流区不等式以排除错误套式。",
+            "en": "Original three-terminal NMOS/PMOS equations are evaluated over a port-voltage sweep, checking operating region and current signs; depletion-device saturation inequalities are checked to reject an invalid extension."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想增强型长沟道沟道模型，忽略亚阈值电流与沟道长度调制；体二极管反向端口导通只作定性说明，不虚构固定压降。",
+            "en": "Ideal long-channel enhancement-channel model without subthreshold current or channel-length modulation; reverse-port body-diode conduction is qualitative, without an invented fixed drop."
+          },
+          "results": {
+            "NMOS": "V_TN>0, v>=V_TN",
+            "PMOS": "V_TP<0, v>=-V_TP",
+            "belowThresholdCurrent_A": 0
+          }
+        },
+        "figure": "figure-4.1.5.png"
+      },
+      "AE-4.2.1": {
+        "id": "AE-4.2.1",
+        "bookId": "4.2.1",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "判断放大：先查直流通路，再查交流通路",
+          "en": "Check DC paths before AC signal paths"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 145,
+          "pdfPage": 178,
+          "figure": "图题4.2.1",
+          "figurePrintedPage": 146,
+          "figurePdfPage": 179
+        },
+        "statement": {
+          "zh": "试分析图题4.2.1所示各电路对交流信号有无放大作用，并简述理由（设各电路元件参数合适，电容对交流信号可视为短路）。图含(a)～(e)五个电路。",
+          "en": "For circuits (a)–(e) in Fig. 4.2.1, determine whether each amplifies an AC signal and briefly explain. Assume suitable component values and capacitors that are short circuits for AC."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "(a)NMOS偏置V_GG在输入耦合电容左侧；(b)PMOS源接V_DD，栅有电阻分压偏置；(c)NMOS栅直接接V_DD；(d)NMOS输入与V_GG串联后直接接栅；(e)增强型NMOS栅经电阻接地且源接地。",
+            "en": "(a) NMOS V_GG lies before the input coupling capacitor. (b) PMOS source is at V_DD with gate-divider bias. (c) NMOS gate is directly tied to V_DD. (d) NMOS gate is directly driven by input plus V_GG. (e) Enhancement NMOS gate is resistively grounded and source is grounded."
+          }
+        },
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "“元件参数合适”不能修复缺失的直流通路或被电源短路的交流输入。对每图先把电容开路找Q点，再把电源交流接地。",
+          "en": "Suitable values cannot repair a missing DC path or an AC input shorted by a supply. Open capacitors to find Q, then AC-ground the supplies."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（a）无可靠线性放大",
+              "en": "(a) No reliable linear amplification"
+            },
+            "text": {
+              "zh": "直流时C_b1开路，V_GG被隔断；栅极没有直流偏置通路，理想模型下栅电位未定。不能建立确定的线性静态工作点；实际漏电或初始电荷不是题设偏置。",
+              "en": "C_b1 is open for DC and disconnects V_GG. The gate has no DC bias path and its ideal voltage is undetermined. No defined linear quiescent point is established; unspecified leakage or stored charge is not a bias design."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "（b）可以：PMOS共源",
+              "en": "(b) Yes: PMOS common source"
+            },
+            "text": {
+              "zh": "分压电阻给栅静态电位，源接正电源；合适参数使PMOS在恒流区。交流源极接地，栅压上升使PMOS下行电流减小，漏极电压下降，输出反相。",
+              "en": "The divider biases the gate and suitable values put the PMOS in saturation. Its source is AC-grounded. Rising gate voltage reduces downward PMOS current and lowers the drain voltage, giving inversion."
+            },
+            "formula": "A_v\\approx-g_m(R_d\\parallel r_o)\\quad\\text{(unloaded output)}"
+          },
+          {
+            "title": {
+              "zh": "（c）无交流栅源输入",
+              "en": "(c) No AC gate–source excitation"
+            },
+            "text": {
+              "zh": "栅极直接接理想V_DD，是交流地。C_b1把输入接到交流地，v_gs交流分量为0；即使直流有漏电流，也无所要求的信号电压放大。",
+              "en": "The gate is tied directly to ideal V_DD, an AC ground. C_b1 therefore connects the input to AC ground and the AC v_gs is zero. A possible DC drain current does not create signal amplification."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "（d）可以：偏置直接送到栅极",
+              "en": "(d) Yes: gate receives DC bias directly"
+            },
+            "text": {
+              "zh": "V_GG与输入串联，直流偏置不被电容隔断；适当Q点下输入直接改变v_GS，漏极经R_d将电流变化变为反相电压。",
+              "en": "V_GG is in series with the input and is not blocked by a capacitor. With a suitable Q point, input changes v_GS and R_d converts drain-current changes into an inverted voltage."
+            },
+            "formula": "A_v\\approx-g_m(R_d\\parallel r_o)\\quad\\text{(unloaded output)}"
+          },
+          {
+            "title": {
+              "zh": "（e）无小信号线性放大",
+              "en": "(e) No small-signal linear amplification"
+            },
+            "text": {
+              "zh": "图示为增强型NMOS。栅、源的直流电位均为0，V_GSQ=0<V_TN，管子截止且g_mQ=0。大信号可能产生半波式失真导通，但不能算围绕Q点的线性放大。",
+              "en": "The depicted device is enhancement NMOS. Both gate and source are zero for DC, so V_GSQ=0<V_TN and g_mQ=0. A large input may produce distorted partial-cycle conduction, not linear amplification about Q."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "有线性交流放大作用的是(b)、(d)；(a)缺栅极直流偏置通路，(c)栅被电源交流接地，(e)增强型NMOS在零偏置处截止。",
+          "en": "(b) and (d) can amplify linearly. (a) lacks a gate DC-bias path; (c) has an AC-grounded gate; (e) has a cutoff enhancement NMOS at zero gate bias."
+        },
+        "pitfalls": [
+          {
+            "zh": "耦合电容前的V_GG不会穿过电容提供直流栅偏置。",
+            "en": "V_GG before a coupling capacitor cannot bias the gate through it."
+          },
+          {
+            "zh": "静态有电流与交流有增益是两项独立检查。",
+            "en": "DC current and AC gain are separate checks."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "逐图按原接线做直流连通性及交流接地检查；对(b)(d)用漏极节点KCL得到负增益，对(c)验证v_gs=0，对(e)用分段MOS模型验证g_mQ=0。",
+            "en": "Original wiring is checked for DC connectivity and AC grounding. Drain KCL produces negative gains for (b)/(d); (c) enforces zero AC v_gs and the piecewise MOS model gives g_mQ=0 for (e)."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "图示增强型MOS，理想输入/偏置源；合适的线性Q点和小信号、无额外输出负载。浮置栅不假定未给定的漏电或初始电荷。",
+            "en": "Depicted enhancement MOS devices and ideal signal/bias sources; suitable linear Q points and small signals, without an extra output load. No unspecified leakage or initial charge is imposed on the floating gate."
+          },
+          "results": {
+            "amplifying": [
+              "b",
+              "d"
+            ],
+            "notAmplifying": [
+              "a",
+              "c",
+              "e"
+            ]
+          }
+        },
+        "figure": "figure-4.2.1.png"
+      },
+      "AE-4.2.4": {
+        "id": "AE-4.2.4",
+        "bookId": "4.2.4",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "PMOS分压偏置：保留源漏负号",
+          "en": "PMOS divider bias: retain signed drain–source voltage"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 146,
+          "pdfPage": 179,
+          "figure": "图题4.2.4",
+          "figurePrintedPage": 146,
+          "figurePdfPage": 179
+        },
+        "statement": {
+          "zh": "电路如图题4.2.4所示。已知MOS管K_p=4 mA/V²，λ=0，V_TP=−1.5 V，电源V_DD=18 V。现要求MOS管工作在恒流区，静态时I_DQ=1 mA（按图中向下电流），V_DSQ=−9 V，R_g1、R_g2支路电流为2 μA。（1）确定R_d、R_g1、R_g2；（2）若要保证静态工作在恒流区，R_d的最大值为多少？",
+          "en": "For Fig. 4.2.4, K_p=4 mA/V², λ=0, V_TP=−1.5 V and V_DD=18 V. Require saturation, downward quiescent current 1 mA, V_DSQ=−9 V and 2 μA in the gate-divider branch. (1) Find R_d, R_g1 and R_g2. (2) Find the maximum R_d compatible with saturation."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "PMOS源和衬底接18 V；漏经R_d接地，栅由上端R_g2和下端R_g1分压，输入/输出均经电容耦合。",
+            "en": "PMOS source/body is at 18 V; drain connects through R_d to ground. R_g2 is the upper divider resistor and R_g1 the lower; input/output are capacitively coupled."
+          }
+        },
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "先定V_S=18 V、V_D=V_S+V_DS，再从电流求V_SG；图中R_g2在上、R_g1在下，别按名称猜位置。",
+          "en": "First set V_S=18 V and V_D=V_S+V_DS, then infer V_SG from current. R_g2 is above the gate and R_g1 below; use the actual diagram."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（1）漏极电阻",
+              "en": "(1) Drain resistor"
+            },
+            "text": {
+              "zh": "静态电容开路，V_D=18−9=9 V；向下1 mA全部流过R_d。",
+              "en": "Capacitors are open for DC. V_D=18−9=9 V, and the downward 1 mA all passes through R_d."
+            },
+            "formula": "R_d=\\frac{9\\,\\mathrm V}{1\\,\\mathrm{mA}}=9\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "栅压和分压电阻",
+              "en": "Gate voltage and divider resistors"
+            },
+            "text": {
+              "zh": "由I=K_p(V_SG−|V_TP|)²得过驱动0.5 V，V_SG=2 V、V_G=16 V。栅不取电流，分压两电阻电流均2 μA。",
+              "en": "I=K_p(V_SG−|V_TP|)² gives 0.5 V overdrive, V_SG=2 V and V_G=16 V. With zero gate current, each divider resistor carries 2 μA."
+            },
+            "formula": "R_{g1}=\\frac{16\\,\\mathrm V}{2\\,\\mathrm{\\mu A}}=8\\,\\mathrm{M\\Omega},\\quad R_{g2}=\\frac{18-16}{2\\,\\mathrm{\\mu A}}=1\\,\\mathrm{M\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "（2）调R_d至恒流边界",
+              "en": "(2) Increase R_d to the saturation boundary"
+            },
+            "text": {
+              "zh": "栅偏置不变、λ=0，在恒流区电流保持1 mA。恒流条件V_SD≥V_SG−|V_TP|=0.5 V，故漏电位最多17.5 V。",
+              "en": "With fixed gate bias and λ=0, current stays 1 mA in saturation. V_SD≥V_SG−|V_TP|=0.5 V limits the drain voltage to 17.5 V."
+            },
+            "formula": "18-(1\\,\\mathrm{mA})R_d\\ge0.5\\,\\mathrm V\\quad\\Rightarrow\\quad R_{d,\\max}=17.5\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "R_d=9 kΩ，R_g1=8 MΩ，R_g2=1 MΩ。恒流区边界最大R_d=17.5 kΩ；严格留在恒流区内部应小于该值。",
+          "en": "R_d=9 kΩ, R_g1=8 MΩ and R_g2=1 MΩ. The saturation-boundary maximum is R_d=17.5 kΩ; strict interior operation needs a smaller value."
+        },
+        "pitfalls": [
+          {
+            "zh": "V_DS=−9 V不等于V_D=−9 V；源为+18 V。",
+            "en": "V_DS=−9 V does not mean V_D=−9 V; source is +18 V."
+          },
+          {
+            "zh": "增加R_d使漏极上升、V_SD下降，因此最终进入可变电阻区。",
+            "en": "Increasing R_d raises drain voltage and reduces V_SD, eventually entering triode."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "由两电阻独立分压重算V_G=16 V，再用PMOS分段方程核对电流、原Q点及17.5 kΩ边界；节点KCL、供电与电阻/MOS功率平衡复核通过。",
+            "en": "An independent divider calculation gives V_G=16 V. The piecewise PMOS law verifies current, original Q and the 17.5 kΩ boundary; node KCL and supply/resistor/MOS power balance are checked."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "理想长沟道PMOS，λ=0、栅电流0，衬底接源；2 μA分压电流独立于漏极支路。",
+            "en": "Ideal long-channel PMOS, λ=0 and zero gate current, body tied to source; the 2 μA divider current is separate from drain current."
+          },
+          "results": {
+            "Rd_ohm": 9000,
+            "Rg1_ohm": 8000000,
+            "Rg2_ohm": 1000000,
+            "gate_V": 16,
+            "drain_V": 9,
+            "RdMax_ohm": 17500
+          }
+        },
+        "figure": "figure-4.2.4.png"
+      },
+      "AE-4.2.5": {
+        "id": "AE-4.2.5",
+        "bookId": "4.2.5",
+        "assigned": false,
+        "assignedSubparts": [],
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "pendingSubparts": [],
+        "completionNote": {
+          "zh": "整道题全部小问已核验；指定作业小问另行标注。",
+          "en": "All exercise parts have been checked; assigned parts are separately marked."
+        },
+        "title": {
+          "zh": "先判解是否存在，再解四个节点",
+          "en": "Test solution existence before solving four nodes"
+        },
+        "source": {
+          "title": "电子技术基础（模拟部分）",
+          "edition": 7,
+          "authors": [
+            "康华光",
+            "张林"
+          ],
+          "publisher": "高等教育出版社",
+          "printedPage": 146,
+          "pdfPage": 179,
+          "figure": "图题4.2.5",
+          "figurePrintedPage": 147,
+          "figurePdfPage": 180
+        },
+        "statement": {
+          "zh": "求图题4.2.5所示各电路所标节点的电压。已知所有MOS管K_n=0.25 mA/V²，λ=0，V_TN=0.8 V。图(a)：漏接+5 V、栅源短接于V₁，向下10 μA电流源接−5 V；(b)：漏接+5 V、栅接地、源为V₂，向下1 mA电流源接−5 V；(c)：栅漏短接为V₃，源接地，上接来自+5 V的1 mA电流源；(d)：栅漏短接为V₄，源接地，V₄经400 kΩ接+5 V。",
+          "en": "Find the labeled voltages in Fig. 4.2.5 with K_n=0.25 mA/V², λ=0 and V_TN=0.8 V for all devices. (a) Drain +5 V, gate/source joined at V₁, 10 μA sink to −5 V. (b) Drain +5 V, gate grounded, source V₂, 1 mA sink to −5 V. (c) Gate/drain V₃, grounded source, 1 mA source from +5 V. (d) Gate/drain V₄, grounded source, 400 kΩ to +5 V."
+        },
+        "fullStatementTranscribed": true,
+        "diagram": {
+          "alt": {
+            "zh": "四个原电路保留±5 V电源、电流源箭头、400 kΩ和节点V₁～V₄；(a)栅明确与源连接，而非漏。",
+            "en": "Four source circuits retain ±5 V supplies, current arrows, 400 kΩ and nodes V₁–V₄. In (a), the gate is connected to source, not drain."
+          }
+        },
+        "prerequisites": {
+          "zh": "MOS管电压方向、阈值与工作区；直流时电容开路、交流时理想电源接地。",
+          "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
+        },
+        "recognition": {
+          "zh": "(a)不能因为电流源给了电流就强迫截止管套平方律。每个代数根都必须回查V_GS>V_TN、饱和条件与电流源端电压。",
+          "en": "A specified current source cannot force a cutoff channel to satisfy the saturation square law. Check every algebraic root against V_GS>V_TN, saturation and available source voltage."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "（a）理想直流解不存在",
+              "en": "(a) No ideal DC solution"
+            },
+            "text": {
+              "zh": "栅源短接使V_GS=0<0.8 V，增强型NMOS截止，i_D=0；理想电流源却要求节点向下流出10 μA。KCL矛盾，因而题设理想模型没有有限稳态V₁。实际电流源会触及顺从电压限制，或由未给定的漏电/击穿决定节点，不能虚构V₁数值。",
+              "en": "The gate–source short fixes V_GS=0<0.8 V, so the enhancement channel is off and i_D=0. The ideal sink demands 10 μA out of the node, contradicting KCL. No finite steady V₁ exists in this ideal model. A real sink reaches compliance or unspecified leakage/breakdown intervenes; the source gives no unique value."
+            },
+            "formula": "i_D=0\\ne10\\,\\mathrm{\\mu A}"
+          },
+          {
+            "title": {
+              "zh": "（b）先求V_GS再得源电位",
+              "en": "(b) Find V_GS, then source voltage"
+            },
+            "text": {
+              "zh": "向下1 mA给V_GS=0.8+√(1/0.25)=2.8 V，栅为0故源为−2.8 V。V_DS=7.8 V大于过驱动2 V，满足恒流区；电流源剩2.2 V电压。",
+              "en": "A downward 1 mA requires V_GS=0.8+√(1/0.25)=2.8 V. Grounded gate gives V₂=−2.8 V. V_DS=7.8 V exceeds 2 V overdrive and the sink has 2.2 V across it."
+            },
+            "formula": "V_2=-2.8\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "（c）栅漏短接",
+              "en": "(c) Gate–drain connection"
+            },
+            "text": {
+              "zh": "源接地，V_GS=V_DS=V₃。1 mA给V₃=2.8 V；2.8≥2使恒流区成立，上方电流源两端为2.2 V。",
+              "en": "With grounded source, V_GS=V_DS=V₃. The 1 mA current gives V₃=2.8 V, satisfying 2.8≥2 V for saturation. The upper current source has 2.2 V."
+            },
+            "formula": "V_3=2.8\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "（d）电阻负载线与有效根",
+              "en": "(d) Resistor load line and valid root"
+            },
+            "text": {
+              "zh": "电阻电流与沟道电流相等。方程给1 V与0.59 V两个代数根；0.59 V低于阈值，不能用导通平方律，必须舍去。",
+              "en": "Equate resistor current to channel current. The algebraic roots are 1 V and 0.59 V; 0.59 V is below threshold and invalid for the on-state square law."
+            },
+            "formula": "\\frac{5-V_4}{400\\,\\mathrm{k\\Omega}}=0.25\\,\\mathrm{mA/V^2}(V_4-0.8)^2\\quad\\Rightarrow\\quad V_4=1\\,\\mathrm V,\\quad I_D=10\\,\\mathrm{\\mu A}"
+          }
+        ],
+        "answer": {
+          "zh": "(a)按题设理想模型无有限直流稳态解，V₁不能确定为某个数；(b)V₂=−2.8 V；(c)V₃=2.8 V；(d)V₄=1 V。",
+          "en": "(a) No finite ideal DC steady-state solution, hence no numerical V₁; (b) V₂=−2.8 V; (c) V₃=2.8 V; (d) V₄=1 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "(a)是栅源短接，不能读成栅漏短接。",
+            "en": "(a) shorts gate to source, not gate to drain."
+          },
+          {
+            "zh": "平方后的低于阈值代数根是伪解。",
+            "en": "A squared-law root below threshold is extraneous."
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "scope": "entire-exercise",
+          "methods": {
+            "zh": "独立采用带截止分支的分段MOS函数，逐节点回代KCL与工作区；(d)另用单调负载线二分法求唯一有效根；(a)直接检查恒定10 μA的节点残差而不运行无解迭代。",
+            "en": "An independent piecewise MOS law with cutoff checks each node’s KCL and region. A monotonic load-line bisection finds the unique valid root for (d); (a) is verified by its unavoidable 10 μA KCL residual instead of a futile root search."
+          },
+          "externalAnswerKeyUsed": false,
+          "assumptions": {
+            "zh": "题给增强型NMOS的理想长沟道模型，λ=0，栅和体电流忽略，衬底与源相接；电流源理想，未给顺从电压/漏电/击穿模型。",
+            "en": "Specified enhancement-NMOS ideal long-channel model, λ=0, zero gate/body current and body tied to source; ideal current sources without supplied compliance/leakage/breakdown models."
+          },
+          "results": {
+            "V1": "no finite ideal DC solution",
+            "V2_V": -2.8,
+            "V3_V": 2.8,
+            "V4_V": 1,
+            "partD_ID_A": 1e-05,
+            "extraneousRoot_V": 0.59
+          }
+        },
+        "figure": "figure-4.2.5.png"
       }
     }
   }
