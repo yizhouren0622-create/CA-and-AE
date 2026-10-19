@@ -26848,8 +26848,8 @@
           "en": "All exercise parts have been checked; assigned parts are separately marked."
         },
         "title": {
-          "zh": "先判解是否存在，再解四个节点",
-          "en": "Test solution existence before solving four nodes"
+          "zh": "先读栅极接线，再解四个节点",
+          "en": "Read the gate connections before solving four nodes"
         },
         "source": {
           "title": "电子技术基础（模拟部分）",
@@ -26866,14 +26866,14 @@
           "figurePdfPage": 180
         },
         "statement": {
-          "zh": "求图题4.2.5所示各电路所标节点的电压。已知所有MOS管K_n=0.25 mA/V²，λ=0，V_TN=0.8 V。图(a)：漏接+5 V、栅源短接于V₁，向下10 μA电流源接−5 V；(b)：漏接+5 V、栅接地、源为V₂，向下1 mA电流源接−5 V；(c)：栅漏短接为V₃，源接地，上接来自+5 V的1 mA电流源；(d)：栅漏短接为V₄，源接地，V₄经400 kΩ接+5 V。",
-          "en": "Find the labeled voltages in Fig. 4.2.5 with K_n=0.25 mA/V², λ=0 and V_TN=0.8 V for all devices. (a) Drain +5 V, gate/source joined at V₁, 10 μA sink to −5 V. (b) Drain +5 V, gate grounded, source V₂, 1 mA sink to −5 V. (c) Gate/drain V₃, grounded source, 1 mA source from +5 V. (d) Gate/drain V₄, grounded source, 400 kΩ to +5 V."
+          "zh": "求图题4.2.5所示各电路所标节点的电压。已知所有MOS管K_n=0.25 mA/V²，λ=0，V_TN=0.8 V。图(a)：漏接+5 V、栅接地、源为V₁，向下10 μA电流源接−5 V；(b)：漏接+5 V、栅接地、源为V₂，向下1 mA电流源接−5 V；(c)：栅漏短接为V₃，源接地，上接来自+5 V的1 mA电流源；(d)：栅漏短接为V₄，源接地，V₄经400 kΩ接+5 V。",
+          "en": "Find the labeled voltages in Fig. 4.2.5 with K_n=0.25 mA/V², λ=0 and V_TN=0.8 V for all devices. (a) Drain +5 V, grounded gate and source V₁, 10 μA sink to −5 V. (b) Drain +5 V, gate grounded, source V₂, 1 mA sink to −5 V. (c) Gate/drain V₃, grounded source, 1 mA source from +5 V. (d) Gate/drain V₄, grounded source, 400 kΩ to +5 V."
         },
         "fullStatementTranscribed": true,
         "diagram": {
           "alt": {
-            "zh": "四个原电路保留±5 V电源、电流源箭头、400 kΩ和节点V₁～V₄；(a)栅明确与源连接，而非漏。",
-            "en": "Four source circuits retain ±5 V supplies, current arrows, 400 kΩ and nodes V₁–V₄. In (a), the gate is connected to source, not drain."
+            "zh": "四个原电路保留±5 V电源、电流源箭头、400 kΩ和节点V₁～V₄；(a)栅接左侧地符号，源为V₁，二者未短接。",
+            "en": "Four source circuits retain ±5 V supplies, current arrows, 400 kΩ and nodes V₁–V₄. In (a), the gate connects to the left ground symbol; source V₁ is a different node."
           }
         },
         "prerequisites": {
@@ -26881,20 +26881,20 @@
           "en": "MOS voltage references, thresholds and operating regions; capacitors are open for DC and ideal supplies are grounded for AC."
         },
         "recognition": {
-          "zh": "(a)不能因为电流源给了电流就强迫截止管套平方律。每个代数根都必须回查V_GS>V_TN、饱和条件与电流源端电压。",
-          "en": "A specified current source cannot force a cutoff channel to satisfy the saturation square law. Check every algebraic root against V_GS>V_TN, saturation and available source voltage."
+          "zh": "(a)(b)的栅都接地，由电流决定正的V_GS，故源电位为负。每个代数根都必须回查V_GS>V_TN、饱和条件与电流源端电压。",
+          "en": "Both (a) and (b) have grounded gates: current sets positive V_GS, so the source voltage is negative. Check every root against conduction, saturation and available current-source voltage."
         },
         "steps": [
           {
             "title": {
-              "zh": "（a）理想直流解不存在",
-              "en": "(a) No ideal DC solution"
+              "zh": "（a）10 μA与接地栅极",
+              "en": "(a) A 10 μA current and grounded gate"
             },
             "text": {
-              "zh": "栅源短接使V_GS=0<0.8 V，增强型NMOS截止，i_D=0；理想电流源却要求节点向下流出10 μA。KCL矛盾，因而题设理想模型没有有限稳态V₁。实际电流源会触及顺从电压限制，或由未给定的漏电/击穿决定节点，不能虚构V₁数值。",
-              "en": "The gate–source short fixes V_GS=0<0.8 V, so the enhancement channel is off and i_D=0. The ideal sink demands 10 μA out of the node, contradicting KCL. No finite steady V₁ exists in this ideal model. A real sink reaches compliance or unspecified leakage/breakdown intervenes; the source gives no unique value."
+              "zh": "原图栅极接左侧地符号，未接源极。由10 μA=0.01 mA，过驱动√(0.01/0.25)=0.2 V，V_GS=1 V；栅为0，所以V₁=−1 V。V_DS=6 V大于0.2 V，恒流区成立，电流源两端有4 V。",
+              "en": "The gate connects to the left ground symbol, not the source. With 10 μA=0.01 mA, overdrive is √(0.01/0.25)=0.2 V and V_GS=1 V. Grounded gate gives V₁=−1 V. V_DS=6 V exceeds 0.2 V overdrive and the sink has 4 V across it."
             },
-            "formula": "i_D=0\\ne10\\,\\mathrm{\\mu A}"
+            "formula": "V_1=-\\left(0.8+\\sqrt{0.01/0.25}\\right)=-1\\,\\mathrm V"
           },
           {
             "title": {
@@ -26931,13 +26931,13 @@
           }
         ],
         "answer": {
-          "zh": "(a)按题设理想模型无有限直流稳态解，V₁不能确定为某个数；(b)V₂=−2.8 V；(c)V₃=2.8 V；(d)V₄=1 V。",
-          "en": "(a) No finite ideal DC steady-state solution, hence no numerical V₁; (b) V₂=−2.8 V; (c) V₃=2.8 V; (d) V₄=1 V."
+          "zh": "(a)V₁=−1 V；(b)V₂=−2.8 V；(c)V₃=2.8 V；(d)V₄=1 V。",
+          "en": "(a) V₁=−1 V; (b) V₂=−2.8 V; (c) V₃=2.8 V; (d) V₄=1 V."
         },
         "pitfalls": [
           {
-            "zh": "(a)是栅源短接，不能读成栅漏短接。",
-            "en": "(a) shorts gate to source, not gate to drain."
+            "zh": "(a)栅极左下方的横线是地符号，未与源节点连接。",
+            "en": "The horizontal line below the gate in (a) is a ground symbol, not a wire to the source node."
           },
           {
             "zh": "平方后的低于阈值代数根是伪解。",
@@ -26948,16 +26948,16 @@
           "status": "independently-checked",
           "scope": "entire-exercise",
           "methods": {
-            "zh": "独立采用带截止分支的分段MOS函数，逐节点回代KCL与工作区；(d)另用单调负载线二分法求唯一有效根；(a)直接检查恒定10 μA的节点残差而不运行无解迭代。",
-            "en": "An independent piecewise MOS law with cutoff checks each node’s KCL and region. A monotonic load-line bisection finds the unique valid root for (d); (a) is verified by its unavoidable 10 μA KCL residual instead of a futile root search."
+            "zh": "独立采用带截止分支的分段MOS函数，逐节点回代KCL与工作区；(d)另用单调负载线二分法求唯一有效根；(a)按栅极接地原拓扑回代V₁=−1 V，得到漏电流10 μA和零节点残差。",
+            "en": "An independent piecewise MOS law with cutoff checks each node’s KCL and region. A monotonic load-line bisection finds the unique valid root for (d); (a) is checked with the original grounded gate at V₁=−1 V, yielding 10 μA drain current and zero node residual."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
-            "zh": "题给增强型NMOS的理想长沟道模型，λ=0，栅和体电流忽略，衬底与源相接；电流源理想，未给顺从电压/漏电/击穿模型。",
-            "en": "Specified enhancement-NMOS ideal long-channel model, λ=0, zero gate/body current and body tied to source; ideal current sources without supplied compliance/leakage/breakdown models."
+            "zh": "题给增强型NMOS的理想长沟道模型，λ=0，栅和体电流忽略，衬底与源相接；电流源理想，各解均核对可用端电压。",
+            "en": "Specified enhancement-NMOS ideal long-channel model, λ=0, zero gate/body current and body tied to source; ideal current sources, with available terminal voltage checked for each solution."
           },
           "results": {
-            "V1": "no finite ideal DC solution",
+            "V1_V": -1,
             "V2_V": -2.8,
             "V3_V": 2.8,
             "V4_V": 1,
