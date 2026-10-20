@@ -35,6 +35,7 @@ python3 -m http.server 8765
 python3 -m pip install -r requirements-build.txt
 python3 build_site.py
 python3 check_site.py
+python3 test_math_typesetting.py
 ```
 
 生成的 HTML 与源数据一起提交。补充教材题时须完整抄题、核对图和页码、列出推导与适用条件，再做独立计算核验；仅完成指定小问时需明确标注，不能计作整题完成。
@@ -50,3 +51,6 @@ python3 check_site.py
 A bilingual, exam-focused study site with Circuit Analysis first, followed by Analog Electronics. It includes concept and solution guides, original diagnostic papers with rubrics, and a textbook exercise inventory. Checked exercise entries contain transcribed statements, source figures, reasoning and verification. Pending entries do not contain guessed answers. The course plan controls exam scope; source editions and printed/PDF pages remain visible.
 
 Progress is browser-local and exportable. Reading is buildless and equations use native MathML. To regenerate pages, install `requirements-build.txt`, run `python3 build_site.py`, then `python3 check_site.py`.
+
+
+正文、提示、答案和独立公式统一由 `math_typesetting.py` 构建为原生 MathML；分式、上下标、根号与相量重音离线可读。正文公式使用 `display:inline math`，长公式在自身区域横向滚动。优先为新增内容写明确的 `$…$` 或 TeX 公式，不依赖旧记法识别；分母单位应放在 `\frac` 的分母内，枚举两个数值应写“和”或“分别”，不可用除号代替。文件名/网表标识保持字面形式。检查程序会拒绝正文裸下划线、乘方符号和公式中的斜杠除法，并检查分段公式行数；运行测试覆盖分母单位、指数范围、嵌套分式、相量、微分和中英文正文。

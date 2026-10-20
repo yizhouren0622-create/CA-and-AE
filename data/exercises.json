@@ -6354,7 +6354,7 @@
         },
         "prerequisites": {
           "zh": "直流稳态；电感电流、电容电压连续；分别求RL、RC响应；节点KCL。",
-          "en": "DC steady state, inductor-current and capacitor-voltage continuity, separate RL/RC responses and nodal KCL."
+          "en": "DC steady state, inductor-current and capacitor-voltage continuity, separate $RL$ and $RC$ responses and nodal KCL."
         },
         "recognition": {
           "zh": "开关闭合后A被理想10 V源固定为10 V，使左右动态支路各自成为一阶电路。先分别求电感流入A的电流和A流向右侧的电流，再相减得到开关支路电流。",
@@ -11914,7 +11914,7 @@
         "diagram": {
           "alt": {
             "zh": "12 V电池经点火开关、30 A熔断器及四档转换开关供电。位置1接R₁上端，位置2接R₁/R₂间，位置3接R₂/R₃间，位置4接R₃/R₄间。下方R₄接100 Ω电动机回电池负端。",
-            "en": "A 12 V battery feeds an ignition switch, 30 A fuse and four-position selector. Positions 1–4 connect respectively above R₁ and at the R₁/R₂, R₂/R₃ and R₃/R₄ taps. R₄ connects through the 100 Ω motor back to battery negative."
+            "en": "A 12 V battery feeds an ignition switch, 30 A fuse and four-position selector. Positions 1–4 connect respectively above R₁ and at the R₁ and R₂, R₂ and R₃ and R₃ and R₄ taps. R₄ connects through the 100 Ω motor back to battery negative."
           }
         },
         "prerequisites": {
@@ -18236,7 +18236,7 @@
         "diagram": {
           "alt": {
             "zh": "源极带未旁路0.5 kΩ的NMOS共源电路，漏极10 kΩ到正电源；栅极由165 kΩ、35 kΩ偏置，信号源串0.5 kΩ，经耦合电容输入，输出经耦合电容从漏极取出。",
-            "en": "NMOS common source with an unbypassed 0.5 kΩ source resistor, 10 kΩ drain resistor, 165 kΩ/35 kΩ gate divider, 0.5 kΩ signal-source resistance and coupling capacitors at input and output."
+            "en": "NMOS common source with an unbypassed 0.5 kΩ source resistor, 10 kΩ drain resistor, 165 kΩ and 35 kΩ gate divider, 0.5 kΩ signal-source resistance and coupling capacitors at input and output."
           }
         },
         "figure": "figure-4.4.1.png"
@@ -18364,8 +18364,8 @@
           "status": "independently-checked",
           "scope": "entire-exercise",
           "methods": {
-            "zh": "第1–3问独立列源、漏节点KCL，1 V输入给v_s=2/3 V、i_d=1/3 mA、v_o=−10/3 V，输入电流1/2.075 MΩ A；输出1 V测试给0.1 mA。第4问实际ngspice 47直流、AC及瞬态运行均成功；以独立6节点复数导纳矩阵保留C1、C2、旁路C与Rg3/分压网络，得到1 kHz增益−3.35499766−j0.01667836，KCL残差小于7×10⁻18 A。瞬态输出7–10 ms用正弦、余弦及常数最小二乘拟合，基波幅值与AC×10 mV相差约0.0046%。",
-            "en": "Parts (1)–(3): independent source/drain KCL gives v_s=2/3 V, i_d=1/3 mA and v_o=−10/3 V for a 1 V input; input current is 1/2.075 MΩ A. A 1 V output test gives 0.1 mA. Part (4): actual ngspice 47 operating-point, AC and transient runs succeeded. An independent six-node complex admittance matrix retains C1, C2, bypass C and the Rg3/divider network, reproducing gain −3.35499766−j0.01667836 at 1 kHz with KCL residual below 7×10⁻18 A. A least-squares sine/cosine/constant fit over 7–10 ms differs from AC gain times 10 mV by about 0.0046%."
+            "zh": "第1–3问独立列源、漏节点KCL，1 V输入给v_s=2/3 V、i_d=1/3 mA、v_o=−10/3 V，输入电流$\\frac{1\\,\\mathrm V}{2.075\\,\\mathrm{M\\Omega}}\\approx0.481928\\,\\mathrm{\\mu A}$；输出1 V测试给0.1 mA。第4问实际ngspice 47直流、AC及瞬态运行均成功；以独立6节点复数导纳矩阵保留C1、C2、旁路C与Rg3/分压网络，得到1 kHz增益−3.35499766−j0.01667836，KCL残差小于7×10⁻18 A。瞬态输出7–10 ms用正弦、余弦及常数最小二乘拟合，基波幅值与AC×10 mV相差约0.0046%。",
+            "en": "Parts (1)–(3): independent source/drain KCL gives v_s=2/3 V, i_d=1/3 mA and v_o=−10/3 V for a 1 V input; input current is $\\frac{1\\,\\mathrm V}{2.075\\,\\mathrm{M\\Omega}}\\approx0.481928\\,\\mathrm{\\mu A}$. A 1 V output test gives 0.1 mA. Part (4): actual ngspice 47 operating-point, AC and transient runs succeeded. An independent six-node complex admittance matrix retains C1, C2, bypass C and the Rg3/divider network, reproducing gain −3.35499766−j0.01667836 at 1 kHz with KCL residual below 7×10⁻18 A. A least-squares sine/cosine/constant fit over 7–10 ms differs from AC gain times 10 mV by about 0.0046%."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
@@ -18391,7 +18391,7 @@
         "diagram": {
           "alt": {
             "zh": "NMOS漏极接10 kΩ到20 V；源极经R₁=2 kΩ、R₂=10 kΩ串联接地，47 μF只旁路R₂。栅极通过2 MΩ接300 kΩ/100 kΩ偏置分压点。输入电容0.02 μF，输出电容4.7 μF。",
-            "en": "NMOS drain through 10 kΩ to 20 V; source through series R₁=2 kΩ and R₂=10 kΩ to ground, with 47 μF bypassing only R₂. Gate through 2 MΩ to a 300 kΩ/100 kΩ bias divider. Input capacitor 0.02 μF; output capacitor 4.7 μF."
+            "en": "NMOS drain through 10 kΩ to 20 V; source through series R₁=2 kΩ and R₂=10 kΩ to ground, with 47 μF bypassing only R₂. Gate through 2 MΩ to a 300 kΩ and 100 kΩ bias divider. Input capacitor 0.02 μF; output capacitor 4.7 μF."
           }
         },
         "solutionDiagrams": [
@@ -18562,7 +18562,7 @@
         "diagram": {
           "alt": {
             "zh": "NMOS共漏极源极跟随器：漏极接12 V，源极经1 kΩ接地并取输出；栅极150 kΩ上拉、450 kΩ下拉，10 kΩ内阻信号源通过耦合电容接栅。",
-            "en": "NMOS source follower: drain at 12 V, source through 1 kΩ to ground with output at source, gate divider 150 kΩ upper/450 kΩ lower, and input through a coupling capacitor from a source with 10 kΩ resistance."
+            "en": "NMOS source follower: drain at 12 V, source through 1 kΩ to ground with output at source, gate divider 150 kΩ upper and 450 kΩ lower, and input through a coupling capacitor from a source with 10 kΩ resistance."
           }
         },
         "figure": "figure-4.5.1.png"
@@ -19008,7 +19008,7 @@
               "zh": "40 kΩ使基极电流0.285 mA，假设放大区会要求22.8 mA，远超3 mA，故饱和。实际I_C由负载决定。",
               "en": "The 40 kΩ resistor supplies 0.285 mA base current. An active-state calculation would demand 22.8 mA, exceeding 3 mA, so the transistor saturates and the load sets I_C."
             },
-            "formula": "I_B=(12-0.6)/40\\,\\mathrm{k\\Omega}=0.285\\,\\mathrm{mA};\\quad\\beta I_B=22.8\\,\\mathrm{mA}>3\\,\\mathrm{mA};\\quad I_C=3\\,\\mathrm{mA}"
+            "formula": "I_B=\\frac{(12-0.6)\\,\\mathrm V}{40\\,\\mathrm{k\\Omega}}=0.285\\,\\mathrm{mA};\\quad\\beta I_B=22.8\\,\\mathrm{mA}>3\\,\\mathrm{mA};\\quad I_C=3\\,\\mathrm{mA}"
           },
           {
             "title": {
@@ -19138,7 +19138,7 @@
               "zh": "V_BQ=0，V_EQ=−0.7 V，R_e上电压11.3 V。保留β有限时I_C=βI_E/(β+1)。",
               "en": "V_BQ=0 and V_EQ=−0.7 V, so the emitter resistor sees 11.3 V. Retain finite beta using I_C=βI_E/(β+1)."
             },
-            "formula": "I_{EQ}=11.3/6.2\\,\\mathrm{k\\Omega}\\approx1.82258\\,\\mathrm{mA};\\quad I_{CQ}\\approx1.80454\\,\\mathrm{mA};\\quad V_{CEQ}=24-I_ER_e-I_CR_c\\approx5.48186\\,\\mathrm{V}"
+            "formula": "I_{EQ}=\\frac{11.3\\,\\mathrm V}{6.2\\,\\mathrm{k\\Omega}}\\approx1.82258\\,\\mathrm{mA};\\quad I_{CQ}\\approx1.80454\\,\\mathrm{mA};\\quad V_{CEQ}=24-I_ER_e-I_CR_c\\approx5.48186\\,\\mathrm{V}"
           },
           {
             "title": {
@@ -19286,7 +19286,7 @@
               "zh": "发射极0 V，基极−0.7 V，基极电阻上电压11.3 V。",
               "en": "The emitter is at 0 V and base at −0.7 V, leaving 11.3 V across R_b."
             },
-            "formula": "|I_{BQ}|=11.3/300\\,\\mathrm{k\\Omega}=37.6667\\,\\mu\\mathrm{A};\\quad |I_{CQ}|=3.76667\\,\\mathrm{mA};\\quad V_{CEQ}=-12+|I_C|2\\,\\mathrm{k\\Omega}=-4.46667\\,\\mathrm{V}"
+            "formula": "|I_{BQ}|=\\frac{11.3\\,\\mathrm V}{300\\,\\mathrm{k\\Omega}}=37.6667\\,\\mu\\mathrm{A};\\quad |I_{CQ}|=3.76667\\,\\mathrm{mA};\\quad V_{CEQ}=-12+|I_C|2\\,\\mathrm{k\\Omega}=-4.46667\\,\\mathrm{V}"
           },
           {
             "title": {
@@ -19438,7 +19438,7 @@
         "diagram": {
           "alt": {
             "zh": "NPN分压射极偏置：60 kΩ/20 kΩ基极分压，3 kΩ集电极电阻，2 kΩ射极电阻由50 μF旁路；输出耦合到6 kΩ负载。",
-            "en": "Divider-biased NPN: 60 kΩ/20 kΩ base divider, 3 kΩ collector resistor, 2 kΩ emitter resistor bypassed by 50 μF, and output coupled to 6 kΩ."
+            "en": "Divider-biased NPN: 60 kΩ and 20 kΩ base divider, 3 kΩ collector resistor, 2 kΩ emitter resistor bypassed by 50 μF, and output coupled to 6 kΩ."
           }
         },
         "prerequisites": {
@@ -19602,7 +19602,7 @@
         "diagram": {
           "alt": {
             "zh": "图8.1.1的六图：(a)运放和射极跟随器，输出经R₂/R₁反馈到反相端；(b)A₂作电压跟随器，经R₃反馈到A₁反相求和点；(c)两运放串联，负载电流经过R₆，其电压返回A₁同相端；(d)运放驱动NMOS，源极经R₁接地，并经R₂回反相求和点，漏极R_d输出；(e)三级共源极，R_f从末级漏极回首级栅极；(f)三级PNP共射，T₁与T₃共用R_e1，R_f1/R_f2之间有接地电容C₂，输出经C₃耦合。",
-            "en": "Six circuits: (a) op amp plus emitter follower with R₂/R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁/T₃ emitter resistor R_e1, and grounded C₂ at the R_f1/R_f2 junction, with C₃ output coupling."
+            "en": "Six circuits: (a) op amp plus emitter follower with R₂ and R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁ and T₃ emitter resistor R_e1, and grounded C₂ at the R_f1 and R_f2 junction, with C₃ output coupling."
           }
         },
         "prerequisites": {
@@ -19815,7 +19815,7 @@
         "diagram": {
           "alt": {
             "zh": "图8.1.1的六图：(a)运放和射极跟随器，输出经R₂/R₁反馈到反相端；(b)A₂作电压跟随器，经R₃反馈到A₁反相求和点；(c)两运放串联，负载电流经过R₆，其电压返回A₁同相端；(d)运放驱动NMOS，源极经R₁接地，并经R₂回反相求和点，漏极R_d输出；(e)三级共源极，R_f从末级漏极回首级栅极；(f)三级PNP共射，T₁与T₃共用R_e1，R_f1/R_f2之间有接地电容C₂，输出经C₃耦合。",
-            "en": "Six circuits: (a) op amp plus emitter follower with R₂/R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁/T₃ emitter resistor R_e1, and grounded C₂ at the R_f1/R_f2 junction, with C₃ output coupling."
+            "en": "Six circuits: (a) op amp plus emitter follower with R₂ and R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁ and T₃ emitter resistor R_e1, and grounded C₂ at the R_f1 and R_f2 junction, with C₃ output coupling."
           }
         },
         "prerequisites": {
@@ -19938,7 +19938,7 @@
         "diagram": {
           "alt": {
             "zh": "四图均以MOS差分级为输入。(a)T₂栅由末级T₃源电流经过R₃及R₁/R₂分压返回；(b)T₁栅接地，电流源输入T₂栅求和点，末级T₅源电流由R₂取样、经R₁返回；(c)输入T₁栅，T₃为PNP级，反馈由其集电极R₃及R₁/R₂送T₂栅，输出取T₃发射极；(d)末级源极输出直接送T₂栅。",
-            "en": "Four MOS differential-input circuits: (a) final T₃ source current is sampled by R₃ and divided by R₁/R₂ back to T₂ gate; (b) T₁ gate grounded, current-source input at the T₂ gate summing node, with final T₅ source current sensed by R₂ and returned through R₁; (c) PNP final T₃, collector current sampled through R₃ and R₁/R₂ to T₂ gate, with output at the emitter; (d) final source output directly returns to T₂ gate."
+            "en": "Four MOS differential-input circuits: (a) final T₃ source current is sampled by R₃ and divided by R₁ and R₂ back to T₂ gate; (b) T₁ gate grounded, current-source input at the T₂ gate summing node, with final T₅ source current sensed by R₂ and returned through R₁; (c) PNP final T₃, collector current sampled through R₃ and R₁ and R₂ to T₂ gate, with output at the emitter; (d) final source output directly returns to T₂ gate."
           }
         },
         "prerequisites": {
@@ -20189,7 +20189,7 @@
         "diagram": {
           "alt": {
             "zh": "图8.1.1的六图：(a)运放和射极跟随器，输出经R₂/R₁反馈到反相端；(b)A₂作电压跟随器，经R₃反馈到A₁反相求和点；(c)两运放串联，负载电流经过R₆，其电压返回A₁同相端；(d)运放驱动NMOS，源极经R₁接地，并经R₂回反相求和点，漏极R_d输出；(e)三级共源极，R_f从末级漏极回首级栅极；(f)三级PNP共射，T₁与T₃共用R_e1，R_f1/R_f2之间有接地电容C₂，输出经C₃耦合。",
-            "en": "Six circuits: (a) op amp plus emitter follower with R₂/R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁/T₃ emitter resistor R_e1, and grounded C₂ at the R_f1/R_f2 junction, with C₃ output coupling."
+            "en": "Six circuits: (a) op amp plus emitter follower with R₂ and R₁ feedback to the inverting input; (b) A₂ voltage follower returns through R₃ to A₁ summing node; (c) two op amps, with load-current sense resistor R₆ returning to A₁ non-inverting input; (d) op amp driving NMOS, source resistor R₁ and R₂ return to the summing node, drain-resistor output; (e) three common-source stages with R_f from final drain to first gate; (f) three PNP common-emitter stages, shared T₁ and T₃ emitter resistor R_e1, and grounded C₂ at the R_f1 and R_f2 junction, with C₃ output coupling."
           }
         },
         "prerequisites": {
@@ -21638,8 +21638,8 @@
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
-            "zh": "(1)(2)为除±40 mA硬限流外的理想运放，供电±15 V。严格SPICE模型采用大跨导1e6 A/V及min/max限流，结果均小于电源边界。(3)TI宏模型原版及仅调整VLP/VLN的研究副本分别记录；其二极管软限流、有限增益/带宽与偏置不属于题设硬限流模型。",
-            "en": "Parts (1) and (2) use an otherwise ideal op amp with strict ±40 mA limiting and ±15 V supplies. The strict SPICE implementation uses large transconductance 1e6 A/V with min/max current clamping; every output stays inside the rails. Part (3) separately records the original TI macro model and a research copy changing only VLP/VLN; their diode soft limiting, finite gain/bandwidth, and bias differ from the textbook hard-limit model."
+            "zh": "(1)(2)为除±40 mA硬限流外的理想运放，供电±15 V。严格SPICE模型采用大跨导1e6 A/V及min和max限流，结果均小于电源边界。(3)TI宏模型原版及仅调整VLP/VLN的研究副本分别记录；其二极管软限流、有限增益/带宽与偏置不属于题设硬限流模型。",
+            "en": "Parts (1) and (2) use an otherwise ideal op amp with strict ±40 mA limiting and ±15 V supplies. The strict SPICE implementation uses large transconductance 1e6 A/V with min and max current clamping; every output stays inside the rails. Part (3) separately records the original TI macro model and a research copy changing only VLP/VLN; their diode soft limiting, finite gain/bandwidth, and bias differ from the textbook hard-limit model."
           },
           "results": {
             "linearGain": 60,
@@ -22835,14 +22835,14 @@
             },
             "text": {
               "zh": "振幅V_m时，v_o= max(−V_m sinωt,0)，峰值V_m；v_A正峰值V_m+0.7、正输入半周为−0.7。故2 V输入输出峰值2 V、v_A正峰2.7 V；0.5 V输入为0.5 V、1.2 V。普通图3.4.1的0.5 V输入不够导通，v_L恒0；本题可整流小于0.7 V的信号。",
-              "en": "For amplitude V_m, output is max(−V_m sinωt,0), peaking at V_m. v_A peaks at V_m+0.7 and is −0.7 during positive input. The two cases give output peaks 2/0.5 V and v_A positive peaks 2.7/1.2 V. The ordinary 0.5 V rectifier remains off; this precision circuit rectifies signals below 0.7 V."
+              "en": "For amplitude V_m, output is max(−V_m sinωt,0), peaking at V_m. v_A peaks at V_m+0.7 and is −0.7 during positive input. The two cases give output peaks 2 V and 0.5 V and v_A positive peaks 2.7 V and 1.2 V. The ordinary 0.5 V rectifier remains off; this precision circuit rectifies signals below 0.7 V."
             },
             "formula": ""
           }
         ],
         "answer": {
           "zh": "（1）v_A=−0.7 V，v_o=0；（2）v_A=2.7 V，v_o=2 V；（3）v_o为输入负半周反相，峰值分别2 V、0.5 V；v_A按上述分段式；（4）普通整流输出0，本题能对小信号精密整流。",
-          "en": "(1) v_A=−0.7 V, v_o=0. (2) v_A=2.7 V, v_o=2 V. (3) Negative input half-cycles become positive output peaks of 2/0.5 V; v_A follows the stated piecewise rule. (4) Ordinary output is zero; this circuit rectifies small signals."
+          "en": "(1) v_A=−0.7 V, v_o=0. (2) v_A=2.7 V, v_o=2 V. (3) Negative input half-cycles become positive output peaks of 2 V and 0.5 V; v_A follows the stated piecewise rule. (4) Ordinary output is zero; this circuit rectifies small signals."
         },
         "pitfalls": [
           {
@@ -22892,7 +22892,7 @@
             "kind": "analytical-solution-plot",
             "alt": {
               "zh": "2 V和0.5 V输入下的恒压降模型波形；裸输出理想零交越跳变不代表真实动态。",
-              "en": "Constant-drop waveforms for 2/0.5 V inputs; ideal raw-output jumps are not real switching dynamics."
+              "en": "Constant-drop waveforms for 2 V and 0.5 V inputs; ideal raw-output jumps are not real switching dynamics."
             },
             "figure": "solution-3.4.5-waveforms.svg"
           }
@@ -24048,7 +24048,7 @@
           "scope": "entire-exercise",
           "methods": {
             "zh": "按原图KCL在输入两端独立回算电流；可行负载边界同时达到2 mA和15 mA，随机可行点扫描中间供电均在范围内。",
-            "en": "Independent original-node KCL checks both endpoints; the limiting design attains 2/15 mA simultaneously, and sampled feasible designs remain within bounds at intermediate supplies."
+            "en": "Independent original-node KCL checks both endpoints; the limiting design attains 2 mA and 15 mA simultaneously, and sampled feasible designs remain within bounds at intermediate supplies."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
@@ -24178,8 +24178,8 @@
           {
             "kind": "analytical-solution-plot",
             "alt": {
-              "zh": "单管限幅−0.7/+8 V，反串双管限幅±8.7 V。",
-              "en": "Single-zener limits −0.7/+8 V; opposing pair limits ±8.7 V."
+              "zh": "单管限幅−0.7 V和+8 V，反串双管限幅±8.7 V。",
+              "en": "Single-zener limits −0.7 V and +8 V; opposing pair limits ±8.7 V."
             },
             "figure": "solution-3.5.1-waveforms.svg"
           }
@@ -24863,7 +24863,7 @@
         },
         "recognition": {
           "zh": "同相端不是地！10 kΩ与140 kΩ先分出−1 V。输出级的电流还包含反馈电阻电流，不能只算2 kΩ负载。",
-          "en": "The noninverting input is not grounded: the 10/140 kΩ divider sets −1 V. Output current includes the feedback branch as well as the 2 kΩ load."
+          "en": "The noninverting input is not grounded: the 10 kΩ and 140 kΩ divider sets −1 V. Output current includes the feedback branch as well as the 2 kΩ load."
         },
         "steps": [
           {
@@ -24917,7 +24917,7 @@
             },
             "text": {
               "zh": "（1）运放+轨取1.5 mA、−轨吸收6.8 mA，供电124.5 mW，输出交付53.0 mW，差71.5 mW。（2）+轨取2.6 mA、−轨吸收1.5 mA，供电61.5 mW，输出交付2.2 mW，差59.3 mW。偏置分压另耗1.5 mW，属于外部电阻，不纳入运放。",
-              "en": "(1) Op-amp rail currents are 1.5 mA from +15 V and 6.8 mA into −15 V: 124.5 mW supply minus 53.0 mW output equals 71.5 mW. (2) They are 2.6/1.5 mA: 61.5 mW minus 2.2 mW equals 59.3 mW. The bias divider separately dissipates 1.5 mW outside the op amp."
+              "en": "(1) Op-amp rail currents are 1.5 mA from +15 V and 6.8 mA into −15 V: 124.5 mW supply minus 53.0 mW output equals 71.5 mW. (2) They are 2.6 mA and 1.5 mA: 61.5 mW minus 2.2 mW equals 59.3 mW. The bias divider separately dissipates 1.5 mW outside the op amp."
             },
             "formula": ""
           }
@@ -24944,8 +24944,8 @@
           "status": "independently-checked",
           "scope": "entire-exercise",
           "methods": {
-            "zh": "独立解反相与偏置两节点KCL，核对输出KCL；分别用输出级压降乘电流、各运放供电端输入功率减输出功率两种算法，均得71.5/59.3 mW；再以含输入源及外部电阻的全电路功率平衡复核。",
-            "en": "Independent bias/inverting KCL and output KCL. Stage voltage-drop loss and rail-power-minus-output calculations both give 71.5/59.3 mW; a whole-circuit balance including the input source and external resistors provides another check."
+            "zh": "独立解反相与偏置两节点KCL，核对输出KCL；分别用输出级压降乘电流、各运放供电端输入功率减输出功率两种算法，均得71.5 mW和59.3 mW；再以含输入源及外部电阻的全电路功率平衡复核。",
+            "en": "Independent bias/inverting KCL and output KCL. Stage voltage-drop loss and rail-power-minus-output calculations both give 71.5 mW and 59.3 mW; a whole-circuit balance including the input source and external resistors provides another check."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
@@ -25135,7 +25135,7 @@
         "diagram": {
           "alt": {
             "zh": "图a：v_i1、v_i2经R₁、R₂接同相端；反相端经R₃接地、R₄接输出。图b：三个输入各经R₁、R₂、R₃接同相端；输出直接反馈反相端。",
-            "en": "(a) v_i1/v_i2 reach the noninverting input through R₁/R₂; R₃ grounds the inverting node and R₄ feeds back output. (b) Three inputs reach the noninverting input through R₁/R₂/R₃, with direct output-to-inverting feedback."
+            "en": "(a) v_i1 and v_i2 reach the noninverting input through R₁ and R₂; R₃ grounds the inverting node and R₄ feeds back output. (b) Three inputs reach the noninverting input through R₁, R₂ and R₃, with direct output-to-inverting feedback."
           }
         },
         "prerequisites": {
@@ -25382,7 +25382,7 @@
         "diagram": {
           "alt": {
             "zh": "电桥左臂上下均R，右上R(1+δ)、右下R，顶端+v_i、底端地。A₁、A₂分别跟随v_A、v_B。A₃反相输入经R₁接v_o1，反馈R₂；同相输入经R₁接v_o2、经R₂接地。",
-            "en": "Bridge left arms are both R, upper right is R(1+δ), lower right R, with +v_i at top and ground at bottom. A₁/A₂ buffer v_A/v_B. A₃ has v_o1 through R₁ to its inverting input and R₂ feedback; v_o2 reaches its noninverting input through R₁, with R₂ to ground."
+            "en": "Bridge left arms are both R, upper right is R(1+δ), lower right R, with +v_i at top and ground at bottom. A₁ and A₂ buffer v_A and v_B. A₃ has v_o1 through R₁ to its inverting input and R₂ feedback; v_o2 reaches its noninverting input through R₁, with R₂ to ground."
           }
         },
         "prerequisites": {
@@ -25423,7 +25423,7 @@
             },
             "text": {
               "zh": "A₁、A₂为电压跟随器：高输入电阻避免后级电阻网络加载电桥，低输出电阻驱动A₃；本身电压增益为1。A₃求差并按R₂/R₁放大，电阻比匹配时抑制共模电压。",
-              "en": "A₁/A₂ are unity-gain buffers with high input resistance to avoid bridge loading and low output resistance to drive A₃. A₃ subtracts and amplifies by R₂/R₁, rejecting common-mode voltage when ratios match."
+              "en": "A₁ and A₂ are unity-gain buffers with high input resistance to avoid bridge loading and low output resistance to drive A₃. A₃ subtracts and amplifies by R₂/R₁, rejecting common-mode voltage when ratios match."
             },
             "formula": ""
           },
@@ -25441,7 +25441,7 @@
         ],
         "answer": {
           "zh": "v_o=−(R₂/R₁)v_iδ/[2(2+δ)]；给定数值时v_A=3.75 V、v_B≈3.731343 V、v_AB≈18.656716 mV、v_o≈−18.656716(R₂/R₁) mV。A₁、A₂为隔离电桥与求差级的跟随器。",
-          "en": "v_o=−(R₂/R₁)v_iδ/[2(2+δ)]. Numerically v_A=3.75 V, v_B≈3.731343 V, v_AB≈18.656716 mV and v_o≈−18.656716(R₂/R₁) mV. A₁/A₂ buffer the bridge from the subtractor."
+          "en": "v_o=−(R₂/R₁)v_iδ/[2(2+δ)]. Numerically v_A=3.75 V, v_B≈3.731343 V, v_AB≈18.656716 mV and v_o≈−18.656716(R₂/R₁) mV. A₁ and A₂ buffer the bridge from the subtractor."
         },
         "pitfalls": [
           {
@@ -25647,7 +25647,7 @@
         "diagram": {
           "alt": {
             "zh": "v_i1、v_i2经R₁、R₂接反相端，R₆反馈。v_i3、v_i4经R₃、R₄接同相端，同相端经R₅接地。",
-            "en": "v_i1/v_i2 enter the inverting node through R₁/R₂, with R₆ feedback. v_i3/v_i4 enter the noninverting node through R₃/R₄, with R₅ to ground."
+            "en": "v_i1 and v_i2 enter the inverting node through R₁ and R₂, with R₆ feedback. v_i3 and v_i4 enter the noninverting node through R₃ and R₄, with R₅ to ground."
           }
         },
         "prerequisites": {
@@ -25769,7 +25769,7 @@
         "diagram": {
           "alt": {
             "zh": "正文图2.4.5是三运放仪用放大器：A₁、A₂同相输入v₁、v₂，反馈各R₂，两个反相端之间R₁；A₃用匹配R₃/R₄求差。此图不同于图题2.4.5的双运放电路。",
-            "en": "Body Fig. 2.4.5 is a three-op-amp instrumentation amplifier: A₁/A₂ take v₁/v₂ at noninverting inputs, each with R₂ feedback and R₁ between inverting nodes; A₃ subtracts with matched R₃/R₄. It differs from the two-op-amp exercise Fig. 2.4.5."
+            "en": "Body Fig. 2.4.5 is a three-op-amp instrumentation amplifier: A₁ and A₂ take v₁ and v₂ at noninverting inputs, each with R₂ feedback and R₁ between inverting nodes; A₃ subtracts with matched R₃ and R₄. It differs from the two-op-amp exercise Fig. 2.4.5."
           }
         },
         "prerequisites": {
@@ -25820,8 +25820,8 @@
               "en": "Choose convenient nominal values and recheck"
             },
             "text": {
-              "zh": "取R₂=200 kΩ、R₃=R₄=100 kΩ、电位器R_P=100 kΩ，固定R′₁仍1 kΩ。理想标称增益范围约4.960396～401，覆盖5～400；要恰好输出400和5，电位器分别调到约2.506266 Ω和99 kΩ。若要求全行程端点恰为5与400，需按199.5/98.75 kΩ校准或限位，不能直接声称标称组精确达到端点。",
-              "en": "Choose R₂=200 kΩ, matched R₃=R₄=100 kΩ and a 100 kΩ pot, keeping fixed R′₁=1 kΩ. Nominal ideal gain spans about 4.960396–401, covering 5–400. Gains 400 and 5 occur at pot settings about 2.506266 Ω and 99 kΩ. Exact full-travel endpoints require calibrated 199.5/98.75 kΩ values or travel limits; the nominal set does not have exact endpoints."
+              "zh": "取R₂=200 kΩ、R₃=R₄=100 kΩ、电位器R_P=100 kΩ，固定R′₁仍1 kΩ。理想标称增益范围约4.960396～401，覆盖5～400；要恰好输出400和5，电位器分别调到约2.506266 Ω和99 kΩ。若要求全行程端点恰为5与400，需按199.5 kΩ和98.75 kΩ校准或限位，不能直接声称标称组精确达到端点。",
+              "en": "Choose R₂=200 kΩ, matched R₃=R₄=100 kΩ and a 100 kΩ pot, keeping fixed R′₁=1 kΩ. Nominal ideal gain spans about 4.960396–401, covering 5–400. Gains 400 and 5 occur at pot settings about 2.506266 Ω and 99 kΩ. Exact full-travel endpoints require calibrated 199.5 kΩ and 98.75 kΩ values or travel limits; the nominal set does not have exact endpoints."
             },
             "formula": "G_{\\min}=1+\\frac{400}{101}\\approx4.960396,\\quad G_{\\max}=401,\\quad r_P(G)=\\frac{400\\,\\mathrm{k\\Omega}}{G-1}-1\\,\\mathrm{k\\Omega}"
           },
@@ -25832,7 +25832,7 @@
             },
             "text": {
               "zh": "单只R₂=200 kΩ、R₃=R₄=100 kΩ、电位器100 kΩ均小于250 kΩ，R₁总阻值也最多101 kΩ。未给器件公差，标称覆盖不等于任意公差下保证；实作需测量调校并保持差分级电阻比匹配。",
-              "en": "Each 200/100/100/100 kΩ component is below 250 kΩ, and total R₁ is at most 101 kΩ. Without tolerances, nominal coverage is not a worst-case guarantee; measure and calibrate actual parts and maintain final-stage ratio matching."
+              "en": "Each 200 kΩ, 100 kΩ, 100 kΩ and 100 kΩ component is below 250 kΩ, and total R₁ is at most 101 kΩ. Without tolerances, nominal coverage is not a worst-case guarantee; measure and calibrate actual parts and maintain final-stage ratio matching."
             },
             "formula": ""
           }
@@ -25852,7 +25852,7 @@
           },
           {
             "zh": "200 kΩ/100 kΩ标称组合覆盖目标，却不是精确5～400的全行程。",
-            "en": "The 200/100 kΩ nominal set covers the target but does not have exact 5–400 full-travel endpoints."
+            "en": "The 200 kΩ and 100 kΩ nominal set covers the target but does not have exact 5–400 full-travel endpoints."
           }
         ],
         "verification": {
@@ -26214,7 +26214,7 @@
         "diagram": {
           "alt": {
             "zh": "A₁、A₂跟随两个输入。A₃反相端经R₁接v_o1、经R₂接地；同相端经R₁接v_o2、经R₂接A₄输出v_o4。A₄同相端接地，反相端经R₃接其输出、经可调R₄接最终v_o。",
-            "en": "A₁/A₂ buffer both inputs. A₃ inverting node connects through R₁ to v_o1 and R₂ to ground; its noninverting node connects through R₁ to v_o2 and R₂ to A₄ output v_o4. A₄ noninverting input is grounded; its inverting node has R₃ feedback and adjustable R₄ to final v_o."
+            "en": "A₁ and A₂ buffer both inputs. A₃ inverting node connects through R₁ to v_o1 and R₂ to ground; its noninverting node connects through R₁ to v_o2 and R₂ to A₄ output v_o4. A₄ noninverting input is grounded; its inverting node has R₃ feedback and adjustable R₄ to final v_o."
           }
         },
         "prerequisites": {
@@ -26233,7 +26233,7 @@
             },
             "text": {
               "zh": "A₁、A₂电压增益1；A₃反相端分压为R₂/(R₁+R₂)倍v_i1，其同相端电位相等。",
-              "en": "A₁/A₂ have unity gain. A₃ inverting input divides v_i1 by R₂/(R₁+R₂); its noninverting input has the same potential."
+              "en": "A₁ and A₂ have unity gain. A₃ inverting input divides v_i1 by R₂/(R₁+R₂); its noninverting input has the same potential."
             },
             "formula": "v_{o1}=v_{i1},\\quad v_{o2}=v_{i2},\\quad v_{n3}=v_{p3}=\\frac{R_2}{R_1+R_2}v_{i1}"
           },
@@ -26537,7 +26537,7 @@
           "scope": "entire-exercise",
           "methods": {
             "zh": "随机正电阻与输入独立解A₁节点KCL，再用A₂虚地电容KCL求导数，与一般积分式的被积函数一致；等值时逐路单位输入检查+1、−1、−1。",
-            "en": "Independent A₁ node solves with random positive resistors and inputs followed by A₂ capacitor KCL match the general integrand; equal-resistor unit inputs verify +1/−1/−1 signs."
+            "en": "Independent A₁ node solves with random positive resistors and inputs followed by A₂ capacitor KCL match the general integrand; equal-resistor unit inputs verify +1, −1 and −1 signs."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
@@ -26858,7 +26858,7 @@
         "diagram": {
           "alt": {
             "zh": "输入串联R₁、C₁到反相虚地；反馈R₂与C₂并联，同相端接地。",
-            "en": "Input has series R₁/C₁ to virtual ground; feedback is parallel R₂/C₂, with the noninverting input grounded."
+            "en": "Input has series R₁ and C₁ to virtual ground; feedback is parallel R₂ and C₂, with the noninverting input grounded."
           }
         },
         "prerequisites": {
@@ -26991,7 +26991,7 @@
         "diagram": {
           "alt": {
             "zh": "A₁反相增益−R₂₁/R₁；A₂输入R₂、反馈C为积分器；A₃从v_o1经R₃、v_o2经R₄求和，反馈R₂₃。图b为恒定−0.1 V及1 s间隔±3 V方波。",
-            "en": "A₁ inverts with −R₂₁/R₁; A₂ integrates through R₂/C; A₃ sums v_o1/R₃ and v_o2/R₄ with R₂₃ feedback. Figure (b) gives constant −0.1 V and an alternating ±3 V square wave at 1 s intervals."
+            "en": "A₁ inverts with −R₂₁/R₁; A₂ integrates through R₂ and C; A₃ sums v_o1/R₃ and v_o2/R₄ with R₂₃ feedback. Figure (b) gives constant −0.1 V and an alternating ±3 V square wave at 1 s intervals."
           }
         },
         "prerequisites": {
@@ -27038,8 +27038,8 @@
           }
         ],
         "answer": {
-          "zh": "v_o1=−3v_i1，v_o2=−(1/10 s)∫v_i2dτ，v_o=−v_o1−v_o2。给定输入下0～5 s输出在−0.3与0 V间线性往返，t=0、1、2、3、4、5 s处分别−0.3、0、−0.3、0、−0.3、0 V。",
-          "en": "v_o1=−3v_i1, v_o2=−(1/10 s)∫v_i2dτ and v_o=−v_o1−v_o2. For the given input, output ramps between −0.3 and 0 V, with values −0.3, 0, −0.3, 0, −0.3, 0 V at t=0…5 s."
+          "zh": "v_o1=−3v_i1，v_o2=−($\\frac1{10\\,\\mathrm s}$)∫v_i2dτ，v_o=−v_o1−v_o2。给定输入下0～5 s输出在−0.3与0 V间线性往返，t=0、1、2、3、4、5 s处分别−0.3、0、−0.3、0、−0.3、0 V。",
+          "en": "v_o1=−3v_i1, v_o2=−($\\frac1{10\\,\\mathrm s}$)∫v_i2dτ and v_o=−v_o1−v_o2. For the given input, output ramps between −0.3 and 0 V, with values −0.3, 0, −0.3, 0, −0.3, 0 V at t=0…5 s."
         },
         "pitfalls": [
           {
@@ -28016,12 +28016,12 @@
           "scope": "entire-exercise",
           "methods": {
             "zh": "独立用区间二分及三次多项式全部根核对直流物理解，检查源/漏节点KCL与双电源功率；对完整端电流分别做栅压、漏压中央差分求g_m、g_ds，原漏极节点扰动给同一增益。另复算静态忽略λ的近似值。",
-            "en": "Independent bisection and all cubic roots identify the physical bias, with source/drain KCL and dual-supply power balance. Central differences of the full terminal current independently recover g_m/g_ds; original drain-node perturbations recover gain. The DC-neglects-λ approximation is separately recomputed."
+            "en": "Independent bisection and all cubic roots identify the physical bias, with source/drain KCL and dual-supply power balance. Central differences of the full terminal current independently recover g_m and g_ds; original drain-node perturbations recover gain. The DC-neglects-λ approximation is separately recomputed."
           },
           "externalAnswerKeyUsed": false,
           "assumptions": {
             "zh": "教材长沟道PMOS模型；K_p已含1/2，衬底接源，栅电流0，电容为理想交流短路，主结果保留λ；r_o与g_m均由同一模型求导。未给频率和电容值，不估计实际带宽。",
-            "en": "Textbook long-channel PMOS, K_p includes 1/2, body tied to source and zero gate current. Capacitors are ideal AC shorts. Main values retain λ, with r_o/g_m derived from the same model. No actual bandwidth is inferred without capacitor values or frequency."
+            "en": "Textbook long-channel PMOS, K_p includes 1/2, body tied to source and zero gate current. Capacitors are ideal AC shorts. Main values retain λ, with r_o and g_m derived from the same model. No actual bandwidth is inferred without capacitor values or frequency."
           },
           "results": {
             "fullLambdaModel": {

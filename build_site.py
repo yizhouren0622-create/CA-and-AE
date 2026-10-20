@@ -2,26 +2,24 @@
 """Build static bilingual pages. Browsing requires no Python or external services."""
 from pathlib import Path
 import hashlib, html, json, re
-from latex2mathml.converter import convert
+from math_typesetting import format_text, render_math
 
 ROOT=Path(__file__).resolve().parent
 def read(name): return json.loads((ROOT/'data'/name).read_text())
 syllabus=read('syllabus.json'); lessons=read('lessons.json'); papers=read('exams.json')
 library=read('exercises.json')
-revision_files=[Path(__file__)]+sorted((ROOT/'data').glob('*.json'))
+revision_files=[Path(__file__),ROOT/'math_typesetting.py']+sorted((ROOT/'data').glob('*.json'))
 SITE_REVISION=hashlib.sha256(b''.join(p.read_bytes() for p in revision_files)).hexdigest()[:12]
 courses={c['id']:c for c in syllabus['courses']}
 def complete(solution): return bool(solution) and not solution.get('pendingSubparts')
 def checked_count(lib): return sum(complete(s) for s in lib['solutions'].values())
 def partial_count(lib): return sum(bool(s) and not complete(s) for s in lib['solutions'].values())
 def esc(s): return html.escape(str(s),quote=True)
-def text(s):
-    parts=re.split(r'(\$[^$]+\$)',str(s))
-    return ''.join('<span class="math-inline">'+convert(p[1:-1])+'</span>' if p.startswith('$') and p.endswith('$') else esc(p) for p in parts)
+def text(s,language='zh'):return format_text(str(s),language)
 def bi(zh,en,tag='div',cls=''):
-    return f'<{tag} class="{cls}"><span data-lang="zh" lang="zh-CN">{text(zh)}</span><span data-lang="en" lang="en">{text(en)}</span></{tag}>'
+    return f'<{tag} class="{cls}"><span data-lang="zh" lang="zh-CN">{text(zh,"zh")}</span><span data-lang="en" lang="en">{text(en,"en")}</span></{tag}>'
 def b(o,tag='div',cls=''): return bi(o['zh'],o['en'],tag,cls)
-def math(s): return '<div class="math-display">'+convert(s)+'</div>'
+def math(s): return '<div class="math-display">'+render_math(s,display=True)+'</div>'
 def items(zh,en):
     assert len(zh)==len(en)
     return '<ol class="steps">'+''.join(bi(a,c,'li') for a,c in zip(zh,en))+'</ol>'

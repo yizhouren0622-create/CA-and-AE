@@ -30,3 +30,10 @@ Circuit solutions are independently verified through equations, topology or powe
 课程指定的65道主习题已全部完成（电路31道、模电34道）。尚未完成：其余492道教材主习题的题干和解析、部分章节的逐题范围映射，以及更综合的考试训练卷。后续先补范围内其他习题，再覆盖全书其余章节。
 
 All 65 assigned main exercises are complete (31 circuit, 34 analog). Remaining: statements and solutions for 492 other textbook exercises, individual scope mapping in partially taught chapters, and more integrated exam practice. Other in-scope exercises come next, followed by the rest of the books.
+
+
+## 2026-10-20 数学排版修复 / Mathematical typography
+
+正文、提示、逐步解析、结论、知识页及模拟卷统一预构建为离线 MathML；分式、上下标、指数、根号、微分与相量重音采用数学排版。11张SVG的69处标签同步修复。长公式在自身容器内滚动；中英对照、英文与390px手机布局已复查。新增12组语义与排版回归检查，构建检查拒绝裸露数学标记。本次不增加习题数，完整解析仍为166道。
+
+Inline prose and displayed equations now share offline MathML typography. Subscripts, fractions, exponents, roots, derivatives and phasor accents are typeset consistently; 69 labels in 11 SVGs were also updated. Long equations scroll within their containers. Twelve regression tests and generated-page checks guard mathematical grouping and raw notation. Exercise coverage remains 166 complete solutions.

@@ -4,7 +4,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 from collections import Counter
-import json
+import json, re
 
 ROOT = Path(__file__).resolve().parent
 errors = []
@@ -14,8 +14,13 @@ class Page(HTMLParser):
         super().__init__()
         self.ids, self.links, self.math, self.languages = [], [], 0, Counter()
         self.exercise, self.tables, self.exercise_table_rows = None, [], {}
+        self.math_depth=self.literal_depth=self.hidden_depth=0; self.current_tag=None; self.notation_leaks=[]
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
+        self.current_tag=tag
+        if tag=='math':self.math_depth+=1
+        if tag=='code':self.literal_depth+=1
+        if tag in ('script','style'):self.hidden_depth+=1
         if 'id' in a: self.ids.append(a['id'])
         if tag=='details' and a.get('id','').startswith(('CA-','AE-')): self.exercise=a['id']
         if tag=='mtable': self.tables.append([self.exercise,0])
@@ -25,7 +30,15 @@ class Page(HTMLParser):
         if tag == 'math': self.math += 1
         if tag == 'merror': errors.append('MathML error element')
         if a.get('data-lang'): self.languages[a['data-lang']] += 1
+    def handle_data(self,data):
+        if self.hidden_depth or self.literal_depth:return
+        if re.search(r'[_^₀-₉⁰¹²³⁴⁵⁶⁷⁸⁹]',data) and not self.math_depth:
+            self.notation_leaks.append(data[:120])
+        if self.math_depth and '/' in data:self.notation_leaks.append('unstacked division: '+data)
     def handle_endtag(self,tag):
+        if tag=='math':self.math_depth-=1
+        if tag=='code':self.literal_depth-=1
+        if tag in ('script','style'):self.hidden_depth-=1
         if tag=='mtable' and self.tables:
             exercise,rows=self.tables.pop()
             if exercise:self.exercise_table_rows.setdefault(exercise,[]).append(rows)
@@ -33,6 +46,7 @@ class Page(HTMLParser):
 pages = {}
 for path in ROOT.glob('*.html'):
     p = Page(); raw = path.read_text(); p.feed(raw); pages[path.name] = p
+    if p.notation_leaks:errors.append(f'{path.name}: raw mathematical notation: {p.notation_leaks[:5]}')
     if len(p.ids) != len(set(p.ids)): errors.append(f'{path.name}: duplicate ID')
     if not p.languages['zh'] or p.languages['zh'] != p.languages['en']:
         errors.append(f'{path.name}: unmatched bilingual blocks')
