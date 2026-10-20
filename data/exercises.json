@@ -22692,7 +22692,7 @@
             },
             "text": {
               "zh": "v_i>0：运放输出→D₃→A→M→B→D₁→v_n→R→地，D₁/D₃导通。v_i<0：地→R→v_n→D₄→A→M→B→D₂→输出，D₂/D₄导通。两种情况M均A→B。",
-              "en": "For v_i>0: output→D₃→A→M→B→D₁→v_n→R→ground; D₁/D₃ conduct. For v_i<0: ground→R→v_n→D₄→A→M→B→D₂→output; D₂/D₄ conduct. Meter current always flows A→B."
+              "en": "For v_i>0: output→D₃→A→M→B→D₁→v_n→R→ground; D₁ and D₃ conduct. For v_i<0: ground→R→v_n→D₄→A→M→B→D₂→output; D₂ and D₄ conduct. Meter current always flows A→B."
             },
             "formula": "i_M=\\frac{|v_i|}{R}"
           },
@@ -22721,7 +22721,7 @@
         ],
         "answer": {
           "zh": "正半周D₁、D₃导通，表头电流A→B；I平均=2√2V_i/(πR)。交流1 V量程R≈9.003 kΩ，直流1 V量程R=10 kΩ。",
-          "en": "Positive input turns on D₁/D₃, with meter current A→B. Average current is 2√2V_i/(πR). Use R≈9.003 kΩ for 1 V RMS AC and 10 kΩ for 1 V DC."
+          "en": "Positive input turns on D₁ and D₃, with meter current A→B. Average current is 2√2V_i/(πR). Use R≈9.003 kΩ for 1 V RMS AC and 10 kΩ for 1 V DC."
         },
         "pitfalls": [
           {
@@ -22935,7 +22935,7 @@
         },
         "statement": {
           "zh": "电路如图题3.4.6所示，二极管导通压降0.7 V。（1）证明v_o=|v_s|，即绝对值运算电路，分v_s>0和v_s≤0推导v_o1、v_o。（2）v_s为振幅2 V正弦波时，绘v_o1、v_o并标幅值。（3）比较本题与图题3.4.3桥式整流的优缺点。（4）A₁、A₂用μA741，电源±12 V，D₁、D₂用1N4148，R=10 kΩ，v_s=sin(2π×1000t) V，用SPICE绘输入、输出波形及v_o=f(v_s)传输特性。",
-          "en": "For Fig. 3.4.6 with 0.7 V diode drops: (1) prove v_o=|v_s| by deriving v_o1/v_o for v_s>0 and v_s≤0; (2) draw both outputs for a 2 V-amplitude sine; (3) compare advantages/disadvantages with the bridge of Fig. 3.4.3; (4) use μA741 op amps, ±12 V supplies, 1N4148 diodes, R=10 kΩ and v_s=sin(2π×1000t) V in SPICE, plotting input/output and transfer characteristic."
+          "en": "For Fig. 3.4.6 with 0.7 V diode drops: (1) prove v_o=|v_s| by deriving v_o1 and v_o for v_s>0 and v_s≤0; (2) draw both outputs for a 2 V-amplitude sine; (3) compare advantages/disadvantages with the bridge of Fig. 3.4.3; (4) use μA741 op amps, ±12 V supplies, 1N4148 diodes, R=10 kΩ and v_s=sin(2π×1000t) V in SPICE, plotting input/output and transfer characteristic."
         },
         "fullStatementTranscribed": true,
         "diagram": {
@@ -23117,7 +23117,7 @@
         },
         "statement": {
           "zh": "电路如图题3.4.7，D₁、D₂为硅二极管。（1）v_s=6sinωt V，用恒压降模型分析并绘v_o波形；（2）二极管用1N4148，v_s=6sin(2π×100t) V，用SPICE绘v_o波形和v_o=f(v_s)传输特性。",
-          "en": "For Fig. 3.4.7 with silicon D₁/D₂: (1) use a constant-drop model for v_s=6sinωt V and draw v_o; (2) use 1N4148 and v_s=6sin(2π×100t) V in SPICE, plotting output and transfer."
+          "en": "For Fig. 3.4.7 with silicon D₁ and D₂: (1) use a constant-drop model for v_s=6sinωt V and draw v_o; (2) use 1N4148 and v_s=6sin(2π×100t) V in SPICE, plotting output and transfer."
         },
         "fullStatementTranscribed": true,
         "diagram": {

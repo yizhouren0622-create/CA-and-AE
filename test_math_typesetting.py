@@ -29,6 +29,15 @@ class MathTypography(unittest.TestCase):
   f=alltags(e,'mfrac')[0]
   self.assertEqual(value(f[0]),'14');self.assertEqual(value(f[1]),'23')
   self.assertTrue(value(e).endswith('A'))
+ def test_result_unit_after_parenthesized_denominator(self):
+  e=tree(raw_to_tex('V_A=18(R−1)/(R+4) V'))
+  f=alltags(e,'mfrac')[0]
+  self.assertEqual(value(f[1]),'(R+4)')
+  self.assertTrue(value(e).endswith('V'))
+ def test_differential_is_not_an_integrand_subscript(self):
+  e=tree(raw_to_tex('∫v_i2dτ'))
+  self.assertEqual(value(alltags(e,'msub')[0][1]),'i2')
+  self.assertTrue(value(e).endswith('dτ'))
  def test_sequential_division_is_left_associative(self):
   f=alltags(tree('a/b/c'),'mfrac')[0]
   self.assertEqual(value(f[1]),'c');self.assertEqual(len(alltags(f[0],'mfrac')),1)
@@ -54,6 +63,7 @@ class MathTypography(unittest.TestCase):
   self.assertIn('An ideal',text);self.assertIn('2.4.2a',text)
   self.assertIn('<code>UA741_40mA.lib</code>',text)
  def test_visible_legacy_formulas_and_units(self):
+  with self.assertRaises(ValueError):render_math('\x0crac{1}{2}')
   for raw in ['RC·dv_p/dt=v_i2−v_p','İ_L₁=(√2/2)∠−45° A','K′_nW/L=500 μA/V²','2V_TN','v_P−v_N','dB/decade','rad/s']:
    html=format_text(raw);self.assertIn('<math',html,raw)
    self.assertNotIn('_',html);self.assertNotIn('<mo>/</mo>',html)

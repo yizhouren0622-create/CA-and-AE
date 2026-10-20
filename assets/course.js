@@ -33,8 +33,8 @@
       }
     }
     diagnostic.querySelector('[data-score-summary]').replaceChildren(bilingual(
-      '已自评 '+count+'/10 题，已评得分 '+sum+'/'+(count*10)+'（全卷100分）。少于7分的题目用于提示回看知识点。',
-      count+'/10 questions self-scored; '+sum+'/'+(count*10)+' points on scored questions (100 for the full paper). Questions below 7 points flag topics to revisit.'
+      '已自评 '+count+' 题（共10题），已评得分 '+sum+' 分（已评题满分 '+(count*10)+' 分，全卷100分）。少于7分的题目用于提示回看知识点。',
+      count+' of 10 questions self-scored; '+sum+' points out of '+(count*10)+' on scored questions (100 for the full paper). Questions below 7 points flag topics to revisit.'
     ));
     const box=diagnostic.querySelector('[data-weak-topics]');box.replaceChildren();
     if(!count)box.append(bilingual('完成题目后按解析评分，薄弱知识点会显示在这里。','Self-score after working the questions; topics to revisit will appear here.'));
@@ -81,7 +81,7 @@
         &&(mode==='all'||mode==='homework'&&ex.dataset.homework==='true'||mode==='solved'&&solved||mode==='complete'&&complete||mode==='partial'&&solved&&!complete||mode==='pending'&&!complete||mode==='weak'&&state.exercises[ex.dataset.id]==='revisit');
       ex.hidden=!matching;if(matching)visible++;
     }
-    document.querySelector('#filter-count').replaceChildren(bilingual(visible+'道 / 共'+exercises.length+'道',visible+' shown / '+exercises.length+' total','span'));
+    document.querySelector('#filter-count').replaceChildren(bilingual(visible+'道 · 共'+exercises.length+'道',visible+' shown · '+exercises.length+' total','span'));
   }
   for(const el of progressInputs)el.addEventListener('change',()=>{state.exercises[el.dataset.progress]=el.value;save();filter();});
   for(const el of [chapter,status,search])if(el)el.addEventListener(el===search?'input':'change',filter);

@@ -72,6 +72,7 @@ def _divide_grouped(e):
 
 @lru_cache(maxsize=30000)
 def render_math(tex,display=False):
+    if re.search(r'[\x00-\x09\x0b-\x1f]',tex):raise ValueError('Control character in TeX; use a raw string or escape backslashes')
     tree=ET.fromstring(convert(tex))
     fractions(tree)
     tree.set('display','block' if display else 'inline')
@@ -187,8 +188,14 @@ def raw_to_tex(raw):
             result.append(scientific(number[0]));i+=len(number[0]);continue
         m=WORD.match(raw,i)
         if m:
-            value=identifier(m[0])
-            if value is None:raise ValueError('Non-math word: '+m[0])
+            word=m[0]
+            # A differential belongs to the integrand, not to its last index.
+            differential=re.fullmatch(r'([vui]_[A-Za-z]*\d+)d',word) and raw[m.end():m.end()+1] in ('τ','t')
+            value=identifier(word[:-1]) + r'\,\mathrm{d}' if differential else identifier(word)
+            if value is None:raise ValueError('Non-math word: '+word)
+            # Space-separated result units remain outside a preceding fraction.
+            # Quantities such as 20ms remain atomic denominator operands above.
+            if i and raw[i-1].isspace() and re.fullmatch(UNITS,word):result.append(r'\,')
             result.append(value);i=m.end();continue
         if ch in GREEK:result.append('\\'+GREEK[ch]+' ');i+=1;continue
         if ch in SUP:

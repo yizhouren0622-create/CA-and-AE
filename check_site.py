@@ -34,7 +34,7 @@ class Page(HTMLParser):
         if self.hidden_depth or self.literal_depth:return
         if re.search(r'[_^₀-₉⁰¹²³⁴⁵⁶⁷⁸⁹]',data) and not self.math_depth:
             self.notation_leaks.append(data[:120])
-        if self.math_depth and '/' in data:self.notation_leaks.append('unstacked division: '+data)
+        if self.math_depth and re.search(r'[_^/\\]',data):self.notation_leaks.append('unstacked division: '+data)
     def handle_endtag(self,tag):
         if tag=='math':self.math_depth-=1
         if tag=='code':self.literal_depth-=1
@@ -63,6 +63,8 @@ for name, p in pages.items():
 
 def load(name): return json.loads((ROOT / 'data' / name).read_text())
 def bilingual(value, where):
+    if isinstance(value,dict) and any(re.search(r'[\x00-\x09\x0b-\x1f]',v) for v in value.values() if isinstance(v,str)):
+        errors.append(f'{where}: invalid control character; check escaped TeX')
     if not isinstance(value, dict) or not all(isinstance(value.get(k), str) and value[k].strip() for k in ('zh', 'en')):
         errors.append(f'{where}: missing Chinese or English')
 
