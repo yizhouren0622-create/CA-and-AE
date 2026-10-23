@@ -813,8 +813,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-17",
@@ -823,8 +827,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-18",
@@ -833,8 +841,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-19",
@@ -843,8 +855,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-20",
@@ -875,8 +891,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-23",
@@ -885,8 +905,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-24",
@@ -895,8 +919,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（节点与网孔分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: nodal and mesh analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT电路2.1～2.5；所提供第3版目录2.4、2.5"
+        }
       },
       {
         "id": "CA-2-25",
@@ -905,8 +933,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6回路电流法）",
+        "scopeLabelEn": "Circuit extension: section 2.6 loop-current method",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-2-26",
@@ -915,8 +947,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6～2.8）；运放题可联系模电第2章复习",
+        "scopeLabelEn": "Circuit extension beyond 2.5; op-amp topics overlap Analog chapter 2",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-2-27",
@@ -925,8 +961,12 @@
         "printedPage": 63,
         "pdfPage": 72,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6～2.8）；运放题可联系模电第2章复习",
+        "scopeLabelEn": "Circuit extension beyond 2.5; op-amp topics overlap Analog chapter 2",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-2-28",
@@ -935,8 +975,12 @@
         "printedPage": 64,
         "pdfPage": 73,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6～2.8）；运放题可联系模电第2章复习",
+        "scopeLabelEn": "Circuit extension beyond 2.5; op-amp topics overlap Analog chapter 2",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-2-29",
@@ -945,8 +989,12 @@
         "printedPage": 64,
         "pdfPage": 73,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6～2.8）；运放题可联系模电第2章复习",
+        "scopeLabelEn": "Circuit extension beyond 2.5; op-amp topics overlap Analog chapter 2",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-2-30",
@@ -955,8 +1003,12 @@
         "printedPage": 64,
         "pdfPage": 73,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（2.6～2.8）；运放题可联系模电第2章复习",
+        "scopeLabelEn": "Circuit extension beyond 2.5; op-amp topics overlap Analog chapter 2",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "课程范围PPT电路仅2.1～2.5；所提供第3版目录2.6～2.8；模电第2章全部"
+        }
       },
       {
         "id": "CA-3-1",
@@ -13858,6 +13910,1576 @@
           }
         },
         "figure": "ca-2-15-figure.png"
+      },
+      "CA-2-16": {
+        "id": "CA-2-16",
+        "bookId": "2-16",
+        "title": {
+          "zh": "平衡电桥：先找两节点等电位",
+          "en": "Balanced bridge: identify equal node potentials"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-14"
+        },
+        "statement": {
+          "zh": "在题图2-14所示电路中，已知$R_o^2=R_aR_b$，试用节点电压法证明：$\\frac{u_{34}}{u_{14}}=\\frac{R_o}{R_o+R_a}=\\frac{R_b}{R_o+R_b}$。",
+          "en": "For Fig. 2-14, given $R_o^2=R_aR_b$, prove by nodal analysis that $\\frac{u_{34}}{u_{14}}=\\frac{R_o}{R_o+R_a}=\\frac{R_b}{R_o+R_b}$."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "节点1到2及2到3均为Rₒ，2到4为R_b，1到3为R_a，3到4为Rₒ；左支路为电压源u_s串联Rₒ。",
+            "en": "Rₒ links 1 to 2 and 2 to 3; R_b links 2 to 4, R_a links 1 to 3, and Rₒ links 3 to 4. The left source u_s is in series with Rₒ."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "以4为地，把u₁₄作为已知端口电压，不要把它误当成串联电源u_s。平衡条件使节点2与3等电位。",
+          "en": "Ground node 4 and regard u₁₄ as the port voltage, which differs from the series source u_s. The balance condition makes nodes 2 and 3 equipotential."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写两条节点方程",
+              "en": "Write two nodal equations"
+            },
+            "text": {
+              "zh": "令U=u₁₄，正电阻取有限值。只对节点2、3写KCL即可。",
+              "en": "Let U=u₁₄ and assume finite positive resistances. Apply KCL at nodes 2 and 3."
+            },
+            "formula": "\\frac{V_2-U}{R_o}+\\frac{V_2-V_3}{R_o}+\\frac{V_2}{R_b}=0,\\qquad\\frac{V_3-U}{R_a}+\\frac{V_3-V_2}{R_o}+\\frac{V_3}{R_o}=0"
+          },
+          {
+            "title": {
+              "zh": "用平衡条件构造解",
+              "en": "Construct the balanced solution"
+            },
+            "text": {
+              "zh": "由$R_o^2=R_aR_b$可交叉相乘证明下列两个分压系数相等。令两个节点都等于kU，代回两式分别为零。",
+              "en": "Cross multiplication proves the two divider ratios equal. Substituting V₂=V₃=kU satisfies both equations."
+            },
+            "formula": "k=\\frac{R_o}{R_o+R_a}=\\frac{R_b}{R_o+R_b},\\qquad V_2=V_3=kU"
+          },
+          {
+            "title": {
+              "zh": "说明唯一性和比值边界",
+              "en": "Uniqueness and the zero-input boundary"
+            },
+            "text": {
+              "zh": "正电阻网络的接地节点矩阵正定，因此构造出的解唯一。U非零时可相除；U为零时应写电压传输关系，避免零除。",
+              "en": "The grounded positive-resistance nodal matrix is positive definite, so this solution is unique. Divide only when U is nonzero; otherwise use the linear relation."
+            },
+            "formula": "u_{34}=ku_{14},\\qquad u_{14}\\ne0\\ \\Rightarrow\\ \\frac{u_{34}}{u_{14}}=k"
+          }
+        ],
+        "answer": {
+          "zh": "$u_{34}=\\frac{R_o}{R_o+R_a}u_{14}=\\frac{R_b}{R_o+R_b}u_{14}$。",
+          "en": "$u_{34}=\\frac{R_o}{R_o+R_a}u_{14}=\\frac{R_b}{R_o+R_b}u_{14}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "中间Rₒ中电流为零是平衡后的结果，不能在证明前直接删掉。",
+            "en": "Zero current in the bridge resistor is a consequence of balance; establish it before removing the branch."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "两节点符号代回均恒为零；另用三组不同正有理电阻及正负激励精确求解原节点系统，均复得相等节点电位。附录未列2-16。",
+            "en": "Both symbolic nodal residuals vanish. Three independent rational bridge designs with positive and negative excitations reproduce the balanced potentials by exact elimination. Appendix 2-16 is not listed."
+          },
+          "results": {
+            "balancedBridgeSamples": [
+              [
+                "2",
+                "4",
+                "1",
+                "7",
+                "7/3",
+                "7/3"
+              ],
+              [
+                "3",
+                "2",
+                "9/2",
+                "-5",
+                "-3",
+                "-3"
+              ],
+              [
+                "5/2",
+                "7/3",
+                "75/28",
+                "11",
+                "165/29",
+                "165/29"
+              ]
+            ],
+            "symbolicProof": "V2=V3=kU; k=r/(r+a)=b/(r+b), since r*r=a*b. Both KCL rows vanish; positive-resistance nodal matrix is nonsingular."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列本题；以原图方程独立核验。",
+              "en": "No listed appendix answer; checked from the original circuit."
+            }
+          }
+        },
+        "figure": "ca-2-16-figure.png"
+      },
+      "CA-2-17": {
+        "id": "CA-2-17",
+        "bookId": "2-17",
+        "title": {
+          "zh": "先认源的类型，再算吸收功率",
+          "en": "Identify the controlled source type before its power"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-15"
+        },
+        "statement": {
+          "zh": "电路如题图2-15所示，试列出电路的节点电压方程求受控源的功率。",
+          "en": "For Fig. 2-15, write the nodal-voltage equations and find the dependent-source power."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左4 V源上正；节点1经1 S接2、经上方1 S接3。节点2到3上路2 S，下路2 S串联向左2 A源。节点2到地的菱形源标正负，是电压I₁的受控电压源，I₁=(V₁−V₂)·1 S。节点3经1 S接上负下正2 V源。",
+            "en": "Node 1 is fixed by a top-positive 4 V source. Conductances: 1 S between 1–2 and 1–3, 2 S between 2–3, and a second 2 S in series with a leftward 2 A source. The central diamond has voltage polarity marks and voltage I₁ under the implied 1 Ω transresistance. The right lower source fixes its upper terminal at −2 V."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "菱形里的正负号表示电压源，不能把标注I₁当成电流源；其跨阻系数隐含为1 Ω。2 A源箭头向左。",
+          "en": "The polarity marks identify a voltage source. Its label I₁ implies a 1 Ω transresistance, not an imposed current. The 2 A source points left."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用受控约束确定节点2",
+              "en": "Determine node 2 from the control"
+            },
+            "text": {
+              "zh": "按SI数值列式，V₁=4，V₂=I₁=4−V₂；右下已知端电位为−2。",
+              "en": "Use SI numerical values: V₁=4, V₂=I₁=4−V₂, and the lower-right terminal is −2."
+            },
+            "formula": "V_1=4,\\qquad I_1=V_1-V_2,\\qquad V_2=I_1\\quad\\Rightarrow\\quad V_2=2,\\ I_1=2"
+          },
+          {
+            "title": {
+              "zh": "节点3及受控源支路KCL",
+              "en": "KCL at node 3 and the controlled branch"
+            },
+            "text": {
+              "zh": "2 A从节点3流向节点2，节点3流出总和取正2。用J表示受控源从正端向下的电流。",
+              "en": "The 2 A leaves node 3 toward node 2. Let J enter the positive terminal of the controlled source."
+            },
+            "formula": "(V_3-4)+2(V_3-V_2)+2+(V_3+2)=0,\\qquad(V_2-4)+2(V_2-V_3)-2+J=0"
+          },
+          {
+            "title": {
+              "zh": "功率按关联参考方向",
+              "en": "Use the passive sign convention"
+            },
+            "text": {
+              "zh": "解得V₃=1 V、J=2 A；电流流入正端，所以是吸收功率。",
+              "en": "Solving gives V₃=1 V and J=2 A. Current enters the positive terminal, so power is absorbed."
+            },
+            "formula": "P=V_2J=(2\\,\\mathrm V)(2\\,\\mathrm A)=4\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "受控源吸收$4\\,\\mathrm W$。",
+          "en": "The dependent source absorbs $4\\,\\mathrm W$."
+        },
+        "pitfalls": [
+          {
+            "zh": "S是电导单位，2 S对应电阻1/2 Ω；源的控制量与该源自身支路电流不是同一个未知量。",
+            "en": "S denotes conductance; 2 S corresponds to 1/2 Ω. A controlling current is not automatically the source branch current."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "完整MNA保留串联2 A源与2 S间的节点，得V₁=4、V₂=2、V₃=1、串联中间节点3 V，受控源向下2 A；所有元件总功率精确为零，与附录4 W一致。",
+            "en": "Full MNA retains the node between the 2 A source and 2 S conductance: potentials are 4, 2, 1 and 3 V. The controlled source carries 2 A downward, with zero total power residual. The result matches the listed 4 W."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "1": "4",
+              "2": "2",
+              "3": "1",
+              "X": "3",
+              "D": "-2"
+            },
+            "voltageSourceCurrents": {
+              "V4": "-5",
+              "Vminus2": "3",
+              "CCVS": "2"
+            },
+            "absorbedPowers": {
+              "G12": "4",
+              "G13": "9",
+              "G23": "2",
+              "G2X": "2",
+              "G3D": "9",
+              "I2": "-4",
+              "V4": "-20",
+              "Vminus2": "-6",
+              "CCVS": "4"
+            },
+            "powerResidual": "0",
+            "matrixSize": 8
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "完整MNA保留串联2 A源与2 S间的节点，得V₁=4、V₂=2、V₃=1、串联中间节点3 V，受控源向下2 A；所有元件总功率精确为零，与附录4 W一致。",
+              "en": "Full MNA retains the node between the 2 A source and 2 S conductance: potentials are 4, 2, 1 and 3 V. The controlled source carries 2 A downward, with zero total power residual. The result matches the listed 4 W."
+            }
+          }
+        },
+        "figure": "ca-2-17-figure.png"
+      },
+      "CA-2-18": {
+        "id": "CA-2-18",
+        "bookId": "2-18",
+        "title": {
+          "zh": "公共电阻写网孔电流之差",
+          "en": "Shared resistors carry differences of mesh currents"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-16"
+        },
+        "statement": {
+          "zh": "列出题图2-16所示电路的网孔电流方程。",
+          "en": "Write the mesh-current equations for Fig. 2-16."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "上网孔i_m1、左下i_m2、右下i_m3均顺时针；上路R₁与左正右负u_s1，中央左正右负u_s2和R₂，左竖R₃、中央竖R₄、右竖上正下负u_s3。",
+            "en": "All three mesh currents are clockwise: upper m1, lower-left m2 and lower-right m3. The upper branch has R₁ and a left-positive u_s1; the middle has left-positive u_s2 and R₂. Vertical branches are R₃, R₄ and top-positive u_s3."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "同向网孔在公共电阻中反向，电阻压降用本孔电流减邻孔电流。电源项按沿网孔的电压升单独判断。",
+          "en": "Clockwise meshes oppose in shared branches. Use own current minus the adjacent current; determine source signs from actual voltage rises."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "上方网孔",
+              "en": "Upper mesh"
+            },
+            "text": {
+              "zh": "沿上路从左到右穿过u_s1为压降，中央从右到左穿过u_s2为电压升。",
+              "en": "The upper traversal crosses u_s1 as a drop and u_s2 as a rise."
+            },
+            "formula": "(R_1+R_2)i_{m1}-R_2i_{m3}=u_{s2}-u_{s1}"
+          },
+          {
+            "title": {
+              "zh": "左下网孔",
+              "en": "Lower-left mesh"
+            },
+            "text": {
+              "zh": "沿中央电源从左到右为压降；R₄与右下网孔共用。",
+              "en": "The middle source is a drop in this traversal, and R₄ is shared with the lower-right mesh."
+            },
+            "formula": "(R_3+R_4)i_{m2}-R_4i_{m3}=-u_{s2}"
+          },
+          {
+            "title": {
+              "zh": "右下网孔",
+              "en": "Lower-right mesh"
+            },
+            "text": {
+              "zh": "R₂、R₄分别与上孔、左下孔共用；右侧源从上到下为压降。",
+              "en": "R₂ and R₄ are shared with the upper and lower-left meshes; the right source is a downward voltage drop."
+            },
+            "formula": "-R_2i_{m1}-R_4i_{m2}+(R_2+R_4)i_{m3}=-u_{s3}"
+          }
+        ],
+        "answer": {
+          "zh": "以上三式即所求网孔电流方程。",
+          "en": "The three equations above are the requested mesh system."
+        },
+        "pitfalls": [
+          {
+            "zh": "没有共用电阻的两网孔互阻为零；不要凭“顺时针”统一给所有电源同一符号。",
+            "en": "Meshes without a shared resistor have zero mutual resistance. Clockwise orientation does not give all sources the same sign."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三组不同电阻和正负电源的网孔解，分别与保留全部源端点的完整MNA所得每条电阻支路电流相符；各例全电路功率余量为零。附录未列2-18。",
+            "en": "Three resistor/source sets, including reversed source values, give mesh currents matching every resistor current in independently stamped MNA; each power residual is zero. No appendix answer is listed."
+          },
+          "results": {
+            "independentMeshVsMna": [
+              {
+                "mesh": [
+                  "-137/77",
+                  "-201/77",
+                  "-254/77"
+                ],
+                "powerResidual": "0"
+              },
+              {
+                "mesh": [
+                  "477/83",
+                  "7/83",
+                  "391/83"
+                ],
+                "powerResidual": "0"
+              },
+              {
+                "mesh": [
+                  "-187/139",
+                  "30/139",
+                  "-168/139"
+                ],
+                "powerResidual": "0"
+              }
+            ]
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列本题；以原图方程独立核验。",
+              "en": "No listed appendix answer; checked from the original circuit."
+            }
+          }
+        },
+        "figure": "ca-2-18-figure.png"
+      },
+      "CA-2-19": {
+        "id": "CA-2-19",
+        "bookId": "2-19",
+        "title": {
+          "zh": "含边界电流源的网孔先直接定值",
+          "en": "Set the boundary-current-source mesh first"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-17"
+        },
+        "statement": {
+          "zh": "试用网孔分析法求题图2-17所示电路中的电压$u$。",
+          "en": "Use mesh analysis to find $u$ in Fig. 2-17."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左上2 A向上经顶部2 Ω到上节点；中线两个3 Ω串联，右侧3 Ω跨上下节点。左中到中点5 Ω；左下4 V源上负下正，再经1 Ω接下节点。",
+            "en": "A 2 A source drives upward through the upper 2 Ω. Two central 3 Ω resistors are in series; a right 3 Ω spans the upper and lower nodes. A 5 Ω links the left middle node to the center. The 4 V source is bottom-positive and in series with the bottom 1 Ω."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "按左上、左下、右侧三个网孔顺时针命名。电流源只属于左上孔，可直接令该孔2 A，不需要为它编造电压。",
+          "en": "Use clockwise upper-left, lower-left and right meshes. The source belongs only to the upper-left mesh, fixing it at 2 A."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "固定已知网孔",
+              "en": "Fix the known mesh"
+            },
+            "text": {
+              "zh": "以M₁、M₂、M₃表示三孔电流；其数值以下以安培计。",
+              "en": "Denote the three currents by M₁, M₂, M₃, numerically in amperes."
+            },
+            "formula": "M_1=2"
+          },
+          {
+            "title": {
+              "zh": "另两孔KVL",
+              "en": "KVL for the remaining meshes"
+            },
+            "text": {
+              "zh": "左下孔总电阻5+3+1，4 V沿上行是压降；右孔含三个3 Ω。",
+              "en": "The lower-left self-resistance is 5+3+1, with a 4 V drop traversed upward. The right mesh contains three 3 Ω resistors."
+            },
+            "formula": "9M_2-5M_1-3M_3=-4,\\qquad9M_3-3M_1-3M_2=0"
+          },
+          {
+            "title": {
+              "zh": "由独占支路得到电压",
+              "en": "Use the exclusive right branch"
+            },
+            "text": {
+              "zh": "代M₁=2后解得M₂=M₃=1 A；右侧3 Ω电流就是M₃。",
+              "en": "Substitution yields M₂=M₃=1 A. The rightmost resistor carries M₃ alone."
+            },
+            "formula": "M_2=M_3=1\\,\\mathrm A,\\qquad u=(3\\,\\Omega)M_3=3\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u=3\\,\\mathrm V$，上正下负。",
+          "en": "$u=3\\,\\mathrm V$, top-positive."
+        },
+        "pitfalls": [
+          {
+            "zh": "左下4 V源与常见上正下负接法相反；顶部2 Ω不出现在另外两孔的KVL中。",
+            "en": "The lower-left source polarity is reversed. The upper 2 Ω is absent from the other two mesh equations."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立完整MNA得上节点3 V；两未知网孔均1 A，与原图全电路零功率余量及附录3 V相符。",
+            "en": "Independent original-topology MNA gives the upper node 3 V and both unknown meshes 1 A, with zero power residual; Appendix 2-19 agrees."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "L": "-5",
+              "T": "7",
+              "A": "3",
+              "B": "0",
+              "C": "-1"
+            },
+            "voltageSourceCurrents": {
+              "V4": "1"
+            },
+            "absorbedPowers": {
+              "Rtop": "8",
+              "R5": "5",
+              "Rupper": "3",
+              "Rlower": "0",
+              "Rright": "3",
+              "Rbottom": "1",
+              "I2": "-24",
+              "V4": "4"
+            },
+            "powerResidual": "0",
+            "matrixSize": 6
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立完整MNA得上节点3 V；两未知网孔均1 A，与原图全电路零功率余量及附录3 V相符。",
+              "en": "Independent original-topology MNA gives the upper node 3 V and both unknown meshes 1 A, with zero power residual; Appendix 2-19 agrees."
+            }
+          }
+        },
+        "figure": "ca-2-19-figure.png"
+      },
+      "CA-2-22": {
+        "id": "CA-2-22",
+        "bookId": "2-22",
+        "title": {
+          "zh": "超网孔加受控电流约束",
+          "en": "A supermesh needs the controlled-current constraint"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-20"
+        },
+        "statement": {
+          "zh": "试列出题图2-20所示电路的网孔电流方程，并计算受控源吸收的功率。",
+          "en": "Write mesh equations for Fig. 2-20 and calculate the dependent source’s absorbed power."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "上方2 A源向右；左4 V源上正。中央横线左2 Ω右1 Ω，i向右流过1 Ω；中央向下受控电流源2i；右3 Ω接地。三网孔均顺时针。",
+            "en": "The upper source is 2 A rightward; the left 4 V source is top-positive. Middle resistors are 2 Ω and 1 Ω, with i rightward through 1 Ω. A central dependent source carries 2i downward; the right resistor is 3 Ω. All meshes are clockwise."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "i不是右下网孔电流本身，而是右下减上孔。受控源跨两孔，用一个电流约束和一个绕外边的超网孔KVL。",
+          "en": "The control current is lower-right minus upper mesh current. The shared controlled source requires a current constraint plus outer supermesh KVL."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "源约束",
+              "en": "Source constraints"
+            },
+            "text": {
+              "zh": "按图i_m1、i_m2、i_m3记三孔；以下电流取安培数值。",
+              "en": "Use the three labeled mesh currents; currents below are numerical amperes."
+            },
+            "formula": "i_{m1}=2,\\quad i=i_{m3}-i_{m1},\\quad i_{m2}-i_{m3}=2(i_{m3}-i_{m1})"
+          },
+          {
+            "title": {
+              "zh": "绕过中间电流源",
+              "en": "Bypass the current source"
+            },
+            "text": {
+              "zh": "超网孔经过2 Ω、1 Ω、3 Ω和左4 V源，不经过受控源。",
+              "en": "The outer lower supermesh includes 2 Ω, 1 Ω, 3 Ω and the 4 V source."
+            },
+            "formula": "2(i_{m2}-i_{m1})+(i_{m3}-i_{m1})+3i_{m3}=4\\quad\\Rightarrow\\quad i_{m2}=\\frac75,\\ i_{m3}=\\frac95"
+          },
+          {
+            "title": {
+              "zh": "回原支路求功率",
+              "en": "Return to the original branch for power"
+            },
+            "text": {
+              "zh": "i=−1/5 A，受控源电流2i=−2/5 A；中央节点电位为4−2(i_m2−i_m1)=26/5 V。",
+              "en": "The control is −1/5 A and source current −2/5 A. The source top potential is 4−2(i_m2−i_m1)=26/5 V."
+            },
+            "formula": "P=\\frac{26}{5}\\left(-\\frac25\\right)\\mathrm W=-\\frac{52}{25}\\,\\mathrm W=-2.08\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "受控源吸收功率$-2.08\\,\\mathrm W$，即提供$2.08\\,\\mathrm W$。",
+          "en": "Absorbed power is $-2.08\\,\\mathrm W$, so the source supplies $2.08\\,\\mathrm W$."
+        },
+        "pitfalls": [
+          {
+            "zh": "负吸收功率是供能，不应去掉负号；源电压必须回到原电路计算。",
+            "en": "Negative absorbed power denotes delivery; retain the sign and determine voltage in the original circuit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原拓扑MNA得到中央26/5 V、右端27/5 V，受控源功率−52/25 W，且所有元件功率严格平衡，与附录一致。",
+            "en": "Independent MNA gives center 26/5 V, right 27/5 V and controlled-source power −52/25 W. Total power balances exactly and the appendix agrees."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "L": "4",
+              "C": "26/5",
+              "B": "27/5"
+            },
+            "voltageSourceCurrents": {
+              "V4": "-7/5"
+            },
+            "absorbedPowers": {
+              "R2": "18/25",
+              "R1": "1/25",
+              "R3": "243/25",
+              "I2": "-14/5",
+              "V4": "-28/5",
+              "CCCS": "-52/25"
+            },
+            "powerResidual": "0",
+            "matrixSize": 4
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立原拓扑MNA得到中央26/5 V、右端27/5 V，受控源功率−52/25 W，且所有元件功率严格平衡，与附录一致。",
+              "en": "Independent MNA gives center 26/5 V, right 27/5 V and controlled-source power −52/25 W. Total power balances exactly and the appendix agrees."
+            }
+          }
+        },
+        "figure": "ca-2-22-figure.png"
+      },
+      "CA-2-23": {
+        "id": "CA-2-23",
+        "bookId": "2-23",
+        "title": {
+          "zh": "两个电流源分开写约束",
+          "en": "Give each current source its own constraint"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-21"
+        },
+        "statement": {
+          "zh": "用网孔分析法求题图2-21所示电路中的电流$i$。",
+          "en": "Use mesh analysis to find $i$ in Fig. 2-21."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左12 V源上正，左节点A到中节点B有1 Ω与向右2u受控电流源并联；B到右节点C有1 Ω与向右6 A源并联。B到地3 Ω电压u上正，C到地2 Ω，i向下。",
+            "en": "A is fixed at 12 V. A–B has 1 Ω parallel with a rightward 2u source; B–C has 1 Ω parallel with a rightward 6 A source. B has 3 Ω to ground with u top-positive; C has 2 Ω with i downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "取四个顺时针孔：AB上小孔M₁、BC上小孔M₂、左下M₃、右下M₄。所求i=M₄，控制电压u=3(M₃−M₄)。",
+          "en": "Choose four clockwise meshes: AB upper M₁, BC upper M₂, lower-left M₃ and lower-right M₄. Then i=M₄ and u=3(M₃−M₄)."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "把源写成约束",
+              "en": "Write the source constraints"
+            },
+            "text": {
+              "zh": "2u是受控电流，隐含跨导2 S；6 A在M₄与M₂的共用支路。以下取SI数值。",
+              "en": "The control has an implied 2 S transconductance. The 6 A source is shared by M₄ and M₂. Use SI numerical values."
+            },
+            "formula": "M_1=2u=6(M_3-M_4),\\qquad M_4-M_2=6"
+          },
+          {
+            "title": {
+              "zh": "左孔与右超网孔",
+              "en": "Left mesh and right supermesh"
+            },
+            "text": {
+              "zh": "左下孔经过12 V源、AB的1 Ω和3 Ω；右超网孔绕过6 A，经过BC上方1 Ω、2 Ω和3 Ω。",
+              "en": "The lower-left mesh uses the 12 V source, AB resistor and 3 Ω. The right supermesh bypasses 6 A via the upper BC resistor, 2 Ω and 3 Ω."
+            },
+            "formula": "4M_3-M_1-3M_4=12,\\qquad M_2-3M_3+5M_4=0"
+          },
+          {
+            "title": {
+              "zh": "消元并解释负方向",
+              "en": "Eliminate and interpret the negative result"
+            },
+            "text": {
+              "zh": "化简为−2M₃+3M₄=12、−3M₃+6M₄=6，解得M₃=−18、M₄=−8。",
+              "en": "Reduction gives −2M₃+3M₄=12 and −3M₃+6M₄=6, hence M₃=−18 and M₄=−8."
+            },
+            "formula": "i=M_4=-8\\,\\mathrm A,\\qquad u=3(M_3-M_4)=-30\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$i=-8\\,\\mathrm A$，实际向上$8\\,\\mathrm A$。",
+          "en": "$i=-8\\,\\mathrm A$, physically $8\\,\\mathrm A$ upward."
+        },
+        "pitfalls": [
+          {
+            "zh": "2u受控源不可在列式时关掉，u也不是右侧2 Ω上的电压。",
+            "en": "Keep the dependent source active; u is the 3 Ω voltage, not the right resistor voltage."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原节点盖章独立得到B=−30 V、C=−16 V，C经2 Ω电流−8 A，全功率余量为零，与附录相符。",
+            "en": "Independent original-node stamping gives B=−30 V, C=−16 V, hence −8 A through 2 Ω; power balances and the appendix agrees."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "A": "12",
+              "B": "-30",
+              "C": "-16"
+            },
+            "voltageSourceCurrents": {
+              "V12": "18"
+            },
+            "absorbedPowers": {
+              "RAB": "1764",
+              "RBC": "196",
+              "RB": "300",
+              "RC": "128",
+              "I6": "-84",
+              "V12": "216",
+              "VCCS": "-2520"
+            },
+            "powerResidual": "0",
+            "matrixSize": 4
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "原节点盖章独立得到B=−30 V、C=−16 V，C经2 Ω电流−8 A，全功率余量为零，与附录相符。",
+              "en": "Independent original-node stamping gives B=−30 V, C=−16 V, hence −8 A through 2 Ω; power balances and the appendix agrees."
+            }
+          }
+        },
+        "figure": "ca-2-23-figure.png"
+      },
+      "CA-2-24": {
+        "id": "CA-2-24",
+        "bookId": "2-24",
+        "title": {
+          "zh": "同时保留受控电压与电流关系",
+          "en": "Retain both controlled voltage and current relations"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-22"
+        },
+        "statement": {
+          "zh": "电路如题图2-22所示，试列出其网孔电流方程。",
+          "en": "Write the mesh-current equations for Fig. 2-22."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左3 V源上正。上支路2 Ω串联左负右正受控电压u；中支路左2 Ω电压u左正右负、右1 Ω；中央受控电流源2u向下。右支路1 Ω串上正下负6 V源。",
+            "en": "The left source is top-positive 3 V. Upper branch: 2 Ω plus a right-positive controlled voltage u. Middle: left 2 Ω with u left-positive, then 1 Ω. The central current source 2u points down. The right branch has 1 Ω and a top-positive 6 V source."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "另定义上孔M₁、左下M₂、右下M₃均顺时针。u同时控制两个源，先用同一条2 Ω支路表示它。",
+          "en": "Define clockwise upper M₁, lower-left M₂ and lower-right M₃. Express u once from the middle 2 Ω because it controls both sources."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "控制量与源约束",
+              "en": "Controls and source constraint"
+            },
+            "text": {
+              "zh": "以下用SI数值。中间受控源电流为M₂−M₃，u为2(M₂−M₁)。",
+              "en": "Use SI numerical values. The central source current is M₂−M₃ and u is 2(M₂−M₁)."
+            },
+            "formula": "u=2(M_2-M_1),\\qquad M_2-M_3=2u"
+          },
+          {
+            "title": {
+              "zh": "上网孔KVL",
+              "en": "Upper-mesh KVL"
+            },
+            "text": {
+              "zh": "沿上支路受控电压源由负到正是电压升，应以−u计入压降和。",
+              "en": "The upper source is traversed negative-to-positive, so its voltage drop is −u."
+            },
+            "formula": "2M_1-u+(M_1-M_3)+2(M_1-M_2)=0"
+          },
+          {
+            "title": {
+              "zh": "下方超网孔与整理",
+              "en": "Lower supermesh and reduced system"
+            },
+            "text": {
+              "zh": "超网孔绕过中央电流源；左3 V为升、右6 V为降，净电压升−3 V。",
+              "en": "Bypass the central current source. The 3 V source is a rise and 6 V a drop, giving net rise −3 V."
+            },
+            "formula": "2(M_2-M_1)+(M_3-M_1)+M_3=-3\\quad\\Rightarrow\\quad\\begin{cases}7M_1-4M_2-M_3=0\\\\4M_1-3M_2-M_3=0\\\\-3M_1+2M_2+2M_3=-3\\end{cases}"
+          }
+        ],
+        "answer": {
+          "zh": "所求为上述三元网孔方程；以安培计，自检解M₁=3/7、M₂=9/7、M₃=−15/7。",
+          "en": "The three-equation system is the requested result; a check gives M₁=3/7, M₂=9/7 and M₃=−15/7 amperes."
+        },
+        "pitfalls": [
+          {
+            "zh": "源2u的系数是跨导，源u的系数是无量纲；二者类型不同，不能互换。",
+            "en": "The 2u source has a transconductance; the u source has a dimensionless voltage gain. Their types differ."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立完整MNA给中央9/7 V、右27/7 V，与网孔解逐支路一致；受控源和独立源一起计入后总功率为零。附录未列此题。",
+            "en": "Independent full MNA gives center 9/7 V and right 27/7 V, matching all mesh branch currents. Including all sources gives zero total power. No appendix answer is listed."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "A": "3",
+              "B": "9/7",
+              "C": "27/7",
+              "T": "15/7",
+              "D": "6"
+            },
+            "voltageSourceCurrents": {
+              "V3": "-9/7",
+              "V6": "-15/7",
+              "VCVS": "-3/7"
+            },
+            "absorbedPowers": {
+              "Rtop": "18/49",
+              "RAB": "72/49",
+              "RBC": "324/49",
+              "Rright": "225/49",
+              "V3": "-27/7",
+              "V6": "-90/7",
+              "VCVS": "-36/49",
+              "VCCS": "216/49"
+            },
+            "powerResidual": "0",
+            "matrixSize": 8
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列本题；以原图方程独立核验。",
+              "en": "No listed appendix answer; checked from the original circuit."
+            }
+          }
+        },
+        "figure": "ca-2-24-figure.png"
+      },
+      "CA-2-25": {
+        "id": "CA-2-25",
+        "bookId": "2-25",
+        "title": {
+          "zh": "选电流源为连支，只留一个回路KVL",
+          "en": "Choose current sources as links to leave one KVL"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 63,
+          "figurePdfPage": 72,
+          "figure": "题图2-23"
+        },
+        "statement": {
+          "zh": "电路如题图2-23所示，试选一棵树，使之只需要一个回路方程即能解出电流$i$，并确定$i$的值。",
+          "en": "Choose a tree for Fig. 2-23 so that only one loop equation is needed to determine $i$, and find $i$."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "A到B为5 Ω，i从A向B；B到地30 Ω，C到地20 Ω。上支路A经10 Ω及左正右负10 V源到C；左电流源参考向上但值−1 A；B到C受控电流源1.5i向右。",
+            "en": "A–B is 5 Ω, with i from A to B. B has 30 Ω to ground and C has 20 Ω. Upper A–C branch: 10 Ω and left-positive 10 V. The left source is labeled −1 A upward; a 1.5i dependent current source points B to C."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "将串联10 Ω与10 V源视作一条支路，取5 Ω、30 Ω、20 Ω三支为树。两电流源为连支，其电流已给定或由i控制，只有上支路连支需要KVL。",
+          "en": "Treat the series 10 Ω and 10 V as one branch. Use 5 Ω, 30 Ω and 20 Ω as the tree. Current-source links already have known or controlled currents; only the upper link needs KVL."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由树的KCL表达所有电流",
+              "en": "Express tree currents by KCL"
+            },
+            "text": {
+              "zh": "令上支路从A到C的电流J，30 Ω向下为I₃₀，20 Ω向下为I₂₀。−1 A向上即1 A向下。",
+              "en": "Let J run A to C, with I₃₀ and I₂₀ downward. A source of −1 A upward is 1 A downward."
+            },
+            "formula": "J=-1-i,\\qquad I_{30}=-\\frac12i,\\qquad I_{20}=-1+\\frac12i"
+          },
+          {
+            "title": {
+              "zh": "唯一未知回路KVL",
+              "en": "The single unknown loop KVL"
+            },
+            "text": {
+              "zh": "沿A→上支路→C→地→B→A，保留10 V压降。所有电流以下以安培计。",
+              "en": "Traverse A through the upper branch to C, ground, B and A. Keep the 10 V drop. Currents are numerical amperes."
+            },
+            "formula": "10J+10+20I_{20}-30I_{30}-5i=0"
+          },
+          {
+            "title": {
+              "zh": "代入求解",
+              "en": "Substitute and solve"
+            },
+            "text": {
+              "zh": "代入KCL表达式只剩一个未知量。",
+              "en": "Substituting the KCL expressions leaves one unknown."
+            },
+            "formula": "10(-1-i)+10+20\\left(-1+\\frac12i\\right)-30\\left(-\\frac12i\\right)-5i=0\\quad\\Rightarrow\\quad10i-20=0"
+          }
+        ],
+        "answer": {
+          "zh": "$i=2\\,\\mathrm A$，从左向右。",
+          "en": "$i=2\\,\\mathrm A$, left to right."
+        },
+        "pitfalls": [
+          {
+            "zh": "树不能包含闭合回路；若保留10 V源内部节点，可把该电压源也加入树，拓扑结论不变。",
+            "en": "A tree has no cycles. If the series source’s internal node is retained, add the voltage source to the tree; the conclusion is unchanged."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原拓扑MNA保留上支路内部节点，得A=−20 V、B=−30 V、C=0，因此i=2 A；功率余量精确为零，附录同为2 A。",
+            "en": "Original-topology MNA retains the internal source node and gives A=−20 V, B=−30 V, C=0, hence i=2 A. Power residual is zero and the listed answer agrees."
+          },
+          "results": {
+            "nodes": {
+              "0": "0",
+              "A": "-20",
+              "B": "-30",
+              "C": "0",
+              "T": "10"
+            },
+            "voltageSourceCurrents": {
+              "V10": "-3"
+            },
+            "absorbedPowers": {
+              "R5": "20",
+              "R30": "30",
+              "R20": "0",
+              "R10": "90",
+              "Iminus1": "-20",
+              "V10": "-30",
+              "CCCS": "-90"
+            },
+            "powerResidual": "0",
+            "matrixSize": 5
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "原拓扑MNA保留上支路内部节点，得A=−20 V、B=−30 V、C=0，因此i=2 A；功率余量精确为零，附录同为2 A。",
+              "en": "Original-topology MNA retains the internal source node and gives A=−20 V, B=−30 V, C=0, hence i=2 A. Power residual is zero and the listed answer agrees."
+            }
+          }
+        },
+        "figure": "ca-2-25-figure.png"
+      },
+      "CA-2-26": {
+        "id": "CA-2-26",
+        "bookId": "2-26",
+        "title": {
+          "zh": "同相放大三小问逐一代入",
+          "en": "Apply the non-inverting relation to all three cases"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 64,
+          "figurePdfPage": 73,
+          "figure": "题图2-24"
+        },
+        "statement": {
+          "zh": "对题图2-24所示电路，试计算在下列情况下的输出电压$u_o$：（1）$u_{in}=300\\,\\mathrm{mV},R_1=10\\,\\Omega,R_2=75\\,\\Omega$；（2）$u_{in}=1.5\\,\\mathrm V,R_1=R_2=1\\,\\mathrm{M\\Omega}$；（3）$u_{in}=-1\\,\\mathrm V,R_1=3.3\\,\\mathrm{k\\Omega},R_2=4.7\\,\\mathrm{k\\Omega}$。",
+          "en": "Find $u_o$ in Fig. 2-24 for (1) $u_{in}=300\\,\\mathrm{mV},R_1=10\\,\\Omega,R_2=75\\,\\Omega$; (2) $u_{in}=1.5\\,\\mathrm V,R_1=R_2=1\\,\\mathrm{M\\Omega}$; (3) $u_{in}=-1\\,\\mathrm V,R_1=3.3\\,\\mathrm{k\\Omega},R_2=4.7\\,\\mathrm{k\\Omega}$."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "理想运放同相端接u_in，反相端由R₁接地、R₂接输出；负载R_L由输出接地。",
+            "en": "The ideal non-inverting input is u_in; R₁ connects the inverting input to ground and R₂ to the output. R_L is an output-to-ground load."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "反相端接收负反馈，理想线性模型中虚短、虚断可用。负载只改变输出电流，不改变理想电压增益。",
+          "en": "Negative feedback permits ideal virtual equality and zero input current. The load changes output current but not the ideal voltage gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从反相节点KCL推公式",
+              "en": "Derive the gain from input-node KCL"
+            },
+            "text": {
+              "zh": "虚短给V₋=u_in，虚断使流经R₁的电流等于反馈电流。",
+              "en": "Virtual equality gives V₋=u_in and zero input current equates the resistor currents."
+            },
+            "formula": "\\frac{u_{in}}{R_1}+\\frac{u_{in}-u_o}{R_2}=0\\quad\\Rightarrow\\quad u_o=\\left(1+\\frac{R_2}{R_1}\\right)u_{in}"
+          },
+          {
+            "title": {
+              "zh": "前两小问",
+              "en": "First two cases"
+            },
+            "text": {
+              "zh": "300 mV先换成0.300 V；第二问两个兆欧电阻之比为1。",
+              "en": "Convert 300 mV to 0.300 V; the two equal megohm resistors give a ratio of one."
+            },
+            "formula": "u_{o1}=\\left(1+\\frac{75}{10}\\right)0.300=2.55\\,\\mathrm V,\\qquad u_{o2}=2(1.5)=3\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "第三问及附录差异",
+              "en": "Third case and appendix discrepancy"
+            },
+            "text": {
+              "zh": "原文明确为3.3 kΩ及4.7 kΩ；按原参数求值，不为贴合附录−2.45 V修改电阻。",
+              "en": "The source states 3.3 kΩ and 4.7 kΩ. Retain these values rather than altering them to match the appendix’s −2.45 V."
+            },
+            "formula": "u_{o3}=-\\left(1+\\frac{4.7}{3.3}\\right)\\mathrm V=-\\frac{80}{33}\\,\\mathrm V\\approx-2.42424\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "（1）$2.55\\,\\mathrm V$；（2）$3\\,\\mathrm V$；（3）$-\\frac{80}{33}\\,\\mathrm V\\approx-2.42424\\,\\mathrm V$。",
+          "en": "(1) $2.55\\,\\mathrm V$; (2) $3\\,\\mathrm V$; (3) $-\\frac{80}{33}\\,\\mathrm V\\approx-2.42424\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "虚短不是导线短接；真实运放还需满足输出摆幅与电流限制，题设未给电源时这里只求理想线性结果。",
+            "en": "Virtual equality is not a physical short. Actual swing and current limits require supply information absent from the ideal problem."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立解输入约束与节点KCL，精确得到51/20、3、−80/33 V。前两问与附录相符；第3问原题高分辨率核读3.3 kΩ与4.7 kΩ，附录−2.45 V与其不一致。",
+            "en": "Independent ideal-input constraints and KCL give exactly 51/20, 3 and −80/33 V. The first two agree with the appendix. High-resolution source inspection confirms 3.3 kΩ and 4.7 kΩ, inconsistent with the listed −2.45 V."
+          },
+          "results": {
+            "outputsV": [
+              "51/20",
+              "3",
+              "-80/33"
+            ],
+            "appendixDiscrepancy": "Part (3): original R1=3.3k, R2=4.7k gives -80/33 V, not -2.45 V."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "独立解输入约束与节点KCL，精确得到51/20、3、−80/33 V。前两问与附录相符；第3问原题高分辨率核读3.3 kΩ与4.7 kΩ，附录−2.45 V与其不一致。",
+              "en": "Independent ideal-input constraints and KCL give exactly 51/20, 3 and −80/33 V. The first two agree with the appendix. High-resolution source inspection confirms 3.3 kΩ and 4.7 kΩ, inconsistent with the listed −2.45 V."
+            }
+          }
+        },
+        "figure": "ca-2-26-figure.png"
+      },
+      "CA-2-27": {
+        "id": "CA-2-27",
+        "bookId": "2-27",
+        "title": {
+          "zh": "虚地旁的电阻电流为零",
+          "en": "A resistor across virtual ground carries zero current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 63,
+          "pdfPage": 72,
+          "figurePrintedPage": 64,
+          "figurePdfPage": 73,
+          "figure": "题图2-25"
+        },
+        "statement": {
+          "zh": "计算题图2-25所示电路的输出电压$u_o$。",
+          "en": "Calculate $u_o$ in Fig. 2-25."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "同相端接地；反相端有向上1 mA源与150 Ω并联接地，并经2.2 kΩ反馈电阻接输出。",
+            "en": "The non-inverting input is grounded. At the inverting input, an upward 1 mA source is parallel with 150 Ω to ground; the feedback resistor is 2.2 kΩ."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "反相节点为虚地，150 Ω两端零压，1 mA全部流向反馈支路；不是流进运放输入。",
+          "en": "The inverting node is at virtual ground. The 150 Ω has zero voltage and all 1 mA flows through feedback, not into the input."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "确定虚地",
+              "en": "Identify virtual ground"
+            },
+            "text": {
+              "zh": "在负反馈理想线性模型下，两输入电压都为零。",
+              "en": "Under ideal linear negative feedback, both input potentials are zero."
+            },
+            "formula": "V_-=V_+=0,\\qquad I_{150}=\\frac{0}{150\\,\\Omega}=0"
+          },
+          {
+            "title": {
+              "zh": "反相节点KCL",
+              "en": "Inverting-node KCL"
+            },
+            "text": {
+              "zh": "电流源送入1 mA，反馈电阻流出同样的电流。",
+              "en": "The source injects 1 mA and the feedback resistor carries it out."
+            },
+            "formula": "\\frac{0-u_o}{2.2\\,\\mathrm{k\\Omega}}=1\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "求值并验极性",
+              "en": "Evaluate and check polarity"
+            },
+            "text": {
+              "zh": "输出要低于虚地，电流才能从节点流向输出。",
+              "en": "The output must be below virtual ground to accept this current."
+            },
+            "formula": "u_o=-(1\\,\\mathrm{mA})(2.2\\,\\mathrm{k\\Omega})=-2.2\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_o=-2.2\\,\\mathrm V$。",
+          "en": "$u_o=-2.2\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "不可把150 Ω与2.2 kΩ简单并联分流；两只电阻的另一端电位不同。",
+            "en": "Do not use simple parallel current division: the far ends of the two resistors have different potentials."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "将150 Ω保留在原节点方程，联立理想输入条件精确解得−11/5 V，与附录−2.2 V一致。",
+            "en": "Keeping 150 Ω in the original KCL and imposing ideal input equality gives exactly −11/5 V, matching the appendix."
+          },
+          "results": {
+            "virtualGroundV": "0",
+            "outputV": "-11/5",
+            "resistor150CurrentA": 0
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "将150 Ω保留在原节点方程，联立理想输入条件精确解得−11/5 V，与附录−2.2 V一致。",
+              "en": "Keeping 150 Ω in the original KCL and imposing ideal input equality gives exactly −11/5 V, matching the appendix."
+            }
+          }
+        },
+        "figure": "ca-2-27-figure.png"
+      },
+      "CA-2-28": {
+        "id": "CA-2-28",
+        "bookId": "2-28",
+        "title": {
+          "zh": "输出串联小电阻也要计入压降",
+          "en": "Include the small series output resistor"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 64,
+          "pdfPage": 73,
+          "figurePrintedPage": 64,
+          "figurePdfPage": 73,
+          "figure": "题图2-26"
+        },
+        "statement": {
+          "zh": "计算题图2-26所示电路中的电压$u_1$。",
+          "en": "Calculate $u_1$ in Fig. 2-26."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "同相端由向上1 μA源与4 MΩ并联驱动。反相端经1 kΩ接3 V源上端，经17 kΩ到节点X；X经100 Ω到运放输出Y。Y经75 kΩ接地，经300 kΩ到开路测量端u₁。",
+            "en": "The non-inverting node has an upward 1 μA source and 4 MΩ to ground. The inverting node connects to 3 V through 1 kΩ and to X through 17 kΩ. X connects through 100 Ω to output Y. Y has 75 kΩ to ground and 300 kΩ to the open measurement terminal u₁."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "反馈取自输出经过100 Ω及17 kΩ的支路。测量端开路使300 kΩ无压降；100 Ω却有反馈电流，不能同样忽略。",
+          "en": "The feedback path contains both 100 Ω and 17 kΩ. The open terminal gives no drop across 300 kΩ; 100 Ω does carry feedback current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求同相端及反相端电位",
+              "en": "Find the two input potentials"
+            },
+            "text": {
+              "zh": "输入电流为零，1 μA全经4 MΩ，得4 V；负反馈令反相端也为4 V。",
+              "en": "Zero input current sends all 1 μA through 4 MΩ, giving 4 V at both inputs."
+            },
+            "formula": "V_+=V_-=(1\\,\\mathrm{\\mu A})(4\\,\\mathrm{M\\Omega})=4\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "反相端KCL求反馈中点",
+              "en": "Find the feedback intermediate node"
+            },
+            "text": {
+              "zh": "1 kΩ中电流从4 V节点流向3 V端，为1 mA；17 kΩ须从X向反相端提供1 mA。",
+              "en": "The 1 kΩ carries 1 mA from 4 V toward 3 V; 17 kΩ must supply that current from X."
+            },
+            "formula": "\\frac{4-3}{1\\,\\mathrm{k\\Omega}}+\\frac{4-V_X}{17\\,\\mathrm{k\\Omega}}=0\\quad\\Rightarrow\\quad V_X=21\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "补上100 Ω压降，判断测量端",
+              "en": "Add the 100 Ω drop and use the open terminal"
+            },
+            "text": {
+              "zh": "100 Ω中同为1 mA，由Y流向X；Y比X高0.1 V。300 kΩ没有电流，测量端电压等于Y。",
+              "en": "The same 1 mA flows from Y to X through 100 Ω, making Y 0.1 V higher. No current in 300 kΩ means u₁=Y."
+            },
+            "formula": "V_Y=21+(1\\,\\mathrm{mA})(100\\,\\Omega)=21.1\\,\\mathrm V,\\qquad u_1=V_Y"
+          }
+        ],
+        "answer": {
+          "zh": "按原图$17\\,\\mathrm{k\\Omega}$、$100\\,\\Omega$计算，$u_1=21.1\\,\\mathrm V$；附录列21.2 V，与原参数不符。",
+          "en": "With the original $17\\,\\mathrm{k\\Omega}$ and $100\\,\\Omega$, $u_1=21.1\\,\\mathrm V$. The appendix’s 21.2 V is inconsistent with these values."
+        },
+        "pitfalls": [
+          {
+            "zh": "75 kΩ由理想输出驱动，改变供电电流但不改变上述反馈解。这里未给电源轨，只能给理想线性结果。",
+            "en": "The 75 kΩ load changes output current but not the ideal feedback solution. Supply rails are unspecified, so this is an ideal linear result."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立联立五个输入、X、Y、开路端方程，精确得到4、4、21、211/10、211/10 V；输入KCL与100 Ω压降吻合。附录21.2 V单列为差异。",
+            "en": "An independent five-variable input/X/Y/open-terminal system gives exactly 4, 4, 21, 211/10 and 211/10 V, satisfying input KCL and the 100 Ω drop. The 21.2 V appendix value is documented as a discrepancy."
+          },
+          "results": {
+            "nodesV": [
+              "4",
+              "4",
+              "21",
+              "211/10",
+              "211/10"
+            ],
+            "feedbackCurrentA": "1/1000",
+            "appendixDiscrepancy": "Original 17k and 100 ohm give 21.1 V, not listed 21.2 V."
+          },
+          "appendixPrintedPage": 334,
+          "appendixPdfPage": 343,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "独立联立五个输入、X、Y、开路端方程，精确得到4、4、21、211/10、211/10 V；输入KCL与100 Ω压降吻合。附录21.2 V单列为差异。",
+              "en": "An independent five-variable input/X/Y/open-terminal system gives exactly 4, 4, 21, 211/10 and 211/10 V, satisfying input KCL and the 100 Ω drop. The 21.2 V appendix value is documented as a discrepancy."
+            }
+          }
+        },
+        "figure": "ca-2-28-figure.png"
+      },
+      "CA-2-29": {
+        "id": "CA-2-29",
+        "bookId": "2-29",
+        "title": {
+          "zh": "由负载功率反推同相增益",
+          "en": "Work backward from load power to non-inverting gain"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 64,
+          "pdfPage": 73,
+          "figurePrintedPage": 64,
+          "figurePdfPage": 73,
+          "figure": "题图2-27"
+        },
+        "statement": {
+          "zh": "在题图2-27所示电路中，如果要求传递给$10\\,\\mathrm{k\\Omega}$电阻的功率为$150\\,\\mathrm{mW}$，则电阻$R$应取何值？",
+          "en": "What value of $R$ in Fig. 2-27 delivers $150\\,\\mathrm{mW}$ to the $10\\,\\mathrm{k\\Omega}$ resistor?"
+        },
+        "diagram": {
+          "alt": {
+            "zh": "同相端接上正下负5 V源，反相端经R接地，经1 kΩ接输出；输出经10 kΩ接地。",
+            "en": "The non-inverting input is fixed at +5 V. R connects the inverting input to ground; 1 kΩ provides output feedback. The load is 10 kΩ to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "功率先给输出电压绝对值；正电阻同相闭环增益为正，输入+5 V选正根，再反解R。",
+          "en": "Power determines output magnitude. A positive-resistance non-inverting amplifier with +5 V input selects the positive root; then solve for R."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "功率转电压",
+              "en": "Convert power to voltage"
+            },
+            "text": {
+              "zh": "将150 mW换成0.150 W，电阻取10000 Ω。",
+              "en": "Convert 150 mW to 0.150 W and the load to 10000 Ω."
+            },
+            "formula": "u_o=+\\sqrt{PR_L}=\\sqrt{0.150\\times10000}\\,\\mathrm V=10\\sqrt{15}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "由输入KCL求R",
+              "en": "Use input KCL to solve for R"
+            },
+            "text": {
+              "zh": "反相端为5 V，对地R的电流由1 kΩ反馈支路提供。",
+              "en": "The inverting node is at 5 V; the feedback resistor supplies the current through R."
+            },
+            "formula": "\\frac{5}{R}+\\frac{5-u_o}{1000}=0\\quad\\Rightarrow\\quad R=\\frac{1000}{2\\sqrt{15}-1}\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "数值与模型边界",
+              "en": "Numerical value and model boundary"
+            },
+            "text": {
+              "zh": "理想输出约38.73 V；真实器件必须具有足够的输出摆幅。题设未给电源或型号，不凭空指定饱和值。",
+              "en": "The ideal output is about 38.73 V. A real device needs sufficient swing; no supply or device is specified, so do not invent a saturation value."
+            },
+            "formula": "R\\approx148.2375\\,\\Omega,\\qquad u_o\\approx38.7298\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$R\\approx148.24\\,\\Omega$（附录取$148\\,\\Omega$）。",
+          "en": "$R\\approx148.24\\,\\Omega$ (148 Ω rounded in the appendix)."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把150 mW直接当150 W；不应在求根后保留与+5 V同相增益不相容的负输出。",
+            "en": "Do not treat 150 mW as 150 W. Reject the negative output root incompatible with the positive non-inverting gain."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "把所求R代回独立输入节点KCL及u_o²/(10000 Ω)，功率数值余量小于10⁻¹⁴ W；精确表达式与附录148 Ω的舍入一致。",
+            "en": "Substitution into input KCL and the independent load-power equation leaves less than 10⁻¹⁴ W numerical residual. The exact expression rounds to the listed 148 Ω."
+          },
+          "results": {
+            "requiredOutputV": 38.72983346207417,
+            "requiredResistanceOhm": 148.23672360025142,
+            "powerResidualW": 0.0
+          },
+          "appendixPrintedPage": 334,
+          "appendixPdfPage": 343,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "把所求R代回独立输入节点KCL及u_o²/(10000 Ω)，功率数值余量小于10⁻¹⁴ W；精确表达式与附录148 Ω的舍入一致。",
+              "en": "Substitution into input KCL and the independent load-power equation leaves less than 10⁻¹⁴ W numerical residual. The exact expression rounds to the listed 148 Ω."
+            }
+          }
+        },
+        "figure": "ca-2-29-figure.png"
+      },
+      "CA-2-30": {
+        "id": "CA-2-30",
+        "bookId": "2-30",
+        "title": {
+          "zh": "先求形式解，再检查反馈稳定性",
+          "en": "Find the formal solution, then check feedback stability"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 64,
+          "pdfPage": 73,
+          "figurePrintedPage": 64,
+          "figurePdfPage": 73,
+          "figure": "题图2-28"
+        },
+        "statement": {
+          "zh": "在题图2-28所示含有理想运放的电路中，已知$R_1=R_3=R_4=1\\,\\mathrm{k\\Omega}$，$R_2=R_5=2\\,\\mathrm{k\\Omega}$，$u_i=1\\,\\mathrm V$，求$i_5$。",
+          "en": "For the ideal-op-amp circuit in Fig. 2-28, let $R_1=R_3=R_4=1\\,\\mathrm{k\\Omega}$, $R_2=R_5=2\\,\\mathrm{k\\Omega}$ and $u_i=1\\,\\mathrm V$. Find $i_5$."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "反相端由R₁接输入u_i、R₂接输出；同相端由R₃接地、R₄接输出。R₅从输出接地，i₅向下。",
+            "en": "R₁ links the input to the inverting node, with feedback R₂ from output. The non-inverting node is between output resistor R₄ and ground resistor R₃. R₅ is the output load, i₅ downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "KCL、KVL、控制变量与题设理想模型；先按端点和方向识图。",
+          "en": "KCL, KVL, control definitions and the stated ideal model; identify endpoints and references first."
+        },
+        "recognition": {
+          "zh": "两端都接输出，不能只看到反相端反馈就判为稳定负反馈。先按教材理想线性约束求形式平衡，再检查输出对差模输入的净反馈。",
+          "en": "Both inputs receive output feedback. Do not assume negative feedback merely from R₂. First find the textbook formal linear equilibrium, then check net differential feedback."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "两个输入节点分别列式",
+              "en": "Write KCL at both inputs"
+            },
+            "text": {
+              "zh": "输入电流均为零，用kΩ和mA配套；电压取伏特数值。",
+              "en": "Both input currents vanish. Use kΩ with mA and numerical volt values."
+            },
+            "formula": "\\frac{V_--1}{1}+\\frac{V_--u_o}{2}=0,\\qquad\\frac{V_+}{1}+\\frac{V_+-u_o}{1}=0"
+          },
+          {
+            "title": {
+              "zh": "理想虚短给形式解",
+              "en": "Virtual equality gives a formal solution"
+            },
+            "text": {
+              "zh": "联立V₋=V₊得到输出4 V，两输入均2 V。该结果对应教材线性代数解。",
+              "en": "Imposing V₋=V₊ gives output 4 V and both inputs 2 V. This is the textbook algebraic linear solution."
+            },
+            "formula": "V_-=\\frac{2+u_o}{3},\\quad V_+=\\frac{u_o}{2},\\quad u_o=4\\,\\mathrm V,\\qquad i_5=\\frac{4\\,\\mathrm V}{2\\,\\mathrm{k\\Omega}}=2\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "说明形式解的稳定性边界",
+              "en": "State the equilibrium’s stability limitation"
+            },
+            "text": {
+              "zh": "固定输入时，输出增大会使差模输入也增大，净正反馈系数为1/6。普通正开环增益、单极点动态模型中此线性平衡不稳定；实际饱和值需电源轨等信息。",
+              "en": "At fixed input, an output increase raises the differential input: net positive feedback is 1/6. With an ordinary positive-gain one-pole dynamic model, this linear equilibrium is unstable. Actual saturation needs supply information."
+            },
+            "formula": "\\frac{\\partial(V_+-V_-)}{\\partial u_o}=\\frac12-\\frac13=\\frac16>0"
+          }
+        ],
+        "answer": {
+          "zh": "教材理想线性形式解为$i_5=2\\,\\mathrm{mA}$。该点为净正反馈下的不稳定平衡；未给电源和动态条件，不能把它直接称作真实稳定工作点。",
+          "en": "The textbook formal linear solution is $i_5=2\\,\\mathrm{mA}$. It is an unstable equilibrium under net positive feedback; without supply and dynamic conditions it is not a guaranteed physical steady operating point."
+        },
+        "pitfalls": [
+          {
+            "zh": "虚短必须有适用条件；不能从代数相等反过来证明负反馈稳定。",
+            "en": "Virtual equality has conditions of use. Algebraic equality alone does not prove stable negative feedback."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立三元输入KCL系统精确给2、2、4 V及1/500 A，与附录2 mA相同；另外计算输出到差模输入系数+1/6，单列稳定性限制，未虚构饱和值。",
+            "en": "An independent three-variable input-KCL system gives exactly 2, 2, 4 V and 1/500 A, agreeing with 2 mA in the appendix. The separate +1/6 differential-feedback calculation records the stability limit without inventing saturation values."
+          },
+          "results": {
+            "formalNodesV": [
+              "2",
+              "2",
+              "4"
+            ],
+            "loadCurrentA": "1/500",
+            "netDifferentialFeedback": "1/6",
+            "stability": "Positive differential feedback. Formal linear equilibrium is unstable under an ordinary positive-gain one-pole op-amp. Saturation limits are unspecified."
+          },
+          "appendixPrintedPage": 334,
+          "appendixPdfPage": 343,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立三元输入KCL系统精确给2、2、4 V及1/500 A，与附录2 mA相同；另外计算输出到差模输入系数+1/6，单列稳定性限制，未虚构饱和值。",
+              "en": "An independent three-variable input-KCL system gives exactly 2, 2, 4 V and 1/500 A, agreeing with 2 mA in the appendix. The separate +1/6 differential-feedback calculation records the stability limit without inventing saturation values."
+            }
+          }
+        },
+        "figure": "ca-2-30-figure.png"
       }
     }
   },
