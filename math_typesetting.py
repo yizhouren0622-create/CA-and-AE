@@ -75,6 +75,10 @@ def render_math(tex,display=False):
     if re.search(r'[\x00-\x09\x0b-\x1f]',tex):raise ValueError('Control character in TeX; use a raw string or escape backslashes')
     tree=ET.fromstring(convert(tex))
     fractions(tree)
+    # Use the mathematical accent glyph rather than a visible ASCII caret.
+    for accent in tree.iter():
+        if tag(accent)=='mover' and len(accent)==2 and tag(accent[1])=='mo' and accent[1].text=='^':
+            accent[1].text='ˆ'
     tree.set('display','block' if display else 'inline')
     tree.set('displaystyle','true')
     if any(tag(e)=='mo' and e.text=='/' for e in tree.iter()):raise ValueError('Unstacked division: '+tex)

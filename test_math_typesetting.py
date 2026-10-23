@@ -47,6 +47,12 @@ class MathTypography(unittest.TestCase):
   self.assertEqual(len(alltags(f[1],'mfrac')),1);self.assertTrue(value(f[1]).endswith('+4'))
  def test_cases_rows_preserved(self):
   self.assertEqual(len(alltags(tree(r'\begin{cases}t/2&t<0\\1/2&t=0\\t/3&t>0\end{cases}'),'mtr')),3)
+ def test_hat_is_an_accent_not_raw_caret(self):
+  e=tree(r'\hat{I}_1=\hat{U}_2/R')
+  accents=alltags(e,'mover')
+  self.assertEqual(len(accents),2)
+  self.assertTrue(all(value(a[1])=='ˆ' for a in accents))
+  self.assertNotIn('^',value(e))
  def test_compound_subscripts_and_adjacent_factors(self):
   for raw,expected in [('v_AK',r'v_{\mathrm{AK}}'),('g_mR_s',r'g_{\mathrm{m}}R_{\mathrm{s}}'),('K_pV_OV',r'K_{\mathrm{p}}V_{\mathrm{OV}}'),('g_mR₁',r'g_{\mathrm{m}}R_{1}')]:
    self.assertEqual(identifier(raw),expected)
