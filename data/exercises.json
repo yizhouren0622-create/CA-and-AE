@@ -707,8 +707,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-9",
@@ -717,8 +721,12 @@
         "printedPage": 61,
         "pdfPage": 70,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-10",
@@ -727,8 +735,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-11",
@@ -759,8 +771,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-14",
@@ -769,8 +785,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-15",
@@ -779,8 +799,12 @@
         "printedPage": 62,
         "pdfPage": 71,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（支路与节点分析；课程纲领2.1～2.5）",
+        "scopeLabelEn": "required: branch and nodal analysis; course plan 2.1–2.5",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程范围PPT：电路第2章2.1～2.5 / Course-plan PPT: Circuit 2.1–2.5"
+        }
       },
       {
         "id": "CA-2-16",
@@ -12923,6 +12947,917 @@
           }
         },
         "figure": "ca-2-7-figure.png"
+      },
+      "CA-2-8": {
+        "id": "CA-2-8",
+        "bookId": "2-8",
+        "title": {
+          "zh": "先用已知源电流列KCL，再比较并联路径电压",
+          "en": "Use the source current in KCL, then equate parallel-path voltages"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-6"
+        },
+        "statement": {
+          "zh": "试用支路电流法求题图2-6所示电路中的电流$i_1$和$i_2$。",
+          "en": "Use the branch-current method to find $i_1$ and $i_2$ in Fig. 2-6."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左支路10 A电流源向上，经顶部1 Ω接公共上节点A。中支路从A向下依次为R₁=1 Ω和上正下负2 V电源，i₁向下。右支路R₂=1 Ω，i₂向下，底部共地。",
+            "en": "A 10 A source drives upward through the upper 1 Ω resistor into node A. The middle path from A to ground contains R₁=1 Ω and a top-positive 2 V source, with i₁ downward. R₂=1 Ω is the right downward i₂ path."
+          }
+        },
+        "prerequisites": {
+          "zh": "支路电流法、KCL、KVL、理想电流源端电压与吸收功率。",
+          "en": "Branch-current analysis, KCL, KVL, current-source voltage and absorbed power."
+        },
+        "recognition": {
+          "zh": "左侧串联1 Ω不改变理想源注入的10 A。两条向下路径同起点同终点，但中支路多一个2 V电压升降，因此不能直接把10 A平均分配。",
+          "en": "The upper series resistor does not alter the imposed 10 A. Both downward paths have common terminals, but the middle path includes a 2 V source, so the current does not split equally."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "公共上节点KCL",
+              "en": "KCL at the upper node"
+            },
+            "text": {
+              "zh": "上方输入10 A，两个所求电流均按图向下流出。",
+              "en": "The incoming 10 A equals the two downward reference currents."
+            },
+            "formula": "i_1+i_2=10\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "用两条路径表示同一电压",
+              "en": "Express the same voltage along both paths"
+            },
+            "text": {
+              "zh": "以底部为零，中支路节点电压为电阻压降加2 V；右支路只有电阻压降。",
+              "en": "With the bottom grounded, the middle path gives a resistor drop plus 2 V; the right path gives only its resistor drop."
+            },
+            "formula": "(1\\,\\Omega)i_1+2\\,\\mathrm V=(1\\,\\Omega)i_2"
+          },
+          {
+            "title": {
+              "zh": "联立并解释方向",
+              "en": "Solve and interpret directions"
+            },
+            "text": {
+              "zh": "由i₂−i₁=2 A和总电流10 A得i₁=4 A、i₂=6 A，均与图示向下方向一致。公共上节点6 V；电流源上端还要再加顶部1 Ω的10 V压降，故为16 V。",
+              "en": "The difference is 2 A and sum 10 A, yielding 4 A and 6 A downward. Node A is 6 V. The current-source upper terminal is another 10 V higher because of its series resistor."
+            },
+            "formula": "i_1=4\\,\\mathrm A,\\quad i_2=6\\,\\mathrm A,\\quad V_A=6\\,\\mathrm V,\\quad V_{\\mathrm{source}}=16\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$i_1=4\\,\\mathrm A$、$i_2=6\\,\\mathrm A$，均向下。",
+          "en": "$i_1=4\\,\\mathrm A$ and $i_2=6\\,\\mathrm A$, both downward."
+        },
+        "pitfalls": [
+          {
+            "zh": "中支路的2 V源不能省略；相同电阻不代表相同支路电流。",
+            "en": "Do not omit the middle voltage source; equal resistor values do not imply equal branch currents."
+          },
+          {
+            "zh": "顶部1 Ω用于确定电流源端电压与功率，但不改变理想电流源规定的10 A。",
+            "en": "The upper 1 Ω sets the source terminal voltage and dissipation, not its imposed current."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原图完整MNA得源顶16 V、A点6 V、2 V源电流4 A，与支路法相同。三电阻共耗散152 W，2 V源吸收8 W，10 A源提供160 W，功率精确平衡。第333页附录2-8为4 A、6 A。",
+            "en": "Independent full-topology MNA gives source top 16 V, A=6 V and 4 A through the 2 V source. The resistors dissipate 152 W and the voltage source absorbs 8 W, balanced by 160 W supplied by the current source. Appendix 2-8 lists 4 A and 6 A."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "nodes": {
+              "0": "0",
+              "L": "16",
+              "A": "6",
+              "X": "2"
+            },
+            "voltageSourceCurrents": {
+              "V2": "4"
+            },
+            "absorbedPowers": {
+              "Rleft": "100",
+              "R1": "16",
+              "R2": "36",
+              "I10": "-160",
+              "V2": "8"
+            },
+            "powerResidual": "0",
+            "matrixSize": 4,
+            "branchAnswer": {
+              "i1": "4",
+              "i2": "6"
+            }
+          },
+          "appendixComparison": {
+            "status": "matched",
+            "reason": "Compared with the listed supplied-edition answer."
+          }
+        },
+        "figure": "ca-2-8-figure.png"
+      },
+      "CA-2-9": {
+        "id": "CA-2-9",
+        "bookId": "2-9",
+        "title": {
+          "zh": "先求两个节点电位，再按标注极性做差",
+          "en": "Find two node potentials, then subtract in the stated polarity"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 61,
+          "pdfPage": 70,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-7"
+        },
+        "statement": {
+          "zh": "求题图2-7所示电路中的电压$u_1$、$u_2$和$u_3$。",
+          "en": "Find $u_1$, $u_2$ and $u_3$ in Fig. 2-7."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部公共。左上A与右上B间1 Ω，u₂左正右负。A到底部1 Ω，u₁上正下负；B到底部1 Ω，u₃上正下负。左2 A源向上注入A，右3 A源向上注入B。",
+            "en": "Bottom is common. A and B are linked by 1 Ω, with u₂ positive at A. Each node has a 1 Ω resistor to ground, with u₁ and u₃ top-positive. The 2 A and 3 A sources inject upward into A and B respectively."
+          }
+        },
+        "prerequisites": {
+          "zh": "节点电压法、跨节点电压的极性、全电路功率。",
+          "en": "Nodal analysis, polarity of a node-to-node voltage, and power balance."
+        },
+        "recognition": {
+          "zh": "u₁、u₃直接是节点电位；u₂不是其中任一节点对地电压，而是左电位减右电位。先固定这一关系，再写KCL。",
+          "en": "u₁ and u₃ are the node potentials. u₂ is the left potential minus the right, rather than either node’s voltage to ground."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "把电压与节点对应",
+              "en": "Identify the node voltages"
+            },
+            "text": {
+              "zh": "底部选地，A、B节点电位分别记作V_A、V_B。",
+              "en": "Ground the bottom and name the node potentials V_A and V_B."
+            },
+            "formula": "u_1=V_A,\\qquad u_3=V_B,\\qquad u_2=V_A-V_B"
+          },
+          {
+            "title": {
+              "zh": "两个节点分别列KCL",
+              "en": "Write KCL at each node"
+            },
+            "text": {
+              "zh": "左源2 A等于左对地电流与从左到右电流之和；右源3 A同理。",
+              "en": "At each node, its injected source current equals the current to ground plus that toward the other node."
+            },
+            "formula": "\\frac{V_A}{1\\,\\Omega}+\\frac{V_A-V_B}{1\\,\\Omega}=2\\,\\mathrm A,\\qquad \\frac{V_B}{1\\,\\Omega}+\\frac{V_B-V_A}{1\\,\\Omega}=3\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "求解并保留u₂负号",
+              "en": "Solve and retain the sign of u₂"
+            },
+            "text": {
+              "zh": "线性方程解得左节点7/3 V、右节点8/3 V，右边略高，所以按左正右负定义的u₂为负。",
+              "en": "The right node is slightly higher: the potentials are 7/3 V and 8/3 V. Thus the left-positive u₂ is negative."
+            },
+            "formula": "u_1=\\frac73\\,\\mathrm V,\\qquad u_2=-\\frac13\\,\\mathrm V,\\qquad u_3=\\frac83\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_1=\\frac73\\,\\mathrm V$，$u_2=-\\frac13\\,\\mathrm V$，$u_3=\\frac83\\,\\mathrm V$。",
+          "en": "$u_1=\\frac73\\,\\mathrm V$, $u_2=-\\frac13\\,\\mathrm V$, $u_3=\\frac83\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "负u₂只说明实际右节点较高，不表示KCL符号应重写。",
+            "en": "Negative u₂ means B is higher; keep the original references."
+          },
+          {
+            "zh": "上方1 Ω不是接地电阻，电流必须用两节点电位差。",
+            "en": "The upper resistor connects two unknown nodes, so use their voltage difference."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立对三个1 Ω电阻和两个向上电流源作节点盖章，复得同一组电位。三电阻耗散总和38/3 W；两个电流源合计提供38/3 W，KCL与功率余量均为零。第333页附录2-9三个值及负号相符。",
+            "en": "A separately stamped three-resistor, two-source nodal system reproduces both potentials. Resistors dissipate 38/3 W, exactly balanced by the two sources. All KCL and power residuals are zero; all three values and the negative sign match Appendix 2-9."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "nodes": {
+              "0": "0",
+              "A": "7/3",
+              "B": "8/3"
+            },
+            "voltageSourceCurrents": {},
+            "absorbedPowers": {
+              "Rleft": "49/9",
+              "Rtop": "1/9",
+              "Rright": "64/9",
+              "I2": "-14/3",
+              "I3": "-8"
+            },
+            "powerResidual": "0",
+            "matrixSize": 2,
+            "voltageAnswer": [
+              "7/3",
+              "-1/3",
+              "8/3"
+            ]
+          },
+          "appendixComparison": {
+            "status": "matched",
+            "reason": "Compared with the listed supplied-edition answer."
+          }
+        },
+        "figure": "ca-2-9-figure.png"
+      },
+      "CA-2-10": {
+        "id": "CA-2-10",
+        "bookId": "2-10",
+        "title": {
+          "zh": "受控电压源接未知节点：先处理超节点",
+          "en": "An unknown-node voltage source requires a supernode"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-8"
+        },
+        "statement": {
+          "zh": "按照指定的参考节点，列出题图2-8所示电路的节点电压方程。",
+          "en": "Using the specified reference node, write the nodal-voltage equations for Fig. 2-8."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "节点1经2 Ω接节点2，i₁由1指向2；节点2经4 Ω接节点3。上方1 A源由1指向3。节点3经1 Ω接底部地，u=V₃。节点2由下向上受控源3i₁注入。左2u受控电压源上正下负，从节点1接左下L，L再经1 Ω接地。",
+            "en": "Node 1 connects through 2 Ω to node 2, with i₁ from 1 to 2; 4 Ω joins nodes 2 and 3. A 1 A source runs from 1 to 3. Node 3 has 1 Ω to ground and u=V₃. A dependent source injects 3i₁ upward into node 2. A top-positive 2u voltage source connects node 1 to lower-left L, which has 1 Ω to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "超节点、受控源控制方程、节点电压法、先列方程后求解。",
+          "en": "Supernodes, dependent-source constraints, nodal analysis, and defining controls before solving."
+        },
+        "recognition": {
+          "zh": "2u电压源的下端不是地，不能直接写V₁=2u。将节点1与L合并成超节点；先用u=V₃和i₁=(V₁−V₂)/(2 Ω)写控制关系，再消去V_L。",
+          "en": "The lower terminal of the 2u source is not grounded, so V₁ is not 2u. Form a supernode containing 1 and L; define both control variables before eliminating V_L."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先写控制关系",
+              "en": "Define the controlling quantities"
+            },
+            "text": {
+              "zh": "右侧u以地为负端；i₁按2 Ω电阻箭头从1到2。电压源约束给出V_L=V₁−2V₃。",
+              "en": "u is top-positive at node 3; i₁ runs from 1 to 2. The dependent voltage-source constraint determines V_L."
+            },
+            "formula": "u=V_3,\\qquad i_1=\\frac{V_1-V_2}{2\\,\\Omega},\\qquad V_1-V_L=2V_3"
+          },
+          {
+            "title": {
+              "zh": "节点1与L构成超节点",
+              "en": "Supernode containing 1 and L"
+            },
+            "text": {
+              "zh": "超节点向外流出的电流为2 Ω支路、上方1 A源和下方1 Ω支路。内部受控电压源电流不出现在超节点KCL中。",
+              "en": "The supernode’s external currents are those through 2 Ω, the upper 1 A source and the lower 1 Ω resistor. Its internal voltage-source current cancels."
+            },
+            "formula": "\\frac{V_1-V_2}{2\\,\\Omega}+1\\,\\mathrm A+\\frac{V_L}{1\\,\\Omega}=0"
+          },
+          {
+            "title": {
+              "zh": "节点2与3的KCL",
+              "en": "KCL at nodes 2 and 3"
+            },
+            "text": {
+              "zh": "3i₁向上流入节点2，列流出总和时取负；上方1 A流入节点3，也取负。",
+              "en": "The controlled 3i₁ enters node 2 and the 1 A source enters node 3; each has a negative sign in an outgoing-current sum."
+            },
+            "formula": "\\frac{V_2-V_1}{2\\,\\Omega}+\\frac{V_2-V_3}{4\\,\\Omega}-3i_1=0,\\qquad \\frac{V_3-V_2}{4\\,\\Omega}+\\frac{V_3}{1\\,\\Omega}-1\\,\\mathrm A=0"
+          },
+          {
+            "title": {
+              "zh": "消去控制量，给出指定节点的方程",
+              "en": "Eliminate controls to obtain the requested system"
+            },
+            "text": {
+              "zh": "以下以电压的伏特数值为未知量，电阻取欧姆数值。得到3个指定非参考节点的独立方程。额外自检可解得V₁=V₂=V₃=1 V、V_L=−1 V。",
+              "en": "With voltages expressed numerically in volts and resistances in ohms, the reduced independent system uses the three designated node voltages. An optional check gives V₁=V₂=V₃=1 V and V_L=−1 V."
+            },
+            "formula": "\\boxed{\\begin{cases}\\frac32V_1-\\frac12V_2-2V_3=-1\\\\-8V_1+9V_2-V_3=0\\\\-V_2+5V_3=4\\end{cases}}"
+          }
+        ],
+        "answer": {
+          "zh": "节点电压以伏特数值计，可写为$\\frac32V_1-\\frac12V_2-2V_3=-1$，$-8V_1+9V_2-V_3=0$，$-V_2+5V_3=4$；控制关系与超节点过程见上。",
+          "en": "With voltages numerically in volts: $\\frac32V_1-\\frac12V_2-2V_3=-1$, $-8V_1+9V_2-V_3=0$, $-V_2+5V_3=4$. Control definitions and supernode construction are shown above."
+        },
+        "pitfalls": [
+          {
+            "zh": "控制电压u不跨左受控源；右侧1 Ω上的u才是控制量。",
+            "en": "The controlling u is across the right 1 Ω resistor, not the dependent source itself."
+          },
+          {
+            "zh": "受控源不能在列方程前关掉；本题i₁=0只是求解后的结果。",
+            "en": "Keep the dependent sources active; i₁=0 is a solved result, not an initial assumption."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用4节点加受控电压源电流的5×5完整MNA盖章，得到V₁=V₂=V₃=1 V、V_L=−1 V，与上述3元系统一致。两只1 Ω各耗1 W，受控电压源提供2 W；上方1 A源两端等电位，受控电流源电流为0，功率平衡。第333页附录未列2-10，未声称与其对照。",
+            "en": "An independent full 5×5 MNA system retains four nonreference nodes and the dependent-voltage-source current. It gives V₁=V₂=V₃=1 V and V_L=−1 V. The two 1 Ω resistors each dissipate 1 W, supplied by 2 W from the controlled voltage source. The upper current source has zero voltage and the controlled current is zero. Appendix p. 333 does not list 2-10."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "nodes": {
+              "0": "0",
+              "1": "1",
+              "2": "1",
+              "3": "1",
+              "L": "-1"
+            },
+            "voltageSourceCurrents": {
+              "VCVS": "-1"
+            },
+            "absorbedPowers": {
+              "R12": "0",
+              "R23": "0",
+              "R3": "1",
+              "Rbottom": "1",
+              "I1": "0",
+              "VCVS": "-2",
+              "CCCS": "0"
+            },
+            "powerResidual": "0",
+            "matrixSize": 5,
+            "reducedNodalRows": [
+              [
+                "3/2",
+                "-1/2",
+                -2
+              ],
+              [
+                -8,
+                9,
+                -1
+              ],
+              [
+                0,
+                -1,
+                5
+              ]
+            ],
+            "reducedRhs": [
+              -1,
+              0,
+              4
+            ]
+          },
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": "Exercise 2-10 is not listed in the appendix; full-topology exact MNA and power checks provide independent evidence."
+          }
+        },
+        "figure": "ca-2-10-figure.png"
+      },
+      "CA-2-13": {
+        "id": "CA-2-13",
+        "bookId": "2-13",
+        "title": {
+          "zh": "控制电流用节点电压表示，再代入受控电压源",
+          "en": "Express the controlling current before eliminating a dependent source"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-11"
+        },
+        "statement": {
+          "zh": "按照题图2-11所示电路中给定的节点，列出电路的节点电压方程。",
+          "en": "Write the circuit’s nodal-voltage equations using the nodes indicated in Fig. 2-11."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左2 V源上正下负，经1 Ω接节点1。节点1向下1/4 Ω支路电流i₁；节点1与2之间1/2 Ω。节点2经1/3 Ω接地，并经1/2 Ω接右受控电压源D，上正下负、值(1/2)i₁。底部共地。",
+            "en": "A top-positive 2 V source connects through 1 Ω to node 1. Its downward 1/4 Ω branch carries i₁; 1/2 Ω joins nodes 1 and 2. Node 2 has 1/3 Ω to ground and 1/2 Ω to the top-positive dependent voltage source D of value (1/2)i₁. Bottom is grounded."
+          }
+        },
+        "prerequisites": {
+          "zh": "节点电压法、分数电阻的电导、跨阻型受控电压源。",
+          "en": "Nodal analysis, conductances of fractional resistances and a transresistance-controlled source."
+        },
+        "recognition": {
+          "zh": "节点1对地电阻是1/4 Ω，电导为4 S。故向下控制电流为4V₁，再乘受控源的1/2 Ω跨阻，右端电位为2V₁。这个正号必须按原图保留。",
+          "en": "The 1/4 Ω branch has conductance 4 S. Its downward current controls a positive 1/2 Ω transresistance, making the right terminal voltage 2V₁."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "消去控制电流",
+              "en": "Eliminate the controlling current"
+            },
+            "text": {
+              "zh": "受控电压源下端接地，上正下负，因此右端节点D可直接用V₁表示。",
+              "en": "The dependent source is bottom-grounded and top-positive, so its terminal voltage follows directly from V₁."
+            },
+            "formula": "i_1=\\frac{V_1}{(1/4)\\,\\Omega},\\qquad V_D=\\left(\\frac12\\,\\Omega\\right)i_1=2V_1"
+          },
+          {
+            "title": {
+              "zh": "节点1方程",
+              "en": "Node 1 equation"
+            },
+            "text": {
+              "zh": "三条流出支路分别去往已知2 V、地和节点2。",
+              "en": "The three outgoing branches connect to the known 2 V node, ground, and node 2."
+            },
+            "formula": "\\frac{V_1-2\\,\\mathrm V}{1\\,\\Omega}+\\frac{V_1}{(1/4)\\,\\Omega}+\\frac{V_1-V_2}{(1/2)\\,\\Omega}=0"
+          },
+          {
+            "title": {
+              "zh": "节点2方程",
+              "en": "Node 2 equation"
+            },
+            "text": {
+              "zh": "节点2右支路电位差为V₂−2V₁，不能误当V₂或V₂−V₁。",
+              "en": "The right branch drop is V₂−2V₁, not V₂ or V₂−V₁."
+            },
+            "formula": "\\frac{V_2-V_1}{(1/2)\\,\\Omega}+\\frac{V_2}{(1/3)\\,\\Omega}+\\frac{V_2-2V_1}{(1/2)\\,\\Omega}=0"
+          },
+          {
+            "title": {
+              "zh": "整理成两节点线性系统",
+              "en": "Collect the two-node system"
+            },
+            "text": {
+              "zh": "以伏特数值为未知量，整理后与附录相同；题目只要求列式。可用V₁=14/37 V、V₂=12/37 V作自检。",
+              "en": "Using numerical volt values gives the system below. Only the equations are requested; V₁=14/37 V and V₂=12/37 V provide an optional check."
+            },
+            "formula": "\\boxed{\\begin{cases}7V_1-2V_2=2\\\\-6V_1+7V_2=0\\end{cases}}"
+          }
+        ],
+        "answer": {
+          "zh": "以伏特数值计：$7V_1-2V_2=2$，$-6V_1+7V_2=0$。",
+          "en": "With voltages numerically in volts: $7V_1-2V_2=2$, $-6V_1+7V_2=0$."
+        },
+        "pitfalls": [
+          {
+            "zh": "分数欧姆电阻求电流时要除以整个分数，不能把1/4 Ω写成4 Ω。",
+            "en": "Divide by the entire fractional resistance; 1/4 Ω is not 4 Ω."
+          },
+          {
+            "zh": "受控源电压是正的2V₁，符号由原图上正下负及i₁向下共同决定。",
+            "en": "The controlled voltage is positive 2V₁ under the original polarity and current arrow."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "完整原拓扑6×6 MNA保留已知源节点、受控源端点及两源电流，得到V₁=14/37 V、V₂=12/37 V、V_D=28/37 V、i₁=56/37 A。电阻耗散5336/1369 W，两电压源合计提供同值，精确为零的总功率余量独立通过。附录2-13的两条方程逐项吻合。",
+            "en": "Independent full-topology 6×6 MNA retains both source terminals and currents. It gives V₁=14/37 V, V₂=12/37 V, V_D=28/37 V and i₁=56/37 A. Resistor dissipation is 5336/1369 W, exactly supplied by the two voltage sources. Both equations match Appendix 2-13."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "nodes": {
+              "0": "0",
+              "L": "2",
+              "1": "14/37",
+              "2": "12/37",
+              "D": "28/37"
+            },
+            "voltageSourceCurrents": {
+              "V2": "-60/37",
+              "CCVS": "-32/37"
+            },
+            "absorbedPowers": {
+              "Rleft": "3600/1369",
+              "Rshunt1": "784/1369",
+              "R12": "8/1369",
+              "Rshunt2": "432/1369",
+              "Rright": "512/1369",
+              "V2": "-120/37",
+              "CCVS": "-896/1369"
+            },
+            "powerResidual": "0",
+            "matrixSize": 6,
+            "controlCurrent": "56/37"
+          },
+          "appendixComparison": {
+            "status": "matched",
+            "reason": "Compared with the listed supplied-edition answer."
+          }
+        },
+        "figure": "ca-2-13-figure.png"
+      },
+      "CA-2-14": {
+        "id": "CA-2-14",
+        "bookId": "2-14",
+        "title": {
+          "zh": "先认清交叉不连接，再算上方支路电流",
+          "en": "Identify unconnected crossings before finding the upper branch current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-12"
+        },
+        "statement": {
+          "zh": "试用节点电压法求题图2-12所示电路中的电流$i$。",
+          "en": "Use nodal-voltage analysis to find current $i$ in Fig. 2-12."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部整条导线为地。左10 V源上正，经1 Ω到A；右2 V源上正，经3 Ω到B；上方2 Ω从A到B，i向右。A经左竖2 Ω及斜2 Ω分别接地；B经右竖6 Ω及斜6 Ω分别接地。斜线交叉处无节点。",
+            "en": "The entire lower wire is grounded. A top-positive 10 V source connects through 1 Ω to A; a top-positive 2 V source connects through 3 Ω to B. Upper 2 Ω joins A to B, with i rightward. A has two separate 2 Ω paths to ground, one vertical and one diagonal; B similarly has two 6 Ω paths. The diagonal crossing is unconnected."
+          }
+        },
+        "prerequisites": {
+          "zh": "按节点识别并联、交叉不连接、节点电压法与电源吸收功率。",
+          "en": "Recognizing parallel branches by endpoints, unconnected crossings, nodal analysis and absorbed source power."
+        },
+        "recognition": {
+          "zh": "两条斜线相交不表示短接A与B。下端本来共地，所以A的两个2 Ω并联，B的两个6 Ω并联；上方2 Ω仍是两未知节点之间的支路。",
+          "en": "The crossing does not short A to B. Because the lower endpoints are grounded, A’s two 2 Ω branches are parallel and B’s two 6 Ω branches are parallel. The upper 2 Ω still links the unknown nodes."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "原图直接列两节点KCL",
+              "en": "Write KCL from the original branches"
+            },
+            "text": {
+              "zh": "保留两条对地支路分别列电流，有助于避免把斜接支路漏掉。",
+              "en": "Keep both ground branches explicitly to avoid omitting either diagonal."
+            },
+            "formula": "\\frac{V_A-10\\,\\mathrm V}{1\\,\\Omega}+\\frac{V_A}{2\\,\\Omega}+\\frac{V_A}{2\\,\\Omega}+\\frac{V_A-V_B}{2\\,\\Omega}=0"
+          },
+          {
+            "title": {
+              "zh": "右节点KCL与化简",
+              "en": "Right-node KCL and reduction"
+            },
+            "text": {
+              "zh": "右源上端已知为+2 V；右节点到该端的电流是(V_B−2 V)/(3 Ω)。以下化简式按伏特数值。",
+              "en": "The right source’s upper terminal is +2 V. Use the drop from B to that terminal. The reduced equations use numerical volt values."
+            },
+            "formula": "\\frac{V_B-2\\,\\mathrm V}{3\\,\\Omega}+\\frac{V_B}{6\\,\\Omega}+\\frac{V_B}{6\\,\\Omega}+\\frac{V_B-V_A}{2\\,\\Omega}=0\\quad\\Rightarrow\\quad\\begin{cases}5V_A-V_B=20\\\\-3V_A+7V_B=4\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "求节点电位并回到所求支路",
+              "en": "Return from node potentials to the requested branch"
+            },
+            "text": {
+              "zh": "联立得A=4.5 V、B=2.5 V，上方2 Ω从左到右压降2 V，故电流1 A。",
+              "en": "The potentials are 4.5 V and 2.5 V. The upper 2 Ω has a left-to-right 2 V drop."
+            },
+            "formula": "V_A=\\frac92\\,\\mathrm V,\\quad V_B=\\frac52\\,\\mathrm V,\\qquad i=\\frac{V_A-V_B}{2\\,\\Omega}=1\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$i=1\\,\\mathrm A$，方向与图示一致，从左向右。",
+          "en": "$i=1\\,\\mathrm A$, rightward as indicated."
+        },
+        "pitfalls": [
+          {
+            "zh": "两条斜线交叉处没有连接点，不要新增节点。",
+            "en": "Do not add a node at the unconnected diagonal crossing."
+          },
+          {
+            "zh": "右侧2 V源会吸收功率，不必强行规定所有电源都供能。",
+            "en": "The right 2 V source absorbs power; a source need not deliver it."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "完整MNA保留两只竖直和两只斜接电阻，独立复得4.5 V、2.5 V及1 A。10 V源提供55 W，2 V源吸收1/3 W，七只电阻共耗散164/3 W，功率严格平衡。第333页附录2-14为1 A。",
+            "en": "Full MNA retains all four ground branches and reproduces 4.5 V, 2.5 V and 1 A. The 10 V source supplies 55 W, the 2 V source absorbs 1/3 W, and the seven resistors dissipate 164/3 W. Power balances exactly and Appendix 2-14 lists 1 A."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "nodes": {
+              "0": "0",
+              "L": "10",
+              "A": "9/2",
+              "B": "5/2",
+              "R": "2"
+            },
+            "voltageSourceCurrents": {
+              "V10": "-11/2",
+              "V2": "1/6"
+            },
+            "absorbedPowers": {
+              "R1": "121/4",
+              "Rupper": "2",
+              "RleftVertical": "81/8",
+              "RleftDiagonal": "81/8",
+              "RrightVertical": "25/24",
+              "RrightDiagonal": "25/24",
+              "R3": "1/12",
+              "V10": "-55",
+              "V2": "1/3"
+            },
+            "powerResidual": "0",
+            "matrixSize": 6,
+            "requestedCurrent": "1"
+          },
+          "appendixComparison": {
+            "status": "matched",
+            "reason": "Compared with the listed supplied-edition answer."
+          }
+        },
+        "figure": "ca-2-14-figure.png"
+      },
+      "CA-2-15": {
+        "id": "CA-2-15",
+        "bookId": "2-15",
+        "title": {
+          "zh": "电阻零功率先变成零节点电压",
+          "en": "Convert zero resistor power into a zero node potential"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "publisher": "电子工业出版社",
+          "year": 2020,
+          "isbn": "978-7-121-38191-1",
+          "printedPage": 62,
+          "pdfPage": 71,
+          "figurePrintedPage": 62,
+          "figurePdfPage": 71,
+          "figure": "题图2-13"
+        },
+        "statement": {
+          "zh": "电路如题图2-13所示，欲使3 Ω电阻的功率为零，则$R$应取何值？",
+          "en": "For Fig. 2-13, what value of $R$ makes the 3 Ω resistor dissipate zero power?"
+        },
+        "diagram": {
+          "alt": {
+            "zh": "底部地。左节点A经3 Ω接地，并由7 A源向上注入。A到B之间有R，另有1 A源由A到B。B右侧7 A源向下到地；中支路从B经1 Ω到6 V源上端C，电源上负下正，故C=−6 V。",
+            "en": "Bottom is grounded. A has 3 Ω to ground and a 7 A upward source. R joins A to B in parallel with a 1 A source from A to B. A right 7 A source runs downward from B to ground. The middle branch is 1 Ω from B to C, followed by a bottom-positive 6 V source, so C=−6 V."
+          }
+        },
+        "prerequisites": {
+          "zh": "正电阻零功率条件、节点KCL、反向极性的已知电位。",
+          "en": "Zero-power condition for a positive resistor, nodal KCL and a reversed known-voltage source."
+        },
+        "recognition": {
+          "zh": "3 Ω为有限正电阻，其功率为V_A²/(3 Ω)，零功率必须使V_A=0。先施加这个条件，再用节点电流求R；不要把3 Ω删成开路。",
+          "en": "A finite positive 3 Ω resistor has zero power only when V_A=0. Impose that condition and use KCL to design R; do not replace the resistor with an open circuit."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由零功率得到节点条件",
+              "en": "Impose the zero-power condition"
+            },
+            "text": {
+              "zh": "3 Ω的下端接地，所以电压就是V_A。6 V源下正上负，故上端C是−6 V。",
+              "en": "The 3 Ω voltage is V_A. The reversed 6 V source fixes C at −6 V."
+            },
+            "formula": "P_{3\\Omega}=\\frac{V_A^2}{3\\,\\Omega}=0\\quad\\Rightarrow\\quad V_A=0,\\qquad V_C=-6\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "节点A求R支路电流",
+              "en": "Find the R-branch current at A"
+            },
+            "text": {
+              "zh": "7 A进入A，其中1 A经上方源流向B；3 Ω中电流为零，剩下6 A只能经R由A流向B。",
+              "en": "Of the 7 A entering A, 1 A takes the upper source and zero takes the 3 Ω resistor. The remaining 6 A must flow from A to B through R."
+            },
+            "formula": "\\frac{V_A}{3\\,\\Omega}+\\frac{V_A-V_B}{R}+1\\,\\mathrm A-7\\,\\mathrm A=0\\quad\\Rightarrow\\quad\\frac{-V_B}{R}=6\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "节点B确定电位",
+              "en": "Determine B from its KCL"
+            },
+            "text": {
+              "zh": "R与1 A源共向B送入7 A，恰好被右侧向下7 A源取走，因此中间1 Ω支路电流为零，B与C等电位。",
+              "en": "The R branch and upper source deliver 7 A to B, exactly removed by the right current source. Hence the middle 1 Ω branch carries zero current and B equals C."
+            },
+            "formula": "-6\\,\\mathrm A-1\\,\\mathrm A+7\\,\\mathrm A+\\frac{V_B+6\\,\\mathrm V}{1\\,\\Omega}=0\\quad\\Rightarrow\\quad V_B=-6\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "由欧姆定律得到唯一正电阻",
+              "en": "Obtain the unique positive resistance"
+            },
+            "text": {
+              "zh": "R上电压为0−(−6)=6 V，电流6 A，故R=1 Ω。原图3 Ω保留在电路内，只是其电压和电流均为零。",
+              "en": "R has 6 V across it and carries 6 A, giving 1 Ω. The 3 Ω remains physically connected with zero voltage and current."
+            },
+            "formula": "R=\\frac{V_A-V_B}{6\\,\\mathrm A}=\\frac{6\\,\\mathrm V}{6\\,\\mathrm A}=1\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "$R=1\\,\\Omega$。此时3 Ω两端电压与电流均为零。",
+          "en": "$R=1\\,\\Omega$; the 3 Ω resistor then has zero voltage and current."
+        },
+        "pitfalls": [
+          {
+            "zh": "6 V源上端是−6 V；误读为+6 V会得出错误的负R。",
+            "en": "The upper terminal is −6 V; reversing it incorrectly produces a negative R."
+          },
+          {
+            "zh": "零功率条件不等于把该电阻开路或把整个电路电流置零。",
+            "en": "Zero resistor power does not mean disconnecting it or setting every circuit current to zero."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立对任意正R保留全部元件列节点方程，按R的欧姆数值得$V_A=\\frac{18(R-1)}{R+4}\\,\\mathrm V$，只在R=1 Ω时为0；另以R=1/2、1、2、7 Ω做精确MNA复核。R=1 Ω时R耗36 W，上方1 A源吸收6 W，右7 A源提供42 W，其他元件功率为0，总功率为0。第333页附录2-15为1 Ω。",
+            "en": "Independent original-circuit nodal equations give $V_A=\\frac{18(R-1)}{R+4}\\,\\mathrm V$ when R is numerical in ohms, vanishing uniquely at positive R=1 Ω. Exact MNA checks R=1/2, 1, 2 and 7 Ω. At the design point, R dissipates 36 W, the upper 1 A source absorbs 6 W and the right 7 A source supplies 42 W; all other powers vanish. Appendix 2-15 agrees."
+          },
+          "appendixPrintedPage": 333,
+          "appendixPdfPage": 342,
+          "results": {
+            "requiredR": 1,
+            "uniquePositiveSolution": true,
+            "parameterizedCases": [
+              {
+                "R": "1/2",
+                "nodes": {
+                  "0": "0",
+                  "A": "-2",
+                  "B": "-16/3",
+                  "C": "-6"
+                },
+                "voltageSourceCurrents": {
+                  "V6": "-2/3"
+                },
+                "absorbedPowers": {
+                  "R3": "4/3",
+                  "Runknown": "200/9",
+                  "R1": "4/9",
+                  "Ileft": "14",
+                  "Itop": "10/3",
+                  "Iright": "-112/3",
+                  "V6": "-4"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              },
+              {
+                "R": "1",
+                "nodes": {
+                  "0": "0",
+                  "A": "0",
+                  "B": "-6",
+                  "C": "-6"
+                },
+                "voltageSourceCurrents": {
+                  "V6": "0"
+                },
+                "absorbedPowers": {
+                  "R3": "0",
+                  "Runknown": "36",
+                  "R1": "0",
+                  "Ileft": "0",
+                  "Itop": "6",
+                  "Iright": "-42",
+                  "V6": "0"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              },
+              {
+                "R": "2",
+                "nodes": {
+                  "0": "0",
+                  "A": "3",
+                  "B": "-7",
+                  "C": "-6"
+                },
+                "voltageSourceCurrents": {
+                  "V6": "1"
+                },
+                "absorbedPowers": {
+                  "R3": "3",
+                  "Runknown": "50",
+                  "R1": "1",
+                  "Ileft": "-21",
+                  "Itop": "10",
+                  "Iright": "-49",
+                  "V6": "6"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              },
+              {
+                "R": "7",
+                "nodes": {
+                  "0": "0",
+                  "A": "108/11",
+                  "B": "-102/11",
+                  "C": "-6"
+                },
+                "voltageSourceCurrents": {
+                  "V6": "36/11"
+                },
+                "absorbedPowers": {
+                  "R3": "3888/121",
+                  "Runknown": "6300/121",
+                  "R1": "1296/121",
+                  "Ileft": "-756/11",
+                  "Itop": "210/11",
+                  "Iright": "-714/11",
+                  "V6": "216/11"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              }
+            ],
+            "zeroPowerCondition": "V_A=0; left KCL (V_A-V_B)/R=6; summed KCL V_A/3+V_B=-6"
+          },
+          "appendixComparison": {
+            "status": "matched",
+            "reason": "Compared with the listed supplied-edition answer."
+          }
+        },
+        "figure": "ca-2-15-figure.png"
       }
     }
   },
