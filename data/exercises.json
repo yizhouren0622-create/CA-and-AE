@@ -1967,8 +1967,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-21",
@@ -1977,8 +1978,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-22",
@@ -1987,8 +1989,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-23",
@@ -1997,8 +2000,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-24",
@@ -2018,8 +2022,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-26",
@@ -2028,8 +2033,9 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-27",
@@ -2049,8 +2055,9 @@
         "printedPage": 143,
         "pdfPage": 152,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-29",
@@ -2070,8 +2077,9 @@
         "printedPage": 143,
         "pdfPage": 152,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-31",
@@ -2091,8 +2099,9 @@
         "printedPage": 143,
         "pdfPage": 152,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：5.4–5.9（初值与一阶响应）",
+        "scopeLabelEn": "Required: §§5.4–5.9 (initial states and first-order responses)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-5-33",
@@ -2101,8 +2110,9 @@
         "printedPage": 143,
         "pdfPage": 152,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：5.10（脉冲波形与微分电路）",
+        "scopeLabelEn": "Extension: §5.10 (pulse shaping and differentiating circuits)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-5-34",
@@ -2111,8 +2121,9 @@
         "printedPage": 144,
         "pdfPage": 153,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：5.10（脉冲波形与微分电路）",
+        "scopeLabelEn": "Extension: §5.10 (pulse shaping and differentiating circuits)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-5-35",
@@ -2121,8 +2132,9 @@
         "printedPage": 144,
         "pdfPage": 153,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：5.11（工程应用；运放题与模电重叠）",
+        "scopeLabelEn": "Extension: §5.11 (engineering applications; op-amp overlap with Analog)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-5-36",
@@ -2131,8 +2143,9 @@
         "printedPage": 144,
         "pdfPage": 153,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：5.11（工程应用；运放题与模电重叠）",
+        "scopeLabelEn": "Extension: §5.11 (engineering applications; op-amp overlap with Analog)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-5-37",
@@ -2141,8 +2154,9 @@
         "printedPage": 144,
         "pdfPage": 153,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：5.11（工程应用；运放题与模电重叠）",
+        "scopeLabelEn": "Extension: §5.11 (engineering applications; op-amp overlap with Analog)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-6-1",
@@ -21820,6 +21834,1725 @@
           }
         ],
         "figure": "ca-5-19-figure.png"
+      },
+      "CA-5-20": {
+        "id": "CA-5-20",
+        "bookId": "5-20",
+        "title": {
+          "zh": "受控源先用KCL消去控制电流",
+          "en": "Eliminate the control current by KCL"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-16"
+        },
+        "statement": {
+          "zh": "求题图5-16所示电路在下列条件下$t\\ge0^+$时的$i_L(t)$：(1) $u_s(t)=0,i_L(0^-)=3\\,\\mathrm A$；(2) $u_s(t)=10\\,\\mathrm V,i_L(0^-)=0$；(3) $u_s(t)=20\\,\\mathrm V,i_L(0^-)=-1\\,\\mathrm A$。",
+          "en": "Find i_L(t) for t≥0 in Fig. 5-16: (1) u_s=0, i_L(0−)=3 A; (2) u_s=10 V, i_L(0−)=0; (3) u_s=20 V, i_L(0−)=−1 A."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "电压源上正，经1 Ω接1 H电感上端；受控源0.5i从该节点向下，控制电流i沿1 Ω向右，i_L向下。",
+            "en": "A top-positive source feeds the 1 H inductor through 1 Ω. The dependent source 0.5i points downward, with control i rightward through 1 Ω and i_L downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "受控电流源不能置零。先写i=i_L+0.5i，再写1 Ω和电感的KVL。",
+          "en": "Keep the dependent source active. Write i=i_L+0.5i before the resistor/inductor KVL."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "建立同一微分方程",
+              "en": "Derive one common ODE"
+            },
+            "text": {
+              "zh": "节点方程给i=2i_L。L=1 H，R=1 Ω，数值以秒、安培、伏特计。",
+              "en": "KCL gives i=2i_L. Use seconds, amperes and volts with L=1 H, R=1 Ω."
+            },
+            "formula": "\\frac{di_L}{dt}+2i_L=u_s,\\qquad\\tau=\\frac12\\,\\mathrm s,\\qquad i_L(\\infty)=\\frac{u_s}{2\\,\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "分别代三组初值",
+              "en": "Insert the three initial states"
+            },
+            "text": {
+              "zh": "每组使用终值加初终差的指数项，不能把第(3)问负初值改为正。",
+              "en": "Use final value plus initial-to-final difference. Retain the negative initial value in case (3)."
+            },
+            "formula": "i_L(t)=\\begin{cases}3e^{-2t}\\,\\mathrm A&\\text{case (1)}\\\\5(1-e^{-2t})\\,\\mathrm A&\\text{case (2)}\\\\(10-11e^{-2t})\\,\\mathrm A&\\text{case (3)}\\end{cases}"
+          }
+        ],
+        "answer": {
+          "zh": "三问依次为$3e^{-2t}$、$5(1-e^{-2t})$、$10-11e^{-2t}$ A，t以秒计。",
+          "en": "The three currents are $3e^{-2t}$, $5(1-e^{-2t})$, and $10-11e^{-2t}$ A, with t in seconds."
+        },
+        "pitfalls": [
+          {
+            "zh": "第(3)问电流先从−1 A上升再过零，过零时刻为ln(1.1)/2 s；受控源使等效衰减电阻不是原1 Ω。",
+            "en": "Case (3) starts at −1 A and crosses zero at ln(1.1)/2 s. The dependent source changes the effective decay resistance from the physical 1 Ω."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "equation": "diL/dt+2 iL=us",
+            "responsesA": [
+              "3 exp(-2t)",
+              "5(1-exp(-2t))",
+              "10-11exp(-2t)"
+            ],
+            "thirdZeroCrossingS": 0.04765508990216247,
+            "checks": "Original dependent-source KCL, resistor KVL and source/resistor/dependent/magnetic power at 9 states."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-20-response.svg"
+          }
+        ],
+        "figure": "ca-5-20-figure.png"
+      },
+      "CA-5-21": {
+        "id": "CA-5-21",
+        "bookId": "5-21",
+        "title": {
+          "zh": "开关断开后两侧各自一阶响应",
+          "en": "After opening, solve the two first-order sides separately"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-17"
+        },
+        "statement": {
+          "zh": "题图5-17所示电路在开关S打开前已达稳态，t=0时开关S打开，求$t\\ge0^+$时的$u_{ab}(t)$并给出其波形。",
+          "en": "The circuit in Fig. 5-17 is initially steady with S closed. S opens at t=0. Find and plot u_ab(t) for t≥0."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "2 V源经1 Ω到a，a以1 F接地；S连接a、b，b以2 Ω和1 H分别接地。",
+            "en": "A 2 V source feeds a through 1 Ω; 1 F connects a to ground. S links a to b, where 2 Ω and 1 H each connect to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "开关断开使两个储能元件分属独立子电路，u_ab是两个节点电压之差，不必解耦合二阶方程。",
+          "en": "Opening separates the two storage elements. u_ab is a difference of two independent node voltages, so no coupled second-order solution is needed."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "闭合稳态给初值",
+              "en": "Read the initial closed-switch DC state"
+            },
+            "text": {
+              "zh": "电感短路把a、b拉到零；电源经1 Ω送2 A进入电感。",
+              "en": "The inductor short grounds both nodes and carries 2 A from the 1 Ω branch."
+            },
+            "formula": "u_C(0^+)=0,\\qquad i_L(0^+)=2\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "分别写左右响应",
+              "en": "Write both separate responses"
+            },
+            "text": {
+              "zh": "左侧RC充电时间常数1 s；右侧RL放电时间常数1/2 s，b电压为负。",
+              "en": "The left RC charges with τ=1 s. The right RL decays with τ=1/2 s and negative node-b voltage."
+            },
+            "formula": "V_a=2(1-e^{-t})\\,\\mathrm V,\\qquad i_L=2e^{-2t}\\,\\mathrm A,\\qquad V_b=L\\frac{di_L}{dt}=-4e^{-2t}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "相减并检查非单调波形",
+              "en": "Subtract and inspect the nonmonotonic waveform"
+            },
+            "text": {
+              "zh": "u_ab从0−的0 V跳到0+的4 V，先降到7/4 V，再回升到2 V。储能电压、电流仍分别连续。",
+              "en": "u_ab jumps from 0 to 4 V, falls to 7/4 V and then rises to 2 V; capacitor voltage and inductor current remain continuous."
+            },
+            "formula": "u_{ab}=2-2e^{-t}+4e^{-2t}\\,\\mathrm V,\\qquad t_{min}=\\ln4\\,\\mathrm s"
+          }
+        ],
+        "answer": {
+          "zh": "$u_{ab}(t)=(2-2e^{-t}+4e^{-2t})\\,\\mathrm V$，最小值$1.75\\,\\mathrm V$在$t=\\ln4\\,\\mathrm s$。",
+          "en": "$u_{ab}(t)=(2-2e^{-t}+4e^{-2t})\\,\\mathrm V$; its 1.75 V minimum occurs at t=ln4 s."
+        },
+        "pitfalls": [
+          {
+            "zh": "u_ab不是电容本身的电压，可以跳变；右侧电感电流向下而其上端电压为负。",
+            "en": "u_ab is not a capacitor voltage and may jump. The decaying downward inductor current has a negative top-node voltage."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "initialVaV": 0,
+            "initialInductorA": 2,
+            "uab0plusV": 4,
+            "uabFinalV": 2,
+            "minimumTimeS": 1.3862943611198906,
+            "minimumV": "7/4",
+            "checks": "Independent RC and RL KCL plus each energy balance."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-21-response.svg"
+          }
+        ],
+        "figure": "ca-5-21-figure.png"
+      },
+      "CA-5-22": {
+        "id": "CA-5-22",
+        "bookId": "5-22",
+        "title": {
+          "zh": "输出含直接跃变，不能套电容连续性",
+          "en": "The output has feedthrough while capacitor voltage stays continuous"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-18"
+        },
+        "statement": {
+          "zh": "电路如题图5-18所示，开关S在t=0时刻闭合。已知$u_C(0^-)=1\\,\\mathrm V$，$t\\ge0^+$时$u_s(t)=1\\,\\mathrm V$，求电路中2 Ω电阻上的电压$u_o(t)$的零输入响应、零状态响应和全响应，并绘出它们的波形。",
+          "en": "In Fig. 5-18, S closes at t=0, u_C(0−)=1 V and u_s(t)=1 V for t≥0. Find and plot the zero-input, zero-state and full voltages across the 2 Ω resistor."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入左端经并联的1 Ω与2 F接输出右端，输出通过2 Ω接地；u_C左正右负，u_o上正。",
+            "en": "A parallel 1 Ω and 2 F links the source node to the output, which has 2 Ω to ground. u_C is positive left-to-right and u_o top-to-bottom."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "先把状态选为电容电压，输出u_o=u_s−u_C。零输入只去掉独立源，零状态只清掉初始储能。",
+          "en": "Choose capacitor voltage as the state: u_o=u_s−u_C. Zero-input removes the independent source; zero-state removes initial energy."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "建立状态方程",
+              "en": "Derive the state equation"
+            },
+            "text": {
+              "zh": "并联1 Ω电流与电容电流相加后流入右2 Ω。",
+              "en": "The 1 Ω and capacitor currents sum into the 2 Ω branch."
+            },
+            "formula": "2\\frac{du_C}{dt}+u_C=\\frac{u_s-u_C}{2}\\quad\\Rightarrow\\quad\\frac{du_C}{dt}+\\frac34u_C=\\frac14u_s,\\qquad\\tau=\\frac43\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "分别求两种分量",
+              "en": "Find both components"
+            },
+            "text": {
+              "zh": "零输入u_C从1 V衰减，输出取相反号；零状态u_C从0升到1/3 V，输出一开始即为1 V。",
+              "en": "For zero input the initially 1 V capacitor decays and output has the opposite sign. In zero state u_C rises to 1/3 V, while output starts at 1 V."
+            },
+            "formula": "u_{o,ZI}=-e^{-3t/4}\\,\\mathrm V,\\qquad u_{o,ZS}=\\left(\\frac23+\\frac13e^{-3t/4}\\right)\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "相加并核对初值",
+              "en": "Superpose and check the initial value"
+            },
+            "text": {
+              "zh": "两个分量在0+分别−1 V与+1 V，恰好抵消。",
+              "en": "The −1 V and +1 V component initial values cancel exactly."
+            },
+            "formula": "u_o=\\frac23(1-e^{-3t/4})\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "零输入$-e^{-3t/4}$ V；零状态$(2+e^{-3t/4})/3$ V；全响应$2(1-e^{-3t/4})/3$ V。",
+          "en": "Zero-input: $-e^{-3t/4}$ V; zero-state: $(2+e^{-3t/4})/3$ V; full: $2(1-e^{-3t/4})/3$ V."
+        },
+        "pitfalls": [
+          {
+            "zh": "保持连续的是u_C，不能误令零状态输出u_o(0+)=0；输入直接耦合会使电阻电压跳变。",
+            "en": "Continuity applies to u_C, not zero-state u_o. Direct source feedthrough permits a resistor-voltage jump."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "zero-input",
+          "zero-state",
+          "full",
+          "waveforms"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "tauS": "4/3",
+            "zeroInputV": "-exp(-3t/4)",
+            "zeroStateV": "2/3+(1/3)exp(-3t/4)",
+            "fullV": "(2/3)(1-exp(-3t/4))",
+            "checks": "Nine original parallel R-C branch KCL/power states; initial feedthrough cancels exactly."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-22-response.svg"
+          }
+        ],
+        "figure": "ca-5-22-figure.png"
+      },
+      "CA-5-23": {
+        "id": "CA-5-23",
+        "bookId": "5-23",
+        "title": {
+          "zh": "并联RC用同一时间常数拆分响应",
+          "en": "Split a parallel-RC response with one common time constant"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-19"
+        },
+        "statement": {
+          "zh": "题图5-19所示电路中$u_C(0^-)=2\\,\\mathrm V$，求$u_C(t)$的零输入响应、零状态响应和全响应，并绘出它们的波形。",
+          "en": "In Fig. 5-19, u_C(0−)=2 V. Find and plot its zero-input, zero-state and full responses."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "向上的2ε(t) A电流源与4 Ω、1 F并联，电容上正。",
+            "en": "An upward 2ε(t) A source is parallel with 4 Ω and a top-positive 1 F capacitor."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "零输入保留2 V初值；零状态由2 A×4 Ω确定8 V终值，时间常数都是4 s。",
+          "en": "Zero input retains the 2 V initial condition; zero state approaches 2 A × 4 Ω = 8 V. Both use τ=4 s."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "确定方程与极点",
+              "en": "Determine the ODE and pole"
+            },
+            "text": {
+              "zh": "电容向下电流加电阻向下电流等于源输入。",
+              "en": "Downward capacitor and resistor currents equal the injected source current."
+            },
+            "formula": "\\frac{du_C}{dt}+\\frac{u_C}{4}=2,\\qquad\\tau=4\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "写分量与总响应",
+              "en": "Write components and full response"
+            },
+            "text": {
+              "zh": "总响应从2 V单调升至8 V，两个分量相加可逐点检查。",
+              "en": "The full response rises monotonically from 2 to 8 V; the plotted components sum at every time."
+            },
+            "formula": "u_{C,ZI}=2e^{-t/4}\\,\\mathrm V,\\quad u_{C,ZS}=8(1-e^{-t/4})\\,\\mathrm V,\\quad u_C=(8-6e^{-t/4})\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "依次为$2e^{-t/4}$ V、$8(1-e^{-t/4})$ V、$(8-6e^{-t/4})$ V。",
+          "en": "The responses are $2e^{-t/4}$ V, $8(1-e^{-t/4})$ V and $(8-6e^{-t/4})$ V."
+        },
+        "pitfalls": [
+          {
+            "zh": "零输入的初值为2 V，零状态的初值为0；全响应系数8−2=6，而不是直接把两个终值相加。",
+            "en": "The component initial values are 2 V and zero. The full exponential difference is 8−2=6."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "zero-input",
+          "zero-state",
+          "full",
+          "waveforms"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "tauS": 4,
+            "zeroInputV": "2exp(-t/4)",
+            "zeroStateV": "8(1-exp(-t/4))",
+            "fullV": "8-6exp(-t/4)",
+            "checks": "Original parallel RC KCL and power."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-23-response.svg"
+          }
+        ],
+        "figure": "ca-5-23-figure.png"
+      },
+      "CA-5-25": {
+        "id": "CA-5-25",
+        "bookId": "5-25",
+        "title": {
+          "zh": "两开关换源，初始电流来自原电流源",
+          "en": "Two switches exchange sources without resetting current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 143,
+          "figurePdfPage": 152,
+          "figure": "题图5-21"
+        },
+        "statement": {
+          "zh": "题图5-21所示电路在t=0时已处于稳态，t=0时刻开关S₁闭合、S₂打开。(1)求$t\\ge0^+$时$i_L$的零输入响应、零状态响应和全响应，并绘出它们的波形。(2)若电路中电压源改为60 V，求$t\\ge0^+$时$i_L$的全响应。",
+          "en": "In Fig. 5-21 the circuit is initially steady. At t=0, S₁ closes and S₂ opens. (1) Find and plot the zero-input, zero-state and full i_L responses. (2) Replace the voltage source by 60 V and find the full response."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "30 V源经S₁和2 kΩ接中点，中点以2 kΩ接地，经另一2 kΩ接3 mH电感；15 mA向上源经S₂接中点。",
+            "en": "A 30 V source feeds the midpoint through S₁ and 2 kΩ. The midpoint has a 2 kΩ shunt and a 2 kΩ–3 mH branch. An upward 15 mA source joins it through S₂."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "原电压源被S₁隔离，初始电流由15 mA在两只2 kΩ间平分。换成60 V也不改变这个初值。",
+          "en": "S₁ initially isolates the voltage source. The 15 mA source splits equally into two 2 kΩ branches, so replacing 30 V by 60 V does not change initial current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "原稳态求初值",
+              "en": "Find the initial steady state"
+            },
+            "text": {
+              "zh": "原S₂闭合、S₁打开，电感在直流下短路。",
+              "en": "Initially S₂ is closed, S₁ open and the inductor is a DC short."
+            },
+            "formula": "i_L(0^+)=7.5\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "新电路求终值和时间常数",
+              "en": "Find the new final value and time constant"
+            },
+            "text": {
+              "zh": "电感端戴维南电压为15 V，电阻为2 kΩ加2 kΩ并联2 kΩ。",
+              "en": "The inductor sees a 15 V Thevenin source and 2 kΩ plus the parallel pair of 2 kΩ resistors."
+            },
+            "formula": "R_{th}=3\\,\\mathrm{k\\Omega},\\quad\\tau=\\frac{3\\,\\mathrm{mH}}{3\\,\\mathrm{k\\Omega}}=1\\,\\mathrm{\\mu s},\\quad i_L(\\infty)=5\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "第(1)问三种响应",
+              "en": "Three responses for part (1)"
+            },
+            "text": {
+              "zh": "t以秒计。全响应从7.5 mA降到5 mA。",
+              "en": "With t in seconds, the full response falls from 7.5 to 5 mA."
+            },
+            "formula": "i_{L,ZI}=7.5e^{-10^6t}\\,\\mathrm{mA},\\quad i_{L,ZS}=5(1-e^{-10^6t})\\,\\mathrm{mA},\\quad i_L=(5+2.5e^{-10^6t})\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "第(2)问只改变终值",
+              "en": "Change only the final value in part (2)"
+            },
+            "text": {
+              "zh": "60 V使终值翻倍为10 mA，时间常数和7.5 mA初值均不变。",
+              "en": "60 V doubles the final value to 10 mA while τ and the 7.5 mA initial value stay fixed."
+            },
+            "formula": "i_L=(10-2.5e^{-10^6t})\\,\\mathrm{mA}"
+          }
+        ],
+        "answer": {
+          "zh": "第(1)问如上三式；第(2)问i_L=(10−2.5e^(−10⁶t)) mA。τ=1 μs。",
+          "en": "Part (1) is given by the three expressions above; part (2) is i_L=(10−2.5e^(−10⁶t)) mA. τ=1 μs."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把原15 mA源留在换路后，也不能直接用3 mH除2 kΩ；等效电阻须从电感端完整看入。",
+            "en": "Remove the disconnected 15 mA source after switching and find resistance from the inductor port, rather than using just one 2 kΩ resistor."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-zero-input",
+          "1-zero-state",
+          "1-full",
+          "1-waveforms",
+          "2-full"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "initialMNA": {
+              "nodes": {
+                "0": "0",
+                "A": "15",
+                "L": "0"
+              },
+              "voltageSourceCurrents": {
+                "Lshort": "3/400"
+              },
+              "absorbedPowers": {
+                "shunt": "9/80",
+                "series": "9/80",
+                "I": "-9/40",
+                "Lshort": "0"
+              },
+              "powerResidual": "0",
+              "matrixSize": 3
+            },
+            "initialA": "3/400",
+            "timeConstantS": "1/1000000",
+            "finalAt30VA": "1/200",
+            "finalAt60VA": "1/100",
+            "checks": "Initial current-source DC MNA; two post-switch DC MNA and six transient node states."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-25-response.svg"
+          }
+        ],
+        "figure": "ca-5-25-figure.png"
+      },
+      "CA-5-26": {
+        "id": "CA-5-26",
+        "bookId": "5-26",
+        "title": {
+          "zh": "受控电压源不是一只普通串联电阻",
+          "en": "A controlled voltage source is not an ordinary series resistor"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 143,
+          "figurePdfPage": 152,
+          "figure": "题图5-22"
+        },
+        "statement": {
+          "zh": "题图5-22所示含受控源的电路原已处于稳态，t=0时刻控制系数r突然由10 Ω变为5 Ω，求$t\\ge0^+$时的$u_C(t)$。",
+          "en": "The dependent-source circuit in Fig. 5-22 is initially steady. At t=0, control coefficient r changes from 10 Ω to 5 Ω. Find u_C(t) for t≥0."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "20 V源、10 Ω及左正右负的ri受控电压源串联接电容上节点；5 Ω与0.4 F电容并联，控制电流i只通过5 Ω向下。",
+            "en": "A 20 V source, 10 Ω and a left-positive ri source feed the capacitor node. The 5 Ω and 0.4 F are parallel; control i is only the downward 5 Ω resistor current."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "控制电流是u_C/5，而不是给电容充电的总输入电流。先按原r求初值，再按新r写KCL。",
+          "en": "The control current is u_C/5, not the total charging current. Find the initial state with old r, then write KCL with new r."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "原直流状态",
+              "en": "Original DC state"
+            },
+            "text": {
+              "zh": "电容开路后整个串联通路电流为20/(10+10+5)=0.8 A。",
+              "en": "With the capacitor open at DC, current is 20/(10+10+5)=0.8 A."
+            },
+            "formula": "u_C(0^+)=u_C(0^-)=4\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "新r下直接写原拓扑方程",
+              "en": "Write the original-topology equation with new r"
+            },
+            "text": {
+              "zh": "源支路电流由20−u_C−r(u_C/5)除10得到。",
+              "en": "The source branch current is [20−u_C−r(u_C/5)] divided by 10."
+            },
+            "formula": "0.4\\frac{du_C}{dt}+\\frac{u_C}{5}=\\frac{20-u_C-5(u_C/5)}{10}\\quad\\Rightarrow\\quad\\frac{du_C}{dt}+u_C=5"
+          },
+          {
+            "title": {
+              "zh": "测试源复核时间常数",
+              "en": "Cross-check τ with a port test"
+            },
+            "text": {
+              "zh": "独立20 V源置零、受控源保留。端口加1 V，5 Ω吸0.2 A，左支路再吸0.2 A，因此等效电阻2.5 Ω。",
+              "en": "Zero the independent source and retain control. A 1 V port test draws 0.2 A through 5 Ω plus 0.2 A through the left path, giving 2.5 Ω."
+            },
+            "formula": "R_{eq}=2.5\\,\\Omega,\\quad\\tau=(0.4\\,\\mathrm F)(2.5\\,\\Omega)=1\\,\\mathrm s,\\quad u_C(t)=(5-e^{-t})\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_C(t)=(5-e^{-t})\\,\\mathrm V$，从4 V升到5 V，$\\tau=1\\,\\mathrm s$。",
+          "en": "$u_C(t)=(5-e^{-t})\\,\\mathrm V$, rising from 4 to 5 V with τ=1 s."
+        },
+        "pitfalls": [
+          {
+            "zh": "若把r当普通串联电阻，会错误算出τ=1.5 s；该错误忽略了电容支路与控制支路电流不同。",
+            "en": "Treating r as a series resistor gives an incorrect 1.5 s time constant because capacitor and control-branch currents differ."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "initialV": 4,
+            "finalV": 5,
+            "portTestOhm": "5/2",
+            "tauS": 1,
+            "responseV": "5-exp(-t)",
+            "checks": "Original CCVS law, capacitor KCL, total power and independent 1-V test source; treating r as ordinary series resistance would be wrong."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-26-response.svg"
+          }
+        ],
+        "figure": "ca-5-26-figure.png"
+      },
+      "CA-5-28": {
+        "id": "CA-5-28",
+        "bookId": "5-28",
+        "title": {
+          "zh": "开关闭合把两个储能支路分开",
+          "en": "Closing separates the two storage branches"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 143,
+          "pdfPage": 152,
+          "figurePrintedPage": 143,
+          "figurePdfPage": 152,
+          "figure": "题图5-24"
+        },
+        "statement": {
+          "zh": "题图5-24所示电路在开关S闭合前已达稳态，求开关闭合后流过开关的电流i(t)。",
+          "en": "The circuit in Fig. 5-24 is steady before S closes. Find the switch current afterward."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "U_s经L、R₁到中点，中点经R₂、C回地；开关将中点接地，i沿开关向下。",
+            "en": "U_s feeds L and R₁ to the midpoint, then R₂ and C to ground. The switch grounds the midpoint, with i downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "原直流电流为零，电容充至U_s。闭合后左侧RL建立电流，右侧RC放电，两者都流入开关。",
+          "en": "Initially DC current is zero and C is charged to U_s. After closure, the left RL current builds while the right RC discharges; both enter the switch."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "分别保留初始储能",
+              "en": "Keep the two initial states"
+            },
+            "text": {
+              "zh": "电感初流0，电容初压U_s，闭合后两支路互不耦合。",
+              "en": "The initial inductor current is zero and capacitor voltage U_s. The branches are uncoupled after closure."
+            },
+            "formula": "i_L(t)=\\frac{U_s}{R_1}(1-e^{-R_1t/L}),\\qquad u_C(t)=U_se^{-t/(R_2C)}"
+          },
+          {
+            "title": {
+              "zh": "开关节点相加",
+              "en": "Sum currents at the switch node"
+            },
+            "text": {
+              "zh": "右侧电流从带正电的电容经R₂流回中点，与左支路一起沿开关向下。",
+              "en": "The right current returns from the charged capacitor through R₂ to the midpoint, adding to the left branch current."
+            },
+            "formula": "i(t)=\\frac{U_s}{R_1}(1-e^{-R_1t/L})+\\frac{U_s}{R_2}e^{-t/(R_2C)}"
+          }
+        ],
+        "answer": {
+          "zh": "$i(t)=\\frac{U_s}{R_1}(1-e^{-R_1t/L})+\\frac{U_s}{R_2}e^{-t/(R_2C)}$。",
+          "en": "$i(t)=\\frac{U_s}{R_1}(1-e^{-R_1t/L})+\\frac{U_s}{R_2}e^{-t/(R_2C)}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "两个指数均应衰减，附录第一项指数漏印负号，不能照抄成增长；开关电流可从0跳到U_s/R₂，不能把电感连续性错误套给开关总电流。",
+            "en": "Both exponentials decay; the appendix omits the first exponent’s minus sign. Switch current can jump from zero to U_s/R₂; inductor continuity does not apply to their sum."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "switch-current"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "formula": "Us/R1*(1-exp(-R1*t/L))+Us/R2*exp(-t/(R2*C))",
+            "checks": "Separate loop KVL, capacitor KCL, switch-current sum at nine independent states; both positive passive natural decay constants."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "figure": "ca-5-28-figure.png"
+      },
+      "CA-5-30": {
+        "id": "CA-5-30",
+        "bookId": "5-30",
+        "title": {
+          "zh": "第二次换路从第一段的实际末值接续",
+          "en": "Start the second switching stage at the actual first-stage endpoint"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 143,
+          "pdfPage": 152,
+          "figurePrintedPage": 143,
+          "figurePdfPage": 152,
+          "figure": "题图5-26"
+        },
+        "statement": {
+          "zh": "电路如题图5-26所示，开关S₁和S₂分别处于断开和闭合状态，此时电路已达到稳态。t=0时S₁闭合；经过1 s后S₁和S₂同时断开，此后一直保持这一状态。试求$0\\le t\\le1\\,\\mathrm s$和$t>1\\,\\mathrm s$时的i(t)。",
+          "en": "In Fig. 5-26, S₁ is initially open and S₂ closed at steady state. S₁ closes at t=0. After 1 s both S₁ and S₂ open and remain open. Find i(t) on both time intervals."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左10 V经2 Ω到节点（3 Ω接地），再经0.8 Ω、S₁到电感2 H上端A；A有3 Ω到地。A到B有9 Ω及A→B的8 A源并联，S₂跨A、B，B以6 Ω接地。",
+            "en": "The left 10 V source feeds 2 Ω, a node shunted by 3 Ω, then 0.8 Ω and S₁ to node A above 2 H. A has 3 Ω to ground. Between A and B are 9 Ω, an 8 A source A→B and S₂ in parallel. B has 6 Ω to ground."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "每个开关区间重新求戴维南电路，电感电流在1 s连续。第二段终值为负，不能丢掉8 A源的方向。",
+          "en": "Recompute the Thevenin equivalent in each switch state and enforce current continuity at 1 s. The second final current is negative."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "初态及第一段",
+              "en": "Initial state and first interval"
+            },
+            "text": {
+              "zh": "原S₂短路使右源局部循环，电感初流为0。S₁闭合、S₂仍闭合时，电感端U_th=3 V、R_th=1 Ω。",
+              "en": "Initially the right source circulates through S₂ and i(0)=0. With both switches closed, the inductor sees U_th=3 V, R_th=1 Ω."
+            },
+            "formula": "i(t)=3(1-e^{-t/2})\\,\\mathrm A\\quad(0\\le t\\le1\\,\\mathrm s),\\qquad i_1=3(1-e^{-1/2})\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "第二段的新等效",
+              "en": "New equivalent for the second interval"
+            },
+            "text": {
+              "zh": "左侧已隔离。电流源置零后看入电阻为3 Ω并联(9+6) Ω；原源方向使最终电感电流向上4.8 A。",
+              "en": "The left network is disconnected. Zeroing the current source gives 3 Ω in parallel with 15 Ω. The source direction produces a final upward 4.8 A current."
+            },
+            "formula": "R_{th}=\\frac52\\,\\Omega,\\quad\\tau=\\frac45\\,\\mathrm s,\\quad i(\\infty)=-\\frac{24}{5}\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "用精确接续值写第二段",
+              "en": "Keep the exact joining value"
+            },
+            "text": {
+              "zh": "时间必须改用t−1；不提前把指数幅值舍入为5.98。",
+              "en": "Use elapsed time t−1 and retain the exact amplitude rather than rounding it to 5.98."
+            },
+            "formula": "i(t)=\\left[-\\frac{24}{5}+\\left(\\frac{24}{5}+3(1-e^{-1/2})\\right)e^{-5(t-1)/4}\\right]\\,\\mathrm A\\quad(t>1\\,\\mathrm s)"
+          }
+        ],
+        "answer": {
+          "zh": "第一段3(1−e^(−t/2)) A；第二段见上式。i(1)=1.180408 A，之后连续下降并反向到−4.8 A。",
+          "en": "First interval: 3(1−e^(−t/2)) A. The second expression above joins at i(1)=1.180408 A, then falls continuously and reverses toward −4.8 A."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把1 s时电流当成第一段终值3 A；若用附录舍入的5.98，会在接续处产生小的不连续。",
+            "en": "Do not replace i(1) by the first-stage asymptote 3 A. The appendix’s rounded 5.98 creates a small artificial joining discontinuity."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "0-to-1s",
+          "after-1s"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "iAt1A": 1.1804080208620997,
+            "firstTauS": 2,
+            "secondTauS": "4/5",
+            "secondFinalA": "-24/5",
+            "exactSecondAmplitude": "24/5+3(1-exp(-1/2))",
+            "roundedAppendixAmplitude": 5.98
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-30-response.svg"
+          }
+        ],
+        "figure": "ca-5-30-figure.png"
+      },
+      "CA-5-32": {
+        "id": "CA-5-32",
+        "bookId": "5-32",
+        "title": {
+          "zh": "电源阶跃时电阻电流跳变，电感电流连续",
+          "en": "A source step jumps resistor current while inductor current stays continuous"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 143,
+          "pdfPage": 152,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-28"
+        },
+        "statement": {
+          "zh": "题图5-28(a)所示电路，$i_L(0^-)=0.5\\,\\mathrm A$，$i_s(t)$的波形如题图5-28(b)所示。求$0^+\\le t<1\\,\\mathrm s$和$1\\,\\mathrm s\\le t<2\\,\\mathrm s$时的$i_R(t)$并绘出其波形。",
+          "en": "In Fig. 5-28, i_L(0−)=0.5 A and i_s(t) is given in (b). Find and plot i_R for 0≤t<1 s and 1≤t<2 s."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "向上源与3 Ω、3 H并联，电阻和电感电流向下；i_s在0～1 s为2 A，1～2 s为−1 A。",
+            "en": "An upward current source is parallel with 3 Ω and 3 H, with both passive branch currents downward. i_s=2 A on 0–1 s and −1 A on 1–2 s."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "先求连续的电感状态，再用i_R=i_s−i_L求电阻电流。源在1 s跳−3 A，电阻电流也必须跳−3 A。",
+          "en": "Find the continuous inductor current, then subtract it from i_s. At 1 s the source and resistor currents both jump by −3 A."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "第一段",
+              "en": "First interval"
+            },
+            "text": {
+              "zh": "L/R=1 s，电感从0.5 A趋向2 A。",
+              "en": "L/R=1 s and the inductor approaches 2 A from 0.5 A."
+            },
+            "formula": "i_L=2-1.5e^{-t}\\,\\mathrm A,\\qquad i_R=1.5e^{-t}\\,\\mathrm A\\quad(0\\le t<1\\,\\mathrm s)"
+          },
+          {
+            "title": {
+              "zh": "第二段从连续电流开始",
+              "en": "Join with continuous inductor current"
+            },
+            "text": {
+              "zh": "在1 s保留i_L=2−1.5/e，新终值为−1 A。",
+              "en": "At 1 s retain i_L=2−1.5/e; the new final value is −1 A."
+            },
+            "formula": "i_L=-1+\\left(3-\\frac{1.5}{e}\\right)e^{-(t-1)}\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "输出并画跳变",
+              "en": "Find the output and its jump"
+            },
+            "text": {
+              "zh": "第二段电阻电流为负。精确幅值约−2.44818 A，附录−2.45 A为舍入。",
+              "en": "The second resistor current is negative. Its exact amplitude is about −2.44818 A; the listed −2.45 A is rounded."
+            },
+            "formula": "i_R=-\\left(3-\\frac{1.5}{e}\\right)e^{-(t-1)}\\,\\mathrm A\\quad(1\\le t<2\\,\\mathrm s)"
+          }
+        ],
+        "answer": {
+          "zh": "$i_R=1.5e^{-t}\\,\\mathrm A$（0～1 s）；$i_R=-(3-1.5/e)e^{-(t-1)}\\,\\mathrm A$（1～2 s）。",
+          "en": "$i_R=1.5e^{-t}\\,\\mathrm A$ on 0–1 s, then $i_R=-(3-1.5/e)e^{-(t-1)}\\,\\mathrm A$ on 1–2 s."
+        },
+        "pitfalls": [
+          {
+            "zh": "电阻电流没有连续性要求；仅讨论题设0～2 s，不擅自延长输入波形。",
+            "en": "Resistor current need not be continuous. Do not extrapolate the specified input beyond the requested 0–2 s."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "first-interval",
+          "second-interval",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "iLAt1A": 1.4481808382428365,
+            "secondResistorAmplitudeA": -2.4481808382428367,
+            "resistorJumpA": -3,
+            "checks": "Original KCL, Ldi/dt=R iR, current continuity and exact -3 A resistor jump. Appendix -2.45 is a rounding."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-32-response.svg"
+          }
+        ],
+        "figure": "ca-5-32-figure.png"
+      },
+      "CA-5-33": {
+        "id": "CA-5-33",
+        "bookId": "5-33",
+        "title": {
+          "zh": "窄脉冲高通输出含负向尾巴",
+          "en": "A high-pass response to narrow pulses includes negative tails"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 143,
+          "pdfPage": 152,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-29"
+        },
+        "statement": {
+          "zh": "对题图5-29(a)所示电路，$u_{in}$波形如题图5-29(b)所示。假设$T=5RC$，试定性绘出$u_o$的波形。",
+          "en": "For the circuit and periodic input in Fig. 5-29, assume T=5RC and qualitatively sketch u_o."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入经串联C到R上端，R接下端公共线，u_o跨R；正矩形脉冲幅度U、周期T、宽度0.01T。",
+            "en": "Input passes through series C to R, with output across R. Positive rectangular pulses have amplitude U, period T and width 0.01T."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "串联电容、取电阻输出是高通；输入边沿使输出同幅跳变，边沿之间按RC指数回到零。脉宽只有0.05RC。",
+          "en": "Series C with resistor output is high-pass. Each input edge causes an equal output jump; between edges it decays toward zero. Pulse width is only 0.05RC."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "标出时间尺度和边沿规则",
+              "en": "Identify time scales and edge rules"
+            },
+            "text": {
+              "zh": "令τ=RC，d=0.01T=0.05τ；电容电压连续给Δu_o=Δu_in。",
+              "en": "Let τ=RC and d=0.05τ. Capacitor continuity gives Δu_o=Δu_in."
+            },
+            "formula": "T=5\\tau,\\qquad d=0.05\\tau,\\qquad\\frac{du_o}{dt}+\\frac{u_o}{\\tau}=0\\quad\\text{between edges}"
+          },
+          {
+            "title": {
+              "zh": "给出零初始能量首脉冲示例",
+              "en": "Show the first pulse from zero initial energy"
+            },
+            "text": {
+              "zh": "原题未给初始电容电压，图示首脉冲取零储能作为明确示例；不把它冒充唯一初始波形。",
+              "en": "No initial capacitor voltage is specified. The first-pulse illustration explicitly assumes zero initial energy."
+            },
+            "formula": "u_o=\\begin{cases}Ue^{-t/\\tau}&0\\le t<d\\\\-U(1-e^{-d/\\tau})e^{-(t-d)/\\tau}&d\\le t<T\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "长期周期波形",
+              "en": "Long-time periodic waveform"
+            },
+            "text": {
+              "zh": "正脉冲顶只从约U降到0.951U，落沿后有约−0.049U尾巴；下一个脉冲前尾巴接近零。任意有限初态会逐周期衰减。",
+              "en": "The positive top falls only to about 0.951U, followed by an approximately −0.049U tail that nearly decays before the next rise. Finite initial-state effects decay each period."
+            },
+            "formula": "a=e^{-0.05},\\quad b=e^{-4.95},\\quad u_{o,rise^+}=\\frac{1-b}{1-ab}U,\\quad u_{o,fall^+}=a\\frac{1-b}{1-ab}U-U"
+          }
+        ],
+        "answer": {
+          "zh": "输出是几乎保持高度的短正脉冲，落沿后接小负向指数尾巴；解析图给出零初始能量示例和稳定周期特征。",
+          "en": "The output has short, nearly level positive pulses followed by small negative exponential tails. The plot illustrates a zero-energy start and the approach to periodic behavior."
+        },
+        "pitfalls": [
+          {
+            "zh": "T比RC大不表示脉宽也比RC大；这里脉宽只有0.05RC，因此不能把正脉冲画成迅速消失的尖峰。",
+            "en": "Although T exceeds RC, the width is only 0.05RC; do not draw a vanishing positive spike. The unspecified initial state must be stated when plotting a first pulse."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "qualitative-waveform",
+          "initial-state-qualification"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "periodOverTau": 5,
+            "pulseWidthOverTau": 0.05,
+            "firstEndMinus": 0.951229424500714,
+            "firstEndPlus": -0.048770575499285984,
+            "periodicRisePlus": 0.9996521945755172,
+            "periodicFallPlus": -0.04910141825305492,
+            "checks": "Capacitor voltage continuity across both source edges; exact periodic recurrence. Plot includes an explicitly assumed zero-energy first pulse."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-33-response.svg"
+          }
+        ],
+        "figure": "ca-5-33-figure.png"
+      },
+      "CA-5-34": {
+        "id": "CA-5-34",
+        "bookId": "5-34",
+        "title": {
+          "zh": "用脉宽和RL时间常数比较波形",
+          "en": "Compare pulse width with the RL time constant"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 144,
+          "pdfPage": 153,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-30"
+        },
+        "statement": {
+          "zh": "电路如题图5-30(a)所示，$u_{in}$为题图5-30(b)所示的矩形脉冲。试针对下列3种情况，定性绘出i(t)和u(t)的波形：(1) $T\\gg L/R$；(2) $T=L/R$；(3) $T\\ll L/R$。",
+          "en": "For the series-RL circuit and rectangular input in Fig. 5-30, sketch i(t) and inductor voltage u(t) for (1) T≫L/R, (2) T=L/R, and (3) T≪L/R."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入矩形脉冲幅度U，从0持续到T；R、L串联，i流入电感正端，u跨L上正。",
+            "en": "A pulse of amplitude U lasts from 0 to T across series R and L; i enters the positive inductor terminal and u is across L."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "先用一个分段公式，再改变T/τ观察。图前输入为零并取已稳态的无初能电感；若另有初始电流需另加自然分量。",
+          "en": "Use one piecewise formula and vary T/τ. The plotted zero-before-pulse steady state has zero initial current; another initial current would add a natural component."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "脉冲内外统一表达",
+              "en": "One expression for both pulse intervals"
+            },
+            "text": {
+              "zh": "τ=L/R。电感电流在0与T连续，电感电压在两边沿可跳变。",
+              "en": "Let τ=L/R. Current is continuous at both edges, while inductor voltage can jump."
+            },
+            "formula": "i(t)=\\begin{cases}\\frac UR(1-e^{-t/\\tau})&0\\le t<T\\\\\\frac UR(1-e^{-T/\\tau})e^{-(t-T)/\\tau}&t\\ge T\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "用KVL求电感电压",
+              "en": "Use KVL for inductor voltage"
+            },
+            "text": {
+              "zh": "脉冲撤去后u=−Ri，所以出现负向尾巴。",
+              "en": "After pulse removal, u=−Ri, producing the negative tail."
+            },
+            "formula": "u(t)=\\begin{cases}Ue^{-t/\\tau}&0\\le t<T\\\\-U(1-e^{-T/\\tau})e^{-(t-T)/\\tau}&t\\ge T\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "三种极限分别认图",
+              "en": "Recognize the three regimes"
+            },
+            "text": {
+              "zh": "(1)电流充分接近U/R，电压先降到近零，落沿跳到近−U；(2)脉冲末电流0.632U/R，落沿电压从0.368U跳到−0.632U；(3)电流近似线性小幅上升，脉冲内电感电压近U，随后小负尾巴。",
+              "en": "(1) Current nearly reaches U/R and voltage decays near zero before jumping near −U. (2) At T=τ, current is 0.632U/R and voltage jumps from 0.368U to −0.632U. (3) Current rises almost linearly by a small amount, with voltage near U followed by a small negative tail."
+            },
+            "formula": "T\\ll\\tau:\\quad i(T)\\approx\\frac{UT}{L},\\qquad u(T^+)\\approx-\\frac{UT}{\\tau}"
+          }
+        ],
+        "answer": {
+          "zh": "三种情形均由上述分段式确定，附图分别画T/τ=10、1、0.1的电流与电压归一化波形。",
+          "en": "The piecewise expressions cover all cases. The plot compares normalized current and voltage for T/τ=10, 1 and 0.1."
+        },
+        "pitfalls": [
+          {
+            "zh": "脉冲结束时电感电流不能立即归零；电压负向尾巴对应磁能释放，不是符号错误。",
+            "en": "Inductor current cannot vanish instantly at pulse removal. Negative voltage represents release of magnetic energy."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-current-voltage",
+          "2-current-voltage",
+          "3-current-voltage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "casesTOverTau": [
+              10,
+              1,
+              0.1
+            ],
+            "atOneTauCurrentNormalized": 0.6321205588285577,
+            "checks": "Before/after pulse KVL, inductor current continuity and voltage jump -U for all three width regimes."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-34-response.svg"
+          }
+        ],
+        "figure": "ca-5-34-figure.png"
+      },
+      "CA-5-35": {
+        "id": "CA-5-35",
+        "bookId": "5-35",
+        "title": {
+          "zh": "跟随器隔离源电阻，输出按RC高通响应",
+          "en": "The follower isolates source resistance from the high-pass load"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 144,
+          "pdfPage": 153,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-31"
+        },
+        "statement": {
+          "zh": "求题图5-31所示电路中的电压$u_x(t)$。设电容初始电压为零。",
+          "en": "Find u_x(t) in Fig. 5-31 with zero initial capacitor voltage."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "5ε(t) mA向上电流源与250 Ω并联，接理想电压跟随器同相端；输出经0.5 μF串联到200 Ω上端，u_x跨200 Ω上正。",
+            "en": "An upward 5ε(t) mA source and parallel 250 Ω feed an ideal voltage follower. Its output passes through 0.5 μF to a 200 Ω grounded load, with u_x top-positive."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "先求高输入阻抗跟随器的输出阶跃，再求串联C、取R输出的高通响应。",
+          "en": "First find the unloaded follower step, then apply the series-C, resistor-output high-pass response."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "输入阶跃的单位核对",
+              "en": "Check the input-step units"
+            },
+            "text": {
+              "zh": "理想运放输入不吸电流，因此5 mA全部流过250 Ω。",
+              "en": "The ideal input draws no current, so all 5 mA flows through 250 Ω."
+            },
+            "formula": "u_b(t)=(5\\,\\mathrm{mA})(250\\,\\Omega)\\varepsilon(t)=1.25\\varepsilon(t)\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "初终值与时间常数",
+              "en": "Determine endpoints and time constant"
+            },
+            "text": {
+              "zh": "零初压电容使u_x(0+)=1.25 V；终态电容开路使u_x∞=0。跟随器理想输出阻抗为零。",
+              "en": "The initially uncharged capacitor gives u_x(0+)=1.25 V, and the final open capacitor gives zero. The ideal follower has zero output resistance."
+            },
+            "formula": "\\tau=(200\\,\\Omega)(0.5\\,\\mathrm{\\mu F})=100\\,\\mathrm{\\mu s}"
+          },
+          {
+            "title": {
+              "zh": "输出并纠正附录单位",
+              "en": "Write the output and identify the appendix unit error"
+            },
+            "text": {
+              "zh": "原图得伏特，不是毫伏。附录1.25e^(−10⁴t)ε(t)mV的mV与原参数不相符。",
+              "en": "The original data give volts, not millivolts. The appendix prints mV, inconsistent with the source and resistance."
+            },
+            "formula": "u_x(t)=1.25e^{-10^4t}\\varepsilon(t)\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_x(t)=1.25e^{-10^4t}\\varepsilon(t)\\,\\mathrm V$。附录mV为单位差异，按原图应为V。",
+          "en": "$u_x(t)=1.25e^{-10^4t}\\varepsilon(t)\\,\\mathrm V$. The appendix mV unit conflicts with the original data; V is required."
+        },
+        "pitfalls": [
+          {
+            "zh": "250 Ω在缓冲器输入侧，不计入输出RC时间常数；输出电容电压连续，但电阻电压可跳变。",
+            "en": "The input-side 250 Ω does not enter the buffered output time constant. Capacitor voltage stays continuous while resistor voltage may jump."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "appendix-unit-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "bufferInputAndInitialOutputV": "5/4",
+            "tauS": "1/10000",
+            "response": "1.25 exp(-10000t) V",
+            "appendixDiscrepancy": "Appendix prints mV; original 5 mA times 250 ohm is 1.25 V, a 1000-fold unit error."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-35-response.svg"
+          }
+        ],
+        "figure": "ca-5-35-figure.png"
+      },
+      "CA-5-36": {
+        "id": "CA-5-36",
+        "bookId": "5-36",
+        "title": {
+          "zh": "串联反馈阻容产生比例项加积分项",
+          "en": "Series resistor-capacitor feedback adds proportional and integral terms"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 144,
+          "pdfPage": 153,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-32"
+        },
+        "statement": {
+          "zh": "题图5-32所示电路，已知电容初始储能为零，$u_s(t)=4e^{-2\\times10^4t}\\varepsilon(t)\\,\\mathrm V$，求电压$u_o(t)$。",
+          "en": "In Fig. 5-32 the capacitor initially stores zero energy and $u_s(t)=4e^{-2\\times10^4t}\\varepsilon(t)\\,\\mathrm V$. Find u_o(t)."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "理想运放同相端接地，输入经10 kΩ到反相端；反馈从反相端经1 kΩ再经0.1 μF串联到输出。",
+            "en": "The ideal op-amp non-inverting input is grounded. Input reaches the inverting node through 10 kΩ; feedback is a series 1 kΩ and 0.1 μF path to the output."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "理想负反馈使反相端虚地；反馈电流等于输入电流。反馈阻抗为电阻加电容，输出是比例项与积分项之和。",
+          "en": "Ideal feedback gives virtual ground. Feedback current equals input current, and the series impedance produces proportional plus integral terms."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由反馈电流推输出",
+              "en": "Derive output from feedback current"
+            },
+            "text": {
+              "zh": "初始电容电压为零，电容电压从输入电流积分得到。",
+              "en": "The capacitor starts uncharged and its voltage follows the integral of input current."
+            },
+            "formula": "u_o(t)=-\\frac{R_f}{R_{in}}u_s(t)-\\frac1{R_{in}C}\\int_0^t u_s(\\xi)\\,d\\xi"
+          },
+          {
+            "title": {
+              "zh": "代入指数并积分",
+              "en": "Insert and integrate the exponential"
+            },
+            "text": {
+              "zh": "R_f/R_in=0.1，1/(R_in C)=1000 s⁻¹，输入指数系数为20000 s⁻¹。",
+              "en": "The gain ratio is 0.1 and the integral coefficient 1000 s⁻¹; input decay rate is 20000 s⁻¹."
+            },
+            "formula": "u_o=-0.4e^{-20000t}-0.2(1-e^{-20000t})=-0.2(1+e^{-20000t})\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "检查初瞬及保持终值",
+              "en": "Check the initial jump and retained final voltage"
+            },
+            "text": {
+              "zh": "初瞬电容等压短接伴随模型留下1 kΩ反馈，输出−0.4 V；积分后电容保留电荷，输入归零而输出停在−0.2 V。",
+              "en": "Initially the zero-voltage capacitor leaves a 1 kΩ feedback path, giving −0.4 V. Stored feedback charge retains −0.2 V after input decays."
+            },
+            "formula": "u_o(0^+)=-0.4\\,\\mathrm V,\\qquad u_o(\\infty)=-0.2\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_o(t)=-0.2(1+e^{-2\\times10^4t})\\varepsilon(t)\\,\\mathrm V$。",
+          "en": "$u_o(t)=-0.2(1+e^{-2\\times10^4t})\\varepsilon(t)\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "反馈中的R与C是串联，不能误用普通并联一阶低通；初始储能为零不要求运放输出在0+为零。",
+            "en": "Feedback R and C are in series, not parallel. Zero initial capacitor energy does not require zero op-amp output at 0+."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "output-voltage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "initialV": "-2/5",
+            "finalV": "-1/5",
+            "response": "-0.2(1+exp(-20000t)) V",
+            "checks": "Virtual-ground input KCL, feedback-capacitor current integration and series feedback KVL at three exact amplitudes."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-36-response.svg"
+          }
+        ],
+        "figure": "ca-5-36-figure.png"
+      },
+      "CA-5-37": {
+        "id": "CA-5-37",
+        "bookId": "5-37",
+        "title": {
+          "zh": "继电器周期由两段阈值穿越时间相加",
+          "en": "Add the two threshold-crossing intervals for the relay period"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 144,
+          "pdfPage": 153,
+          "figurePrintedPage": 144,
+          "figurePdfPage": 153,
+          "figure": "题图5-33"
+        },
+        "statement": {
+          "zh": "题图5-33电路中，S表示一个电路继电器。假设电路已经处于S反复开关的稳定工作状态，若要使$i_L=0.9\\,\\mathrm A$时继电器开关闭合，$i_L=0.25\\,\\mathrm A$时继电器开关打开，试确定开关从闭合到打开、再从打开到闭合的时间周期T。",
+          "en": "In Fig. 5-33, S is a relay in stable repeated switching. It closes when i_L reaches 0.9 A and opens at 0.25 A. Find the period from closing to opening and back to closing."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "100 V经30 Ω到中点，中点经70 Ω和1/11 H电感接地；S闭合时中点经3 Ω接地。i_L向下。",
+            "en": "A 100 V source feeds 30 Ω, then a node feeding 70 Ω and 1/11 H to ground. Closing S adds a 3 Ω shunt at the midpoint. i_L is downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "初始状态、动态元件连续性、KCL/KVL及理想元件模型。",
+          "en": "Initial state, storage-element continuity, KCL/KVL and ideal-element models."
+        },
+        "recognition": {
+          "zh": "不是一个固定拓扑的周期正弦。分别用闭合、打开两套终值与时间常数求阈值穿越时间，再相加。按理想无延迟继电器模型。",
+          "en": "This is a two-topology cycle. Compute each threshold-crossing interval using its own final value and τ, then add them, assuming an ideal delay-free relay."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "闭合段从0.9 A降到0.25 A",
+              "en": "Closed interval: decay from 0.9 to 0.25 A"
+            },
+            "text": {
+              "zh": "闭合时从电感看入，戴维南电压100/11 V，电阻70+30∥3=800/11 Ω。",
+              "en": "When closed, the inductor sees U_th=100/11 V and R_th=70+(30∥3)=800/11 Ω."
+            },
+            "formula": "i_{\\infty,c}=\\frac18\\,\\mathrm A,\\quad\\tau_c=\\frac1{800}\\,\\mathrm s,\\quad t_c=\\frac1{800}\\ln\\frac{0.9-0.125}{0.25-0.125}=\\frac{\\ln6.2}{800}\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "打开段从0.25 A升到0.9 A",
+              "en": "Open interval: rise from 0.25 to 0.9 A"
+            },
+            "text": {
+              "zh": "打开后30 Ω与70 Ω串联，终值1 A，τ=1/1100 s。",
+              "en": "When open, the 30 Ω and 70 Ω are in series, giving final current 1 A and τ=1/1100 s."
+            },
+            "formula": "t_o=\\frac1{1100}\\ln\\frac{1-0.25}{1-0.9}=\\frac{\\ln7.5}{1100}\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "求完整周期",
+              "en": "Sum for the complete period"
+            },
+            "text": {
+              "zh": "每段都从上一个阈值起算，连续达到另一个阈值，形成稳定往复。",
+              "en": "Each interval starts at the preceding threshold and reaches the next continuously."
+            },
+            "formula": "T=t_c+t_o=\\frac{\\ln6.2}{800}+\\frac{\\ln7.5}{1100}\\,\\mathrm s\\approx4.112417\\,\\mathrm{ms}"
+          }
+        ],
+        "answer": {
+          "zh": "$T=\\frac{\\ln6.2}{800}+\\frac{\\ln7.5}{1100}\\,\\mathrm s\\approx4.11\\,\\mathrm{ms}$。",
+          "en": "$T=\\frac{\\ln6.2}{800}+\\frac{\\ln7.5}{1100}\\,\\mathrm s\\approx4.11\\,\\mathrm{ms}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "闭合时3 Ω是中点对地的分流支路，不能与30 Ω、70 Ω全串联；两个区间的τ不同。",
+            "en": "The 3 Ω branch shunts the midpoint when closed; it is not in series with both other resistors. The two intervals have different time constants."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "closed-duration",
+          "open-duration",
+          "period"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图建立节点或回路方程，检查初值、终值、连续性、受控源约束及能量；独立数值/精确有理数核验见本题结果。",
+            "en": "Original-topology node or loop equations check endpoints, continuity, dependent-source constraints and energy, with independent exact or numerical evaluation recorded below."
+          },
+          "results": {
+            "closedEquivalentOhm": "800/11",
+            "closedFinalA": "1/8",
+            "closedDurationS": 0.0022806866150638077,
+            "openDurationS": 0.001831730018674786,
+            "periodS": 0.0041124166337385935,
+            "checks": "Independent original midpoint KCL, both time constants and exact logarithmic threshold crossings; rounded appendix 4.11 ms agrees."
+          },
+          "appendixPrintedPage": 336,
+          "appendixPdfPage": 345,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "5-28附录第一指数漏负号，原拓扑给衰减而非增长；5-35附录mV与原图5 mA×250 Ω的1.25 V相差千倍；5-30、5-32保留指数的精确系数而不提前舍入；5-33/34附录未列答案。其余结果与附录相符。",
+              "en": "The 5-28 appendix omits the minus sign in the first exponent; the original passive RL branch decays. The 5-35 appendix unit mV differs by a factor of 1000 from the original 5 mA × 250 Ω = 1.25 V. Exercises 5-30 and 5-32 retain exact exponential coefficients. No appendix answer is listed for 5-33/34; other results agree."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "解析式波形，时间与纵轴单位分别标明；分段边界和储能变量连续性可直接对照。",
+              "en": "Analytic waveforms with explicit time and vertical-axis units, showing segment boundaries and storage-state continuity."
+            },
+            "caption": {
+              "zh": "由本题解析式绘制，不是SPICE仿真。",
+              "en": "Drawn from the derived analytic expressions, not a SPICE simulation."
+            },
+            "figure": "ca-5-37-response.svg"
+          }
+        ],
+        "figure": "ca-5-37-figure.png"
       }
     }
   },
