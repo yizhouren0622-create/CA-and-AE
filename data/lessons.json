@@ -452,7 +452,7 @@
     "id": "bjt",
     "zh": "BJT共射：直流、模型、交流",
     "en": "BJT common-emitter: DC, model, AC",
-    "scope": "5.1–5.3，不含5.2.5",
+    "scope": "5.1–5.3；排除教材小节5.2.5详细共集/共基放大，保留5.3性能比较",
     "source": "ch05.pptx 第1–53页及5.3，排除共集/共基5.2.5",
     "concept": "先检查发射结正偏、集电结反偏，建立放大区Q点。把基极偏置网络化为戴维南等效时，可保留基极电流引起的加载。交流计算使用该Q点对应的模型参数，不能把直流β、rbe与电阻档读数混同。",
     "concept_en": "Establish a forward-biased base-emitter junction and reverse-biased collector-base junction. A Thevenin bias equivalent can retain base-current loading. AC model parameters depend on the Q point; rbe is not simply an ohmmeter reading.",
@@ -460,22 +460,23 @@
       "I_B=\\frac{V_{\\rm Th}-V_{BE}}{R_{\\rm Th}+(\\beta+1)R_E}",
       "I_C=\\beta I_B,\\quad I_E=(\\beta+1)I_B",
       "V_{CE}=V_{CC}-I_CR_C-I_ER_E",
-      "A_v\\approx-\\frac{\\beta(R_C\\parallel R_L)}{r_{be}+(\\beta+1)R_E}\\quad\\text{(unbypassed emitter)}"
+      "A_v\\approx-\\frac{\\beta(R_C\\parallel R_L)}{r_{be}+(\\beta+1)R_E}\\quad\\text{(unbypassed emitter)}",
+      "r_{be}=r_{bb\\prime}+\\frac{(1+\\beta)V_T}{I_{EQ}},\\qquad A_{vs}=A_v\\frac{R_i}{R_{si}+R_i}"
     ],
     "steps": [
-      "直流电路中电容开路，求Q点并验放大区。",
+      "直流电路中电容开路；直接接在集电极上的负载仍参与Q点，电容耦合负载不参与。求Q点并验两结偏置。",
       "区分发射极电阻是否被交流旁路，写清rbe采用的参数定义。",
       "把耦合和旁路电容按题目频段处理，计算Ri、Ro和带载增益。",
-      "若要求源增益，再乘输入端分压；不练被排除的共集/共基5.2.5。"
+      "若要求源增益，再乘输入分压。教材小节5.2.5共集/共基详细推导不在范围内；习题5.2.5偏置设计在范围内，5.3组态性能比较仍需掌握。"
     ],
     "steps_en": [
-      "Open capacitors in the DC circuit and validate forward-active operation.",
+      "Open capacitors for DC. A directly connected collector load remains in the bias circuit; a capacitor-coupled load does not. Solve Q and check both junctions.",
       "Determine whether emitter resistance is bypassed for AC; state the rbe model.",
       "Handle coupling/bypass capacitors for the given band and compute loaded gain and port resistances.",
-      "Include source division when requested. Common-collector/common-base §5.2.5 is outside the route."
+      "For source gain,include input division. Detailed CC/CB derivations in textbook section5.2.5 are excluded; exercise5.2.5 is included CE bias design,and section5.3 configuration comparisons remain required."
     ],
-    "traps": "求得负的VCE或集电结正偏时，不能继续用IC = βIB声称处于放大区。没有旁路的RE不能从交流图中删掉。",
-    "traps_en": "A negative VCE or forward-biased collector junction invalidates the forward-active assumption. Do not remove an unbypassed emitter resistor from the AC model.",
+    "traps": "用两结偏置验工作区：NPN应VE<VB<VC，PNP相反；不能一看到负VCE就断言所有类型都失效。未旁路的RE须保留，求Ro时断开外接负载。未给小信号参数时，本项目按课件取r_bb′≈200 Ω、V_T≈26 mV并忽略厄利效应；数值需注明模型。",
+    "traps_en": "Check both junctions: NPN needs VE<VB<VC; PNP reverses this order. Negative VCE alone does not invalidate a PNP active point. Retain unbypassed RE and remove the external load for Ro. Unspecified small-signal parameters use the course estimates r_bb′≈200 Ω,V_T≈26 mV and no Early effect; label these assumptions.",
     "check": "基极戴维南2.7 V、20 kΩ，RE = 1 kΩ、β = 99、VBE = 0.7 V：IB = 16.667 μA。",
     "check_en": "For base Thevenin 2.7 V and 20 kilohms, RE = 1 kilohm, beta = 99 and VBE = 0.7 V: IB = 16.667 microamps.",
     "figure": null

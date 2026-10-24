@@ -29576,8 +29576,13 @@
         "pdfPage": 216,
         "priorityHomework": true,
         "assignedNote": "5.1.1",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.1.2",
@@ -29586,8 +29591,13 @@
         "printedPage": 183,
         "pdfPage": 216,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.1.3",
@@ -29597,8 +29607,13 @@
         "pdfPage": 216,
         "priorityHomework": true,
         "assignedNote": "5.1.3",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.1",
@@ -29607,8 +29622,13 @@
         "printedPage": 183,
         "pdfPage": 216,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.2",
@@ -29618,8 +29638,13 @@
         "pdfPage": 217,
         "priorityHomework": true,
         "assignedNote": "5.2.2",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.3",
@@ -29628,8 +29653,13 @@
         "printedPage": 184,
         "pdfPage": 217,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "混合范围：(a)(b)(d)共射要求；(c)共基和(e)共集为拓展",
+        "scopeLabelEn": "mixed: CE(a)(b)(d) required; CB(c) and CC(e) extensions",
+        "scopeMapping": {
+          "status": "mixed",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": "mixed: CE(a)(b)(d) required; CB(c) and CC(e) extensions"
+        }
       },
       {
         "id": "AE-5.2.4",
@@ -29639,8 +29669,13 @@
         "pdfPage": 217,
         "priorityHomework": true,
         "assignedNote": "5.2.4",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.5",
@@ -29649,8 +29684,13 @@
         "printedPage": 185,
         "pdfPage": 218,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：共射偏置设计5.2.4；本习题号不是被排除的小节号",
+        "scopeLabelEn": "required: CE bias design section5.2.4; this exercise ID is not the excluded section number",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.6",
@@ -29659,8 +29699,13 @@
         "printedPage": 185,
         "pdfPage": 218,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "混合范围：(a)(b)共射要求；(c)共集和(d)共基为拓展",
+        "scopeLabelEn": "mixed: CE(a)(b) required; CC(c) and CB(d) extensions",
+        "scopeMapping": {
+          "status": "mixed",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": "mixed: CE(a)(b) required; CC(c) and CB(d) extensions"
+        }
       },
       {
         "id": "AE-5.2.7",
@@ -29670,8 +29715,13 @@
         "pdfPage": 218,
         "priorityHomework": true,
         "assignedNote": "5.2.7(1)(2)(3)",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.8",
@@ -29681,8 +29731,13 @@
         "pdfPage": 219,
         "priorityHomework": true,
         "assignedNote": "5.2.8",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.9",
@@ -29691,8 +29746,13 @@
         "printedPage": 186,
         "pdfPage": 219,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.10",
@@ -29701,8 +29761,13 @@
         "printedPage": 186,
         "pdfPage": 219,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.11",
@@ -29711,8 +29776,13 @@
         "printedPage": 186,
         "pdfPage": 219,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：BJT 5.1、共射5.2.1～5.2.4",
+        "scopeLabelEn": "required: BJT section5.1 and CE sections5.2.1–5.2.4",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.12",
@@ -29721,8 +29791,13 @@
         "printedPage": 187,
         "pdfPage": 220,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围：共基放大（教材小节5.2.5，全书拓展）",
+        "scopeLabelEn": "outside exam scope: common base, textbook section5.2.5 extension",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.2.13",
@@ -29731,8 +29806,13 @@
         "printedPage": 187,
         "pdfPage": 220,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "混合范围：(1)(2)偏置和模型、(3)共射要求；(4)共基、(5)共集为拓展",
+        "scopeLabelEn": "mixed: bias/model(1)(2) and CE(3) required; CB(4) and CC(5) extensions",
+        "scopeMapping": {
+          "status": "mixed",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": "mixed: bias/model(1)(2) and CE(3) required; CB(4) and CC(5) extensions"
+        }
       },
       {
         "id": "AE-5.3.1",
@@ -29741,8 +29821,13 @@
         "printedPage": 187,
         "pdfPage": 220,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围：5.3.2三种组态性能比较",
+        "scopeLabelEn": "required: section5.3.2 comparison of configurations",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.4.1",
@@ -29751,8 +29836,13 @@
         "printedPage": 187,
         "pdfPage": 220,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围：BJT多级放大5.4，全书拓展",
+        "scopeLabelEn": "outside exam scope: BJT multistage section5.4 extension",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.4.2",
@@ -29761,8 +29851,13 @@
         "printedPage": 188,
         "pdfPage": 221,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围：BJT多级放大5.4，全书拓展",
+        "scopeLabelEn": "outside exam scope: BJT multistage section5.4 extension",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.4.3",
@@ -29771,8 +29866,13 @@
         "printedPage": 189,
         "pdfPage": 222,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围：BJT多级放大5.4，全书拓展",
+        "scopeLabelEn": "outside exam scope: BJT multistage section5.4 extension",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-5.4.4",
@@ -29781,8 +29881,13 @@
         "printedPage": 189,
         "pdfPage": 222,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "非考试范围：BJT多级放大5.4，全书拓展",
+        "scopeLabelEn": "outside exam scope: BJT multistage section5.4 extension",
+        "scopeMapping": {
+          "status": "outside",
+          "authority": "课程纲领5.1～5.3但排除教材小节5.2.5；教材目录PDF29，5.2.5为共集/共基，5.3.2为性能比较 / Course plan and textbook contents PDF29",
+          "subpartBoundary": ""
+        }
       },
       {
         "id": "AE-6.1.1",
@@ -44411,6 +44516,2888 @@
             "check": "Original exponents reread at high resolution. Part2 is at upper cutoff, not midband. Two different normalized low-pass rolloffs share the same upper half-power frequency but give different40kHz magnitudes. Ordinary out-of-band attenuation does not imply harmonic distortion of a lone sine."
           }
         }
+      },
+      "AE-4.4.4": {
+        "id": "AE-4.4.4",
+        "bookId": "4.4.4",
+        "title": {
+          "zh": "画交流等效时，电源与电容先正确替换",
+          "en": "Replace supplies and capacitors before drawing AC equivalents"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 148,
+          "pdfPage": 181,
+          "figurePrintedPage": 148,
+          "figurePdfPage": 181,
+          "figure": "图题4.4.4"
+        },
+        "statement": {
+          "zh": "设电路中各电容对交流信号均可视为短路。试分别画出图题4.4.4所示电路的小信号等效电路。",
+          "en": "Treat all capacitors as AC shorts and draw the small-signal equivalents for all circuits in Fig.4.4.4."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "三图分别为源极跟随器、共栅与漏栅反馈共源。独立直流电压源接交流地，MOS换成g_m v_gs电流源和r_o；体源短接消除体效应。",
+          "en": "The circuits are follower, common gate and feedback common source. Ground DC voltage sources and replace MOS by g_m v_gs and r_o; bulk-source ties eliminate body effect."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)源极输出",
+              "en": "(a) Source output"
+            },
+            "text": {
+              "zh": "漏极直接交流接地，r_o从源到地；R_s也从源到地。栅由v_s经R_si激励，V_GG置零，栅本身不吸电流。",
+              "en": "The drain is AC ground, placing r_o and R_s from source to ground. Gate is driven through R_si and V_GG is zeroed."
+            },
+            "formula": "(g_m+g_{ds}+1/R_s)v_o=g_mv_g,\\qquad v_{gs}=v_g-v_o"
+          },
+          {
+            "title": {
+              "zh": "(b)共栅源极输入",
+              "en": "(b) Source input with grounded gate"
+            },
+            "text": {
+              "zh": "栅接交流地，输入直接在源极，v_gs=−v_i。r_o仍跨漏源，不能错误接成漏到地；R_d从漏到地。",
+              "en": "Gate is AC-grounded and input is the source, so v_gs=−v_i. r_o remains between drain and source; R_d is drain-to-ground."
+            },
+            "formula": "\\frac{v_o}{R_d}+g_{ds}(v_o-v_i)-g_mv_i=0"
+          },
+          {
+            "title": {
+              "zh": "(c)保留漏栅反馈电阻",
+              "en": "(c) Retain drain-gate feedback"
+            },
+            "text": {
+              "zh": "源和体接地，输入电容短接到栅，输出电容短接到漏。R_g1在漏与栅之间，R_g2从栅到地；R_d、r_o和受控源从漏到地。图示给出全部连接。",
+              "en": "Source and bulk are grounded. R_g1 remains drain-to-gate and R_g2 gate-to-ground, with R_d,r_o and the controlled source connected from drain to ground."
+            },
+            "formula": "\\frac{v_o}{R_d}+g_{ds}v_o+g_mv_i+\\frac{v_o-v_i}{R_{g1}}=0"
+          }
+        ],
+        "answer": {
+          "zh": "三幅小信号等效图见配图；r_o可在明确忽略沟道长度调制时取∞。",
+          "en": "All three equivalents are drawn below; set r_o→∞ only when explicitly neglecting channel-length modulation."
+        },
+        "pitfalls": [
+          {
+            "zh": "电阻R_g1跨漏栅，不能同R_g2直接并联到地；(b)的r_o不能误接地。",
+            "en": "Do not ground drain-gate feedback or misconnect common-gate r_o."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-equivalent",
+          "b-equivalent",
+          "c-equivalent"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "checks": [
+              [
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "s": 0.7936507936507936
+                },
+                {
+                  "0": 0.0,
+                  "g": 0.0,
+                  "s": 1.0,
+                  "d": 9.181818181818182
+                },
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "d": -8.940298507462687
+                }
+              ],
+              [
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "s": 0.8571428571428572
+                },
+                {
+                  "0": 0.0,
+                  "g": 0.0,
+                  "s": 1.0,
+                  "d": 15.0
+                },
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "d": -14.737704918032785
+                }
+              ],
+              [
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "s": 0.625
+                },
+                {
+                  "0": 0.0,
+                  "g": 0.0,
+                  "s": 1.0,
+                  "d": 3.6666666666666665
+                },
+                {
+                  "0": 0.0,
+                  "g": 1.0,
+                  "d": -3.2857142857142856
+                }
+              ]
+            ],
+            "check": "Independently stamped MOS drain/source KCL verifies all three small-signal topologies over three parameter sets; drain-gate feedback resistor retained."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "三种原图包含源随、共栅和漏栅电阻反馈共源电路，体均接源。",
+            "en": "Three original circuits: follower, common gate and resistor-feedback common source, with bulk tied to source."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "三组交流等效电路；保留r_o和漏栅反馈支路，体源短接时无g_mb项。",
+              "en": "Three AC equivalents retaining r_o and drain-gate feedback, with no body-effect term when bulk and source are tied."
+            },
+            "caption": {
+              "zh": "三组交流等效电路；保留r_o和漏栅反馈支路，体源短接时无g_mb项。",
+              "en": "Three AC equivalents retaining r_o and drain-gate feedback, with no body-effect term when bulk and source are tied."
+            },
+            "figure": "ae-4.4.4-equivalents.svg"
+          }
+        ],
+        "figure": "ae-4.4.4-figure.png"
+      },
+      "AE-4.4.5": {
+        "id": "AE-4.4.5",
+        "bookId": "4.4.5",
+        "title": {
+          "zh": "恒流源定偏置，交流旁路只短掉它两端",
+          "en": "The current source fixes bias while bypassing only its own terminals"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 148,
+          "pdfPage": 181,
+          "figurePrintedPage": 149,
+          "figurePdfPage": 182,
+          "figure": "图题4.4.5"
+        },
+        "statement": {
+          "zh": "电路如图题4.4.5所示，设所有电容对信号而言可视为短路。已知V_DD=V_SS=12 V、R_g=1 MΩ、R_d=10 kΩ、R_s=1 kΩ、R_si=100 kΩ、R_L=30 kΩ。MOS管V_TN=1 V、K_n=1 mA/V²、λ=0。求A_v=v_o/v_i、A_vs=v_o/v_s、输入电阻R_i和输出电阻R_o。",
+          "en": "For Fig.4.4.5, capacitors are AC shorts. V_DD=V_SS=12 V,R_g=1 MΩ,R_d=10 kΩ,R_s=1 kΩ,R_si=100 kΩ,R_L=30 kΩ,V_TN=1 V,K_n=1 mA/V²,λ=0. Find A_v,A_vs,R_i,R_o."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "图中1 mA源定静态电流；C_s跨该电流源，不跨上方R_s，所以1 kΩ源退化仍保留在交流回路。",
+          "en": "The1 mA source fixes DC current. C_s bypasses that source, not the resistor above it, so1 kΩ degeneration remains."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "静态点和跨导",
+              "en": "Bias and transconductance"
+            },
+            "text": {
+              "zh": "栅0 V，ID=1 mA，Vov=1 V，VGS=2 V，源−2 V、漏2 V，VDS=4 V满足恒流区。",
+              "en": "At1 mA, Vov=1 V,VGS=2 V, source−2 V and drain2 V, giving VDS=4 V in saturation."
+            },
+            "formula": "g_m=2\\sqrt{K_nI_D}=2\\,\\mathrm{mS}"
+          },
+          {
+            "title": {
+              "zh": "带源退化的增益",
+              "en": "Gain with source degeneration"
+            },
+            "text": {
+              "zh": "有效漏负载10∥30=7.5 kΩ，分母1+g_mR_s=3。",
+              "en": "The drain load is7.5 kΩ and degeneration denominator3."
+            },
+            "formula": "A_v=-\\frac{g_m(R_d\\parallel R_L)}{1+g_mR_s}=-5,\\qquad A_{vs}=A_v\\frac{R_g}{R_g+R_{si}}=-\\frac{50}{11}"
+          },
+          {
+            "title": {
+              "zh": "输入与输出电阻",
+              "en": "Input and output resistance"
+            },
+            "text": {
+              "zh": "栅无电流，输入为R_g；输出电阻去掉负载、信号置零，λ=0使r_o∞。",
+              "en": "Gate current is zero. Remove the load and zero input for output resistance; λ=0 gives infinite device r_o."
+            },
+            "formula": "R_i=1\\,\\mathrm{M\\Omega},\\qquad R_o=R_d=10\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "A_v=−5，A_vs=−50/11≈−4.54545，R_i=1 MΩ，R_o=10 kΩ。",
+          "en": "A_v=−5,A_vs=−50/11≈−4.54545,R_i=1 MΩ,R_o=10 kΩ."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要把C_s误读为把R_s一起旁路；这会错误去掉分母3。",
+            "en": "Do not bypass R_s along with the current source or the denominator3 is lost."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "bias-check",
+          "Av",
+          "Avs",
+          "Ri",
+          "Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "ID_A": 0.001,
+            "VgsV": 2.0,
+            "VsV": -2.0,
+            "VdV": 2.0,
+            "VdsV": 4.0,
+            "gmS": 0.002,
+            "Av": -5.000000000000001,
+            "Avs": -4.545454545454545,
+            "RiOhm": 1000000.0,
+            "RoOhm": 10000.0,
+            "check": "Original 1 mA DC bias, saturation inequality and full source-degenerated nodal gain/test-source calculation."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "1 mA源位于源极1 kΩ电阻下方，C_s只跨电流源，输出经耦合电容接30 kΩ。",
+            "en": "The1 mA source is below the1 kΩ source resistor, with C_s only across the source; output is coupled to30 kΩ."
+          }
+        },
+        "figure": "ae-4.4.5-figure.png"
+      },
+      "AE-4.5.2": {
+        "id": "AE-4.5.2",
+        "bookId": "4.5.2",
+        "title": {
+          "zh": "理想电流源的交流开路让负载决定跟随增益",
+          "en": "The ideal bias source is open in AC, leaving the load to set follower gain"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 148,
+          "pdfPage": 181,
+          "figurePrintedPage": 149,
+          "figurePdfPage": 182,
+          "figure": "图题4.5.2"
+        },
+        "statement": {
+          "zh": "源极跟随器电路如图题4.5.2所示，MOS管K_n=1 mA/V²、V_TN=1.2 V、λ=0。V_DD=V_SS=5 V、R_g=500 kΩ、R_L=4 kΩ，电流源I=1 mA。求小信号电压增益A_v=v_o/v_i和输出电阻R_o。",
+          "en": "For the follower in Fig.4.5.2,K_n=1 mA/V²,V_TN=1.2 V,λ=0,V_DD=V_SS=5 V,R_g=500 kΩ,R_L=4 kΩ and bias current1 mA. Find A_v and R_o."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "先由电流求gm；交流时理想电流源开路，漏接交流地，输出电阻测量时还要去掉R_L。",
+          "en": "Find gm from bias current. The ideal current source is AC-open and drain AC-grounded; remove R_L for output-resistance measurement."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "静态与工作区",
+              "en": "Bias and region"
+            },
+            "text": {
+              "zh": "ID=1 mA，Vov=1 V，VGS=2.2 V，源−2.2 V，VDS=7.2 V≥1 V。",
+              "en": "ID=1 mA gives Vov=1 V,VGS=2.2 V, source−2.2 V and VDS=7.2 V≥1 V."
+            },
+            "formula": "g_m=2\\,\\mathrm{mS}"
+          },
+          {
+            "title": {
+              "zh": "源节点KCL和测试源",
+              "en": "Source-node KCL and port test"
+            },
+            "text": {
+              "zh": "带载时gm(v_i−v_o)=v_o/R_L；输出测试输入为零。",
+              "en": "Loaded source KCL is gm(v_i−v_o)=v_o/R_L. Ground input for the output test."
+            },
+            "formula": "A_v=\\frac{g_mR_L}{1+g_mR_L}=\\frac89,\\qquad R_o=\\frac1{g_m}=500\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "A_v=8/9≈0.888889，R_o=500 Ω。",
+          "en": "A_v=8/9≈0.888889 and R_o=500 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "输出电阻不是带R_L后的500∥4000 Ω；定义上负载应移除。",
+            "en": "Output resistance excludes the external load; do not report500∥4000 Ω."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "gain",
+          "output-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "ID_A": 0.001,
+            "VgsV": 2.2,
+            "VsV": -2.2,
+            "VdsV": 7.2,
+            "gmS": 0.002,
+            "gain": 0.8888888888888888,
+            "RoOhm": 500.0
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "漏接+5 V，源接1 mA向下理想电流源到−5 V，输出耦合到4 kΩ。",
+            "en": "Drain connects to+5 V, source to a downward1 mA source toward−5 V, and output is coupled to4 kΩ."
+          }
+        },
+        "figure": "ae-4.5.2-figure.png"
+      },
+      "AE-4.5.3": {
+        "id": "AE-4.5.3",
+        "bookId": "4.5.3",
+        "title": {
+          "zh": "PMOS源随器也同相，但静态极性相反",
+          "en": "A PMOS follower is non-inverting with reversed DC polarities"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 149,
+          "pdfPage": 182,
+          "figurePrintedPage": 149,
+          "figurePdfPage": 182,
+          "figure": "图题4.5.3"
+        },
+        "statement": {
+          "zh": "源极跟随器电路如图题4.5.3所示。V_DD=V_SS=5 V，电流源I=5 mA，R_g=200 kΩ、R_L=1 kΩ，MOS管V_TP=−2 V、K_p=5 mA/V²、λ=0。求：(1)输出电阻和输入电阻；(2)小信号电压增益。",
+          "en": "For the PMOS follower in Fig.4.5.3,V_DD=V_SS=5 V,I=5 mA,R_g=200 kΩ,R_L=1 kΩ,V_TP=−2 V,K_p=5 mA/V²,λ=0. Find (1)output and input resistances and (2)small-signal voltage gain."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "用正的源到漏电流5 mA求|gm|。源极随栅变化，输出与输入仍同相。",
+          "en": "Use positive source-to-drain current magnitude5 mA to find gm. Source follows gate, so output remains non-inverting."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "静态极性和gm",
+              "en": "DC polarity and gm"
+            },
+            "text": {
+              "zh": "Vov=1 V，VSG=3 V，栅0、源+3 V、漏−5 V，VSD=8 V满足恒流区。",
+              "en": "Vov=1 V,VSG=3 V, gate0,source+3 V,drain−5 V and VSD=8 V confirm saturation."
+            },
+            "formula": "g_m=2\\sqrt{K_pI}=10\\,\\mathrm{mS}"
+          },
+          {
+            "title": {
+              "zh": "阻抗与跟随增益",
+              "en": "Resistances and follower gain"
+            },
+            "text": {
+              "zh": "体源相接，忽略体效应；理想偏置电流源交流开路。",
+              "en": "Bulk is tied to source, and the ideal bias source is AC-open."
+            },
+            "formula": "R_o=\\frac1{g_m}=100\\,\\Omega,\\quad R_i=200\\,\\mathrm{k\\Omega},\\quad A_v=\\frac{g_mR_L}{1+g_mR_L}=\\frac{10}{11}"
+          }
+        ],
+        "answer": {
+          "zh": "R_o=100 Ω，R_i=200 kΩ，A_v=10/11≈0.909091。",
+          "en": "R_o=100 Ω,R_i=200 kΩ,A_v=10/11≈0.909091."
+        },
+        "pitfalls": [
+          {
+            "zh": "PMOS并不自动意味着反相，组态与输出端决定增益符号。",
+            "en": "PMOS does not automatically imply inversion; topology and output terminal determine sign."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Ro",
+          "1-Ri",
+          "2-gain"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "ID_magnitudeA": 0.005,
+            "VsgV": 3,
+            "VsV": 3,
+            "VsdV": 8,
+            "gmS": 0.01,
+            "RiOhm": 200000,
+            "RoOhm": 100,
+            "gain": 0.9090909090909092,
+            "check": "PMOS source-positive bias and saturation checked; independent follower KCL."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "5 mA源从+5 V向下供源极，PMOS漏接−5 V，源极耦合输出到1 kΩ。",
+            "en": "A5 mA source from+5 V feeds the PMOS source; drain is−5 V and output is source-coupled to1 kΩ."
+          }
+        },
+        "figure": "ae-4.5.3-figure.png"
+      },
+      "AE-4.5.4": {
+        "id": "AE-4.5.4",
+        "bookId": "4.5.4",
+        "title": {
+          "zh": "共栅输入看入源极，栅电阻不是输入电阻",
+          "en": "A common-gate input looks into the source, not the gate resistor"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 149,
+          "pdfPage": 182,
+          "figurePrintedPage": 123,
+          "figurePdfPage": 156,
+          "figure": "图4.5.4"
+        },
+        "statement": {
+          "zh": "电路如图4.5.4所示。I=1 mA、V_DD=V_SS=12 V、R_g=100 kΩ、R_d=10 kΩ、R_L=1 kΩ、R_si=1 kΩ，MOS管V_TN=1 V、K_n=1 mA/V²、λ=0。求：(1)输入电阻R_i和输出电阻R_o；(2)电压增益A_v=v_o/v_i和电流增益A_i=i_o/i_i。",
+          "en": "For Fig.4.5.4,I=1 mA,V_DD=V_SS=12 V,R_g=100 kΩ,R_d=10 kΩ,R_L=1 kΩ,R_si=1 kΩ,V_TN=1 V,K_n=1 mA/V²,λ=0. Find (1)R_i,R_o and (2)A_v=v_o/v_i,A_i=i_o/i_i."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "栅被C_g旁路到交流地，信号从源极输入、漏极输出。理想电流源交流开路，gm=2 mS。",
+          "en": "C_g AC-grounds the gate. Input is at source and output at drain. The ideal bias source is AC-open and gm=2 mS."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "输入输出电阻",
+              "en": "Input and output resistances"
+            },
+            "text": {
+              "zh": "λ=0忽略漏源电导。源极输入电流gm v_i；输出测试不反馈至输入。",
+              "en": "With λ=0, source input current is gm v_i and the drain test does not feed back to input."
+            },
+            "formula": "R_i=\\frac1{g_m}=500\\,\\Omega,\\qquad R_o=R_d=10\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "同相电压增益和电流分流",
+              "en": "Non-inverting voltage gain and current division"
+            },
+            "text": {
+              "zh": "输出电流只取流过R_L的部分，不是全部漏极信号电流。",
+              "en": "Output current is only the part through R_L, not the entire drain signal current."
+            },
+            "formula": "A_v=g_m(R_d\\parallel R_L)=\\frac{20}{11},\\qquad A_i=\\frac{R_d}{R_d+R_L}=\\frac{10}{11}"
+          }
+        ],
+        "answer": {
+          "zh": "R_i=500 Ω，R_o=10 kΩ，A_v=20/11≈1.81818，A_i=10/11≈0.909091。",
+          "en": "R_i=500 Ω,R_o=10 kΩ,A_v=20/11≈1.81818,A_i=10/11≈0.909091."
+        },
+        "pitfalls": [
+          {
+            "zh": "R_si影响源电压增益，但题问A_v以实际v_i为分母；不可把两者混同。",
+            "en": "R_si affects source-to-output gain, while A_v uses the actual input v_i."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Ri",
+          "1-Ro",
+          "2-Av",
+          "2-Ai"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "ID_A": 0.001,
+            "gmS": 0.002,
+            "RiOhm": 500,
+            "RoOhm": 10000,
+            "Av": 1.8181818181818181,
+            "Ai": 0.9090909090909091,
+            "AvsAdditional": 0.6060606060606061,
+            "check": "Original common-gate nodal solve and current division; bypassed gate resistor is not the input resistance."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "栅极R_g由C_g旁路，输入源串R_si耦合到源极，漏端R_d与R_L作负载。",
+            "en": "Gate R_g is bypassed by C_g. The source input is driven through R_si, with R_d and R_L at the drain."
+          }
+        },
+        "figure": "ae-4.5.4-figure.png"
+      },
+      "AE-4.6.1": {
+        "id": "AE-4.6.1",
+        "bookId": "4.6.1",
+        "title": {
+          "zh": "低漏压用可变电阻区完整方程",
+          "en": "Use the full triode equation at low drain voltage"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 149,
+          "pdfPage": 182,
+          "figurePrintedPage": 149,
+          "figurePdfPage": 182,
+          "figure": "图题4.6.1"
+        },
+        "statement": {
+          "zh": "电路如图题4.6.1所示，MOS管V_TN=0.4 V、K′_n=120 μA/V²、λ=0。当v_i=2.6 V时，要求v_o=0.08 V，求MOS管宽长比W/L。",
+          "en": "For Fig.4.6.1,V_TN=0.4 V,K′_n=120 μA/V² and λ=0. At v_i=2.6 V require v_o=0.08 V. Find W/L."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "VDS=0.08 V远小于过驱动2.2 V，不能套恒流区平方律。K′_n=μ_n C_ox，未含W/L。",
+          "en": "VDS=0.08 V is below overdrive2.2 V, so use triode operation. K′_n=μ_n C_ox excludes geometry."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由漏极电阻求电流",
+              "en": "Find current from the drain resistor"
+            },
+            "text": {
+              "zh": "3 V电源经30 kΩ到漏极。",
+              "en": "A3 V source feeds the drain through30 kΩ."
+            },
+            "formula": "I_D=\\frac{3-0.08}{30\\,\\mathrm{k\\Omega}}=97.3333\\,\\mathrm{\\mu A}"
+          },
+          {
+            "title": {
+              "zh": "保留vDS²项反求几何比",
+              "en": "Retain the vDS² term to find geometry"
+            },
+            "text": {
+              "zh": "可变电阻区i_D=K′_n(W/L)[Vov VDS−VDS²/2]。",
+              "en": "Use i_D=K′_n(W/L)[Vov VDS−VDS²/2]."
+            },
+            "formula": "\\frac WL=\\frac{97.3333}{120[(2.6-0.4)(0.08)-0.08^2/2]}\\approx4.69393"
+          }
+        ],
+        "answer": {
+          "zh": "W/L≈4.69393，按可变电阻区模型。",
+          "en": "W/L≈4.69393 under the triode model."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把K′_n与已含几何系数和1/2的K_n混用；有限0.08 V时保留二次项。",
+            "en": "Distinguish K′_n from K_n that includes geometry and1/2, and retain the finite-vDS quadratic term."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "aspect-ratio"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "ID_A": 9.733333333333333e-05,
+            "aspectRatio": 4.693930041152263,
+            "check": "Original resistor current equals full triode current; Kprime is mobility*Cox, retaining the vDS²/2 term."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "3 V经30 kΩ接NMOS漏极，源接地，栅输入2.6 V，漏输出0.08 V。",
+            "en": "3 V feeds30 kΩ and the NMOS drain; source is grounded, gate2.6 V and drain output0.08 V."
+          }
+        },
+        "figure": "ae-4.6.1-figure.png"
+      },
+      "AE-4.6.2": {
+        "id": "AE-4.6.2",
+        "bookId": "4.6.2",
+        "title": {
+          "zh": "先给出明确电源和控制电平，再验证LED驱动",
+          "en": "Choose explicit supply and control levels before verifying the LED driver"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 149,
+          "pdfPage": 182
+        },
+        "statement": {
+          "zh": "试用MOS管设计一个能控制LED灯珠亮灭的驱动电路。灯珠由2个LED串联，控制电压高电平时点亮、否则熄灭。LED工作电流150 mA、正向压降3.2～3.5 V；MOS管V_TN=1.7 V、K_n=30 mA/V²。(1)确定电路结构、电源电压和控制电压大小；(2)计算相关参数并确定MOS管的极限参数。",
+          "en": "Design a MOS-controlled driver for two series LEDs, on for high control and off otherwise. LED current150 mA,each forward drop3.2–3.5 V; MOS V_TN=1.7 V,K_n=30 mA/V². (1)Choose topology,supply and control levels. (2)Calculate circuit parameters and device limits."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "本题允许设计选择，不存在唯一电源。给出一个理想平方律下的低侧NMOS恒流方案：12 V经两LED接漏，源接地，高电平精确设定电流。",
+          "en": "The supply is a design choice. One ideal square-law solution uses a low-side NMOS current sink:12 V through both LEDs to drain, source grounded, with high gate voltage setting current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)选电源与控制电平",
+              "en": "(1) Choose supply and control"
+            },
+            "text": {
+              "zh": "明确假设λ=0、参数固定，体接源。低电平0 V截止；高电平由150 mA平方律反求，不假称任意逻辑高都得相同电流。",
+              "en": "Assume λ=0,fixed parameters and bulk tied to source. Low0 V cuts off; the high level is calculated for150 mA."
+            },
+            "formula": "V_{DD}=12\\,\\mathrm V,\\quad V_{G,L}=0,\\quad V_{G,H}=1.7+\\sqrt{\\frac{150}{30}}=1.7+\\sqrt5\\approx3.93607\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)检查所有LED压降端点",
+              "en": "(2) Check both LED endpoints"
+            },
+            "text": {
+              "zh": "两LED共6.4～7.0 V，导通MOS承受5.0～5.6 V，均大于过驱动√5 V，恒流区成立。无需再虚构未给定的串联限流电阻。",
+              "en": "The LEDs total6.4–7.0 V,leaving5.0–5.6 V across MOS,above √5 V overdrive. This chosen constant-current topology does not require a fictitious series resistor."
+            },
+            "formula": "V_{DS,on}\\in[5.0,5.6]\\,\\mathrm V,\\quad I_D=0.15\\,\\mathrm A,\\quad P_{MOS}\\in[0.75,0.84]\\,\\mathrm W"
+          },
+          {
+            "title": {
+              "zh": "从工作点给极限参数要求",
+              "en": "Derive device-rating requirements"
+            },
+            "text": {
+              "zh": "关断时按最不利漏端接近12 V计算，连续电流至少150 mA，工作温度下允许耗散至少0.84 W，并覆盖线性区安全工作点。图是题设理想模型的一种可行设计；实际电流精度需闭环或器件实测，不由固定典型K保证。",
+              "en": "Allow a worst-case off drain near12 V,continuous current at least150 mA and at least0.84 W dissipation at the operating temperature,including the linear SOA point. Practical current accuracy needs regulation or characterization,not nominal K alone."
+            },
+            "formula": "V_{DS,rated}\\ge12\\,\\mathrm V,\\quad I_{D,rated}\\ge0.15\\,\\mathrm A,\\quad P_{rated}\\ge0.84\\,\\mathrm W,\\quad |V_{GS,rated}|\\ge3.93607\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "一种明确可行的理想方案：12 V、低侧NMOS恒流150 mA、高/低栅压约3.936/0 V。导通MOS耗散0.75～0.84 W；极限参数需覆盖12 V、150 mA及最大耗散。方案非唯一。",
+          "en": "One explicit ideal solution:12 V,low-side NMOS150 mA current sink,gate high/low≈3.936/0 V. MOS dissipation0.75–0.84 W; ratings cover12 V,150 mA and that dissipation. The design is not unique."
+        },
+        "pitfalls": [
+          {
+            "zh": "这是恒流驱动，不是把MOS当零压降理想开关；若改成5 V逻辑高加电阻的开关方案，必须重新算电流及LED压降范围。",
+            "en": "This is a current-sink design,not a zero-drop switch. A logic-high/resistor switching design needs a separate current-range calculation."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-topology-supply-control",
+          "2-parameters",
+          "2-device-limits"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "designType": "one valid ideal constant-current low-side NMOS design, not a unique supply choice",
+            "supplyV": 12,
+            "gateHighV": 3.93606797749979,
+            "gateLowV": 0,
+            "currentA": 0.15,
+            "overdriveV": 2.23606797749979,
+            "VdsOnRangeV": [
+              5,
+              5.6
+            ],
+            "MOSdissipationRangeW": [
+              0.75,
+              0.84
+            ],
+            "minimumOffVdsRatingV": 12,
+            "check": "All LED forward-voltage endpoints satisfy saturation and150 mA under the explicit ideal square-law model, with exact source/LED/MOS power balance. Practical current accuracy requires a regulating loop or characterized device."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "一种明确选择12 V电源的理想恒流驱动方案；不是唯一设计，也不是SPICE仿真。",
+              "en": "One explicit ideal constant-current design using a12 V supply; neither a unique design nor a SPICE simulation."
+            },
+            "caption": {
+              "zh": "一种明确选择12 V电源的理想恒流驱动方案；不是唯一设计，也不是SPICE仿真。",
+              "en": "One explicit ideal constant-current design using a12 V supply; neither a unique design nor a SPICE simulation."
+            },
+            "figure": "ae-4.6.2-design.svg"
+          }
+        ]
+      },
+      "AE-4.7.1": {
+        "id": "AE-4.7.1",
+        "bookId": "4.7.1",
+        "title": {
+          "zh": "直耦共源加源随器：级间负载要读原图",
+          "en": "Direct-coupled common source plus follower: read the actual interstage load"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183,
+          "figurePrintedPage": 131,
+          "figurePdfPage": 164,
+          "figure": "图4.7.1"
+        },
+        "statement": {
+          "zh": "电路如图4.7.1所示。R_L=5 kΩ、R_d1=3.3 kΩ、R_si=20 kΩ、R_s2=5 kΩ、R_g1=500 kΩ、R_g2=300 kΩ。两MOS均在恒流区，V_GS1Q=V_GS2Q=3 V，K_n1=K_n2=1 mA/V²、V_TN1=V_TN2=1.5 V、λ₁=λ₂=0，衬底各接自身源。求：(1)输入和输出电阻；(2)源电压增益A_vs。",
+          "en": "For Fig.4.7.1,R_L=5 kΩ,R_d1=3.3 kΩ,R_si=20 kΩ,R_s2=5 kΩ,R_g1=500 kΩ,R_g2=300 kΩ. Both MOS are saturated with V_GSQ=3 V,K_n=1 mA/V²,V_TN=1.5 V,λ=0 and each bulk tied to source. Find (1)input/output resistances and (2)A_vs."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "R_g1、R_g2是第一级分压偏置，不是分别属于两级的输入负载。第一级漏极直连第二级栅，栅零电流。",
+          "en": "R_g1 and R_g2 are the first-stage bias divider,not separate stage input loads. Stage1 drain directly drives stage2’s zero-current gate."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "跨导与端口电阻",
+              "en": "Transconductance and port resistances"
+            },
+            "text": {
+              "zh": "两gm均为3 mS；第一级源电阻由C_s1交流旁路。",
+              "en": "Both gm values are3 mS and C_s1 bypasses stage1 source resistance."
+            },
+            "formula": "g_{m1}=g_{m2}=3\\,\\mathrm{mS},\\quad R_i=500\\parallel300=187.5\\,\\mathrm{k\\Omega},\\quad R_o=R_{s2}\\parallel\\frac1{g_{m2}}=312.5\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "逐级增益再计源加载",
+              "en": "Multiply stage gains and include source loading"
+            },
+            "text": {
+              "zh": "第一级无第二级电阻性栅负载，A₁=−gmRd；第二级负载为5∥5 kΩ。",
+              "en": "Stage1 has no resistive gate load from stage2. The follower load is5∥5 kΩ."
+            },
+            "formula": "A_1=-9.9,\\quad A_2=\\frac{7.5}{8.5}=\\frac{15}{17},\\quad A_{vs}=\\frac{187.5}{187.5+20}(-9.9)\\frac{15}{17}\\approx-7.893338"
+          }
+        ],
+        "answer": {
+          "zh": "R_i=187.5 kΩ，R_o=312.5 Ω，A_vs≈−7.893338。",
+          "en": "R_i=187.5 kΩ,R_o=312.5 Ω,A_vs≈−7.893338."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把R_g2=300 kΩ当成第二级栅的单独对地负载；原图两个偏置电阻均接第一级栅。",
+            "en": "Do not treat300 kΩ as a second-stage input shunt; both divider resistors connect to the first gate."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Ri",
+          "1-Ro",
+          "2-source-gain"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "gm1S": 0.003,
+            "gm2S": 0.003,
+            "RiOhm": 187500.0,
+            "RoOhm": 312.5,
+            "firstGain": -9.9,
+            "secondGain": 0.8823529411764706,
+            "sourceGain": -7.8933380581148125,
+            "check": "One coupled original two-stage nodal solve includes input loading, direct gate coupling and the loaded follower."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "T₁共源、源电阻被C_s1旁路，漏极直接接T₂栅；T₂源极经R_s2到负电源并耦合R_L。",
+            "en": "T₁ is common-source with bypassed source resistor; its drain directly drives T₂ gate. T₂ source has R_s2 to the negative supply and a coupled load."
+          }
+        },
+        "figure": "ae-4.7.1-figure.png"
+      },
+      "AE-4.7.2": {
+        "id": "AE-4.7.2",
+        "bookId": "4.7.2",
+        "title": {
+          "zh": "先解第一管，再把它漏压作为第二管栅压",
+          "en": "Solve transistor1 first, then use its drain voltage as gate2 bias"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183,
+          "figurePrintedPage": 131,
+          "figurePdfPage": 164,
+          "figure": "图4.7.1"
+        },
+        "statement": {
+          "zh": "电路如图4.7.1所示，V_DD=V_SS=10 V、R_L=4 kΩ、R_s1=1.7 kΩ、R_s2=5 kΩ、R_si=10 kΩ、R_d1=3.3 kΩ、R_g1=560 kΩ、R_g2=300 kΩ。两管K_n=1 mA/V²、V_TN=2 V、λ=0，衬底各接源。求：(1)静态工作点；(2)输入电阻和输出电阻；(3)源电压增益。",
+          "en": "For Fig.4.7.1,V_DD=V_SS=10 V,R_L=4 kΩ,R_s1=1.7 kΩ,R_s2=5 kΩ,R_si=10 kΩ,R_d1=3.3 kΩ,R_g1=560 kΩ,R_g2=300 kΩ. Both devices have K_n=1 mA/V²,V_TN=2 V,λ=0 and bulk-source ties. Find (1)DC points,(2)R_i,R_o,(3)source gain."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "第一级栅由跨±10 V的分压决定，第二级栅直接是第一级漏压；不能把两栅都设为0。",
+          "en": "Gate1 is set by the divider across±10 V; gate2 is the actual drain1 voltage. Neither should be arbitrarily grounded for DC."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "第一管正过驱动根",
+              "en": "Physical positive-overdrive root for T₁"
+            },
+            "text": {
+              "zh": "以下电流用mA、电阻用kΩ。栅V_G1=−3.0232558 V；只取VGS>2 V的根。",
+              "en": "Use mA and kΩ below. V_G1=−3.0232558 V; choose only the VGS>2 V root."
+            },
+            "formula": "I_1=(4.976744186-1.7I_1)^2\\quad\\Rightarrow\\quad I_1\\approx2.079279\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "从漏压递推第二管",
+              "en": "Propagate drain1 bias to T₂"
+            },
+            "text": {
+              "zh": "V_D1=3.1383803 V，所以第二管的过驱动表达式为V_D1+8−5I₂。",
+              "en": "V_D1=3.1383803 V,so T₂ overdrive is V_D1+8−5I₂."
+            },
+            "formula": "I_2=(11.138380333-5I_2)^2\\quad\\Rightarrow\\quad I_2\\approx1.948499\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "回查两个工作区",
+              "en": "Verify both operating regions"
+            },
+            "text": {
+              "zh": "T₁：VGS≈3.441970 V、VDS≈9.603607 V；T₂：VGS≈3.395886 V、VDS≈10.257506 V。均大于相应过驱动。",
+              "en": "T₁ has VGS≈3.441970,VDS≈9.603607 V; T₂ has VGS≈3.395886,VDS≈10.257506 V. Both satisfy saturation."
+            },
+            "formula": "g_{m1}\\approx2.883941\\,\\mathrm{mS},\\qquad g_{m2}\\approx2.791773\\,\\mathrm{mS}"
+          },
+          {
+            "title": {
+              "zh": "交流输入、输出及总增益",
+              "en": "AC ports and total gain"
+            },
+            "text": {
+              "zh": "R_i=Rg1∥Rg2；输出移除负载测量。源随级的信号负载为5 kΩ∥4 kΩ。",
+              "en": "R_i=Rg1∥Rg2; remove the load for R_o. Follower signal load is5 kΩ∥4 kΩ."
+            },
+            "formula": "R_i\\approx195.348837\\,\\mathrm{k\\Omega},\\quad R_o\\approx334.249985\\,\\Omega,\\quad A_{vs}=\\frac{R_i}{R_i+R_{si}}[-g_{m1}R_{d1}]\\frac{g_{m2}(R_{s2}\\parallel R_L)}{1+g_{m2}(R_{s2}\\parallel R_L)}\\approx-7.796799"
+          }
+        ],
+        "answer": {
+          "zh": "T₁：(I_DQ,V_GSQ,V_DSQ)≈(2.079279 mA,3.441970 V,9.603607 V)；T₂≈(1.948499 mA,3.395886 V,10.257506 V)。Ri≈195.349 kΩ、Ro≈334.250 Ω、Avs≈−7.796799。",
+          "en": "T₁ bias≈(2.079279 mA,3.441970 V,9.603607 V); T₂≈(1.948499 mA,3.395886 V,10.257506 V),in the order I_D,V_GS,V_DS. Ri≈195.349 kΩ,Ro≈334.250 Ω,Avs≈−7.796799."
+        },
+        "pitfalls": [
+          {
+            "zh": "平方方程的另一根可能违反正过驱动；直流时C_s1开路，交流时才旁路R_s1。",
+            "en": "The other square-law root can violate positive overdrive. C_s1 is open for DC and only bypasses R_s1 in AC."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-bias-T1",
+          "1-bias-T2",
+          "2-Ri",
+          "2-Ro",
+          "3-source-gain"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "VG1V": -3.0232558139534884,
+            "ID1mA": 2.079278686967748,
+            "VS1V": -6.465226232154828,
+            "VD1V": 3.138380333006432,
+            "VGS1V": 3.4419704182013398,
+            "VDS1V": 9.603606565161261,
+            "ID2mA": 1.9484987902849662,
+            "VS2V": -0.2575060485751699,
+            "VG2V": 3.138380333006432,
+            "VGS2V": 3.395886381581602,
+            "VDS2V": 10.25750604857517,
+            "gm1S": 0.0028839408364026804,
+            "gm2S": 0.002791772763163196,
+            "RiOhm": 195348.83720930232,
+            "RoOhm": 334.2499845953213,
+            "Avs": -7.796799494193408,
+            "check": "Both original square laws and saturation inequalities, direct-coupled bias and full two-stage nodal solve independently verified."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "与4.7.1相同的直耦共源—共漏电路，偏置电阻跨双电源。",
+            "en": "The same direct-coupled common-source/follower circuit as4.7.1,with its bias divider across both supplies."
+          }
+        },
+        "figure": "ae-4.7.1-figure.png"
+      },
+      "AE-4.7.3": {
+        "id": "AE-4.7.3",
+        "bookId": "4.7.3",
+        "title": {
+          "zh": "cascode含λ时，先说明偏置电压是否足够",
+          "en": "For a cascode with λ, state whether DC drain biases are specified"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183,
+          "figurePrintedPage": 135,
+          "figurePdfPage": 168,
+          "figure": "图4.7.4(a)"
+        },
+        "statement": {
+          "zh": "电路如图4.7.4(a)所示。设MOS管工作在恒流区且V_GS1Q=V_GS2Q=2.8 V。两管K_n=1.2 mA/V²、V_TN=1.9 V、λ=0.01 V⁻¹。求电路的电压增益。",
+          "en": "For the cascode in Fig.4.7.4(a),both devices are saturated with V_GSQ=2.8 V,K_n=1.2 mA/V²,V_TN=1.9 V and λ=0.01 V⁻¹. Find voltage gain."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "理想上方恒流源交流开路。精确小信号增益能写出；若直流也保留λ，题目未给VDS或恒流源值，不能唯一确定数值。",
+          "en": "The ideal upper current source is AC-open. An exact small-signal expression is available, but fully retaining λ in DC requires the unspecified drain biases or bias current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从两节点方程求一般增益",
+              "en": "Derive general gain from both nodes"
+            },
+            "text": {
+              "zh": "输出开路使第二管交流漏电流为零，第一管节点x=−gm1ro1 vi，第二级vo=(1+gm2ro2)x。",
+              "en": "Open output gives zero T₂ drain signal current. The internal node is x=−gm1ro1 vi and output(1+gm2ro2)x."
+            },
+            "formula": "A_v=-g_{m1}r_{o1}(1+g_{m2}r_{o2})"
+          },
+          {
+            "title": {
+              "zh": "列教材常用偏置近似",
+              "en": "State the conventional bias approximation"
+            },
+            "text": {
+              "zh": "若静态忽略λ，ID=Kn(0.9)²=0.972 mA，gm=2.16 mS；再用ro≈1/(λID)=102.88066 kΩ。该近似必须标明。",
+              "en": "Neglecting λ in DC gives ID=0.972 mA and gm=2.16 mS; then ro≈1/(λID)=102.88066 kΩ. This is explicitly approximate."
+            },
+            "formula": "A_v\\approx-49604.9383\\qquad\\left[\\text{large }g_mr_o:\\ A_v\\approx-49382.7160\\right]"
+          },
+          {
+            "title": {
+              "zh": "完整λ模型为何欠定",
+              "en": "Why the full λ model is underdetermined"
+            },
+            "text": {
+              "zh": "完整模型I=KnVov²(1+λVDS)，gm=2KnVov(1+λVDS)，gds=λKnVov²。相同VGS、参数和串联电流要求两VDS相等，却不确定这个值。若VDS均取1 V、3 V，均可饱和，但增益约−50599.75、−52619.01。",
+              "en": "The full model has I=KnVov²(1+λVDS),gm=2KnVov(1+λVDS),gds=λKnVov². Equal VGS,parameters and series current imply equal VDS,but not its value. Equal biases1 V or3 V are both saturated yet give different gains."
+            },
+            "formula": "\\frac{g_m}{g_{ds}}=\\frac{2(1+\\lambda V_{DS})}{\\lambda V_{OV}}"
+          }
+        ],
+        "answer": {
+          "zh": "一般式Av=−gm1ro1(1+gm2ro2)。教材常用静态忽略λ近似Av≈−4.96049×10⁴；完整含λ偏置模型缺少VDS或I，数值不唯一。",
+          "en": "General Av=−gm1ro1(1+gm2ro2). Conventional DC-neglects-λ approximation gives≈−4.96049×10⁴. A full λ-dependent bias model lacks specified VDS or current and has no unique numerical gain."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要一面声称完整保留λ，一面把ID=KnVov²当精确；也不要把理想偏置电流源短路。",
+            "en": "Do not claim full λ consistency while using ID=KnVov² as exact; the ideal bias source is AC-open."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "general-gain",
+          "stated-textbook-approximation",
+          "full-model-underdetermination"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "usualNeglectLambdaInBiasApprox": {
+              "IDA": 0.000972,
+              "gmS": 0.00216,
+              "roOhm": 102880.65843621398,
+              "gain": -49604.93827160493
+            },
+            "fullLambdaModelFamily": [
+              {
+                "equalVdsV": 1,
+                "IDA": 0.00098172,
+                "gain": -50599.75308641976
+              },
+              {
+                "equalVdsV": 3,
+                "IDA": 0.00100116,
+                "gain": -52619.012345679024
+              },
+              {
+                "equalVdsV": 10,
+                "IDA": 0.0010692,
+                "gain": -59997.530864197535
+              }
+            ],
+            "check": "Original cascode2-node KCL verifies gain. Full channel-length modulation needs the unspecified DC drain voltages; explicit distinct equal-VDS examples show nonuniqueness."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "两只NMOS堆叠，下管栅输入，上管栅固定偏置，顶部理想电流源作有源负载，输出在上管漏极。",
+            "en": "Two stacked NMOS: lower gate input,upper fixed gate,ideal current-source load and output at the upper drain."
+          }
+        },
+        "figure": "ae-4.7.3-figure.png"
+      },
+      "AE-4.7.4": {
+        "id": "AE-4.7.4",
+        "bookId": "4.7.4",
+        "title": {
+          "zh": "高输入—高增益—低输出，逐项计算加载",
+          "en": "High input resistance, high gain, low output resistance: include every load"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183
+        },
+        "statement": {
+          "zh": "有三种放大电路备用：(1)高输入电阻型R_i1=1 MΩ、A_vo1=10、R_o1=10 kΩ；(2)高增益型R_i2=10 kΩ、A_vo2=100、R_o2=1 kΩ；(3)低输出电阻型R_i3=10 kΩ、A_vo3=1、R_o3=20 Ω。用这三种放大电路组合，设计在100 Ω负载上提供至少0.5 W功率的放大器。信号源开路电压30 mV（有效值）、内阻R_si=0.5 MΩ。",
+          "en": "Combine three amplifiers: (1)R_i=1 MΩ,A_vo=10,R_o=10 kΩ; (2)R_i=10 kΩ,A_vo=100,R_o=1 kΩ; (3)R_i=10 kΩ,A_vo=1,R_o=20 Ω. Drive100 Ω with at least0.5 W from a30 mV RMS source with0.5 MΩ resistance."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "把高输入电阻级放最前、低输出电阻级放最后，高增益级居中；不是只把三个开路增益相乘。",
+          "en": "Place high input resistance first,low output resistance last,and high gain between; do not multiply only open-circuit gains."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "明确三级顺序与分压",
+              "en": "Specify all three stages and divider factors"
+            },
+            "text": {
+              "zh": "选择1→2→3。源输入、两处级间和末端负载均分压。",
+              "en": "Choose1→2→3 and include source,interstage and final load dividers."
+            },
+            "formula": "V_L=0.03\\frac1{1+0.5}(10)\\frac{10}{10+10}(100)\\frac{10}{1+10}(1)\\frac{100}{20+100}\\,\\mathrm V=\\frac{250}{33}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "按有效值检查功率",
+              "en": "Check power using RMS"
+            },
+            "text": {
+              "zh": "输出约7.57576 V RMS，比0.5 W所需√50≈7.07107 V高。独立枚举6种顺序，只有1→2→3达到目标。",
+              "en": "Output7.57576 V RMS exceeds √50 V required for0.5 W. Independent enumeration of all six orders finds only1→2→3 meets the target."
+            },
+            "formula": "P_L=\\frac{V_L^2}{100}=\\frac{625}{1089}\\,\\mathrm W\\approx0.573921\\,\\mathrm W\\ge0.5\\,\\mathrm W"
+          },
+          {
+            "title": {
+              "zh": "说明线性模型的输出能力条件",
+              "en": "State the output-capability condition"
+            },
+            "text": {
+              "zh": "上述设计按给定线性模型成立。末级实际至少支持约10.714 V峰值和107.14 mA峰值；题目未给供电或限幅，不能仅由增益推断真实器件一定具备这些摆幅。",
+              "en": "The result uses the given linear models. A physical final stage needs at least about10.714 V peak and107.14 mA peak; supplies and clipping limits are unspecified."
+            },
+            "formula": "V_{L,m}=\\sqrt2V_L\\approx10.71374\\,\\mathrm V,\\qquad I_{L,m}\\approx0.107137\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "按1→2→3串联，理想线性模型下VL≈7.57576 V RMS、PL≈0.573921 W，满足至少0.5 W。",
+          "en": "Cascade1→2→3; the given linear models give VL≈7.57576 V RMS and PL≈0.573921 W,meeting0.5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "最后一级并非高增益级；让低输出电阻级最后可避免100 Ω负载吞掉增益。",
+            "en": "The last stage is the low-output-resistance buffer,preventing the100 Ω load from collapsing gain."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "stage-order",
+          "loaded-gain",
+          "load-power",
+          "output-swing-condition"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "allOrders": [
+              {
+                "order": [
+                  1,
+                  2,
+                  3
+                ],
+                "rmsV": 7.575757575757575,
+                "loadW": 0.573921028466483
+              },
+              {
+                "order": [
+                  1,
+                  3,
+                  2
+                ],
+                "rmsV": 0.9072763563781527,
+                "loadW": 0.008231503868428169
+              },
+              {
+                "order": [
+                  2,
+                  1,
+                  3
+                ],
+                "rmsV": 0.2448531860296566,
+                "loadW": 0.0005995308270887363
+              },
+              {
+                "order": [
+                  2,
+                  3,
+                  1
+                ],
+                "rmsV": 0.005294541220945582,
+                "loadW": 2.8032166740291936e-07
+              },
+              {
+                "order": [
+                  3,
+                  1,
+                  2
+                ],
+                "rmsV": 0.02673743316577519,
+                "loadW": 7.148903322942951e-06
+              },
+              {
+                "order": [
+                  3,
+                  2,
+                  1
+                ],
+                "rmsV": 0.005806680169079424,
+                "loadW": 3.371753458598025e-07
+              }
+            ],
+            "best": {
+              "order": [
+                1,
+                2,
+                3
+              ],
+              "rmsV": 7.575757575757575,
+              "loadW": 0.573921028466483
+            },
+            "requiredRmsV": 7.0710678118654755,
+            "requiredPeakCurrentA": 0.10713739108887084,
+            "check": "All6 permutations independently cascade the source, every input load, each output resistance and the100Ω final load."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "高输入电阻级→高增益级→低输出电阻级，级间分压全部计入。",
+              "en": "High-input-resistance stage, high-gain stage, then low-output-resistance stage, with every loading divider included."
+            },
+            "caption": {
+              "zh": "高输入电阻级→高增益级→低输出电阻级，级间分压全部计入。",
+              "en": "High-input-resistance stage, high-gain stage, then low-output-resistance stage, with every loading divider included."
+            },
+            "figure": "ae-4.7.4-order.svg"
+          }
+        ]
+      },
+      "AE-4.8.1": {
+        "id": "AE-4.8.1",
+        "bookId": "4.8.1",
+        "title": {
+          "zh": "先认阈值方向，再说明栅结构的判别边界",
+          "en": "Identify threshold direction before claiming a gate structure"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183,
+          "figurePrintedPage": 150,
+          "figurePdfPage": 183,
+          "figure": "图题4.8.1"
+        },
+        "statement": {
+          "zh": "四个FET的转移特性分别如图题4.8.1(a)(b)(c)(d)所示，漏极电流i_D的参考方向是它的实际方向。试问它们各是什么类型的FET？",
+          "en": "Four transfer characteristics are shown in Fig.4.8.1(a–d),with drain-current reference following actual current. Identify the FET types."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "电流都按实际方向画正，不能再靠i_D正负判断沟道；看零栅压是否导通、栅压增加使电流增减，以及画出的允许栅压区间。",
+          "en": "All plotted currents are positive magnitudes. Use conduction at zero gate voltage,the control slope and the shown gate-voltage domain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "按教材常见完整画法分类",
+              "en": "Classify under the usual textbook domains"
+            },
+            "text": {
+              "zh": "(a)在正VGS反偏区降到零，通常为P沟道JFET；(b)负阈值、零栅压导通且正栅压继续增强，通常为N沟道耗尽MOS；(c)正阈值、零栅压导通且负栅压增强，通常为P沟道耗尽MOS；(d)正阈值后才导通，为N沟道增强MOS。",
+              "en": "Usual types: (a)P-channel JFET over its reverse-biased positive-VGS domain; (b)N-channel depletion MOS; (c)P-channel depletion MOS; (d)N-channel enhancement MOS."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "局部曲线不能唯一识别栅结构",
+              "en": "A local curve cannot uniquely identify gate construction"
+            },
+            "text": {
+              "zh": "若这些只是局部测量曲线，JFET与耗尽型MOS可以在相同区间有相同形状；仅凭(a)局部不能严格排除耗尽PMOS。上述具体JFET/MOS名称依赖教材所示允许域；沟道与增强/耗尽方向则可从曲线判断。",
+              "en": "For local measured segments,JFET and depletion MOS can share a transfer shape. In particular,(a)alone cannot strictly exclude depletion PMOS. The specific gate-structure labels rely on the textbook domain convention."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "按教材惯用画法：(a)P沟道JFET；(b)N沟道耗尽MOS；(c)P沟道耗尽MOS；(d)N沟道增强MOS。若仅有局部曲线，JFET/耗尽MOS的结构判别需额外栅电流或完整允许域。",
+          "en": "Usual textbook labels: (a)P-JFET,(b)N-depletion MOS,(c)P-depletion MOS,(d)N-enhancement MOS. Local curves alone need gate-current or full-domain information to distinguish JFET from depletion MOS."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要因四条曲线的i_D都为正，就把它们都判成N沟道；题目已把参考方向设为实际电流方向。",
+            "en": "Positive plotted i_D does not imply all devices are N-channel; the reference is the actual current direction."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "classification-limit"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "usualTextbookTypes": [
+              "P-channel JFET",
+              "N-channel depletion MOSFET",
+              "P-channel depletion MOSFET",
+              "N-channel enhancement MOSFET"
+            ],
+            "qualification": "Local transfer-curve segments alone do not uniquely identify insulated versus junction gates. The usual textbook types use the shown allowed gate-voltage domains; threshold polarity and enhancement/depletion follow independently."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "四条转移曲线分别显示正栅压耗尽、负阈值增强、正阈值耗尽和正阈值才导通。",
+            "en": "The four transfer curves show positive-gate depletion,negative-threshold enhancement,positive-threshold depletion and positive-threshold onset."
+          }
+        },
+        "figure": "ae-4.8.1-figure.png"
+      },
+      "AE-4.8.2": {
+        "id": "AE-4.8.2",
+        "bookId": "4.8.2",
+        "title": {
+          "zh": "图读JFET参数后用自偏置交点估算",
+          "en": "Estimate graph parameters then intersect the self-bias relation"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 150,
+          "pdfPage": 183,
+          "figurePrintedPage": 150,
+          "figurePdfPage": 183,
+          "figure": "图题4.8.2"
+        },
+        "statement": {
+          "zh": "电路如图题4.8.2(a)，图(b)是JFET输出特性。R_d=25 kΩ、R_s=1.5 kΩ、R_g=5 MΩ、V_DD=15 V。试用图解法和估算法求静态工作点Q。",
+          "en": "For Fig.4.8.2(a),the JFET curves are in(b). R_d=25 kΩ,R_s=1.5 kΩ,R_g=5 MΩ,V_DD=15 V. Find Q graphically and by estimation."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "栅电流近零使VG≈0，VGS=−IDRs；直流负载线须用Rd+Rs。原图只能估读，不给多位“精确器件参数”。",
+          "en": "Near-zero gate current gives VG≈0,VGS=−IDRs. The DC load line uses Rd+Rs. The finite-resolution graph supports estimates,not exact extracted device constants."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写图解两条约束",
+              "en": "Write both graphical constraints"
+            },
+            "text": {
+              "zh": "用mA、kΩ单位。图上沿负载线与满足自偏置栅压的输出曲线寻找交点。",
+              "en": "Use mA and kΩ,and find the output-curve point satisfying both load and self-bias constraints."
+            },
+            "formula": "V_{DS}=15-26.5I_D,\\qquad V_{GS}=-1.5I_D"
+          },
+          {
+            "title": {
+              "zh": "用Shockley近似估算",
+              "en": "Estimate with a Shockley model"
+            },
+            "text": {
+              "zh": "从平台和栅压间距估读I_DSS≈0.5 mA、V_P≈−1 V，忽略图中小斜率；这是一组近似，不是精确拟合。",
+              "en": "Estimate IDSS≈0.5 mA and VP≈−1 V from plateaus and gate spacing,neglecting small output slope. This is approximate rather than an exact fit."
+            },
+            "formula": "I_D\\approx0.5(1-1.5I_D)^2\\quad\\Rightarrow\\quad I_D\\approx\\frac29\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "求电压并回查物理解",
+              "en": "Find voltages and check the physical root"
+            },
+            "text": {
+              "zh": "选0<ID<IDSS、VP<VGS<0的根，另一个平方根分支无效。",
+              "en": "Choose0<ID<IDSS and VP<VGS<0; the other root is not physical."
+            },
+            "formula": "V_{GS}\\approx-\\frac13\\,\\mathrm V,\\qquad V_{DS}\\approx\\frac{82}{9}\\,\\mathrm V\\approx9.11\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "原图图解/估算Q约为ID=0.22 mA、VGS=−0.33 V、VDS=9.1 V。解析近似图给出负载线与估计曲线，数值精度受原图限制。",
+          "en": "Graphical/estimated Q is aboutID=0.22 mA,VGS=−0.33 V,VDS=9.1 V. The companion plot shows the load line and estimated curves; precision is limited by the source graph."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要把Rd独自作为直流回路电阻，也不要将估读IDSS和VP包装成精确给定参数。",
+            "en": "Include Rs in the DC loop and do not present estimated IDSS/VP as exact supplied data."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "graphical-Q",
+          "estimated-Q",
+          "region-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "graphEstimatedIDSSA": 0.0005,
+            "graphEstimatedVPV": -1,
+            "IDAmperes": 0.0002222222222222222,
+            "VgsV": -0.3333333333333333,
+            "VdsV": 9.11111111111111,
+            "check": "Approximate graph parameters feed the Shockley self-bias equation; selected physical root satisfies drain-loop KVL and pinch-off. Graph precision, not exact device extraction."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "N沟道JFET自偏置源电阻1.5 kΩ，漏25 kΩ，图旁给VGS=0到−0.8 V的输出曲线。",
+            "en": "An N-JFET has1.5 kΩ self-bias resistance and25 kΩ drain resistance; curves span VGS0 to−0.8 V."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "采用从原图估读的I_DSS与V_P所绘理想近似曲线和负载线；不是原图的精确拟合或SPICE仿真。",
+              "en": "Ideal approximate curves and load line using graph-estimated I_DSS and V_P; not an exact source fit or SPICE simulation."
+            },
+            "caption": {
+              "zh": "采用从原图估读的I_DSS与V_P所绘理想近似曲线和负载线；不是原图的精确拟合或SPICE仿真。",
+              "en": "Ideal approximate curves and load line using graph-estimated I_DSS and V_P; not an exact source fit or SPICE simulation."
+            },
+            "figure": "ae-4.8.2-load.svg"
+          }
+        ],
+        "figure": "ae-4.8.2-figure.png"
+      },
+      "AE-4.8.3": {
+        "id": "AE-4.8.3",
+        "bookId": "4.8.3",
+        "title": {
+          "zh": "栅接电阻中点，直流只由R₁产生VGS",
+          "en": "A gate tied to the resistor midpoint makes R₁ set DC VGS"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 151,
+          "pdfPage": 184,
+          "figurePrintedPage": 151,
+          "figurePdfPage": 184,
+          "figure": "图题4.8.3"
+        },
+        "statement": {
+          "zh": "图题4.8.3的JFET放大电路中，V_DD=20 V、V_GS=−2 V、I_DSS=4 mA、V_P=−4 V。C₁、C₂交流短路。(1)求R₁和静态I_DQ；(2)若V_DS=6 V，求R₂；(3)设r_ds影响可忽略，在上述条件下计算A_v和R_o。图中R_d=10 kΩ、R_g=1 MΩ。",
+          "en": "For Fig.4.8.3,V_DD=20 V,V_GS=−2 V,I_DSS=4 mA,V_P=−4 V; C₁,C₂ are AC shorts. Find (1)R₁ and IDQ,(2)R₂ for VDS=6 V,(3)A_v and R_o neglecting finite r_ds effects. R_d=10 kΩ,R_g=1 MΩ."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "栅通过1 MΩ接R₁、R₂中点，直流栅无电流，因此VGS=−IDR₁，不是−ID(R₁+R₂)。交流则R_g存在支路电流，给精确小修正。",
+          "en": "Gate connects through1 MΩ to the R₁/R₂ junction. DC gives VGS=−IDR₁,but AC current through R_g causes a small correction."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)偏置电流与R₁",
+              "en": "(1) Bias current and R₁"
+            },
+            "text": {
+              "zh": "Shockley式给1 mA；VGS只跨R₁。",
+              "en": "The Shockley equation gives1 mA,and VGS spans only R₁."
+            },
+            "formula": "I_{DQ}=4\\left(1-\\frac{-2}{-4}\\right)^2=1\\,\\mathrm{mA},\\qquad R_1=2\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(2)完整漏源直流回路",
+              "en": "(2) Complete drain-source DC loop"
+            },
+            "text": {
+              "zh": "VDS要扣掉Rd及两只源电阻的压降。",
+              "en": "Subtract drops across Rd and both source resistors."
+            },
+            "formula": "6=20-(1\\,\\mathrm{mA})(10\\,\\mathrm{k\\Omega}+R_1+R_2)\\quad\\Rightarrow\\quad R_2=2\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)保留有限Rg节点方程",
+              "en": "(3) Retain the finite-Rg nodal equations"
+            },
+            "text": {
+              "zh": "gm=1 mS。令中点v_x、源v_s，输入栅v_i。r_ds影响忽略按漏源电导为0处理，不是把漏源短路。",
+              "en": "gm=1 mS. Let junction be v_x,source v_s and gate input v_i. Neglecting r_ds effects means zero output conductance,not a drain-source short."
+            },
+            "formula": "\\frac{v_s-v_x}{R_1}=g_m(v_i-v_s),\\qquad\\frac{v_x}{R_2}+\\frac{v_x-v_s}{R_1}+\\frac{v_x-v_i}{R_g}=0,\\qquad v_o=-g_mR_d(v_i-v_s)"
+          },
+          {
+            "title": {
+              "zh": "完整Rg结果和常用近似",
+              "en": "Finite-Rg result and common approximation"
+            },
+            "text": {
+              "zh": "原节点式给Av≈−1.997603，若Rg支路交流电流也忽略则常用源退化公式给−2。输出测试Rg保留、输入置零、负载移除，Ro=Rd。",
+              "en": "The original nodal solve gives−1.997603. Neglecting R_g AC current gives−2. The output test retains R_g and gives R_o=R_d."
+            },
+            "formula": "A_v\\approx-1.99760288\\ (\\approx-2),\\qquad R_o=10\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "IDQ=1 mA，R₁=R₂=2 kΩ，Av≈−1.997603（通常近似−2），Ro=10 kΩ。",
+          "en": "IDQ=1 mA,R₁=R₂=2 kΩ,Av≈−1.997603 (usually−2),Ro=10 kΩ."
+        },
+        "pitfalls": [
+          {
+            "zh": "直流用R₁求VGS，交流却不能因此删掉R₂；两种回路条件不同。",
+            "en": "R₁ alone sets DC VGS,but R₂ remains in the AC degeneration network."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-ID",
+          "1-R1",
+          "2-R2",
+          "3-gain",
+          "3-output-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "IDA": 0.001,
+            "R1Ohm": 2000.0,
+            "R2Ohm": 2000.0,
+            "gmS": 0.001,
+            "gainWithFiniteRg": -1.9976028765481424,
+            "usualIgnoreGateResistorCurrentGain": -2,
+            "RoOhm": 10000.0,
+            "check": "Original gate-to-R1/R2-junction resistor retained in finite-Rg nodal solution; DC loop gives VDS=6V. Ignoring channel conductance means ro→infinity, not shorting it."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "源串R₁、R₂接地，栅通过1 MΩ接两电阻中点；漏经10 kΩ接20 V。",
+            "en": "Source uses series R₁,R₂ to ground; gate has1 MΩ to their junction; drain has10 kΩ to20 V."
+          }
+        },
+        "figure": "ae-4.8.3-figure.png"
+      },
+      "AE-4.8.4": {
+        "id": "AE-4.8.4",
+        "bookId": "4.8.4",
+        "title": {
+          "zh": "先列有限r_o通式，再给常用源随近似",
+          "en": "State the finite-r_o formula before the usual follower approximation"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 151,
+          "pdfPage": 184,
+          "figurePrintedPage": 151,
+          "figurePdfPage": 184,
+          "figure": "图题4.8.4"
+        },
+        "statement": {
+          "zh": "源极输出器电路如图题4.8.4所示。JFET工作点跨导g_m=0.9 mS，其他参数如图：V_DD=12 V、R_g1=300 kΩ、R_g2=100 kΩ、R_g3=2 MΩ、R_s=12 kΩ，C_b1=0.02 μF、C_b2=10 μF。求电压增益A_v、输入电阻R_i和输出电阻R_o。",
+          "en": "For the source follower in Fig.4.8.4,gm=0.9 mS,V_DD=12 V,R_g1=300 kΩ,R_g2=100 kΩ,R_g3=2 MΩ,R_s=12 kΩ,C_b1=0.02 μF,C_b2=10 μF. Find A_v,R_i,R_o."
+        },
+        "prerequisites": {
+          "zh": "长沟道模型、静态工作区、交流伴随模型、栅极零电流及节点法；保留题设与近似的区别。",
+          "en": "Long-channel models, DC region checks, small-signal equivalents, zero gate current and nodal analysis; distinguish given data from approximations."
+        },
+        "recognition": {
+          "zh": "在中频将两耦合电容视作短路。Rg3接偏置分压中点，不接源极，因此输入电阻是Rg3加Rg1∥Rg2。题目未给器件r_o，先保留它。",
+          "en": "Use midband capacitor shorts. Rg3 connects to the bias-divider midpoint,not the source; input resistance is Rg3+(Rg1∥Rg2). Device r_o is unspecified."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "输入端的电阻连接",
+              "en": "Input resistance topology"
+            },
+            "text": {
+              "zh": "电源交流接地，分压中点到地为300∥100=75 kΩ。",
+              "en": "With the supply AC-grounded,the divider midpoint has75 kΩ to ground."
+            },
+            "formula": "R_i=2\\,\\mathrm{M\\Omega}+75\\,\\mathrm{k\\Omega}=2.075\\,\\mathrm{M\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "保留有限输出电阻的一般式",
+              "en": "General formula with finite device output resistance"
+            },
+            "text": {
+              "zh": "漏交流接地、输出无额外负载，源节点到地有Rs和器件ro。",
+              "en": "Drain is AC-grounded and no extra output load is specified; Rs and device ro connect source to ground."
+            },
+            "formula": "A_v=\\frac{g_m}{g_m+1/R_s+1/r_o},\\qquad R_o=\\frac1{g_m+1/R_s+1/r_o}"
+          },
+          {
+            "title": {
+              "zh": "常用ro远大于Rs近似",
+              "en": "Usual approximation ro much larger than Rs"
+            },
+            "text": {
+              "zh": "若忽略有限ro，得到教材常用数值；仅给gm并不足以唯一确定包含ro的精确结果。有限电容的低频结果还需工作频率。",
+              "en": "Neglecting finite ro gives the usual numerical values. gm alone cannot fix an exact finite-ro result; finite-capacitor low-frequency behavior also needs frequency."
+            },
+            "formula": "A_v\\approx\\frac{10.8}{11.8}=\\frac{54}{59}\\approx0.915254,\\qquad R_o\\approx\\frac{12000}{11.8}\\,\\Omega\\approx1016.949\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "中频Ri=2.075 MΩ；忽略有限ro时Av≈0.915254、Ro≈1.01695 kΩ。完整含ro结果用上式，题设未给ro故不虚构唯一精确数值。",
+          "en": "Midband Ri=2.075 MΩ. Neglecting finite ro gives Av≈0.915254 and Ro≈1.01695 kΩ; the finite-ro result follows the general formulas and is not uniquely numerical without ro."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把Rg3当自举到源极；原图接的是偏置中点。给出的电容值不能替代未给定的工作频率。",
+            "en": "Do not treat Rg3 as bootstrapped to source; it connects to the divider midpoint. Capacitance values do not specify operating frequency."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "gain-general-and-approximate",
+          "input-resistance",
+          "output-resistance-general-and-approximate"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立按原拓扑盖印MOS/JFET小信号节点方程，用直流原方程、工作区、测试源和功率复核。图读估计、有限输出电阻缺参及设计非唯一性分别注明；未称已查阅完整答案库。",
+            "en": "Independent original-topology MOS/JFET nodal stamps check DC equations, operating regions, test-source resistances and power. Graph estimates, unspecified output resistance and nonunique designs are explicitly qualified; no unread answer-key comparison is claimed."
+          },
+          "results": {
+            "RiOhm": 2075000.0,
+            "gainNeglectChannelConductance": 0.9152542372881357,
+            "RoNeglectChannelConductanceOhm": 1016.949152542373,
+            "generalGain": "gm/(gm+1/Rs+1/ro_device)",
+            "generalOutputResistance": "1/(gm+1/Rs+1/ro_device)",
+            "check": "Bias divider node eliminated independently. Finite device output resistance is unspecified, so numeric gain/output resistance explicitly use the usual ro≫Rs approximation."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "漏接12 V，源12 kΩ接地并经输出耦合电容输出；栅通过2 MΩ接300/100 kΩ分压中点。",
+            "en": "Drain is12 V,source has12 kΩ to ground and output coupling; gate has2 MΩ to the300/100 kΩ divider midpoint."
+          }
+        },
+        "figure": "ae-4.8.4-figure.png"
+      },
+      "AE-4.3.1": {
+        "id": "AE-4.3.1",
+        "bookId": "4.3.1",
+        "title": {
+          "zh": "先画过Q点的交流线，再求反相信号",
+          "en": "Draw the AC line through Q before finding the inverted signal"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 147,
+          "pdfPage": 180,
+          "figurePrintedPage": 147,
+          "figurePdfPage": 180,
+          "figure": "图题4.3.1；图4.3.6(a)原电路见印刷109页"
+        },
+        "statement": {
+          "zh": "电路如图4.3.6(a)，MOS输出特性如图题4.3.1。R_g1=180 kΩ、R_g2=60 kΩ、R_d=10 kΩ、R_L=20 kΩ、V_DD=10 V。(1)用图解法作直流负载线，确定静态Q值；(2)作交流负载线；(3)当v_i=0.5sinωt V时求相应v_o波形和电压增益。",
+          "en": "For Fig.4.3.6(a) with characteristics Fig.4.3.1,R_g1=180 kΩ,R_g2=60 kΩ,R_d=10 kΩ,R_L=20 kΩ,V_DD=10 V. (1)Draw the DC load line and find Q. (2)Draw the AC load line. (3)For v_i=0.5sinωt V,find the output waveform and voltage gain."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原输出特性与相应负载线；数值按图读精度处理。",
+            "en": "Original output characteristics and load lines; numerical readings retain graph precision."
+          }
+        },
+        "prerequisites": {
+          "zh": "共源偏置、直流/交流负载线、Q点连续和输出摆幅。",
+          "en": "Common-source bias,DC/AC load lines,Q-point continuity and output swing."
+        },
+        "recognition": {
+          "zh": "电容直流开路、在题设中频交流短路。静态电阻只有R_d，交流负载为R_d∥R_L；两条线必须过同一Q点。",
+          "en": "Capacitors are DC-open and treated as midband AC shorts. DC uses R_d and AC uses R_d∥R_L; both lines pass through Q."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)分压及直流线",
+              "en": "(1) Divider and DC line"
+            },
+            "text": {
+              "zh": "栅电流零，VGSQ=2.5 V。直流线与VGS=2.5 V平台约0.5 mA相交。",
+              "en": "Zero gate current gives VGSQ=2.5 V. Its roughly0.5 mA plateau intersects the DC line."
+            },
+            "formula": "V_{GSQ}=10\\frac{60}{180+60}=2.5\\,\\mathrm V,\\quad V_{DS}=10-(10\\,\\mathrm{k\\Omega})I_D,\\quad Q\\approx(5\\,\\mathrm V,0.5\\,\\mathrm{mA})"
+          },
+          {
+            "title": {
+              "zh": "(2)交流线过Q",
+              "en": "(2) AC line through Q"
+            },
+            "text": {
+              "zh": "交流电阻20/3 kΩ，横轴截距25/3 V，而不是10 V。下式I_D用mA，VDS用V。",
+              "en": "AC resistance is20/3 kΩ and the voltage-axis intercept25/3 V,not10 V. Use mA and V below."
+            },
+            "formula": "I_D=0.5-\\frac{V_{DS}-5}{20/3}\\quad(\\mathrm{mA}),\\qquad R_{ac}=\\frac{20}{3}\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)在两端栅压读出摆幅",
+              "en": "(3) Read the swing at both gate-voltage limits"
+            },
+            "text": {
+              "zh": "vgs总量在2～3 V间，原图平台电流约0.3～0.7 mA；交流输出因此在±4/3 V间。图给出的这些平台近似等间距，故按图解近似为反相正弦。",
+              "en": "Total vgs spans2–3 V,whose plateaus read about0.3–0.7 mA. The corresponding output swing is±4/3 V,approximately sinusoidal under the graph’s near-uniform plateau spacing."
+            },
+            "formula": "v_o\\approx-\\frac43\\sin\\omega t\\,\\mathrm V,\\qquad A_v\\approx-\\frac83\\approx-2.667"
+          }
+        ],
+        "answer": {
+          "zh": "Q≈(VGSQ=2.5 V,IDQ=0.5 mA,VDSQ=5 V)；交流线如上；vo≈−1.33sinωt V，Av≈−2.67。曲线读数均为图解近似。",
+          "en": "Q≈(VGSQ2.5 V,IDQ0.5 mA,VDSQ5 V); AC line as above; vo≈−1.33sinωt V and Av≈−2.67,at graph-reading precision."
+        },
+        "pitfalls": [
+          {
+            "zh": "输出交流量是漏端总电压减5 V，不是把总漏端5 V当正弦峰值。",
+            "en": "The output signal is total drain voltage minus5 V,not a5 V sine peak."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-DC-line",
+          "1-Q",
+          "2-AC-line",
+          "3-output-waveform",
+          "3-gain"
+        ],
+        "pendingSubparts": [],
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "引用的教材图4.3.6(a)：分压栅偏置、源体接地、漏电阻及电容耦合负载。",
+              "en": "Referenced Fig.4.3.6(a): divider gate bias,grounded source/bulk,drain resistor and capacitor-coupled load."
+            },
+            "caption": {
+              "zh": "教材原电路图，印刷109页（PDF142页）。",
+              "en": "Original referenced circuit,printed109 (PDF142)."
+            },
+            "figure": "ae-4.3.6a-circuit.png"
+          },
+          {
+            "alt": {
+              "zh": "由原电路方程和图上估读数绘制的负载线；非精确器件拟合。",
+              "en": "Load lines from original circuit equations and approximate graph readings,not an exact device fit."
+            },
+            "caption": {
+              "zh": "图读近似解析图，不是SPICE仿真。4.3.1的低漏压曲线未重新拟合，只画读出的平台和边界。",
+              "en": "Graph-estimate illustration,not SPICE. For4.3.1 only read plateaus and boundary are drawn; low-drain-voltage curves are not refitted."
+            },
+            "figure": "ae-4.3.1-load-wave.svg"
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "由原分压和电阻方程独立核对直流Q点、交流线斜率及输出电压电流增量；原曲线与边界高分辨率再读，数值保留近似。未用虚构平方律去替代给定曲线。",
+            "en": "Original divider/resistor equations independently check bias,AC slopes and voltage/current increments. High-resolution curve/boundary readings are explicitly approximate; no invented square-law fit replaces the supplied graph."
+          },
+          "results": {
+            "VGSQ_V": "5/2",
+            "IDQ_mA_approx": "1/2",
+            "VDSQ_V_approx": "5",
+            "Rac_kohm": "20/3",
+            "ACaxisInterceptV": "25/3",
+            "plateauDerivedGm_mS_approx": "2/5",
+            "voltageGain_approx": "-8/3",
+            "outputPeakV_approx": "4/3",
+            "check": "Exact original resistor/divider and incremental KCL; graph plateau estimates at VGS2,2.5,3V independently give0.3,0.5,0.7mA. No exact MOS square-law fit inferred."
+          }
+        },
+        "figure": "ae-4.3.1-figure.png"
+      },
+      "AE-4.3.2": {
+        "id": "AE-4.3.2",
+        "bookId": "4.3.2",
+        "title": {
+          "zh": "最大摆幅比较截止与可变电阻区两侧余量",
+          "en": "Compare cutoff and triode-side margins for maximum swing"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 147,
+          "pdfPage": 180,
+          "figurePrintedPage": 147,
+          "figurePdfPage": 180,
+          "figure": "图题4.3.1；图4.3.6(a)原电路见印刷109页"
+        },
+        "statement": {
+          "zh": "在题4.3.1所给电路参数条件下，最大不失真输出电压的幅值V_om约为多少？",
+          "en": "Using the circuit parameters of4.3.1,estimate the maximum undistorted output peak V_om."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原输出特性与相应负载线；数值按图读精度处理。",
+            "en": "Original output characteristics and load lines; numerical readings retain graph precision."
+          }
+        },
+        "prerequisites": {
+          "zh": "共源偏置、直流/交流负载线、Q点连续和输出摆幅。",
+          "en": "Common-source bias,DC/AC load lines,Q-point continuity and output swing."
+        },
+        "recognition": {
+          "zh": "沿交流线从Q向右到截止、向左到虚线恒流区边界，取两边可用电压余量较小者。",
+          "en": "Follow the AC line right to cutoff and left to the drawn saturation boundary,then choose the smaller voltage margin."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "截止侧上摆余量",
+              "en": "Positive-swing cutoff margin"
+            },
+            "text": {
+              "zh": "Q在5 V、0.5 mA；截止时iD=0，漏端可到8.33 V。",
+              "en": "Q is5 V,0.5 mA. At cutoff,the drain reaches8.33 V."
+            },
+            "formula": "V_{DS,cutoff}=5+0.5\\left(\\frac{20}{3}\\right)=\\frac{25}{3}\\,\\mathrm V,\\quad\\Delta V_+=\\frac{10}{3}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "恒流区边界侧下摆余量",
+              "en": "Negative-swing saturation-boundary margin"
+            },
+            "text": {
+              "zh": "从高分辨率原图读边界近(3.1 V,0.7 mA)与(3.5 V,0.9 mA)，与交流线交于约3.2 V、0.77 mA；因此下摆约1.8 V先受限。线性插值只是估读工具，不是精确器件参数。",
+              "en": "The high-resolution boundary near(3.1 V,0.7 mA) and(3.5 V,0.9 mA) intersects the AC line around3.2 V,0.77 mA. The roughly1.8 V negative margin limits first; interpolation is a reading aid,not exact device data."
+            },
+            "formula": "V_{om}\\approx\\min(8.33-5,5-3.2)\\,\\mathrm V\\approx1.8\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "最大不失真输出峰值约1.8 V，由靠近可变电阻区的负向摆幅限制；图读精度约0.1～0.2 V，不报多位精确值。",
+          "en": "Maximum undistorted output peak is about1.8 V,limited by the negative swing toward the triode boundary. Graph resolution is roughly0.1–0.2 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能只用截止侧3.33 V，也不能拿直流线去量交流摆幅；真正非线性误差容限未给，数值按教材图解边界准则。",
+            "en": "Do not use only the3.33 V cutoff margin or the DC line. The textbook boundary criterion is used because a numerical distortion tolerance is unspecified."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "positive-margin",
+          "negative-margin",
+          "maximum-output-peak"
+        ],
+        "pendingSubparts": [],
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "引用的教材图4.3.6(a)：分压栅偏置、源体接地、漏电阻及电容耦合负载。",
+              "en": "Referenced Fig.4.3.6(a): divider gate bias,grounded source/bulk,drain resistor and capacitor-coupled load."
+            },
+            "caption": {
+              "zh": "教材原电路图，印刷109页（PDF142页）。",
+              "en": "Original referenced circuit,printed109 (PDF142)."
+            },
+            "figure": "ae-4.3.6a-circuit.png"
+          },
+          {
+            "alt": {
+              "zh": "由原电路方程和图上估读数绘制的负载线；非精确器件拟合。",
+              "en": "Load lines from original circuit equations and approximate graph readings,not an exact device fit."
+            },
+            "caption": {
+              "zh": "图读近似解析图，不是SPICE仿真。4.3.1的低漏压曲线未重新拟合，只画读出的平台和边界。",
+              "en": "Graph-estimate illustration,not SPICE. For4.3.1 only read plateaus and boundary are drawn; low-drain-voltage curves are not refitted."
+            },
+            "figure": "ae-4.3.1-load-wave.svg"
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "由原分压和电阻方程独立核对直流Q点、交流线斜率及输出电压电流增量；原曲线与边界高分辨率再读，数值保留近似。未用虚构平方律去替代给定曲线。",
+            "en": "Original divider/resistor equations independently check bias,AC slopes and voltage/current increments. High-resolution curve/boundary readings are explicitly approximate; no invented square-law fit replaces the supplied graph."
+          },
+          "results": {
+            "boundaryReadPointsV_mA": [
+              [
+                3.1,
+                0.7
+              ],
+              [
+                3.5,
+                0.9
+              ]
+            ],
+            "estimatedBoundaryIntersectionV": "42/13",
+            "estimatedBoundaryIntersection_mA": "199/260",
+            "estimatedNegativeMarginV": "23/13",
+            "positiveCutoffMarginV": "10/3",
+            "reportedMaximumPeakV": "about1.8",
+            "precision": "Graph-reading result, roughly0.1–0.2V resolution; interpolated fractions are calculation details,not exact device parameters."
+          }
+        },
+        "figure": "ae-4.3.1-figure.png"
+      },
+      "AE-4.3.3": {
+        "id": "AE-4.3.3",
+        "bookId": "4.3.3",
+        "title": {
+          "zh": "先读两条线的截距，再恢复电阻",
+          "en": "Read both line intercepts before recovering resistances"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 147,
+          "pdfPage": 180,
+          "figurePrintedPage": 147,
+          "figurePdfPage": 180,
+          "figure": "图题4.3.3；图4.3.6(a)原电路见印刷109页"
+        },
+        "statement": {
+          "zh": "电路如图4.3.6(a)，交、直流负载线如图题4.3.3，已知R_g1=200 kΩ。求：(1)V_GSQ、I_DQ、V_DSQ；(2)R_g2；(3)R_d、R_L；(4)最大不失真输出电压幅值V_om（设v_i为正弦）。",
+          "en": "For Fig.4.3.6(a),DC and AC load lines are shown in Fig.4.3.3 and R_g1=200 kΩ. Find (1)V_GSQ,IDQ,V_DSQ,(2)R_g2,(3)R_d,R_L,(4)maximum undistorted output sine peak."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原输出特性与相应负载线；数值按图读精度处理。",
+            "en": "Original output characteristics and load lines; numerical readings retain graph precision."
+          }
+        },
+        "prerequisites": {
+          "zh": "共源偏置、直流/交流负载线、Q点连续和输出摆幅。",
+          "en": "Common-source bias,DC/AC load lines,Q-point continuity and output swing."
+        },
+        "recognition": {
+          "zh": "图中Q给2 V、0.3 mA、7.5 V。直流横截距12 V决定电源，交流横截距10 V与Q决定Rac。",
+          "en": "Q reads2 V,0.3 mA,7.5 V. The DC voltage intercept12 V gives the supply; the AC intercept10 V and Q give Rac."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)直接读Q所在曲线",
+              "en": "(1) Read Q and its gate curve"
+            },
+            "text": {
+              "zh": "Q在VGS=2 V曲线，虚线给VDS约7.5 V、ID约0.3 mA。",
+              "en": "Q is on the VGS2 V curve with VDS≈7.5 V and ID≈0.3 mA."
+            },
+            "formula": "V_{GSQ}\\approx2\\,\\mathrm V,\\quad I_{DQ}\\approx0.3\\,\\mathrm{mA},\\quad V_{DSQ}\\approx7.5\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)用12 V分压恢复Rg2",
+              "en": "(2) Recover Rg2 from the12 V divider"
+            },
+            "text": {
+              "zh": "源接地，VG=VGS=2 V；栅极不分流。",
+              "en": "Source is grounded and VG=VGS=2 V with zero gate current."
+            },
+            "formula": "\\frac{R_{g2}}{200+R_{g2}}=\\frac2{12}\\quad\\Rightarrow\\quad R_{g2}\\approx40\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)分别使用直流和交流线",
+              "en": "(3) Use the distinct DC and AC lines"
+            },
+            "text": {
+              "zh": "直流线纵截距0.8 mA，故Rd=12/0.8=15 kΩ；交流Rac=(10−7.5)/0.3=25/3 kΩ。",
+              "en": "The DC current intercept0.8 mA gives Rd15 kΩ. AC resistance is(10−7.5)/0.3=25/3 kΩ."
+            },
+            "formula": "R_d\\approx15\\,\\mathrm{k\\Omega},\\quad R_{ac}\\approx\\frac{25}{3}\\,\\mathrm{k\\Omega},\\quad R_L=\\frac{R_dR_{ac}}{R_d-R_{ac}}\\approx18.75\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(4)截止侧先限制对称正弦摆幅",
+              "en": "(4) Cutoff limits the symmetric sine first"
+            },
+            "text": {
+              "zh": "右侧截止只能从7.5升到10 V，余量2.5 V。对称反向端为5 V、0.6 mA，仍位于对应VGS约3 V曲线的恒流区内。",
+              "en": "The positive swing reaches cutoff at10 V from7.5 V,leaving2.5 V. The symmetric opposite endpoint is5 V,0.6 mA,still beyond the knee of the roughly3 V gate curve."
+            },
+            "formula": "V_{om}\\approx10-7.5=2.5\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "Q≈(2 V,0.3 mA,7.5 V)按VGS、ID、VDS顺序；Rg2≈40 kΩ、Rd≈15 kΩ、RL≈18.75 kΩ、Vom≈2.5 V，均按图读精度。",
+          "en": "Q≈(2 V,0.3 mA,7.5 V) in VGS,ID,VDS order; Rg2≈40 kΩ,Rd≈15 kΩ,RL≈18.75 kΩ,Vom≈2.5 V,at graph precision."
+        },
+        "pitfalls": [
+          {
+            "zh": "交流截距10 V不是电源电压；电源由直流线的12 V截距确定。",
+            "en": "The AC10 V intercept is not the supply; use the DC12 V intercept."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Q",
+          "2-Rg2",
+          "3-Rd",
+          "3-RL",
+          "4-max-output"
+        ],
+        "pendingSubparts": [],
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "引用的教材图4.3.6(a)：分压栅偏置、源体接地、漏电阻及电容耦合负载。",
+              "en": "Referenced Fig.4.3.6(a): divider gate bias,grounded source/bulk,drain resistor and capacitor-coupled load."
+            },
+            "caption": {
+              "zh": "教材原电路图，印刷109页（PDF142页）。",
+              "en": "Original referenced circuit,printed109 (PDF142)."
+            },
+            "figure": "ae-4.3.6a-circuit.png"
+          },
+          {
+            "alt": {
+              "zh": "由原电路方程和图上估读数绘制的负载线；非精确器件拟合。",
+              "en": "Load lines from original circuit equations and approximate graph readings,not an exact device fit."
+            },
+            "caption": {
+              "zh": "图读近似解析图，不是SPICE仿真。4.3.1的低漏压曲线未重新拟合，只画读出的平台和边界。",
+              "en": "Graph-estimate illustration,not SPICE. For4.3.1 only read plateaus and boundary are drawn; low-drain-voltage curves are not refitted."
+            },
+            "figure": "ae-4.3.3-load.svg"
+          }
+        ],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "由原分压和电阻方程独立核对直流Q点、交流线斜率及输出电压电流增量；原曲线与边界高分辨率再读，数值保留近似。未用虚构平方律去替代给定曲线。",
+            "en": "Original divider/resistor equations independently check bias,AC slopes and voltage/current increments. High-resolution curve/boundary readings are explicitly approximate; no invented square-law fit replaces the supplied graph."
+          },
+          "results": {
+            "VGSQ_V_approx": 2,
+            "IDQ_mA_approx": "3/10",
+            "VDSQ_V_approx": "15/2",
+            "VDD_V_read": 12,
+            "Rd_kohm_approx": "15",
+            "Rac_kohm_approx": "25/3",
+            "RL_kohm_approx": "75/4",
+            "Rg2_kohm_approx": "40",
+            "maxPeakV_approx": 2.5,
+            "check": "Independent DC and AC line intercepts/slopes, original gate divider and symmetric-swing current endpoints; cutoff limits first,not saturation."
+          }
+        },
+        "figure": "ae-4.3.3-figure.png"
+      },
+      "AE-5.1.2": {
+        "id": "AE-5.1.2",
+        "bookId": "5.1.2",
+        "title": {
+          "zh": "极限电流、电压与功耗必须同时满足",
+          "en": "Apply current,voltage and power limits together"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 183,
+          "pdfPage": 216,
+          "figure": "无题图"
+        },
+        "statement": {
+          "zh": "某BJT的极限参数I_CM=100 mA、P_CM=150 mW、$V_{(BR)CEO}$=30 V。若工作电压V_CE=10 V，工作电流I_C不得超过多大？若工作电流I_C=1 mA，工作电压的极限值应为多少？",
+          "en": "A BJT has I_CM=100 mA,P_CM=150 mW and $V_{(BR)CEO}$=30 V. At V_CE=10 V,what maximum I_C is permitted? At I_C=1 mA,what is the limiting operating voltage?"
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "每次同时检查三个额定约束，取最严格者。这里只按题给的静态额定参数求上限。",
+          "en": "Apply all three supplied static ratings and choose the tightest bound."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "固定10 V时检查功耗",
+              "en": "Power limit at10 V"
+            },
+            "text": {
+              "zh": "功耗先限制为15 mA，低于100 mA额定电流；10 V也低于击穿上限。",
+              "en": "Power permits15 mA,below the100 mA current rating;10 V is below breakdown."
+            },
+            "formula": "I_C\\le\\min\\left(100\\,\\mathrm{mA},\\frac{150\\,\\mathrm{mW}}{10\\,\\mathrm V}\\right)=15\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "固定1 mA时检查击穿",
+              "en": "Breakdown limit at1 mA"
+            },
+            "text": {
+              "zh": "仅看功耗会得到150 V，但30 V击穿参数先限制。此处30 V是题设额定上界，实际设计应留裕量并考虑温度降额。",
+              "en": "Power alone permits150 V,but the30 V breakdown rating is tighter. The exercise asks for the nominal upper bound; a physical design needs margin and thermal derating."
+            },
+            "formula": "V_{CE}\\le\\min\\left(30\\,\\mathrm V,\\frac{150\\,\\mathrm{mW}}{1\\,\\mathrm{mA}}\\right)=30\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "两问上界分别为15 mA和30 V。",
+          "en": "The two nominal upper bounds are15 mA and30 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把最大电流、最大电压同时加在管上；其乘积可能超功耗。",
+            "en": "Maximum current and maximum voltage generally cannot be applied simultaneously because their product may exceed the power rating."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "current-limit",
+          "voltage-limit"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "ICmax_A": 0.015,
+            "VCEmax_V": 30
+          }
+        }
+      },
+      "AE-5.2.5": {
+        "id": "AE-5.2.5",
+        "bookId": "5.2.5",
+        "title": {
+          "zh": "分压偏置设计保留基极分流",
+          "en": "Retain base-current loading in divider design"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 185,
+          "pdfPage": 218,
+          "figure": "图题5.2.5"
+        },
+        "statement": {
+          "zh": "放大电路如图题5.2.5，β=100、V_BEQ=0.7 V、V_CC=12 V、R_c=4.3 kΩ、I₁=10I_B。要求I_CQ=1 mA、V_CEQ=5 V。设计R_e、R_b1和R_b2。",
+          "en": "For Fig.5.2.5,beta100,V_BEQ0.7 V,V_CC12 V,R_c4.3 kΩ and I₁=10I_B. Design R_e,R_b1 and R_b2 for I_CQ1 mA and V_CEQ5 V."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "先由集电极回路定VE，再用上支路I₁和下支路I₁−IB分别求分压电阻。",
+          "en": "Find VE from the collector loop,then distinguish upper current I₁ from lower current I₁−IB."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由Q点确定射极、基极电压",
+              "en": "Find emitter and base voltages"
+            },
+            "text": {
+              "zh": "VC=7.7 V，所以VE=2.7 V、VB=3.4 V；VC>VB，满足放大区。",
+              "en": "VC7.7 V gives VE2.7 V and VB3.4 V; VC>VB verifies active operation."
+            },
+            "formula": "V_E=12-(1\\,\\mathrm{mA})(4.3\\,\\mathrm{k\\Omega})-5=2.7\\,\\mathrm V,\\quad V_B=3.4\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "保留有限β及分流",
+              "en": "Retain finite beta and divider loading"
+            },
+            "text": {
+              "zh": "IB=10 μA、IE=1.01 mA；图示上支路I₁=100 μA，流经Rb2的是90 μA。",
+              "en": "IB10 µA and IE1.01 mA; the drawn upper current is100 µA,and Rb2 carries90 µA."
+            },
+            "formula": "R_e=\\frac{2.7}{1.01\\,\\mathrm{mA}}\\approx2.67327\\,\\mathrm{k\\Omega},\\quad R_{b1}=\\frac{12-3.4}{100\\,\\mathrm{\\mu A}}=86\\,\\mathrm{k\\Omega},\\quad R_{b2}=\\frac{3.4}{90\\,\\mathrm{\\mu A}}\\approx37.7778\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "Re≈2.673 kΩ、Rb1=86 kΩ、Rb2≈37.778 kΩ（未取标准阻值）。",
+          "en": "Re≈2.673 kΩ,Rb1=86 kΩ,Rb2≈37.778 kΩ,before choosing standard values."
+        },
+        "pitfalls": [
+          {
+            "zh": "题设I₁是上支路电流，不能让两个偏置电阻都流100 μA。",
+            "en": "I₁ is the upper-branch current; the lower resistor does not also carry100 µA."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "Re",
+          "Rb1",
+          "Rb2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "REohm": 2673.267326732673,
+            "Rb1ohm": 85999.99999999999,
+            "Rb2ohm": 37777.77777777778,
+            "VEV": 2.7,
+            "VBV": 3.4000000000000004
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "figure": "ae-5.2.5-figure.png"
+      },
+      "AE-5.2.10": {
+        "id": "AE-5.2.10",
+        "bookId": "5.2.10",
+        "title": {
+          "zh": "双电源偏置与源电阻压降",
+          "en": "Dual-supply bias and source-resistance drop"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 186,
+          "pdfPage": 219,
+          "figure": "图题5.2.10"
+        },
+        "statement": {
+          "zh": "电路如图题5.2.10，v_s为正弦波，R_si=500 Ω、β=100、v_BE=0.7 V，C_b1、C_b2容抗可忽略。电源为±15 V。(1)使I_EQ约1 mA，求R_e；(2)使V_CQ=+5 V，求R_c；(3)若R_L=5 kΩ，求A_vs。",
+          "en": "For Fig.5.2.10,v_s is sinusoidal,R_si500 Ω,beta100,v_BE0.7 V and both capacitor reactances are negligible,with ±15 V supplies. (1)Choose R_e for I_EQ≈1 mA. (2)Choose R_c for V_CQ+5 V. (3)Find A_vs with R_L5 kΩ."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "直流时旁路电容开路，源直流值零但Rsi仍承载IB；交流时射极被Cb2接地。",
+          "en": "The bypass is DC-open; the zero-DC source still carries IB through Rsi. In AC,Cb2 grounds the emitter."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)先求有限β偏置",
+              "en": "(1) Finite-beta bias"
+            },
+            "text": {
+              "zh": "以IE=1 mA设计，则IB≈9.90099 μA，VB=−RsiIB，VE=VB−0.7 V。",
+              "en": "Design at IE1 mA: IB≈9.90099 µA,VB=−RsiIB and VE=VB−0.7 V."
+            },
+            "formula": "I_B=\\frac{1\\,\\mathrm{mA}}{101},\\quad R_e=\\frac{15-0.7-(500\\,\\Omega)I_B}{1\\,\\mathrm{mA}}\\approx14.29505\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(2)用IC而不是IE求Rc",
+              "en": "(2) Use IC for Rc"
+            },
+            "text": {
+              "zh": "IC≈0.990099 mA，电阻压降为10 V；VE约−0.704950 V，VC=5 V，处于放大区。常用IC≈IE估算给Rc≈10 kΩ。",
+              "en": "IC≈0.990099 mA and the resistor drops10 V. VE≈−0.704950 V and VC5 V verify active operation. The usual IC≈IE estimate gives Rc≈10 kΩ."
+            },
+            "formula": "R_c=\\frac{15-5}{(100/101)\\,\\mathrm{mA}}=10.1\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)源电阻与交流负载同时加载",
+              "en": "(3) Include input and output loading"
+            },
+            "text": {
+              "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+              "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+            },
+            "formula": "r_{be}=r_{bb\\prime}+\\frac{(1+\\beta)V_T}{I_E}\\approx2826\\,\\Omega,\\quad A_{vs}=-\\frac{\\beta(R_c\\parallel R_L)}{r_{be}+R_{si}}\\approx-100.55234"
+          }
+        ],
+        "answer": {
+          "zh": "有限β设计Re≈14.295 kΩ、Rc=10.1 kΩ；按所列课件小信号模型，Avs≈−100.55。粗估偏置值Re≈14.3 kΩ、Rc≈10 kΩ也应注明近似。",
+          "en": "Finite-beta design: Re≈14.295 kΩ,Rc10.1 kΩ; Avs≈−100.55 under the stated course small-signal model. Coarse14.3 kΩ and10 kΩ bias estimates should be labeled approximate."
+        },
+        "pitfalls": [
+          {
+            "zh": "交流增益不能保留已被电容短路的Re；直流设计不能把Cb2当短路。",
+            "en": "Do not retain bypassed Re in the AC gain or short Cb2 in the DC design."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Re",
+          "2-Rc",
+          "3-Avs"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "IB_A": 9.900990099009901e-06,
+            "IC_A": 0.0009900990099009901,
+            "REohm": 14295.049504950495,
+            "RCohm": 10100.0,
+            "rbeohm": 2826.0,
+            "Avs": -100.55234097796611
+          },
+          "assumptions": {
+            "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+            "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "figure": "ae-5.2.10-figure.png"
+      },
+      "AE-5.2.11": {
+        "id": "AE-5.2.11",
+        "bookId": "5.2.11",
+        "title": {
+          "zh": "直接连接的RL也参与直流偏置",
+          "en": "A directly connected RL loads the DC bias too"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 186,
+          "pdfPage": 219,
+          "figure": "图题5.2.11",
+          "figurePrintedPage": 187,
+          "figurePdfPage": 220
+        },
+        "statement": {
+          "zh": "图题5.2.11中，V_CC=V_EE=12 V、I_O=1 mA、β=100、V_BEQ=0.6 V、R_b=110 kΩ、R_c=R_L=10 kΩ，C_b1与C_e容抗可忽略。(1)求I_BQ、I_CQ、负载电流I_L、I_Rc及V_CEQ；(2)画小信号等效电路；(3)求A_v、R_i和R_o。R_L直接接集电极与地。",
+          "en": "In Fig.5.2.11,V_CC=V_EE12 V,I_O1 mA,beta100,V_BEQ0.6 V,R_b110 kΩ,R_c=R_L10 kΩ,and C_b1,C_e have negligible reactance. (1)Find I_BQ,I_CQ,I_L,I_Rc and V_CEQ. (2)Draw the small-signal equivalent. (3)Find A_v,R_i,R_o. RL is directly connected from collector to ground."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "恒流源固定IE，基极电流使VB略为负值；RL没有隔直电容，不能从直流图删掉。",
+          "en": "The current source fixes IE; base current makes VB negative. RL has no blocking capacitor and remains in the DC circuit."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)先解基射极",
+              "en": "(1) Solve base and emitter"
+            },
+            "text": {
+              "zh": "IE=1 mA；IB=IE/101，IC=100IB；VB=−IBRb，VE=VB−0.6 V。",
+              "en": "IE1 mA gives IB=IE/101 and IC=100IB; VB=−IBRb and VE=VB−0.6 V."
+            },
+            "formula": "I_B\\approx9.90099\\,\\mathrm{\\mu A},\\quad I_C\\approx0.990099\\,\\mathrm{mA},\\quad V_B\\approx-1.089109\\,\\mathrm V,\\quad V_E\\approx-1.689109\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "集电极KCL包含负载电流",
+              "en": "Collector KCL includes load current"
+            },
+            "text": {
+              "zh": "由下式得VC≈1.049505 V；IL≈0.1049505 mA、IRc≈1.0950495 mA、VCE≈2.738614 V。VC>VB，仍在放大区。",
+              "en": "The equation gives VC≈1.049505 V,IL≈0.1049505 mA,IRc≈1.0950495 mA and VCE≈2.738614 V. VC>VB verifies active operation."
+            },
+            "formula": "\\frac{12-V_C}{10\\,\\mathrm{k\\Omega}}=I_C+\\frac{V_C}{10\\,\\mathrm{k\\Omega}}"
+          },
+          {
+            "title": {
+              "zh": "(2)按图重画交流模型",
+              "en": "(2) Redraw the AC model"
+            },
+            "text": {
+              "zh": "见等效图：直流电压源接地、恒流源开路，但Ce把射极接交流地；Rb、rbe接地，受控源βib由集电极指向射极，Rc与RL同时加载。",
+              "en": "See the equivalent: DC voltage sources become ground and the ideal DC current source opens,but Ce AC-grounds the emitter. Rb and rbe shunt the input; beta-ib flows collector to emitter,with both Rc and RL retained."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)在指定小信号模型下求端口",
+              "en": "(3) Find ports under the stated model"
+            },
+            "text": {
+              "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。求Ro时断开外接RL并将输入信号置零。",
+              "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown. Remove external RL and zero the input when finding Ro."
+            },
+            "formula": "r_{be}=r_{bb\\prime}+\\frac{101V_T}{I_E}\\approx2826\\,\\Omega,\\quad A_v=-\\frac{100(10\\parallel10)\\,\\mathrm{k\\Omega}}{r_{be}}\\approx-176.92852,\\quad R_i=110\\,\\mathrm{k\\Omega}\\parallel r_{be}\\approx2.755216\\,\\mathrm{k\\Omega},\\quad R_o=10\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "IB≈9.901 μA、IC≈0.9901 mA、IL≈0.10495 mA、IRc≈1.09505 mA、VCE≈2.73861 V；模型下Av≈−176.93、Ri≈2.755 kΩ、Ro=10 kΩ；等效图见解析。",
+          "en": "IB≈9.901 µA,IC≈0.9901 mA,IL≈0.10495 mA,IRc≈1.09505 mA,VCE≈2.73861 V; modeled Av≈−176.93,Ri≈2.755 kΩ,Ro10 kΩ; equivalent shown."
+        },
+        "pitfalls": [
+          {
+            "zh": "把RL错当电容耦合会算成VC≈2.099 V，改变Q点；求Ro又不能把外接RL算进去。",
+            "en": "Treating RL as capacitively coupled incorrectly gives VC≈2.099 V; conversely,the external RL must be removed when finding Ro."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-IB",
+          "1-IC",
+          "1-IL",
+          "1-IRc",
+          "1-VCE",
+          "2-equivalent",
+          "3-Av",
+          "3-Ri",
+          "3-Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "IB_A": 9.900990099009901e-06,
+            "IC_A": 0.0009900990099009901,
+            "IL_A": 0.00010495049504950496,
+            "IRc_A": 0.0010950495049504951,
+            "VBV": -1.0891089108910892,
+            "VEV": -1.6891089108910893,
+            "VCV": 1.0495049504950495,
+            "VCEV": 2.738613861386139,
+            "rbeohm": 2826.0,
+            "Av": -176.92852087756546,
+            "RiOhm": 2755.2159963129066,
+            "RoOhm": 10000
+          },
+          "assumptions": {
+            "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+            "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "中频等效图：射极交流接地、基极rbe、受控电流βib向下、RC与RL均保留。",
+              "en": "Midband model: AC-grounded emitter,rbe,downward beta-ib source,and both RC and RL."
+            },
+            "caption": {
+              "zh": "由原图重画的h参数等效电路；不是SPICE仿真。",
+              "en": "Redrawn h-parameter equivalent,not SPICE."
+            },
+            "figure": "ae-5.2.11-equivalent.svg"
+          }
+        ],
+        "figure": "ae-5.2.11-figure.png"
+      },
+      "AE-5.2.12": {
+        "id": "AE-5.2.12",
+        "bookId": "5.2.12",
+        "title": {
+          "zh": "共基极恒流偏置：信号从射极输入",
+          "en": "Current-biased common base takes its input at the emitter"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 187,
+          "pdfPage": 220,
+          "figure": "图题5.2.12"
+        },
+        "statement": {
+          "zh": "共基极电路如图题5.2.12，射极回路接1.01 mA恒流源；β=100、R_si=0、R_L=∞，R_c=7.5 kΩ，电源±15 V。确定A_v、R_i和R_o。",
+          "en": "For the common-base circuit Fig.5.2.12,the emitter current source is1.01 mA,beta100,R_si0,R_L∞,R_c7.5 kΩ and supplies±15 V. Determine A_v,R_i,R_o."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "基极接地是共基极，恒流源仅设定直流IE，理想恒流源的小信号电阻无限大。",
+          "en": "Grounded base identifies common base; the ideal current source fixes DC IE and is AC-open."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "确定小信号参数",
+              "en": "Find small-signal parameters"
+            },
+            "text": {
+              "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+              "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+            },
+            "formula": "I_C=\\frac{100}{101}(1.01\\,\\mathrm{mA})=1\\,\\mathrm{mA},\\quad r_{be}=r_{bb\\prime}+\\frac{101V_T}{1.01\\,\\mathrm{mA}}\\approx2800\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "由射极电流与集电极电流求端口",
+              "en": "Use emitter and collector currents"
+            },
+            "text": {
+              "zh": "射极电压升高使vbe降低，ic减小，Rc压降减小，输出电压升高；因此增益为正。输出电阻在输入置零且忽略厄利效应时为Rc。",
+              "en": "Raising emitter voltage lowers vbe and collector current,raising the collector voltage. Gain is positive; with input zero and no Early effect,output resistance is Rc."
+            },
+            "formula": "A_v=\\frac{\\beta R_c}{r_{be}}\\approx267.85714,\\quad R_i=\\frac{r_{be}}{1+\\beta}\\approx27.72277\\,\\Omega,\\quad R_o=7.5\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "所列模型下Av≈+267.86、Ri≈27.723 Ω、Ro=7.5 kΩ。若另忽略基区电阻，常见gmRc≈288.46、Ri≈25.74 Ω属于另一层近似。",
+          "en": "Under the stated model,Av≈+267.86,Ri≈27.723 Ω,Ro7.5 kΩ. Neglecting base-spreading resistance additionally gives gmRc≈288.46 and Ri≈25.74 Ω,a distinct approximation."
+        },
+        "pitfalls": [
+          {
+            "zh": "恒流源在交流开路不等于切断射极信号；耦合电容仍把信号送入射极。",
+            "en": "Opening the ideal DC current source in AC does not disconnect the emitter signal; its coupling capacitor still connects it."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "Av",
+          "Ri",
+          "Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "IE_A": 0.00101,
+            "IC_A": 0.001,
+            "rbeohm": 2799.9999999999995,
+            "Av": 267.8571428571429,
+            "RiOhm": 27.72277227722772,
+            "RoOhm": 7500
+          },
+          "assumptions": {
+            "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+            "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "figure": "ae-5.2.12-figure.png"
+      },
+      "AE-5.2.13": {
+        "id": "AE-5.2.13",
+        "bookId": "5.2.13",
+        "title": {
+          "zh": "同一偏置电路的三种端口接法",
+          "en": "Three port connections share one DC bias"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 187,
+          "pdfPage": 220,
+          "figure": "图题5.2.13"
+        },
+        "statement": {
+          "zh": "电路如图题5.2.13，β=100、V_BEQ=0.7 V，V_CC=+10 V、V_EE=−10 V、R_c=8 kΩ、R_b=10 kΩ、I_E=1 mA，各电容容抗可忽略。(1)求V_BQ、V_EQ、V_CQ；(2)求r_be；(3)Z接地、X接内阻10 kΩ信号源v_s、Y接10 kΩ负载，求A_vs=v_Y/v_s；(4)X接地、Z接内阻200 Ω信号源、Y接10 kΩ负载，求A_vs=v_Y/v_s；(5)Y接地、X接内阻100 Ω信号源、Z接1 kΩ负载，求A_vs=v_Z/v_s。",
+          "en": "For Fig.5.2.13,beta100,V_BEQ0.7 V,V_CC+10 V,V_EE−10 V,R_c8 kΩ,R_b10 kΩ and I_E1 mA; capacitor reactances are negligible. (1)Find V_BQ,V_EQ,V_CQ. (2)Find r_be. (3)Ground Z,drive X through10 kΩ,and load Y with10 kΩ; find v_Y/v_s. (4)Ground X,drive Z through200 Ω,and load Y with10 kΩ; find v_Y/v_s. (5)Ground Y,drive X through100 Ω,and load Z with1 kΩ; find v_Z/v_s."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "外接信号源和负载通过电容连接，不改变直流Q点；接地的X、Y、Z分别使电路成为共基、共集、共射形式。",
+          "en": "Capacitor-connected external sources and loads leave the DC bias unchanged. Grounding X,Y or Z selects common-base,common-collector or common-emitter operation."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)先只解一次直流偏置",
+              "en": "(1) Solve the common DC bias once"
+            },
+            "text": {
+              "zh": "IB=1 mA/101，IC=100IB；Rb上的电流来自地，故VB为负。VC>VB，可用放大区模型。",
+              "en": "IB=1 mA/101 and IC=100IB. Base current through Rb makes VB negative; VC>VB verifies active operation."
+            },
+            "formula": "V_B=-R_bI_B\\approx-0.099010\\,\\mathrm V,\\quad V_E=V_B-0.7\\approx-0.799010\\,\\mathrm V,\\quad V_C=10-R_cI_C\\approx2.079208\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)明确rbe模型",
+              "en": "(2) State the rbe model"
+            },
+            "text": {
+              "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+              "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+            },
+            "formula": "r_{be}=r_{bb\\prime}+\\frac{101V_T}{1\\,\\mathrm{mA}}\\approx2826\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(3)Z接地：共射反相",
+              "en": "(3) Ground Z: inverting common emitter"
+            },
+            "text": {
+              "zh": "令Rac=8 kΩ∥10 kΩ。输入电阻是Rb∥rbe，先对10 kΩ源内阻分压。",
+              "en": "Let Rac=8 kΩ∥10 kΩ. Input resistance is Rb∥rbe; include division by the10 kΩ source resistance."
+            },
+            "formula": "A_{vs}=-\\frac{\\beta R_{ac}}{r_{be}}\\frac{R_b\\parallel r_{be}}{10\\,\\mathrm{k\\Omega}+R_b\\parallel r_{be}}\\approx-28.39538"
+          },
+          {
+            "title": {
+              "zh": "(4)X接地：共基同相",
+              "en": "(4) Ground X: non-inverting common base"
+            },
+            "text": {
+              "zh": "基极为交流地，射极输入电阻rbe/101≈27.9802 Ω；200 Ω源阻对低输入电阻有显著衰减。",
+              "en": "Base is AC-grounded; emitter input resistance rbe/101≈27.9802 Ω. The200 Ω source resistance strongly attenuates the input."
+            },
+            "formula": "R_{i,e}=\\frac{r_{be}}{101},\\quad A_{vs}=\\frac{\\beta R_{ac}}{r_{be}}\\frac{R_{i,e}}{200\\,\\Omega+R_{i,e}}\\approx19.30185"
+          },
+          {
+            "title": {
+              "zh": "(5)Y接地：共集跟随",
+              "en": "(5) Ground Y: common-collector follower"
+            },
+            "text": {
+              "zh": "恒流源交流开路，射极交流负载只有1 kΩ；RC两端都为交流地。输入管阻rbe+101RL仍与Rb并联。",
+              "en": "The ideal current source opens in AC,leaving only the1 kΩ emitter load; both ends of RC are AC ground. The transistor input rbe+101RL is shunted by Rb."
+            },
+            "formula": "R_i=R_b\\parallel(r_{be}+101R_L)\\approx9.121466\\,\\mathrm{k\\Omega},\\quad A_{vs}=\\frac{101R_L}{r_{be}+101R_L}\\frac{R_i}{100\\,\\Omega+R_i}\\approx0.9622323"
+          }
+        ],
+        "answer": {
+          "zh": "VB≈−0.09901 V、VE≈−0.79901 V、VC≈2.07921 V；所列模型rbe≈2.826 kΩ，三种源到输出增益依次−28.3954、+19.3019、+0.962232。",
+          "en": "VB≈−0.09901 V,VE≈−0.79901 V,VC≈2.07921 V; modeled rbe≈2.826 kΩ. The three source-to-output gains are−28.3954,+19.3019,+0.962232."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要把端口增益Av直接当源增益Avs；三问源内阻不同，输入阻抗也不同。",
+            "en": "Port gain Av is not source gain Avs: all three cases have different source and input resistances."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-VB",
+          "1-VE",
+          "1-VC",
+          "2-rbe",
+          "3-CE-gain",
+          "4-CB-gain",
+          "5-CC-gain"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "VBV": -0.09900990099009901,
+            "VEV": -0.7990099009900989,
+            "VCV": 2.0792079207920793,
+            "rbeohm": 2826.0,
+            "gains": [
+              -28.39537723258653,
+              19.301852012700618,
+              0.9622322874471748
+            ],
+            "nodalSolutions": [
+              [
+                0.1805520061334015,
+                -28.39537723258654
+              ],
+              [
+                0.1227308260227569,
+                19.30185201270062
+              ],
+              [
+                0.9891557373909938,
+                0.9622322874471749
+              ]
+            ],
+            "inputOhms": [
+              2203.3369717760797,
+              27.980198019801982,
+              9121.466097376699
+            ]
+          },
+          "assumptions": {
+            "zh": "中频小信号采用本项目既有课件模型：未另给参数时取r_bb′=200 Ω、V_T=26 mV，保留有限β，忽略厄利效应（晶体管r_o→∞）。题中未给实际基区电阻及厄利电压，小信号数值以此模型为条件；r_be一般表达式同时列出。",
+            "en": "Midband small-signal calculations use the established course model: unless specified otherwise,r_bb′=200 Ω,V_T=26 mV,finite beta,and no Early effect (transistor r_o→∞). Actual base-spreading resistance and Early voltage are unspecified; numerical small-signal results are conditional on this model,with the general r_be expression shown."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "figure": "ae-5.2.13-figure.png"
+      },
+      "AE-5.3.1": {
+        "id": "AE-5.3.1",
+        "bookId": "5.3.1",
+        "title": {
+          "zh": "用输入端和输出端识别三种组态",
+          "en": "Compare configurations by their input and output ports"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 187,
+          "pdfPage": 220,
+          "figure": "图题5.3.1",
+          "figurePrintedPage": 188,
+          "figurePdfPage": 221
+        },
+        "statement": {
+          "zh": "图题5.3.1的三个电路均设置合适Q点。BJT的β=50、r_be=1.53 kΩ，MOS的g_m=1 mS。比较：(1)输入电阻最大和最小的电路；(2)输出电阻最大和最小的电路；(3)电压增益绝对值最大和最小的电路；(4)输出与输入反相的电路。图(a)Rc=Re=3.3 kΩ、RL=5.1 kΩ；(b)Rd=10 kΩ、R₁=2 kΩ、R₂=10 kΩ、Rg1=300 kΩ、Rg2=100 kΩ、Rg3=2 MΩ；(c)Rb1=36 kΩ、Rb2=18 kΩ、Re=3.3 kΩ、RL=5.1 kΩ。按中频电容短路及忽略器件输出电导的基本模型比较。",
+          "en": "All three circuits in Fig.5.3.1 have suitable Q points. BJT beta50,r_be1.53 kΩ; MOS gm1 mS. Identify (1)largest/smallest input resistance,(2)largest/smallest output resistance,(3)largest/smallest gain magnitude,(4)inverting circuits. Diagram(a):Rc=Re3.3 kΩ,RL5.1 kΩ. (b):Rd10 kΩ,R₁2 kΩ,R₂10 kΩ,Rg1300 kΩ,Rg2100 kΩ,Rg32 MΩ. (c):Rb136 kΩ,Rb218 kΩ,Re3.3 kΩ,RL5.1 kΩ. Compare with midband capacitor shorts and the basic model neglecting device output conductance."
+        },
+        "prerequisites": {
+          "zh": "BJT工作区、有限β偏置、交直流通路及端口加载。",
+          "en": "BJT operating regions,finite-beta bias,DC/AC paths and port loading."
+        },
+        "recognition": {
+          "zh": "(a)基极被Cb接地，为共基；(b)源极R₁未旁路，是源退化共源；(c)从射极取输出，为共集。",
+          "en": "(a)Cb grounds the base: common base. (b)Unbypassed R₁ gives source-degenerated common source. (c)Emitter output gives common collector."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)分别看输入端",
+              "en": "(1) Examine each input port"
+            },
+            "text": {
+              "zh": "(a)射极低阻，Re仍并联；(b)栅极不吸电流但Rg3串联偏置等效电阻；(c)射极负载按β+1反射到基极，再与偏置电阻并联。",
+              "en": "(a)Emitter input is low resistance with Re in parallel. (b)Zero gate current still leaves Rg3 in series with the divider resistance. (c)Reflect the emitter load by beta+1,then shunt the base divider."
+            },
+            "formula": "R_{i,a}=3.3\\,\\mathrm{k\\Omega}\\parallel\\frac{1530\\,\\Omega}{51}\\approx29.7297\\,\\Omega,\\quad R_{i,b}=2\\,\\mathrm{M\\Omega}+(300\\parallel100)\\,\\mathrm{k\\Omega}=2.075\\,\\mathrm{M\\Omega},\\quad R_{i,c}=12\\,\\mathrm{k\\Omega}\\parallel[1530\\,\\Omega+51(3.3\\parallel5.1)\\,\\mathrm{k\\Omega}]\\approx10.7555\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(2)输出电阻先移除外接负载",
+              "en": "(2) Remove external loads for output resistance"
+            },
+            "text": {
+              "zh": "输入电压源置零。基本模型忽略晶体管输出电导；若要实际器件的精确结果，还需ro或rds，题目未给。",
+              "en": "Zero the input source. These basic-model values neglect transistor output conductance; exact device results would require the unspecified ro or rds."
+            },
+            "formula": "R_{o,a}=3.3\\,\\mathrm{k\\Omega},\\quad R_{o,b}=10\\,\\mathrm{k\\Omega},\\quad R_{o,c}=3.3\\,\\mathrm{k\\Omega}\\parallel\\frac{1530\\,\\Omega}{51}\\approx29.7297\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(3)(4)按实际交流负载比较增益和相位",
+              "en": "(3)(4) Compare loaded gains and phase"
+            },
+            "text": {
+              "zh": "(a)共基同相；(b)共源反相且R₁造成退化；(c)跟随器同相。两个BJT的给定rbe直接使用，不另添加基区电阻。",
+              "en": "(a)Common base is non-inverting. (b)Common source inverts and R₁ degenerates its gain. (c)The follower is non-inverting. Use the given BJT rbe without adding base resistance again."
+            },
+            "formula": "A_{v,a}=\\frac{50(3.3\\parallel5.1)\\,\\mathrm{k\\Omega}}{1.53\\,\\mathrm{k\\Omega}}\\approx65.4762,\\quad A_{v,b}=-\\frac{g_mR_d}{1+g_mR_1}=-\\frac{10}{3},\\quad A_{v,c}=\\frac{51(3.3\\parallel5.1)\\,\\mathrm{k\\Omega}}{1.53\\,\\mathrm{k\\Omega}+51(3.3\\parallel5.1)\\,\\mathrm{k\\Omega}}\\approx0.985248"
+          }
+        ],
+        "answer": {
+          "zh": "(1)Ri最大(b)、最小(a)；(2)Ro最大(b)、最小(c)；(3)|Av|最大(a)、最小(c)；(4)仅(b)反相。数值及比较采用所列中频基本模型。",
+          "en": "(1)Ri largest(b),smallest(a). (2)Ro largest(b),smallest(c). (3)|Av| largest(a),smallest(c). (4)Only(b) inverts,under the stated midband basic model."
+        },
+        "pitfalls": [
+          {
+            "zh": "看到BJT不要一律套共射公式；先判断哪个电极是交流公共端。(b)的C只旁路R₂，没有旁路R₁。",
+            "en": "Do not apply common-emitter formulas to every BJT: first identify the AC-common terminal. In(b),C bypasses R₂,not R₁."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Ri-extrema",
+          "2-Ro-extrema",
+          "3-gain-extrema",
+          "4-phase"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "按原图电源极性、电容及负载连接重建方程；独立KCL/KVL复算，5.2.13的三种接法另用数值节点矩阵求解，核对放大区。没有声称与未读取的外部答案库比对。",
+            "en": "Equations are rebuilt from original supply polarities,capacitors and load connections. Independent KCL/KVL checks include numerical nodal matrices for all three connections of5.2.13 and active-region checks. No comparison with an unread external answer collection is claimed."
+          },
+          "results": {
+            "RiOhms": [
+              29.72972972972973,
+              2075000,
+              10755.532509861292
+            ],
+            "RoOhms": [
+              3300,
+              10000,
+              29.72972972972973
+            ],
+            "gains": [
+              65.47619047619048,
+              -3.3333333333333335,
+              0.9852476290832455
+            ]
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留电源极性、端口和电容连接。",
+            "en": "Original textbook diagram preserving supply polarities,ports and capacitor connections."
+          }
+        },
+        "figure": "ae-5.3.1-figure.png"
       }
     }
   }
