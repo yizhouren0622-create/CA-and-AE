@@ -47398,6 +47398,826 @@
           }
         },
         "figure": "ae-5.3.1-figure.png"
+      },
+      "AE-5.2.1": {
+        "id": "AE-5.2.1",
+        "bookId": "5.2.1",
+        "title": {
+          "zh": "放大条件先看直流回路，不只看外形",
+          "en": "Check DC paths before recognizing an amplifier"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 183,
+          "pdfPage": 216,
+          "figure": "图题5.2.1"
+        },
+        "statement": {
+          "zh": "试分析图题5.2.1所示各电路对正弦交流信号有无放大作用，并简述理由（设各电容对正弦交流信号均可视作短路，电路参数合适）。共有(a)、(b)、(c)、(d)四图。",
+          "en": "For circuits(a)–(d) in Fig.5.2.1,determine whether a sinusoidal AC signal can be amplified and explain why. Assume capacitors are AC shorts and component values are suitable."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图；注意电源极性、PNP箭头和无圆点的导线交叉。",
+            "en": "Original textbook diagram: retain supply polarities,PNP arrows and unconnected wire crossings."
+          }
+        },
+        "prerequisites": {
+          "zh": "直流电容开路、交流电源置零、两结偏置与小信号端口。",
+          "en": "DC-open capacitors,zeroed AC supplies,junction biases and incremental ports."
+        },
+        "recognition": {
+          "zh": "判断的是合适Q点附近的正向线性放大，不把整流、反向击穿或错误偏置的强非线性响应称为正弦放大。",
+          "en": "Test forward-active linear amplification about a suitable Q point; rectification,reverse breakdown and strongly nonlinear wrong-bias behavior do not qualify."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)供电极性和输入钳位均不合适",
+              "en": "(a) Wrong polarity and clamped input"
+            },
+            "text": {
+              "zh": "NPN发射极接地，电池长线正极接地，基极直接接负电源端，发射结反偏；交流时理想直流电压源短路，基极也被直接接交流地，外部信号不能建立所需vbe。",
+              "en": "The NPN emitter is grounded and the battery positive plate is grounded,so its directly connected base is negative and the BE junction is reverse-biased. The ideal supply also AC-grounds the base,clamping the signal."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(b)共射放大成立",
+              "en": "(b) Common-emitter amplification works"
+            },
+            "text": {
+              "zh": "Rb从正电源向NPN基极提供直流通路；合适参数使VE<VB<VC。输入、输出电容分别耦合信号，在小信号幅值内可得到反相放大。",
+              "en": "Rb supplies DC base bias from the positive rail. Suitable values give VE<VB<VC; input/output capacitors couple the signal and permit inverting small-signal gain."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(c)偏置电阻在输入电容的错误一侧",
+              "en": "(c) Bias resistor is on the wrong side of the input capacitor"
+            },
+            "text": {
+              "zh": "虽然使用PNP与负电源，Rb却接在Cb1的信号源一侧。直流时Cb1开路，基极没有规定的偏置通路，不能建立所需PNP放大区Q点；不能因负电源方向看似正确就判有放大。",
+              "en": "Although PNP and a negative rail are used,Rb connects to the source side of Cb1. With Cb1 DC-open,the base has no specified bias path,so a suitable PNP active Q point is not established."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(d)NPN集电极供电极性错误",
+              "en": "(d) NPN collector supply has the wrong polarity"
+            },
+            "text": {
+              "zh": "VBB使发射结趋于正偏，但Rc接负电源端，不能同时保证NPN集电结反偏。不能按正向放大区模型工作。未给参数时不虚构唯一饱和电流或反向击穿状态。",
+              "en": "VBB tends to forward-bias BE,but Rc goes to the negative rail,preventing the intended NPN reverse-biased BC junction. Forward-active amplification fails; unspecified values do not justify a unique saturation current or breakdown state."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "只有(b)具备题设正弦小信号的正向线性放大条件；(a)(c)(d)不具备。",
+          "en": "Only(b) has the required forward-active sinusoidal small-signal amplification conditions."
+        },
+        "pitfalls": [
+          {
+            "zh": "“电容交流短路”只用于交流图；求静态偏置仍必须开路。(c)恰好需要这一步才能看出问题。",
+            "en": "AC-short capacitors must still be opened for the bias analysis; this distinction exposes the error in(c)."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐支路重查原图直流路径与交流连接，用两结偏置判断能否正向线性放大。等效图另用端口KCL核对受控源方向，未以题图外观代替工作区检验。",
+            "en": "DC and AC connections are retraced branch by branch. Both junction biases test forward-active amplification; port KCL separately checks controlled-source directions in the redrawn models."
+          }
+        },
+        "completionNote": {
+          "zh": "原图(a)(b)在书183页（PDF216），(c)(d)在书184页（PDF217），此处依次组合保留。",
+          "en": "Original panels(a)(b) are on printed183 (PDF216) and(c)(d) on printed184 (PDF217); the figure combines them in order."
+        },
+        "figure": "ae-5.2.1-figure.png"
+      },
+      "AE-5.2.3": {
+        "id": "AE-5.2.3",
+        "bookId": "5.2.3",
+        "title": {
+          "zh": "正负电源与PNP并不妨碍放大",
+          "en": "PNP devices and negative rails can amplify correctly"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 184,
+          "pdfPage": 217,
+          "figure": "图题5.2.3"
+        },
+        "statement": {
+          "zh": "试分析图题5.2.3所示各电路对正弦交流信号有无放大作用，并简述理由（设各电容对正弦交流信号均可视作短路，电路参数合适）。共有(a)～(e)五图。",
+          "en": "For circuits(a)–(e) in Fig.5.2.3,determine whether sinusoidal AC amplification is possible and explain why. Capacitors are AC shorts and component values are suitable."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图；注意电源极性、PNP箭头和无圆点的导线交叉。",
+            "en": "Original textbook diagram: retain supply polarities,PNP arrows and unconnected wire crossings."
+          }
+        },
+        "prerequisites": {
+          "zh": "直流电容开路、交流电源置零、两结偏置与小信号端口。",
+          "en": "DC-open capacitors,zeroed AC supplies,junction biases and incremental ports."
+        },
+        "recognition": {
+          "zh": "先把信号源的直流值置零，再检查两结偏置；之后由交流公共端和输出端识别组态。范围提醒：(c)共基、(e)共集为教材小节5.2.5拓展。",
+          "en": "Zero the DC signal component and check both junction biases,then identify the AC-common and output terminals. Scope: CB(c) and CC(e) extend excluded textbook section5.2.5."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)理想源把基射静态电压固定为零",
+              "en": "(a) The ideal source fixes zero DC BE voltage"
+            },
+            "text": {
+              "zh": "PNP的发射极接地，正弦源无直流分量且直接接基极，静态VB=VE=0。Rb虽接负电源，只会向理想源支路分流，不能在基极建立所需负偏压。因此没有正确的线性放大Q点。",
+              "en": "The grounded-emitter PNP has its base connected directly to a zero-DC ideal sine source,fixing VB=VE=0. Rb merely draws current through that source and cannot establish the negative base bias needed for linear amplification."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(b)PNP共射可以放大",
+              "en": "(b) PNP common emitter can amplify"
+            },
+            "text": {
+              "zh": "PNP发射极接正电源，Rb使基极低于发射极，集电极经Rc接地；参数合适时VC<VB<VE。电源为交流地，发射极为公共端，从集电极取出反相信号。",
+              "en": "The PNP emitter is on the positive rail,Rb biases its base lower,and Rc pulls the collector toward ground. Suitable values give VC<VB<VE. The emitter is AC-common and collector output inverts."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(c)PNP共基，同相放大（拓展）",
+              "en": "(c) Non-inverting PNP common base (extension)"
+            },
+            "text": {
+              "zh": "基极接地，射极经Re接正电源，集电极经Rc接负电源，可以使VC<VB<VE。信号从射极输入、集电极输出，共基小信号电压增益为正。",
+              "en": "The grounded base,emitter resistor to the positive rail and collector resistor to the negative rail can establish VC<VB<VE. Emitter input and collector output give positive common-base voltage gain."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(d)双电源共射可以放大",
+              "en": "(d) Dual-supply common emitter can amplify"
+            },
+            "text": {
+              "zh": "NPN基极通过Rb获接地直流参考，射极Re接负电源，可建立VE<VB<VC。Ce把射极接交流地；信号由Cb1输入基极，集电极输出反相。",
+              "en": "Rb provides a ground DC reference while Re to the negative rail establishes VE<VB<VC. Ce AC-grounds the emitter; base input and collector output give inverting common-emitter amplification."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(e)共集跟随（拓展）",
+              "en": "(e) Common-collector follower (extension)"
+            },
+            "text": {
+              "zh": "分压网络设基极偏置，射极经Re接地，集电极接正电源。输出从射极取出，电压增益同相且通常略小于1，但电流与功率可以放大，故它仍是放大电路。",
+              "en": "A divider biases the base,Re returns the emitter to ground and the collector is on the positive rail. Emitter output is non-inverting,usually with voltage gain slightly below unity; current and power gain still make it an amplifier."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "(a)不能建立所需线性Q点；(b)(c)(d)(e)在题设合适参数与小信号条件下均有放大作用，电压相位依次为反相、同相、反相、同相。",
+          "en": "(a) lacks the required linear Q point. With suitable values and small signals,(b)(c)(d)(e) amplify,with voltage phase inverted,non-inverted,inverted and non-inverted respectively."
+        },
+        "pitfalls": [
+          {
+            "zh": "电压增益小于1不能单独用来否定跟随器的放大作用；应区分电压、电流和功率指标。",
+            "en": "A voltage gain below unity does not exclude amplification by a follower; distinguish voltage,current and power gain."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐支路重查原图直流路径与交流连接，用两结偏置判断能否正向线性放大。等效图另用端口KCL核对受控源方向，未以题图外观代替工作区检验。",
+            "en": "DC and AC connections are retraced branch by branch. Both junction biases test forward-active amplification; port KCL separately checks controlled-source directions in the redrawn models."
+          }
+        },
+        "figure": "ae-5.2.3-figure.png"
+      },
+      "AE-5.2.6": {
+        "id": "AE-5.2.6",
+        "bookId": "5.2.6",
+        "title": {
+          "zh": "逐一短路电容，并保留无圆点交叉的独立节点",
+          "en": "Short each capacitor while preserving separate crossed nodes"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 185,
+          "pdfPage": 218,
+          "figure": "图题5.2.6"
+        },
+        "statement": {
+          "zh": "画出图题5.2.6所示(a)～(d)四个电路的小信号等效电路，注意标出电压、电流的参考方向，设电路中各电容对信号而言均可视为短路。",
+          "en": "Draw the small-signal equivalent circuits for(a)–(d) in Fig.5.2.6,marking voltage and current reference directions. Treat every capacitor as a signal short."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图；注意电源极性、PNP箭头和无圆点的导线交叉。",
+            "en": "Original textbook diagram: retain supply polarities,PNP arrows and unconnected wire crossings."
+          }
+        },
+        "prerequisites": {
+          "zh": "直流电容开路、交流电源置零、两结偏置与小信号端口。",
+          "en": "DC-open capacitors,zeroed AC supplies,junction biases and incremental ports."
+        },
+        "recognition": {
+          "zh": "采用基本h参数模型，忽略输出电导；统一把ib定义为流入基极的带符号增量，受控电流βib从集电极指向射极，PNP也可使用这一增量约定。图(c)(d)属于范围外共集/共基拓展。",
+          "en": "Use the basic h-parameter model with zero output conductance. Define signed ib into the base and beta-ib from collector to emitter; this incremental convention also handles PNP. Panels(c)(d) are CC/CB extensions."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)Rb1仍跨接基极与集电极",
+              "en": "(a) Rb1 remains a base-to-collector branch"
+            },
+            "text": {
+              "zh": "电源为交流地；Rb2接输入到地，Re未被电容旁路；Rc与RL分别接输出到地，Rb1不能并入输入或输出单个接地电阻。按图中方向列端口KCL可复查连线。",
+              "en": "The supply becomes AC ground. Rb2 shunts the input,Re is unbypassed,and Rc/RL separately shunt the output. Rb1 stays between base and collector; port KCL verifies the drawing."
+            },
+            "formula": "i_b=\\frac{v_i-v_e}{r_{be}},\\quad\\frac{v_e}{R_e}=(1+\\beta)i_b,\\quad\\frac{v_o}{R_c}+\\frac{v_o}{R_L}+\\frac{v_o-v_i}{R_{b1}}+\\beta i_b=0"
+          },
+          {
+            "title": {
+              "zh": "(b)中间旁路点接地，交叉线无圆点不相连",
+              "en": "(b) Ground the bypass junction,not the unconnected crossing"
+            },
+            "text": {
+              "zh": "Cb2把Rb1与Rb2的连接点接地。该竖线与基极水平输入线在原图交叉但无连接圆点，因此基极没有被短路。Rb2接基极到地，Rb1接集电极到地，与Rc并联，射极接地。",
+              "en": "Cb2 grounds the junction of Rb1/Rb2. Its wire crosses the base input without a dot,so the base is not shorted. Rb2 shunts the base and Rb1 shunts the collector in parallel with Rc; emitter is grounded."
+            },
+            "formula": "i_b=\\frac{v_i}{r_{be}},\\quad\\frac{v_o}{R_c\\parallel R_{b1}}+\\beta i_b=0"
+          },
+          {
+            "title": {
+              "zh": "(c)跟随器只旁路Re2",
+              "en": "(c) Only Re2 is bypassed in the follower"
+            },
+            "text": {
+              "zh": "集电极接电源，是交流地。Ce旁路Re2，Re1仍从射极接地。原图基极水平线与偏置分压竖线无圆点交叉；偏置支路可等效为Rb3串联(Rb1∥Rb2)，而不是让Rb3短路。",
+              "en": "The collector supply is AC ground. Ce bypasses Re2 while Re1 remains from emitter to ground. The base line crosses the bias divider without a dot; its bias branch reduces to Rb3 in series with(Rb1∥Rb2)."
+            },
+            "formula": "i_b=\\frac{v_i-v_o}{r_{be}},\\quad\\frac{v_o}{R_{e1}}=(1+\\beta)i_b,\\quad R_B=R_{b3}+(R_{b1}\\parallel R_{b2})"
+          },
+          {
+            "title": {
+              "zh": "(d)基极旁路、射极输入",
+              "en": "(d) Bypassed base and emitter input"
+            },
+            "text": {
+              "zh": "C2把基极接交流地；Rb1、Rb2两端均在交流地，可删去。射极保留Re到地，输入vi加在射极；Rc接集电极到地，vo从集电极对地取正。",
+              "en": "C2 AC-grounds the base; both ends of Rb1/Rb2 are grounded,so they disappear. Retain Re from emitter to ground,apply vi at the emitter,and take positive vo at the collector."
+            },
+            "formula": "i_b=-\\frac{v_i}{r_{be}},\\quad\\frac{v_o}{R_c}+\\beta i_b=0,\\quad i_i=\\frac{v_i}{R_e}-(1+\\beta)i_b"
+          }
+        ],
+        "answer": {
+          "zh": "完整四图见下。所有电压对公共交流地为正；ib流入基极，βib从集电极到射极；图(d)ii定义为从信号端流入射极网络。",
+          "en": "All four equivalents are shown below. Voltages are positive relative to AC ground; ib enters the base and beta-ib flows collector to emitter. In(d),ii enters the emitter network from the signal port."
+        },
+        "pitfalls": [
+          {
+            "zh": "无圆点交叉不代表节点相连；被电容旁路的只是其两端之间的支路，不能连带删除Re1等其他元件。",
+            "en": "A crossing without a dot is not a connection. A capacitor bypasses only the branch between its own endpoints,not nearby components such as Re1."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-equivalent",
+          "a-directions",
+          "b-equivalent",
+          "b-directions",
+          "c-equivalent",
+          "c-directions",
+          "d-equivalent",
+          "d-directions"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐支路重查原图直流路径与交流连接，用两结偏置判断能否正向线性放大。等效图另用端口KCL核对受控源方向，未以题图外观代替工作区检验。",
+            "en": "DC and AC connections are retraced branch by branch. Both junction biases test forward-active amplification; port KCL separately checks controlled-source directions in the redrawn models."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "四个h参数等效图及带符号受控源方向；无圆点交叉保留为独立节点。",
+              "en": "Four h-parameter equivalents with signed controlled-source directions and separate unconnected crossings."
+            },
+            "caption": {
+              "zh": "按原图重画，电压对地、源箭头和控制量见各图；非SPICE结果。",
+              "en": "Redrawn from the original; ground references,source arrows and controls are marked. Not SPICE output."
+            },
+            "figure": "ae-5.2.6-equivalents.svg"
+          }
+        ],
+        "figure": "ae-5.2.6-figure.png"
+      },
+      "AE-5.2.9": {
+        "id": "AE-5.2.9",
+        "bookId": "5.2.9",
+        "title": {
+          "zh": "射极部分旁路：手算与实际SPICE分层核验",
+          "en": "Partially bypassed emitter: hand analysis and executed SPICE"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 186,
+          "pdfPage": 219,
+          "figure": "图题5.2.9"
+        },
+        "statement": {
+          "zh": "在图题5.2.9的放大电路中，信号源内阻R_si=600 Ω，BJT的β=50、v_BE=0.7 V。(1)画小信号等效电路；(2)求输入电阻Ri和输出电阻Ro；(3)v_s=15sinωt mV时求v_o；(4)改为R_si=0，BJT型号2N3906、β=80、r_bb′=100 Ω，耦合电容10 μF、旁路电容50 μF，用SPICE求电压增益、输入电阻与输出电阻。原图为PNP，电源−12 V，Rb1=33 kΩ、Rb2=10 kΩ、Rc=3.3 kΩ、Re1=200 Ω、Re2=1.3 kΩ、RL=5.1 kΩ。",
+          "en": "For Fig.5.2.9,R_si600 Ω,beta50 and v_BE0.7 V: (1)Draw the small-signal model. (2)Find Ri and Ro. (3)Find vo for vs=15sinωt mV. (4)Set R_si0,use2N3906 with beta80,r_bb′=100 Ω,10 µF coupling and50 µF bypass capacitors; use SPICE to find gain and input/output impedances. The PNP circuit has−12 V,Rb133 kΩ,Rb210 kΩ,Rc3.3 kΩ,Re1200 Ω,Re21.3 kΩ,RL5.1 kΩ."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图；注意电源极性、PNP箭头和无圆点的导线交叉。",
+            "en": "Original textbook diagram: retain supply polarities,PNP arrows and unconnected wire crossings."
+          }
+        },
+        "prerequisites": {
+          "zh": "直流电容开路、交流电源置零、两结偏置与小信号端口。",
+          "en": "DC-open capacitors,zeroed AC supplies,junction biases and incremental ports."
+        },
+        "recognition": {
+          "zh": "Re1=200 Ω没有被Ce旁路。手算(1)～(3)按中频电容短路；第(4)问给电容实值但没有指定频率或完整器件模型，所以给扫频函数、明确的1 kHz示例及模型敏感性比较。",
+          "en": "Ce does not bypass the200 Ω Re1. Parts(1)–(3) use midband shorts. Part(4) specifies capacitors but no frequency or complete device model,so report sweeps,an explicit1 kHz example and model sensitivity."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先建立PNP的带符号Q点",
+              "en": "Establish signed PNP bias"
+            },
+            "text": {
+              "zh": "原题的0.7 V按发射结正向压降的大小解释；实际PNP VBE=−0.7 V。取正的电流大小，基极戴维南电压−120/43 V，Rth=330 kΩ/43，Re总和1.5 kΩ。",
+              "en": "Interpret the stated0.7 V as forward-junction magnitude; signed PNP VBE is−0.7 V. With positive current magnitudes,the base Thevenin voltage is−120/43 V,Rth330 kΩ/43,and total emitter resistance1.5 kΩ."
+            },
+            "formula": "I_E=\\frac{120/43-0.7}{1500+(330000/43)/51}\\approx1.266722\\,\\mathrm{mA},\\quad V_B\\approx-2.600083\\,\\mathrm V,\\quad V_E\\approx-1.900083\\,\\mathrm V,\\quad V_C\\approx-7.901782\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(1)保留Re1的小信号等效",
+              "en": "(1) Retain Re1 in the equivalent"
+            },
+            "text": {
+              "zh": "见解析图：电源为交流地，Re2被Ce短路；Re1仍接射极到地，输入偏置电阻为Rb1∥Rb2，输出负载为Rc∥RL。手算未另给rbb′，沿用课件估值200 Ω、VT=26 mV并忽略厄利效应。",
+              "en": "In the equivalent,the supply is grounded,Ce shorts Re2,and Re1 remains. Input bias resistance is Rb1∥Rb2 and collector load Rc∥RL. Hand analysis uses course estimates rbb′200 Ω,VT26 mV and no Early effect."
+            },
+            "formula": "r_{be}=r_{bb\\prime}+\\frac{(1+\\beta)V_T}{I_E}\\approx1246.796\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(2)输入、输出电阻",
+              "en": "(2) Input and output resistances"
+            },
+            "text": {
+              "zh": "射极电阻按β+1反射到基极，再与分压偏置并联。求Ro时断开外接RL、信号源置零。",
+              "en": "Reflect emitter resistance by beta+1,then shunt it with the bias divider. Remove external RL and zero the input when finding Ro."
+            },
+            "formula": "R_i=(R_{b1}\\parallel R_{b2})\\parallel[r_{be}+51R_{e1}]\\approx4.594243\\,\\mathrm{k\\Omega},\\quad R_o=R_c=3.3\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)先求端口增益，再算源分压",
+              "en": "(3) Include source division after port gain"
+            },
+            "text": {
+              "zh": "由于Rsi=600 Ω，不能把Av直接乘15 mV。中频且输入足够小时输出是反相正弦；若频率低到电容不能视为短路，则需完整传递函数。",
+              "en": "With Rsi600 Ω,do not multiply15 mV by port gain alone. The stated midband small-signal result is an inverted sine; lower frequencies require the full transfer function."
+            },
+            "formula": "A_v=-\\frac{50(R_c\\parallel R_L)}{r_{be}+51R_{e1}}\\approx-8.751669,\\quad A_{vs}=A_v\\frac{R_i}{600\\,\\Omega+R_i}\\approx-7.740742,\\quad v_o\\approx-116.111\\sin\\omega t\\,\\mathrm{mV}"
+          },
+          {
+            "title": {
+              "zh": "(4)真实运行与端口定义",
+              "en": "(4) Executed simulations and port definitions"
+            },
+            "text": {
+              "zh": "已运行ngspice47，温度27°C，Rsi=0，Cb1=Cb2=10 μF、Ce=50 μF。输入端在Cb1之前、输出端在Cb2之后，增益保留RL=5.1 kΩ；Zi由输入电流求得，Zo断开RL、输入置零后用独立测试源求得。扫频1 Hz～100 MHz；1 kHz时另跑到500 ms并取最后两周期。",
+              "en": "ngspice47 was executed at27°C with Rsi0,Cb1=Cb210 µF,Ce50 µF. Input is before Cb1 and output after Cb2. Gain retains5.1 kΩ RL; Zi uses input current,while Zo removes RL and zeros the input before independent test-source injection. Sweep1 Hz–100 MHz; the1 kHz transient runs to500 ms and uses its last two cycles."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "常β自写近似模型：明确给定缺省参数",
+              "en": "Authored constant-beta approximation with explicit extra parameters"
+            },
+            "text": {
+              "zh": "自写三参数PNP近似取IS=10⁻¹⁴ A、BF=80、RB=100 Ω，其余采用ngspice默认值；没有厂商高频结电容和有限厄利电压，故不能拿它预测真实2N3906的高频带宽。1 kHz结果如下，Zi与Zo是复阻抗，不能无条件称为纯电阻。",
+              "en": "The authored three-parameter PNP approximation uses IS10⁻¹⁴ A,BF80,RB100 Ω and ngspice defaults for other parameters. It lacks manufacturer high-frequency junction capacitances and finite Early voltage,so it does not predict real2N3906 bandwidth. At1 kHz,Zi and Zo are complex impedances."
+            },
+            "formula": "A_v\\approx-8.965982-j0.172927,\\quad Z_i\\approx5369.137-j39.182\\,\\Omega,\\quad Z_o\\approx3300.000-j15.9155\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "原厂模型敏感性比较，不冒充同一个常β模型",
+              "en": "Manufacturer-model sensitivity,distinct from the constant-beta model"
+            },
+            "text": {
+              "zh": "读取Fairchild2001数据表第2页模型（Cornell存档），在加载之前将BF设80、RB设100 Ω，其余原厂参数保留。1 kHz约Av=−8.866340−j0.168360，Zi=5536.491−j43.599 Ω，Zo=3238.978−j16.608 Ω。此时有效直流β约100.06、小信号gm/gπ约98.69：BF参数不等于完整模型Q点的实际β，因此这组只是厂商模型敏感性参考，不是严格常β=80的替代答案。",
+              "en": "The Fairchild2001 datasheet PDF2 model (Cornell archive) is loaded with BF80 and RB100 Ω set beforehand,retaining other manufacturer parameters. At1 kHz,Av≈−8.866340−j0.168360,Zi≈5536.491−j43.599 Ω,Zo≈3238.978−j16.608 Ω. Effective DC beta≈100.06 and gm/gπ≈98.69: model BF is not effective Q-point beta. This is sensitivity evidence,not a replacement for the strict constant-beta80 answer."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "独立校核及可复现条件",
+              "en": "Independent check and reproducibility"
+            },
+            "text": {
+              "zh": "两模型都用独立复数节点矩阵复算1 kHz和100 kHz增益、Zi、Zo，含基区与集电区电阻、跨结电荷导数；最大相对差低于6×10⁻¹²。下载自写模型网表可直接运行；厂商版下载的是电路包装网表，按引用PDF配置本地2N3906.lib，避免公开完整厂商模型。温度、IS或完整模型不同时数值允许改变。",
+              "en": "Both models are independently rebuilt as complex nodal matrices at1 kHz and100 kHz,including base/collector resistance and cross-junction charge derivatives; maximum relative difference is below6×10⁻¹². Authored netlists run directly. Manufacturer files are circuit wrappers requiring a local2N3906.lib prepared from the cited PDF; the complete vendor model is not redistributed. Changing temperature,IS or model changes the numbers."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "手算中频：Ri≈4.594 kΩ、Ro=3.3 kΩ、vo≈−116.111sinωt mV；第(4)问必须注明模型与频率。自写BF80/RB100近似在1 kHz的|Av|≈8.96765、Zi≈5369.14−j39.18 Ω、Zo≈3300−j15.92 Ω；实测稳态输出峰值约134.507 mV。厂商模型比较另列，非唯一精确器件答案。",
+          "en": "Hand midband:Ri≈4.594 kΩ,Ro3.3 kΩ,vo≈−116.111sinωt mV. Part(4) must state frequency and model. The authored BF80/RB100 approximation at1 kHz gives |Av|≈8.96765,Zi≈5369.14−j39.18 Ω,Zo≈3300−j15.92 Ω; executed steady output peak≈134.507 mV. Manufacturer comparison is separate,not a unique exact-device answer."
+        },
+        "pitfalls": [
+          {
+            "zh": "原图是PNP，实际VBE为负；Ce只旁路1.3 kΩ而不是全部1.5 kΩ。带电容的Zi、Zo随频率变化，不能从一次仿真抄成任意频率的常数。",
+            "en": "The original is PNP with negative signed VBE. Ce bypasses only1.3 kΩ,not all1.5 kΩ. Capacitor-containing Zi/Zo vary with frequency and are not universal constants."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-equivalent",
+          "2-Ri",
+          "2-Ro",
+          "3-vo",
+          "4-executed-SPICE-gain",
+          "4-executed-SPICE-Zi",
+          "4-executed-SPICE-Zo"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐支路重查原图直流路径与交流连接，用两结偏置判断能否正向线性放大。等效图另用端口KCL核对受控源方向，未以题图外观代替工作区检验。",
+            "en": "DC and AC connections are retraced branch by branch. Both junction biases test forward-active amplification; port KCL separately checks controlled-source directions in the redrawn models."
+          },
+          "results": {
+            "hand": {
+              "IE_A": 0.0012667219229175303,
+              "IB_magnitude_A": 2.483768476308883e-05,
+              "IC_magnitude_A": 0.0012418842381544414,
+              "VBV": -2.6000828843762953,
+              "VEV": -1.9000828843762954,
+              "VCV": -7.901782014090343,
+              "VCEV": -6.001699129714048,
+              "rbeOhm": 1246.7964404894324,
+              "RiOhm": 4594.242957843419,
+              "RoOhm": 3300,
+              "Av": -8.751668814011694,
+              "Avs": -7.740741652724814,
+              "outputPeakV": 0.1161111247908722
+            },
+            "independentSpiceCheck": {
+              "authored": {
+                "nodalCrossChecks": [
+                  {
+                    "frequencyHz": 1000,
+                    "relativeErrors": [
+                      1.130471118444943e-14,
+                      3.449017443755109e-14,
+                      4.580426131251927e-14
+                    ]
+                  },
+                  {
+                    "frequencyHz": 100000,
+                    "relativeErrors": [
+                      1.5139553265650627e-12,
+                      5.037883864736312e-12,
+                      1.3780222906611132e-16
+                    ]
+                  }
+                ],
+                "effectiveBetaDC": 80.00003432199219,
+                "effectiveBetaAC": 79.99999987432487
+              },
+              "fairchild": {
+                "nodalCrossChecks": [
+                  {
+                    "frequencyHz": 1000,
+                    "relativeErrors": [
+                      9.104203013395528e-14,
+                      3.437397205935391e-14,
+                      2.7006316113265788e-14
+                    ]
+                  },
+                  {
+                    "frequencyHz": 100000,
+                    "relativeErrors": [
+                      1.1764743552030596e-12,
+                      2.0664421438957107e-12,
+                      5.7112616006332465e-12
+                    ]
+                  }
+                ],
+                "effectiveBetaDC": 100.0570312460206,
+                "effectiveBetaAC": 98.68860052651301
+              }
+            },
+            "executedSpice": {
+              "authored": {
+                "op": {
+                  "v(b)": -2.66434128885007,
+                  "v(e)": -2.00045152703957,
+                  "v(c)": -7.65333987752057,
+                  "@q1[ic]": -0.00131716973408467,
+                  "@q1[ib]": -1.64646146123287e-05,
+                  "@q1[gm]": 0.05092495478410107,
+                  "@q1[gpi]": 0.0006365619358012634,
+                  "@q1[gmu]": 1.000000001124885e-12,
+                  "@q1[go]": 1.124884959988807e-21,
+                  "@q1[cpi]": 0.0,
+                  "@q1[cmu]": 0.0,
+                  "@q1[cbx]": 0.0,
+                  "@q1[gx]": 0.01,
+                  "@q1[cexbc]": 0.0
+                },
+                "source": "authored three-parameter PNP approximation",
+                "netlistSha256": "01d7a6aeed90283593adcbeaf1c623980def401fdea201674d7d006ce8879afe",
+                "points": [
+                  {
+                    "frequencyHz": 10.0,
+                    "gainReal": -1.533802937639638,
+                    "gainImag": -4.080760237873437,
+                    "gainMagnitude": 4.359490287925969,
+                    "phaseDeg": -110.59933572343945,
+                    "inputOhmsReal": 6503.148187398369,
+                    "inputOhmsImag": -2495.98190818903,
+                    "outputOhmsReal": 3299.999954642019,
+                    "outputOhmsImag": -1591.549412762303
+                  },
+                  {
+                    "frequencyHz": 100.0,
+                    "gainReal": -8.669589777065564,
+                    "gainImag": -1.676653931518985,
+                    "gainMagnitude": 8.830229629442137,
+                    "phaseDeg": -169.05441750975632,
+                    "inputOhmsReal": 5397.577525186166,
+                    "inputOhmsImag": -388.2544877726214,
+                    "outputOhmsReal": 3299.999983055208,
+                    "outputOhmsImag": -159.1549362887036
+                  },
+                  {
+                    "frequencyHz": 1000.0,
+                    "gainReal": -8.965982404150749,
+                    "gainImag": -0.172927233884859,
+                    "gainMagnitude": 8.967649876068975,
+                    "phaseDeg": -178.89507117751583,
+                    "inputOhmsReal": 5369.136568093157,
+                    "inputOhmsImag": -39.18214400535239,
+                    "outputOhmsReal": 3299.999984222881,
+                    "outputOhmsImag": -15.91549360805412
+                  },
+                  {
+                    "frequencyHz": 10000.00000000001,
+                    "gainReal": -8.969039694733203,
+                    "gainImag": -0.01729815090723521,
+                    "gainMagnitude": 8.969056375769119,
+                    "phaseDeg": -179.88949655200298,
+                    "inputOhmsReal": 5368.847685446305,
+                    "inputOhmsImag": -3.918576703906066,
+                    "outputOhmsReal": 3299.999984234926,
+                    "outputOhmsImag": -1.59154935988672
+                  },
+                  {
+                    "frequencyHz": 100000.0000000001,
+                    "gainReal": -8.969070277269461,
+                    "gainImag": -0.00172982051718422,
+                    "gainMagnitude": 8.969070444080453,
+                    "phaseDeg": -179.98894964465023,
+                    "inputOhmsReal": 5368.844796165499,
+                    "inputOhmsImag": -0.3918580151378775,
+                    "outputOhmsReal": 3299.999984235046,
+                    "outputOhmsImag": -0.1591549294441441
+                  },
+                  {
+                    "frequencyHz": 1000000.000000001,
+                    "gainReal": -8.969070583095764,
+                    "gainImag": -0.0001729819470292966,
+                    "gainMagnitude": 8.969070584763871,
+                    "phaseDeg": -179.99889496515792,
+                    "inputOhmsReal": 5368.844767272619,
+                    "inputOhmsImag": -0.03918595449312488,
+                    "outputOhmsReal": 3299.999984235046,
+                    "outputOhmsImag": -0.01591551515396961
+                  }
+                ],
+                "transient1kHz": {
+                  "amplitudeV": 0.13450749580575816,
+                  "dcV": -1.905545222699018e-07,
+                  "fitResidualRmsV": 0.00010668841948902872
+                }
+              },
+              "fairchild": {
+                "op": {
+                  "v(b)": -2.69034910706365,
+                  "v(e)": -1.98208972146526,
+                  "v(c)": -7.68255248786553,
+                  "@q1[ic]": -0.00130831742791961,
+                  "@q1[ib]": -1.3075717034845e-05,
+                  "@q1[gm]": 0.04989093548470302,
+                  "@q1[gpi]": 0.0005055389905068079,
+                  "@q1[gmu]": 1.000000000031879e-12,
+                  "@q1[go]": 5.522600928154431e-05,
+                  "@q1[cpi]": 2.274573221264777e-11,
+                  "@q1[cmu]": 3.002623943511491e-12,
+                  "@q1[cbx]": 0.0,
+                  "@q1[gx]": 0.01,
+                  "@q1[cexbc]": -9.90149440295419e-15
+                },
+                "source": "Fairchild2001 datasheet PDF2, BF/RB overridden",
+                "netlistSha256": "1432a0302f9ce1d1fe05c7a04a855c836a33f53b67634d8d0f1679e01b8d97fb",
+                "points": [
+                  {
+                    "frequencyHz": 10.0,
+                    "gainReal": -1.551215197616203,
+                    "gainImag": -4.070671227437494,
+                    "gainMagnitude": 4.356217720821923,
+                    "phaseDeg": -110.86039829007353,
+                    "inputOhmsReal": 6584.023830967744,
+                    "inputOhmsImag": -2407.593675332143,
+                    "outputOhmsReal": 3256.670316342429,
+                    "outputOhmsImag": -1600.908172047205
+                  },
+                  {
+                    "frequencyHz": 100.0,
+                    "gainReal": -8.58053575886448,
+                    "gainImag": -1.639222811531766,
+                    "gainMagnitude": 8.735710923273396,
+                    "phaseDeg": -169.18455010055206,
+                    "inputOhmsReal": 5563.48807065897,
+                    "inputOhmsImag": -372.2682027880127,
+                    "outputOhmsReal": 3239.670789188771,
+                    "outputOhmsImag": -163.112707347881
+                  },
+                  {
+                    "frequencyHz": 1000.0,
+                    "gainReal": -8.86633978579636,
+                    "gainImag": -0.1683600621250254,
+                    "gainMagnitude": 8.86793810914996,
+                    "phaseDeg": -178.9121596858168,
+                    "inputOhmsReal": 5536.491282498937,
+                    "inputOhmsImag": -43.5990200180772,
+                    "outputOhmsReal": 3238.978336260191,
+                    "outputOhmsImag": -16.60813936850492
+                  },
+                  {
+                    "frequencyHz": 10000.00000000001,
+                    "gainReal": -8.869282086257366,
+                    "gainImag": -0.01119271763750272,
+                    "gainMagnitude": 8.86928914865977,
+                    "phaseDeg": -179.9276948083011,
+                    "inputOhmsReal": 5535.519846634585,
+                    "inputOhmsImag": -64.6125467372759,
+                    "outputOhmsReal": 3238.968582108209,
+                    "outputOhmsImag": -4.508453826344413
+                  },
+                  {
+                    "frequencyHz": 100000.0000000001,
+                    "gainReal": -8.868986017408814,
+                    "gainImag": 0.05536329348036858,
+                    "gainMagnitude": 8.869158814186273,
+                    "phaseDeg": 179.6423444744392,
+                    "inputOhmsReal": 5466.727940672323,
+                    "inputOhmsImag": -601.026306096163,
+                    "outputOhmsReal": 3238.706660280538,
+                    "outputOhmsImag": -28.92471083557241
+                  },
+                  {
+                    "frequencyHz": 1000000.000000001,
+                    "gainReal": -8.836540350566406,
+                    "gainImag": 0.5684954832802663,
+                    "gainMagnitude": 8.854808438452991,
+                    "phaseDeg": 176.31897061376404,
+                    "inputOhmsReal": 2524.83432041213,
+                    "inputOhmsImag": -2602.8729946887,
+                    "outputOhmsReal": 3212.741355105158,
+                    "outputOhmsImag": -285.2426126702501
+                  }
+                ],
+                "transient1kHz": {
+                  "amplitudeV": 0.13301172706889244,
+                  "dcV": -3.036030271941998e-07,
+                  "fitResidualRmsV": 9.781718332146143e-05
+                }
+              },
+              "vendorPdfSha256": "0173a9cdd84dfe57e6894aafc68cd39f22727c339dc14b0c341a3e9c5bedc0fe"
+            }
+          },
+          "externalReferences": [
+            {
+              "title": "Fairchild 2N3906 datasheet,2001,p.2: SPICE model (Cornell archive)",
+              "url": "https://people.ece.cornell.edu/land/courses/ece4760/FinalProjects/s2009/ncr6_wjw27/ncr6_wjw27/docs/2N3906.pdf"
+            }
+          ]
+        },
+        "solutionDiagrams": [
+          {
+            "kind": "small-signal-equivalent",
+            "alt": {
+              "zh": "原电路的中频等效；箭头采用带符号增量电流，Re1保留。",
+              "en": "Midband equivalent with signed incremental current and retained Re1."
+            },
+            "caption": {
+              "zh": "原电路的中频等效；箭头采用带符号增量电流，Re1保留。",
+              "en": "Midband equivalent with signed incremental current and retained Re1."
+            },
+            "figure": "ae-5.2.9-equivalent.svg"
+          },
+          {
+            "kind": "executed-spice-ac-and-transient",
+            "alt": {
+              "zh": "真实ngspice47扫频与稳态波形；蓝色为自写近似、橙色为修改BF/RB后的原厂模型。",
+              "en": "Executed ngspice47 frequency sweeps and steady waveform:blue authored approximation,orange manufacturer model with modified BF/RB."
+            },
+            "caption": {
+              "zh": "真实ngspice47扫频与稳态波形；蓝色为自写近似、橙色为修改BF/RB后的原厂模型。",
+              "en": "Executed ngspice47 frequency sweeps and steady waveform:blue authored approximation,orange manufacturer model with modified BF/RB."
+            },
+            "figure": "ae-5.2.9-executed-spice.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "分别运行增益/输入阻抗网表和名称含-ro的输出阻抗测试网表。厂商包装文件需在同目录准备2N3906.lib：从引用原厂PDF第2页取得PNP参数，加.model Q2N3906前缀，并在读取前把BF改80、RB改100；不要依赖加载后的altermod RB来更新已计算的基区电导。",
+            "en": "Run the gain/input netlist and the separate -ro output test. For the manufacturer wrapper,prepare2N3906.lib beside it:copy the PNP parameters from datasheet PDF2,prefix .model Q2N3906,and change BF to80,RB to100 before loading; do not rely on post-load altermod RB to refresh precomputed base conductance."
+          },
+          "netlists": [
+            {
+              "file": "ae-5.2.9-authored.cir",
+              "label": {
+                "zh": "自写近似模型 · 增益与输入阻抗",
+                "en": "Authored approximate model · gain and input impedance"
+              }
+            },
+            {
+              "file": "ae-5.2.9-authored-ro.cir",
+              "label": {
+                "zh": "自写近似模型 · 输出阻抗测试",
+                "en": "Authored approximate model · output-impedance test"
+              }
+            },
+            {
+              "file": "ae-5.2.9-fairchild.cir",
+              "label": {
+                "zh": "厂商模型电路包装（需本地模型文件） · 增益与输入阻抗",
+                "en": "Manufacturer circuit wrapper (local model file required) · gain and input impedance"
+              }
+            },
+            {
+              "file": "ae-5.2.9-fairchild-ro.cir",
+              "label": {
+                "zh": "厂商模型电路包装（需本地模型文件） · 输出阻抗测试",
+                "en": "Manufacturer circuit wrapper (local model file required) · output-impedance test"
+              }
+            }
+          ]
+        },
+        "figure": "ae-5.2.9-figure.png"
       }
     }
   }

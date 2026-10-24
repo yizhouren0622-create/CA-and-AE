@@ -1,0 +1,33 @@
+* AE5.2.9 part4: ngspice47, 27degC, source resistance zero.
+* Model BF=80 and RB=100 are imposed as requested by the exercise.
+* Input port is before Cb1; output port is after Cb2.
+.model Q2N3906 PNP(IS=1e-14 BF=80 RB=100)
+.options reltol=1e-9 abstol=1e-13 vntol=1e-10
+.temp 27
+VEE rail 0 -12
+Vin in 0 DC 0 AC 1 SIN(0 15m 1k)
+RB1 rail b 33k
+RB2 b 0 10k
+RC rail c 3.3k
+RE1 e mid 200
+RE2 mid 0 1.3k
+CB1 in b 10u
+CB2 c out 10u
+CE mid 0 50u
+Q1 c b e Q2N3906
+RL out 0 5.1k
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+print v(b) v(e) v(c) @q1[ic] @q1[ib] @q1[gm] @q1[gpi] @q1[gmu] @q1[go] @q1[cpi] @q1[cmu] @q1[cbx] @q1[gx] @q1[cexbc]
+ac dec 40 1 100Meg
+let zi=-v(in)/i(Vin)
+wrdata ae-5.2.9-authored-ac.dat v(out) zi
+tran 1u 500m 498m
+wrdata ae-5.2.9-authored-tran.dat v(in) v(out)
+quit
+.endc
+.end
