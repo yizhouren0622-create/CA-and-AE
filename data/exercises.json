@@ -46753,8 +46753,8 @@
           }
         ],
         "answer": {
-          "zh": "Re≈2.673 kΩ、Rb1=86 kΩ、Rb2≈37.778 kΩ（未取标准阻值）。",
-          "en": "Re≈2.673 kΩ,Rb1=86 kΩ,Rb2≈37.778 kΩ,before choosing standard values."
+          "zh": "R_e≈2.673 kΩ、Rb1=86 kΩ、Rb2≈37.778 kΩ（未取标准阻值）。",
+          "en": "R_e≈2.673 kΩ,Rb1=86 kΩ,Rb2≈37.778 kΩ,before choosing standard values."
         },
         "pitfalls": [
           {
@@ -46764,7 +46764,7 @@
         ],
         "fullStatementTranscribed": true,
         "resolvedSubparts": [
-          "Re",
+          "R_e",
           "Rb1",
           "Rb2"
         ],
@@ -46854,17 +46854,17 @@
         ],
         "answer": {
           "zh": "有限β设计Re≈14.295 kΩ、Rc=10.1 kΩ；按所列课件小信号模型，Avs≈−100.55。粗估偏置值Re≈14.3 kΩ、Rc≈10 kΩ也应注明近似。",
-          "en": "Finite-beta design: Re≈14.295 kΩ,Rc10.1 kΩ; Avs≈−100.55 under the stated course small-signal model. Coarse14.3 kΩ and10 kΩ bias estimates should be labeled approximate."
+          "en": "Finite-beta design: R_e≈14.295 kΩ,Rc10.1 kΩ; Avs≈−100.55 under the stated course small-signal model. Coarse14.3 kΩ and10 kΩ bias estimates should be labeled approximate."
         },
         "pitfalls": [
           {
             "zh": "交流增益不能保留已被电容短路的Re；直流设计不能把Cb2当短路。",
-            "en": "Do not retain bypassed Re in the AC gain or short Cb2 in the DC design."
+            "en": "Do not retain bypassed R_e in the AC gain or short Cb2 in the DC design."
           }
         ],
         "fullStatementTranscribed": true,
         "resolvedSubparts": [
-          "1-Re",
+          "1-R_e",
           "2-Rc",
           "3-Avs"
         ],
@@ -47303,7 +47303,7 @@
           "figurePdfPage": 221
         },
         "statement": {
-          "zh": "图题5.3.1的三个电路均设置合适Q点。BJT的β=50、r_be=1.53 kΩ，MOS的g_m=1 mS。比较：(1)输入电阻最大和最小的电路；(2)输出电阻最大和最小的电路；(3)电压增益绝对值最大和最小的电路；(4)输出与输入反相的电路。图(a)Rc=Re=3.3 kΩ、RL=5.1 kΩ；(b)Rd=10 kΩ、R₁=2 kΩ、R₂=10 kΩ、Rg1=300 kΩ、Rg2=100 kΩ、Rg3=2 MΩ；(c)Rb1=36 kΩ、Rb2=18 kΩ、Re=3.3 kΩ、RL=5.1 kΩ。按中频电容短路及忽略器件输出电导的基本模型比较。",
+          "zh": "图题5.3.1的三个电路均设置合适Q点。BJT的β=50、r_be=1.53 kΩ，MOS的g_m=1 mS。比较：(1)输入电阻最大和最小的电路；(2)输出电阻最大和最小的电路；(3)电压增益绝对值最大和最小的电路；(4)输出与输入反相的电路。图(a)Rc=R_e=3.3 kΩ、RL=5.1 kΩ；(b)Rd=10 kΩ、R₁=2 kΩ、R₂=10 kΩ、Rg1=300 kΩ、Rg2=100 kΩ、Rg3=2 MΩ；(c)Rb1=36 kΩ、Rb2=18 kΩ、R_e=3.3 kΩ、RL=5.1 kΩ。按中频电容短路及忽略器件输出电导的基本模型比较。",
           "en": "All three circuits in Fig.5.3.1 have suitable Q points. BJT beta50,r_be1.53 kΩ; MOS gm1 mS. Identify (1)largest/smallest input resistance,(2)largest/smallest output resistance,(3)largest/smallest gain magnitude,(4)inverting circuits. Diagram(a):Rc=Re3.3 kΩ,RL5.1 kΩ. (b):Rd10 kΩ,R₁2 kΩ,R₂10 kΩ,Rg1300 kΩ,Rg2100 kΩ,Rg32 MΩ. (c):Rb136 kΩ,Rb218 kΩ,Re3.3 kΩ,RL5.1 kΩ. Compare with midband capacitor shorts and the basic model neglecting device output conductance."
         },
         "prerequisites": {
@@ -47322,7 +47322,7 @@
             },
             "text": {
               "zh": "(a)射极低阻，Re仍并联；(b)栅极不吸电流但Rg3串联偏置等效电阻；(c)射极负载按β+1反射到基极，再与偏置电阻并联。",
-              "en": "(a)Emitter input is low resistance with Re in parallel. (b)Zero gate current still leaves Rg3 in series with the divider resistance. (c)Reflect the emitter load by beta+1,then shunt the base divider."
+              "en": "(a)Emitter input is low resistance with R_e in parallel. (b)Zero gate current still leaves Rg3 in series with the divider resistance. (c)Reflect the emitter load by beta+1,then shunt the base divider."
             },
             "formula": "R_{i,a}=3.3\\,\\mathrm{k\\Omega}\\parallel\\frac{1530\\,\\Omega}{51}\\approx29.7297\\,\\Omega,\\quad R_{i,b}=2\\,\\mathrm{M\\Omega}+(300\\parallel100)\\,\\mathrm{k\\Omega}=2.075\\,\\mathrm{M\\Omega},\\quad R_{i,c}=12\\,\\mathrm{k\\Omega}\\parallel[1530\\,\\Omega+51(3.3\\parallel5.1)\\,\\mathrm{k\\Omega}]\\approx10.7555\\,\\mathrm{k\\Omega}"
           },

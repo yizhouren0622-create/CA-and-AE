@@ -35,6 +35,6 @@ All 65 assigned main exercises are complete (31 circuit, 34 analog). Remaining: 
 
 ## 数学排版 / Mathematical typography
 
-正文、提示、逐步解析、结论、知识页与模拟卷统一预构建为离线MathML；上下标、分式、根号、指数、微分与相量重音采用数学排版。11张SVG的69处标签已修复。长公式在自身容器内滚动，手机阅读网格不撑宽页面。15组回归测试与构建检查防止数学标记漏出及分组错误。新内容优先写明确TeX，枚举使用“和/分别”。
+正文、提示、逐步解析、结论、知识页与模拟卷统一预构建为离线MathML；上下标、分式、根号、指数、微分与相量重音采用数学排版。11张SVG的69处标签已修复。长公式在自身容器内滚动，手机阅读网格不撑宽页面。17组回归测试与构建检查防止数学标记漏出及分组错误。新内容优先写明确TeX，枚举使用“和/分别”。
 
-Prose, hints, derivations, answers, guides and papers share offline MathML typography. Scripts, fractions, roots, exponents, derivatives and phasor accents are typeset; 69 labels in 11 SVGs were corrected. Long equations scroll within their containers. Fifteen regression tests and generated-page checks guard grouping and raw notation. New content should use explicit TeX and conjunctions for enumerated values.
+Prose, hints, derivations, answers, guides and papers share offline MathML typography. Scripts, fractions, roots, exponents, derivatives and phasor accents are typeset; 69 labels in 11 SVGs were corrected. Long equations scroll within their containers. Seventeen regression tests and generated-page checks guard grouping and raw notation. New content should use explicit TeX and conjunctions for enumerated values.

@@ -8,6 +8,15 @@ def alltags(e,t):return list(e.iter('{'+NS+'}'+t))
 def value(e):return ''.join(e.itertext())
 
 class MathTypography(unittest.TestCase):
+ def test_prose_component_names_have_subscripts(self):
+  for name,sub in [('Rb','b'),('Rac','ac'),('Kn','n'),('Ri','i')]:
+   e=tree(identifier(name));self.assertEqual(value(alltags(e,'msub')[0][1]),sub)
+   self.assertIn('<math',format_text('Use '+name+' here.','en'))
+  self.assertEqual(identifier('Re'),r'\operatorname{Re}')
+ def test_bias_point_names_are_one_subscript(self):
+  for name,sub in [('VGSQ','GSQ'),('VCEQ','CEQ'),('ICQ','CQ')]:
+   e=tree(identifier(name));self.assertEqual(len(alltags(e,'msub')),1)
+   self.assertEqual(value(alltags(e,'msub')[0][1]),sub)
  def test_fraction_precedence_and_nested_sums(self):
   e=tree(r'\frac{v_{i1}/R_1+v_{i2}/R_2}{1/R_1+1/R_2}')
   f=alltags(e,'mfrac');self.assertEqual(len(f),5)

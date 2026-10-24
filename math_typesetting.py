@@ -114,6 +114,18 @@ SCOPED_SUBS={
 }
 ALIASES={'vc':'v_c','vb':'v_b','va':'v_a','Rg1':'R_g1','Rg2':'R_g2','Rg3':'R_g3','duC':'du_C','duL':'du_L','diL':'di_L','diC':'di_C','Uth':'U_th','Rth':'R_th','xid':'x_id','xf':'x_f','fc':'f_c','uC':'u_C','uL':'u_L','iL':'i_L','iC':'i_C','uR':'u_R','vL':'v_L','vR':'v_R','vC':'v_C','vO':'v_O','vo':'v_o','vi':'v_i','UTh':'U_th','RTh':'R_th','Pmax':'P_max','VREF':'V_REF','gm':'g_m','gds':'g_ds','rds':'r_ds','ro':'r_o','rbe':'r_be','rbb':'r_bb','Av':'A_v','Avd':'A_vd','Avc':'A_vc','Avs':'A_vs','Af':'A_f','RL':'R_L','RF':'R_F','RG':'R_G','RD':'R_D','RS':'R_S','VDD':'V_DD','VSS':'V_SS','VCC':'V_CC','VEE':'V_EE','VGS':'V_GS','VDS':'V_DS','VSG':'V_SG','VSD':'V_SD','VBE':'V_BE','VCE':'V_CE','ID':'I_D','IB':'I_B','IC':'I_C','IE':'I_E','IZ':'I_Z','Io':'I_o','Is':'I_s','Us':'U_s','Tau':r'\tau','tau':r'\tau','lambda':r'\lambda','beta':r'\beta','alpha':r'\alpha','omega':r'\omega','pi':r'\pi'}
 
+# Unambiguous component and bias-point names also occur alone in prose.
+# Re remains the real-part operator; authors must write R_e for emitter R.
+ALIASES.update({name:tex for name,tex in [
+ ('Rb','R_b'),('Rc','R_c'),('Rd','R_d'),('Rs','R_s'),
+ ('Rf','R_f'),('Rg','R_g'),('Ri','R_i'),('Ro','R_o'),
+ ('Rac','R_ac'),('Kn','K_n'),('Kp','K_p'),
+ ('VGSQ','V_GSQ'),('VDSQ','V_DSQ'),('VBEQ','V_BEQ'),('VCEQ','V_CEQ'),
+ ('VBQ','V_BQ'),('VCQ','V_CQ'),('VEQ','V_EQ'),('VGQ','V_GQ'),
+ ('VDQ','V_DQ'),('VSQ','V_SQ'),('ICQ','I_CQ'),('IBQ','I_BQ'),
+ ('IEQ','I_EQ'),('IDQ','I_DQ'),('ICM','I_CM'),('PCM','P_CM')
+]})
+
 def identifier(word):
     if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS'):return None
     if word=='Re':return r'\operatorname{Re}'
