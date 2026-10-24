@@ -1514,8 +1514,12 @@
         "printedPage": 91,
         "pdfPage": 100,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（互易性与工程应用；内容可联系模电复习）",
+        "scopeLabelEn": "Circuit extension: reciprocity and engineering applications; related Analog review",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "电路课程第3章只要求3.1～3.5；所提供第3版目录"
+        }
       },
       {
         "id": "CA-3-39",
@@ -1524,8 +1528,12 @@
         "printedPage": 91,
         "pdfPage": 100,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（互易性与工程应用；内容可联系模电复习）",
+        "scopeLabelEn": "Circuit extension: reciprocity and engineering applications; related Analog review",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "电路课程第3章只要求3.1～3.5；所提供第3版目录"
+        }
       },
       {
         "id": "CA-3-40",
@@ -1534,8 +1542,12 @@
         "printedPage": 91,
         "pdfPage": 100,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（互易性与工程应用；内容可联系模电复习）",
+        "scopeLabelEn": "Circuit extension: reciprocity and engineering applications; related Analog review",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "电路课程第3章只要求3.1～3.5；所提供第3版目录"
+        }
       },
       {
         "id": "CA-3-41",
@@ -1544,8 +1556,12 @@
         "printedPage": 91,
         "pdfPage": 100,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "电路课程范围外拓展（互易性与工程应用；内容可联系模电复习）",
+        "scopeLabelEn": "Circuit extension: reciprocity and engineering applications; related Analog review",
+        "scopeMapping": {
+          "status": "extension",
+          "authority": "电路课程第3章只要求3.1～3.5；所提供第3版目录"
+        }
       },
       {
         "id": "CA-4-1",
@@ -1694,8 +1710,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-2",
@@ -1704,8 +1724,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-3",
@@ -1714,8 +1738,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-4",
@@ -1724,8 +1752,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-5",
@@ -1734,8 +1766,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-6",
@@ -1744,8 +1780,12 @@
         "printedPage": 140,
         "pdfPage": 149,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-7",
@@ -1765,8 +1805,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-9",
@@ -1775,8 +1819,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-10",
@@ -1785,8 +1833,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-11",
@@ -1806,8 +1858,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-13",
@@ -1816,8 +1872,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-14",
@@ -1826,8 +1886,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-15",
@@ -1847,8 +1911,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-17",
@@ -1857,8 +1925,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-18",
@@ -1867,8 +1939,12 @@
         "printedPage": 141,
         "pdfPage": 150,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-19",
@@ -1877,8 +1953,12 @@
         "printedPage": 142,
         "pdfPage": 151,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围（储能元件、换路及一阶响应；纲领5.1～5.9）",
+        "scopeLabelEn": "required: storage, switching and first-order responses; course plan 5.1–5.9",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "电路课程范围PPT第5章5.1～5.9"
+        }
       },
       {
         "id": "CA-5-20",
@@ -19422,6 +19502,2324 @@
           }
         },
         "figure": "ca-3-37-figure.png"
+      },
+      "CA-3-38": {
+        "id": "CA-3-38",
+        "bookId": "3-38",
+        "title": {
+          "zh": "先扣除源内串联电阻压降",
+          "en": "Subtract the source-series resistor drop first"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 91,
+          "pdfPage": 100,
+          "figurePrintedPage": 91,
+          "figurePdfPage": 100,
+          "figure": "题图3-37"
+        },
+        "statement": {
+          "zh": "在题图3-37(a)所示电路中，$N_0$为无源线性电阻网络，其各参数如图所示。若电路改接为题图3-37(b)所示形式，试运用互易定理求通过$5\\,\\Omega$电阻的电流$I$。",
+          "en": "For the passive linear resistor network N₀ in Fig. 3-37(a), use reciprocity to find the current through 5 Ω after reconnection as in (b)."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "图a左5 V源串1 Ω，向N₀输入1 A；右口短路，2 A向下流出。图b右口接12 V源上正，左口接5 Ω，I向下。",
+            "en": "In (a), a 5 V source in series with 1 Ω injects 1 A into N₀; the shorted right port delivers 2 A downward. In (b), port 2 has a top-positive 12 V source and port 1 has 5 Ω with I downward."
+          }
+        },
+        "prerequisites": {
+          "zh": "端口参考方向、理想元件约束及独立一致性检查。",
+          "en": "Port references, ideal-element constraints and independent consistency checks."
+        },
+        "recognition": {
+          "zh": "原左端口电压是5−1×1=4 V，不是源电压5 V。用流入网络的端口电流定义提取导纳，再接新负载。",
+          "en": "The original port-1 voltage is 4 V, not the 5 V source voltage. Use inward port currents to identify the required admittances."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "短路测量确定参数",
+              "en": "Identify parameters from the short test"
+            },
+            "text": {
+              "zh": "原右口流入电流为−2 A，左端输入1 A，端电压4 V。",
+              "en": "The inward right current is −2 A and the left current is 1 A at 4 V."
+            },
+            "formula": "y_{11}=\\frac14\\,\\mathrm S,\\qquad y_{12}=y_{21}=-\\frac12\\,\\mathrm S"
+          },
+          {
+            "title": {
+              "zh": "带5 Ω负载的左口KCL",
+              "en": "KCL at the 5 Ω loaded port"
+            },
+            "text": {
+              "zh": "令左端口电压V₁，向内电流为−V₁/5，右端电压12 V。",
+              "en": "Let the left voltage be V₁; its inward current is −V₁/5, with 12 V at port 2."
+            },
+            "formula": "-\\frac{V_1}{5}=\\frac14V_1-\\frac12(12)\\quad\\Rightarrow\\quad V_1=\\frac{40}{3}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "求电阻电流",
+              "en": "Find load current"
+            },
+            "text": {
+              "zh": "正值沿图中向下方向。",
+              "en": "The positive result follows the drawn downward reference."
+            },
+            "formula": "I=\\frac{V_1}{5\\,\\Omega}=\\frac83\\,\\mathrm A\\approx2.66667\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$I=\\frac83\\,\\mathrm A$，向下。",
+          "en": "$I=\\frac83\\,\\mathrm A$ downward."
+        },
+        "pitfalls": [
+          {
+            "zh": "互易性只用于相同N₀内部网络，原1 Ω是外部源串联电阻。",
+            "en": "Reciprocity applies to the same internal N₀; the original 1 Ω belongs to the external source circuit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立对称正定导纳样例[[1/4,−1/2],[−1/2,2]] S同时满足原短路观测与新负载方程，复得8/3 A；附录2.67 A为舍入。",
+            "en": "An independent symmetric positive-definite admittance example [[1/4,−1/2],[−1/2,2]] S satisfies both original observations and the new load equation, giving 8/3 A, consistent with the rounded 2.67 A."
+          },
+          "results": {
+            "originalInputV": 4,
+            "originalOutputShortCurrentA": 2,
+            "reciprocalYExampleS": [
+              [
+                "1/4",
+                "-1/2"
+              ],
+              [
+                "-1/2",
+                "2"
+              ]
+            ],
+            "newLoadVoltageV": "40/3",
+            "newLoadCurrentA": "8/3"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立对称正定导纳样例[[1/4,−1/2],[−1/2,2]] S同时满足原短路观测与新负载方程，复得8/3 A；附录2.67 A为舍入。",
+              "en": "An independent symmetric positive-definite admittance example [[1/4,−1/2],[−1/2,2]] S satisfies both original observations and the new load equation, giving 8/3 A, consistent with the rounded 2.67 A."
+            }
+          }
+        },
+        "figure": "ca-3-38-figure.png"
+      },
+      "CA-3-39": {
+        "id": "CA-3-39",
+        "bookId": "3-39",
+        "title": {
+          "zh": "开路互阻决定交换激励后的源电压",
+          "en": "Open-circuit transfer resistance determines the exchanged excitation"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 91,
+          "pdfPage": 100,
+          "figurePrintedPage": 91,
+          "figurePdfPage": 100,
+          "figure": "题图3-38"
+        },
+        "statement": {
+          "zh": "题图3-38所示电路中，图(a)和图(b)中的网络$N_R$相同，且仅由线性电阻组成。求图(b)中电阻R等于何值时可获得最大功率，并求此最大功率。",
+          "en": "The identical N_R in both circuits of Fig. 3-38 contains only linear resistors. Find R for maximum power in (b), and that maximum power."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "图a左2 A源向上，左端电压10 V，右口开路5 V。图b右8 A源向上激励，左口接可变R。",
+            "en": "In (a), an upward 2 A source gives left voltage 10 V and open right voltage 5 V. In (b), an upward 8 A source excites the right port and a variable R loads the left port."
+          }
+        },
+        "prerequisites": {
+          "zh": "端口参考方向、理想元件约束及独立一致性检查。",
+          "en": "Port references, ideal-element constraints and independent consistency checks."
+        },
+        "recognition": {
+          "zh": "原右口开路，能直接得到阻抗参数z₁₁与z₂₁。互易性使z₁₂=z₂₁，正好能求新左口戴维南源。",
+          "en": "The original open right port directly identifies z₁₁ and z₂₁. Reciprocity gives z₁₂=z₂₁, enough to identify the new left-port Thevenin equivalent."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求开路阻抗参数",
+              "en": "Identify open-circuit impedance parameters"
+            },
+            "text": {
+              "zh": "端口电流均取流入网络为正。",
+              "en": "Use inward port currents."
+            },
+            "formula": "z_{11}=\\frac{10\\,\\mathrm V}{2\\,\\mathrm A}=5\\,\\Omega,\\qquad z_{12}=z_{21}=\\frac{5\\,\\mathrm V}{2\\,\\mathrm A}=2.5\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "新左口等效源",
+              "en": "Equivalent source at the new left port"
+            },
+            "text": {
+              "zh": "左口开路时8 A乘互阻得20 V；右电流源置零为开路，左口内阻仍z₁₁。",
+              "en": "The open left voltage is 8 A times transfer resistance. Zeroing the right current source opens port 2, leaving left resistance z₁₁."
+            },
+            "formula": "U_{oc}=(2.5\\,\\Omega)(8\\,\\mathrm A)=20\\,\\mathrm V,\\qquad R_{th}=5\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "最大功率匹配",
+              "en": "Match for maximum power"
+            },
+            "text": {
+              "zh": "R=R_th时负载端电压为10 V，功率20 W。",
+              "en": "Matching gives load voltage 10 V and power 20 W."
+            },
+            "formula": "R_{opt}=5\\,\\Omega,\\qquad P_{max}=\\frac{20^2}{4(5)}\\,\\mathrm W=20\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "$R=5\\,\\Omega$，$P_{max}=20\\,\\mathrm W$。",
+          "en": "$R=5\\,\\Omega$, $P_{max}=20\\,\\mathrm W$."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把原测得5 V直接当作图b的新开路电压；交换激励幅值也从2 A变为8 A。",
+            "en": "The original 5 V is not the new open voltage; the excitation also changes from 2 A to 8 A."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立对称正定阻抗矩阵[[5,5/2],[5/2,5]] Ω复现原2 A观测；新8 A下接5 Ω精确得10 V和20 W，附录一致。",
+            "en": "An independent symmetric positive-definite impedance matrix [[5,5/2],[5/2,5]] Ω reproduces the original measurements and gives 10 V, 20 W for the new 8 A excitation with 5 Ω, matching the appendix."
+          },
+          "results": {
+            "reciprocalZExampleOhm": [
+              [
+                "5",
+                "5/2"
+              ],
+              [
+                "5/2",
+                "5"
+              ]
+            ],
+            "openVoltageV": 20,
+            "resistanceOhm": 5,
+            "matchedLoadVoltageV": "10",
+            "matchedPowerW": "20"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立对称正定阻抗矩阵[[5,5/2],[5/2,5]] Ω复现原2 A观测；新8 A下接5 Ω精确得10 V和20 W，附录一致。",
+              "en": "An independent symmetric positive-definite impedance matrix [[5,5/2],[5/2,5]] Ω reproduces the original measurements and gives 10 V, 20 W for the new 8 A excitation with 5 Ω, matching the appendix."
+            }
+          }
+        },
+        "figure": "ca-3-39-figure.png"
+      },
+      "CA-3-40": {
+        "id": "CA-3-40",
+        "bookId": "3-40",
+        "title": {
+          "zh": "区分端口等效与图示开路电流比",
+          "en": "Separate the port equivalent from the open-port current ratio"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 91,
+          "pdfPage": 100,
+          "figurePrintedPage": 91,
+          "figurePdfPage": 100,
+          "figure": "题图3-39"
+        },
+        "statement": {
+          "zh": "求题图3-39所示含有理想运放电路ab端口的诺顿等效电路及电流比$\\frac{i_1}{i_4}$。",
+          "en": "Find the Norton equivalent at ab and the ratio $i_1/i_4$ for the ideal-op-amp circuit in Fig. 3-39."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "同相端由理想u_s源固定；R₁从u_s节点到输出a，i₁向右。反相端经R₂接地、经R₃接b；R₄从a接b，原图i₄向下。端口ab未外接负载。",
+            "en": "The ideal source fixes the non-inverting input at u_s. R₁ links that node to output a, with i₁ rightward. The inverting node has R₂ to ground and R₃ to b. R₄ links a to b, with i₄ downward. No external load is attached at ab."
+          }
+        },
+        "prerequisites": {
+          "zh": "端口参考方向、理想元件约束及独立一致性检查。",
+          "en": "Port references, ideal-element constraints and independent consistency checks."
+        },
+        "recognition": {
+          "zh": "理想负反馈给V₋=u_s、输入零电流。b点电压固定，而端口电压变化会改变R₄电流；电流比须按原图开路条件与箭头求。",
+          "en": "Ideal negative feedback gives V₋=u_s and zero input current. Node b is fixed, while port voltage changes the R₄ current. Evaluate the ratio with the drawn open-port condition and references."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由输入节点确定b电位",
+              "en": "Determine node b from input KCL"
+            },
+            "text": {
+              "zh": "反相输入不吸收电流，R₃从b送来的电流等于R₂向地电流。",
+              "en": "The current from b through R₃ equals that through R₂ to ground."
+            },
+            "formula": "\\frac{u_s}{R_2}+\\frac{u_s-V_b}{R_3}=0\\quad\\Rightarrow\\quad V_b=u_s\\left(1+\\frac{R_3}{R_2}\\right)"
+          },
+          {
+            "title": {
+              "zh": "写端口输出电流",
+              "en": "Write delivered port current"
+            },
+            "text": {
+              "zh": "令U=V_a−V_b，外部电流I_out由a流出并回到b。b的KCL直接给诺顿形式。",
+              "en": "Let U=V_a−V_b and external I_out leave a and return to b. KCL at b gives Norton form."
+            },
+            "formula": "I_{out}=\\frac{u_s}{R_2}-\\frac{U}{R_4}\\quad\\Rightarrow\\quad I_N=\\frac{u_s}{R_2}\\ (b\\to a),\\qquad R_N=R_4"
+          },
+          {
+            "title": {
+              "zh": "原图开路时的带符号比值",
+              "en": "Signed ratio in the drawn open circuit"
+            },
+            "text": {
+              "zh": "开路I_out=0，故i₄=u_s/R₂；V_a=V_b+R₄i₄，原图i₁=(u_s−V_a)/R₁。两电流方向不同，保留负号。",
+              "en": "Open circuit gives i₄=u_s/R₂. Use V_a=V_b+R₄i₄ and the drawn i₁=(u_s−V_a)/R₁; retain their opposite signs."
+            },
+            "formula": "\\frac{i_1}{i_4}=-\\frac{R_3+R_4}{R_1}\\qquad(u_s\\ne0)"
+          }
+        ],
+        "answer": {
+          "zh": "诺顿源$u_s/R_2$由b指向a，并联$R_4$。按原图开路及向下$i_4$，$i_1/i_4=-(R_3+R_4)/R_1$；附录正号与原箭头不符。",
+          "en": "The Norton source $u_s/R_2$ points b→a, parallel with $R_4$. For the drawn open port and downward $i_4$, $i_1/i_4=-(R_3+R_4)/R_1$; the appendix’s positive sign disagrees with the arrows."
+        },
+        "pitfalls": [
+          {
+            "zh": "改变i₄参考方向会改变比值符号；外接任意负载后该开路比值一般不再成立。u_s=0时两电流为零，不能直接做0/0。",
+            "en": "Reversing i₄ reverses the ratio sign. An arbitrary external load changes this open-port ratio; at u_s=0 both currents vanish, so the ratio is understood as a nonzero-excitation gain."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三组不同正电阻与正负u_s，独立联立理想输入约束、b节点KCL及三个端口电压测试，均复得I_out=u_s/R₂−U/R₄；开路数值电流比均带负号。附录诺顿参数相符，但电流比正号不符。",
+            "en": "Three resistor/source sets, including negative u_s, independently solve ideal-input constraints, b-node KCL and three port-voltage tests, reproducing I_out=u_s/R₂−U/R₄. All open-port ratios are negative under the drawn references. Norton parameters agree with the appendix; the ratio sign does not."
+          },
+          "results": {
+            "sampleChecks": [
+              {
+                "parameters": [
+                  2,
+                  3,
+                  5,
+                  7,
+                  11
+                ],
+                "portTests": [
+                  {
+                    "portU": 0,
+                    "outwardCurrent": "2/5"
+                  },
+                  {
+                    "portU": 1,
+                    "outwardCurrent": "17/55"
+                  },
+                  {
+                    "portU": -2,
+                    "outwardCurrent": "32/55"
+                  }
+                ],
+                "openI1": "-12/5",
+                "openI4": "2/5",
+                "openRatio": "-6"
+              },
+              {
+                "parameters": [
+                  3,
+                  2,
+                  4,
+                  6,
+                  8
+                ],
+                "portTests": [
+                  {
+                    "portU": 0,
+                    "outwardCurrent": "3/4"
+                  },
+                  {
+                    "portU": 1,
+                    "outwardCurrent": "5/8"
+                  },
+                  {
+                    "portU": -2,
+                    "outwardCurrent": "1"
+                  }
+                ],
+                "openI1": "-21/4",
+                "openI4": "3/4",
+                "openRatio": "-7"
+              },
+              {
+                "parameters": [
+                  -1,
+                  4,
+                  3,
+                  2,
+                  5
+                ],
+                "portTests": [
+                  {
+                    "portU": 0,
+                    "outwardCurrent": "-1/3"
+                  },
+                  {
+                    "portU": 1,
+                    "outwardCurrent": "-8/15"
+                  },
+                  {
+                    "portU": -2,
+                    "outwardCurrent": "1/15"
+                  }
+                ],
+                "openI1": "7/12",
+                "openI4": "-1/3",
+                "openRatio": "-7/4"
+              }
+            ],
+            "norton": "IN=us/R2 from b to a; RN=R4",
+            "openPortRatio": "i1/i4=-(R3+R4)/R1 for drawn downward i4",
+            "appendixDiscrepancy": "Listed positive ratio disagrees with the two original arrows. At us=0 both open currents vanish, so the ratio is understood as a nonzero-excitation gain."
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "三组不同正电阻与正负u_s，独立联立理想输入约束、b节点KCL及三个端口电压测试，均复得I_out=u_s/R₂−U/R₄；开路数值电流比均带负号。附录诺顿参数相符，但电流比正号不符。",
+              "en": "Three resistor/source sets, including negative u_s, independently solve ideal-input constraints, b-node KCL and three port-voltage tests, reproducing I_out=u_s/R₂−U/R₄. All open-port ratios are negative under the drawn references. Norton parameters agree with the appendix; the ratio sign does not."
+            }
+          }
+        },
+        "figure": "ca-3-40-figure.png"
+      },
+      "CA-3-41": {
+        "id": "CA-3-41",
+        "bookId": "3-41",
+        "title": {
+          "zh": "理想二极管先枚举状态，再判继电器电流",
+          "en": "Check ideal-diode modes before relay currents"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 91,
+          "pdfPage": 100,
+          "figurePrintedPage": 91,
+          "figurePdfPage": 100,
+          "figure": "题图3-40"
+        },
+        "statement": {
+          "zh": "题图3-40所示开关电路中，$R_1$和$R_2$是两个继电器线圈的等效电阻，$R_1=5\\,\\mathrm{k\\Omega},R_2=6\\,\\mathrm{k\\Omega}$，VD₁和VD₂是理想二极管。理想二极管具有单向导电性，当其正向偏置时导通、相当于短路；反向偏置时截止、相当于开路。当流过继电器线圈的电流大于$2\\,\\mathrm{mA}$时继电器接通，试问图示电路中两个继电器能否接通？",
+          "en": "In Fig. 3-40, relay coils have equivalent resistances $R_1=5\\,\\mathrm{k\\Omega}$ and $R_2=6\\,\\mathrm{k\\Omega}$. VD₁ and VD₂ are ideal unilateral diodes: a forward-biased diode is a short and a reverse-biased diode is open. A relay energizes when its current exceeds 2 mA. Determine whether each relay energizes."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "公共节点V分别经40 kΩ到+40 V、20 kΩ到+200 V、30 kΩ到−100 V。VD₁允许从V向下经R₁到地；VD₂允许从地经R₂向上到V。",
+            "en": "Node V connects through 40 kΩ to +40 V, 20 kΩ to +200 V and 30 kΩ to −100 V. VD₁ permits current downward from V through R₁ to ground; VD₂ permits current upward from ground through R₂ to V."
+          }
+        },
+        "prerequisites": {
+          "zh": "端口参考方向、理想元件约束及独立一致性检查。",
+          "en": "Port references, ideal-element constraints and independent consistency checks."
+        },
+        "recognition": {
+          "zh": "两个二极管方向相反，公共电位的正负决定哪条线圈支路可能导通。解完线性电路后还必须检查导通电流和截止偏置。",
+          "en": "The opposite diode orientations make the node-voltage sign decisive. After each linear-mode solution, check forward-current and reverse-bias conditions."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "试VD₁通、VD₂断",
+              "en": "Test VD₁ on and VD₂ off"
+            },
+            "text": {
+              "zh": "此时R₁并入节点方程，R₂支路无电流。用kΩ和mA配套。",
+              "en": "Include R₁ in the nodal equation and leave R₂ open. Use kΩ with mA."
+            },
+            "formula": "\\frac{V-40}{40}+\\frac{V-200}{20}+\\frac{V+100}{30}+\\frac V5=0\\quad\\Rightarrow\\quad V=\\frac{920}{37}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "复核理想二极管条件",
+              "en": "Validate the ideal-diode mode"
+            },
+            "text": {
+              "zh": "V约24.865 V为正，VD₁向下电流为正，VD₂阳极经无电流R₂接地，比其阴极V低，确为反偏。",
+              "en": "V is positive, making VD₁’s downward current positive. VD₂’s anode is at ground through its unexcited coil and below its cathode V, so it is reverse-biased."
+            },
+            "formula": "I_{R1}=\\frac{V}{5\\,\\mathrm{k\\Omega}}=\\frac{184}{37}\\,\\mathrm{mA}\\approx4.97297\\,\\mathrm{mA},\\qquad I_{R2}=0"
+          },
+          {
+            "title": {
+              "zh": "与动作阈值比较",
+              "en": "Compare against the relay threshold"
+            },
+            "text": {
+              "zh": "R₁电流大于2 mA，R₂为零。其他三个二极管状态不能同时满足其电流与偏置符号。",
+              "en": "R₁ exceeds 2 mA while R₂ is unexcited. None of the other three modes satisfies all current and bias signs."
+            },
+            "formula": "I_{R1}>2\\,\\mathrm{mA},\\qquad I_{R2}<2\\,\\mathrm{mA}"
+          }
+        ],
+        "answer": {
+          "zh": "继电器R₁接通，R₂不能接通。",
+          "en": "Relay R₁ energizes; relay R₂ does not."
+        },
+        "pitfalls": [
+          {
+            "zh": "二极管导通仅将二极管本身短路，不能把串联的线圈电阻一并短掉；题设为理想二极管，不附加0.7 V。",
+            "en": "Only the conducting diode is shorted; its series coil remains. Use the stated ideal model rather than adding 0.7 V."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立枚举全部四个二极管状态，用完整源节点MNA精确计算并检查各管偏置/电流符号；只有VD₁通、VD₂断有效，V=920/37 V，所有有效元件总功率余量为零，与附录继电器结论一致。",
+            "en": "Independent enumeration of all four modes uses full source-node MNA and checks each bias/current inequality. Only VD₁ on, VD₂ off is valid, with V=920/37 V and zero total-power residual, agreeing with the appendix’s relay conclusion."
+          },
+          "results": {
+            "modeChecks": [
+              {
+                "on1": false,
+                "on2": false,
+                "V": "920/13",
+                "valid": false,
+                "powerResidual": "0"
+              },
+              {
+                "on1": false,
+                "on2": true,
+                "V": "920/33",
+                "valid": false,
+                "powerResidual": "0"
+              },
+              {
+                "on1": true,
+                "on2": false,
+                "V": "920/37",
+                "valid": true,
+                "powerResidual": "0"
+              },
+              {
+                "on1": true,
+                "on2": true,
+                "V": "920/57",
+                "valid": false,
+                "powerResidual": "0"
+              }
+            ],
+            "validNodeV": "920/37",
+            "relay1CurrentA": "23/4625",
+            "relay2CurrentA": 0,
+            "relay1Energized": true,
+            "relay2Energized": false
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立枚举全部四个二极管状态，用完整源节点MNA精确计算并检查各管偏置/电流符号；只有VD₁通、VD₂断有效，V=920/37 V，所有有效元件总功率余量为零，与附录继电器结论一致。",
+              "en": "Independent enumeration of all four modes uses full source-node MNA and checks each bias/current inequality. Only VD₁ on, VD₂ off is valid, with V=920/37 V and zero total-power residual, agreeing with the appendix’s relay conclusion."
+            }
+          }
+        },
+        "figure": "ca-3-41-figure.png"
+      },
+      "CA-5-1": {
+        "id": "CA-5-1",
+        "bookId": "5-1",
+        "title": {
+          "zh": "电荷先除电压，再算储能",
+          "en": "Divide charge by voltage, then calculate energy"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149
+        },
+        "statement": {
+          "zh": "某电容元件充电到$12\\,\\mathrm V$时，其电荷为$6\\times10^{-3}\\,\\mathrm C$，试求其电容值和此时的储能。",
+          "en": "A capacitor charged to 12 V stores $6\\times10^{-3}\\,\\mathrm C$. Find its capacitance and stored energy."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "电容量由q=Cu确定；储能不是qu，而是其一半。",
+          "en": "Use q=Cu. Stored energy is one-half of qu, not qu."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由电荷定义求C",
+              "en": "Find C from charge"
+            },
+            "text": {
+              "zh": "保持电荷用库仑、电压用伏特，结果为法拉。",
+              "en": "Use coulombs and volts to obtain farads."
+            },
+            "formula": "C=\\frac qU=\\frac{6\\times10^{-3}}{12}\\,\\mathrm F=500\\,\\mathrm{\\mu F}"
+          },
+          {
+            "title": {
+              "zh": "两种能量表达式交叉核对",
+              "en": "Cross-check two energy expressions"
+            },
+            "text": {
+              "zh": "电压从0充至12 V所对应的场能为二次函数。",
+              "en": "The field energy is quadratic in voltage."
+            },
+            "formula": "W_C=\\frac12CU^2=\\frac12qU=36\\times10^{-3}\\,\\mathrm J"
+          }
+        ],
+        "answer": {
+          "zh": "$C=500\\,\\mathrm{\\mu F}$，$W_C=36\\,\\mathrm{mJ}$。",
+          "en": "$C=500\\,\\mathrm{\\mu F}$, $W_C=36\\,\\mathrm{mJ}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "电荷单位C和电容量符号C含义不同，答案电容单位是F。",
+            "en": "The unit C for charge differs from the capacitance symbol C; capacitance is measured in F."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "capacitance",
+          "energy"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "精确有理数计算C=1/2000 F，分别由qU/2和CU²/2得9/250 J，与附录500 μF、36 mJ一致。",
+            "en": "Exact rational calculation gives C=1/2000 F and energy 9/250 J from both qU/2 and CU²/2, matching the appendix."
+          },
+          "results": {
+            "capacitanceF": "1/2000",
+            "energyJ": "9/250"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "精确有理数计算C=1/2000 F，分别由qU/2和CU²/2得9/250 J，与附录500 μF、36 mJ一致。",
+              "en": "Exact rational calculation gives C=1/2000 F and energy 9/250 J from both qU/2 and CU²/2, matching the appendix."
+            }
+          }
+        }
+      },
+      "CA-5-2": {
+        "id": "CA-5-2",
+        "bookId": "5-2",
+        "title": {
+          "zh": "电压在衰减，电容电流带负号",
+          "en": "A decaying capacitor voltage gives negative current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149
+        },
+        "statement": {
+          "zh": "某电容元件的电容值为$2\\,\\mathrm F$，求当其两端电压$u(t)=4e^{-t/2}\\,\\mathrm V$时的电容电流$i(t)$（假设电压、电流为关联参考方向）。",
+          "en": "Find i(t) for a 2 F capacitor with $u(t)=4e^{-t/2}\\,\\mathrm V$, using passive voltage/current references."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "关联方向直接用i=Cdu/dt；指数求导还要乘−1/2。",
+          "en": "Under the passive reference use i=C du/dt, including the exponential derivative factor −1/2."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先求电压导数",
+              "en": "Differentiate the voltage"
+            },
+            "text": {
+              "zh": "时间t按秒计。",
+              "en": "Time t is in seconds."
+            },
+            "formula": "\\frac{du}{dt}=-2e^{-t/2}\\,\\mathrm{\\frac V s}"
+          },
+          {
+            "title": {
+              "zh": "乘电容量并解释功率",
+              "en": "Multiply by capacitance and interpret power"
+            },
+            "text": {
+              "zh": "电流为负意味着能量从电容释放，与电压衰减相符。",
+              "en": "Negative current indicates energy release, consistent with the voltage decay."
+            },
+            "formula": "i(t)=-4e^{-t/2}\\,\\mathrm A,\\qquad p=ui=-16e^{-t}\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "$i(t)=-4e^{-t/2}\\,\\mathrm A$。",
+          "en": "$i(t)=-4e^{-t/2}\\,\\mathrm A$."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能只把指数保留下来而漏掉链式法则的−1/2。",
+            "en": "Do not omit the chain-rule factor −1/2."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "在三个独立衰减幅值下精确检查Cdu/dt=i及d(Cu²/2)/dt=ui；初始储能16 J与总释放能量一致，附录电流相符。",
+            "en": "Three exact decay-amplitude checks verify Cdu/dt=i and the energy derivative equals ui. Initial 16 J equals released energy; the appendix current agrees."
+          },
+          "results": {
+            "i": "-4 exp(-t/2) A",
+            "initialEnergyJ": 16,
+            "totalDeliveredEnergyJ": 16
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "在三个独立衰减幅值下精确检查Cdu/dt=i及d(Cu²/2)/dt=ui；初始储能16 J与总释放能量一致，附录电流相符。",
+              "en": "Three exact decay-amplitude checks verify Cdu/dt=i and the energy derivative equals ui. Initial 16 J equals released energy; the appendix current agrees."
+            }
+          }
+        }
+      },
+      "CA-5-3": {
+        "id": "CA-5-3",
+        "bookId": "5-3",
+        "title": {
+          "zh": "由斜率和电流辨认电容",
+          "en": "Identify a capacitor from slope and current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149,
+          "figurePrintedPage": 140,
+          "figurePdfPage": 149,
+          "figure": "题图5-1"
+        },
+        "statement": {
+          "zh": "已知某元件的u(t)和i(t)波形如题图5-1所示，且二者为关联参考方向。试判断此元件是何种电路元件，其参数值是多少？",
+          "en": "Identify the element and its parameter from the passive-reference u(t), i(t) waveforms in Fig. 5-1."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "分段常电流对应分段线性电压，适合i=Cdu/dt。用上升、下降两段都验一次同一C。",
+          "en": "Piecewise constant current with linear voltage suggests i=Cdu/dt. Check the same C on both segments."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "上升段求参数",
+              "en": "Use the rising segment"
+            },
+            "text": {
+              "zh": "上升斜率1 V/s，电流1/2 A。",
+              "en": "The slope is 1 V/s and current is 1/2 A."
+            },
+            "formula": "C=\\frac{i}{du/dt}=\\frac{1/2}{1}\\,\\mathrm F=0.5\\,\\mathrm F"
+          },
+          {
+            "title": {
+              "zh": "下降段反证符号",
+              "en": "Check the falling segment"
+            },
+            "text": {
+              "zh": "下降斜率−1 V/s且电流−1/2 A，商仍为正0.5 F。",
+              "en": "Both slope and current reverse, leaving the same positive capacitance."
+            },
+            "formula": "\\frac{-1/2}{-1}\\,\\mathrm F=0.5\\,\\mathrm F"
+          }
+        ],
+        "answer": {
+          "zh": "该元件为电容，$C=0.5\\,\\mathrm F$。",
+          "en": "The element is a capacitor with $C=0.5\\,\\mathrm F$."
+        },
+        "pitfalls": [
+          {
+            "zh": "仅依据图中0～2 s两段作判断，不擅自补画图外的电流；电压连续折点不会产生冲激电流。",
+            "en": "Use the plotted 0–2 s intervals without extrapolating current beyond the graph. Continuous voltage corners do not imply impulse current."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "用两段独立有理斜率分别反求，均给1/2 F，与附录一致。电阻要求u/i恒定、理想电感要求u=Ldi/dt，均不符合这两段波形。",
+            "en": "Both independent slope ratios yield 1/2 F, matching the appendix. The required resistor or inductor laws do not fit these two intervals."
+          },
+          "results": {
+            "element": "capacitor",
+            "capacitanceF": "1/2",
+            "intervals": "0<t<1: du/dt=1, i=1/2; 1<t<2: du/dt=-1, i=-1/2. No extrapolation beyond plotted intervals."
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "用两段独立有理斜率分别反求，均给1/2 F，与附录一致。电阻要求u/i恒定、理想电感要求u=Ldi/dt，均不符合这两段波形。",
+              "en": "Both independent slope ratios yield 1/2 F, matching the appendix. The required resistor or inductor laws do not fit these two intervals."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "电压在0～1 s由0线性升到1 V，1～2 s线性降到0；电流前一段+1/2 A，后一段−1/2 A。",
+            "en": "Voltage rises from 0 to 1 V during 0–1 s and falls to 0 during 1–2 s. Current is +1/2 A on the rising segment and −1/2 A on the falling segment."
+          }
+        },
+        "figure": "ca-5-3-figure.png"
+      },
+      "CA-5-4": {
+        "id": "CA-5-4",
+        "bookId": "5-4",
+        "title": {
+          "zh": "电流脉冲积分后保持电压",
+          "en": "Integrate a current pulse into a held voltage"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149,
+          "figurePrintedPage": 140,
+          "figurePdfPage": 149,
+          "figure": "题图5-2"
+        },
+        "statement": {
+          "zh": "已知某电容元件的电容值为$1\\,\\mathrm F$，通过的电流i(t)波形如题图5-2所示，假设电压、电流为关联参考方向，且$u_C(0)=0$，试画出电容两端电压$u_C(t)$的波形。",
+          "en": "A 1 F capacitor carries the current in Fig. 5-2 with passive references and u_C(0)=0. Draw u_C(t)."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "电压等于初值加电流面积除C；电流归零后电压不会自动归零。",
+          "en": "Voltage equals its initial value plus current area divided by C. Zero current afterward holds, rather than erases, voltage."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "脉冲持续期间",
+              "en": "During the pulse"
+            },
+            "text": {
+              "zh": "用C=1 F积分常电流。",
+              "en": "Integrate the constant current with C=1 F."
+            },
+            "formula": "u_C(t)=\\frac1C\\int_0^t1\\,d\\tau=t\\,\\mathrm V\\qquad(0\\le t\\le1\\,\\mathrm s)"
+          },
+          {
+            "title": {
+              "zh": "脉冲结束后",
+              "en": "After the pulse"
+            },
+            "text": {
+              "zh": "总注入电荷1 C，电压保持1 V。解析图给出连续转折。",
+              "en": "The delivered charge is 1 C, so voltage holds at 1 V. The analytic plot shows the continuous corner."
+            },
+            "formula": "u_C(t)=\\begin{cases}t\\,\\mathrm V&0\\le t\\le1\\quad(t\\text{ in s})\\\\1\\,\\mathrm V&t\\ge1\\,\\mathrm s\\end{cases}"
+          }
+        ],
+        "answer": {
+          "zh": "电压从0以1 V/s线性升到1 V，随后保持1 V。",
+          "en": "Voltage rises linearly from 0 to 1 V at 1 V/s, then holds at 1 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "矩形电流的边沿对应电压斜率改变，电压本身保持连续。",
+            "en": "Current edges change voltage slope while voltage remains continuous."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立面积检查∫i dt=1 C，故CΔu=1 C；最终储能1/2 J。附录未列5-4，结果按初值、积分及连续性核验。",
+            "en": "Independent area gives 1 C and CΔu=1 C, with final energy 1/2 J. No appendix answer is listed; the result is checked by integration, initial value and continuity."
+          },
+          "results": {
+            "C_F": 1,
+            "u0V": 0,
+            "u1V": 1,
+            "uAfter1V": 1,
+            "chargeDeliveredC": 1,
+            "finalEnergyJ": "1/2"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "独立面积检查∫i dt=1 C，故CΔu=1 C；最终储能1/2 J。附录未列5-4，结果按初值、积分及连续性核验。",
+              "en": "Independent area gives 1 C and CΔu=1 C, with final energy 1/2 J. No appendix answer is listed; the result is checked by integration, initial value and continuity."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "电流在0～1 s为1 A，1 s后为零。",
+            "en": "Current is 1 A for 0–1 s and zero after 1 s."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-4-response.svg"
+          }
+        ],
+        "figure": "ca-5-4-figure.png"
+      },
+      "CA-5-5": {
+        "id": "CA-5-5",
+        "bookId": "5-5",
+        "title": {
+          "zh": "斜率先换成每秒，再乘微法",
+          "en": "Convert the slope to per second before multiplying microfarads"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-3"
+        },
+        "statement": {
+          "zh": "某电容元件及其电压波形如题图5-3所示，求当$t=3\\,\\mathrm{ms}$时的电容电流。",
+          "en": "Find capacitor current at t=3 ms for the element and voltage in Fig. 5-3."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "3 ms落在第一段恒定正斜率内，不能把该时刻电压值直接除电容量。",
+          "en": "3 ms lies on the first constant positive slope. Use the derivative rather than dividing voltage by capacitance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "读取上升斜率",
+              "en": "Read the rising slope"
+            },
+            "text": {
+              "zh": "10 V在5 ms内上升，斜率为2000 V/s。",
+              "en": "10 V over 5 ms is 2000 V/s."
+            },
+            "formula": "\\frac{du}{dt}=\\frac{10\\,\\mathrm V}{5\\times10^{-3}\\,\\mathrm s}=2000\\,\\mathrm{\\frac V s}"
+          },
+          {
+            "title": {
+              "zh": "用关联方向求电流",
+              "en": "Find current under the passive reference"
+            },
+            "text": {
+              "zh": "电压上升且电流流入正端，电流为正。附图同时给出完整分段导数。",
+              "en": "Rising voltage gives positive current into the positive terminal. The plot also displays the full piecewise derivative."
+            },
+            "formula": "i(3\\,\\mathrm{ms})=(2\\times10^{-6}\\,\\mathrm F)(2000\\,\\mathrm{\\frac V s})=4\\,\\mathrm{mA}"
+          }
+        ],
+        "answer": {
+          "zh": "$i(3\\,\\mathrm{ms})=4\\,\\mathrm{mA}$。",
+          "en": "$i(3\\,\\mathrm{ms})=4\\,\\mathrm{mA}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "用10/5得到的是V/ms，必须与μF的数量级一起换算；不要漏掉毫秒因子。",
+            "en": "10/5 is V/ms, not V/s; keep the millisecond conversion."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "精确单位换算给1/250 A；上升段电荷20 μC等于CΔu，峰值能量100 μJ，附录4 mA一致。",
+            "en": "Exact conversion gives 1/250 A. Rising charge 20 μC equals CΔu and peak energy is 100 μJ; the listed 4 mA agrees."
+          },
+          "results": {
+            "at3msCurrentA": "1/250",
+            "riseSlopeVPerS": "2000",
+            "riseChargeC": "1/50000",
+            "peakEnergyJ": "1/10000"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "精确单位换算给1/250 A；上升段电荷20 μC等于CΔu，峰值能量100 μJ，附录4 mA一致。",
+              "en": "Exact conversion gives 1/250 A. Rising charge 20 μC equals CΔu and peak energy is 100 μJ; the listed 4 mA agrees."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "电容2 μF，上正，电流流入上端。电压0～5 ms从0升至10 V，5～10 ms保持10 V，10～15 ms降至0。",
+            "en": "The 2 μF capacitor is top-positive with current entering the upper terminal. Voltage rises 0–10 V over 0–5 ms, holds during 5–10 ms, then falls to zero during 10–15 ms."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-5-response.svg"
+          }
+        ],
+        "figure": "ca-5-5-figure.png"
+      },
+      "CA-5-6": {
+        "id": "CA-5-6",
+        "bookId": "5-6",
+        "title": {
+          "zh": "电容串并联按端点识别",
+          "en": "Identify capacitor series and parallel connections by endpoints"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 140,
+          "pdfPage": 149,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-4"
+        },
+        "statement": {
+          "zh": "求题图5-4所示电路ab端的等效电容。",
+          "en": "Find the equivalent capacitance at ab in Fig. 5-4."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "右侧4 F和1 F的公共浮置节点没有其他支路，可先串联；再与左1 F并联。",
+          "en": "The floating junction between the right 4 F and 1 F has no other branch, so reduce that series pair first."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先串联",
+              "en": "Reduce the series pair"
+            },
+            "text": {
+              "zh": "电容串联取倒数和，不是直接相加。",
+              "en": "Series capacitances combine by reciprocal addition."
+            },
+            "formula": "C_s=\\frac{4\\times1}{4+1}\\,\\mathrm F=\\frac45\\,\\mathrm F"
+          },
+          {
+            "title": {
+              "zh": "再并联并测试",
+              "en": "Then parallel and test"
+            },
+            "text": {
+              "zh": "左1 F直接与串联支路并联。对零初始电荷网络施加1 V时，右中点为4/5 V。",
+              "en": "Add the direct 1 F. Under a 1 V, initially uncharged test, the intermediate node is 4/5 V."
+            },
+            "formula": "C_{eq}=1+\\frac45=\\frac95\\,\\mathrm F=1.8\\,\\mathrm F"
+          }
+        ],
+        "answer": {
+          "zh": "$C_{eq}=1.8\\,\\mathrm F$。",
+          "en": "$C_{eq}=1.8\\,\\mathrm F$."
+        },
+        "pitfalls": [
+          {
+            "zh": "任意非零初始电荷还需要相应的初始状态信息；本题求的是端口等效电容量。",
+            "en": "Arbitrary precharge requires separate initial-state information; this question asks for the port capacitance."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立浮置节点电荷方程给V_x=4/5 V，端口电荷9/5 C；三电容总能量9/10 J也等于C_eq/2，附录一致。",
+            "en": "An independent floating-node charge equation gives V_x=4/5 V and port charge 9/5 C. Total energy 9/10 J equals C_eq/2, matching the appendix."
+          },
+          "results": {
+            "oneVoltTestIntermediateV": "4/5",
+            "portChargeC": "9/5",
+            "capacitanceF": "9/5",
+            "energyJ": "9/10"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立浮置节点电荷方程给V_x=4/5 V，端口电荷9/5 C；三电容总能量9/10 J也等于C_eq/2，附录一致。",
+              "en": "An independent floating-node charge equation gives V_x=4/5 V and port charge 9/5 C. Total energy 9/10 J equals C_eq/2, matching the appendix."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "ab直接有1 F；另一支路从a经4 F，再经右1 F回b。",
+            "en": "A direct 1 F spans ab. A second path from a to b contains 4 F in series with the right 1 F."
+          }
+        },
+        "figure": "ca-5-6-figure.png"
+      },
+      "CA-5-8": {
+        "id": "CA-5-8",
+        "bookId": "5-8",
+        "title": {
+          "zh": "磁链除电流给电感",
+          "en": "Divide flux linkage by current for inductance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150
+        },
+        "statement": {
+          "zh": "已知电感元件的磁链$\\Psi$与电流i取右手螺旋参考方向。若$i=5\\,\\mathrm A,\\Psi=0.8\\,\\mathrm{Wb}$，求该电感元件的电感值。",
+          "en": "Flux linkage Ψ and current i use a right-hand reference. Given i=5 A and Ψ=0.8 Wb, find the inductance."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "在线性电感模型下磁链Ψ=Li。不要把磁链直接当作电感或磁通变化率。",
+          "en": "For the stated linear inductor, Ψ=Li. Flux linkage is neither inductance nor its time derivative."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "应用定义",
+              "en": "Apply the definition"
+            },
+            "text": {
+              "zh": "参考方向使正电流对应正磁链。",
+              "en": "The reference makes positive current correspond to positive linkage."
+            },
+            "formula": "L=\\frac{\\Psi}{i}=\\frac{0.8\\,\\mathrm{Wb}}{5\\,\\mathrm A}=0.16\\,\\mathrm H"
+          },
+          {
+            "title": {
+              "zh": "检查单位和能量",
+              "en": "Check units and energy"
+            },
+            "text": {
+              "zh": "韦伯每安培即亨利；可附带检查储能为正。",
+              "en": "Wb/A is H; stored energy is positive."
+            },
+            "formula": "W_L=\\frac12Li^2=2\\,\\mathrm J"
+          }
+        ],
+        "answer": {
+          "zh": "$L=0.16\\,\\mathrm H$。",
+          "en": "$L=0.16\\,\\mathrm H$."
+        },
+        "pitfalls": [
+          {
+            "zh": "使用Ψ而非单匝磁通；若元件非线性，单点Ψ/i不等于所有工作点的微分电感。",
+            "en": "Use linkage, not single-turn flux. For a nonlinear element, a single Ψ/i does not determine differential inductance everywhere."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "精确计算L=4/25 H，储能2 J为正，与附录0.16 H一致。",
+            "en": "Exact calculation gives 4/25 H and positive energy 2 J, matching the appendix."
+          },
+          "results": {
+            "inductanceH": "4/25",
+            "energyAt5AJ": "2"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "精确计算L=4/25 H，储能2 J为正，与附录0.16 H一致。",
+              "en": "Exact calculation gives 4/25 H and positive energy 2 J, matching the appendix."
+            }
+          }
+        }
+      },
+      "CA-5-9": {
+        "id": "CA-5-9",
+        "bookId": "5-9",
+        "title": {
+          "zh": "积分电感电压必须带初值",
+          "en": "Integrate inductor voltage with its initial current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150
+        },
+        "statement": {
+          "zh": "已知电感元件的电感值为$3\\,\\mathrm H$，初始电流$i(0)=0$，两端电压$u(t)=4e^{-2t}\\,\\mathrm V$，电压与电流为关联参考方向，试求$i(t)$。",
+          "en": "A 3 H inductor has i(0)=0 and passive-reference voltage $u(t)=4e^{-2t}\\,\\mathrm V$. Find i(t)."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "电感电流由电压积分确定，初始电流是积分常数。最终电压归零并不要求理想电感最终电流也归零。",
+          "en": "Current is the voltage integral plus its initial value. Vanishing final voltage does not require zero final current in an ideal inductor."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写带初值的积分",
+              "en": "Write the initial-value integral"
+            },
+            "text": {
+              "zh": "时间按秒计，u=Ldi/dt。",
+              "en": "With t in seconds, use u=Ldi/dt."
+            },
+            "formula": "i(t)=i(0)+\\frac1L\\int_0^t4e^{-2\\tau}\\,d\\tau"
+          },
+          {
+            "title": {
+              "zh": "积分并检查端点",
+              "en": "Integrate and check endpoints"
+            },
+            "text": {
+              "zh": "t=0电流为零，t趋无穷电流为2/3 A。",
+              "en": "The result starts at zero and tends to 2/3 A."
+            },
+            "formula": "i(t)=\\frac23(1-e^{-2t})\\,\\mathrm A\\qquad(t\\ge0)"
+          }
+        ],
+        "answer": {
+          "zh": "$i(t)=\\frac23(1-e^{-2t})\\,\\mathrm A$。",
+          "en": "$i(t)=\\frac23(1-e^{-2t})\\,\\mathrm A$."
+        },
+        "pitfalls": [
+          {
+            "zh": "积分指数带1/2因子；不能写成i=u/L。",
+            "en": "Integration introduces a factor 1/2; i=u/L is not the inductor law."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三个独立幅值下检查Ldi/dt=u和磁能导数ui；输入总功2/3 J等于最终磁能2/3 J，与附录一致。",
+            "en": "Three independent amplitude checks verify Ldi/dt=u and magnetic-energy derivative ui; total input work and final magnetic energy both equal 2/3 J, matching the appendix."
+          },
+          "results": {
+            "current": "(2/3)(1-exp(-2t)) A",
+            "finalCurrentA": "2/3",
+            "finalEnergyJ": "2/3",
+            "inputWorkJ": "2/3"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "三个独立幅值下检查Ldi/dt=u和磁能导数ui；输入总功2/3 J等于最终磁能2/3 J，与附录一致。",
+              "en": "Three independent amplitude checks verify Ldi/dt=u and magnetic-energy derivative ui; total input work and final magnetic energy both equal 2/3 J, matching the appendix."
+            }
+          }
+        }
+      },
+      "CA-5-10": {
+        "id": "CA-5-10",
+        "bookId": "5-10",
+        "title": {
+          "zh": "无耦合电感像电阻一样串并联",
+          "en": "Reduce uncoupled inductors by series and parallel rules"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-6"
+        },
+        "statement": {
+          "zh": "求题图5-6所示电路ab端的等效电感。",
+          "en": "Find the equivalent inductance at ab in Fig. 5-6."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "无互感条件下，两竖直3 H先并联，再与左侧3 H串联。",
+          "en": "Without mutual coupling, parallel the two vertical inductors, then add the left series inductance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "并联部分",
+              "en": "Parallel part"
+            },
+            "text": {
+              "zh": "以相同端电压、支路电流相加推得并联公式。",
+              "en": "Equal branch voltage and summed currents give the parallel rule."
+            },
+            "formula": "L_p=\\frac{3\\times3}{3+3}\\,\\mathrm H=1.5\\,\\mathrm H"
+          },
+          {
+            "title": {
+              "zh": "串联相加",
+              "en": "Add the series part"
+            },
+            "text": {
+              "zh": "串联电流相同，电压相加。",
+              "en": "Series currents are equal and voltages add."
+            },
+            "formula": "L_{eq}=3+1.5=4.5\\,\\mathrm H"
+          }
+        ],
+        "answer": {
+          "zh": "$L_{eq}=4.5\\,\\mathrm H$。",
+          "en": "$L_{eq}=4.5\\,\\mathrm H$."
+        },
+        "pitfalls": [
+          {
+            "zh": "若存在磁耦合，不能无条件使用此公式；本题按原图未标耦合处理。",
+            "en": "Magnetic coupling would change the rule; none is marked in this diagram."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "all"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立1 A兼容状态中两并联支路各1/2 A，总磁能为9/4 J，等于L_eq·1²/2，与附录4.5 H一致。",
+            "en": "In an independent compatible 1 A state, each parallel branch carries 1/2 A; total magnetic energy 9/4 J equals L_eq/2, matching the appendix."
+          },
+          "results": {
+            "equivalentInductanceH": "9/2",
+            "oneAmpSeriesCurrentA": 1,
+            "parallelBranchCurrentsA": [
+              "1/2",
+              "1/2"
+            ],
+            "energyAtOneAmpJ": "9/4"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立1 A兼容状态中两并联支路各1/2 A，总磁能为9/4 J，等于L_eq·1²/2，与附录4.5 H一致。",
+              "en": "In an independent compatible 1 A state, each parallel branch carries 1/2 A; total magnetic energy 9/4 J equals L_eq/2, matching the appendix."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "a先经3 H到上节点，上节点以两只3 H并联接b；图中未给磁耦合。",
+            "en": "A 3 H series inductor leads from a to two parallel 3 H inductors connected to b; no magnetic coupling is specified."
+          }
+        },
+        "figure": "ca-5-10-figure.png"
+      },
+      "CA-5-12": {
+        "id": "CA-5-12",
+        "bookId": "5-12",
+        "title": {
+          "zh": "零初压的瞬间短路与直流终态开路",
+          "en": "Use initial capacitor shorts and final DC opens"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-8"
+        },
+        "statement": {
+          "zh": "题图5-8所示电路，$u_{C1}(0^-)=u_{C2}(0^-)=0$，t=0时开关S闭合，求$i_{C1}(0^+),i_{C2}(0^+),u_{C1}(\\infty)$和$u_{C2}(\\infty)$。",
+          "en": "In Fig. 5-8, both capacitor voltages are initially zero. S closes at t=0. Find the two initial capacitor currents and both final capacitor voltages."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "这题只问初瞬和终态，虽有两个储能元件，也不必先解二阶全过程。零初压使两节点初瞬均为零。",
+          "en": "Only initial and final values are requested; no second-order transient solution is needed. Zero initial voltages fix both nodes to zero at 0+."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "初瞬按连续性固定电压",
+              "en": "Fix initial voltages by continuity"
+            },
+            "text": {
+              "zh": "两节点同为零，R₂电流为零，R₁送入的电流全部进入C₁。",
+              "en": "Both nodes are zero, so R₂ carries no current; all R₁ current enters C₁."
+            },
+            "formula": "i_{C1}(0^+)=\\frac{U_s}{R_1},\\qquad i_{C2}(0^+)=0"
+          },
+          {
+            "title": {
+              "zh": "终态两电容开路",
+              "en": "Open both capacitors at final DC"
+            },
+            "text": {
+              "zh": "终态R₁、R₂、R₃串联，C₁跨后两只电阻，C₂只跨R₃。",
+              "en": "At final DC, R₁, R₂ and R₃ are in series. C₁ spans the last two resistors and C₂ spans R₃."
+            },
+            "formula": "u_{C1}(\\infty)=\\frac{R_2+R_3}{R_1+R_2+R_3}U_s,\\qquad u_{C2}(\\infty)=\\frac{R_3}{R_1+R_2+R_3}U_s"
+          }
+        ],
+        "answer": {
+          "zh": "初瞬电流为U_s/R₁和0；终态电压分别为(R₂+R₃)U_s/(R₁+R₂+R₃)及R₃U_s/(R₁+R₂+R₃)。",
+          "en": "Initial currents are U_s/R₁ and zero; final voltages are (R₂+R₃)U_s/(R₁+R₂+R₃) and R₃U_s/(R₁+R₂+R₃)."
+        },
+        "pitfalls": [
+          {
+            "zh": "零电压替代仅描述0+伴随模型，不表示电容之后始终短路。",
+            "en": "Zero-voltage substitution describes the initial companion model, not a permanent short."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "iC1-initial",
+          "iC2-initial",
+          "uC1-final",
+          "uC2-final"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三组不同电源与正电阻参数，初瞬KCL给上述电流；完整原拓扑DC MNA复得两终值并满足全功率平衡。附录列出的四个结果一致。",
+            "en": "Three source/resistor sets verify initial KCL; full original-topology DC MNA reproduces final values with exact power balance. All four expressions also agree with the listed appendix results."
+          },
+          "results": {
+            "initialCapCurrentsA": [
+              [
+                "6",
+                0
+              ],
+              [
+                "-2",
+                0
+              ],
+              [
+                "4",
+                0
+              ]
+            ],
+            "finalOriginalTopology": [
+              {
+                "nodes": {
+                  "0": "0",
+                  "S": "12",
+                  "A": "48/5",
+                  "B": "6"
+                },
+                "voltageSourceCurrents": {
+                  "source": "-6/5"
+                },
+                "absorbedPowers": {
+                  "R1": "72/25",
+                  "R2": "108/25",
+                  "R3": "36/5",
+                  "source": "-72/5"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              },
+              {
+                "nodes": {
+                  "0": "0",
+                  "S": "-8",
+                  "A": "-32/5",
+                  "B": "-4"
+                },
+                "voltageSourceCurrents": {
+                  "source": "2/5"
+                },
+                "absorbedPowers": {
+                  "R1": "16/25",
+                  "R2": "24/25",
+                  "R3": "8/5",
+                  "source": "-16/5"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              },
+              {
+                "nodes": {
+                  "0": "0",
+                  "S": "20",
+                  "A": "10",
+                  "B": "6"
+                },
+                "voltageSourceCurrents": {
+                  "source": "-2"
+                },
+                "absorbedPowers": {
+                  "R1": "20",
+                  "R2": "8",
+                  "R3": "12",
+                  "source": "-40"
+                },
+                "powerResidual": "0",
+                "matrixSize": 4
+              }
+            ],
+            "general": "iC1(0+)=Us/R1, iC2(0+)=0; uC1(inf)=(R2+R3)Us/(R1+R2+R3), uC2(inf)=R3Us/(R1+R2+R3)"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "三组不同电源与正电阻参数，初瞬KCL给上述电流；完整原拓扑DC MNA复得两终值并满足全功率平衡。附录列出的四个结果一致。",
+              "en": "Three source/resistor sets verify initial KCL; full original-topology DC MNA reproduces final values with exact power balance. All four expressions also agree with the listed appendix results."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "U_s经开关及R₁接A，A以C₁接地，经R₂接B；B以C₂与R₃分别接地。电容电压上正，电流向下。",
+            "en": "U_s feeds A through S and R₁. C₁ connects A to ground and R₂ connects A to B. C₂ and R₃ connect B to ground. Capacitor voltages are top-positive and currents downward."
+          }
+        },
+        "figure": "ca-5-12-figure.png"
+      },
+      "CA-5-13": {
+        "id": "CA-5-13",
+        "bookId": "5-13",
+        "title": {
+          "zh": "闭合短路开关后只经50 Ω放电",
+          "en": "After the shunt closes, discharge through 50 Ω"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-9"
+        },
+        "statement": {
+          "zh": "题图5-9所示电路在开关S闭合前已达稳态，t=0时开关S闭合，求闭合后的电容电压$u_C(t)$并给出其波形。",
+          "en": "The circuit in Fig. 5-9 is initially steady. S closes at t=0. Find u_C(t) afterward and draw its waveform."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "闭合前电容开路，无50 Ω压降，初压由0.1 A乘200 Ω；闭合后右节点直接接地，200 Ω被短路，放电电阻只剩50 Ω。",
+          "en": "Before closure the capacitor is open at DC, so the initial voltage is 0.1 A times 200 Ω. Closure grounds the right node, bypassing 200 Ω and leaving only 50 Ω in the discharge path."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "确定初值与终值",
+              "en": "Determine endpoints"
+            },
+            "text": {
+              "zh": "电容电压连续，初始20 V，闭合后最终为零。",
+              "en": "Capacitor voltage is continuous: 20 V initially and zero finally."
+            },
+            "formula": "u_C(0^+)=u_C(0^-)=20\\,\\mathrm V,\\qquad u_C(\\infty)=0"
+          },
+          {
+            "title": {
+              "zh": "求时间常数",
+              "en": "Find the time constant"
+            },
+            "text": {
+              "zh": "开关短路后由电容端看见50 Ω。",
+              "en": "The capacitor sees 50 Ω with S closed."
+            },
+            "formula": "\\tau=(50\\,\\Omega)(20\\,\\mathrm{\\mu F})=1\\,\\mathrm{ms}"
+          },
+          {
+            "title": {
+              "zh": "写响应并画图",
+              "en": "Write and plot the response"
+            },
+            "text": {
+              "zh": "从20 V单调指数降至零，t按秒计时指数系数为1000。",
+              "en": "The voltage decays monotonically from 20 V; when t is in seconds the coefficient is 1000."
+            },
+            "formula": "u_C(t)=20e^{-1000t}\\,\\mathrm V\\qquad(t\\ge0)"
+          }
+        ],
+        "answer": {
+          "zh": "$u_C(t)=20e^{-1000t}\\,\\mathrm V$。",
+          "en": "$u_C(t)=20e^{-1000t}\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把200 Ω算进闭合后的时间常数，也不能把闭合后的电容电压立即置零。",
+            "en": "Do not include the bypassed 200 Ω in τ or force capacitor voltage to jump to zero."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原后电路KCL Cdu/dt+u/50=0在三个独立幅值下精确成立；电容初始4 mJ全部变为50 Ω损耗，附录20e^(−1000t)一致。",
+            "en": "The original post-switch KCL Cdu/dt+u/50=0 holds exactly at three amplitudes. Initial capacitor energy 4 mJ equals the 50 Ω loss; the appendix agrees."
+          },
+          "results": {
+            "initialV": 20,
+            "finalV": 0,
+            "timeConstantS": "1/1000",
+            "initialEnergyJ": "1/250",
+            "resistorLossJ": "1/250"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "原后电路KCL Cdu/dt+u/50=0在三个独立幅值下精确成立；电容初始4 mJ全部变为50 Ω损耗，附录20e^(−1000t)一致。",
+              "en": "The original post-switch KCL Cdu/dt+u/50=0 holds exactly at three amplitudes. Initial capacitor energy 4 mJ equals the 50 Ω loss; the appendix agrees."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "20 μF电容上正，经50 Ω接右节点；右节点有200 Ω、开关S及向上0.1 A源三条并联支路到地。",
+            "en": "A top-positive 20 μF capacitor connects through 50 Ω to a node with parallel 200 Ω, switch S and an upward 0.1 A source to ground."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-13-response.svg"
+          }
+        ],
+        "figure": "ca-5-13-figure.png"
+      },
+      "CA-5-14": {
+        "id": "CA-5-14",
+        "bookId": "5-14",
+        "title": {
+          "zh": "断开电源后经100 Ω放电",
+          "en": "Disconnect the source and discharge through 100 Ω"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-10"
+        },
+        "statement": {
+          "zh": "题图5-10所示电路在开关S打开前已达稳态，t=0时开关S打开，求打开后的电容电压$u_C(t)$和电流$i(t)$，绘出二者的波形。",
+          "en": "The circuit in Fig. 5-10 is initially steady. S opens at t=0. Find and plot u_C(t) and i(t) afterward."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "开关仅断开电源，电容与两只串联电阻仍组成放电回路。电容初压由原理想电源固定为10 V。",
+          "en": "Opening disconnects only the source. The capacitor remains connected to both series resistors and starts at 10 V."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "初值、终值与时间常数",
+              "en": "Initial value, final value and time constant"
+            },
+            "text": {
+              "zh": "两电阻串联100 Ω，最终电压零。",
+              "en": "The two resistors total 100 Ω and final voltage is zero."
+            },
+            "formula": "u_C(0^+)=10\\,\\mathrm V,\\quad u_C(\\infty)=0,\\quad\\tau=(100\\,\\Omega)(0.01\\,\\mathrm F)=1\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "电压及支路电流",
+              "en": "Voltage and branch current"
+            },
+            "text": {
+              "zh": "i按电容正端向电阻流出，与电容关联电流方向相反。",
+              "en": "i leaves the capacitor’s positive node through the resistors, opposite to the capacitor’s passive current."
+            },
+            "formula": "u_C(t)=10e^{-t}\\,\\mathrm V,\\qquad i(t)=\\frac{u_C(t)}{100\\,\\Omega}=0.1e^{-t}\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$u_C(t)=10e^{-t}\\,\\mathrm V$，$i(t)=0.1e^{-t}\\,\\mathrm A$，$t\\ge0$。",
+          "en": "$u_C(t)=10e^{-t}\\,\\mathrm V$, $i(t)=0.1e^{-t}\\,\\mathrm A$, for $t\\ge0$."
+        },
+        "pitfalls": [
+          {
+            "zh": "不可只用90 Ω求时间常数；i不是流入电容正端的电流，因此不直接等于Cdu/dt。",
+            "en": "Do not omit 10 Ω from τ. The indicated i is not the capacitor’s passive current, so it does not equal Cdu/dt."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "current",
+          "waveforms"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立原回路检查Cdu/dt+i=0；初始储能1/2 J等于100 Ω总损耗积分，附录两式一致。",
+            "en": "Independent original-loop checking verifies Cdu/dt+i=0. Initial energy 1/2 J equals integrated resistor loss, matching both appendix expressions."
+          },
+          "results": {
+            "initialV": 10,
+            "timeConstantS": "1",
+            "initialCurrentA": "1/10",
+            "initialEnergyJ": "1/2",
+            "totalPostSwitchResistorLossJ": "1/2"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立原回路检查Cdu/dt+i=0；初始储能1/2 J等于100 Ω总损耗积分，附录两式一致。",
+              "en": "Independent original-loop checking verifies Cdu/dt+i=0. Initial energy 1/2 J equals integrated resistor loss, matching both appendix expressions."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 V源经开关接0.01 F电容上端，电容上正；同一节点经10 Ω与右90 Ω串联接地，i沿上10 Ω向右。",
+            "en": "A 10 V source connects through S to the top-positive 0.01 F capacitor. A 10 Ω and 90 Ω series branch connects that node to ground, with i rightward through 10 Ω."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-14-response.svg"
+          }
+        ],
+        "figure": "ca-5-14-figure.png"
+      },
+      "CA-5-16": {
+        "id": "CA-5-16",
+        "bookId": "5-16",
+        "title": {
+          "zh": "换接后电感在2 Ω与12 Ω回路中衰减",
+          "en": "After transfer, the inductor decays through 2 Ω and 12 Ω"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 141,
+          "figurePdfPage": 150,
+          "figure": "题图5-12"
+        },
+        "statement": {
+          "zh": "题图5-12所示电路，开关S在位置1闭合已久，t=0时开关S由1合向2，求$t\\ge0^+$后的电感电流$i_L$，绘出其波形。",
+          "en": "In Fig. 5-12, S has been at position 1 for a long time and transfers to position 2 at t=0. Find and plot i_L for t≥0+."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "换接前电感短路，用8 Ω与2 Ω分流求初流；换接后源被隔离，电感经2+12 Ω形成闭合回路。",
+          "en": "Before transfer the inductor is a DC short; use current division between 8 Ω and 2 Ω. After transfer the source is isolated and the discharge loop contains 2+12 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "原稳态电流",
+              "en": "Original steady current"
+            },
+            "text": {
+              "zh": "5 A在8 Ω与2 Ω之间分流，所求2 Ω支路电流为4 A。",
+              "en": "The 5 A splits between 8 Ω and 2 Ω, giving 4 A in the inductor branch."
+            },
+            "formula": "i_L(0^+)=i_L(0^-)=5\\frac8{8+2}\\,\\mathrm A=4\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "新回路时间常数",
+              "en": "New-loop time constant"
+            },
+            "text": {
+              "zh": "无源放电，终流为零；电感看见串联14 Ω。",
+              "en": "The discharge is source-free with final current zero, and the inductor sees 14 Ω."
+            },
+            "formula": "\\tau=\\frac{3\\,\\mathrm H}{14\\,\\Omega}=\\frac3{14}\\,\\mathrm s,\\qquad i_L(t)=4e^{-14t/3}\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$i_L(t)=4e^{-14t/3}\\,\\mathrm A$，$t\\ge0$。",
+          "en": "$i_L(t)=4e^{-14t/3}\\,\\mathrm A$, $t\\ge0$."
+        },
+        "pitfalls": [
+          {
+            "zh": "位置2不是开路；12 Ω与2 Ω都留在换接后的电感回路中。",
+            "en": "Position 2 is not an open contact; both 12 Ω and 2 Ω remain in the inductor loop."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "current",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原稳态完整MNA独立给4 A；新回路Ldi/dt+14i=0成立，初始磁能24 J等于回路电阻总耗能，附录一致。",
+            "en": "Full initial-state MNA independently gives 4 A. The new-loop equation Ldi/dt+14i=0 holds and initial 24 J equals total discharge resistor loss, matching the appendix."
+          },
+          "results": {
+            "initialSteadyMNA": {
+              "nodes": {
+                "0": "0",
+                "A": "8",
+                "L": "0"
+              },
+              "voltageSourceCurrents": {
+                "Lshort": "4"
+              },
+              "absorbedPowers": {
+                "R8": "8",
+                "R2": "32",
+                "I5": "-40",
+                "Lshort": "0"
+              },
+              "powerResidual": "0",
+              "matrixSize": 3
+            },
+            "initialCurrentA": "4",
+            "timeConstantS": "3/14",
+            "inductorInitialEnergyJ": 24,
+            "loopResistorLossJ": 24
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "原稳态完整MNA独立给4 A；新回路Ldi/dt+14i=0成立，初始磁能24 J等于回路电阻总耗能，附录一致。",
+              "en": "Full initial-state MNA independently gives 4 A. The new-loop equation Ldi/dt+14i=0 holds and initial 24 J equals total discharge resistor loss, matching the appendix."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "位置1接5 A源并联8 Ω的上节点；开关动端经2 Ω接3 H电感到地，i_L向下；位置2接12 Ω上端，其下端接地。",
+            "en": "Position 1 connects to a 5 A source parallel with 8 Ω. The moving contact feeds 2 Ω then 3 H to ground with i_L downward. Position 2 connects to the top of 12 Ω to ground."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-16-response.svg"
+          }
+        ],
+        "figure": "ca-5-16-figure.png"
+      },
+      "CA-5-17": {
+        "id": "CA-5-17",
+        "bookId": "5-17",
+        "title": {
+          "zh": "电感电流连续，开关电流可以跳变",
+          "en": "Inductor current is continuous; switch current may jump"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-13"
+        },
+        "statement": {
+          "zh": "题图5-13所示电路在开关S闭合前已达稳态，t=0时开关S闭合，求闭合后的电感电流$i_L$和通过开关的电流$i_{sw}$，绘出二者的波形。",
+          "en": "The circuit in Fig. 5-13 is initially steady. S closes at t=0. Find and plot i_L and the downward switch current i_sw afterward."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "原稳态两只1 kΩ串联，电感初流4.5 mA；闭合后左源持续送9 mA，右电感在独立1 kΩ回路中释放能量。",
+          "en": "Initially the two 1 kΩ resistors are in series, giving 4.5 mA. After closure the left source sends 9 mA while the right inductor discharges through its own 1 kΩ loop."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "电感初流及微秒时间常数",
+              "en": "Initial current and microsecond time constant"
+            },
+            "text": {
+              "zh": "4 mH除1 kΩ是4 μs，不能误算成4 ms。",
+              "en": "4 mH divided by 1 kΩ is 4 μs, not 4 ms."
+            },
+            "formula": "i_L(0^+)=4.5\\,\\mathrm{mA},\\quad\\tau=\\frac{4\\,\\mathrm{mH}}{1\\,\\mathrm{k\\Omega}}=4\\,\\mathrm{\\mu s}"
+          },
+          {
+            "title": {
+              "zh": "电感电流",
+              "en": "Inductor current"
+            },
+            "text": {
+              "zh": "时间按秒写指数系数250000。",
+              "en": "With t in seconds the decay coefficient is 250000."
+            },
+            "formula": "i_L(t)=4.5e^{-250000t}\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "由中节点KCL求开关电流",
+              "en": "Find switch current from KCL"
+            },
+            "text": {
+              "zh": "左侧9 mA分为电感支路电流与开关电流，开关电流在0+为4.5 mA并趋9 mA。",
+              "en": "The 9 mA divides into the inductor and switch currents. The switch jumps to 4.5 mA and tends to 9 mA."
+            },
+            "formula": "i_{sw}(t)=\\left(9-4.5e^{-250000t}\\right)\\,\\mathrm{mA}"
+          }
+        ],
+        "answer": {
+          "zh": "$i_L=4.5e^{-250000t}\\,\\mathrm{mA}$，$i_{sw}=(9-4.5e^{-250000t})\\,\\mathrm{mA}$，$t\\ge0$。",
+          "en": "$i_L=4.5e^{-250000t}\\,\\mathrm{mA}$, $i_{sw}=(9-4.5e^{-250000t})\\,\\mathrm{mA}$ for $t\\ge0$."
+        },
+        "pitfalls": [
+          {
+            "zh": "只有理想电感电流必须连续；开关电流可从0跳到4.5 mA，不能要求它也连续。",
+            "en": "Only the ideal inductor current must remain continuous; switch current can jump from zero to 4.5 mA."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "inductor-current",
+          "switch-current",
+          "waveforms"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立检查新节点KCL及4 mH回路KVL；初始磁能40.5 nJ等于右1 kΩ耗能。附录指数−25×10⁴t与−250000t相同。",
+            "en": "Independent checks verify node KCL and the 4 mH loop KVL. Initial energy 40.5 nJ equals the right 1 kΩ loss. The appendix exponent −25×10⁴t is identical."
+          },
+          "results": {
+            "initialCurrentA": "9/2000",
+            "timeConstantS": "1/250000",
+            "switchCurrent0plusA": "9/2000",
+            "switchCurrentInfinityA": "9/1000",
+            "initialMagneticEnergyJ": "81/2000000000",
+            "loopResistorLossJ": "81/2000000000"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "独立检查新节点KCL及4 mH回路KVL；初始磁能40.5 nJ等于右1 kΩ耗能。附录指数−25×10⁴t与−250000t相同。",
+              "en": "Independent checks verify node KCL and the 4 mH loop KVL. Initial energy 40.5 nJ equals the right 1 kΩ loss. The appendix exponent −25×10⁴t is identical."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "9 V源上正，经左1 kΩ到中节点；中节点经右1 kΩ与4 mH电感串联接地，i_L向下；开关闭合将中节点接地，i_sw向下。",
+            "en": "A top-positive 9 V source feeds the center through 1 kΩ. A second 1 kΩ and 4 mH inductor run to ground with i_L downward. Closing S grounds the center, with i_sw downward."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-17-response.svg"
+          }
+        ],
+        "figure": "ca-5-17-figure.png"
+      },
+      "CA-5-18": {
+        "id": "CA-5-18",
+        "bookId": "5-18",
+        "title": {
+          "zh": "负极性电源使电容充到负电压",
+          "en": "The reversed source charges the capacitor negatively"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 141,
+          "pdfPage": 150,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-14"
+        },
+        "statement": {
+          "zh": "题图5-14所示电路在t=0时开关S闭合，开关闭合前电容无储能，求$t\\ge0^+$时的$u_C(t)$并给出其波形。",
+          "en": "S closes at t=0 in Fig. 5-14. The capacitor is initially unenergized. Find and plot u_C(t) for t≥0+."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "右源上端是−100 V，不是+100 V。两只2 kΩ分压给−50 V终值，关源后并联等效1 kΩ。",
+          "en": "The source upper terminal is −100 V. Equal resistors give final −50 V; deactivation leaves 1 kΩ in parallel equivalent resistance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "初值与终值",
+              "en": "Initial and final voltages"
+            },
+            "text": {
+              "zh": "无初始储能给u_C(0+)=0；终态电容开路。",
+              "en": "No initial energy gives zero initial voltage; open the capacitor for final DC."
+            },
+            "formula": "u_C(0^+)=0,\\qquad u_C(\\infty)=-50\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "时间常数与三要素式",
+              "en": "Time constant and endpoint formula"
+            },
+            "text": {
+              "zh": "等效1 kΩ乘10 μF得10 ms。",
+              "en": "1 kΩ times 10 μF gives 10 ms."
+            },
+            "formula": "\\tau=10\\,\\mathrm{ms},\\qquad u_C(t)=-50(1-e^{-100t})\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "$u_C(t)=-50(1-e^{-100t})\\,\\mathrm V$，从0单调趋向−50 V。",
+          "en": "$u_C(t)=-50(1-e^{-100t})\\,\\mathrm V$, decreasing from zero toward −50 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "负电压不等于负电容；只是相对于指定上正下负参考方向的结果。",
+            "en": "Negative voltage does not mean negative capacitance; it reflects the assigned reference polarity."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三个独立衰减幅值下，直接原节点方程Cdu/dt+u/(2kΩ)+(u+100)/(2kΩ)=0精确成立；初始斜率−5000 V/s、最终能量12.5 mJ，附录一致。",
+            "en": "At three independent amplitudes the original-node equation Cdu/dt+u/(2kΩ)+(u+100)/(2kΩ)=0 holds exactly. Initial slope is −5000 V/s and final energy 12.5 mJ, matching the appendix."
+          },
+          "results": {
+            "initialV": 0,
+            "finalV": -50,
+            "timeConstantS": "1/100",
+            "initialDerivativeVPerS": -5000,
+            "finalStoredEnergyJ": "1/80"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "三个独立衰减幅值下，直接原节点方程Cdu/dt+u/(2kΩ)+(u+100)/(2kΩ)=0精确成立；初始斜率−5000 V/s、最终能量12.5 mJ，附录一致。",
+              "en": "At three independent amplitudes the original-node equation Cdu/dt+u/(2kΩ)+(u+100)/(2kΩ)=0 holds exactly. Initial slope is −5000 V/s and final energy 12.5 mJ, matching the appendix."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 μF电容上正，与2 kΩ并联；上节点另经2 kΩ接100 V源上负端，源下正端经开关闭合接地。",
+            "en": "A top-positive 10 μF capacitor is parallel with 2 kΩ. Its top node connects through another 2 kΩ to the negative upper terminal of a 100 V source; the positive lower terminal is grounded when S closes."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-18-response.svg"
+          }
+        ],
+        "figure": "ca-5-18-figure.png"
+      },
+      "CA-5-19": {
+        "id": "CA-5-19",
+        "bookId": "5-19",
+        "title": {
+          "zh": "并联电阻决定电感所见时间常数",
+          "en": "Use the resistance seen by the inductor for its time constant"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 142,
+          "pdfPage": 151,
+          "figurePrintedPage": 142,
+          "figurePdfPage": 151,
+          "figure": "题图5-15"
+        },
+        "statement": {
+          "zh": "题图5-15所示电路在$t<0$时已处于稳态，t=0时开关S闭合，求$t\\ge0^+$时的$i_L(t)$并给出其波形。",
+          "en": "The circuit in Fig. 5-15 is initially steady. S closes at t=0. Find and plot i_L(t) for t≥0+."
+        },
+        "prerequisites": {
+          "zh": "动态元件关联参考方向、初始条件、KCL及能量。",
+          "en": "Passive references for storage elements, initial conditions, KCL and energy."
+        },
+        "recognition": {
+          "zh": "初始无源电感电流为零。终态电感短路使2 Ω无电流，但求时间常数时仍须将2 Ω保留并与6 Ω并联。",
+          "en": "Initial source-free current is zero. At final DC the inductor shorts 2 Ω, but the resistance test must retain 2 Ω parallel with 6 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "初值和终值",
+              "en": "Initial and final currents"
+            },
+            "text": {
+              "zh": "最终全部10/6 A流入电感。",
+              "en": "At final DC all 10/6 A flows through the inductor."
+            },
+            "formula": "i_L(0^+)=0,\\qquad i_L(\\infty)=\\frac{10}{6}\\,\\mathrm A=\\frac53\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "测试电阻和时间常数",
+              "en": "Resistance seen and time constant"
+            },
+            "text": {
+              "zh": "独立电压源短路后，6 Ω与2 Ω都从电感端接地。",
+              "en": "After shorting the voltage source, both resistors connect the inductor terminal to ground."
+            },
+            "formula": "R_{th}=6\\parallel2=1.5\\,\\Omega,\\qquad\\tau=\\frac{3\\,\\mathrm H}{1.5\\,\\Omega}=2\\,\\mathrm s"
+          },
+          {
+            "title": {
+              "zh": "写响应并检查初始斜率",
+              "en": "Write response and check initial slope"
+            },
+            "text": {
+              "zh": "初瞬电感电压为10×2/(6+2)=2.5 V，故初始斜率5/6 A/s。",
+              "en": "The initial inductor voltage is 2.5 V, so the initial slope is 5/6 A/s."
+            },
+            "formula": "i_L(t)=\\frac53(1-e^{-t/2})\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$i_L(t)=\\frac53(1-e^{-t/2})\\,\\mathrm A$，$t\\ge0$。",
+          "en": "$i_L(t)=\\frac53(1-e^{-t/2})\\,\\mathrm A$, $t\\ge0$."
+        },
+        "pitfalls": [
+          {
+            "zh": "用6 Ω单独求τ会出错；终态短路模型与时间常数关源测试模型用途不同。",
+            "en": "Using 6 Ω alone gives the wrong τ. The final-DC short model and the deactivated-source resistance test serve different purposes."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "current",
+          "waveform"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "三个独立衰减幅值下，原节点源电流等于电感电流加2 Ω电流，并满足源功率=两电阻损耗+磁能导数；最终磁能25/6 J，附录一致。",
+            "en": "Three independent decay-amplitude checks verify original-node KCL and source power equals both resistor losses plus magnetic-energy derivative. Final energy is 25/6 J; the appendix agrees."
+          },
+          "results": {
+            "initialCurrentA": 0,
+            "finalCurrentA": "5/3",
+            "timeConstantS": 2,
+            "initialInductorVoltageV": "5/2",
+            "finalMagneticEnergyJ": "25/6",
+            "topologyChecks": "Exact source KCL and instantaneous source/resistor/magnetic-power balance at three independent decay amplitudes."
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "三个独立衰减幅值下，原节点源电流等于电感电流加2 Ω电流，并满足源功率=两电阻损耗+磁能导数；最终磁能25/6 J，附录一致。",
+              "en": "Three independent decay-amplitude checks verify original-node KCL and source power equals both resistor losses plus magnetic-energy derivative. Final energy is 25/6 J; the appendix agrees."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 V源经开关和6 Ω到上节点；该节点以2 Ω及3 H电感分别接地，i_L向下。",
+            "en": "A 10 V source feeds the top node through S and 6 Ω. The node has parallel 2 Ω and 3 H branches to ground, i_L downward."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "由本题解析式绘制的波形；时间单位见横轴，虚线为终值，开关时刻以竖虚线标出。",
+              "en": "Waveforms drawn from the derived analytic expressions; time units are on the axis, dashed horizontal lines mark final values and the vertical dotted line marks switching."
+            },
+            "caption": {
+              "zh": "解析式计算图，不是SPICE仿真。",
+              "en": "Analytic response plot, not a SPICE simulation."
+            },
+            "figure": "ca-5-19-response.svg"
+          }
+        ],
+        "figure": "ca-5-19-figure.png"
       }
     }
   },
