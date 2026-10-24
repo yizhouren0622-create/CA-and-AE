@@ -1,0 +1,844 @@
+[
+  {
+    "course": "circuit",
+    "title": {
+      "zh": "电路分析基础 · 基础诊断卷 A",
+      "en": "Circuit Analysis · Diagnostic Paper A"
+    },
+    "points": 100,
+    "minutes": 80,
+    "origin": {
+      "zh": "本站原创基础诊断卷，依据授课计划划定范围；不是教师公布试卷。",
+      "en": "An original diagnostic paper based on the course plan, not an official examination."
+    },
+    "questions": [
+      {
+        "id": "ca-q1",
+        "title": {
+          "zh": "参考方向与功率",
+          "en": "References and power"
+        },
+        "points": 10,
+        "body": {
+          "zh": "元件电压参考极性为左正右负，电流参考方向为从左到右。给定u = −12 V，i = 2 A。求吸收功率并说明供出还是吸收。若仅把电流参考方向反向，新的电流值和功率表达式是什么？",
+          "en": "An element has voltage referenced positive on the left and current referenced left to right. Given u = −12 V and i = 2 A, find absorbed power. Reverse only the current reference: what are the new current value and power expression?"
+        },
+        "hint": {
+          "zh": "先判定是否为关联参考方向。",
+          "en": "Check the passive sign convention first."
+        },
+        "steps": {
+          "zh": [
+            "原参考为关联方向，$p_{\\rm abs}=ui=(-12)(2)=-24\\,\\mathrm W$，即供出24 W。",
+            "只翻转电流箭头后，$i^\\prime=-2\\,\\mathrm A$，变为非关联方向，$p_{\\rm abs}=-ui^\\prime=-24\\,\\mathrm W$。"
+          ],
+          "en": [
+            "Originally passive: $p_{\\rm abs}=ui=(-12)(2)=-24\\,\\mathrm W$, so 24 W is delivered.",
+            "Reversing only the current arrow gives $i^\\prime=-2\\,\\mathrm A$ and the non-passive relation $p_{\\rm abs}=-ui^\\prime=-24\\,\\mathrm W$."
+          ]
+        },
+        "answer": {
+          "zh": "吸收功率−24 W；新电流−2 A。",
+          "en": "Absorbed power −24 W; new current −2 A."
+        },
+        "check": {
+          "zh": "改变参考方向不改变实际功率。评分：方向判断3分，原功率3分，新参考表达式4分。",
+          "en": "Changing a reference cannot change physical power. Rubric: convention 3, original power 3, reversed-reference relation 4."
+        },
+        "topics": [
+          "signs"
+        ],
+        "figure": "passive.svg"
+      },
+      {
+        "id": "ca-q2",
+        "title": {
+          "zh": "单节点列方程",
+          "en": "One-node analysis"
+        },
+        "points": 10,
+        "body": {
+          "zh": "节点a通过2 kΩ接到+12 V节点，通过4 kΩ接地；另有从地指向a的1 mA理想电流源。求Va及两电阻从a流出的电流。",
+          "en": "Node a connects to +12 V through 2 kilohms and to ground through 4 kilohms. A 1 mA ideal current source points from ground to a. Find Va and the resistor currents leaving a."
+        },
+        "hint": {
+          "zh": "流出电阻电流之和等于注入的1 mA。",
+          "en": "Sum resistor currents leaving a and equate to the 1 mA injection."
+        },
+        "steps": {
+          "zh": [
+            "写KCL：$(V_a-12)/2000+V_a/4000=0.001$。",
+            "乘4000得$2(V_a-12)+V_a=4$，故$V_a=28/3\\,\\mathrm V$。",
+            "$i_{2k}=-4/3\\,\\mathrm{mA}$，$i_{4k}=7/3\\,\\mathrm{mA}$。"
+          ],
+          "en": [
+            "KCL: $(V_a-12)/2000+V_a/4000=0.001$.",
+            "Multiply by 4000: $2(V_a-12)+V_a=4$, so $V_a=28/3\\,\\mathrm V$.",
+            "$i_{2k}=-4/3\\,\\mathrm{mA}$ and $i_{4k}=7/3\\,\\mathrm{mA}$."
+          ]
+        },
+        "answer": {
+          "zh": "Va = 9.333… V；流出电流−1.333… mA、2.333… mA。",
+          "en": "Va = 9.333… V; leaving currents −1.333… mA and 2.333… mA."
+        },
+        "check": {
+          "zh": "电流和为1 mA；a点电位低于12 V，高于地。评分：KCL4分，电压3分，电流与符号3分。",
+          "en": "Currents sum to 1 mA, and the node lies between ground and 12 V. Rubric: KCL 4, voltage 3, signed currents 3."
+        },
+        "topics": [
+          "nodal",
+          "kcl-kvl"
+        ],
+        "figure": "node.svg"
+      },
+      {
+        "id": "ca-q3",
+        "title": {
+          "zh": "浮置电压源",
+          "en": "Floating voltage source"
+        },
+        "points": 10,
+        "body": {
+          "zh": "节点a经2 kΩ接地，节点b经3 kΩ接地；两节点之间有理想电压源，约束Va−Vb = 6 V。另有从地向b注入1 mA的电流源。求Va、Vb。",
+          "en": "Node a connects to ground through 2 kilohms, b through 3 kilohms. A floating ideal source imposes Va−Vb = 6 V. A source injects 1 mA from ground into b. Find Va and Vb."
+        },
+        "hint": {
+          "zh": "把a、b合成超节点，电压源支路电流在整体KCL中抵消。",
+          "en": "Use a supernode; the internal voltage-source current cancels from its KCL."
+        },
+        "steps": {
+          "zh": [
+            "超节点KCL：$V_a/2000+V_b/3000=0.001$；约束$V_a-V_b=6$。",
+            "代入$V_a=V_b+6$，得$3(V_b+6)+2V_b=6$。",
+            "$V_b=-2.4\\,\\mathrm V$，$V_a=3.6\\,\\mathrm V$。"
+          ],
+          "en": [
+            "Supernode KCL: $V_a/2000+V_b/3000=0.001$, with $V_a-V_b=6$.",
+            "Substitute $V_a=V_b+6$: $3(V_b+6)+2V_b=6$.",
+            "$V_b=-2.4\\,\\mathrm V$ and $V_a=3.6\\,\\mathrm V$."
+          ]
+        },
+        "answer": {
+          "zh": "Va = 3.6 V，Vb = −2.4 V。",
+          "en": "Va = 3.6 V and Vb = −2.4 V."
+        },
+        "check": {
+          "zh": "1.8 mA−0.8 mA = 1 mA；电压差6 V。评分：超节点方程4分，约束2分，求解4分。",
+          "en": "1.8 mA−0.8 mA = 1 mA, and the voltage difference is 6 V. Rubric: supernode 4, constraint 2, solution 4."
+        },
+        "topics": [
+          "nodal"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q4",
+        "title": {
+          "zh": "叠加不能直接叠功率",
+          "en": "Superposition and power"
+        },
+        "points": 10,
+        "body": {
+          "zh": "节点a经2 kΩ接+10 V，经4 kΩ接地；2 mA电流源从地注入a。分别求仅电压源、仅电流源作用时Va，再求全电路4 kΩ电阻的功率。两个单独功率能否直接相加？",
+          "en": "Node a connects to +10 V through 2 kilohms and to ground through 4 kilohms; a 2 mA source injects from ground. Find Va due to each source alone and the total power in 4 kilohms. Can the separate powers be added?"
+        },
+        "hint": {
+          "zh": "独立电流源置零开路，独立电压源置零短路。",
+          "en": "Zero the current source by opening it and the voltage source by shorting it."
+        },
+        "steps": {
+          "zh": [
+            "仅10 V源：电流源开路，$V_{a1}=10(4/6)=20/3\\,\\mathrm V$。",
+            "仅2 mA源：10 V源短路，$V_{a2}=2\\,\\mathrm{mA}(2k\\parallel4k)=8/3\\,\\mathrm V$。",
+            "$V_a=28/3\\,\\mathrm V$，$P=V_a^2/(4k)=196/9\\,\\mathrm{mW}$。",
+            "单独功率之和$100/9+16/9=116/9\\,\\mathrm{mW}$不等于总功率，缺少交叉项。"
+          ],
+          "en": [
+            "Voltage source alone: open the current source; $V_{a1}=10(4/6)=20/3\\,\\mathrm V$.",
+            "Current source alone: short the voltage source; $V_{a2}=2\\,\\mathrm{mA}(2k\\parallel4k)=8/3\\,\\mathrm V$.",
+            "$V_a=28/3\\,\\mathrm V$ and $P=V_a^2/(4k)=196/9\\,\\mathrm{mW}$.",
+            "Separate powers sum to $116/9\\,\\mathrm{mW}$, not the total; the cross term is missing."
+          ]
+        },
+        "answer": {
+          "zh": "Va1 = 6.667 V，Va2 = 2.667 V；总功率约21.778 mW；功率不能直接叠加。",
+          "en": "Va1 = 6.667 V, Va2 = 2.667 V; total power about 21.778 mW. Power does not superpose."
+        },
+        "check": {
+          "zh": "用原电路KCL独立复算Va。评分：各分量各3分，总功率2分，不能叠功率的理由2分。",
+          "en": "Independently check Va with original KCL. Rubric: source components 3 each, total power 2, explanation 2."
+        },
+        "topics": [
+          "theorems"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q5",
+        "title": {
+          "zh": "端口等效与最大功率",
+          "en": "Port equivalent and maximum power"
+        },
+        "points": 10,
+        "body": {
+          "zh": "理想12 V源给2 kΩ与4 kΩ串联分压，输出端口为4 kΩ两端。另接可变负载RL到输出端口。求戴维南等效、匹配负载与最大负载功率。",
+          "en": "An ideal 12 V source feeds series 2 and 4 kilohm resistors. The output port is across the 4 kilohm resistor. An additional variable RL connects across this port. Find the Thevenin equivalent, matched load and maximum load power."
+        },
+        "hint": {
+          "zh": "卸下的是外接RL，原4 kΩ仍属于源网络。",
+          "en": "Remove the external RL; keep the original 4 kilohm resistor in the source network."
+        },
+        "steps": {
+          "zh": [
+            "开路端电压$U_{\\rm Th}=12(4/6)=8\\,\\mathrm V$。",
+            "12 V源置零短路，$R_{\\rm Th}=2k\\parallel4k=4/3\\,\\mathrm{k\\Omega}$。",
+            "$R_L=R_{\\rm Th}$时负载电压为4 V，$P_{\\max}=8^2/(4R_{\\rm Th})=12\\,\\mathrm{mW}$。"
+          ],
+          "en": [
+            "Open-port voltage $U_{\\rm Th}=12(4/6)=8\\,\\mathrm V$.",
+            "Short the 12 V source: $R_{\\rm Th}=2k\\parallel4k=4/3\\,\\mathrm{k\\Omega}$.",
+            "At $R_L=R_{\\rm Th}$, load voltage is 4 V and $P_{\\max}=8^2/(4R_{\\rm Th})=12\\,\\mathrm{mW}$."
+          ]
+        },
+        "answer": {
+          "zh": "UTh = 8 V，RTh = RL = 4/3 kΩ；Pmax = 12 mW。",
+          "en": "UTh = 8 V, RTh = RL = 4/3 kilohms; Pmax = 12 mW."
+        },
+        "check": {
+          "zh": "用负载并入原4 kΩ后的分压检验输出4 V。评分：开路3分，电阻3分，匹配与功率4分。",
+          "en": "Check 4 V using the loaded original divider. Rubric: open-circuit voltage 3, resistance 3, matching/power 4."
+        },
+        "topics": [
+          "theorems"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q6",
+        "title": {
+          "zh": "RC三要素",
+          "en": "RC three-parameter response"
+        },
+        "points": 10,
+        "body": {
+          "zh": "10 μF电容初始电压为2 V。t = 0后，它经2 kΩ电阻接到理想10 V直流源，电容下端接地，上端为正。求uC(t)、充电电流i(t)、时间常数以及t = τ时电容电压。",
+          "en": "A 10 microfarad capacitor starts at 2 V, positive at its upper terminal. At t = 0 it connects to an ideal 10 V DC source through 2 kilohms, with its lower terminal grounded. Find uC(t), charging current, tau and uC(tau)."
+        },
+        "hint": {
+          "zh": "uC(0+) = 2 V，uC(∞) = 10 V。",
+          "en": "uC(0+) = 2 V and uC(infinity) = 10 V."
+        },
+        "steps": {
+          "zh": [
+            "$\\tau=RC=0.020\\,\\mathrm s$。",
+            "$u_C(t)=10-8e^{-t/0.020}\\,\\mathrm V,\\ t\\ge0$。",
+            "从电源流入电容正端的电流$i(t)=(10-u_C)/2000=4e^{-t/0.020}\\,\\mathrm{mA}$。",
+            "$u_C(\\tau)=10-8/e\\approx7.05696\\,\\mathrm V$。"
+          ],
+          "en": [
+            "$\\tau=RC=0.020\\,\\mathrm s$.",
+            "$u_C(t)=10-8e^{-t/0.020}\\,\\mathrm V,\\ t\\ge0$.",
+            "Current entering the positive capacitor terminal is $i(t)=(10-u_C)/2000=4e^{-t/0.020}\\,\\mathrm{mA}$.",
+            "$u_C(\\tau)=10-8/e\\approx7.05696\\,\\mathrm V$."
+          ]
+        },
+        "answer": {
+          "zh": "τ = 20 ms；uC = 10−8e^(−t/20ms) V；i = 4e^(−t/20ms) mA。",
+          "en": "Tau = 20 ms; uC = 10−8e^(−t/20ms) V; i = 4e^(−t/20ms) mA."
+        },
+        "check": {
+          "zh": "代入t = 0、∞；另用i = C du/dt得到相同电流。评分：τ2分，电压3分，电流3分，τ处值2分。",
+          "en": "Check t = 0 and infinity; i = C du/dt independently gives the same current. Rubric: tau 2, voltage 3, current 3, one-tau value 2."
+        },
+        "topics": [
+          "first-order",
+          "storage"
+        ],
+        "figure": "rc.svg"
+      },
+      {
+        "id": "ca-q7",
+        "title": {
+          "zh": "RL初值与电感电压",
+          "en": "RL current and inductor voltage"
+        },
+        "points": 10,
+        "body": {
+          "zh": "0.2 H理想电感初始电流为0。t = 0后与100 Ω电阻串联接10 V直流源。电流从源正端经电阻进入电感正参考端。求iL(t)、uL(t)和时间常数。",
+          "en": "A 0.2 H ideal inductor has zero initial current. At t = 0 it connects in series with 100 ohms across 10 V DC. Current enters the positive inductor-voltage reference terminal. Find iL(t), uL(t) and tau."
+        },
+        "hint": {
+          "zh": "终值电流10/100 A；τ = L/R。",
+          "en": "Final current is 10/100 A; tau = L/R."
+        },
+        "steps": {
+          "zh": [
+            "$\\tau=0.2/100=0.002\\,\\mathrm s$。",
+            "$i_L(t)=0.1(1-e^{-t/0.002})\\,\\mathrm A$。",
+            "$u_L(t)=L\\,di_L/dt=10e^{-t/0.002}\\,\\mathrm V$。"
+          ],
+          "en": [
+            "$\\tau=0.2/100=0.002\\,\\mathrm s$.",
+            "$i_L(t)=0.1(1-e^{-t/0.002})\\,\\mathrm A$.",
+            "$u_L(t)=L\\,di_L/dt=10e^{-t/0.002}\\,\\mathrm V$."
+          ]
+        },
+        "answer": {
+          "zh": "τ = 2 ms；iL = 0.1(1−e^(−t/2ms)) A；uL = 10e^(−t/2ms) V。",
+          "en": "Tau = 2 ms; iL = 0.1(1−e^(−t/2ms)) A; uL = 10e^(−t/2ms) V."
+        },
+        "check": {
+          "zh": "对所有t都有100iL + uL = 10 V。评分：τ2分，电流4分，电压及方向4分。",
+          "en": "For all t, 100iL + uL = 10 V. Rubric: tau 2, current 4, voltage/reference 4."
+        },
+        "topics": [
+          "first-order",
+          "storage"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q8",
+        "title": {
+          "zh": "有效值相量与回到时域",
+          "en": "RMS phasors back to time domain"
+        },
+        "points": 10,
+        "body": {
+          "zh": "电压$u(t)=10\\sqrt2\\cos(1000t+30^\\circ)\\,\\mathrm V$施加于串联阻抗$Z=6+j8\\,\\Omega$。求有效值电流相量和时域电流，电流进入阻抗的电压正参考端。",
+          "en": "Apply $u(t)=10\\sqrt2\\cos(1000t+30^\\circ)\\,\\mathrm V$ to $Z=6+j8\\,\\Omega$. Find the RMS current phasor and time-domain current using passive references."
+        },
+        "hint": {
+          "zh": "先把阻抗转成模与角度；电流相位是电压相位减阻抗角。",
+          "en": "Convert impedance to magnitude/angle; subtract impedance phase from voltage phase."
+        },
+        "steps": {
+          "zh": [
+            "$\\underline U=10\\angle30^\\circ\\,\\mathrm V$，$Z=10\\angle53.130102^\\circ\\,\\Omega$。",
+            "$\\underline I=1\\angle(-23.130102^\\circ)\\,\\mathrm A$。",
+            "$i(t)=\\sqrt2\\cos(1000t-23.130102^\\circ)\\,\\mathrm A$。"
+          ],
+          "en": [
+            "$\\underline U=10\\angle30^\\circ\\,\\mathrm V$ and $Z=10\\angle53.130102^\\circ\\,\\Omega$.",
+            "$\\underline I=1\\angle(-23.130102^\\circ)\\,\\mathrm A$.",
+            "$i(t)=\\sqrt2\\cos(1000t-23.130102^\\circ)\\,\\mathrm A$."
+          ]
+        },
+        "answer": {
+          "zh": "I = 1∠−23.1301° A（有效值）；时域峰值√2 A。",
+          "en": "I = 1 angle −23.1301 degrees A RMS; time-domain peak is sqrt(2) A."
+        },
+        "check": {
+          "zh": "阻抗感性，电流滞后电压53.1301°；复乘ZI回到U。评分：电压约定2分，阻抗2分，相量3分，时域3分。",
+          "en": "Inductive impedance gives current lag of 53.1301 degrees; ZI recovers U. Rubric: convention 2, impedance 2, phasor 3, time-domain 3."
+        },
+        "topics": [
+          "phasors"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q9",
+        "title": {
+          "zh": "电容阻抗与串联等效",
+          "en": "Capacitive impedance and series equivalent"
+        },
+        "points": 10,
+        "body": {
+          "zh": "在$\\omega=1000\\,\\mathrm{rad/s}$时，串联电路含R = 3 Ω、L = 4 mH、C = 1 mF，外加有效值相量$\\underline U=6\\angle0^\\circ\\,\\mathrm V$。求总阻抗与电流相量。",
+          "en": "At $\\omega=1000\\,\\mathrm{rad/s}$, a series circuit contains R = 3 ohms, L = 4 mH and C = 1 mF, driven by RMS $\\underline U=6\\angle0^\\circ\\,\\mathrm V$. Find total impedance and current."
+        },
+        "hint": {
+          "zh": "电容阻抗是−j/(ωC)，不是+j/(ωC)。",
+          "en": "Capacitor impedance is −j/(omega C), not positive j/(omega C)."
+        },
+        "steps": {
+          "zh": [
+            "$Z_L=j4\\,\\Omega,\\quad Z_C=-j1\\,\\Omega$。",
+            "$Z=3+j3=3\\sqrt2\\angle45^\\circ\\,\\Omega$。",
+            "$\\underline I=(1-j)\\,\\mathrm A=\\sqrt2\\angle(-45^\\circ)\\,\\mathrm A$。"
+          ],
+          "en": [
+            "$Z_L=j4\\,\\Omega,\\quad Z_C=-j1\\,\\Omega$.",
+            "$Z=3+j3=3\\sqrt2\\angle45^\\circ\\,\\Omega$.",
+            "$\\underline I=(1-j)\\,\\mathrm A=\\sqrt2\\angle(-45^\\circ)\\,\\mathrm A$."
+          ]
+        },
+        "answer": {
+          "zh": "Z = 3+j3 Ω；I = 1−j A（有效值）。",
+          "en": "Z = 3+j3 ohms; I = 1−j A RMS."
+        },
+        "check": {
+          "zh": "(3+j3)(1−j) = 6；单位rad/s不需再乘2π。评分：元件阻抗4分，总阻抗3分，电流3分。",
+          "en": "(3+j3)(1−j) = 6. The given rad/s needs no extra 2 pi. Rubric: element impedances 4, total 3, current 3."
+        },
+        "topics": [
+          "phasors"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ca-q10",
+        "title": {
+          "zh": "RC频率特性概念",
+          "en": "RC frequency-response concepts"
+        },
+        "points": 10,
+        "body": {
+          "zh": "电压源经串联R到节点a，a经电容C接地，输出取a对地电压。说明低频与高频极限、滤波类型、截止处相对通带的幅度，以及R增大时截止频率如何变化。本题只考概念。",
+          "en": "A voltage source connects through R to node a, with C from a to ground; output is a-to-ground voltage. Explain low/high-frequency limits, filter type, cutoff magnitude relative to the passband, and the effect of increasing R. Concepts only."
+        },
+        "hint": {
+          "zh": "在ω → 0时电容近似开路，在ω → ∞时近似短路。",
+          "en": "C approaches an open at low frequency and a short at high frequency."
+        },
+        "steps": {
+          "zh": [
+            "低频时电容近似开路，电阻电流趋零，输出趋近输入。",
+            "高频时电容近似短路，输出趋近0，所以是低通。",
+            "截止处相对幅度$1/\\sqrt2\\approx0.7071$，约−3 dB。",
+            "$f_c=1/(2\\pi RC)$，R增大则截止频率降低。"
+          ],
+          "en": [
+            "At low frequency, capacitor current approaches zero and output approaches input.",
+            "At high frequency, C shorts the output toward ground: low-pass behavior.",
+            "At cutoff, relative magnitude is $1/\\sqrt2\\approx0.7071$, about −3 dB.",
+            "$f_c=1/(2\\pi RC)$ decreases as R increases."
+          ]
+        },
+        "answer": {
+          "zh": "低通；低频约1、高频约0；截止幅度0.707；R增大则fc降低。",
+          "en": "Low-pass; low-frequency ratio 1, high-frequency ratio 0; cutoff magnitude 0.707; larger R lowers fc."
+        },
+        "check": {
+          "zh": "四个判断各2.5分。本题没有把未明确的电路第10章计算深度当成考试要求。",
+          "en": "Each of the four judgments earns 2.5 points. No unspecified Circuit Chapter 10 calculation depth is assumed."
+        },
+        "topics": [
+          "frequency"
+        ],
+        "figure": "rc.svg"
+      }
+    ]
+  },
+  {
+    "course": "analog",
+    "title": {
+      "zh": "模拟电子技术 · 基础诊断卷 A",
+      "en": "Analog Electronics · Diagnostic Paper A"
+    },
+    "points": 100,
+    "minutes": 80,
+    "origin": {
+      "zh": "本站原创基础诊断卷，依据授课计划划定范围；不是教师公布试卷。",
+      "en": "An original diagnostic paper based on the course plan, not an official examination."
+    },
+    "questions": [
+      {
+        "id": "ae-q1",
+        "title": {
+          "zh": "加载后的源电压增益",
+          "en": "Loaded source-to-output gain"
+        },
+        "points": 10,
+        "body": {
+          "zh": "信号源vs = 10 mV，内阻Rs = 2 kΩ。放大器输入电阻Ri = 8 kΩ，空载电压增益Av0 = −20，输出电阻Ro = 1 kΩ，负载RL = 4 kΩ。求vi、vo和源电压增益。",
+          "en": "A 10 mV source has Rs = 2 kilohms. The amplifier has Ri = 8 kilohms, unloaded voltage gain −20 and Ro = 1 kilohm. With RL = 4 kilohms, find vi, vo and source-to-output gain."
+        },
+        "hint": {
+          "zh": "输入和输出各有一次分压。",
+          "en": "Include an input divider and an output divider."
+        },
+        "steps": {
+          "zh": [
+            "$v_i=10\\,\\mathrm{mV}\\cdot8/(2+8)=8\\,\\mathrm{mV}$。",
+            "空载输出$=-20(8)=-160\\,\\mathrm{mV}$；带载$v_o=-160\\cdot4/(1+4)=-128\\,\\mathrm{mV}$。",
+            "$A_{vs}=v_o/v_s=-12.8$。"
+          ],
+          "en": [
+            "$v_i=10\\,\\mathrm{mV}\\cdot8/(2+8)=8\\,\\mathrm{mV}$.",
+            "Unloaded output is $-160\\,\\mathrm{mV}$; loaded $v_o=-160\\cdot4/(1+4)=-128\\,\\mathrm{mV}$.",
+            "$A_{vs}=v_o/v_s=-12.8$."
+          ]
+        },
+        "answer": {
+          "zh": "vi = 8 mV，vo = −128 mV，Avs = −12.8。",
+          "en": "vi = 8 mV, vo = −128 mV, Avs = −12.8."
+        },
+        "check": {
+          "zh": "两次分压均为0.8，0.8×(−20)×0.8 = −12.8。评分：输入3分，输出4分，总增益3分。",
+          "en": "Both dividers are 0.8, so 0.8×(−20)×0.8 = −12.8. Rubric: input 3, output 4, overall gain 3."
+        },
+        "topics": [
+          "models"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q2",
+        "title": {
+          "zh": "反相放大与饱和检查",
+          "en": "Inverting amplifier and saturation check"
+        },
+        "points": 10,
+        "body": {
+          "zh": "理想运放同相端接地，输入经10 kΩ接反相端，100 kΩ反馈电阻接输出到反相端。假设可用输出范围±12 V，输入vi = 0.2 V。求vo、Rin支路输入电流及保持线性时|vi|的上限。",
+          "en": "An ideal op-amp has its non-inverting input grounded, Rin = 10 kilohms and Rf = 100 kilohms. Assume output limits ±12 V. For vi = 0.2 V, find vo, Rin branch current and maximum |vi| for linear operation."
+        },
+        "hint": {
+          "zh": "负反馈线性时反相节点为虚地；输出需在±12 V内。",
+          "en": "Under linear negative feedback the inverting node is virtual ground; check ±12 V output limits."
+        },
+        "steps": {
+          "zh": [
+            "线性候选解$v_-=v_+=0$，输入电流$i=(0.2-0)/10k=20\\,\\mathrm{\\mu A}$。",
+            "KCL：$(0-v_i)/10k+(0-v_o)/100k=0$，得$v_o=-10v_i=-2\\,\\mathrm V$。",
+            "$|v_o|\\le12$给$|v_i|\\le1.2\\,\\mathrm V$；实际保持严格线性应避开边界。"
+          ],
+          "en": [
+            "Candidate linear solution: $v_-=v_+=0$, so input current is $20\\,\\mathrm{\\mu A}$.",
+            "KCL gives $(0-v_i)/10k+(0-v_o)/100k=0$, hence $v_o=-10v_i=-2\\,\\mathrm V$.",
+            "$|v_o|\\le12$ implies $|v_i|\\le1.2\\,\\mathrm V$; stay inside the boundary for strict linear operation."
+          ]
+        },
+        "answer": {
+          "zh": "vo = −2 V，Rin支路输入电流20 μA；理想边界|vi| = 1.2 V。 理想运放输入管脚电流为0。",
+          "en": "vo = −2 V, Rin branch current 20 microamps; ideal input boundary |vi| = 1.2 V. The ideal op-amp input-pin current is zero."
+        },
+        "check": {
+          "zh": "反馈电阻电流同为20 μA，候选输出未饱和。评分：虚短条件2分，KCL与vo4分，电流2分，范围2分。",
+          "en": "Feedback current is also 20 microamps and the candidate output is unsaturated. Rubric: regime 2, KCL/output 4, current 2, limits 2."
+        },
+        "topics": [
+          "opamp"
+        ],
+        "figure": "opamp.svg"
+      },
+      {
+        "id": "ae-q3",
+        "title": {
+          "zh": "积分器及初值",
+          "en": "Integrator and initial condition"
+        },
+        "points": 10,
+        "body": {
+          "zh": "理想反相积分器输入电阻10 kΩ、反馈电容0.1 μF，同相端接地，输出初值0 V。t = 0后输入1 V直流。假设输出在±10 V内线性。求2 ms时输出和到达−10 V的理想时间。",
+          "en": "An ideal inverting integrator has R = 10 kilohms, feedback C = 0.1 microfarad, grounded non-inverting input and initial output 0 V. A 1 V DC input begins at t = 0. Assume linear swing ±10 V. Find output at 2 ms and the ideal time to −10 V."
+        },
+        "hint": {
+          "zh": "RC = 1 ms；恒定输入产生负斜率。",
+          "en": "RC = 1 ms; constant positive input produces a negative output slope."
+        },
+        "steps": {
+          "zh": [
+            "$RC=10^4\\cdot10^{-7}=10^{-3}\\,\\mathrm s$。",
+            "$v_o(t)=0-t/(10^{-3})\\,\\mathrm V=-1000t\\,\\mathrm V$（t以秒计，尚未饱和）。",
+            "$v_o(2\\,\\mathrm{ms})=-2\\,\\mathrm V$；$-1000t=-10$给$t=10\\,\\mathrm{ms}$。"
+          ],
+          "en": [
+            "$RC=10^{-3}\\,\\mathrm s$.",
+            "$v_o(t)=-1000t\\,\\mathrm V$ with t in seconds, until saturation.",
+            "$v_o(2\\,\\mathrm{ms})=-2\\,\\mathrm V$ and the ideal boundary time is $10\\,\\mathrm{ms}$."
+          ]
+        },
+        "answer": {
+          "zh": "2 ms时−2 V；10 ms到达负输出边界，之后不延伸线性斜坡。",
+          "en": "−2 V at 2 ms; reaches the negative boundary at 10 ms, after which the linear ramp cannot continue."
+        },
+        "check": {
+          "zh": "电阻输入电流0.1 mA，经反馈电容产生−1000 V/s斜率。评分：RC2分，含初值关系4分，两结果各2分。",
+          "en": "The 0.1 mA input current gives −1000 V/s through the feedback capacitor. Rubric: RC 2, initial-value relation 4, each result 2."
+        },
+        "topics": [
+          "opamp-apps"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q4",
+        "title": {
+          "zh": "二极管状态验算",
+          "en": "Diode state consistency"
+        },
+        "points": 10,
+        "body": {
+          "zh": "5 V理想源经1 kΩ串联二极管接地，先使阳极接电阻、阴极接地。采用0.7 V恒压降模型，求电流。再将二极管反接，假定反向击穿电压大于5 V，求电流并验证截止条件。",
+          "en": "A 5 V source feeds a diode through 1 kilohm to ground, initially with anode at the resistor and cathode grounded. Use a 0.7 V constant-drop model. Find current. Reverse the diode, assume breakdown above 5 V, then find current and check cutoff."
+        },
+        "hint": {
+          "zh": "导通解检查电流为正；截止解检查阳极对阴极电压。",
+          "en": "Check positive current for an on-state and anode-to-cathode voltage for cutoff."
+        },
+        "steps": {
+          "zh": [
+            "正接假定导通：$I_D=(5-0.7)/1k=4.3\\,\\mathrm{mA}>0$，状态成立。",
+            "反接假定截止：$I_D=0$，电阻无压降，阴极5 V、阳极0 V，$v_D=-5\\,\\mathrm V$。",
+            "反向电压未达到给定击穿条件，截止成立。"
+          ],
+          "en": [
+            "Forward candidate: $I_D=(5-0.7)/1k=4.3\\,\\mathrm{mA}>0$, consistent.",
+            "Reversed candidate: $I_D=0$; cathode is at 5 V and anode at 0 V, so $v_D=-5\\,\\mathrm V$.",
+            "The reverse voltage is below the stated breakdown condition, so cutoff is consistent."
+          ]
+        },
+        "answer": {
+          "zh": "正接4.3 mA，反接0；反接时vD = −5 V。",
+          "en": "Forward 4.3 mA; reversed zero, with vD = −5 V."
+        },
+        "check": {
+          "zh": "正接KVL 4.3+0.7 = 5 V。评分：模型2分，正接3分，反接3分，状态检查2分。",
+          "en": "Forward KVL: 4.3+0.7 = 5 V. Rubric: model 2, forward 3, reverse 3, validation 2."
+        },
+        "topics": [
+          "diode"
+        ],
+        "figure": "diode.svg"
+      },
+      {
+        "id": "ae-q5",
+        "title": {
+          "zh": "稳压管电流预算",
+          "en": "Zener current budget"
+        },
+        "points": 10,
+        "body": {
+          "zh": "稳压电路Vi = 12 V，经R = 1 kΩ接输出；输出并联RL = 5 kΩ与反向稳压管。采用VZ = 5 V恒压模型，正常稳压要求1 mA ≤ IZ ≤ 10 mA。求IR、IL、IZ、PZ，并求保持稳压的输入电压范围。",
+          "en": "A Zener regulator has Vi = 12 V, series R = 1 kilohm, RL = 5 kilohms and a reverse Zener across the output. Use VZ = 5 V with regulation requiring 1 mA ≤ IZ ≤ 10 mA. Find currents, Zener power and allowable Vi range."
+        },
+        "hint": {
+          "zh": "IR = IL + IZ；输入范围用IZ两端限制。",
+          "en": "IR = IL + IZ; use the two Zener-current limits for Vi."
+        },
+        "steps": {
+          "zh": [
+            "$I_R=(12-5)/1k=7\\,\\mathrm{mA}$，$I_L=5/5k=1\\,\\mathrm{mA}$。",
+            "$I_Z=6\\,\\mathrm{mA}$，$P_Z=5(6\\,\\mathrm{mA})=30\\,\\mathrm{mW}$，电流在范围内。",
+            "$V_I=V_Z+R(I_L+I_Z)$，故$7\\,\\mathrm V\\le V_I\\le16\\,\\mathrm V$。"
+          ],
+          "en": [
+            "$I_R=7\\,\\mathrm{mA}$ and $I_L=1\\,\\mathrm{mA}$.",
+            "$I_Z=6\\,\\mathrm{mA}$, giving $P_Z=30\\,\\mathrm{mW}$; current is within limits.",
+            "$V_I=V_Z+R(I_L+I_Z)$ gives $7\\,\\mathrm V\\le V_I\\le16\\,\\mathrm V$."
+          ]
+        },
+        "answer": {
+          "zh": "IR = 7 mA，IL = 1 mA，IZ = 6 mA，PZ = 30 mW；Vi范围7–16 V。",
+          "en": "IR = 7 mA, IL = 1 mA, IZ = 6 mA, PZ = 30 mW; Vi range 7–16 V."
+        },
+        "check": {
+          "zh": "上下边界分别代回得到1与10 mA。评分：三电流4分，功率2分，范围与验证4分。",
+          "en": "Substitute both voltage boundaries to recover 1 and 10 mA. Rubric: currents 4, power 2, range/validation 4."
+        },
+        "topics": [
+          "zener"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q6",
+        "title": {
+          "zh": "NMOS静态与交流",
+          "en": "NMOS DC and small-signal analysis"
+        },
+        "points": 10,
+        "body": {
+          "zh": "增强型NMOS源极接地，栅极直流3 V，漏极经2 kΩ接12 V。$V_T=1\\,\\mathrm V$，规定$I_D=K(V_{GS}-V_T)^2$且K = 1 mA/V²，忽略沟道调制。交流时栅极直接加微小信号vi，漏极通过足够大的耦合电容接2 kΩ负载。求Q点、验证工作区，再求gm和中频电压增益。",
+          "en": "An enhancement NMOS has grounded source, DC gate 3 V and drain through 2 kilohms to 12 V. Let $V_T=1\\,\\mathrm V$ and $I_D=K(V_{GS}-V_T)^2$, K = 1 mA/V², with no channel modulation. A small AC input drives the gate; a large coupling capacitor connects a 2 kilohm drain load. Find bias, validate saturation, then find gm and midband voltage gain."
+        },
+        "hint": {
+          "zh": "直流负载电阻被耦合电容隔离；交流RD与RL并联。",
+          "en": "The coupling capacitor isolates RL for DC; RD and RL are parallel for AC."
+        },
+        "steps": {
+          "zh": [
+            "$V_{\\rm OV}=2\\,\\mathrm V$，$I_{DQ}=1(2)^2=4\\,\\mathrm{mA}$。",
+            "$V_{DSQ}=12-(4\\,\\mathrm{mA})(2k)=4\\,\\mathrm V\\ge2\\,\\mathrm V$，恒流区成立。",
+            "$g_m=2K V_{\\rm OV}=4\\,\\mathrm{mS}$，$A_v=-g_m(2k\\parallel2k)=-4$。"
+          ],
+          "en": [
+            "$V_{\\rm OV}=2\\,\\mathrm V$ and $I_{DQ}=4\\,\\mathrm{mA}$.",
+            "$V_{DSQ}=12-(4\\,\\mathrm{mA})(2k)=4\\,\\mathrm V\\ge2\\,\\mathrm V$, confirming saturation.",
+            "$g_m=4\\,\\mathrm{mS}$ and $A_v=-g_m(2k\\parallel2k)=-4$."
+          ]
+        },
+        "answer": {
+          "zh": "IDQ = 4 mA，VDSQ = 4 V，gm = 4 mS，Av = −4。",
+          "en": "IDQ = 4 mA, VDSQ = 4 V, gm = 4 mS, Av = −4."
+        },
+        "check": {
+          "zh": "漏极直流KVL为8+4 = 12 V；小信号电流增量乘1 kΩ得到反相增益。评分：Q点4分，工作区2分，gm2分，增益2分。",
+          "en": "DC KVL: 8+4 = 12 V; incremental current through 1 kilohm gives the negative gain. Rubric: bias 4, region 2, gm 2, gain 2."
+        },
+        "topics": [
+          "mosfet"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q7",
+        "title": {
+          "zh": "BJT偏置的精确加载",
+          "en": "BJT bias with base loading"
+        },
+        "points": 10,
+        "body": {
+          "zh": "NPN共射电路VCC = 12 V，RC = 2 kΩ，RE = 1 kΩ。基极偏置网络戴维南等效为2.7 V串联20 kΩ。取β = 99，VBE = 0.7 V，忽略Early效应。求IB、IC、IE、VC、VE、VCE，并验证放大区。",
+          "en": "An NPN common-emitter circuit has VCC = 12 V, RC = 2 kilohms and RE = 1 kilohm. Base bias is Thevenin-equivalent to 2.7 V in series with 20 kilohms. Use beta = 99, VBE = 0.7 V and no Early effect. Find IB, IC, IE, VC, VE and VCE, then validate forward-active operation."
+        },
+        "hint": {
+          "zh": "不要把基极电流当0；发射极电流是(β+1)IB。",
+          "en": "Do not neglect base current; IE = (beta+1)IB."
+        },
+        "steps": {
+          "zh": [
+            "$I_B=(2.7-0.7)/[20k+100(1k)]=16.6667\\,\\mathrm{\\mu A}$。",
+            "$I_C=1.65\\,\\mathrm{mA}$，$I_E=1.66667\\,\\mathrm{mA}$。",
+            "$V_E=1.66667\\,\\mathrm V$，$V_C=12-1.65(2)=8.7\\,\\mathrm V$，$V_{CE}=7.03333\\,\\mathrm V$。",
+            "$V_B=V_E+0.7=2.36667\\,\\mathrm V$，$V_C>V_B$；BE正偏且BC反偏，放大区成立。"
+          ],
+          "en": [
+            "$I_B=(2.7-0.7)/[20k+100(1k)]=16.6667\\,\\mathrm{\\mu A}$.",
+            "$I_C=1.65\\,\\mathrm{mA}$ and $I_E=1.66667\\,\\mathrm{mA}$.",
+            "$V_E=1.66667\\,\\mathrm V$, $V_C=8.7\\,\\mathrm V$ and $V_{CE}=7.03333\\,\\mathrm V$.",
+            "$V_B=2.36667\\,\\mathrm V$ and $V_C>V_B$; BE is forward biased and BC reverse biased."
+          ]
+        },
+        "answer": {
+          "zh": "IB = 16.667 μA，IC = 1.65 mA，IE = 1.6667 mA；VC = 8.7 V，VE = 1.6667 V，VCE = 7.0333 V。",
+          "en": "IB = 16.667 microamps, IC = 1.65 mA, IE = 1.6667 mA; VC = 8.7 V, VE = 1.6667 V and VCE = 7.0333 V."
+        },
+        "check": {
+          "zh": "基极回路0.3333+0.7+1.6667 = 2.7 V。评分：基极方程3分，电流2分，节点电压3分，工作区2分。",
+          "en": "Base-loop check: 0.3333+0.7+1.6667 = 2.7 V. Rubric: base equation 3, currents 2, voltages 3, region 2."
+        },
+        "topics": [
+          "bjt"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q8",
+        "title": {
+          "zh": "有限增益与深负反馈近似",
+          "en": "Finite gain and deep-feedback approximation"
+        },
+        "points": 10,
+        "body": {
+          "zh": "采用负反馈约定xi = xid + xf，xf = Fxo，xo = Axid。A = 1000，F = 0.09，均为无量纲且频率无关。求精确闭环增益、深负反馈近似，并以精确值为基准算近似相对误差。",
+          "en": "Use negative-feedback convention xi = xid + xf, xf = Fxo and xo = Axid. Let A = 1000 and F = 0.09, dimensionless and frequency-independent. Find exact closed-loop gain, deep-feedback estimate and relative error referenced to the exact value."
+        },
+        "hint": {
+          "zh": "先由三个关系消去xid和xf，再比较1/F。",
+          "en": "Eliminate xid and xf, then compare with 1/F."
+        },
+        "steps": {
+          "zh": [
+            "$x_o=A(x_i-Fx_o)$，所以$A_f=A/(1+AF)=1000/91\\approx10.98901$。",
+            "$AF=90$，近似$A_f\\approx1/F=100/9\\approx11.11111$。",
+            "相对误差$[(100/9)-(1000/91)]/(1000/91)=1/90\\approx1.1111\\%$。"
+          ],
+          "en": [
+            "$x_o=A(x_i-Fx_o)$ gives $A_f=1000/91\\approx10.98901$.",
+            "$AF=90$, so the approximation is $1/F=100/9\\approx11.11111$.",
+            "The relative error is $1/90\\approx1.1111\\%$."
+          ]
+        },
+        "answer": {
+          "zh": "精确10.9890；近似11.1111；相对误差1.1111%。",
+          "en": "Exact 10.9890; estimate 11.1111; relative error 1.1111%."
+        },
+        "check": {
+          "zh": "将Af乘(1+AF)应回到A；别把1.11%写成0.0111%。评分：关系推导3分，精确3分，近似2分，误差2分。",
+          "en": "Af(1+AF) must recover A. Distinguish a fraction 0.01111 from 1.111%. Rubric: derivation 3, exact 3, estimate 2, error 2."
+        },
+        "topics": [
+          "feedback"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q9",
+        "title": {
+          "zh": "一阶有源低通",
+          "en": "First-order active low-pass"
+        },
+        "points": 10,
+        "body": {
+          "zh": "已知理想有源低通传递函数$H(s)=2/(1+sRC)$，R = 10 kΩ，C = 10 nF。求截止频率、截止处幅值和相位。再说明两个隔离的一阶低通级与未缓冲的两个RC网络为何不能总用同一乘积。",
+          "en": "An ideal active low-pass has $H(s)=2/(1+sRC)$, R = 10 kilohms and C = 10 nF. Find cutoff, magnitude and phase at cutoff. Explain why multiplying two isolated first-order stages is not generally equivalent to two unbuffered RC networks."
+        },
+        "hint": {
+          "zh": "截止处ωRC = 1；独立级相乘需要不相互加载。",
+          "en": "At cutoff omega RC = 1; stage multiplication assumes no interstage loading."
+        },
+        "steps": {
+          "zh": [
+            "$RC=10^{-4}\\,\\mathrm s$，$f_c=1/(2\\pi RC)\\approx1591.549\\,\\mathrm{Hz}$。",
+            "$H(j\\omega_c)=2/(1+j)=1-j$，所以$|H|=\\sqrt2$、相位$-45^\\circ$。",
+            "隔离级可以相乘；未缓冲RC的下一级输入阻抗改变上一级，因此必须分析整体网络。"
+          ],
+          "en": [
+            "$RC=10^{-4}\\,\\mathrm s$ and $f_c\\approx1591.549\\,\\mathrm{Hz}$.",
+            "$H(j\\omega_c)=1-j$, so magnitude is $\\sqrt2$ and phase is $-45^\\circ$.",
+            "Isolated stages may be multiplied. An unbuffered second RC stage loads the first, requiring analysis of the full network."
+          ]
+        },
+        "answer": {
+          "zh": "fc ≈ 1.592 kHz；|H| = 1.4142，相位−45°；级间加载需计入。",
+          "en": "fc about 1.592 kHz; |H| = 1.4142 and phase −45 degrees; include interstage loading."
+        },
+        "check": {
+          "zh": "相对通带2的幅度比为0.7071，而绝对幅度为1.4142。评分：fc3分，幅相4分，加载解释3分。",
+          "en": "Relative to passband 2, the ratio is 0.7071 while absolute magnitude is 1.4142. Rubric: fc 3, magnitude/phase 4, loading 3."
+        },
+        "topics": [
+          "filters"
+        ],
+        "figure": null
+      },
+      {
+        "id": "ae-q10",
+        "title": {
+          "zh": "迟滞比较器与概念边界",
+          "en": "Hysteresis comparator and concept checks"
+        },
+        "points": 10,
+        "body": {
+          "zh": "理想反相迟滞比较器：信号vi接反相端，同相端v+ = 0.2vo，输出电平±10 V。求上门限、下门限、回差；说明从vi = −3 V逐渐上升到3 V时如何翻转。最后判断：两个差分输入都增加同样的Δ属于共模还是差模？",
+          "en": "An ideal inverting Schmitt trigger has vi at the inverting input, v+ = 0.2vo and output levels ±10 V. Find upper/lower thresholds and hysteresis. Track vi increasing from −3 to +3 V. Finally, if both differential inputs increase by the same delta, is that common- or differential-mode?"
+        },
+        "hint": {
+          "zh": "分别由当前高输出和低输出算反馈门限；不要全程用虚短。",
+          "en": "Compute thresholds for each output state; do not apply a virtual short throughout."
+        },
+        "steps": {
+          "zh": [
+            "高输出时$v_+=2\\,\\mathrm V$，输入上升越过+2 V时输出由+10翻到−10 V。",
+            "低输出时$v_+=-2\\,\\mathrm V$，输入下降越过−2 V时输出由−10翻到+10 V。",
+            "回差$2-(-2)=4\\,\\mathrm V$。从−3 V上升时先高，越过+2 V后低。",
+            "两个输入同增Δ使差值不变，属于共模变化；仅需概念判断。"
+          ],
+          "en": [
+            "With output high, $v_+=2\\,\\mathrm V$; increasing vi past +2 V switches +10 to −10 V.",
+            "With output low, $v_+=-2\\,\\mathrm V$; decreasing vi past −2 V switches −10 to +10 V.",
+            "Hysteresis is $4\\,\\mathrm V$. Increasing from −3 V starts high and switches low past +2 V.",
+            "Equal input increments leave their difference unchanged: common-mode change, assessed conceptually."
+          ]
+        },
+        "answer": {
+          "zh": "上门限+2 V，下门限−2 V，回差4 V；上升越过+2 V翻低；同增量属于共模。",
+          "en": "Thresholds +2 and −2 V, width 4 V; rising past +2 V switches low; equal increments are common-mode."
+        },
+        "check": {
+          "zh": "门限之间输出依历史，等号处不指定唯一稳态。评分：两门限4分，回差2分，路径2分，共模2分。",
+          "en": "Between thresholds the output depends on history; equality does not specify a unique steady state. Rubric: thresholds 4, width 2, path 2, common-mode 2."
+        },
+        "topics": [
+          "comparators",
+          "diff-frequency"
+        ],
+        "figure": "comparator.svg"
+      }
+    ]
+  }
+]
