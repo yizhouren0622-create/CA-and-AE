@@ -28413,8 +28413,9 @@
         "printedPage": 16,
         "pdfPage": 49,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：1.2信号频谱（纲领不要求）",
+        "scopeLabelEn": "Extension: §1.2 signal spectra (outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "AE-1.2.2",
@@ -28423,8 +28424,9 @@
         "printedPage": 16,
         "pdfPage": 49,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：1.2信号频谱（纲领不要求）",
+        "scopeLabelEn": "Extension: §1.2 signal spectra (outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "AE-1.4.1",
@@ -28433,8 +28435,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.4.2",
@@ -28443,8 +28446,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.1",
@@ -28453,8 +28457,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.2",
@@ -28463,8 +28468,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.3",
@@ -28473,8 +28479,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.4",
@@ -28483,8 +28490,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.5",
@@ -28493,8 +28501,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.6",
@@ -28503,8 +28512,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-1.5.7",
@@ -28513,8 +28523,9 @@
         "printedPage": 17,
         "pdfPage": 50,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：1.4–1.5（放大模型与性能）",
+        "scopeLabelEn": "Required: §§1.4–1.5 (amplifier models and performance)",
+        "scopeLevel": "required"
       },
       {
         "id": "AE-2.1.1",
@@ -43428,6 +43439,978 @@
           }
         },
         "figure": "figure-4.4.2.png"
+      },
+      "AE-1.2.1": {
+        "id": "AE-1.2.1",
+        "bookId": "1.2.1",
+        "title": {
+          "zh": "先分清峰峰值、峰值和有效值",
+          "en": "Separate peak-to-peak, peak and RMS values"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 16,
+          "pdfPage": 49
+        },
+        "statement": {
+          "zh": "写出下列正弦电压信号的表达式（设初始相角为零）：(1)峰—峰值10 V，频率10 kHz；(2)有效值220 V，频率50 Hz；(3)峰—峰值100 mV，周期1 ms；(4)峰—峰值0.25 V，角频率1000 rad/s。",
+          "en": "Write zero-initial-phase sinusoidal voltages for (1)10 V peak-to-peak,10 kHz; (2)220 V RMS,50 Hz; (3)100 mV peak-to-peak,1 ms period; (4)0.25 V peak-to-peak,1000 rad/s."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "模电教材式(1.2.1)采用正弦基准，零初相写sin；峰峰值除2、有效值乘√2才是表达式中的峰值。",
+          "en": "Analog Eq.(1.2.1) uses sine, so zero initial phase means sin. Divide peak-to-peak by2 or multiply RMS by√2 to obtain peak amplitude."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "前两问用频率换角频率",
+              "en": "Convert frequency to angular frequency"
+            },
+            "text": {
+              "zh": "ω=2πf，频率先换Hz。",
+              "en": "Use ω=2πf with f in Hz."
+            },
+            "formula": "v_1=5\\sin(20000\\pi t)\\,\\mathrm V,\\qquad v_2=220\\sqrt2\\sin(100\\pi t)\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "后两问分别由周期和角频率确定",
+              "en": "Use period or the given angular frequency"
+            },
+            "text": {
+              "zh": "第三问T=0.001 s，第四问已经给ω，不再乘2π。",
+              "en": "Part3 has T=0.001 s; part4 already gives ω, so do not multiply it by2π again."
+            },
+            "formula": "v_3=0.05\\sin(2000\\pi t)\\,\\mathrm V,\\qquad v_4=0.125\\sin(1000t)\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "依次为5sin(20000πt)、220√2sin(100πt)、0.05sin(2000πt)、0.125sin(1000t) V，t按秒计。",
+          "en": "The voltages are5sin(20000πt),220√2sin(100πt),0.05sin(2000πt),0.125sin(1000t) V, with t in seconds."
+        },
+        "pitfalls": [
+          {
+            "zh": "本题零相位按本书正弦形式；不能把电路教材的余弦基准直接搬来而不调整初相。",
+            "en": "Use this book’s sine convention; carrying over the Circuit cosine convention without adjusting phase changes the initial condition."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "sinePeakV": [
+              5,
+              311.1269837220809,
+              0.05,
+              0.125
+            ],
+            "omegaRadPerS": [
+              62831.853071795864,
+              314.1592653589793,
+              6283.185307179586,
+              1000
+            ]
+          }
+        }
+      },
+      "AE-1.2.2": {
+        "id": "AE-1.2.2",
+        "bookId": "1.2.2",
+        "title": {
+          "zh": "方波总功率与傅里叶分量功率分别计算",
+          "en": "Compute square-wave power and Fourier-component powers separately"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 16,
+          "pdfPage": 49,
+          "figurePrintedPage": 3,
+          "figurePdfPage": 36,
+          "figure": "图1.2.2"
+        },
+        "statement": {
+          "zh": "图1.2.2所示方波电压信号加在电阻R两端，试用公式$P=\\frac1T\\int_0^T\\frac{v^2(t)}R\\,dt$计算信号在电阻上耗散的功率；然后根据式(1.2.3)，分别计算方波傅里叶展开式中直流分量、基波分量、三次谐波分量在电阻上耗散的功率，并计算这3个分量在电阻上耗散的功率之和占电阻上总耗散功率的百分比。",
+          "en": "Apply the square wave in Fig.1.2.2 across R. Integrate v²/R over one period for total average power. Using Eq.(1.2.3), calculate the DC, fundamental and third-harmonic powers, and their combined percentage of total power."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "原波形在0～T/2为V_s、后半周期为0，不是±V_s对称方波；直流分量不能漏。",
+          "en": "The original wave is V_s for half the period and0 for the other half, not a bipolar ±V_s square wave. Retain its DC component."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "直接积分原波形",
+              "en": "Integrate the original wave"
+            },
+            "text": {
+              "zh": "只有半周期v²=V_s²。",
+              "en": "v²=V_s² for only half the cycle."
+            },
+            "formula": "P=\\frac1T\\frac{V_s^2}{R}\\frac T2=\\frac{V_s^2}{2R}"
+          },
+          {
+            "title": {
+              "zh": "用各分量的有效值",
+              "en": "Use each component’s RMS value"
+            },
+            "text": {
+              "zh": "原式的直流为V_s/2，基波峰值2V_s/π，三次峰值2V_s/(3π)。正弦功率用峰值平方除2R。",
+              "en": "DC is V_s/2; sine peaks are2V_s/π and2V_s/(3π). Divide each sine peak squared by2R."
+            },
+            "formula": "P_0=\\frac{V_s^2}{4R},\\qquad P_1=\\frac{2V_s^2}{\\pi^2R},\\qquad P_3=\\frac{2V_s^2}{9\\pi^2R}"
+          },
+          {
+            "title": {
+              "zh": "利用周期正交相加",
+              "en": "Add powers using period orthogonality"
+            },
+            "text": {
+              "zh": "不同谐波及直流交叉项的整周期平均为零，故三项平均功率直接相加。",
+              "en": "Cross terms among distinct harmonics and DC average to zero over a period."
+            },
+            "formula": "\\frac{P_0+P_1+P_3}{P}=\\frac12+\\frac{40}{9\\pi^2}\\approx0.950316"
+          }
+        ],
+        "answer": {
+          "zh": "总功率$V_s^2/(2R)$；直流、基波、三次谐波分别占50%、约40.5285%、约4.5032%，合计约95.0316%。",
+          "en": "Total power is $V_s^2/(2R)$. DC, fundamental and third harmonic contribute50%, about40.5285% and4.5032%, totaling about95.0316%."
+        },
+        "pitfalls": [
+          {
+            "zh": "不是把电压峰值相加后再平方；遗漏的高次谐波仍占约4.97%的总功率。",
+            "en": "Do not add voltage peaks and square the sum. Higher omitted harmonics still carry about4.97% of total power."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "total-power",
+          "DC-power",
+          "fundamental-power",
+          "third-power",
+          "combined-percentage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "normalizedTotalPower": 0.5,
+            "normalizedComponents": [
+              0.25,
+              0.20264236728467555,
+              0.02251581858718617
+            ],
+            "fractionsOfTotal": [
+              0.5,
+              0.4052847345693511,
+              0.04503163717437234
+            ],
+            "threeComponentFraction": 0.9503163717437235,
+            "check": "32768 independent period samples confirm original square RMS and Fourier-component orthogonality against analytic integrals."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "占空比1/2的单极性方波，从0跳到V_s，半周期后回零。",
+            "en": "A half-duty unipolar square wave switches between0 and V_s."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "alt": {
+              "zh": "单位幅度方波及直流、基波、三次谐波合成曲线，右图给各分量功率占比。",
+              "en": "Unit-amplitude square wave and its DC/fundamental/third-harmonic approximation, with component power percentages."
+            },
+            "caption": {
+              "zh": "按傅里叶解析式绘制，显示三项合计约95.03%的功率；不是SPICE仿真。",
+              "en": "Analytic Fourier plot: the three components account for about95.03% of power; not a SPICE simulation."
+            },
+            "figure": "ae-1.2.2-power.svg"
+          }
+        ],
+        "figure": "ae-1.2.2-figure.png"
+      },
+      "AE-1.4.1": {
+        "id": "AE-1.4.1",
+        "bookId": "1.4.1",
+        "title": {
+          "zh": "源电压到负载输出要经过两次分压",
+          "en": "Source-to-load gain contains two loading dividers"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50,
+          "figurePrintedPage": 7,
+          "figurePdfPage": 40,
+          "figure": "图1.4.2(a)"
+        },
+        "statement": {
+          "zh": "电压放大电路模型如图1.4.2(a)所示，设输出开路电压增益A_vo=10。试分别计算下列条件下的源电压增益A_vs=v_o/v_s：(1)R_i=10R_si、R_L=10R_o；(2)R_i=R_si、R_L=R_o；(3)R_i=R_si/10、R_L=R_o/10；(4)R_i=10R_si、R_L=R_o/10。",
+          "en": "For the voltage-amplifier model in Fig.1.4.2(a), open-output voltage gain A_vo=10. Find source-to-output A_vs=v_o/v_s for (1)R_i=10R_si,R_L=10R_o; (2)R_i=R_si,R_L=R_o; (3)R_i=R_si/10,R_L=R_o/10; (4)R_i=10R_si,R_L=R_o/10."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "开路增益只作用于实际输入v_i；源端先被R_si与R_i分压，输出再被R_o与R_L分压。",
+          "en": "Open-circuit gain acts on the actual input v_i, after source loading. Output loading adds a second divider."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先写统一表达式",
+              "en": "Write one common formula"
+            },
+            "text": {
+              "zh": "两端分压系数都小于1。",
+              "en": "Both divider factors are below1."
+            },
+            "formula": "A_{vs}=A_{vo}\\frac{R_i}{R_{si}+R_i}\\frac{R_L}{R_o+R_L}"
+          },
+          {
+            "title": {
+              "zh": "代入四组比值",
+              "en": "Insert all four ratios"
+            },
+            "text": {
+              "zh": "输入/输出两种加载分别计算，不能把第(4)问误当两端都轻载。",
+              "en": "Calculate input and output loading separately; case4 has a heavy output load."
+            },
+            "formula": "\\begin{cases}A_{vs,1}=\\frac{1000}{121}\\approx8.26446\\\\A_{vs,2}=2.5\\\\A_{vs,3}=\\frac{10}{121}\\approx0.0826446\\\\A_{vs,4}=\\frac{100}{121}\\approx0.826446\\end{cases}"
+          }
+        ],
+        "answer": {
+          "zh": "四问依次约8.26446、2.5、0.0826446、0.826446。",
+          "en": "The four gains are approximately8.26446,2.5,0.0826446 and0.826446."
+        },
+        "pitfalls": [
+          {
+            "zh": "A_vo=10不等于带源和带负载后的A_vs。",
+            "en": "The open-output gain10 is not the source-to-loaded-output gain."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "gains": [
+              "1000/121",
+              "5/2",
+              "10/121",
+              "100/121"
+            ],
+            "check": "Original source-input KCL and controlled-source output KCL for all four cases at 1V source."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "源v_s串R_si，输入R_i到地；输出为A_vo v_i受控电压源串R_o到R_L。",
+            "en": "Source v_s has series R_si feeding R_i. Output is a controlled A_vo v_i source with series R_o and load R_L."
+          }
+        },
+        "figure": "ae-1.4.1-figure.png"
+      },
+      "AE-1.4.2": {
+        "id": "AE-1.4.2",
+        "bookId": "1.4.2",
+        "title": {
+          "zh": "单位增益缓冲器也能大幅改善带载电压",
+          "en": "A unity-gain buffer can greatly improve loaded voltage"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "某电唱机拾音头内阻为1 MΩ，输出电压为1 V（有效值）。如果直接与10 Ω扬声器相接，扬声器上的电压为多少？如果在拾音头和扬声器之间接入一个放大电路，其输入电阻R_i=1 MΩ、输出电阻R_o=10 Ω、输出开路电压增益为1，试求这时扬声器上的电压。",
+          "en": "A pickup has1 MΩ internal resistance and1 V RMS open output. Find the voltage across a directly connected10 Ω speaker. Then insert an amplifier with R_i=1 MΩ,R_o=10 Ω and open-output gain1; find the speaker voltage."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "开路增益1不代表没有作用；缓冲器把高源阻抗和低负载阻抗分开，但题设Ri仍使输入衰减一半。",
+          "en": "Unity gain can still isolate high source resistance from a low load. The specified input resistance nevertheless halves the input."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "直接连接",
+              "en": "Direct connection"
+            },
+            "text": {
+              "zh": "按拾音头的1 V开路等效源计算。",
+              "en": "Use a1 V open-circuit pickup source."
+            },
+            "formula": "V_{direct}=1\\frac{10}{10^6+10}\\,\\mathrm V\\approx9.99990\\,\\mathrm{\\mu V}"
+          },
+          {
+            "title": {
+              "zh": "加入放大电路",
+              "en": "Insert the amplifier"
+            },
+            "text": {
+              "zh": "先在输入得到0.5 V，开路输出仍0.5 V，再经10 Ω与10 Ω分压。",
+              "en": "Input voltage is0.5 V and open output0.5 V; equal output and load resistances halve it again."
+            },
+            "formula": "V_i=0.5\\,\\mathrm V,\\qquad V_L=1(0.5)\\frac{10}{10+10}=0.25\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "直接约10 μV RMS；接放大电路后0.25 V RMS。",
+          "en": "Direct: about10 μV RMS. With the amplifier:0.25 V RMS."
+        },
+        "pitfalls": [
+          {
+            "zh": "缓冲器输入电阻是有限1 MΩ，不是无穷；不能跳过输入端的1/2分压。",
+            "en": "The input resistance is finite1 MΩ, so retain the input half-divider."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "direct-voltage",
+          "buffered-voltage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "directRmsV": "1/100001",
+            "bufferInputRmsV": "1/2",
+            "bufferOutputRmsV": "1/4",
+            "check": "Two independent divider KCL checks; 1V source interpreted as open-circuit RMS voltage."
+          }
+        }
+      },
+      "AE-1.5.1": {
+        "id": "AE-1.5.1",
+        "bookId": "1.5.1",
+        "title": {
+          "zh": "统一峰峰值比例，功率增益另用10log",
+          "en": "Use consistent peak-to-peak ratios and10log for power gain"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "在某放大电路输入端测量到输入正弦信号电流和电压的峰—峰值分别为5 μA和5 mV。输出端接2 kΩ电阻负载，测量到正弦电压信号峰—峰值为1 V。试计算该放大电路的电压增益A_v、电流增益A_i、功率增益A_p，并分别换算成dB数。",
+          "en": "An amplifier has input sine current5 μA peak-to-peak and voltage5 mV peak-to-peak. With a2 kΩ resistive load, output voltage is1 V peak-to-peak. Find voltage, current and power gains and their dB values."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "同种峰峰值直接相除得到幅值增益；按本章电阻性输入/输出模型算功率，峰峰值到有效值的因子相消。",
+          "en": "Consistent peak-to-peak ratios give magnitude gains. Under the chapter’s resistive input/output model, the common RMS conversion cancels in power ratios."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "幅值电压与电流增益",
+              "en": "Voltage and current magnitude gains"
+            },
+            "text": {
+              "zh": "输出电流峰峰值为1/2000 A=0.5 mA。幅值数据不能判断反相符号。",
+              "en": "Output current is0.5 mA peak-to-peak. Magnitude data do not determine inversion."
+            },
+            "formula": "|A_v|=\\frac1{0.005}=200,\\qquad |A_i|=\\frac{0.0005}{0.000005}=100"
+          },
+          {
+            "title": {
+              "zh": "功率及分贝",
+              "en": "Power and decibels"
+            },
+            "text": {
+              "zh": "输入平均功率3.125 nW，输出62.5 μW，功率增益20000。电压电流用20log，功率用10log。",
+              "en": "Input average power is3.125 nW and output62.5 μW. Use20log for voltage/current and10log for power."
+            },
+            "formula": "A_p=20000,\\quad G_v=20\\log_{10}200\\approx46.0206\\,\\mathrm{dB},\\quad G_i=40\\,\\mathrm{dB},\\quad G_p=10\\log_{10}20000\\approx43.0103\\,\\mathrm{dB}"
+          }
+        ],
+        "answer": {
+          "zh": "电压、电流、功率增益幅值分别200、100、20000；分贝分别46.0206 dB、40 dB、43.0103 dB。",
+          "en": "Magnitude gains are200,100 and20000; dB values46.0206,40 and43.0103 respectively."
+        },
+        "pitfalls": [
+          {
+            "zh": "功率比不能用20log；若不采用本章电阻性模型，还需输入电压电流相位才能确定有功输入。",
+            "en": "Do not use20log for a power ratio. Beyond the resistive model, input phase information is needed for active input power."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage-gain",
+          "current-gain",
+          "power-gain",
+          "dB-values"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "voltageMagnitudeGain": 200,
+            "currentMagnitudeGain": 100,
+            "powerGain": 20000,
+            "dB": [
+              46.020599913279625,
+              40.0,
+              43.01029995663981
+            ],
+            "inputAverageW": "1/320000000",
+            "outputAverageW": "1/16000",
+            "assumption": "Textbook resistive input/output, sinusoidal small-signal model; signs/phases are not inferable from peak-to-peak measurements alone."
+          }
+        }
+      },
+      "AE-1.5.2": {
+        "id": "AE-1.5.2",
+        "bookId": "1.5.2",
+        "title": {
+          "zh": "输出减少20%意味着保留80%",
+          "en": "A20% output drop means80% remains"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "当负载电阻R_L=1 kΩ时，电压放大电路输出电压比负载开路（R_L=∞）时的输出电压减少20%，求该放大电路的输出电阻R_o。",
+          "en": "With R_L=1 kΩ, output voltage is20% below its open-load value. Find output resistance R_o."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "把“减少20%”转成带载/开路=0.8，再套输出分压。",
+          "en": "Convert the drop into a loaded/open ratio0.8 and use the output divider."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "反解输出分压",
+              "en": "Invert the output divider"
+            },
+            "text": {
+              "zh": "假设线性输出等效源不随加载改变。",
+              "en": "Assume the linear internal output source remains unchanged by loading."
+            },
+            "formula": "\\frac{1000}{R_o+1000}=0.8\\quad\\Rightarrow\\quad R_o=1000\\left(\\frac1{0.8}-1\\right)=250\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_o=250 Ω。",
+          "en": "R_o=250 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要把比例写成0.2，也不要直接令Ro=0.2RL。",
+            "en": "The ratio is0.8, not0.2, and R_o is not simply0.2R_L."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "output-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "RoOhm": 250,
+            "check": "Independent loaded/open divider gives exactly 0.8."
+          }
+        }
+      },
+      "AE-1.5.3": {
+        "id": "AE-1.5.3",
+        "bookId": "1.5.3",
+        "title": {
+          "zh": "开路升高量先除以带载电压",
+          "en": "Divide the open-load voltage rise by the loaded voltage"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "一电压放大电路输出端接1 kΩ负载电阻时，输出电压为1 V；负载电阻断开时输出电压上升到1.1 V。求该放大电路的输出电阻R_o。",
+          "en": "An amplifier outputs1 V into1 kΩ and1.1 V with the load disconnected. Find R_o."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "开路电压是等效源电压，输出电阻承受0.1 V，而带载电流为1 mA。",
+          "en": "The open voltage is the internal source voltage. Output resistance drops0.1 V at1 mA load current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用电压差与负载电流",
+              "en": "Use voltage drop and load current"
+            },
+            "text": {
+              "zh": "同样可由开路/带载电压比公式得到。",
+              "en": "The open/loaded ratio gives the same result."
+            },
+            "formula": "R_o=\\frac{1.1-1}{1/1000}\\,\\Omega=100\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R_o=100 Ω。",
+          "en": "R_o=100 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "电流由带载的1 V而不是开路1.1 V计算。",
+            "en": "Calculate load current from1 V, not the open1.1 V."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "output-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "RoOhm": "100",
+            "check": "1.1V open source with 100 ohm series and 1000 ohm load returns exactly1V."
+          }
+        }
+      },
+      "AE-1.5.4": {
+        "id": "AE-1.5.4",
+        "bookId": "1.5.4",
+        "title": {
+          "zh": "开短路输出给内阻，再算带载增益",
+          "en": "Use open and short outputs to find resistance before loaded gains"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "某放大电路输入电阻R_i=10 kΩ，如果用1 μA电流源（内阻为∞）驱动，放大电路输出短路电流为10 mA，开路输出电压为10 V。求放大电路接4 kΩ负载电阻时的电压增益A_v、电流增益A_i、功率增益A_p，并分别换算成dB数。",
+          "en": "An amplifier has R_i=10 kΩ and is driven by an ideal1 μA current source. Output short current is10 mA and open voltage10 V. With a4 kΩ load, find voltage, current and power gains and their dB values."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "理想电流源使全部1 μA进入Ri，输入为10 mV。输出开压除短流得Ro，再进行负载分压。",
+          "en": "The ideal source injects the full1 μA, giving10 mV input. Open voltage divided by short current gives R_o before loading."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "恢复输入和输出模型",
+              "en": "Recover input and output models"
+            },
+            "text": {
+              "zh": "依题设线性模型，Ro=10 V/10 mA=1 kΩ。",
+              "en": "Under the stated linear model, R_o=10 V/10 mA=1 kΩ."
+            },
+            "formula": "v_i=(1\\,\\mathrm{\\mu A})(10\\,\\mathrm{k\\Omega})=10\\,\\mathrm{mV},\\quad R_o=1\\,\\mathrm{k\\Omega},\\quad v_o=10\\frac4{1+4}=8\\,\\mathrm V,\\quad i_o=2\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "带载增益及分贝",
+              "en": "Loaded gains and dB values"
+            },
+            "text": {
+              "zh": "计算的是幅值增益；功率用电阻性输入/输出模型。",
+              "en": "These are magnitude gains under the resistive input/output model."
+            },
+            "formula": "|A_v|=800,\\quad|A_i|=2000,\\quad A_p=1.6\\times10^6"
+          },
+          {
+            "title": {
+              "zh": "分别选择20log或10log",
+              "en": "Choose20log or10log appropriately"
+            },
+            "text": {
+              "zh": "电压、电流、功率的dB分别计算。",
+              "en": "Calculate voltage, current and power dB separately."
+            },
+            "formula": "G_v\\approx58.0618\\,\\mathrm{dB},\\quad G_i\\approx66.0206\\,\\mathrm{dB},\\quad G_p\\approx62.0412\\,\\mathrm{dB}"
+          }
+        ],
+        "answer": {
+          "zh": "幅值增益Av=800、Ai=2000、Ap=1.6×10⁶；分别58.0618 dB、66.0206 dB、62.0412 dB。",
+          "en": "Magnitude gains Av=800,Ai=2000,Ap=1.6×10⁶; dB values58.0618,66.0206 and62.0412."
+        },
+        "pitfalls": [
+          {
+            "zh": "开路输出10 V不是带载输出；负载4 kΩ与输出内阻1 kΩ共同决定8 V。",
+            "en": "The open10 V is not the loaded voltage; include the1 kΩ internal resistance."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "loaded-model",
+          "voltage-gain",
+          "current-gain",
+          "power-gain",
+          "dB-values"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "viV": "1/100",
+            "RoOhm": "1000",
+            "voV": "8",
+            "ioA": "1/500",
+            "Av": "800",
+            "Ai": "2000",
+            "Ap": "1600000",
+            "dB": [
+              58.061799739838875,
+              66.02059991327963,
+              62.04119982655925
+            ]
+          }
+        }
+      },
+      "AE-1.5.5": {
+        "id": "AE-1.5.5",
+        "bookId": "1.5.5",
+        "title": {
+          "zh": "输出与输入同节点后，源需供两条支路",
+          "en": "Tying output to input makes the source supply both branches"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50,
+          "figurePrintedPage": 17,
+          "figurePdfPage": 50,
+          "figure": "图题1.5.5"
+        },
+        "statement": {
+          "zh": "图题1.5.5所示电流放大电路的输出端直接与输入端相连，求输入电阻R_i。",
+          "en": "The current amplifier in Fig.1.5.5 has its output directly connected to its input. Find input resistance R_i."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "上端连接线把R₁与向下βi₁受控电流源并联在测试源上，输入电流必须同时供应两者。",
+          "en": "The top connection places R₁ and the downward βi₁ source in parallel across the test source, so input current supplies both."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "统一连接节点KCL",
+              "en": "KCL at the tied node"
+            },
+            "text": {
+              "zh": "i₁=v_s/R₁，i_i=i₁+i₂且i₂=βi₁。",
+              "en": "i₁=v_s/R₁ and i_i=i₁+i₂ with i₂=βi₁."
+            },
+            "formula": "i_i=(1+\\beta)\\frac{v_s}{R_1}\\quad\\Rightarrow\\quad R_i=\\frac{R_1}{1+\\beta}"
+          }
+        ],
+        "answer": {
+          "zh": "$R_i=R_1/(1+\\beta)$；通常$\\beta\\ge0$时比原R₁小。",
+          "en": "$R_i=R_1/(1+\\beta)$, smaller than R₁ for the usual β≥0."
+        },
+        "pitfalls": [
+          {
+            "zh": "按图中受控源向下箭头取加号。β=−1是输入电流为零的退化无限电阻；β<−1时端口可呈负电阻。",
+            "en": "Use the drawn downward source for the plus sign. β=−1 gives zero input current and infinite resistance; β<−1 can give active negative resistance."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "input-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "inputResistance": "R1/(1+beta)",
+            "check": "Original tied-node KCL checked over five positive and negative control gains; beta=-1 is an infinite-resistance degenerate case."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入输出上端短接，R₁和向下βi₁源并联；i_i流入，i₁经R₁向下。",
+            "en": "The tied top terminals place R₁ and downward βi₁ in parallel; i_i enters and i₁ flows downward through R₁."
+          }
+        },
+        "figure": "ae-1.5.5-figure.png"
+      },
+      "AE-1.5.6": {
+        "id": "AE-1.5.6",
+        "bookId": "1.5.6",
+        "title": {
+          "zh": "3 dB电压比用20log反算",
+          "en": "Invert20log for a3 dB voltage ratio"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "在电压放大电路的上限频率点处，电压增益比中频区增益下降了3 dB。在相同输入电压条件下，该频率点处的输出电压是中频区输出电压的多少倍？",
+          "en": "At an amplifier’s upper cutoff, voltage gain is3 dB below midband. For the same input voltage, what is the output-voltage ratio to its midband value?"
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "比较的是电压比，用20log而不是10log。通常截止点采用半功率约−3 dB的惯例。",
+          "en": "This is a voltage ratio, so use20log. Cutoff conventionally uses half power, approximately−3 dB."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "按字面3 dB反算",
+              "en": "Invert a literal3 dB drop"
+            },
+            "text": {
+              "zh": "同输入下输出比等于增益比。",
+              "en": "With equal input, the output ratio equals the gain ratio."
+            },
+            "formula": "\\frac{V_{o,H}}{V_{o,M}}=10^{-3/20}\\approx0.707946"
+          },
+          {
+            "title": {
+              "zh": "说明常用半功率近似",
+              "en": "State the half-power convention"
+            },
+            "text": {
+              "zh": "严格半功率为−3.0103 dB，常写−3 dB，因此教材通常答1/√2≈0.707。",
+              "en": "Exact half power is−3.0103 dB, customarily called−3 dB, giving1/√2."
+            },
+            "formula": "\\text{half power:}\\quad\\frac{V_{o,H}}{V_{o,M}}=\\frac1{\\sqrt2}\\approx0.707107"
+          }
+        ],
+        "answer": {
+          "zh": "约0.707倍；按字面恰下降3.000 dB为0.707946倍。",
+          "en": "About0.707. A literal3.000 dB drop gives0.707946."
+        },
+        "pitfalls": [
+          {
+            "zh": "下降3 dB不是电压减半；电压减半对应约−6.02 dB。",
+            "en": "A3 dB drop does not halve voltage; halving voltage gives about−6.02 dB."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "voltage-ratio"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "literal3dBRatio": 0.7079457843841379,
+            "halfPowerRatio": 0.7071067811865475,
+            "halfPowerdB": -3.0102999566398125
+          }
+        }
+      },
+      "AE-1.5.7": {
+        "id": "AE-1.5.7",
+        "bookId": "1.5.7",
+        "title": {
+          "zh": "先读对指数：第二问就在上限频率",
+          "en": "Read the exponents: part2 is exactly at the upper cutoff"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 17,
+          "pdfPage": 50
+        },
+        "statement": {
+          "zh": "设一放大电路的通频带为20 Hz～20 kHz，通带电压增益40 dB，最大不失真交流输出电压范围为−3～+3 V。(1)若输入10sin(4π×10³t) mV的正弦波信号，输出波形是否会产生频率失真和非线性失真？若不失真，输出电压峰值是多大？(2)若v_i=40sin(4π×10⁴t) mV，重复回答(1)中的问题。(3)若v_i=10sin(8π×10⁴t) mV，输出波形是否会产生频率失真和非线性失真？为什么？",
+          "en": "An amplifier has20 Hz–20 kHz passband,40 dB midband voltage gain and a distortion-free output range−3 to+3 V. (1)For10sin(4π×10³t) mV, assess frequency-response and nonlinear distortion, and find output peak when undistorted. (2)Repeat for40sin(4π×10⁴t) mV. (3)Assess both effects for10sin(8π×10⁴t) mV and explain."
+        },
+        "prerequisites": {
+          "zh": "信号幅值与有效值、线性电阻模型、分压、增益和分贝；频谱题标作拓展。",
+          "en": "Signal peak/RMS values, linear resistive models, loading, gain and decibels; spectrum exercises are extensions."
+        },
+        "recognition": {
+          "zh": "三个频率分别2 kHz、20 kHz、40 kHz。不能把第(2)问的10⁴读成10³；上限频率的增益约为中频的0.707倍。",
+          "en": "The three frequencies are2,20 and40 kHz. Part2 has10⁴, not10³; at the upper cutoff gain is about0.707 times midband."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先算增益与频率",
+              "en": "Calculate gain and frequencies"
+            },
+            "text": {
+              "zh": "40 dB为电压增益100倍，f=ω/(2π)。",
+              "en": "40 dB means voltage gain100, and f=ω/(2π)."
+            },
+            "formula": "|A_{v,M}|=100,\\qquad f_1=2\\,\\mathrm{kHz},\\quad f_2=20\\,\\mathrm{kHz},\\quad f_3=40\\,\\mathrm{kHz}"
+          },
+          {
+            "title": {
+              "zh": "第(1)问：通带内小信号",
+              "en": "Part1: a small in-band signal"
+            },
+            "text": {
+              "zh": "按题设平坦通带模型，无显著带外衰减，输出峰值1 V低于3 V，无削顶。",
+              "en": "Under the stated flat-passband model, output peak is1 V, below3 V, so there is no clipping."
+            },
+            "formula": "V_{o1,m}=100(10\\,\\mathrm{mV})=1\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "第(2)问：先计截止衰减，再判削顶",
+              "en": "Part2: include cutoff attenuation before clipping"
+            },
+            "text": {
+              "zh": "20 kHz处有约3 dB衰减，相对中频出现频率响应误差（教材通常称频率失真）；峰值约2.83 V仍未超过3 V，无削顶。不能按中频增益误答4 V。",
+              "en": "At20 kHz, roughly3 dB attenuation gives a frequency-response error relative to midband. The peak is about2.83 V, below3 V, so there is no clipping; using midband gain alone would incorrectly predict4 V."
+            },
+            "formula": "V_{o2,m}=40\\,\\mathrm{mV}\\times100\\times10^{-3/20}\\approx2.83178\\,\\mathrm V\\quad\\left(\\text{half-power convention: }2\\sqrt2\\,\\mathrm V\\right)"
+          },
+          {
+            "title": {
+              "zh": "第(3)问：带外精确增益欠定",
+              "en": "Part3: exact out-of-band gain is unspecified"
+            },
+            "text": {
+              "zh": "40 kHz超出通带，通常存在高频衰减；按普通带外衰减模型不会削顶。但仅凭带宽不能计算该点精确输出或严格排除任意带外峰化，需要完整幅频响应。单频正弦通过线性电路仍为同频正弦，衰减不等于新谐波。",
+              "en": "40 kHz is outside the passband and normally attenuated. A conventional rolloff would not clip, but bandwidth alone gives no exact gain or universal bound against out-of-band peaking. A linear response to one sine remains a same-frequency sine; attenuation is not harmonic generation."
+            },
+            "formula": "V_{o3,m}=10\\,\\mathrm{mV}\\,|A_v(j2\\pi\\,40000)|,\\qquad\\text{exact value unspecified}"
+          }
+        ],
+        "answer": {
+          "zh": "(1)通带内，峰值1 V，无削顶；(2)在上限处约3 dB衰减，峰值约2.83 V，无削顶；(3)40 kHz带外，通常衰减且不削顶，但精确输出及无额外模型时的严格上界不能由给定带宽确定。",
+          "en": "(1)In-band,1 V peak, no clipping. (2)At upper cutoff, about3 dB attenuation and2.83 V peak, no clipping. (3)40 kHz is out-of-band and normally attenuated without clipping; exact output and a universal bound require more response information."
+        },
+        "pitfalls": [
+          {
+            "zh": "频率响应误差与非线性谐波失真应分开。原题只给指标，不提供相频曲线，不能虚构输出精确相位。",
+            "en": "Separate frequency-response error from nonlinear harmonic distortion. No phase-response curve is given, so do not invent an exact output phase."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-frequency-and-nonlinearity-and-peak",
+          "2-frequency-and-nonlinearity-and-peak",
+          "3-frequency-and-nonlinearity",
+          "model-limitations"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "独立用原模型KCL、正弦有效值与功率、分贝反算、周期采样及原文指数复核。未读取完整外部答案，不声称与其一致。",
+            "en": "Independently checked by original-model KCL, sine RMS/power, inverse decibel calculations, cycle sampling and original exponent review. No claim is made of comparison against an unread external answer key."
+          },
+          "results": {
+            "frequenciesHz": [
+              1999.9999999999998,
+              20000.0,
+              40000.0
+            ],
+            "midbandGain": 100.0,
+            "firstPeakV": 1.0,
+            "secondPeakAt3dBV": 2.8317831375365516,
+            "secondPeakHalfPowerConventionV": 2.82842712474619,
+            "thirdPeakV": "not determined from bandwidth alone",
+            "exampleThirdPeaksV": [
+              0.4472135954999579,
+              0.24253562503633297
+            ],
+            "check": "Original exponents reread at high resolution. Part2 is at upper cutoff, not midband. Two different normalized low-pass rolloffs share the same upper half-power frequency but give different40kHz magnitudes. Ordinary out-of-band attenuation does not imply harmonic distortion of a lone sine."
+          }
+        }
       }
     }
   }
