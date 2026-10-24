@@ -2549,8 +2549,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：7.5–7.6（相量电路分析与等效）",
+        "scopeLabelEn": "Required: §§7.5–7.6 (phasor analysis and equivalents)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-7-26",
@@ -2559,8 +2560,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：7.5–7.6（相量电路分析与等效）",
+        "scopeLabelEn": "Required: §§7.5–7.6 (phasor analysis and equivalents)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-7-27",
@@ -2569,8 +2571,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：7.5–7.6（相量电路分析与等效）",
+        "scopeLabelEn": "Required: §§7.5–7.6 (phasor analysis and equivalents)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-7-28",
@@ -2579,8 +2582,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：7.5–7.6（相量电路分析与等效）",
+        "scopeLabelEn": "Required: §§7.5–7.6 (phasor analysis and equivalents)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-7-29",
@@ -2589,8 +2593,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "要求学习：7.5–7.6（相量电路分析与等效）",
+        "scopeLabelEn": "Required: §§7.5–7.6 (phasor analysis and equivalents)",
+        "scopeLevel": "required"
       },
       {
         "id": "CA-7-30",
@@ -2599,8 +2604,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-31",
@@ -2609,8 +2615,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-32",
@@ -2619,8 +2626,9 @@
         "printedPage": 188,
         "pdfPage": 197,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-33",
@@ -2629,8 +2637,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-34",
@@ -2639,8 +2648,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-35",
@@ -2649,8 +2659,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-36",
@@ -2659,8 +2670,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-37",
@@ -2669,8 +2681,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-38",
@@ -2679,8 +2692,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-39",
@@ -2689,8 +2703,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-40",
@@ -2699,8 +2714,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-41",
@@ -2709,8 +2725,9 @@
         "printedPage": 189,
         "pdfPage": 198,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-42",
@@ -2719,8 +2736,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-43",
@@ -2729,8 +2747,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-44",
@@ -2739,8 +2758,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-45",
@@ -2749,8 +2769,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.7–7.8（功率与复功率，纲领外）",
+        "scopeLabelEn": "Extension: §§7.7–7.8 (power and complex power, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-46",
@@ -2759,8 +2780,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.9（最大功率匹配，纲领外）",
+        "scopeLabelEn": "Extension: §7.9 (maximum-power matching, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-47",
@@ -2769,8 +2791,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.9（最大功率匹配，纲领外）",
+        "scopeLabelEn": "Extension: §7.9 (maximum-power matching, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-48",
@@ -2779,8 +2802,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.9（最大功率匹配，纲领外）",
+        "scopeLabelEn": "Extension: §7.9 (maximum-power matching, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-49",
@@ -2789,8 +2813,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.9（最大功率匹配，纲领外）",
+        "scopeLabelEn": "Extension: §7.9 (maximum-power matching, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-50",
@@ -2799,8 +2824,9 @@
         "printedPage": 190,
         "pdfPage": 199,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.9（最大功率匹配，纲领外）",
+        "scopeLabelEn": "Extension: §7.9 (maximum-power matching, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-7-51",
@@ -2809,8 +2835,9 @@
         "printedPage": 191,
         "pdfPage": 200,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：7.10（功率因数补偿，纲领外）",
+        "scopeLabelEn": "Extension: §7.10 (power-factor correction, outside syllabus)",
+        "scopeLevel": "extension"
       },
       {
         "id": "CA-8-1",
@@ -25436,6 +25463,2853 @@
           }
         },
         "figure": "ca-7-22-figure.png"
+      },
+      "CA-7-25": {
+        "id": "CA-7-25",
+        "bookId": "7-25",
+        "title": {
+          "zh": "分源叠加时保留未被置零的支路",
+          "en": "Retain the passive branches during source superposition"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 188,
+          "figurePdfPage": 197,
+          "figure": "题图7-19"
+        },
+        "statement": {
+          "zh": "题图7-19所示正弦交流电路中，已知$\\dot I_s=10\\angle0^\\circ\\,\\mathrm A,\\dot U_s=j10\\,\\mathrm V$，试用叠加定理求电流$\\dot I_C$。",
+          "en": "In Fig. 7-19, $\\dot I_s=10\\angle0^\\circ\\,\\mathrm A$ and $\\dot U_s=j10\\,\\mathrm V$. Use superposition to find I_C."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "左节点A有25 Ω并联电流源，经25 Ω接B。B经−j50 Ω到地、经j50 Ω到右电压源上端。",
+          "en": "Node A has a 25 Ω shunt and source, with 25 Ω to B. B connects to ground through −j50 Ω and to the voltage-source top through j50 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "单独保留电流源",
+              "en": "Keep only the current source"
+            },
+            "text": {
+              "zh": "电压源短路后，B点两个相反电抗导纳抵消，A、B均为250 V。",
+              "en": "Short the voltage source. Opposing reactive admittances cancel at B, giving A=B=250 V."
+            },
+            "formula": "\\dot I_{C,I}=\\frac{250}{-j50}=j5\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "单独保留电压源",
+              "en": "Keep only the voltage source"
+            },
+            "text": {
+              "zh": "电流源开路，A经25 Ω接地且经25 Ω到B；节点方程给A=5 V、B=10 V。",
+              "en": "Open the current source. Node equations give A=5 V and B=10 V."
+            },
+            "formula": "\\dot I_{C,U}=\\frac{10}{-j50}=j0.2\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "叠加并复核原电路",
+              "en": "Superpose and check the combined circuit"
+            },
+            "text": {
+              "zh": "原电路节点A=255 V、B=260 V，直接除容抗也得同值。",
+              "en": "The combined circuit has A=255 V and B=260 V, confirming the same current directly."
+            },
+            "formula": "\\dot I_C=j5+j0.2=j5.2\\,\\mathrm A"
+          }
+        ],
+        "answer": {
+          "zh": "$\\dot I_C=j5.2\\,\\mathrm A$，按原图向下参考。",
+          "en": "$\\dot I_C=j5.2\\,\\mathrm A$ under the downward reference."
+        },
+        "pitfalls": [
+          {
+            "zh": "电压源置零是短路，电流源置零是开路，旁边的25 Ω或j50 Ω仍保留。",
+            "en": "Zero voltage sources by shorting and current sources by opening; retain neighboring passive components."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "current-source-part",
+          "voltage-source-part",
+          "sum"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "capacitorCurrentPartsA": [
+              {
+                "real": -0.0,
+                "imag": 5.0,
+                "magnitude": 5.0,
+                "phaseDeg": 90.0
+              },
+              {
+                "real": -0.0,
+                "imag": 0.2,
+                "magnitude": 0.2,
+                "phaseDeg": 90.0
+              },
+              {
+                "real": -0.0,
+                "imag": 5.2,
+                "magnitude": 5.2,
+                "phaseDeg": 90.0
+              }
+            ],
+            "check": "Independent source-by-source original nodal solves and combined-source KCL."
+          },
+          "appendixPrintedPage": 337,
+          "appendixPdfPage": 346,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左电流源向上，右电压源上正；I_C经过中间−j50 Ω向下。",
+            "en": "The left current source is upward, the right voltage source top-positive and I_C downward through −j50 Ω."
+          }
+        },
+        "figure": "ca-7-25-figure.png"
+      },
+      "CA-7-26": {
+        "id": "CA-7-26",
+        "bookId": "7-26",
+        "title": {
+          "zh": "受控源参与端口导纳，再配并联RL",
+          "en": "Include the dependent source in the port admittance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 188,
+          "figurePdfPage": 197,
+          "figure": "题图7-20"
+        },
+        "statement": {
+          "zh": "求题图7-20所示单口网络的电阻与电感并联的等效电路模型，给出所需的电阻和电感值。设ω=1 rad/s。",
+          "en": "For Fig. 7-20 at ω=1 rad/s, find the equivalent parallel resistor and inductor values."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "端口a经2 H到节点B，B有1 F到b；向上受控电流源0.5U_L从b注入B，U_L取电感左正右负。",
+          "en": "Port a feeds node B through 2 H. B has 1 F to b and an upward dependent source 0.5U_L, where U_L is positive left-to-right across L."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "施加1 V测试源",
+              "en": "Apply a 1 V test source"
+            },
+            "text": {
+              "zh": "令端口电压1 V，B电位V_B，输入电流I=(1−V_B)/(j2)。保留控制源。",
+              "en": "Let port voltage be 1 V and B voltage V_B. Input current is (1−V_B)/(j2); retain control."
+            },
+            "formula": "jV_B=\\frac{1-V_B}{j2}+0.5(1-V_B)\\quad\\Rightarrow\\quad V_B=-j\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "读出并联电导和感纳",
+              "en": "Identify conductance and inductive susceptance"
+            },
+            "text": {
+              "zh": "端口电流0.5−j0.5 A，因此电导0.5 S，电感支路导纳−j0.5 S。",
+              "en": "Input current is 0.5−j0.5 A, giving conductance 0.5 S and inductive susceptance −0.5 S."
+            },
+            "formula": "Y=0.5-j0.5=\\frac1{R_p}+\\frac1{j\\omega L_p}\\quad\\Rightarrow\\quad R_p=2\\,\\Omega,\\ L_p=2\\,\\mathrm H"
+          }
+        ],
+        "answer": {
+          "zh": "等效为2 Ω与2 H并联，仅在指定ω=1 rad/s下作相量端口等效。",
+          "en": "Equivalent: 2 Ω in parallel with 2 H at the specified ω=1 rad/s."
+        },
+        "pitfalls": [
+          {
+            "zh": "此为指定频率的等效，不宣称所有频率下都能用同一RL替代含受控源原网络。",
+            "en": "This is a specified-frequency equivalent, not an all-frequency replacement of the controlled-source network."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "parallel-R",
+          "parallel-L"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "testPortAdmittanceS": {
+              "real": 0.5,
+              "imag": -0.5,
+              "magnitude": 0.7071067811865476,
+              "phaseDeg": -45.0
+            },
+            "parallelRohm": 2,
+            "parallelLH": 2,
+            "check": "Original VCCS control law and node KCL under a 1 V port test."
+          },
+          "appendixPrintedPage": 337,
+          "appendixPdfPage": 346,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "2 H串联端口，1 F与向上0.5U_L源在其后并联。",
+            "en": "A 2 H series inductor feeds parallel 1 F and an upward 0.5U_L source."
+          }
+        },
+        "figure": "ca-7-26-figure.png"
+      },
+      "CA-7-27": {
+        "id": "CA-7-27",
+        "bookId": "7-27",
+        "title": {
+          "zh": "并联RC先转阻抗，再读取串联参数",
+          "en": "Convert parallel RC to impedance before reading series parameters"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197
+        },
+        "statement": {
+          "zh": "已知10 Ω电阻与50 μF电容并联的等效导纳同电阻R₁与电容C串联的等效导纳在角频率ω=1000 rad/s时的值相等，试确定R₁和C的值。",
+          "en": "At ω=1000 rad/s, a parallel 10 Ω and 50 μF has the same admittance as a series R₁ and C. Find R₁ and C."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "同频率导纳相同等价于阻抗相同，转为矩形阻抗后实部为R₁、虚部为−1/(ωC)。",
+          "en": "Equal admittance at one frequency means equal impedance. Its real part gives R₁ and imaginary part −1/(ωC)."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求原导纳并取倒数",
+              "en": "Compute admittance and invert"
+            },
+            "text": {
+              "zh": "50 μF换成50×10⁻⁶ F。",
+              "en": "Convert 50 μF to 50×10⁻⁶ F."
+            },
+            "formula": "Y=0.1+j0.05\\,\\mathrm S,\\quad Z=\\frac1Y=8-j4\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "匹配串联实虚部",
+              "en": "Match series real and imaginary parts"
+            },
+            "text": {
+              "zh": "容抗幅值4 Ω。",
+              "en": "The capacitive-reactance magnitude is 4 Ω."
+            },
+            "formula": "R_1=8\\,\\Omega,\\qquad C=\\frac1{1000\\times4}\\,\\mathrm F=250\\,\\mathrm{\\mu F}"
+          }
+        ],
+        "answer": {
+          "zh": "R₁=8 Ω，C=250 μF。",
+          "en": "R₁=8 Ω and C=250 μF."
+        },
+        "pitfalls": [
+          {
+            "zh": "等效只在指定频率成立；不能把并联电容50 μF直接当成串联电容。",
+            "en": "The equivalence is frequency-specific; the series capacitance is not the original 50 μF."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "resistance",
+          "capacitance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "seriesRohm": 8,
+            "seriesCF": 0.00025,
+            "admittanceS": {
+              "real": 0.1,
+              "imag": 0.05,
+              "magnitude": 0.1118033988749895,
+              "phaseDeg": 26.56505117707799
+            },
+            "check": "Both independently reconstructed port admittances equal 0.1+j0.05 S at omega=1000."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        }
+      },
+      "CA-7-28": {
+        "id": "CA-7-28",
+        "bookId": "7-28",
+        "title": {
+          "zh": "电压表最小值是复平面到实轴的距离",
+          "en": "The minimum meter reading is a complex-plane projection"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-21"
+        },
+        "statement": {
+          "zh": "题图7-21所示正弦交流电路中，已知U=20 V、R₃=5 Ω、频率f=50 Hz，当调节滑动变阻器使R₁:R₂=2:3时，电压表的读数最小且为6 V，试求R和L的值。",
+          "en": "In Fig. 7-21, U=20 V, R₃=5 Ω and f=50 Hz. The voltmeter reaches its minimum reading 6 V when R₁:R₂=2:3. Find R and L."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "理想电压表不分流，左中点电压沿实轴可调。最小值时左中点等于右中点实部，差仅剩虚部。",
+          "en": "An ideal voltmeter draws no current. The left tap moves along the real axis; the minimum occurs when it matches the right node real part."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从最小读数恢复右中点相量",
+              "en": "Recover the right-node phasor"
+            },
+            "text": {
+              "zh": "左下段比例3/5给12 V；感性下支路使右中点虚部为正6 V。",
+              "en": "The lower slider fraction 3/5 gives 12 V. The inductive lower branch makes the imaginary part +6 V."
+            },
+            "formula": "\\dot V_b=12+j6\\,\\mathrm V,\\qquad\\dot I=\\frac{20-(12+j6)}5=1.6-j1.2\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "求下方RL阻抗",
+              "en": "Find the lower RL impedance"
+            },
+            "text": {
+              "zh": "右中点到地为R+jωL。",
+              "en": "The lower branch impedance is R+jωL."
+            },
+            "formula": "R+j\\omega L=\\frac{12+j6}{1.6-j1.2}=3+j6\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "用实际50 Hz换算L",
+              "en": "Convert using the actual 50 Hz"
+            },
+            "text": {
+              "zh": "ω=100π rad/s，因此L不是严格0.02 H；附录0.02 H为很粗的舍入。",
+              "en": "ω=100π rad/s gives a value not exactly 0.02 H; the appendix uses coarse rounding."
+            },
+            "formula": "R=3\\,\\Omega,\\qquad L=\\frac6{100\\pi}\\,\\mathrm H\\approx19.0986\\,\\mathrm{mH}"
+          }
+        ],
+        "answer": {
+          "zh": "R=3 Ω，L=6/(100π) H≈19.0986 mH；附录0.02 H仅为粗略值。",
+          "en": "R=3 Ω and L=6/(100π) H≈19.0986 mH; the listed 0.02 H is coarse rounding."
+        },
+        "pitfalls": [
+          {
+            "zh": "最小读数不是电桥平衡到零；不能把6 V忽略。电压表按理想无限输入阻抗处理。",
+            "en": "The minimum is 6 V, not a zero-balance bridge. The voltmeter is assumed ideal with infinite input impedance."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "resistance",
+          "inductance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "Rohm": 3,
+            "LH": 0.01909859317102744,
+            "rightDividerVoltageV": {
+              "real": 12.0,
+              "imag": 6.0,
+              "magnitude": 13.416407864998739,
+              "phaseDeg": 26.56505117707799
+            },
+            "minimumMeterV": 6,
+            "leftLowerFraction": 0.6,
+            "appendixLH": 0.02,
+            "check": "Complex divider reconstructed at 50 Hz; projection onto real slider voltage gives exact 6 V minimum at fraction 3/5. The 0.02 H appendix is coarse rounding of 0.0190986 H."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "precision-qualified",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左滑动分压R₁、R₂，右上R₃=5 Ω、右下R与L串联，表跨两中点。",
+            "en": "A left R₁/R₂ slider and right R₃ above series R,L form two dividers; the meter bridges their midpoint nodes."
+          }
+        },
+        "figure": "ca-7-28-figure.png"
+      },
+      "CA-7-29": {
+        "id": "CA-7-29",
+        "bookId": "7-29",
+        "title": {
+          "zh": "电容任意变化而读数不变，利用圆轨迹",
+          "en": "A capacitance-independent reading follows a circular locus"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-22"
+        },
+        "statement": {
+          "zh": "题图7-22所示正弦交流电路中，已知R₁=25 Ω、R₂=75 Ω、R=20 Ω，调节电容使电压表V的读数保持20 V不变，求电压U和电阻r。",
+          "en": "In Fig. 7-22, R₁=25 Ω, R₂=75 Ω and R=20 Ω. Varying the capacitance keeps the voltmeter at 20 V. Find U and r."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "左中点是0.75U，右下支路r−jX，X=1/(ωC)。要求对任意调节X都保持相同幅值。",
+          "en": "The left midpoint is 0.75U and the right lower branch r−jX. Require constant magnitude as X varies."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "写测量电压",
+              "en": "Write the measured voltage"
+            },
+            "text": {
+              "zh": "理想电压表不加载两分压支路。",
+              "en": "The ideal voltmeter does not load either divider."
+            },
+            "formula": "\\dot V=U\\left(\\frac{r-jX}{20+r-jX}-\\frac34\\right)=U\\left(\\frac14-\\frac{20}{20+r-jX}\\right)"
+          },
+          {
+            "title": {
+              "zh": "用两极限确定非平凡r",
+              "en": "Use both limits to determine r"
+            },
+            "text": {
+              "zh": "X趋无穷时读数U/4；X=0时同模要求1/4−20/(20+r)=−1/4，得到r=20 Ω。",
+              "en": "At infinite X the magnitude is U/4. Equal magnitude at X=0 requires 1/4−20/(20+r)=−1/4, giving r=20 Ω."
+            },
+            "formula": "r=20\\,\\Omega,\\qquad |\\dot V|=\\frac U4\\left|\\frac{-40-jX}{40-jX}\\right|=\\frac U4"
+          },
+          {
+            "title": {
+              "zh": "由恒读数求电源",
+              "en": "Recover the source voltage"
+            },
+            "text": {
+              "zh": "共轭式分子分母模相等，证明不只两端点相同，而是全部X相同。",
+              "en": "The numerator and denominator have equal magnitude, proving constancy for every X."
+            },
+            "formula": "U=4(20\\,\\mathrm V)=80\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "U=80 V，r=20 Ω。",
+          "en": "U=80 V and r=20 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "仅验证两个端点不足以证明全程恒定；还需给出上面的恒模表达式。",
+            "en": "Matching endpoint readings alone is insufficient; the constant-modulus expression proves the whole range."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "source-voltage",
+          "resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "sourceRmsV": 80,
+            "rOhm": 20,
+            "check": "Voltage-meter magnitude verified for six capacitive reactances including both limiting cases."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左25 Ω、75 Ω分压，右20 Ω与r、可调C串联分压，表跨两中点。",
+            "en": "The left 25 Ω/75 Ω divider and right 20 Ω above series r,C share the input; the meter bridges their midpoint nodes."
+          }
+        },
+        "figure": "ca-7-29-figure.png"
+      },
+      "CA-7-30": {
+        "id": "CA-7-30",
+        "bookId": "7-30",
+        "title": {
+          "zh": "相量标有效值，平均功率只算实部",
+          "en": "Use RMS phasors for average active power"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-23"
+        },
+        "statement": {
+          "zh": "题图7-23所示正弦交流电路中，已知$\\dot U=2\\sqrt2\\angle0^\\circ\\,\\mathrm V$，求电路消耗的平均功率。",
+          "en": "In Fig. 7-23, $\\dot U=2\\sqrt2\\angle0^\\circ\\,\\mathrm V$. Find the average consumed power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "图中2 Ω与−j2 Ω串联，给的是有效值相量2√2 V。",
+          "en": "The 2 Ω and −j2 Ω are in series, and the stated phasor 2√2 V is RMS."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求电流有效值",
+              "en": "Find RMS current"
+            },
+            "text": {
+              "zh": "总阻抗模为2√2 Ω，故电流模1 A。",
+              "en": "The impedance magnitude is 2√2 Ω, giving RMS current 1 A."
+            },
+            "formula": "|\\dot I|=\\frac{2\\sqrt2}{|2-j2|}=1\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "只计电阻有功",
+              "en": "Count resistor active power"
+            },
+            "text": {
+              "zh": "理想电容平均有功为零。",
+              "en": "The ideal capacitor has zero average active power."
+            },
+            "formula": "P=I^2R=1^2(2)=2\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "平均功率P=2 W。",
+          "en": "Average power P=2 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "有效值相量不再除根号2；电路的无功不计入平均有功。",
+            "en": "Do not divide an RMS phasor by √2 again; reactive power is not average active power."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "average-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "currentA": {
+              "real": 0.7071067811865476,
+              "imag": 0.7071067811865476,
+              "magnitude": 1.0,
+              "phaseDeg": 45.0
+            },
+            "averagePowerW": 2
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "2 Ω和−j2 Ω串联。",
+            "en": "Series 2 Ω and −j2 Ω."
+          }
+        },
+        "figure": "ca-7-30-figure.png"
+      },
+      "CA-7-31": {
+        "id": "CA-7-31",
+        "bookId": "7-31",
+        "title": {
+          "zh": "源提供有功等于电阻消耗",
+          "en": "Source active power equals resistor dissipation"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-24"
+        },
+        "statement": {
+          "zh": "求题图7-24所示正弦交流电路中电源提供的平均功率。",
+          "en": "Find the source’s average delivered power in Fig. 7-24."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "源10∠0° V串联10 Ω和j10 Ω，先算有效值电流再计电阻功率。",
+          "en": "A 10∠0° V source feeds series 10 Ω and j10 Ω. Find RMS current before resistor power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "电流与复功率",
+              "en": "Current and complex power"
+            },
+            "text": {
+              "zh": "电感吸收正无功，但平均有功为零。",
+              "en": "The inductor absorbs positive reactive power and zero average active power."
+            },
+            "formula": "\\dot I=\\frac{10}{10+j10}=0.5-j0.5\\,\\mathrm A,\\qquad S_{source}=10\\dot I^*=5+j5\\,\\mathrm{VA}"
+          }
+        ],
+        "answer": {
+          "zh": "电源提供的平均有功P=5 W。",
+          "en": "Source-delivered average active power is 5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "源“提供”功率与按关联电流计算的“吸收”功率符号相反。",
+            "en": "Delivered source power has the opposite sign from absorbed power under a passive source-current reference."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "source-average-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "currentA": {
+              "real": 0.5,
+              "imag": -0.5,
+              "magnitude": 0.7071067811865476,
+              "phaseDeg": -45.0
+            },
+            "sourceDeliveredW": 5
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 V有效值源与10 Ω、j10 Ω串联。",
+            "en": "A 10 V RMS source feeds series 10 Ω and j10 Ω."
+          }
+        },
+        "figure": "ca-7-31-figure.png"
+      },
+      "CA-7-32": {
+        "id": "CA-7-32",
+        "bookId": "7-32",
+        "title": {
+          "zh": "电流源峰值先换有效值，再求并联端压",
+          "en": "Convert source peak to RMS before finding the parallel voltage"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 188,
+          "pdfPage": 197,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-25"
+        },
+        "statement": {
+          "zh": "题图7-25所示正弦交流电路中，已知$i_s=5\\cos2t\\,\\mathrm A$，求电路的有功功率P、无功功率Q。",
+          "en": "In Fig. 7-25, $i_s=5\\cos2t\\,\\mathrm A$. Find active P and reactive Q."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "2 Ω与1 H并联，ω=2 rad/s，所以感抗j2 Ω；电流源有效值5/√2 A。",
+          "en": "2 Ω is parallel with 1 H. At ω=2 rad/s the inductive reactance is j2 Ω, and source RMS is 5/√2 A."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求并联等效",
+              "en": "Find the parallel equivalent"
+            },
+            "text": {
+              "zh": "Z_eq=1/(1/2+1/(j2))=1+j Ω。",
+              "en": "The parallel impedance is 1+j Ω."
+            },
+            "formula": "Z_{eq}=1+j\\,\\Omega,\\qquad S=I_s^2Z_{eq}=\\frac{25}{2}(1+j)\\,\\mathrm{VA}"
+          }
+        ],
+        "answer": {
+          "zh": "P=12.5 W，Q=+12.5 var，电路为感性。",
+          "en": "P=12.5 W and Q=+12.5 var, inductive."
+        },
+        "pitfalls": [
+          {
+            "zh": "5 A是峰值，若直接代I²Z将使功率翻倍。",
+            "en": "5 A is the peak; using it directly in I²Z doubles the power."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "active-power",
+          "reactive-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "rmsSourceA": 3.5355339059327373,
+            "voltageV": {
+              "real": 3.5355339059327373,
+              "imag": 3.5355339059327373,
+              "magnitude": 5.0,
+              "phaseDeg": 45.0
+            },
+            "complexPowerVA": {
+              "real": 12.499999999999998,
+              "imag": 12.499999999999998,
+              "magnitude": 17.677669529663685,
+              "phaseDeg": 45.0
+            }
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "向上电流源与2 Ω、1 H并联。",
+            "en": "An upward current source is parallel with 2 Ω and 1 H."
+          }
+        },
+        "figure": "ca-7-32-figure.png"
+      },
+      "CA-7-33": {
+        "id": "CA-7-33",
+        "bookId": "7-33",
+        "title": {
+          "zh": "先算两负载复功率，再做差",
+          "en": "Subtract load complex powers after converting both waveforms"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-26"
+        },
+        "statement": {
+          "zh": "题图7-26所示正弦交流电路中，已知电源电压$u_s=60\\sqrt2\\cos(\\omega t-36.9^\\circ)\\,\\mathrm V$，负载2的电压$u_2=60\\sqrt2\\cos(\\omega t-53.1^\\circ)\\,\\mathrm V$，电流$i=3\\sqrt2\\cos\\omega t\\,\\mathrm A$，求负载1吸收的有功功率P₁、无功功率Q₁和负载2吸收的无功功率Q₂。",
+          "en": "In Fig. 7-26, $u_s=60\\sqrt2\\cos(\\omega t-36.9^\\circ)\\,\\mathrm V$, $u_2=60\\sqrt2\\cos(\\omega t-53.1^\\circ)\\,\\mathrm V$ and $i=3\\sqrt2\\cos\\omega t\\,\\mathrm A$. Find load-1 active P₁, reactive Q₁ and load-2 reactive Q₂."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "两负载串联电流相同。总吸收功率等于U_s I*，负载2为U₂ I*，负载1为二者之差。",
+          "en": "Both series loads carry the same current. Use S_total=U_s I*, S₂=U₂ I* and S₁=S_total−S₂."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用有效值相量分别相乘",
+              "en": "Multiply RMS phasors separately"
+            },
+            "text": {
+              "zh": "给定波形含√2，故有效值为60 V、60 V和3 A。",
+              "en": "The √2 factors give RMS magnitudes 60 V, 60 V and 3 A."
+            },
+            "formula": "S_1=180\\left(e^{-j36.9^\\circ}-e^{-j53.1^\\circ}\\right)\\,\\mathrm{VA},\\qquad S_2=180e^{-j53.1^\\circ}\\,\\mathrm{VA}"
+          },
+          {
+            "title": {
+              "zh": "区分严格小数角与附录舍入",
+              "en": "Distinguish literal angles from rounded results"
+            },
+            "text": {
+              "zh": "按给定小数角直接计算P₁=Q₁≈35.868 W/var，Q₂≈−143.943 var；把角度看作常用3-4-5角舍入，则得到附录36、36、−144。",
+              "en": "Literal decimal angles give P₁=Q₁≈35.868 and Q₂≈−143.943. Interpreting the angles as rounded 3-4-5 values gives the listed 36, 36, −144."
+            },
+            "formula": "P_1=180(\\cos36.9^\\circ-\\sin36.9^\\circ),\\quad Q_1=P_1,\\quad Q_2=-180\\cos36.9^\\circ"
+          }
+        ],
+        "answer": {
+          "zh": "按题给角度P₁≈35.868 W、Q₁≈35.868 var、Q₂≈−143.943 var；通常舍入答36 W、36 var、−144 var。",
+          "en": "Using literal angles: P₁≈35.868 W, Q₁≈35.868 var, Q₂≈−143.943 var. Conventional rounded answers: 36 W, 36 var, −144 var."
+        },
+        "pitfalls": [
+          {
+            "zh": "先做复功率差而不是把两个电压有效值相减；负Q₂表示负载2整体容性。",
+            "en": "Subtract complex powers, not voltage magnitudes. Negative Q₂ means load 2 is capacitive."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "P1",
+          "Q1",
+          "Q2",
+          "angle-precision"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "literalP1W": 35.86759796901719,
+            "literalQ1var": 35.86759796901719,
+            "literalQ2var": -143.94323852767633,
+            "roundedIntended": [
+              36,
+              36,
+              -144
+            ],
+            "check": "Direct RMS complex powers satisfy source/load conservation; literal decimal angles distinguished from 3-4-5 rounded values."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "precision-qualified",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "负载1和2串联，u_s跨全回路，u₂跨负载2上正下负，i顺时针。",
+            "en": "Loads 1 and 2 are in series; u_s spans both, u₂ is top-positive across load 2 and current is clockwise."
+          }
+        },
+        "figure": "ca-7-33-figure.png"
+      },
+      "CA-7-34": {
+        "id": "CA-7-34",
+        "bookId": "7-34",
+        "title": {
+          "zh": "平均功率由阻抗角决定，与绝对电压相位无关",
+          "en": "Average power depends on impedance angle, not absolute voltage phase"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198
+        },
+        "statement": {
+          "zh": "已知某单口网络的输入阻抗$Z=10\\angle36.9^\\circ\\,\\Omega$，端口电压$\\dot U=100\\angle30^\\circ\\,\\mathrm V$，求此单口网络吸收的平均功率P。",
+          "en": "A one-port has $Z=10\\angle36.9^\\circ\\,\\Omega$ and $\\dot U=100\\angle30^\\circ\\,\\mathrm V$. Find absorbed average power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "电压电流的相位差是阻抗角36.9°，不是电压的绝对初相30°。",
+          "en": "The voltage-current phase difference is the impedance angle 36.9°, not the absolute voltage phase 30°."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从复功率取实部",
+              "en": "Take the real part of complex power"
+            },
+            "text": {
+              "zh": "电流有效值10 A，平均功率UIcosφ。",
+              "en": "RMS current is 10 A, giving P=UI cosφ."
+            },
+            "formula": "P=\\frac{U^2}{|Z|}\\cos36.9^\\circ=1000\\cos36.9^\\circ\\,\\mathrm W\\approx799.685\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "P=1000cos36.9° W≈800 W，附录800 W为舍入值。",
+          "en": "P=1000cos36.9° W≈800 W; the listed 800 W is rounded."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能用cos30°；100∠30°给的是有效值相量，不再除√2。",
+            "en": "Do not use cos30° or divide an RMS phasor by √2 again."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "average-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "literalPowerW": 799.6846584870907,
+            "roundedPowerW": 800
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "precision-qualified",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        }
+      },
+      "CA-7-35": {
+        "id": "CA-7-35",
+        "bookId": "7-35",
+        "title": {
+          "zh": "电容电压先给电流，再减掉外部串联阻抗",
+          "en": "Use capacitor voltage to find current, then remove external series impedance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-27"
+        },
+        "statement": {
+          "zh": "题图7-27所示正弦交流电路中，已知$u=30\\cos(\\omega t+30^\\circ)\\,\\mathrm V,u_C=20\\cos(\\omega t-60^\\circ)\\,\\mathrm V,1/(\\omega C)=4\\,\\Omega$，试求网络N的等效阻抗Z_N和吸收的有功功率P_N。",
+          "en": "For Fig. 7-27, $u=30\\cos(\\omega t+30^\\circ)\\,\\mathrm V$, $u_C=20\\cos(\\omega t-60^\\circ)\\,\\mathrm V$ and 1/(ωC)=4 Ω. Find Z_N and absorbed P_N."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "图中电容右正左负，与顺时针回路电流关联。电容电压除−j4 Ω直接给电流。",
+          "en": "The capacitor is right-positive, matching the clockwise current. Divide its voltage by −j4 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "换有效值并求电流",
+              "en": "Convert to RMS and find current"
+            },
+            "text": {
+              "zh": "给出的30、20均为峰值。电流相位比电容电压超前90°。",
+              "en": "The stated 30 and 20 are peaks. Current leads capacitor voltage by 90°."
+            },
+            "formula": "\\dot I=\\frac{(20/\\sqrt2)\\angle(-60^\\circ)}{-j4}=\\frac5{\\sqrt2}\\angle30^\\circ\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "求总阻抗，再减外部元件",
+              "en": "Find total impedance and remove external elements"
+            },
+            "text": {
+              "zh": "电源与电流同相，Z总=6 Ω；外部为3−j4 Ω。",
+              "en": "Source and current are in phase, so total Z=6 Ω; external Z is 3−j4 Ω."
+            },
+            "formula": "Z_N=6-(3-j4)=3+j4\\,\\Omega,\\qquad P_N=I^2\\Re Z_N=\\frac{25}{2}(3)=37.5\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "Z_N=(3+j4) Ω，P_N=37.5 W。",
+          "en": "Z_N=(3+j4) Ω and P_N=37.5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "电容极性右正不能反读；若用峰值电流计算平均功率，必须有1/2。",
+            "en": "Read the right-positive capacitor polarity correctly. Peak-current average-power calculations require 1/2."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "impedance",
+          "active-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "ZNohm": {
+              "real": 3.0,
+              "imag": 3.9999999999999987,
+              "magnitude": 4.999999999999999,
+              "phaseDeg": 53.13010235415597
+            },
+            "rmsCurrentA": {
+              "real": 3.061862178478972,
+              "imag": 1.767766952966369,
+              "magnitude": 3.5355339059327373,
+              "phaseDeg": 30.00000000000001
+            },
+            "networkPowerW": 37.49999999999999,
+            "check": "Capacitor polarity and clockwise passive current checked; full complex-power balance."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "3 Ω、N、电容串成回路；底部电容右正左负。",
+            "en": "3 Ω, N and C form a series loop; the bottom capacitor is right-positive."
+          }
+        },
+        "figure": "ca-7-35-figure.png"
+      },
+      "CA-7-36": {
+        "id": "CA-7-36",
+        "bookId": "7-36",
+        "title": {
+          "zh": "并联支路给总电流，再用串联电感求源压",
+          "en": "Find total parallel current before the series-inductor source voltage"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-28"
+        },
+        "statement": {
+          "zh": "题图7-28所示正弦交流电路中，已知$R=\\omega L=1/(\\omega C)=100\\,\\Omega,\\dot I_R=2\\angle0^\\circ\\,\\mathrm A$，求$\\dot U_s$和电源提供的有功功率。",
+          "en": "For Fig. 7-28, R=ωL=1/(ωC)=100 Ω and $\\dot I_R=2\\angle0^\\circ\\,\\mathrm A$. Find U_s and source-delivered active power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "先由R支路确定并联电压200 V，电容电流超前90°。串联电感承载R与C的相量和。",
+          "en": "The resistor fixes parallel voltage at 200 V. Capacitor current leads by 90°, and series L carries the phasor sum."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "并联支路KCL",
+              "en": "Parallel-branch KCL"
+            },
+            "text": {
+              "zh": "I_C=j2 A，故I_L=2+j2 A。",
+              "en": "I_C=j2 A, giving I_L=2+j2 A."
+            },
+            "formula": "\\dot U_p=200\\,\\mathrm V,\\quad\\dot I_C=j2\\,\\mathrm A,\\quad\\dot I_L=2+j2\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "KVL求源电压",
+              "en": "Use KVL for the source voltage"
+            },
+            "text": {
+              "zh": "电感压降j100(2+j2)=−200+j200 V，与并联200 V相加。",
+              "en": "The inductor drop is −200+j200 V, added to the parallel 200 V."
+            },
+            "formula": "\\dot U_s=200+j100(2+j2)=j200\\,\\mathrm V,\\qquad P_s=I_R^2R=400\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "U_s=200∠90° V，源提供P=400 W。",
+          "en": "U_s=200∠90° V and source-delivered P=400 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "电感电流不是只取2 A的电阻支路电流；两个支路有效值不可标量相加。",
+            "en": "The series-inductor current includes both branches; do not add their RMS magnitudes as scalars."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "source-voltage",
+          "source-active-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "sourceV": {
+              "real": 0.0,
+              "imag": 200.0,
+              "magnitude": 200.0,
+              "phaseDeg": 90.0
+            },
+            "sourceDeliveredW": 400.0,
+            "sourceDeliveredComplexVA": {
+              "real": 400.0,
+              "imag": 400.0,
+              "magnitude": 565.685424949238,
+              "phaseDeg": 45.0
+            }
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "源经jωL到并联R、−j/(ωC)，I_R向下。",
+            "en": "The source feeds jωL before parallel R and C; I_R points downward."
+          }
+        },
+        "figure": "ca-7-36-figure.png"
+      },
+      "CA-7-37": {
+        "id": "CA-7-37",
+        "bookId": "7-37",
+        "title": {
+          "zh": "双源节点先用峰值相量，算功率再除2",
+          "en": "Use peak phasors for node algebra, then divide power by two"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-29"
+        },
+        "statement": {
+          "zh": "正弦交流电路如题图7-29所示，试求电流i和无源元件消耗的功率。",
+          "en": "For Fig. 7-29, find current i and the powers consumed by the passive elements."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "ω=1，左源3cos t V经1 H到中点，右源5cos t V经1 F到中点，中点以1 Ω接地，i向下。",
+          "en": "At ω=1, the left 3cos t V source reaches the middle node through 1 H; the right 5cos t V source through 1 F. A 1 Ω resistor connects the node to ground with i downward."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "峰值相量节点方程",
+              "en": "Write a peak-phasor node equation"
+            },
+            "text": {
+              "zh": "直接用原幅值3和5列节点式，注意功率稍后使用1/2。",
+              "en": "Use original peaks 3 and 5 for node algebra, retaining 1/2 for power later."
+            },
+            "formula": "\\frac{\\hat V-3}{j}+\\hat V+\\frac{\\hat V-5}{-j}=0\\quad\\Rightarrow\\quad\\hat V=j2\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "电流与平均功率",
+              "en": "Current and average powers"
+            },
+            "text": {
+              "zh": "电阻1 Ω故电流峰值2 A，超前余弦90°。理想L和C平均有功为零。",
+              "en": "The 1 Ω resistor gives peak current 2 A with phase +90°. Ideal L and C have zero average active power."
+            },
+            "formula": "i(t)=2\\cos(t+90^\\circ)\\,\\mathrm A,\\quad P_R=\\frac12(2^2)(1)=2\\,\\mathrm W,\\quad P_L=P_C=0"
+          }
+        ],
+        "answer": {
+          "zh": "i=2cos(t+90°) A；无源元件平均有功：电阻2 W、电感0、电容0，总2 W。",
+          "en": "i=2cos(t+90°) A. Average passive active powers: resistor 2 W, L=0, C=0; total 2 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "这里节点相量采用峰值并用帽号标明，不能混成有效值后漏1/2。",
+            "en": "The hat denotes peak phasors; do not mix them with RMS power formulas."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "current",
+          "resistor-power",
+          "inductor-power",
+          "capacitor-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "peakCurrentA": {
+              "real": 0.0,
+              "imag": 2.0,
+              "magnitude": 2.0,
+              "phaseDeg": 90.0
+            },
+            "resistorAverageW": 2,
+            "inductorAverageW": 0,
+            "capacitorAverageW": 0,
+            "check": "Original peak-phasor KCL and source/passive complex-power balance; average ideal storage power is zero."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "中点电阻1 Ω到地，左右分别接1 H和1 F后到3cos t、5cos t电源。",
+            "en": "A central 1 Ω shunt connects to the left source through 1 H and to the right source through 1 F."
+          }
+        },
+        "figure": "ca-7-37-figure.png"
+      },
+      "CA-7-38": {
+        "id": "CA-7-38",
+        "bookId": "7-38",
+        "title": {
+          "zh": "并联RLC的功率因数从导纳三角形读取",
+          "en": "Read a parallel-RLC power factor from its admittance triangle"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-30"
+        },
+        "statement": {
+          "zh": "某单口网络如题图7-30所示，若$R=10\\,\\Omega,\\omega L=10\\,\\Omega,1/(\\omega C)=20\\,\\Omega$，求该单口网络的功率因数。",
+          "en": "For Fig. 7-30, R=10 Ω, ωL=10 Ω and 1/(ωC)=20 Ω. Find the power factor."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "三支路并联，用导纳相加最直接。总电纳为负，电流滞后电压。",
+          "en": "All three branches are parallel. Sum admittances; negative susceptance means current lags voltage."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求导纳并取实部比例",
+              "en": "Find admittance and its real fraction"
+            },
+            "text": {
+              "zh": "电导0.1 S，净电纳−0.05 S。",
+              "en": "Conductance is 0.1 S and net susceptance −0.05 S."
+            },
+            "formula": "Y=0.1-j0.05\\,\\mathrm S,\\quad Z=8+j4\\,\\Omega,\\quad\\mathrm{pf}=\\frac{0.1}{\\sqrt{0.1^2+0.05^2}}=\\frac2{\\sqrt5}\\approx0.894427"
+          }
+        ],
+        "answer": {
+          "zh": "功率因数2/√5≈0.8944，滞后（感性）。",
+          "en": "Power factor 2/√5≈0.8944, lagging (inductive)."
+        },
+        "pitfalls": [
+          {
+            "zh": "功率因数的正数值不能单独表达感性或容性，还要写超前/滞后。",
+            "en": "The positive power-factor number alone does not distinguish leading and lagging."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "power-factor",
+          "type"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "Zohm": {
+              "real": 8.0,
+              "imag": 4.0,
+              "magnitude": 8.94427190999916,
+              "phaseDeg": 26.56505117707799
+            },
+            "powerFactor": 0.8944271909999159,
+            "type": "lagging"
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "R、L、C三支路并联。",
+            "en": "R, L and C are parallel."
+          }
+        },
+        "figure": "ca-7-38-figure.png"
+      },
+      "CA-7-39": {
+        "id": "CA-7-39",
+        "bookId": "7-39",
+        "title": {
+          "zh": "先合并串联LC，再与电阻并联",
+          "en": "Combine series LC before paralleling it with R"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 189,
+          "figurePdfPage": 198,
+          "figure": "题图7-31"
+        },
+        "statement": {
+          "zh": "某单口网络如题图7-31所示，已知$R=8\\,\\Omega,\\omega L=12\\,\\Omega,1/(\\omega C)=6\\,\\Omega$，求该单口网络的功率因数。",
+          "en": "For Fig. 7-31, R=8 Ω, ωL=12 Ω and 1/(ωC)=6 Ω. Find its power factor."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "右支路L、C串联，净阻抗j6 Ω，再与8 Ω并联。",
+          "en": "The right LC branch is series, with net impedance j6 Ω, in parallel with 8 Ω."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求总导纳和相角",
+              "en": "Find total admittance and angle"
+            },
+            "text": {
+              "zh": "总电导1/8，总感纳−1/6 S。",
+              "en": "Total conductance is 1/8 and susceptance −1/6 S."
+            },
+            "formula": "Y=\\frac18-j\\frac16\\,\\mathrm S,\\quad\\mathrm{pf}=\\frac{1/8}{\\sqrt{(1/8)^2+(1/6)^2}}=\\frac35=0.6"
+          }
+        ],
+        "answer": {
+          "zh": "功率因数0.6，滞后（感性）。",
+          "en": "Power factor 0.6, lagging (inductive)."
+        },
+        "pitfalls": [
+          {
+            "zh": "L、C不是各自直接并联端口，不能把三种导纳直接相加。",
+            "en": "L and C are in series rather than individually across the port."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "power-factor",
+          "type"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "Zohm": {
+              "real": 2.8800000000000003,
+              "imag": 3.8400000000000007,
+              "magnitude": 4.800000000000001,
+              "phaseDeg": 53.13010235415599
+            },
+            "powerFactor": 0.6,
+            "type": "lagging"
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "8 Ω电阻与串联L、C支路并联。",
+            "en": "An 8 Ω resistor is parallel with series L,C."
+          }
+        },
+        "figure": "ca-7-39-figure.png"
+      },
+      "CA-7-40": {
+        "id": "CA-7-40",
+        "bookId": "7-40",
+        "title": {
+          "zh": "先分配有功，再用相量KVL求总电压",
+          "en": "Allocate active power before phasor KVL"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-32"
+        },
+        "statement": {
+          "zh": "题图7-32所示电路中，阻抗$Z=(2+j2)\\,\\Omega$，电流有效值$I_R=5\\,\\mathrm A,I_C=8\\,\\mathrm A,I_L=3\\,\\mathrm A$，电路消耗的总功率为200 W。求总电压有效值U。",
+          "en": "In Fig. 7-32, Z=(2+j2) Ω, RMS currents I_R=5 A, I_C=8 A, I_L=3 A, and total consumed active power is 200 W. Find source RMS U."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "以并联端压为实轴，总电流为5+j(8−3)=5+j5 A。串联阻抗实部先消耗100 W，剩100 W在并联电阻。",
+          "en": "Using parallel voltage as phase reference gives total current 5+j5 A. The series resistance consumes 100 W, leaving 100 W in the parallel resistor."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由总有功求并联电压",
+              "en": "Find parallel voltage from active power"
+            },
+            "text": {
+              "zh": "串联2 Ω有功为2|5+j5|²=100 W；并联电阻功率等于U_p I_R。",
+              "en": "Series active power is 2|5+j5|²=100 W, and parallel resistor power is U_p I_R."
+            },
+            "formula": "U_p=\\frac{200-100}{5}=20\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "相量相加求源电压",
+              "en": "Add voltages as phasors"
+            },
+            "text": {
+              "zh": "串联阻抗压降是(2+j2)(5+j5)=j20 V。",
+              "en": "The series drop is (2+j2)(5+j5)=j20 V."
+            },
+            "formula": "\\dot U=20+(2+j2)(5+j5)=20+j20\\,\\mathrm V,\\qquad U=20\\sqrt2\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "总电压有效值U=20√2 V≈28.2843 V。",
+          "en": "Source RMS U=20√2 V≈28.2843 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把串联压降模与并联电压模直接相加；它们在本题正交。",
+            "en": "The series drop and parallel voltage are orthogonal here, so their magnitudes do not add directly."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "rms-voltage"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "parallelVoltageV": 20,
+            "currentA": {
+              "real": 5.0,
+              "imag": 5.0,
+              "magnitude": 7.0710678118654755,
+              "phaseDeg": 45.0
+            },
+            "sourceV": {
+              "real": 20.0,
+              "imag": 20.0,
+              "magnitude": 28.284271247461902,
+              "phaseDeg": 45.0
+            },
+            "sourceRmsV": 28.284271247461902,
+            "check": "Independent active-power split followed by phasor KVL; total source active power 200 W."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "输入先串联Z=2+j2，再接并联R、C、L；各支路电流向下。",
+            "en": "Input series Z=2+j2 feeds parallel R, C and L with downward branch currents."
+          }
+        },
+        "figure": "ca-7-40-figure.png"
+      },
+      "CA-7-41": {
+        "id": "CA-7-41",
+        "bookId": "7-41",
+        "title": {
+          "zh": "从总有功和电流反求输入阻抗",
+          "en": "Infer input impedance from active power and current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 189,
+          "pdfPage": 198,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-33"
+        },
+        "statement": {
+          "zh": "题图7-33所示电路中，已知$u_s(t)=50\\sqrt2\\cos314t\\,\\mathrm V$，电流i的有效值I=0.5 A，电源发出的功率为15 W，电阻R₁=20 Ω。求电阻R₂和电容C。",
+          "en": "In Fig. 7-33, $u_s=50\\sqrt2\\cos314t\\,\\mathrm V$, RMS I=0.5 A, source active power 15 W and R₁=20 Ω. Find R₂ and C."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "输入是R₁串联R₂∥C；用P/I²求总实部，用U/I求总模，再以容性选择负虚部。",
+          "en": "R₁ is in series with R₂∥C. Use P/I² for total real part, U/I for magnitude, and select the capacitive negative imaginary part."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "输入阻抗及并联部分",
+              "en": "Input and parallel impedances"
+            },
+            "text": {
+              "zh": "U_s有效值50 V，不是50√2 V。",
+              "en": "Source RMS is 50 V."
+            },
+            "formula": "|Z|=\\frac{50}{0.5}=100\\,\\Omega,\\quad\\Re Z=\\frac{15}{0.5^2}=60\\,\\Omega,\\quad Z=60-j80\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "转导纳拆R₂和C",
+              "en": "Split R₂ and C through admittance"
+            },
+            "text": {
+              "zh": "去掉R₁，剩40−j80 Ω。",
+              "en": "Remove R₁ to leave 40−j80 Ω."
+            },
+            "formula": "Y_p=\\frac1{40-j80}=0.005+j0.01\\,\\mathrm S,\\quad R_2=200\\,\\Omega,\\quad C=\\frac{0.01}{314}\\,\\mathrm F\\approx31.8471\\,\\mathrm{\\mu F}"
+          }
+        ],
+        "answer": {
+          "zh": "R₂=200 Ω，C≈31.8471 μF（附录31.85 μF）。",
+          "en": "R₂=200 Ω and C≈31.8471 μF (listed 31.85 μF)."
+        },
+        "pitfalls": [
+          {
+            "zh": "功率给输入等效实部60 Ω，不能直接把它当成R₂。",
+            "en": "The 60 Ω is the total input real part, not R₂."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "resistance",
+          "capacitance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "R2ohm": 200,
+            "CF": 3.184713375796179e-05,
+            "totalZohm": {
+              "real": 60.0,
+              "imag": -80.0,
+              "magnitude": 100.0,
+              "phaseDeg": -53.13010235415598
+            },
+            "check": "Original input magnitude, 15 W power and reconstructed parallel-RC admittance all agree."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "R₁串联在源与并联R₂、C之前。",
+            "en": "R₁ is in series before parallel R₂ and C."
+          }
+        },
+        "figure": "ca-7-41-figure.png"
+      },
+      "CA-7-42": {
+        "id": "CA-7-42",
+        "bookId": "7-42",
+        "title": {
+          "zh": "输入同相使并联端压也同相",
+          "en": "An in-phase input fixes the parallel voltage phase"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-34"
+        },
+        "statement": {
+          "zh": "正弦稳态电路的向量模型如题图7-34所示，已知$I_1=10\\,\\mathrm A,I_2=20\\,\\mathrm A$，$\\dot U$与$\\dot I$同相，且$\\dot U=220\\angle0^\\circ\\,\\mathrm V$，阻抗Z₂上消耗的功率为2 kW。试求电流$\\dot I$、电阻R、容抗X_C及阻抗Z₂。",
+          "en": "For Fig. 7-34, I₁=10 A and I₂=20 A RMS; input U and I are in phase, U=220∠0° V and Z₂ consumes 2 kW. Find I, R, X_C and Z₂."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "串联R的压降与输入电流同相，因此并联端压也为实数。电容I₁=j10 A，Z₂支路必须用−j10 A抵消。",
+          "en": "The series-R drop is in phase with input current, so the parallel voltage is real too. Capacitor current +j10 A must be canceled by −j10 A in the Z₂ branch."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "电流三角形",
+              "en": "Current triangle"
+            },
+            "text": {
+              "zh": "Z₂支路模20 A、虚部−10 A，实部为正10√3 A，亦为总电流。",
+              "en": "The 20 A Z₂ branch has imaginary part −10 A and positive real part 10√3 A, equal to total current."
+            },
+            "formula": "\\dot I=10\\sqrt3\\angle0^\\circ\\,\\mathrm A,\\qquad\\dot I_2=10\\sqrt3-j10\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "由2 kW求并联电压",
+              "en": "Find parallel voltage from 2 kW"
+            },
+            "text": {
+              "zh": "电容不耗有功，Z₂功率就是并联端压乘总实电流。",
+              "en": "The capacitor has no active power, so Z₂ power is parallel voltage times the total real current."
+            },
+            "formula": "U_p=\\frac{2000}{10\\sqrt3}=\\frac{200}{\\sqrt3}\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "恢复全部未知参数",
+              "en": "Recover all component values"
+            },
+            "text": {
+              "zh": "串联R由剩余实电压降求，容抗由U_p/10求，Z₂由复数相除求。",
+              "en": "Use the remaining real drop for R, U_p/10 for X_C, and complex division for Z₂."
+            },
+            "formula": "R=\\frac{220-200/\\sqrt3}{10\\sqrt3}\\,\\Omega\\approx6.03504\\,\\Omega,\\quad X_C=\\frac{20}{\\sqrt3}\\,\\Omega,\\quad Z_2=5+j\\frac5{\\sqrt3}\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "I=10√3∠0° A；R≈6.03504 Ω；X_C≈11.5470 Ω；Z₂≈5+j2.88675 Ω。",
+          "en": "I=10√3∠0° A; R≈6.03504 Ω; X_C≈11.5470 Ω; Z₂≈5+j2.88675 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "电容支路超前的是并联端压；只有先利用输入同相条件，才能把它写成+j10 A。",
+            "en": "Capacitor current leads its own parallel voltage. Use the input in-phase condition before assigning +j10 A."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "total-current",
+          "series-R",
+          "capacitive-reactance",
+          "Z2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "totalCurrentA": 17.32050807568877,
+            "seriesRohm": 6.0350392555051,
+            "XCohm": 11.547005383792516,
+            "Z2ohm": {
+              "real": 5.000000000000001,
+              "imag": 2.88675134594813,
+              "magnitude": 5.773502691896259,
+              "phaseDeg": 30.000000000000004
+            },
+            "check": "Input in-phase condition, both branch RMS magnitudes, original KVL and 2 kW load power."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "源经R到并联−jX_C与Z₂，I₁为电容支路、I₂为Z₂支路。",
+            "en": "Source series R feeds parallel −jX_C and Z₂; I₁ is the capacitor current and I₂ the Z₂ current."
+          }
+        },
+        "figure": "ca-7-42-figure.png"
+      },
+      "CA-7-43": {
+        "id": "CA-7-43",
+        "bookId": "7-43",
+        "title": {
+          "zh": "先从等模电流恢复元件，再改变频率",
+          "en": "Recover components from equal current magnitudes before changing frequency"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-35"
+        },
+        "statement": {
+          "zh": "题图7-35所示正弦交流电路中，已知电源电压有效值U为100 V，频率f=50 Hz，各个支路电流有效值I=I₁=I₂，电路消耗的平均功率为866 W。若电源电压U不变、f=100 Hz，求此时各支路电流$\\dot I,\\dot I_1,\\dot I_2$及电路消耗的平均功率。",
+          "en": "In Fig. 7-35, U=100 V RMS at 50 Hz, I=I₁=I₂ in magnitude, and average power is 866 W. Keeping U fixed, change frequency to 100 Hz. Find total I, capacitor I₁, RL-branch I₂ and average power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "原三个电流等模组成等边相量三角形，RL支路滞后电压30°。先用866 W恢复R、X_L和C，再把频率加倍。",
+          "en": "The three equal current magnitudes form an equilateral phasor triangle, fixing the RL lag at 30°. Recover R, X_L and C from 866 W before doubling frequency."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "50 Hz恢复真实元件",
+              "en": "Recover the physical components at 50 Hz"
+            },
+            "text": {
+              "zh": "取电压为0°，I₁=jA、I₂=A(cosφ−j sinφ)。|I₁+I₂|=A给sinφ=1/2，因此φ=30°。",
+              "en": "With U phase zero, I₁=jA and I₂=A(cosφ−j sinφ). The equal total magnitude gives sinφ=1/2."
+            },
+            "formula": "A=\\frac{866}{100\\cos30^\\circ},\\quad R=\\frac{7500}{866}\\,\\Omega\\approx8.660508\\,\\Omega,\\quad X_{L,50}=\\frac R{\\sqrt3}\\approx5.000147\\,\\Omega,\\quad C=\\frac A{(2\\pi50)(100)}\\approx318.30055\\,\\mathrm{\\mu F}"
+          },
+          {
+            "title": {
+              "zh": "100 Hz分别重算支路",
+              "en": "Recompute each branch at 100 Hz"
+            },
+            "text": {
+              "zh": "电容导纳翻倍，电感电抗也翻倍，R不变。保留866 W原值避免累积舍入。",
+              "en": "Capacitive admittance and inductive reactance both double; R remains fixed. Retain the original 866 W."
+            },
+            "formula": "\\dot I_1=j19.999413\\,\\mathrm A,\\quad\\dot I_2=\\frac{100}{R+j2X_{L,50}}=(4.948571-j5.714118)\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "总电流与有功",
+              "en": "Total current and power"
+            },
+            "text": {
+              "zh": "相量相加后从实部求有功，也可独立检查I₂²R。附录494.93 W与原866 W严格推导不符，非采用值。",
+              "en": "Sum phasors and take the real component for active power, independently checking |I₂|²R. The listed 494.93 W does not follow exactly from 866 W."
+            },
+            "formula": "\\dot I=(4.948571+j14.285295)\\,\\mathrm A\\approx15.118135\\angle70.893395^\\circ\\,\\mathrm A,\\quad P=\\frac47(866)=494.857143\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "以输入电压为0°：I₁≈20∠90° A，I₂≈7.55907∠−49.1066° A，I≈15.11814∠70.8934° A；P=494.85714 W。",
+          "en": "With input voltage as 0°: I₁≈20∠90° A, I₂≈7.55907∠−49.1066° A, I≈15.11814∠70.8934° A; P=494.85714 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能简单把两支路电流都翻倍；频率翻倍时RL阻抗的实部不变，虚部翻倍。",
+            "en": "Do not double both branch currents: only the RL imaginary impedance doubles, while its resistance stays fixed."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "initial-parameter-recovery",
+          "I",
+          "I1",
+          "I2",
+          "average-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "originalRohm": 8.660508083140877,
+            "originalXLohm": 5.000146673120316,
+            "CF": 0.00031830054895684795,
+            "at100HzI": {
+              "real": 4.948571428571428,
+              "imag": 14.285295231949025,
+              "magnitude": 15.118135435549553,
+              "phaseDeg": 70.89339464913091
+            },
+            "at100HzI1": {
+              "real": 0.0,
+              "imag": 19.999413324728636,
+              "magnitude": 19.999413324728636,
+              "phaseDeg": 90.0
+            },
+            "at100HzI2": {
+              "real": 4.948571428571428,
+              "imag": -5.714118092779611,
+              "magnitude": 7.559067717774776,
+              "phaseDeg": -49.106605350869096
+            },
+            "at100HzPowerW": 494.85714285714283,
+            "appendixPowerW": 494.93,
+            "check": "Derive physical R,L,C from exactly 866 W, rebuild at both frequencies and check original equal-current conditions and power. Exact 866 W gives 494.8571429 W, not the printed 494.93 W."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "电容C与串联R、L两支路并联，I₁经过C，I₂经过RL。",
+            "en": "C is parallel with a series R,L branch; I₁ flows through C and I₂ through RL."
+          }
+        },
+        "figure": "ca-7-43-figure.png"
+      },
+      "CA-7-44": {
+        "id": "CA-7-44",
+        "bookId": "7-44",
+        "title": {
+          "zh": "复功率角就是阻抗角",
+          "en": "Complex-power angle equals impedance angle"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-36"
+        },
+        "statement": {
+          "zh": "已知题图7-36所示无源单口网络N的端口电压$\\dot U=100\\angle30^\\circ\\,\\mathrm V$，网络的复功率$S=1000\\angle30^\\circ\\,\\mathrm{VA}$。求该单口网络的阻抗Z。",
+          "en": "The passive one-port in Fig. 7-36 has U=100∠30° V and complex power S=1000∠30° VA. Find Z."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "S=U I*，由模先得I=10 A，再用Z=S/I²。不能把复功率当成1000 W纯有功。",
+          "en": "Use S=U I*. Magnitudes give I=10 A, then Z=S/I². The stated 1000 VA is not purely active power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求电流和阻抗",
+              "en": "Find current and impedance"
+            },
+            "text": {
+              "zh": "电流相位为φ_U−φ_S=0°。",
+              "en": "Current phase is φ_U−φ_S=0°."
+            },
+            "formula": "\\dot I=10\\angle0^\\circ\\,\\mathrm A,\\qquad Z=\\frac{S}{I^2}=10\\angle30^\\circ\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "Z=10∠30° Ω=5√3+j5 Ω。",
+          "en": "Z=10∠30° Ω=5√3+j5 Ω."
+        },
+        "pitfalls": [
+          {
+            "zh": "S=U I*含共轭；若漏共轭，阻抗相角会错。",
+            "en": "Retain the conjugate in S=U I* or the angle will be wrong."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "impedance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "currentA": {
+              "real": 9.999999999999998,
+              "imag": -2.8259062743394134e-16,
+              "magnitude": 9.999999999999998,
+              "phaseDeg": -1.6191250281918697e-15
+            },
+            "Zohm": {
+              "real": 8.660254037844389,
+              "imag": 5.0,
+              "magnitude": 10.000000000000002,
+              "phaseDeg": 29.999999999999993
+            },
+            "check": "S=U conjugate(I), reconstructed voltage/current and S=|I|²Z."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "N为无源单口，电流从上端流入，上端电压为正。",
+            "en": "N is passive with current entering its positive top port."
+          }
+        },
+        "figure": "ca-7-44-figure.png"
+      },
+      "CA-7-45": {
+        "id": "CA-7-45",
+        "bookId": "7-45",
+        "title": {
+          "zh": "等模不等于同相：先找三角形相角",
+          "en": "Equal current magnitudes do not mean equal phases"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-37"
+        },
+        "statement": {
+          "zh": "某单口网络如题图7-37所示，已知电流有效值$I_1=I_2=I=10\\,\\mathrm A$，求该单口网络的复功率S。",
+          "en": "For Fig. 7-37, RMS magnitudes I₁=I₂=I=10 A. Find the one-port complex power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "I₁是纯电感支路，I₂是电容和8 Ω电阻的合流。I₂与I₁相差120°，因此I₂相对电压超前30°。",
+          "en": "I₁ is the pure-inductor branch and I₂ is the parallel C plus 8 Ω current. Their 120° separation makes I₂ lead voltage by 30°."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "恢复三个电流的分量",
+              "en": "Recover current components"
+            },
+            "text": {
+              "zh": "以端压为实轴，I₁=−j10 A，I₂实部为5√3 A、虚部+j5 A。",
+              "en": "Using port voltage as reference gives I₁=−j10 A and I₂=5√3+j5 A."
+            },
+            "formula": "\\dot I_2=5\\sqrt3+j5\\,\\mathrm A,\\quad U=8(5\\sqrt3)=40\\sqrt3\\,\\mathrm V,\\quad\\dot I=5\\sqrt3-j5\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "求输入复功率",
+              "en": "Find input complex power"
+            },
+            "text": {
+              "zh": "总电流虚部为负，网络整体为感性。",
+              "en": "Negative input-current imaginary part means an inductive total."
+            },
+            "formula": "S=U\\dot I^*=600+j200\\sqrt3\\,\\mathrm{VA}"
+          }
+        ],
+        "answer": {
+          "zh": "S=(600+j200√3) VA，P=600 W，Q=200√3 var。",
+          "en": "S=(600+j200√3) VA, P=600 W and Q=200√3 var."
+        },
+        "pitfalls": [
+          {
+            "zh": "三个10 A只指有效值模，不能代成相同的实数相量。",
+            "en": "The three 10 A values are magnitudes, not identical real phasors."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "complex-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "inputV": 69.28203230275508,
+            "complexPowerVA": {
+              "real": 599.9999999999999,
+              "imag": 346.4101615137754,
+              "magnitude": 692.8203230275508,
+              "phaseDeg": 30.000000000000004
+            },
+            "check": "All three 10 A magnitudes, resistor 8 ohm current and original node KCL."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "L、C、8 Ω并联，I₁流入L，I₂继续流向C和电阻，I为总输入。",
+            "en": "L, C and 8 Ω are parallel. I₁ enters L, I₂ feeds C and R, and I is total input."
+          }
+        },
+        "figure": "ca-7-45-figure.png"
+      },
+      "CA-7-46": {
+        "id": "CA-7-46",
+        "bookId": "7-46",
+        "title": {
+          "zh": "诺顿源转端口后做共轭匹配",
+          "en": "Reduce the Norton-fed port before conjugate matching"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-38"
+        },
+        "statement": {
+          "zh": "正弦交流电路如题图7-38所示，试求负载Z_L取何值时可获得最大功率？最大功率是多少？",
+          "en": "For Fig. 7-38, find Z_L for maximum absorbed power and the maximum power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "10∠0° A源先与2 Ω并联，再经另一2 Ω到端口；端口已有j4 Ω并联。匹配前必须把j4 Ω计入内阻。",
+          "en": "A 10∠0° A Norton source has a 2 Ω shunt, then 2 Ω series to the port, which also has j4 Ω. Include that shunt in the port impedance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "端口开压与内阻",
+              "en": "Find open voltage and port impedance"
+            },
+            "text": {
+              "zh": "电流源置零为开路，端口看见4 Ω与j4 Ω并联。",
+              "en": "Opening the zeroed current source leaves 4 Ω parallel with j4 Ω."
+            },
+            "formula": "Z_{th}=4\\parallel j4=2+j2\\,\\Omega,\\qquad\\dot U_{oc}=20\\frac{j4}{4+j4}=10+j10\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "共轭匹配与最大功率",
+              "en": "Conjugate match and maximum power"
+            },
+            "text": {
+              "zh": "允许一般复负载时，Z_L取Z_th的共轭。开路电压为有效值相量。",
+              "en": "For an unrestricted complex load, match the conjugate. Open voltage is RMS."
+            },
+            "formula": "Z_L=2-j2\\,\\Omega,\\qquad P_{max}=\\frac{|U_{oc}|^2}{4\\Re Z_{th}}=25\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "Z_L=(2−j2) Ω，P_max=25 W。",
+          "en": "Z_L=(2−j2) Ω and P_max=25 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能只把两个2 Ω相加当作端口阻抗；原j4 Ω仍是内网络。",
+            "en": "The two resistors alone are not the whole port impedance; retain the j4 Ω shunt."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "load",
+          "max-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "openVoltageV": {
+              "real": 10.0,
+              "imag": 10.0,
+              "magnitude": 14.142135623730951,
+              "phaseDeg": 45.0
+            },
+            "Zthohm": {
+              "real": 2.0,
+              "imag": 2.0,
+              "magnitude": 2.8284271247461903,
+              "phaseDeg": 45.0
+            },
+            "ZLohm": {
+              "real": 2.0,
+              "imag": -2.0,
+              "magnitude": 2.8284271247461903,
+              "phaseDeg": -45.0
+            },
+            "maxPowerW": 25.000000000000004,
+            "check": "Loaded original-node KCL under conjugate match; P formula uses RMS voltage."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "10 A源并联2 Ω，再串2 Ω到a；j4 Ω与负载均跨a、b。",
+            "en": "A 10 A source shunted by 2 Ω feeds series 2 Ω to a; j4 Ω and the load both span a,b."
+          }
+        },
+        "figure": "ca-7-46-figure.png"
+      },
+      "CA-7-47": {
+        "id": "CA-7-47",
+        "bookId": "7-47",
+        "title": {
+          "zh": "电容并联内阻的共轭负载为感性",
+          "en": "The conjugate of a capacitive port is inductive"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-39"
+        },
+        "statement": {
+          "zh": "求题图7-39所示正弦交流电路中负载Z_L获得最大功率时的值。若$\\dot U_s=\\sqrt2\\angle45^\\circ\\,\\mathrm V$，试求负载所获得的最大功率。",
+          "en": "Find Z_L for maximum power in Fig. 7-39. If U_s=√2∠45° V, find the maximum load power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "源串1 Ω，端口并联−j1 Ω；内阻为1∥(−j1)，不是1−j1。",
+          "en": "The source feeds series 1 Ω with a −j1 Ω port shunt. The internal impedance is their parallel combination."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求戴维南参数",
+              "en": "Find Thevenin parameters"
+            },
+            "text": {
+              "zh": "开路负载后电容仍存在，按分压求端口开压。",
+              "en": "The capacitor remains when the load is open; use its divider voltage."
+            },
+            "formula": "Z_{th}=\\frac1{1+j}=0.5-j0.5\\,\\Omega,\\qquad\\dot U_{oc}=\\dot U_s\\frac{-j}{1-j}=1\\angle0^\\circ\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "负载与功率",
+              "en": "Load and power"
+            },
+            "text": {
+              "zh": "源给的是有效值相量√2 V，开压为1 V有效值。",
+              "en": "The given √2 V source phasor is RMS, producing 1 V RMS open voltage."
+            },
+            "formula": "Z_L=0.5+j0.5\\,\\Omega,\\qquad P_{max}=\\frac{1^2}{4(0.5)}=0.5\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "Z_L=(0.5+j0.5) Ω，P_max=0.5 W。",
+          "en": "Z_L=(0.5+j0.5) Ω and P_max=0.5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "匹配是共轭，不是原阻抗本身；源相位不影响最大功率数值。",
+            "en": "Use the conjugate rather than the original impedance. Source phase does not affect maximum active power."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "load",
+          "max-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "openVoltageV": {
+              "real": 1.0,
+              "imag": -1.1102230246251565e-16,
+              "magnitude": 1.0,
+              "phaseDeg": -6.3611093629270335e-15
+            },
+            "Zthohm": {
+              "real": 0.5,
+              "imag": -0.5,
+              "magnitude": 0.7071067811865476,
+              "phaseDeg": -45.0
+            },
+            "ZLohm": {
+              "real": 0.5,
+              "imag": 0.5,
+              "magnitude": 0.7071067811865476,
+              "phaseDeg": 45.0
+            },
+            "maxPowerW": 0.5
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "源经1 Ω到端口，−j1 Ω与负载并联。",
+            "en": "Source series 1 Ω feeds a port with parallel −j1 Ω and load."
+          }
+        },
+        "figure": "ca-7-47-figure.png"
+      },
+      "CA-7-48": {
+        "id": "CA-7-48",
+        "bookId": "7-48",
+        "title": {
+          "zh": "先把并联电容算进内阻，再加串联电感",
+          "en": "Include the shunt capacitor before adding the series inductor"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 190,
+          "figurePdfPage": 199,
+          "figure": "题图7-40"
+        },
+        "statement": {
+          "zh": "某正弦交流电路如题图7-40所示，问负载Z_L取何值时可获得最大功率？并求此最大功率P_max。",
+          "en": "For Fig. 7-40, find the maximizing Z_L and maximum power P_max."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "50∠0° V源经30 Ω到中点，中点−j10 Ω接地，再经j5 Ω到负载。",
+          "en": "A 50∠0° V source feeds 30 Ω, a −j10 Ω shunted midpoint, then j5 Ω to the load."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "开路与测试内阻",
+              "en": "Open circuit and port impedance"
+            },
+            "text": {
+              "zh": "负载开路使j5 Ω无电流，但测试内阻时j5 Ω仍串联。",
+              "en": "The open load makes j5 Ω carry no current, but it remains in series in the port impedance."
+            },
+            "formula": "\\dot U_{oc}=50\\frac{-j10}{30-j10}=5-j15\\,\\mathrm V,\\qquad Z_{th}=j5+(30\\parallel(-j10))=3-j4\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "共轭匹配",
+              "en": "Conjugate match"
+            },
+            "text": {
+              "zh": "最大功率由有效值开压模平方计算。",
+              "en": "Use the RMS open-voltage magnitude squared."
+            },
+            "formula": "Z_L=3+j4\\,\\Omega,\\qquad P_{max}=\\frac{5^2+15^2}{4(3)}=\\frac{125}{6}\\,\\mathrm W\\approx20.8333\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "Z_L=(3+j4) Ω，P_max=125/6 W≈20.8333 W。",
+          "en": "Z_L=(3+j4) Ω and P_max=125/6 W≈20.8333 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "求内阻时独立电压源短路，30 Ω与电容并联；开路压却不能把源置零。",
+            "en": "Short the source for impedance, putting 30 Ω parallel with C. Keep the source active for open voltage."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "load",
+          "max-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "openVoltageV": {
+              "real": 4.999999999999999,
+              "imag": -14.999999999999998,
+              "magnitude": 15.811388300841895,
+              "phaseDeg": -71.56505117707799
+            },
+            "Zthohm": {
+              "real": 2.9999999999999996,
+              "imag": -4.0,
+              "magnitude": 5.0,
+              "phaseDeg": -53.13010235415599
+            },
+            "ZLohm": {
+              "real": 2.9999999999999996,
+              "imag": 4.0,
+              "magnitude": 5.0,
+              "phaseDeg": 53.13010235415599
+            },
+            "maxPowerW": 20.83333333333333
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "50 V源、30 Ω、并联−j10 Ω节点，再串j5 Ω到负载。",
+            "en": "50 V source, 30 Ω, a −j10 Ω shunt node, then j5 Ω to the load."
+          }
+        },
+        "figure": "ca-7-48-figure.png"
+      },
+      "CA-7-49": {
+        "id": "CA-7-49",
+        "bookId": "7-49",
+        "title": {
+          "zh": "受控源控制极性和独立源反极性都要保留",
+          "en": "Retain both the control polarity and the reversed independent source"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 191,
+          "figurePdfPage": 200,
+          "figure": "题图7-41"
+        },
+        "statement": {
+          "zh": "试求题图7-41所示正弦交流电路中负载Z_L获得最大功率的条件及获得的最大功率。",
+          "en": "For Fig. 7-41, find the load condition for maximum power and that power."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "中间2 Ω上端为−、下端为+定义U_A；其下4∠0° V源也是上−下+。左受控电压源为上+下−、值U_A。",
+          "en": "U_A is defined bottom-positive across the middle 2 Ω. Its lower 4∠0° V source is also bottom-positive. The left controlled voltage source U_A is top-positive."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从原极性求开路电压",
+              "en": "Find open voltage with original polarities"
+            },
+            "text": {
+              "zh": "令下端公共点为0，中间独立源上端−4 V，中间上节点V，控制量U_A=−4−V，左节点也等于U_A。",
+              "en": "Ground the bottom node. The independent-source top is −4 V. If the upper node is V, then U_A=−4−V and the left node equals U_A."
+            },
+            "formula": "\\frac{V-(-4-V)}{j4}+\\frac{V+4}{2}=0\\quad\\Rightarrow\\quad\\dot U_{oc}=V=-3-j1\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "保留受控源求端口内阻",
+              "en": "Retain control for port impedance"
+            },
+            "text": {
+              "zh": "独立4 V源短路后，左节点变为−V；中间节点的等效导纳为1/2+2/(j4)，再串−j2 Ω。",
+              "en": "Short the independent source, making the left node −V. The middle-node admittance is 1/2+2/(j4), in series with −j2 Ω."
+            },
+            "formula": "Z_{th}=\\frac1{1/2+2/(j4)}-j2=1-j1\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "匹配并复查原负载状态",
+              "en": "Match and recheck the original loaded state"
+            },
+            "text": {
+              "zh": "独立求原图带匹配负载的节点方程复得2.5 W。",
+              "en": "The independently solved original loaded circuit reproduces 2.5 W."
+            },
+            "formula": "Z_L=1+j1\\,\\Omega,\\qquad P_{max}=\\frac{|-3-j1|^2}{4(1)}=2.5\\,\\mathrm W"
+          }
+        ],
+        "answer": {
+          "zh": "Z_L=(1+j1) Ω，P_max=2.5 W。",
+          "en": "Z_L=(1+j1) Ω and P_max=2.5 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把受控源置零，也不能把中间独立源误读为上端+4 V；这会改变开压。",
+            "en": "Do not zero the dependent source or misread the middle source top as +4 V."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "load",
+          "max-power"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "openVoltageV": {
+              "real": -3.0,
+              "imag": -1.0,
+              "magnitude": 3.1622776601683795,
+              "phaseDeg": -161.565051177078
+            },
+            "Zthohm": {
+              "real": 1.0,
+              "imag": -1.0,
+              "magnitude": 1.4142135623730951,
+              "phaseDeg": -45.0
+            },
+            "ZLohm": {
+              "real": 1.0,
+              "imag": 1.0,
+              "magnitude": 1.4142135623730951,
+              "phaseDeg": 45.0
+            },
+            "maxPowerW": 2.5,
+            "check": "Original dependent-source and reversed independent-source polarities retained in open and loaded node equations."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "左受控U_A源经j4 Ω到中点；中点经2 Ω和反向4 V源接地，经−j2 Ω到负载。",
+            "en": "The left controlled U_A source reaches the midpoint through j4 Ω. The midpoint has 2 Ω above a reversed 4 V source and −j2 Ω to the load."
+          }
+        },
+        "figure": "ca-7-49-figure.png"
+      },
+      "CA-7-50": {
+        "id": "CA-7-50",
+        "bookId": "7-50",
+        "title": {
+          "zh": "共轭匹配转换成物理并联RL",
+          "en": "Translate conjugate matching into a physical parallel RL load"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 190,
+          "pdfPage": 199,
+          "figurePrintedPage": 191,
+          "figurePdfPage": 200,
+          "figure": "题图7-42"
+        },
+        "statement": {
+          "zh": "试用最大功率传输定理证明：当题图7-42所示正弦交流电路中负载A获得最大功率时，负载由R与L并联组成，且$L=1/(\\omega^2C)$，所获得的最大功率为$U_m^2/(8R)$。",
+          "en": "Use the maximum-power theorem to show that the maximizing load A in Fig. 7-42 is a parallel R and L with L=1/(ω²C), and maximum power U_m²/(8R)."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "源U_m cosωt给的是峰值。端口内阻为R∥C，取共轭后再看导纳，恰为R并联电感。",
+          "en": "The source U_m cosωt specifies peak amplitude. Conjugate the R∥C port impedance, then inspect its admittance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求端口参数",
+              "en": "Find port parameters"
+            },
+            "text": {
+              "zh": "假设R、C、ω均为正，令x=ωRC。",
+              "en": "Assume positive R, C and ω, and let x=ωRC."
+            },
+            "formula": "Z_{th}=\\frac R{1+jx},\\qquad\\dot U_{oc}=\\frac{U_m/\\sqrt2}{1+jx}"
+          },
+          {
+            "title": {
+              "zh": "把匹配阻抗变为导纳",
+              "en": "Translate matched impedance into admittance"
+            },
+            "text": {
+              "zh": "共轭匹配后的负载导纳是1/R−jωC，与并联RL的1/R+1/(jωL)比较。",
+              "en": "The matched-load admittance is 1/R−jωC. Compare with the parallel-RL admittance."
+            },
+            "formula": "Y_A=\\frac1{Z_{th}^*}=\\frac1R-j\\omega C=\\frac1R+\\frac1{j\\omega L}\\quad\\Rightarrow\\quad L=\\frac1{\\omega^2C}"
+          },
+          {
+            "title": {
+              "zh": "约去同一频率因子",
+              "en": "Cancel the common frequency factor"
+            },
+            "text": {
+              "zh": "开压模平方含1/(1+x²)，内阻实部也含同一因子。",
+              "en": "Both open-voltage magnitude squared and the port resistance contain 1/(1+x²)."
+            },
+            "formula": "P_{max}=\\frac{U_m^2/[2(1+x^2)]}{4R/(1+x^2)}=\\frac{U_m^2}{8R}"
+          }
+        ],
+        "answer": {
+          "zh": "负载A为R∥L，L=1/(ω²C)，P_max=U_m²/(8R)，U_m为源峰值。",
+          "en": "A is R∥L with L=1/(ω²C), and P_max=U_m²/(8R), where U_m is source peak."
+        },
+        "pitfalls": [
+          {
+            "zh": "若把U_m当有效值，功率将错一倍；并联负载的电阻确为R，但等效串联实部一般不是R。",
+            "en": "Treating U_m as RMS doubles power. The parallel load resistor is R, while its series-equivalent real part differs."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "load-topology",
+          "inductance-proof",
+          "power-proof"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "parallelLoadR": "R",
+            "parallelLoadL": "1/(omega² C)",
+            "maximumPower": "Um²/(8R)",
+            "check": "Three independent parameter sets reconstruct the physical parallel-RL load and verify conjugate match and power with peak-to-RMS conversion."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "U_m cosωt源串R后接电容C与负载A并联。",
+            "en": "A U_m cosωt source feeds series R before parallel C and load A."
+          }
+        },
+        "figure": "ca-7-50-figure.png"
+      },
+      "CA-7-51": {
+        "id": "CA-7-51",
+        "bookId": "7-51",
+        "title": {
+          "zh": "线损反求电流，再按负载端补偿无功",
+          "en": "Infer current from line loss, then compensate load-side reactive power"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 191,
+          "pdfPage": 200
+        },
+        "statement": {
+          "zh": "电源通过一条阻抗为$(0.08+j0.25)\\,\\Omega$的传输线给一个感性负载供电。已知电源频率为50 Hz，负载端电压为$220\\angle0^\\circ\\,\\mathrm V$、功率为12 kW。若传输线功率损耗为560 W，试求负载的阻抗角。如果要求负载的功率因数提高到0.9（电感性），需并联多大的电容？",
+          "en": "A source supplies an inductive load through a line of impedance (0.08+j0.25) Ω at 50 Hz. Load voltage is 220∠0° V and active power 12 kW; line active loss is 560 W. Find the load impedance angle and shunt C for a load power factor of 0.9 lagging."
+        },
+        "prerequisites": {
+          "zh": "有效值相量、KCL/KVL、复功率与元件参考方向；拓展题按范围标签阅读。",
+          "en": "RMS phasors, KCL/KVL, complex power and element references; follow the scope labels for extensions."
+        },
+        "recognition": {
+          "zh": "线损只用线路电阻0.08 Ω求I²R；负载功率因数只用负载端220 V和12 kW，不混入线路复功率。",
+          "en": "Use only the line resistance 0.08 Ω in its I²R loss. For load power factor use load-side 220 V and 12 kW, excluding line power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由线损得负载电流",
+              "en": "Find load current from line loss"
+            },
+            "text": {
+              "zh": "给定线损为有功，线路j0.25 Ω不计入此式。",
+              "en": "The loss is active power, so j0.25 Ω does not enter this equation."
+            },
+            "formula": "I=\\sqrt{\\frac{560}{0.08}}=\\sqrt{7000}\\,\\mathrm A\\approx83.6660\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "负载阻抗角",
+              "en": "Load impedance angle"
+            },
+            "text": {
+              "zh": "感性取正角。",
+              "en": "Choose the positive inductive angle."
+            },
+            "formula": "\\cos\\phi=\\frac{12000}{220\\sqrt{7000}}\\approx0.651943,\\qquad\\phi\\approx49.3118^\\circ"
+          },
+          {
+            "title": {
+              "zh": "按目标负载功率因数补偿",
+              "en": "Compensate to the target load factor"
+            },
+            "text": {
+              "zh": "原负载无功约13957.077 var，目标无功为P tan(arccos0.9)，两者差由并联C提供。在给定负载工作点使用220 V；不能把源端电压代入。",
+              "en": "Original load reactive power is about 13957.077 var. The capacitor supplies the difference from P tan(arccos0.9). Use the given 220 V load-side operating voltage."
+            },
+            "formula": "C=\\frac{P(\\tan\\phi-\\tan(\\arccos0.9))}{(2\\pi50)(220)^2}\\approx535.682\\,\\mathrm{\\mu F}"
+          }
+        ],
+        "answer": {
+          "zh": "负载阻抗角φ≈49.3118°；并联C≈535.682 μF（约536 μF），目标为负载侧0.9滞后。",
+          "en": "Load angle φ≈49.3118°; shunt C≈535.682 μF (about 536 μF) gives the target load-side 0.9 lagging factor."
+        },
+        "pitfalls": [
+          {
+            "zh": "补偿负载功率因数与补偿电源端功率因数不是同一问题；电容所接位置的电压应取负载端电压。",
+            "en": "Load-side and source-side power-factor targets differ. Use the voltage at the actual capacitor connection."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "angle",
+          "shunt-capacitance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "依据原图以独立节点/端口测试、时域重构或复功率平衡复核；具体数值、参数限制和附录差异见核验结果。",
+            "en": "Independently verified from original-topology node or port tests, time reconstruction or complex-power balance; numerical values, parameter limits and appendix differences are recorded below."
+          },
+          "results": {
+            "loadRmsCurrentA": 83.66600265340756,
+            "originalPowerFactor": 0.6519428778187601,
+            "originalAngleDeg": 49.311752795871726,
+            "originalReactiveVar": 13957.077057894321,
+            "parallelCF": 0.0005356821158987537,
+            "check": "Line I²R loss, load complex-power triangle and compensated load factor 0.9 are independently reconstructed. Voltage used is load-side 220 V."
+          },
+          "appendixPrintedPage": 338,
+          "appendixPdfPage": 347,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "保留原题数值计算：7-28的L为19.0986 mH（附录0.02 H为粗略值）；7-33/34严格角度与常见舍入值分别说明；7-43按866 W得494.8571 W而非附录494.93 W。其余对应结果与附录相符；7-50附录未列。",
+              "en": "Original numerical data are retained: 7-28 gives 19.0986 mH versus the coarse 0.02 H listing; 7-33/34 distinguish literal angles and rounded values; 7-43 gives 494.8571 W from 866 W, rather than the printed 494.93 W. Other listed results agree; 7-50 is not listed."
+            }
+          }
+        }
       }
     }
   },
