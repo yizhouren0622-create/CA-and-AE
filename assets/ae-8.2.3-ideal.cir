@@ -1,0 +1,22 @@
+8.2.3 non-inverting amplifier, Rf47k R1=5.1k, +/-15V, 27C
+Vin inp 0 DC 0 AC 1 SIN(0 10m 1k)
+Vp vp 0 15
+Vn vn 0 -15
+Rf out inv 47k
+R1 inv 0 5.1k
+.options temp=27
+Eamp out 0 inp inv 1e6
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+print v(out) v(inv)
+ac dec 40 .1 10meg
+let gain=v(out)
+let ao=v(out)/(v(inp)-v(inv))
+wrdata ae-8.2.3-ideal-ac.dat gain ao
+tran 5u 10m
+wrdata ae-8.2.3-ideal-tran.dat v(inp) v(out)
+.endc
+.end

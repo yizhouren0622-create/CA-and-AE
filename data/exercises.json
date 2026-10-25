@@ -30507,8 +30507,8 @@
         "pdfPage": 381,
         "priorityHomework": true,
         "assignedNote": "8.1.1",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.2",
@@ -30518,8 +30518,8 @@
         "pdfPage": 381,
         "priorityHomework": true,
         "assignedNote": "8.1.2",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.3",
@@ -30528,8 +30528,8 @@
         "printedPage": 350,
         "pdfPage": 383,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.4",
@@ -30538,8 +30538,8 @@
         "printedPage": 350,
         "pdfPage": 383,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.5",
@@ -30548,8 +30548,8 @@
         "printedPage": 350,
         "pdfPage": 383,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.6",
@@ -30558,8 +30558,8 @@
         "printedPage": 350,
         "pdfPage": 383,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.7",
@@ -30569,8 +30569,8 @@
         "pdfPage": 384,
         "priorityHomework": true,
         "assignedNote": "8.1.7",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.1.8",
@@ -30579,8 +30579,8 @@
         "printedPage": 352,
         "pdfPage": 385,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.2.1",
@@ -30590,8 +30590,8 @@
         "pdfPage": 385,
         "priorityHomework": true,
         "assignedNote": "8.2.1",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.2.2",
@@ -30600,8 +30600,8 @@
         "printedPage": 352,
         "pdfPage": 385,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.2.3",
@@ -30610,8 +30610,8 @@
         "printedPage": 352,
         "pdfPage": 385,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.1",
@@ -30620,8 +30620,8 @@
         "printedPage": 352,
         "pdfPage": 385,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.2",
@@ -30630,8 +30630,8 @@
         "printedPage": 352,
         "pdfPage": 385,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.3",
@@ -30640,8 +30640,8 @@
         "printedPage": 353,
         "pdfPage": 386,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.4",
@@ -30650,8 +30650,8 @@
         "printedPage": 353,
         "pdfPage": 386,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.5",
@@ -30660,8 +30660,8 @@
         "printedPage": 353,
         "pdfPage": 386,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.6",
@@ -30670,8 +30670,8 @@
         "printedPage": 353,
         "pdfPage": 386,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.7",
@@ -30680,8 +30680,8 @@
         "printedPage": 354,
         "pdfPage": 387,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.8",
@@ -30690,8 +30690,8 @@
         "printedPage": 354,
         "pdfPage": 387,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.3.9",
@@ -30700,8 +30700,8 @@
         "printedPage": 354,
         "pdfPage": 387,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.1",
@@ -30711,8 +30711,8 @@
         "pdfPage": 387,
         "priorityHomework": true,
         "assignedNote": "8.4.1（闭环电压增益）",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority",
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope",
         "assignedNoteEn": "8.4.1 (closed-loop voltage gain)"
       },
       {
@@ -30722,8 +30722,8 @@
         "printedPage": 354,
         "pdfPage": 387,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.3",
@@ -30733,8 +30733,8 @@
         "pdfPage": 388,
         "priorityHomework": true,
         "assignedNote": "8.4.3",
-        "scopeLabelZh": "指定作业（指定小问优先）",
-        "scopeLabelEn": "assigned exercise; stated subparts take priority"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.4",
@@ -30743,8 +30743,8 @@
         "printedPage": 355,
         "pdfPage": 388,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.5",
@@ -30753,8 +30753,8 @@
         "printedPage": 355,
         "pdfPage": 388,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.6",
@@ -30763,8 +30763,8 @@
         "printedPage": 355,
         "pdfPage": 388,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.4.7",
@@ -30773,8 +30773,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "考试范围内",
+        "scopeLabelEn": "in exam scope"
       },
       {
         "id": "AE-8.5.1",
@@ -30783,8 +30783,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.5.2",
@@ -30793,8 +30793,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.5.3",
@@ -30803,8 +30803,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.5.4",
@@ -30813,8 +30813,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.6.1",
@@ -30823,8 +30823,8 @@
         "printedPage": 356,
         "pdfPage": 389,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.6.2",
@@ -30833,8 +30833,8 @@
         "printedPage": 357,
         "pdfPage": 390,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.6.3",
@@ -30843,8 +30843,8 @@
         "printedPage": 357,
         "pdfPage": 390,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-8.6.4",
@@ -30853,8 +30853,8 @@
         "printedPage": 357,
         "pdfPage": 390,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "范围外拓展",
+        "scopeLabelEn": "outside-scope extension"
       },
       {
         "id": "AE-9.1.1",
@@ -48218,6 +48218,1461 @@
           ]
         },
         "figure": "ae-5.2.9-figure.png"
+      },
+      "AE-8.1.3": {
+        "id": "AE-8.1.3",
+        "bookId": "8.1.3",
+        "title": {
+          "zh": "信号源内阻怎样影响反馈",
+          "en": "How source resistance affects feedback"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 350,
+          "pdfPage": 383,
+          "figure": "图题8.1.3"
+        },
+        "statement": {
+          "zh": "在图题8.1.3所示的两个电路中，从反馈的效果来考虑，对信号源内阻Rsi的大小有何要求？分别讨论(a)、(b)。",
+          "en": "For circuits(a) and(b) in Fig.8.1.3, what source resistance Rsi is desirable from the viewpoint of feedback effectiveness?"
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "串联混合宜电压驱动，并联混合宜电流驱动；这里比较的是反馈效果，并非固定电压源的输出幅值。",
+          "en": "Series mixing favors voltage drive; shunt mixing favors current drive. Feedback effectiveness and output amplitude for a fixed voltage source are different questions."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)电压串联：内阻小",
+              "en": "(a) Voltage-series: small source resistance"
+            },
+            "text": {
+              "zh": "反馈电压与输入电压在运放差分端相减。希望信号源接近理想电压源，使输入分压和串联压降尽量小，通常要求Rsi远小于闭环输入电阻。理想运放输入电流为零时，有限Rsi本身无压降，此结论是一般实际电路的驱动要求。",
+              "en": "Feedback and signal voltages are subtracted at the differential input. A nearly ideal voltage source minimizes input attenuation, so Rsi should be much smaller than closed-loop input resistance. For an ideal zero-input-current op amp, finite Rsi causes no drop."
+            },
+            "formula": "R_{si}\\ll R_{if}"
+          },
+          {
+            "title": {
+              "zh": "(b)电压并联：内阻大",
+              "en": "(b) Voltage-shunt: large source resistance"
+            },
+            "text": {
+              "zh": "令信号电压源为零后，输出经Rf和Rsi返回反相端；较大的Rsi使返回电压比例更大。等效诺顿源也更接近电流源。因此从并联反馈效果看应取较大Rsi。固定vs时输入电流与电压增益会随Rsi改变，不能把“大”理解为输出必然增大。",
+              "en": "With the signal voltage zeroed, Rf and Rsi divide the output at the inverting input. Increasing Rsi strengthens the returned voltage and approaches Norton current drive. With fixed vs, input current and voltage gain also change; larger Rsi does not imply a larger output."
+            },
+            "formula": "F=\\frac{R_{si}}{R_{si}+R_f},\\qquad A_{vf}=\\frac{-A R_f}{R_f+(1+A)R_{si}}"
+          }
+        ],
+        "answer": {
+          "zh": "(a)宜小内阻电压源；(b)从并联反馈效果看宜大内阻电流源。",
+          "en": "(a) Prefer low-resistance voltage drive; (b) prefer high-resistance current drive for effective shunt feedback."
+        },
+        "pitfalls": [
+          {
+            "zh": "不要用反相电压放大器增益随Rsi减小而增大，反推“并联反馈也应小内阻”；那比较的是另一指标。",
+            "en": "The increasing magnitude of inverting voltage gain as Rsi falls is a different metric from shunt feedback effectiveness."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.1.3-figure.png"
+      },
+      "AE-8.1.4": {
+        "id": "AE-8.1.4",
+        "bookId": "8.1.4",
+        "title": {
+          "zh": "未旁路源极电阻就是反馈元件",
+          "en": "An unbypassed source resistor supplies feedback"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 350,
+          "pdfPage": 383,
+          "figure": "图题8.1.4"
+        },
+        "statement": {
+          "zh": "指出图题8.1.4所示电路中的反馈元件，并说明引入了何种组态的反馈。",
+          "en": "Identify the feedback element in Fig.8.1.4 and classify the feedback topology."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "沿漏极电流增大的扰动追踪源极电压，再看净栅源电压是否减小。",
+          "en": "Trace an increase in drain current to source voltage and then to the gate-source error."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "取样电流并串联相减",
+              "en": "Sample current and subtract in series"
+            },
+            "text": {
+              "zh": "Rs未被电容旁路。忽略栅极电流时源极电流等于漏极电流，其增大使源极电压上升，净栅源电压减小，抑制原电流增大。因此Rs引入电流串联负反馈；直流和交流都存在。",
+              "en": "Rs is unbypassed. With zero gate current, source and drain currents are equal. Increased current raises source voltage, reducing gate-source drive and opposing the change. Rs gives current-series negative feedback at both DC and AC."
+            },
+            "formula": "v_f=i_dR_s,\\quad v_{gs}=v_i-v_f"
+          },
+          {
+            "title": {
+              "zh": "用小信号方程复核极性",
+              "en": "Check the sign with the incremental equation"
+            },
+            "text": {
+              "zh": "中频耦合电容短路、电源交流接地、忽略输出电导且无外接负载时，由漏电流方程得到下式。偏置分压电阻只设定栅极直流电位，不是该反馈通路。",
+              "en": "For midband coupling shorts, AC-grounded supplies, zero output conductance and no external load, the drain-current equation gives the result below. The gate divider sets bias and is not the feedback path."
+            },
+            "formula": "i_d=g_m(v_i-i_dR_s),\\qquad A_v=-\\frac{g_mR_d}{1+g_mR_s}"
+          }
+        ],
+        "answer": {
+          "zh": "反馈元件为Rs；组态为电流串联负反馈。",
+          "en": "Rs supplies current-series negative feedback."
+        },
+        "pitfalls": [
+          {
+            "zh": "输出电压在漏极取出，不等于反馈必然取样电压；判断要看返回通路实际感受的量。",
+            "en": "Taking output voltage at the drain does not make the feedback voltage-sampling; inspect the returned quantity."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.1.4-figure.png"
+      },
+      "AE-8.1.5": {
+        "id": "AE-8.1.5",
+        "bookId": "8.1.5",
+        "title": {
+          "zh": "先修正反馈极性，再核对受控量",
+          "en": "Fix polarity, then check the controlled quantity"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 350,
+          "pdfPage": 383,
+          "figure": "图题8.1.5"
+        },
+        "statement": {
+          "zh": "试指出图题8.1.5(a)、(b)所示电路能否实现规定的功能，若不能，应如何改正？(a)Avf=100的直流放大电路；(b)iL=vi/R的压控电流源。",
+          "en": "Can Fig.8.1.5(a),(b) implement their stated functions? If not, correct them: (a) a DC amplifier with gain100; (b) a voltage-controlled current source with iL=vi/R."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "虚短必须先有稳定负反馈；“采样点等于输入”后还要确认哪个电阻决定电流。",
+          "en": "A virtual short requires stable negative feedback; then identify which resistor actually sets the current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)原图为正反馈",
+              "en": "(a) Original circuit has positive feedback"
+            },
+            "text": {
+              "zh": "输出分压回同相端，输入却接反相端；不能形成所需线性直流增益。交换运放同相与反相端的连接：输入接同相端，R1、R2分压点接反相端。",
+              "en": "The output divider returns to the non-inverting input while the signal enters the inverting input. Swap these connections: signal to plus, divider to minus."
+            },
+            "formula": "A_{vf}\\approx1+\\frac{R_2}{R_1}=1+\\frac{99\\,\\mathrm{k\\Omega}}{1\\,\\mathrm{k\\Omega}}=100"
+          },
+          {
+            "title": {
+              "zh": "(b)原图控制的是负载电压",
+              "en": "(b) Original circuit regulates load voltage"
+            },
+            "text": {
+              "zh": "原负反馈令负载顶端等于vi，故原电流为vi/RL，不满足目标。交换串联支路中R与RL的位置：输出先经负载RL到反相取样点，再经R接地，同相端仍接vi。理想运放不吸取电流，负载电流即取样电阻电流。",
+              "en": "The original loop fixes load voltage to vi, giving vi/RL. Swap R and RL: output through RL to the inverting sense node, then through R to ground; plus remains at vi. Zero input current makes load and sense currents equal."
+            },
+            "formula": "v_-=v_i,\\quad i_L=\\frac{v_i}{R},\\quad v_o=v_i\\left(1+\\frac{R_L}{R}\\right)"
+          }
+        ],
+        "answer": {
+          "zh": "(a)交换运放两输入端连接；(b)交换R与RL位置，得到浮地负载的压控电流源。",
+          "en": "(a) Swap the op-amp input connections; (b) swap R and RL to obtain the intended floating-load current source."
+        },
+        "pitfalls": [
+          {
+            "zh": "修正后的负载不再一端接地；还必须满足运放输出摆幅、输出电流和稳定性限制，不能把理想表达式外推到饱和。",
+            "en": "The corrected load floats. Output swing, current capability and loop stability must still be respected."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a",
+          "b"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "corrected-circuits",
+            "alt": {
+              "zh": "两种修正电路：负反馈同相放大器及浮地负载电流源。",
+              "en": "Corrected non-inverting amplifier and floating-load current source."
+            },
+            "caption": {
+              "zh": "按原题目标重新连线；保留所有电阻与取样点。",
+              "en": "Connections corrected to meet the original specifications."
+            },
+            "figure": "ae-8.1.5-corrected.svg"
+          }
+        ],
+        "figure": "ae-8.1.5-figure.png"
+      },
+      "AE-8.1.8": {
+        "id": "AE-8.1.8",
+        "bookId": "8.1.8",
+        "title": {
+          "zh": "用级间相位选择能接成负反馈的两种组态",
+          "en": "Choose feasible feedback types from stage polarity"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 352,
+          "pdfPage": 385,
+          "figure": "图题8.1.8"
+        },
+        "statement": {
+          "zh": "图题8.1.8(a)、(b)分别是两个MOS管放大电路的交流通路。试分析两电路中各能引入下列反馈中的哪几种，并将反馈电阻Rf正确接入输入和输出回路：(1)电压串联负反馈；(2)电压并联负反馈；(3)电流并联负反馈；(4)电流串联负反馈。",
+          "en": "For the two MOS AC circuits in Fig.8.1.8(a),(b), determine which of (1) voltage-series, (2) voltage-shunt, (3) current-shunt and (4) current-series negative feedback can be introduced, and connect Rf correctly."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "先看门极扰动到末级漏极、源极的相位，再把取样送栅极（并联）或源极（串联）。",
+          "en": "Find the output drain/source polarities for a first-gate perturbation; return to the gate for shunt mixing or source for series mixing."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)三级共源，总电压反相",
+              "en": "(a) Three common-source stages invert voltage"
+            },
+            "text": {
+              "zh": "首级栅极上升，末级漏极③下降、源极④上升。电压并联负反馈：⑥接①、⑤接③；电流串联负反馈：⑥接②、⑤接④。前者使输入栅极变化被抵消，后者提高首级源极以减小净栅源电压。另两种接法为正反馈，不能选。",
+              "en": "A higher first gate lowers final drain③ and raises final source④. For voltage-shunt feedback connect⑥–① and⑤–③. For current-series feedback connect⑥–② and⑤–④. The other two topologies reinforce the error and are positive feedback."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(b)两级共源，总电压同相",
+              "en": "(b) Two common-source stages preserve voltage polarity"
+            },
+            "text": {
+              "zh": "首级栅极上升，末级漏极d2上升、源极s2下降。电压串联负反馈：A接s1、B接d2；电流并联负反馈：A接g1、B接s2。反馈电阻无极性，两端对调等效。源极电阻的电压代表末级电流取样，精确增益还需保留反馈网络的负载作用。",
+              "en": "A higher first gate raises d2 and lowers s2. Voltage-series: A–s1 and B–d2. Current-shunt: A–g1 and B–s2. Rf is nonpolar. Source-resistor voltage samples final-stage current; an exact gain calculation must also retain feedback loading."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "(a)可接电压并联与电流串联；(b)可接电压串联与电流并联。上述端点逐项对应四问。",
+          "en": "(a) Voltage-shunt and current-series; (b) voltage-series and current-shunt. The terminal connections above cover all four requested types."
+        },
+        "pitfalls": [
+          {
+            "zh": "三级与两级的总相位相反；只根据“输出回输入”而不作扰动检验，会把两种正反馈也选入。",
+            "en": "Odd and even stage counts have opposite polarities; returning output to input alone does not establish negative feedback."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.1.8-figure.png"
+      },
+      "AE-8.2.2": {
+        "id": "AE-8.2.2",
+        "bookId": "8.2.2",
+        "title": {
+          "zh": "嵌套反馈先列两个求和点",
+          "en": "Write both summing-node equations"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 352,
+          "pdfPage": 385,
+          "figure": "图题8.2.2"
+        },
+        "statement": {
+          "zh": "某负反馈放大电路的方框图如图题8.2.2所示，试推导其闭环增益xo/xi的表达式。",
+          "en": "Derive the closed-loop gain xo/xi for the nested-feedback block diagram in Fig.8.2.2."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "F1从最终输出回第一个求和点，F2回第二个；两者的前向通路不同。",
+          "en": "F1 returns the final output to the first summing node; F2 returns to the second, so their forward paths differ."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "直接代入求和关系",
+              "en": "Substitute the summing equations"
+            },
+            "text": {
+              "zh": "两个反馈支路均取最终输出，两个求和点均为相减。先保留各自的中间误差信号。",
+              "en": "Both branches sample the final output and enter with minus signs. Keep the two error signals separate."
+            },
+            "formula": "x_{id1}=x_i-F_1x_o,\\quad x_{o1}=A_1x_{id1},\\quad x_{id2}=x_{o1}-F_2x_o,\\quad x_o=A_2x_{id2}"
+          },
+          {
+            "title": {
+              "zh": "收集所有输出项",
+              "en": "Collect output terms"
+            },
+            "text": {
+              "zh": "内环闭合后A2变为A2/(1+A2F2)，再闭外环会得到同样结果；这也是第二种核验。",
+              "en": "Closing the inner loop first gives A2/(1+A2F2); closing the outer loop afterward gives the same expression."
+            },
+            "formula": "\\frac{x_o}{x_i}=\\frac{A_1A_2}{1+A_2F_2+A_1A_2F_1}"
+          }
+        ],
+        "answer": {
+          "zh": "闭环增益为A1A2除以1+A2F2+A1A2F1，前提是分母不为零且工作在稳定线性范围。",
+          "en": "The gain is A1A2 divided by 1+A2F2+A1A2F1, subject to a nonzero denominator and stable linear operation."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把分母写成1+A1A2(F1+F2)：F2返回第二级前，没有经过A1。",
+            "en": "Do not use 1+A1A2(F1+F2): the F2 loop does not traverse A1."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.2.2-figure.png"
+      },
+      "AE-8.3.1": {
+        "id": "AE-8.3.1",
+        "bookId": "8.3.1",
+        "title": {
+          "zh": "有限变化与微分灵敏度分开算",
+          "en": "Separate finite change from differential sensitivity"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 352,
+          "pdfPage": 385
+        },
+        "statement": {
+          "zh": "一放大电路的开环电压增益Avo=10^4，当它变成负反馈放大电路时，其闭环电压增益Avf=50，若Avo变化10%，问Avf变化多少？",
+          "en": "An amplifier has open-loop gain10^4 and feedback gain50. How much does the closed-loop gain change if the open-loop gain changes by10%?"
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "先由原闭环增益反求反馈系数，改变开环增益时保持反馈网络不变。",
+          "en": "Infer the fixed feedback factor from the original closed-loop gain, then vary only open-loop gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求反馈深度与系数",
+              "en": "Find desensitization and feedback factor"
+            },
+            "text": {
+              "zh": "原反馈深度为开环增益除以闭环增益；不要将200误作环路增益，环路增益实际为199。",
+              "en": "The desensitization is open gain divided by closed gain. It is200, while loop gain is199."
+            },
+            "formula": "1+A_0F=\\frac{10000}{50}=200,\\qquad F=\\frac{199}{10000}=0.0199"
+          },
+          {
+            "title": {
+              "zh": "常用近似与精确范围",
+              "en": "Approximation and exact bounds"
+            },
+            "text": {
+              "zh": "微分近似给出闭环相对变化约0.05%。10%为有限变化，正负方向并不严格对称，因此同时给出精确结果。",
+              "en": "Differential sensitivity predicts about0.05% closed-loop change. A finite10% variation is slightly asymmetric; exact results are given as well."
+            },
+            "formula": "\\frac{\\Delta A_f}{A_f}=\\frac{\\delta}{1+A_0F(1+\\delta)},\\quad\\delta=\\frac{\\Delta A}{A_0}"
+          }
+        ],
+        "answer": {
+          "zh": "微分近似：约±0.05%。精确：开环+10%时Avf≈50.02274，增0.04548%；开环−10%时Avf≈49.97224，降0.05552%。",
+          "en": "Differential approximation: about±0.05%. Exactly, +10% gives50.02274 (+0.04548%); −10% gives49.97224 (−0.05552%)."
+        },
+        "pitfalls": [
+          {
+            "zh": "若题目按教材小变化公式作答，可写0.05%；要注明这是近似，不能当作两方向完全相同的精确变化。",
+            "en": "The usual textbook answer0.05% uses small-change sensitivity; it is not an exact symmetric finite change."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        }
+      },
+      "AE-8.3.2": {
+        "id": "AE-8.3.2",
+        "bookId": "8.3.2",
+        "title": {
+          "zh": "噪声注入位置决定能否被反馈抑制",
+          "en": "Noise location determines feedback suppression"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 352,
+          "pdfPage": 385,
+          "figure": "图题8.3.2"
+        },
+        "statement": {
+          "zh": "反馈放大电路方框图如图题8.3.2。$\\dot V_1$为输入端噪声，$\\dot V_2$为基本放大电路内干扰（如电源干扰），$\\dot V_3$为输出端干扰，开环增益$\\dot A_v=\\dot A_{v1}\\dot A_{v2}$。证明$\\dot V_o=\\frac{\\dot A_v[(\\dot V_i+\\dot V_1)-\\dot V_2/\\dot A_{v1}-\\dot V_3/\\dot A_v]}{1+\\dot A_v\\dot F_v}$，并说明负反馈抑制干扰的能力。",
+          "en": "In Fig.8.3.2, $\\dot V_1$ is input noise, $\\dot V_2$ an internal disturbance and $\\dot V_3$ an output disturbance; $\\dot A_v=\\dot A_{v1}\\dot A_{v2}$. Prove $\\dot V_o=\\frac{\\dot A_v[(\\dot V_i+\\dot V_1)-\\dot V_2/\\dot A_{v1}-\\dot V_3/\\dot A_v]}{1+\\dot A_v\\dot F_v}$ and discuss disturbance suppression."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "保留方框图的正负号；输入噪声与信号从同一位置进入，反馈无法区分。",
+          "en": "Retain the signs at each summing node. Input noise and signal enter at the same point and cannot be distinguished by feedback."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "逐级列相量关系",
+              "en": "Write stage-by-stage phasor equations"
+            },
+            "text": {
+              "zh": "第一个加法点加输入噪声、减反馈；第二、第三加法点分别减去内部与输出干扰。",
+              "en": "The first node adds input noise and subtracts feedback; the next two nodes subtract internal and output disturbances."
+            },
+            "formula": "\\dot V_o=\\dot A_{v2}[\\dot A_{v1}(\\dot V_i+\\dot V_1-\\dot F_v\\dot V_o)-\\dot V_2]-\\dot V_3"
+          },
+          {
+            "title": {
+              "zh": "收集输出并按位置分组",
+              "en": "Collect the output and separate locations"
+            },
+            "text": {
+              "zh": "移项后即为题设公式。若保持原基本放大器与注入干扰幅值不变，三个输出分量都除以闭环分母；但输入噪声和有用信号的比值不变。",
+              "en": "Rearrangement gives the stated expression. For the same basic amplifier and injected disturbances, output contributions are divided by the loop denominator; input signal-to-noise ratio remains unchanged."
+            },
+            "formula": "\\dot V_o=\\frac{\\dot A_v(\\dot V_i+\\dot V_1)-\\dot A_{v2}\\dot V_2-\\dot V_3}{1+\\dot A_v\\dot F_v}"
+          },
+          {
+            "title": {
+              "zh": "抑制能力有频率和位置边界",
+              "en": "Suppression depends on frequency and location"
+            },
+            "text": {
+              "zh": "环路内后级、输出端干扰可以被负反馈抑制；首端噪声无法与信号分开抑制。只有在稳定频段且闭环分母模大于1时才有幅值抑制，不应说所有频率所有噪声均减小。",
+              "en": "Later-stage and output disturbances inside the loop can be suppressed; input noise cannot be selectively removed. Amplitude suppression requires stable operation and loop-denominator magnitude above unity at the relevant frequency."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "题设公式成立；反馈能抑制环内内部和输出干扰，不能改善与信号同点注入的输入噪声信噪比。",
+          "en": "The formula follows. Feedback suppresses internal/output disturbances inside the loop but cannot improve SNR for noise injected with the signal."
+        },
+        "pitfalls": [
+          {
+            "zh": "环外新增噪声不在本图覆盖范围；亦不能由本式无条件声称等闭环增益、不同前级增益分配下噪声一定改善。",
+            "en": "Noise added outside the loop is excluded; equal-closed-gain designs with different stage allocation require a separate noise comparison."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "原题噪声方框图，保留三个注入点的正负号。",
+            "en": "Original noise block diagram with all injection signs."
+          }
+        },
+        "figure": "ae-8.3.2-figure.png"
+      },
+      "AE-8.3.3": {
+        "id": "AE-8.3.3",
+        "bookId": "8.3.3",
+        "title": {
+          "zh": "从反馈组态直接读出四种性能",
+          "en": "Read four properties from feedback topology"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 353,
+          "pdfPage": 386,
+          "figure": "图题8.1.1"
+        },
+        "statement": {
+          "zh": "图题8.1.1所示各电路中，哪些电路能稳定输出电压？哪些电路能稳定输出电流？哪些电路能提高输入电阻？哪些电路能降低输出电阻？",
+          "en": "For the circuits in Fig.8.1.1, identify those that stabilize output voltage, stabilize output current, raise input resistance and lower output resistance."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "交流中电压取样稳定电压并降低输出电阻；电流取样稳定电流并提高输出电阻。串联混合提高输入电阻，并联混合降低。",
+          "en": "Voltage sampling stabilizes voltage and lowers output resistance; current sampling stabilizes current and raises output resistance. Series mixing raises input resistance, shunt mixing lowers it."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先复核六图交流组态",
+              "en": "Check the six AC topologies"
+            },
+            "text": {
+              "zh": "(a)电压串联；(b)电压并联；(c)电流串联；(d)电流并联；(e)电压并联；(f)电流串联。(f)的电阻链跨级电压反馈被C2在交流中切断，只保留共享射极电阻的跨级电流串联反馈。",
+              "en": "(a) voltage-series; (b) voltage-shunt; (c) current-series; (d) current-shunt; (e) voltage-shunt; (f) current-series. In(f), C2 interrupts the interstage resistive voltage loop at AC, leaving the shared-emitter current-series loop."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "按取样与混合分别归类",
+              "en": "Classify sampling and mixing separately"
+            },
+            "text": {
+              "zh": "稳定输出电压：(a)(b)(e)；稳定输出电流：(c)(d)(f)；提高输入电阻：(a)(c)(f)；降低输出电阻：(a)(b)(e)。这些是反馈对相应基本端口参数的趋势，不把输入串联电阻或偏置网络忽略成不存在。",
+              "en": "Voltage stabilization: (a)(b)(e). Current stabilization: (c)(d)(f). Higher input resistance: (a)(c)(f). Lower output resistance: (a)(b)(e). These are feedback trends relative to the corresponding basic ports, not a reason to discard source/bias resistors."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "四问依次为：(a)(b)(e)；(c)(d)(f)；(a)(c)(f)；(a)(b)(e)。",
+          "en": "The four answers are respectively (a)(b)(e); (c)(d)(f); (a)(c)(f); (a)(b)(e)."
+        },
+        "pitfalls": [
+          {
+            "zh": "本题按交流反馈讨论；(f)还有仅直流的跨级电压并联反馈，不能混入中频分类。",
+            "en": "Use AC feedback for this question; the extra DC-only voltage-shunt path in(f) must not be counted as a midband loop."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "figure": "figure-8.1.1.png",
+        "diagram": {
+          "alt": {
+            "zh": "引用教材图题8.1.1的六个电路。",
+            "en": "The six original circuits of Fig.8.1.1."
+          }
+        }
+      },
+      "AE-8.3.6": {
+        "id": "AE-8.3.6",
+        "bookId": "8.3.6",
+        "title": {
+          "zh": "性能要求先翻译成取样与混合",
+          "en": "Translate specifications into sampling and mixing"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 353,
+          "pdfPage": 386,
+          "figure": "图题8.3.6"
+        },
+        "statement": {
+          "zh": "试在图题8.3.6所示多级放大电路的交流通路中正确接入反馈元件Rf，以分别实现：(1)负载变化时vo变化不大，并希望有较小输入电阻Rif；(2)电路参数变化时io变化不大，并希望有较大Rif。",
+          "en": "Connect Rf in the AC circuit of Fig.8.3.6 to achieve: (1) stable vo against load changes and low input resistance; (2) stable io against circuit-parameter changes and high input resistance."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "三级共源放大总电压反相；末级源极电阻可提供电流取样。",
+          "en": "Three common-source stages invert voltage overall; the final source resistor provides current sampling."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)电压并联负反馈",
+              "en": "(1) Voltage-shunt negative feedback"
+            },
+            "text": {
+              "zh": "①端接末级漏极输出vo上端，②端接首级栅极（Rsi右端）。输出电压经Rf返回栅极求和点，电压取样稳定vo，并联混合减小Rif。",
+              "en": "Connect① to the final drain/output top and② to the first gate, after Rsi. Output voltage returns to the gate summing node: voltage sampling stabilizes vo and shunt mixing lowers input resistance."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)电流串联负反馈",
+              "en": "(2) Current-series negative feedback"
+            },
+            "text": {
+              "zh": "①端接末级源极（Rs3上端），②端接首级源极（Rs1上端）。末级电流增大使源极取样电压增大，抬高首级源极，减小净栅源电压。电流取样稳定io，串联混合提高Rif。",
+              "en": "Connect① to the final source, at Rs3 top, and② to the first source, at Rs1 top. Higher final current raises the sensed voltage, raises the first source and reduces gate-source drive. Current sampling stabilizes io; series mixing raises input resistance."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "(1)Rf连接末级漏极与首级栅极；(2)Rf连接末级源极与首级源极。电阻两端可对调。",
+          "en": "(1) Connect final drain to first gate. (2) Connect final source to first source. Rf terminals may be swapped."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把稳定输出电流理解成“取样负载电压”；也不要把Rf误接交流地。反馈网络负载仍存在，本题未要求精确增益。",
+            "en": "Current stabilization is not load-voltage sampling. Do not return Rf to AC ground. Feedback loading remains; exact gain is not requested."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "原题三级共源放大交流通路，端点①②待连接。",
+            "en": "Original three-stage common-source AC circuit with Rf terminals①②."
+          }
+        },
+        "figure": "ae-8.3.6-figure.png"
+      },
+      "AE-8.3.7": {
+        "id": "AE-8.3.7",
+        "bookId": "8.3.7",
+        "title": {
+          "zh": "增益带宽积先除以噪声增益",
+          "en": "Divide gain-bandwidth product by noise gain"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 354,
+          "pdfPage": 387
+        },
+        "statement": {
+          "zh": "设某运算放大器的增益—带宽积为4×10^5 Hz，若将它组成一同相放大电路时，其闭环增益为50，则它的闭环带宽为多少？",
+          "en": "An op amp has gain-bandwidth product4×10^5 Hz. What is its closed-loop bandwidth in a non-inverting circuit with gain50?"
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "在单主极点近似下，同相放大器的信号增益与噪声增益相同。",
+          "en": "Under the dominant-pole approximation, a non-inverting amplifier has equal signal and noise gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "保持增益带宽积",
+              "en": "Use constant gain-bandwidth product"
+            },
+            "text": {
+              "zh": "按题设单主极点、足够开环增益的常用近似计算，直流耦合时下限频率为零。未给转换速率，所得是小信号带宽。",
+              "en": "Use the usual dominant-pole, high-open-gain approximation. DC coupling gives zero lower cutoff. No slew rate is provided, so this is small-signal bandwidth."
+            },
+            "formula": "B_f\\approx\\frac{4\\times10^5\\,\\mathrm{Hz}}{50}=8000\\,\\mathrm{Hz}=8\\,\\mathrm{kHz}"
+          }
+        ],
+        "answer": {
+          "zh": "闭环小信号带宽约8 kHz。",
+          "en": "Closed-loop small-signal bandwidth is approximately8 kHz."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把8 kHz直接当作任意振幅的满功率带宽；大信号还受转换速率约束。",
+            "en": "This is not an arbitrary-amplitude full-power bandwidth; slew rate also limits large signals."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        }
+      },
+      "AE-8.3.8": {
+        "id": "AE-8.3.8",
+        "bookId": "8.3.8",
+        "title": {
+          "zh": "先确定开环增益带宽积",
+          "en": "Determine open-loop gain-bandwidth product first"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 354,
+          "pdfPage": 387
+        },
+        "statement": {
+          "zh": "设某运放的开环增益为10^6，其最低的转折频率为5 Hz。若将该运放组成一同相放大电路，并使它的增益为100，则此时的带宽和增益—带宽积各为多少？",
+          "en": "An op amp has open-loop gain10^6 and lowest corner frequency5 Hz. In a non-inverting amplifier of gain100, find its bandwidth and gain-bandwidth product."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "“最低转折”只有在其后仍由该主极点主导到闭环交越附近时，才能外推恒定积。",
+          "en": "The lowest pole supports a constant-product estimate only if it remains dominant near the closed-loop crossover."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "单极点模型的精确消元",
+              "en": "Eliminate the dominant-pole model"
+            },
+            "text": {
+              "zh": "若确为单极点模型且要求实际直流闭环增益100，则反馈深度为10000；闭环极点随之提高10000倍。",
+              "en": "For an exact single-pole model with actual DC closed gain100, desensitization is10000 and the pole frequency increases by that factor."
+            },
+            "formula": "D=\\frac{10^6}{100}=10^4,\\quad B_f=D(5\\,\\mathrm{Hz})=50\\,\\mathrm{kHz},\\quad A_{f0}B_f=5\\times10^6\\,\\mathrm{Hz}"
+          }
+        ],
+        "answer": {
+          "zh": "在题设采用的单主极点近似下，带宽50 kHz，增益—带宽积5 MHz。",
+          "en": "Under the dominant-pole approximation, bandwidth is50 kHz and gain-bandwidth product is5 MHz."
+        },
+        "pitfalls": [
+          {
+            "zh": "仅有“最低转折频率”无法保证真实多极点运放在50 kHz附近仍满足该估计；题设未给其他极点，须注明模型。",
+            "en": "The lowest corner alone does not prove a real multi-pole device obeys this estimate at50 kHz; state the assumed model."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        }
+      },
+      "AE-8.3.9": {
+        "id": "AE-8.3.9",
+        "bookId": "8.3.9",
+        "title": {
+          "zh": "把反馈分母化成标准单极点",
+          "en": "Reduce the feedback denominator to one pole"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 354,
+          "pdfPage": 387
+        },
+        "statement": {
+          "zh": "某直接耦合放大电路的开环电压增益为$\\dot A=\\frac{300}{1+j\\omega/(2\\pi\\times10^4)}$。若引入反馈系数F=0.3的电压串联负反馈，求中频电压增益与带宽。",
+          "en": "A DC-coupled amplifier has $\\dot A=\\frac{300}{1+j\\omega/(2\\pi\\times10^4)}$. With voltage-series negative feedback of factor0.3, find midband gain and bandwidth."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "先完整代入闭环公式，再将常数91从分母提出，避免只改增益不改极点。",
+          "en": "Substitute the full transfer function, then factor91 from the denominator; both gain and pole change."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "闭环函数与极点",
+              "en": "Closed-loop transfer and pole"
+            },
+            "text": {
+              "zh": "反馈系数为实数且不随频率变化，直接耦合下限为零。该单极点闭环稳定，原上限10 kHz乘以反馈深度91。",
+              "en": "The real feedback factor is frequency independent and DC coupling sets the lower cutoff to zero. The single-pole closed loop is stable; multiply the original10 kHz pole by91."
+            },
+            "formula": "\\dot A_f=\\frac{300}{91+j\\omega/(2\\pi\\times10^4)}=\\frac{300/91}{1+j\\omega/(2\\pi\\times9.1\\times10^5)}"
+          }
+        ],
+        "answer": {
+          "zh": "中频电压增益300/91≈3.29670；上限频率及带宽均为910 kHz。",
+          "en": "Midband gain is300/91≈3.29670; upper cutoff and bandwidth are both910 kHz."
+        },
+        "pitfalls": [
+          {
+            "zh": "原式含角频率ω，转成Hz必须除以2π；原转折不是10^4 rad/s，而是2π×10^4 rad/s。",
+            "en": "The original uses angular frequency; convert to hertz by dividing by2π. Its pole is2π×10^4 rad/s, not10^4 rad/s."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        }
+      },
+      "AE-8.4.4": {
+        "id": "AE-8.4.4",
+        "bookId": "8.4.4",
+        "title": {
+          "zh": "电流取样的并联反馈电流放大器",
+          "en": "A current amplifier with current-shunt feedback"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 355,
+          "pdfPage": 388,
+          "figure": "图题8.4.4"
+        },
+        "statement": {
+          "zh": "设图题8.4.4所示电路中运放的开环增益Avo很大。(1)指出反馈组态；(2)写出输出电流io的表达式；(3)说明该电路的功能。R1=99 kΩ，R2=1 kΩ。",
+          "en": "In Fig.8.4.4 the op-amp open-loop gain is very large. (1) Classify feedback; (2) find io; (3) state the function. R1=99 kΩ and R2=1 kΩ."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "图中T为栅极绝缘的MOS管；R1不是负载，负载在源极支路。先对运放反相节点列KCL。",
+          "en": "T is an insulated-gate MOS transistor. R1 is not the load; the load is in the source branch. Start with KCL at the inverting node."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)电流并联负反馈",
+              "en": "(1) Current-shunt negative feedback"
+            },
+            "text": {
+              "zh": "io上升使MOS上端取样节点电位下降，经R1降低反相端电位，运放输出升高；图中为PMOS，栅压升高使其导通减弱，抵消电流增大。R2取样MOS通路电流并通过R1返回输入电流求和点，属于电流并联负反馈。",
+              "en": "Higher io lowers the MOS upper sense-node potential through the resistor network. R1 lowers the inverting voltage, raising op-amp output. The PMOS then conducts less. R2 senses the MOS branch current and R1 returns feedback to the current-summing input: current-shunt negative feedback."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)虚地加两次KCL",
+              "en": "(2) Virtual ground and two KCL equations"
+            },
+            "text": {
+              "zh": "以R1、R2与MOS上端交点电压为vx。输入电流ii全部流过R1，故vx为负；R2从地流向该节点的电流为R1/R2倍ii，两者一起提供向下的io。MOS栅极无电流，源漏电流大小相等。",
+              "en": "Let vx be the junction of R1,R2 and the MOS upper terminal. All input current flows through R1, making vx negative. R2 supplies an additional R1/R2 times ii from ground; both currents feed downward io. Zero gate current makes source and drain current magnitudes equal."
+            },
+            "formula": "v_-=0,\\quad v_x=-i_iR_1,\\quad i_o=i_i-\\frac{v_x}{R_2}=\\left(1+\\frac{R_1}{R_2}\\right)i_i=100i_i"
+          },
+          {
+            "title": {
+              "zh": "(3)电流放大且负载端浮置",
+              "en": "(3) Current amplification with compliance limits"
+            },
+            "text": {
+              "zh": "这是电流控制电流源或电流放大器，理想闭环电流增益100，较低输入电阻、较高输出电阻。负载RL一端接−VSS；需有合适电源、MOS工作区与运放输出摆幅才能保持调节。",
+              "en": "It is a current-controlled current source/current amplifier of ideal closed-loop current gain100, with low input and high output resistance. RL returns to−VSS; supply headroom, MOS operating region and op-amp output swing must permit regulation."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "电流并联负反馈；io=(1+R1/R2)ii=100ii；实现电流放大。",
+          "en": "Current-shunt negative feedback; io=(1+R1/R2)ii=100ii; a current amplifier."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能只取R1/R2=99：输入电流本身也流入输出节点，必须加上这一份。",
+            "en": "Do not give99: the input current itself also reaches the output branch, so the additional1 is required."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.4.4-figure.png"
+      },
+      "AE-8.2.3": {
+        "id": "AE-8.2.3",
+        "bookId": "8.2.3",
+        "title": {
+          "zh": "电阻反馈与真实μA741宏模型比较",
+          "en": "Compare resistor feedback with a real UA741 macro-model"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 352,
+          "pdfPage": 385
+        },
+        "statement": {
+          "zh": "由运放组成的同相放大电路中，运放Avo=10^6，Rf=47 kΩ，R1=5.1 kΩ，求反馈系数F和闭环电压增益Avf。试与SPICE仿真的闭环电压增益比较，运放模型采用μA741。",
+          "en": "A non-inverting amplifier has open-loop gain10^6, Rf=47 kΩ and R1=5.1 kΩ. Find F and closed-loop voltage gain, and compare with SPICE using a UA741 model."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "先按题设固定开环增益求精确闭环值；真实宏模型含频率响应、输入电流与失调，不能强称它的开环增益恰为10^6。",
+          "en": "First use the stated constant open-loop gain. A real macro-model includes frequency response, input current and offset; its open gain need not equal10^6."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "电阻分压与有限增益",
+              "en": "Divider and finite open gain"
+            },
+            "text": {
+              "zh": "同相输入接信号，反相输入接R1到地、Rf到输出。理想输入电流为零，反馈系数就是分压比。",
+              "en": "Connect the signal to plus; minus returns to ground through R1 and output through Rf. Zero input current gives the divider feedback factor."
+            },
+            "formula": "F=\\frac{5.1}{47+5.1}=\\frac{51}{521}\\approx0.09788868,\\qquad A_{vf}=\\frac{10^6}{1+10^6F}\\approx10.21558192"
+          },
+          {
+            "title": {
+              "zh": "ngspice47实际运行两套模型",
+              "en": "Execute two models in ngspice47"
+            },
+            "text": {
+              "zh": "真实执行自写固定增益受控源和TI官方UA741宏模型。共同条件：±15 V供电、27°C、无外接负载，AC从0.1 Hz扫至10 MHz；另运行10 mV、1 kHz瞬态。题目未规定频率和电源，此处明确这些比较条件。",
+              "en": "Execute an authored constant-gain controlled source and the official TI UA741 macro-model. Both use±15 V,27°C,no external load and an AC sweep0.1 Hz–10 MHz; a10 mV,1 kHz transient is also executed. These comparison conditions are chosen because the problem does not specify them."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "比较数值与模型边界",
+              "en": "Compare values and model limits"
+            },
+            "text": {
+              "zh": "固定增益模型在1 Hz与1 kHz均得10.21558191534，与独立节点方程一致。TI模型在1 Hz得幅值10.21502905448；1 kHz得10.214169256−j0.096125162，幅值10.21462156117。其差异包含有限且随频率变化的开环增益，以及输入电流等宏模型非理想性，不能把它当作题设恒定10^6模型的错误。",
+              "en": "The constant-gain model gives10.21558191534 at1 Hz and1 kHz, agreeing with independent nodal equations. TI gives magnitude10.21502905448 at1 Hz; at1 kHz it gives10.214169256−j0.096125162, magnitude10.21462156117. Differences reflect finite frequency-dependent open gain and other macro-model nonidealities, not an error in the stated constant-gain calculation."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "F≈0.09788868，题设Avf≈10.21558192；实际TI μA741模型低频幅值约10.21503，1 kHz约10.21462，不能把不同模型混为完全相同的参数。",
+          "en": "F≈0.09788868 and stated-model gain≈10.21558192. Executed TI UA741 magnitude is about10.21503 at low frequency and10.21462 at1 kHz; distinguish the two models."
+        },
+        "pitfalls": [
+          {
+            "zh": "开环增益不是闭环增益；μA741的型号名称也不保证所有仿真频率都具有10^6开环增益。",
+            "en": "Open gain is not closed gain; the UA741 model name does not guarantee open gain10^6 at every frequency."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "hand",
+          "SPICE"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "两套网表实际运行；固定增益模型与独立2×2节点矩阵解交叉核验，宏模型报告实际频率、幅值和相位，不声称其开环参数等于题设。",
+            "en": "Both netlists were executed. The constant-gain result is cross-checked with an independent2×2 nodal matrix; actual macro-model frequency,magnitude and phase are reported without identifying its open gain with the stated value."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "executed-spice-response",
+            "alt": {
+              "zh": "已执行扫频：固定开环增益与TI宏模型的闭环幅频响应。",
+              "en": "Executed frequency response for constant-gain and TI models."
+            },
+            "caption": {
+              "zh": "实际ngspice47扫频；题设固定增益模型与TI模型分别标注。",
+              "en": "Executed ngspice47 sweep; stated constant-gain and TI models are labeled separately."
+            },
+            "figure": "ae-8.2.3-spice.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "固定增益网表可直接运行。TI包装文件需要将官方SLOJ138下载包中的UA741.301放在同目录；使用原始电参数，仅规范文本换行及移除末端控制字节。模型引脚顺序为同相、反相、正电源、负电源、输出。",
+            "en": "Run the constant-gain netlist directly. Put UA741.301 from official TI SLOJ138 beside the TI wrapper, retaining its electrical parameters; only normalize line endings/remove the terminal control byte. Pin order: plus,minus,positive supply,negative supply,output."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.2.3-ideal.cir",
+              "label": {
+                "zh": "题设固定增益模型（自包含）",
+                "en": "Stated constant-gain model (self-contained)"
+              }
+            },
+            {
+              "file": "ae-8.2.3-ua741.cir",
+              "label": {
+                "zh": "TI μA741包装文件（需本地宏模型）",
+                "en": "TI UA741 wrapper (local macro-model required)"
+              }
+            }
+          ]
+        },
+        "references": [
+          {
+            "title": "TI official UA741 SPICE model, SLOJ138",
+            "url": "https://www.ti.com/lit/zip/sloj138"
+          }
+        ]
+      },
+      "AE-8.1.6": {
+        "id": "AE-8.1.6",
+        "bookId": "8.1.6",
+        "title": {
+          "zh": "四种反馈接法：区分求和点和电流取样点",
+          "en": "Four feedback connections: mixing and sensing nodes"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 350,
+          "pdfPage": 383,
+          "figure": "图题8.1.6"
+        },
+        "statement": {
+          "zh": "由集成运放A及BJT T1、T2组成的放大电路如图题8.1.6。将信号源vs、电阻Rf正确接入该电路，分别引入：(1)电压串联负反馈；(2)电压并联负反馈；(3)电流串联负反馈；(4)电流并联负反馈。",
+          "en": "Connect source vs and Rf in Fig.8.1.6 to obtain (1) voltage-series, (2) voltage-shunt, (3) current-series and (4) current-shunt negative feedback."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "e为运放同相输入，f为反相输入；h是射极电压输出，g经R3取样集电极通路电流。下面各问独立接线，b为公共地。",
+          "en": "e is the plus input, f the minus input; h is emitter voltage output and g senses collector-path current through R3. Each case is wired separately; b is common ground."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)电压串联",
+              "en": "(1) Voltage-series"
+            },
+            "text": {
+              "zh": "接a–c、j–d、i–h。信号经R1到同相端，h的输出电压经Rf与R2送反相端；运放输入电流忽略时反馈取样电压等于h电压。",
+              "en": "Connect a–c, j–d and i–h. The signal reaches plus through R1; h returns through Rf and R2 to minus. With negligible input current the returned voltage equals h voltage."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)电压并联",
+              "en": "(2) Voltage-shunt"
+            },
+            "text": {
+              "zh": "接a–d、c–b、j–f、i–h。同相输入接地，信号经R2与反馈经Rf在f点以电流求和，h升高会使运放输出下降。",
+              "en": "Connect a–d, c–b, j–f and i–h. Plus is grounded; signal through R2 and feedback through Rf sum as currents at f. A higher h lowers op-amp output."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)电流串联",
+              "en": "(3) Current-series"
+            },
+            "text": {
+              "zh": "接a–d、j–c、i–g。信号进反相端，g的取样电压进同相端。集电极通路电流增大使g电压下降，运放输出随之下降，抑制原电流增大。",
+              "en": "Connect a–d, j–c and i–g. Signal enters minus, and g sensing enters plus. Increased collector-path current lowers g, lowering op-amp output and opposing the current increase."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(4)电流并联",
+              "en": "(4) Current-shunt"
+            },
+            "text": {
+              "zh": "接a–c、d–b、j–e、i–g。信号经R1与反馈经Rf在e点求和；电流增加导致g下降，拉低e并压低输出。高β近似下集电极通路电流近似等于末级射极输出电流；精确关系尚含首管基极电流，不能把这项说成严格相等。",
+              "en": "Connect a–c, d–b, j–e and i–g. R1 and Rf sum signal/feedback currents at e. Increased current lowers g, e and output. At high beta the collector-path current approximates final emitter current; the exact relation includes the first transistor base current."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "一组可行端点连接依次为：(a–c,j–d,i–h)；(a–d,c–b,j–f,i–h)；(a–d,j–c,i–g)；(a–c,d–b,j–e,i–g)。",
+          "en": "One valid set is respectively (a–c,j–d,i–h); (a–d,c–b,j–f,i–h); (a–d,j–c,i–g); (a–c,d–b,j–e,i–g)."
+        },
+        "pitfalls": [
+          {
+            "zh": "并联求和必须在输入电阻之后的e或f节点，不能把Rf接到信号源一侧的c或d而声称是同一接法。",
+            "en": "For shunt summing, return after the input resistor at e or f; c or d on the source side is not the same connection."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "原题运放与达林顿管电路，保留a至j连接端点。",
+            "en": "Original op-amp/Darlington circuit with terminal labels a through j."
+          }
+        },
+        "completionNote": {
+          "zh": "题干跨书350–351页，原图在351页（PDF384）。",
+          "en": "Statement spans printed350–351; the figure is on351 (PDF384)."
+        },
+        "figure": "ae-8.1.6-figure.png"
+      },
+      "AE-8.3.4": {
+        "id": "AE-8.3.4",
+        "bookId": "8.3.4",
+        "title": {
+          "zh": "保留直流偏置，分离两条交流反馈",
+          "en": "Keep DC bias while separating AC feedback paths"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 353,
+          "pdfPage": 386,
+          "figure": "图题8.3.4"
+        },
+        "statement": {
+          "zh": "电路如图题8.3.4。(1)分别说明Rf1、Rf2两路反馈的组态及主要作用；(2)两路反馈影响性能时可能出现什么矛盾？(3)有人提出断开Rf2以消除矛盾，是否可行，为什么？怎样才能消除矛盾？",
+          "en": "For Fig.8.3.4: (1) classify Rf1 and Rf2 feedback and state their main effects; (2) identify conflicting effects; (3) assess opening Rf2 and propose a valid remedy."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "Rf1回首级射极，Rf2回首级基极；输入耦合电容隔直，Rf2同时承担首级基极的直流偏置通路。",
+          "en": "Rf1 returns to the first emitter; Rf2 returns to the first base. The coupling capacitor blocks DC, so Rf2 also supplies the first base DC bias path."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)分别追踪两条通路",
+              "en": "(1) Trace the two paths"
+            },
+            "text": {
+              "zh": "Rf1取样T3射极电流的电压并送T1射极，是电流串联负反馈，可稳定工作点及传输电流、提高输入电阻。Rf2由T4射极分压点取样输出电压并送T1基极，是电压并联负反馈，可稳定工作点与输出电压、降低输入和输出电阻。二者均有直流与交流作用。",
+              "en": "Rf1 returns a T3 emitter-current sense voltage to T1 emitter: current-series negative feedback, stabilizing bias/current transfer and raising input resistance. Rf2 returns a divided T4 emitter voltage to T1 base: voltage-shunt negative feedback, stabilizing bias/output voltage and lowering input/output resistance. Both operate at DC and AC."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)输入电阻的相反趋势",
+              "en": "(2) Opposite input-resistance trends"
+            },
+            "text": {
+              "zh": "串联混合提高输入电阻，而并联混合降低输入电阻，可能与预期的高输入电阻目标冲突；不能不经分析就把两条反馈效果同时乘到同一个端口上。",
+              "en": "Series mixing raises input resistance while shunt mixing lowers it, potentially conflicting with a high-input-resistance goal. Their effects cannot simply be multiplied at an unchanged port."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)分离直流偏置和交流返回",
+              "en": "(3) Separate DC bias from AC return"
+            },
+            "text": {
+              "zh": "不能直接断开Rf2：C1直流开路，T1基极会失去给定偏置通路。若希望保留电流串联交流反馈，可把Rf2拆成两只串联电阻，总阻值保持不变，中点用足够大的电容旁路到地；直流时电容开路保留偏置，交流时中点接地，切断Rf2的跨级电压并联反馈。新增两电阻仍分别成为交流输入、输出负载，设计时须保留，不能声称输入电阻无穷大。",
+              "en": "Do not open Rf2: C1 is DC-open and T1 would lose its specified base-bias path. To retain current-series AC feedback, split Rf2 into two series resistors of unchanged total value and bypass their midpoint to ground with a sufficiently large capacitor. DC bias remains; the grounded AC midpoint interrupts interstage voltage-shunt feedback. The two resistors still load input/output and must be included."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "Rf1：电流串联；Rf2：电压并联，均为负反馈。矛盾在输入电阻；不要开路Rf2，可拆分Rf2并交流旁路其中点以保留直流偏置、移除该跨级交流环。",
+          "en": "Rf1: current-series; Rf2: voltage-shunt, both negative. Input-resistance trends conflict. Split and midpoint-bypass Rf2 to retain DC bias while removing its interstage AC loop."
+        },
+        "pitfalls": [
+          {
+            "zh": "只串接一个隔直电容到Rf2会破坏其偏置功能；中点旁路是保留直流、隔断交流的不同操作。",
+            "en": "Simply inserting a series blocking capacitor in Rf2 destroys its bias function; midpoint bypassing preserves DC while interrupting AC."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留端点标号与电流方向。",
+            "en": "Original figure with terminal labels and current directions."
+          }
+        },
+        "figure": "ae-8.3.4-figure.png"
+      },
+      "AE-8.3.5": {
+        "id": "AE-8.3.5",
+        "bookId": "8.3.5",
+        "title": {
+          "zh": "差分级的两路输出决定可用反馈极性",
+          "en": "Differential-stage outputs select feedback polarity"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 353,
+          "pdfPage": 386,
+          "figure": "图题8.3.5"
+        },
+        "statement": {
+          "zh": "在图题8.3.5所示电路中，分别接成所需两级反馈放大电路：(1)低输入电阻、稳定输出电流；(2)高输入电阻、低输出电阻；(3)低输入电阻、稳定输出电压；(4)高输入电阻、高输出电阻。",
+          "en": "Connect the two-stage circuit of Fig.8.3.5 for (1) low input resistance and stable output current; (2) high input resistance and low output resistance; (3) low input resistance and stable output voltage; (4) high input and output resistance."
+        },
+        "prerequisites": {
+          "zh": "负反馈极性、输出取样、输入混合、单主极点模型。",
+          "en": "Feedback polarity, output sampling, input mixing and the dominant-pole model."
+        },
+        "recognition": {
+          "zh": "T1漏极②随差分输入反相，T2漏极④同相；PMOS T3门极升高使漏极⑦降低、源极⑥升高。先选级间连线，再选择反馈返回端。",
+          "en": "T1 drain② inverts the differential input; T2 drain④ preserves it. Raising PMOS T3 gate lowers drain⑦ and raises source⑥. Choose interstage wiring before the feedback return."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)电流并联负反馈",
+              "en": "(1) Current-shunt"
+            },
+            "text": {
+              "zh": "级间②–⑤；Rf的⑨接①，⑧接⑥。末级电流增大使⑥电压下降，拉低首级同相输入①，从而抑制电流增大。",
+              "en": "Connect②–⑤, feedback⑨–① and⑧–⑥. Higher final current lowers⑥, pulling down first input① and opposing the current increase."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)电压串联负反馈",
+              "en": "(2) Voltage-series"
+            },
+            "text": {
+              "zh": "级间②–⑤；Rf的⑨接③，⑧接⑦。该前向总电压同相，输出升高经③提高差分负输入，减小净输入。",
+              "en": "Connect②–⑤, feedback⑨–③ and⑧–⑦. Overall voltage is non-inverting; higher output raises the differential negative input③, reducing error."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)电压并联负反馈",
+              "en": "(3) Voltage-shunt"
+            },
+            "text": {
+              "zh": "级间④–⑤；Rf的⑨接①，⑧接⑦。此时总电压反相，输出经Rf回①构成负反馈，电压取样稳定输出电压。",
+              "en": "Connect④–⑤, feedback⑨–① and⑧–⑦. Overall voltage is inverting; return to① gives negative voltage-shunt feedback."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(4)电流串联负反馈",
+              "en": "(4) Current-series"
+            },
+            "text": {
+              "zh": "级间④–⑤；Rf的⑨接③，⑧接⑥。输出电流增大使⑥下降，③下降使差分输入增大；经④驱动T3栅极升高，从而抑制电流。电流反馈提高输出电阻，串联混合提高输入电阻。",
+              "en": "Connect④–⑤, feedback⑨–③ and⑧–⑥. Increased current lowers⑥ and③, increasing differential error;④ then raises T3 gate and reduces current. Current sampling raises output resistance, series mixing raises input resistance."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "四问依次使用电流并联、电压串联、电压并联、电流串联负反馈；每问级间及Rf端点均列于步骤中。",
+          "en": "Use current-shunt,voltage-series,voltage-shunt,current-series respectively; interstage and Rf terminals are listed for each case."
+        },
+        "pitfalls": [
+          {
+            "zh": "Rsi、Rg1、Rg2及反馈电阻仍决定实际端口阻抗；“提高/降低”是反馈趋势，不能把串联输入电阻删除。",
+            "en": "Rsi,Rg1,Rg2 and feedback resistors still determine actual port impedances; feedback trends do not remove input resistors."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题与全部小问，重新按扰动方向、节点方程或单极点传递函数推导；数值与复数代入另用脚本复核。",
+            "en": "Every original subpart is checked; perturbation signs, nodal equations or single-pole transfer functions are derived independently and numerical/complex substitutions are checked separately."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留①至⑨端点及PMOS源极取样电阻。",
+            "en": "Original figure with terminals1–9 and PMOS source sensing resistor."
+          }
+        },
+        "figure": "ae-8.3.5-figure.png"
       }
     }
   }
