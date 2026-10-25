@@ -1,0 +1,27 @@
+ae-8.4.7-textbook; authored textbook approximation, not a manufacturer model
+Vdd dd 0 10
+Vg g1 0 7.6
+Isig 0 inp DC 0 AC 1 SIN(0 1u 1k)
+R1 dd g2 550
+R2 inp fb 500
+M1 g2 g1 inp 0 N
+Vprobe dd src2 0
+M2 anode g2 src2 dd P
+Vled anode fb 1.6
+Itail fb 0 16m
+.model N NMOS LEVEL=1 VTO=1 KP=.02 LAMBDA=0 GAMMA=0
+.model P PMOS LEVEL=1 VTO=-1 KP=.02 LAMBDA=0 GAMMA=0
+.options temp=27 reltol=1e-8 abstol=1e-13 vntol=1e-10 gmin=1e-14
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+wrdata ae-8.4.7-textbook-op.dat v(inp) v(g2) v(anode) v(fb) @m1[id] @m1[gm] @m1[gds] @m1[gmbs] @m1[vgs] @m1[vds] @m1[von] @m1[vdsat] @m2[id] @m2[gm] @m2[gds] @m2[gmbs] @m2[vgs] @m2[vds] @m2[von] @m2[vdsat]
+ac dec 20 1 1meg
+let gain=i(Vprobe)
+wrdata ae-8.4.7-textbook-ac.dat gain
+tran 2u 20m
+wrdata ae-8.4.7-textbook-tran.dat v(inp) v(fb) i(Vprobe)
+.endc
+.end
