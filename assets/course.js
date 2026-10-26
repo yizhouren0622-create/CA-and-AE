@@ -17,24 +17,27 @@
     const el=document.querySelector('#progress-message');
     if(el) el.replaceChildren(bilingual(zh,en));
   }
-  const scoreInputs=[...document.querySelectorAll('[data-score]')];
-  const diagnostic=document.querySelector('[data-paper]');
+  const scoreUpdaters=[];
+  for(const diagnostic of document.querySelectorAll('[data-paper]')) {
+  const scoreInputs=[...diagnostic.closest('[data-exam]').querySelectorAll('[data-score]')];
   function updateScores() {
     if(!diagnostic)return;
-    let sum=0,count=0;const weak=new Map();
+    let sum=0,count=0,scoredMax=0;const weak=new Map();
+    const total=scoreInputs.reduce((n,el)=>n+Number(el.closest('.question').dataset.points),0);
     for(const el of scoreInputs) {
       const saved=state.scores[el.dataset.score];
-      el.value=Number.isInteger(saved)&&saved>=0&&saved<=10?String(saved):'';
+      const max=Number(el.closest('.question').dataset.points);
+      el.value=Number.isInteger(saved)&&saved>=0&&saved<=max?String(saved):'';
       if(el.value==='')continue;
-      sum+=Number(el.value);count++;
-      if(Number(el.value)<7)for(const topic of el.closest('.question').dataset.topics.split(',')) {
+      sum+=Number(el.value);count++;scoredMax+=max;
+      if(Number(el.value)<0.7*max)for(const topic of el.closest('.question').dataset.topics.split(',')) {
         const a=el.closest('.question').querySelector('.topic-links a[href$="#'+topic+'"]');
         if(a)weak.set(topic,a);
       }
     }
     diagnostic.querySelector('[data-score-summary]').replaceChildren(bilingual(
-      '已自评 '+count+' 题（共10题），已评得分 '+sum+' 分（已评题满分 '+(count*10)+' 分，全卷100分）。少于7分的题目用于提示回看知识点。',
-      count+' of 10 questions self-scored; '+sum+' points out of '+(count*10)+' on scored questions (100 for the full paper). Questions below 7 points flag topics to revisit.'
+      '已自评 '+count+' 题（共'+scoreInputs.length+'题），已评得分 '+sum+' 分（已评题满分 '+scoredMax+' 分，全卷'+total+'分）。低于该题70%分值时提示回看知识点。',
+      count+' of '+scoreInputs.length+' questions self-scored; '+sum+' points out of '+scoredMax+' on scored questions ('+total+' for the full paper). Scores below 70% flag topics to revisit.'
     ));
     const box=diagnostic.querySelector('[data-weak-topics]');box.replaceChildren();
     if(!count)box.append(bilingual('完成题目后按解析评分，薄弱知识点会显示在这里。','Self-score after working the questions; topics to revisit will appear here.'));
@@ -48,6 +51,7 @@
     save();updateScores();
   });
   updateScores();
+  scoreUpdaters.push(updateScores);
   if(diagnostic) {
     const id=diagnostic.dataset.paper;
     let timer=state.timers[id];
@@ -64,6 +68,7 @@
     start.addEventListener('click',()=>{if(timer.startedAt===null){timer.startedAt=Date.now();save();renderTimer();}});
     pause.addEventListener('click',()=>{if(timer.startedAt!==null){timer.elapsed=elapsed();timer.startedAt=null;save();renderTimer();}});
     renderTimer();setInterval(renderTimer,1000);
+  }
   }
   const exercises=[...document.querySelectorAll('.exercise-item')];
   const chapter=document.querySelector('#chapter-filter'),status=document.querySelector('#status-filter'),search=document.querySelector('#exercise-search');
@@ -112,9 +117,9 @@
       if(obj.version!==1||typeof obj.exercises!=='object'||obj.exercises===null||typeof obj.scores!=='object'||obj.scores===null)throw new Error('schema');
       const nextEx={},nextScores={};
       for(const [k,v] of Object.entries(obj.exercises))if(/^(CA-\d+-\d+|AE-\d+\.\d+\.\d+)$/.test(k)&&['new','done','revisit'].includes(v))nextEx[k]=v;
-      for(const [k,v] of Object.entries(obj.scores))if(/^(ca|ae)-q(?:[1-9]|10)$/.test(k)&&Number.isInteger(v)&&v>=0&&v<=10)nextScores[k]=v;
+      for(const [k,v] of Object.entries(obj.scores))if(/^(ca|ae)-(?:b-)?q(?:[1-9]|10)$/.test(k)&&Number.isInteger(v)&&v>=0&&v<=10)nextScores[k]=v;
       state.exercises={...state.exercises,...nextEx};state.scores={...state.scores,...nextScores};
-      save();restoreProgress();filter();updateScores();message('记录已导入并合并。','Progress imported and merged.');
+      save();restoreProgress();filter();for(const update of scoreUpdaters)update();message('记录已导入并合并。','Progress imported and merged.');
     }catch{message('文件格式不正确，原有记录已保留。','Invalid file format; existing progress was preserved.');}
     importer.value='';
   });

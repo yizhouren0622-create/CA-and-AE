@@ -53,11 +53,11 @@ def link(url,zh,en,desc,desc_en):
 home=bi('电路分析基础与模拟电子技术','Circuit Analysis & Analog Electronics','h1')+bi('按考试范围学习，按解题步骤练习。先完成电路基础，再进入模拟电路。','Study within the course scope and practice a clear solution process. Start with circuits, then move to analog electronics.','p','lead')
 home+='<div class="course-entries">'+link('circuit.html','01 · 电路分析基础','01 · Circuit Analysis','参考方向与定律、直流分析、一阶动态、正弦稳态。','References and laws, DC analysis, first-order transients, sinusoidal steady state.')+link('analog.html','02 · 模拟电子技术','02 · Analog Electronics','运放、二极管、MOSFET、BJT、反馈、滤波与比较器。','Op-amps, diodes, MOSFETs, BJTs, feedback, filters and comparators.')+'</div>'
 tot=sum(len(v['items']) for v in library.values());done=sum(checked_count(v) for v in library.values())
-home+='<div class="reading-note">'+bi(f'当前已建立{tot}道教材主习题的题号与页码清单，其中{done}道已有完整题干与核验解析，题目原有配图随题保留。其余逐题标注待整理。两门课各有一套100分基础诊断卷。',f'The inventory contains {tot} numbered textbook exercises; {done} currently have complete statements and checked solutions, with original figures retained where present. Remaining items are labeled pending. Each course has a 100-point diagnostic paper.')+'</div>'
+home+='<div class="reading-note">'+bi(f'当前已建立{tot}道教材主习题的题号与页码清单，其中{done}道已有完整题干与核验解析，题目原有配图随题保留。其余逐题标注待整理。两门课均提供基础诊断与综合训练卷。',f'The inventory contains {tot} numbered textbook exercises; {done} currently have complete statements and checked solutions, with original figures retained where present. Remaining items are labeled pending. Both courses offer diagnostic and integrated practice papers.')+'</div>'
 page('index.html','电路分析与模拟电子技术','<article class="study-paper home">'+home+'</article>')
 
 scope=bi('考试范围与资料依据','Course scope & source hierarchy','h1')+bi('最高依据为授课计划第2–5页；课件提供讲解，教材提供题目。讲授范围以外的章节保留在全书习题清单中，但不进入默认考试路线。','The plan, slides 2–5, controls coverage. Lecture slides support explanations and textbooks supply exercises. Chapters outside coverage remain in the full-book inventory but are not in the default exam route.','p')
-scope+='<div class="scope-note">'+bi('评价构成：考勤与课堂表现15%，课后作业15%，期末闭卷70%。纲领未给出期末题型、时长或各章分值；本站100分诊断卷及80分钟建议是自测设置。','Assessment: attendance/class participation 15%, homework 15%, closed-book final 70%. The plan does not specify final question types, duration or chapter weights. The 100-point papers and suggested 80 minutes are site practice settings.')+'</div>'
+scope+='<div class="scope-note">'+bi('评价构成：考勤与课堂表现15%，课后作业15%，期末闭卷70%。纲领未给出期末题型、时长或各章分值；本站试卷分值与80或100分钟建议均是自测设置。','Assessment: attendance/class participation 15%, homework 15%, closed-book final 70%. The plan does not specify final question types, duration or chapter weights. Paper points and suggested durations of 80 or 100 minutes are site practice settings.')+'</div>'
 scope+=b(syllabus['editionNote'],'p')
 for cid,c in courses.items():
     scope+=bi(c['zh'],c['en'],'h2')+'<ul class="scope-list">'+''.join(bi(s['zh'],s['en'],'li') for s in c['scope'])+'</ul>'+b(c['excluded'],'p','reading-note')
@@ -90,19 +90,25 @@ for cid,c in courses.items():
         body+=reveal('一分钟检查','One-minute check',bi(l['check'],l['check_en']))
         body+=f'<a class="related" href="{cid}-exam.html">'+bi('用模拟卷检查掌握情况','Check understanding on the paper','span')+'</a></section>'
     page(f'{cid}-study.html',c['zh']+'知识与解题','<div class="reading-layout">'+toc+'<article class="study-paper">'+body+'</article></div>',cid,kind='reading')
-    p=next(p for p in papers if p['course']==cid)
-    body=b(p['title'],'h1')+bi(f'10题 · 100分 · 建议{p["minutes"]}分钟 · 闭卷自测',f'10 questions · 100 points · Suggested {p["minutes"]} minutes · Closed-book practice','p','exam-meta')+b(p['origin'],'p','scope-note')
-    body+=bi('先独立作答，再展开解析按评分点自评。分数与练习状态只保存在当前浏览器；系统不自动判定自由书写答案。','Attempt first, then self-score against the rubric. Scores and progress stay in this browser; free-written answers are not automatically graded.','p')
-    body+=actions()+'<div class="diagnosis" data-paper="'+cid+'"><div class="timer-tools"><button data-timer-start>'+bi('开始计时','Start timer','span')+'</button><button data-timer-pause>'+bi('暂停','Pause','span')+'</button><output data-timer aria-live="off">00:00</output></div><div data-score-summary aria-live="polite"></div><div data-weak-topics></div></div>'
-    body+='<nav class="exam-toc" aria-label="题号 · Questions">'+''.join(f'<a href="#{q["id"]}">{i}</a>' for i,q in enumerate(p['questions'],1))+'</nav>'
-    for i,q in enumerate(p['questions'],1):
-        body+=f'<section class="question" id="{q["id"]}" data-points="{q["points"]}" data-topics="{esc(",".join(q["topics"]))}">'+bi(f'{i}. {q["title"]["zh"]}',f'{i}. {q["title"]["en"]}','h2')+bi('10分','10 points','p','muted')+b(q['body'],'p')
-        if q.get('figure'):body+=figure(q['figure'])
-        body+=reveal('提示','Hint',b(q['hint']),kind='hint')
-        body+=reveal('答案、步骤与检查','Answer, working & checks',items(q['steps']['zh'],q['steps']['en'])+b(q['answer'],'p','key')+b(q['check'],'p'))
-        body+='<div class="topic-links">'+''.join(f'<a href="{cid}-study.html#{topic}">'+bi(next(l['zh'] for l in ls if l['id']==topic),next(l['en'] for l in ls if l['id']==topic),'span')+'</a>' for topic in q['topics'])+'</div>'
-        body+=f'<label class="self-score" for="score-{q["id"]}">'+bi('自评分','Self-score','span')+f'<select id="score-{q["id"]}" data-score="{q["id"]}"><option value="">—</option>'+''.join(f'<option value="{n}">{n} 分 · {n} points</option>' for n in range(11))+'</select></label></section>'
-    page(f'{cid}-exam.html',c['zh']+'诊断卷','<article class="exam-paper">'+body+'</article>',cid,kind='exam')
+    course_papers=[p for p in papers if p['course']==cid]
+    body=bi(c['zh']+' · 模拟卷与查漏',c['en']+' · Practice papers & diagnosis','h1')
+    body+='<nav class="paper-menu" aria-label="试卷选择 · Choose paper">'+''.join(f'<a href="#{p.get("id",cid)}">'+b(p['title'],'span')+'</a>' for p in course_papers)+'</nav>'
+    page_body=body
+    for p in course_papers:
+      paper_id=p.get('id',cid)
+      body=f'<article class="exam-paper" data-exam="{paper_id}" id="{paper_id}">'+b(p['title'],'h2')+bi(f'{len(p["questions"])}题 · {p["points"]}分 · 建议{p["minutes"]}分钟 · 闭卷自测',f'{len(p["questions"])} questions · {p["points"]} points · Suggested {p["minutes"]} minutes · Closed-book practice','p','exam-meta')+b(p['origin'],'p','scope-note')
+      body+=bi('先独立作答，再展开解析按评分点自评。分数与练习状态只保存在当前浏览器；系统不自动判定自由书写答案。','Attempt first, then self-score against the rubric. Scores and progress stay in this browser; free-written answers are not automatically graded.','p')
+      body+=actions()+'<div class="diagnosis" data-paper="'+paper_id+'"><div class="timer-tools"><button data-timer-start>'+bi('开始计时','Start timer','span')+'</button><button data-timer-pause>'+bi('暂停','Pause','span')+'</button><output data-timer aria-live="off">00:00</output></div><div data-score-summary aria-live="polite"></div><div data-weak-topics></div></div>'
+      body+='<nav class="exam-toc" aria-label="题号 · Questions">'+''.join(f'<a href="#{q["id"]}">{i}</a>' for i,q in enumerate(p['questions'],1))+'</nav>'
+      for i,q in enumerate(p['questions'],1):
+          body+=f'<section class="question" id="{q["id"]}" data-points="{q["points"]}" data-topics="{esc(",".join(q["topics"]))}">'+bi(f'{i}. {q["title"]["zh"]}',f'{i}. {q["title"]["en"]}','h2')+bi('10分','10 points','p','muted')+b(q['body'],'p')
+          if q.get('figure'):body+=figure(q['figure'])
+          body+=reveal('提示','Hint',b(q['hint']),kind='hint')
+          body+=reveal('答案、步骤与检查','Answer, working & checks',items(q['steps']['zh'],q['steps']['en'])+b(q['answer'],'p','key')+b(q['check'],'p'))
+          body+='<div class="topic-links">'+''.join(f'<a href="{cid}-study.html#{topic}">'+bi(next(l['zh'] for l in ls if l['id']==topic),next(l['en'] for l in ls if l['id']==topic),'span')+'</a>' for topic in q['topics'])+'</div>'
+          body+=f'<label class="self-score" for="score-{q["id"]}">'+bi('自评分','Self-score','span')+f'<select id="score-{q["id"]}" data-score="{q["id"]}"><option value="">—</option>'+''.join(f'<option value="{n}">{n} 分 · {n} points</option>' for n in range(11))+'</select></label></section>'
+      page_body+=body+'</article>'
+    page(f'{cid}-exam.html',c['zh']+'模拟卷与查漏',page_body,cid,kind='exam')
     body=bi(c['zh']+' · 教材逐题',c['en']+' · Textbook exercise library','h1')+bi(f'全书{len(lib["items"])}道主习题清单，含范围外章节；现有{checked_count(lib)}道完整题干与核验解析。计数按主习题，不把小问另算一题。',f'{len(lib["items"])} numbered exercises across the full book, including chapters outside exam coverage. {checked_count(lib)} currently have complete statements and checked solutions. Subparts are not counted as separate main exercises.','p')
     body+=bi('“清单已核对”只表示题号与来源页已收录，不表示题干已抄录或答案已完成。部分章的范围需要逐题确认。','“Inventory checked” means that a problem number and source page are indexed; it does not mean the statement or solution is complete. Coverage in partially taught chapters needs individual mapping.','p','scope-note')
     if partial_count(lib):body+=bi(f'另有{partial_count(lib)}道题提供部分小问解析；未完成的小问及原因随题列出，未计入完整题数。',f'A further {partial_count(lib)} exercises have checked solutions for some subparts. Pending parts and reasons are listed explicitly and excluded from the complete count.','p','scope-note')

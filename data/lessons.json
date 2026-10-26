@@ -483,32 +483,66 @@
   },
   {
     "course": "analog",
+    "id": "frequency-concepts",
+    "zh": "频率响应与RC：仅概念",
+    "en": "Frequency response and RC: concepts only",
+    "scope": "第6章引言、6.1，仅概念 / Chapter 6 introduction and 6.1, concepts only",
+    "source": "教材第7版190–193页，图6.0.1、6.1.1、6.1.3；授课计划 / 7th ed., pp.190–193, Figs.6.0.1,6.1.1,6.1.3; course plan",
+    "concept": "频率响应同时描述增益幅度与相位随频率的变化。耦合、旁路电容主要决定低频衰减，小寄生及负载电容主要影响高频。RC输出取电容两端通常是低通，取串联电路的电阻两端通常是高通。放大器的中频区位于下限与上限之间；带宽需满足信号频带要求，但只说“在通带内”并不能保证严格无失真。",
+    "concept_en": "Frequency response describes both gain magnitude and phase versus frequency. Coupling/bypass capacitors mainly affect the low-frequency end, while small parasitic and load capacitances affect the high-frequency end. An RC voltage output across the capacitor is typically low-pass; across the resistor in a series RC it is high-pass. An amplifier’s midband lies between lower and upper cutoffs. Bandwidth must cover the signal band, but passband membership alone does not guarantee exact waveform fidelity.",
+    "formulas": [
+      "|A_v(f_L)|=|A_v(f_H)|=\\frac{|A_{vM}|}{\\sqrt2},\\qquad BW=f_H-f_L",
+      "\\tau=RC,\\qquad f_c=\\frac1{2\\pi\\tau}",
+      "H_{LP}(j\\omega)=\\frac1{1+j\\omega RC},\\qquad H_{HP}(j\\omega)=\\frac{j\\omega RC}{1+j\\omega RC}"
+    ],
+    "steps": [
+      "先标清输出取在哪里，再考察极低频和极高频的电容近似；不凭“有电容”判断滤波类型。",
+      "阅读幅频图：相对中频幅度下降约3 dB的两点是上下限，幅度比为根号2的倒数，不能写成一半。",
+      "阅读相频图：RC低通在转折处滞后45°，高通超前45°；这些是基础识别关系。",
+      "结合电路分析已学的时间常数理解转折频率；此处公式用于建立概念联系，不把晶体管高频模型、米勒效应或多极点详细推导列作必考。"
+    ],
+    "steps_en": [
+      "Locate the output before using low/high-frequency capacitor limits; the presence of a capacitor alone does not identify the filter.",
+      "Read magnitude plots: the lower/upper cutoffs are about 3 dB below midband, with amplitude ratio the reciprocal square root of two, not one half.",
+      "Read phase plots: RC low-pass lags by 45 degrees at its corner; RC high-pass leads by 45 degrees. These are basic recognition relations.",
+      "Connect the corner frequency to the time constant learned in Circuit Analysis. The formulas support concepts; transistor high-frequency models, Miller effect and detailed multipole derivations are not required here."
+    ],
+    "traps": "幅度减半约为−6 dB；同电阻条件下功率减半才约为−3 dB。Hz与rad/s不可混用。电路第10章的具体计算深度尚未明确，不据此扩充考试要求。",
+    "traps_en": "Halving amplitude is about −6 dB; halving power at the same resistance is about −3 dB. Distinguish hertz from radians per second. The calculation depth of Circuit chapter 10 remains unspecified and is not expanded by this guide.",
+    "check": "中频幅度100、下限20 Hz、上限20 kHz：边界幅度约70.71，带宽19.98 kHz；电容输出低通保留低频，电阻输出高通抑制直流。",
+    "check_en": "Midband magnitude 100, lower cutoff 20 Hz and upper cutoff 20 kHz give boundary magnitude about 70.71 and bandwidth 19.98 kHz. Capacitor-output low-pass retains low frequencies; resistor-output high-pass rejects DC.",
+    "figure": "rc-frequency-concept.svg"
+  },
+  {
+    "course": "analog",
     "id": "diff-frequency",
-    "zh": "频率响应与差分：概念范围",
-    "en": "Frequency response and differential concepts",
-    "scope": "第6章引言、6.1；7.2.1，仅概念",
-    "source": "ch06.pptx 6.1；ch07.pptx 第17–44页",
-    "concept": "带宽描述在多大频率区间能近似保持所需增益。差分电路把两个输入分成差模和共模；有用差异与共同扰动因此可以分开分析。纲领只要求本部分概念，不把课件后续详细器件高频模型或差分参数推导加入默认训练。",
-    "concept_en": "Bandwidth describes the frequency interval over which gain remains useful. Differential circuits separate input difference from common variation. The plan requests concepts here, so detailed device high-frequency models and full differential-gain derivations are excluded from default training.",
+    "zh": "差分输入与共模抑制：仅概念",
+    "en": "Differential inputs and common-mode rejection: concepts only",
+    "scope": "7.2.1，仅概念 / Section 7.2.1, concepts only",
+    "source": "教材第7版233–234页，图7.2.1；授课计划 / 7th ed., pp.233–234, Fig.7.2.1; course plan",
+    "concept": "直接耦合会把静态漂移传到后级。对称差分结构以两路输入的差为有用量：共同变化在差分输出中相消。MOS源极耦合对的两管共用源节点和尾电流；匹配、足够的尾源输出电阻以及正确工作区是理想抑制的前提。单端输出与双端差分输出的共模表现不能混为一谈。",
+    "concept_en": "Direct coupling passes bias drift to later stages. A symmetric differential structure amplifies input difference while common changes cancel in differential output. A MOS source-coupled pair shares a source node and tail current. Matching, adequate tail-source output resistance and valid operating regions are prerequisites for ideal rejection. Single-ended and differential-output common-mode behavior must be distinguished.",
     "formulas": [
       "v_{id}=v_1-v_2,\\qquad v_{ic}=(v_1+v_2)/2",
       "v_1=v_{ic}+v_{id}/2,\\quad v_2=v_{ic}-v_{id}/2"
     ],
     "steps": [
-      "先用低频/高频极限辨认RC低通与高通。",
-      "把两个输入分解为差模与共模，说明对称性为何帮助抑制共同变化。",
-      "理想共模抑制不等于任何实际电路共模输出都为零。"
+      "定义差模为第一端减第二端，共模为两端平均；再用两式重构原输入。",
+      "同增量属于共模；一增一减同样大小是纯差模；仅一端变化通常同时含两种分量。",
+      "从对称性与总尾电流解释共同扰动的抑制，再指出失配、有限输出电阻和电压余量限制。",
+      "考试路线只要求识别、分解和定性说明，不要求本章详细差分增益、共模抑制比或器件参数推导。"
     ],
     "steps_en": [
-      "Use frequency limits to recognize RC low-/high-pass behavior.",
-      "Separate differential and common-mode inputs and explain the role of symmetry.",
-      "Ideal rejection does not mean every real circuit has zero common-mode output."
+      "Define differential input as input 1 minus input 2 and common input as their average; reconstruct the original pair.",
+      "Equal increments are common-mode; equal opposite increments are purely differential. A single-input change usually includes both.",
+      "Explain rejection through symmetry and tail-current constraint, then identify mismatch, finite output resistance and headroom limits.",
+      "The exam route requires recognition, decomposition and qualitative explanation, not detailed gain, CMRR or device-parameter derivations."
     ],
-    "traps": "单端输入一般同时含共模与差模。仅概念范围不应扩展成详细差分电路计算题。",
-    "traps_en": "A single-ended input generally contains both differential and common-mode components. Concepts-only coverage does not authorize detailed differential-circuit calculation questions.",
-    "check": "两个输入同时上升同样大小属于纯共模；一个上升Δ、另一个下降Δ属于差模变化2Δ。",
-    "check_en": "Equal changes at both inputs are common-mode; opposite changes of plus/minus delta produce a differential change of 2 delta.",
-    "figure": null
+    "traps": "理想差分共模输出为零需要相应理想条件，不表示实际电路在任何输入电平下都抑制共模。不能把教材小节7.2.1直接当成同号习题的范围判定。",
+    "traps_en": "Zero ideal differential output for common input requires the stated ideal conditions; actual rejection fails outside valid operating ranges. Subsection 7.2.1 does not automatically determine coverage of an exercise with the same number.",
+    "check": "输入102 mV与98 mV：共模100 mV、差模4 mV；两端各增10 mV只改变共模。仅第一端再增加2 mV则共模增加1 mV、差模增加2 mV。",
+    "check_en": "Inputs 102 and 98 mV give common mode 100 mV and differential mode 4 mV. Equal 10 mV increments change only common mode. Increasing only input 1 by 2 mV adds 1 mV common mode and 2 mV differential mode.",
+    "figure": "differential-concept.svg"
   },
   {
     "course": "analog",

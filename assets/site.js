@@ -19,17 +19,20 @@
   const top = document.querySelector('.site-top'), menu = document.querySelector('.site-menu-btn');
   if (menu) menu.addEventListener('click',() => menu.setAttribute('aria-expanded',String(top.classList.toggle('open'))));
   for (const a of document.querySelectorAll('.site-links a')) a.addEventListener('click',() => { top.classList.remove('open'); menu.setAttribute('aria-expanded','false'); });
-  for (const b of document.querySelectorAll('[data-close-reveals]')) b.addEventListener('click',() => { for (const d of document.querySelectorAll('.reveal')) d.open = false; });
+  for (const b of document.querySelectorAll('[data-close-reveals]')) b.addEventListener('click',() => { for (const d of (b.closest('[data-exam]')||document).querySelectorAll('.reveal')) d.open = false; });
   let printState = null;
   function restorePrint() {
     if (!printState) return;
     for (const [d,open] of printState) d.open = open;
+    for (const el of document.querySelectorAll('[data-print-excluded]'))el.removeAttribute('data-print-excluded');
     document.body.classList.remove('print-solutions'); printState = null;
   }
   for (const b of document.querySelectorAll('[data-print]')) b.addEventListener('click',() => {
     restorePrint();
     printState = [...document.querySelectorAll('.reveal')].map(d => [d,d.open]);
     const solutions = b.dataset.print === 'solutions';
+    const paper=b.closest('[data-exam]');
+    if(paper)for(const el of document.querySelectorAll('[data-exam]'))if(el!==paper)el.setAttribute('data-print-excluded','');
     document.body.classList.toggle('print-solutions',solutions);
     for (const [d] of printState) d.open = solutions;
     window.print();

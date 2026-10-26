@@ -97,13 +97,19 @@ for cid, lib in library.items():
         if sol.get('figure') and not (ROOT / 'assets' / sol['figure']).is_file(): errors.append(f'{key}: source figure missing')
     raw = json.dumps(lib, ensure_ascii=False)
     if any(s in raw for s in ('/Users/', 'wxid_', 'privatePath')): errors.append(f'{cid}: private source metadata')
+question_ids=[];paper_ids=[]
 for paper in exams:
+    paper_ids.append(paper.get('id',paper['course']))
     valid = {l['id'] for l in lessons if l['course'] == paper['course']}
     questions = paper['questions']
     if len(questions) != 10: errors.append(f'{paper["course"]}: paper needs 10 questions')
+    if sum(q['points'] for q in questions)!=paper['points']:errors.append(f'{paper["course"]}: paper point total')
     for q in questions:
+        question_ids.append(q['id'])
         for field in ('title', 'body', 'hint', 'answer', 'check'): bilingual(q.get(field), f'{q["id"]}.{field}')
         if not set(q['topics']).issubset(valid): errors.append(f'{q["id"]}: invalid diagnosis topic')
         if not q['steps']['zh'] or len(q['steps']['zh']) != len(q['steps']['en']): errors.append(f'{q["id"]}: incomplete bilingual derivation')
+if len(question_ids)!=len(set(question_ids)):errors.append('Mock papers share a question/progress ID')
+if len(paper_ids)!=len(set(paper_ids)):errors.append('Mock papers share a timer ID')
 if errors: raise SystemExit('\n'.join(errors))
 print(f'PASS: {len(pages)} pages; all internal links and bilingual blocks valid; {total} exercise IDs, {solved} complete checked solutions, {partial} partial solutions; {sum(p.math for p in pages.values())} MathML equations.')

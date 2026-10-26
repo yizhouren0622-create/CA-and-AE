@@ -29896,8 +29896,8 @@
         "printedPage": 223,
         "pdfPage": 256,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "混合：小问(1)类型识别仅概念；(2)(3)详细计算为拓展",
+        "scopeLabelEn": "Mixed: part (1) filter recognition is conceptual; detailed calculations (2)(3) are extensions"
       },
       {
         "id": "AE-6.1.2",
@@ -29906,8 +29906,8 @@
         "printedPage": 223,
         "pdfPage": 256,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：RC参数设计计算；6.1只要求概念",
+        "scopeLabelEn": "Extension: RC component design; section 6.1 requires concepts only"
       },
       {
         "id": "AE-6.1.3",
@@ -29916,8 +29916,8 @@
         "printedPage": 223,
         "pdfPage": 256,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "混合：小问(1)类型识别仅概念；(2)(3)详细计算为拓展",
+        "scopeLabelEn": "Mixed: part (1) filter recognition is conceptual; detailed calculations (2)(3) are extensions"
       },
       {
         "id": "AE-6.1.4",
@@ -29926,8 +29926,8 @@
         "printedPage": 223,
         "pdfPage": 256,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：RC参数设计计算；6.1只要求概念",
+        "scopeLabelEn": "Extension: RC component design; section 6.1 requires concepts only"
       },
       {
         "id": "AE-6.1.5",
@@ -29936,8 +29936,8 @@
         "printedPage": 223,
         "pdfPage": 256,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "仅概念：幅频图读图与截止处相对衰减",
+        "scopeLabelEn": "Concepts only: reading magnitude plots and relative cutoff attenuation"
       },
       {
         "id": "AE-6.1.6",
@@ -29946,8 +29946,8 @@
         "printedPage": 224,
         "pdfPage": 257,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：给定复增益的定量频率响应；概念可回看6.1",
+        "scopeLabelEn": "Extension: quantitative complex-gain frequency response; related concepts in 6.1"
       },
       {
         "id": "AE-6.2.1",
@@ -30176,8 +30176,8 @@
         "printedPage": 293,
         "pdfPage": 326,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.2",
@@ -30186,8 +30186,8 @@
         "printedPage": 293,
         "pdfPage": 326,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.3",
@@ -30196,8 +30196,8 @@
         "printedPage": 293,
         "pdfPage": 326,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.4",
@@ -30206,8 +30206,8 @@
         "printedPage": 293,
         "pdfPage": 326,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.5",
@@ -30216,8 +30216,8 @@
         "printedPage": 293,
         "pdfPage": 326,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.6",
@@ -30226,8 +30226,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.7",
@@ -30236,8 +30236,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：BJT差分电路，超出7.2.1的FET概念范围",
+        "scopeLabelEn": "Extension: BJT differential circuits beyond section 7.2.1 FET concepts"
       },
       {
         "id": "AE-7.2.8",
@@ -30246,8 +30246,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：BJT差分电路，超出7.2.1的FET概念范围",
+        "scopeLabelEn": "Extension: BJT differential circuits beyond section 7.2.1 FET concepts"
       },
       {
         "id": "AE-7.2.9",
@@ -30256,8 +30256,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：BJT差分电路，超出7.2.1的FET概念范围",
+        "scopeLabelEn": "Extension: BJT differential circuits beyond section 7.2.1 FET concepts"
       },
       {
         "id": "AE-7.2.10",
@@ -30266,8 +30266,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：BJT差分电路，超出7.2.1的FET概念范围",
+        "scopeLabelEn": "Extension: BJT differential circuits beyond section 7.2.1 FET concepts"
       },
       {
         "id": "AE-7.2.11",
@@ -30276,8 +30276,8 @@
         "printedPage": 294,
         "pdfPage": 327,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：详细FET差分参数/工作区计算；7.2.1仅概念",
+        "scopeLabelEn": "Extension: detailed FET differential parameters/operating-region calculations; section 7.2.1 is conceptual"
       },
       {
         "id": "AE-7.2.12",
@@ -30286,8 +30286,8 @@
         "printedPage": 295,
         "pdfPage": 328,
         "priorityHomework": false,
-        "scopeLabelZh": "部分章，待逐题映射",
-        "scopeLabelEn": "partially covered chapter; individual mapping pending"
+        "scopeLabelZh": "拓展：BJT差分电路，超出7.2.1的FET概念范围",
+        "scopeLabelEn": "Extension: BJT differential circuits beyond section 7.2.1 FET concepts"
       },
       {
         "id": "AE-7.3.1",
@@ -51888,6 +51888,531 @@
           }
         ],
         "figure": "ae-10.8.7-figure.png"
+      },
+      "AE-6.1.1": {
+        "id": "AE-6.1.1",
+        "bookId": "6.1.1",
+        "title": {
+          "zh": "串联耦合RC高通",
+          "en": "Series-coupled RC high-pass"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 223,
+          "pdfPage": 256,
+          "figure": "图题6.1.1"
+        },
+        "statement": {
+          "zh": "电路如图题6.1.1，R1 = 1 kΩ、R2 = 10 kΩ、C = 1 μF。(1)该电路是高通还是低通？(2)求电压增益表达式及其最大值；(3)求转折频率。",
+          "en": "In Fig.6.1.1,R1 = 1 kilohm,R2 = 10 kilohms,C = 1 microfarad. (1) Is it high-pass or low-pass? (2) Find voltage gain and its maximum magnitude. (3) Find corner frequency."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "低频电容隔断，输出在R2两端；高频仍有R1与R2分压。",
+          "en": "The capacitor blocks low frequencies. Output is across R2; at high frequency R1 still divides the voltage."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)类型",
+              "en": "(1) Type"
+            },
+            "text": {
+              "zh": "直流电容开路，输出0；高频电容近似短路，输出保留有限分压，故高通。",
+              "en": "At DC the capacitor opens and output is zero; at high frequency it shorts and leaves finite division: high-pass."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)增益与上限",
+              "en": "(2) Gain and limiting maximum"
+            },
+            "text": {
+              "zh": "输出是串联支路中R2的压降。最大幅值为高频极限（有限频率单调趋近），不是1。",
+              "en": "Output is the drop across R2 in the series branch. Maximum magnitude is the high-frequency limiting supremum, not unity."
+            },
+            "formula": "H(j\\omega)=\\frac{R_2}{R_1+R_2+\\frac1{j\\omega C}}=\\frac{10}{11}\\frac{j\\omega\\tau}{1+j\\omega\\tau},\\quad \\tau=(R_1+R_2)C=11\\,\\mathrm{ms},\\quad |H|_{max}=\\frac{10}{11}"
+          },
+          {
+            "title": {
+              "zh": "(3)转折频率",
+              "en": "(3) Corner"
+            },
+            "text": {
+              "zh": "从电容两端看，独立电压源置零后两电阻串联。截止幅值相对于高频通带下降约3 dB。",
+              "en": "Looking from the capacitor with the voltage source zeroed gives the sum of the two resistors. Corner magnitude is about 3 dB below the high-frequency passband."
+            },
+            "formula": "f_L=\\frac1{2\\pi(R_1+R_2)C}\\approx14.46863119\\,\\mathrm{Hz},\\quad H(j\\omega_L)=\\frac5{11}(1+j)"
+          }
+        ],
+        "answer": {
+          "zh": "高通；最大幅值10/11，转折频率约14.46863 Hz。",
+          "en": "High-pass; limiting magnitude10/11,corner about14.46863 Hz."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能遗漏信号串联电阻R1；小问(1)是概念识别，(2)(3)的详细计算为拓展。",
+            "en": "Do not omit series R1. Part(1) is concept recognition; detailed calculations in(2)(3) are extensions."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图：原有连接、输出位置、坐标与标注。",
+            "en": "Original textbook figure retaining connections, output location, axes and labels."
+          }
+        },
+        "figure": "ae-6.1.1-figure.png"
+      },
+      "AE-6.1.2": {
+        "id": "AE-6.1.2",
+        "bookId": "6.1.2",
+        "title": {
+          "zh": "按下限频率选电容",
+          "en": "Choose capacitance for lower cutoff"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 223,
+          "pdfPage": 256,
+          "figure": "图题6.1.1"
+        },
+        "statement": {
+          "zh": "设图题6.1.1中R1 = R2 = 4 kΩ、转折频率fL = 20 Hz，求电容C。",
+          "en": "In Fig.6.1.1,let R1 = R2 = 4 kilohms and lower corner20 Hz. Find C."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "同一高通结构，电容看到的是两个串联电阻之和。",
+          "en": "The same high-pass topology presents the sum of resistances to the capacitor."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "由时间常数反求",
+              "en": "Invert the time-constant relation"
+            },
+            "text": {
+              "zh": "先用转折频率求时间常数，再除以8 kΩ；本题属于参数设计拓展。",
+              "en": "Obtain the time constant from the corner,then divide by8 kilohms. This is a component-design extension."
+            },
+            "formula": "C=\\frac1{2\\pi f_L(R_1+R_2)}=\\frac1{2\\pi(20)(8000)}\\,\\mathrm F\\approx0.994718394\\,\\mathrm{\\mu F}"
+          },
+          {
+            "title": {
+              "zh": "回代检查",
+              "en": "Substitution check"
+            },
+            "text": {
+              "zh": "代回总电阻与电容的乘积得到7.957747 ms，再求频率为20 Hz。实际若选1 μF，转折为约19.8944 Hz；这是取整设计而非精确值。",
+              "en": "Substitution gives7.957747 ms and20 Hz. Choosing1 microfarad instead gives about19.8944 Hz,a rounded design rather than the exact answer."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "C约0.994718 μF，工程取1 μF时需注明约19.8944 Hz。",
+          "en": "C about0.994718 microfarad; rounding to1 microfarad gives about19.8944 Hz."
+        },
+        "pitfalls": [
+          {
+            "zh": "若只用其中一只4 kΩ电阻，会把电容算大一倍。",
+            "en": "Using only one4 kilohm resistor doubles the computed capacitance."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "C"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图：原有连接、输出位置、坐标与标注。",
+            "en": "Original textbook figure retaining connections, output location, axes and labels."
+          }
+        },
+        "figure": "ae-6.1.1-figure.png"
+      },
+      "AE-6.1.3": {
+        "id": "AE-6.1.3",
+        "bookId": "6.1.3",
+        "title": {
+          "zh": "带分压的RC低通",
+          "en": "RC low-pass with resistive division"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 223,
+          "pdfPage": 256,
+          "figure": "图题6.1.3"
+        },
+        "statement": {
+          "zh": "电路如图题6.1.3，R1 = 1 kΩ、R2 = 10 kΩ、C = 3 pF。(1)高通还是低通？(2)求电压增益及其最大值；(3)求转折频率。",
+          "en": "In Fig.6.1.3,R1 = 1 kilohm,R2 = 10 kilohms,C = 3 picofarads. (1) Is it high-pass or low-pass? (2) Find gain and maximum magnitude. (3) Find corner frequency."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "电容并联在输出端；直流是电阻分压，高频输出趋零。",
+          "en": "The capacitor shunts the output. DC gives resistive division; high-frequency output vanishes."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)低通",
+              "en": "(1) Low-pass"
+            },
+            "text": {
+              "zh": "低频电容开路，输出有限；高频电容短路输出，故为低通。",
+              "en": "Low-frequency output remains finite with the capacitor open; the capacitor shorts the output at high frequency: low-pass."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)节点方程给增益",
+              "en": "(2) Nodal gain"
+            },
+            "text": {
+              "zh": "把R2与电容的并联阻抗代入分压，或直接对输出列KCL。最大幅度在直流处。",
+              "en": "Use the parallel impedance of R2 and C in division,or write output KCL directly. Maximum magnitude occurs at DC."
+            },
+            "formula": "\\frac{v_o-v_i}{R_1}+\\frac{v_o}{R_2}+j\\omega Cv_o=0,\\quad H(j\\omega)=\\frac{10/11}{1+j\\omega(R_1\\parallel R_2)C},\\quad |H|_{max}=\\frac{10}{11}"
+          },
+          {
+            "title": {
+              "zh": "(3)电容所见电阻",
+              "en": "(3) Resistance seen by C"
+            },
+            "text": {
+              "zh": "输入电压源置零短路后，电容看到R1与R2并联。理想元件模型给出的高频数值不包含真实器件寄生。",
+              "en": "Zeroing the input source gives R1 in parallel with R2. The ideal-circuit high-frequency result excludes real parasitics."
+            },
+            "formula": "R_{eq}=\\frac{10000}{11}\\,\\Omega,\\quad \\tau=\\frac{30}{11}\\,\\mathrm{ns},\\quad f_H=\\frac1{2\\pi(R_1\\parallel R_2)C}\\approx58.35681247\\,\\mathrm{MHz}"
+          }
+        ],
+        "answer": {
+          "zh": "低通；最大幅值10/11，转折频率约58.35681 MHz。",
+          "en": "Low-pass; maximum magnitude10/11,corner about58.35681 MHz."
+        },
+        "pitfalls": [
+          {
+            "zh": "此处是并联等效电阻，不是R1与R2之和；3 pF不可误作3 μF。(1)仅概念，(2)(3)详细计算为拓展。",
+            "en": "Use the parallel resistance,not the sum. Do not confuse3 pF with3 microfarads. Part(1) is conceptual; detailed(2)(3) calculations are extensions."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图：原有连接、输出位置、坐标与标注。",
+            "en": "Original textbook figure retaining connections, output location, axes and labels."
+          }
+        },
+        "figure": "ae-6.1.3-figure.png"
+      },
+      "AE-6.1.4": {
+        "id": "AE-6.1.4",
+        "bookId": "6.1.4",
+        "title": {
+          "zh": "按上限频率选电容",
+          "en": "Choose capacitance for upper cutoff"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 223,
+          "pdfPage": 256,
+          "figure": "图题6.1.3"
+        },
+        "statement": {
+          "zh": "设图题6.1.3中R1 = R2 = 10 kΩ、转折频率fH = 500 kHz，求电容C。",
+          "en": "In Fig.6.1.3,R1 = R2 = 10 kilohms and upper corner500 kHz. Find C."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "电容所见电阻是5 kΩ。",
+          "en": "The capacitor sees5 kilohms."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "求电容",
+              "en": "Find C"
+            },
+            "text": {
+              "zh": "输入源置零后两只10 kΩ并联，按低通时间常数反求。详细参数设计是拓展。",
+              "en": "With the input source zeroed,the two10 kilohm resistors are parallel. Invert the low-pass time constant; detailed design is an extension."
+            },
+            "formula": "C=\\frac1{2\\pi f_H(R_1\\parallel R_2)}=\\frac1{2\\pi(500000)(5000)}\\,\\mathrm F\\approx63.66197724\\,\\mathrm{pF}"
+          },
+          {
+            "title": {
+              "zh": "单位与幅度检查",
+              "en": "Check units and magnitude"
+            },
+            "text": {
+              "zh": "回代时间常数为0.318309886 μs，角转折频率为3141592.654 rad/s；除以2π得到500 kHz。转折处幅值为直流0.5的根号2分之一。",
+              "en": "The time constant is0.318309886 microsecond and angular corner3141592.654 radians per second; division by2pi gives500 kHz. Corner magnitude is the DC gain0.5 divided by the square root of two."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "C约63.66198 pF。",
+          "en": "C about63.66198 pF."
+        },
+        "pitfalls": [
+          {
+            "zh": "本题500 kHz是普通频率，不是角频率；不可以漏掉2π。",
+            "en": "500 kHz is ordinary frequency,not angular frequency; retain2pi."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "C"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图：原有连接、输出位置、坐标与标注。",
+            "en": "Original textbook figure retaining connections, output location, axes and labels."
+          }
+        },
+        "figure": "ae-6.1.3-figure.png"
+      },
+      "AE-6.1.5": {
+        "id": "AE-6.1.5",
+        "bookId": "6.1.5",
+        "title": {
+          "zh": "由幅频图读中频与边界",
+          "en": "Read midband and cutoffs from a plot"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 223,
+          "pdfPage": 256,
+          "figure": "图题6.1.5"
+        },
+        "statement": {
+          "zh": "某放大器幅频响应如图题6.1.5。(1)求中频电压增益幅值、上限频率与下限频率；(2)输入频率等于下限或上限时，实际增益是多少分贝？原图以直线渐近表示：中频60 dB，低频斜率每十倍频+20 dB，高频斜率每十倍频−20 dB，两转折分别为100 Hz与100 MHz。",
+          "en": "For the magnitude plot in Fig.6.1.5: (1) find midband voltage-gain magnitude and upper/lower cutoffs; (2) find actual gain in dB at either cutoff. The straight-line asymptotes have60 dB midband,+20 dB per decade below100 Hz and−20 dB per decade above100 MHz."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "先分清原图是波特渐近直线，转折交点不是实际曲线正好60 dB。",
+          "en": "The graph uses Bode asymptotes; their corner intersection is not60 dB on the actual response."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)读轴并换算",
+              "en": "(1) Read axes and convert"
+            },
+            "text": {
+              "zh": "电压增益分贝使用20倍常用对数，不能套功率的10倍。下限100 Hz，上限100 MHz。",
+              "en": "Voltage gain uses20 times the base-ten logarithm,not the10-times power formula. Lower cutoff100 Hz,upper100 MHz."
+            },
+            "formula": "20\\log_{10}|A_{vM}|=60,\\quad |A_{vM}|=10^3=1000,\\quad f_L=100\\,\\mathrm{Hz},\\quad f_H=10^8\\,\\mathrm{Hz}"
+          },
+          {
+            "title": {
+              "zh": "(2)实际转折衰减",
+              "en": "(2) Actual corner attenuation"
+            },
+            "text": {
+              "zh": "按教材通常的单一主导一阶转折与相对中频半功率截止定义，实际幅度约707.107，实际增益约56.99 dB，而不是60 dB或30 dB。两转折相距六个十倍频区间，另一端影响通常忽略。",
+              "en": "Under the textbook interpretation of a dominant first-order corner and half-power relative to midband,magnitude is about707.107 and gain56.99 dB,not60 or30 dB. The other corner is six decades away and normally neglected."
+            },
+            "formula": "|A_v(f_L)|\\approx|A_v(f_H)|\\approx\\frac{1000}{\\sqrt2},\\quad G_{corner}\\approx60-20\\log_{10}\\sqrt2=56.98970004\\,\\mathrm{dB}"
+          },
+          {
+            "title": {
+              "zh": "读图精度边界",
+              "en": "Graph precision limit"
+            },
+            "text": {
+              "zh": "仅凭渐近直线无法唯一重建完整复传递函数及任意精度的边界；以上是本题采用的一阶转折标准解释。不要据图编造精确相位或寄生参数。",
+              "en": "Asymptotes alone do not uniquely reconstruct the full complex transfer function or arbitrary-precision boundaries. The answer uses the standard first-order-corner interpretation; do not invent exact phase or parasitics."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "中频幅值1000，下限100 Hz，上限100 MHz；截止处约56.99 dB。",
+          "en": "Midband magnitude1000,lower100 Hz,upper100 MHz; about56.99 dB at cutoff."
+        },
+        "pitfalls": [
+          {
+            "zh": "图中直线转折交点与实际曲线不同；幅度下降根号2倍约3 dB，幅度减半才约6 dB。",
+            "en": "Distinguish asymptote intersections from the actual curve. Dividing amplitude by the square root of two is about3 dB; halving amplitude is about6 dB."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图：原有连接、输出位置、坐标与标注。",
+            "en": "Original textbook figure retaining connections, output location, axes and labels."
+          }
+        },
+        "figure": "ae-6.1.5-figure.png"
+      },
+      "AE-6.1.6": {
+        "id": "AE-6.1.6",
+        "bookId": "6.1.6",
+        "title": {
+          "zh": "复增益中的两端转折",
+          "en": "Two corners in a complex gain"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 224,
+          "pdfPage": 257,
+          "figure": "无题图 / No figure"
+        },
+        "statement": {
+          "zh": "已知放大器电压增益$A_v=\\frac{100j\\frac f{10}}{(1+j\\frac f{10})(1+j\\frac f{10^5})}$，f的单位为Hz。求上限、下限频率、中频电压增益分贝数以及中频区输出与输入的相位差。",
+          "en": "An amplifier has voltage gain $A_v=\\frac{100j\\frac f{10}}{(1+j\\frac f{10})(1+j\\frac f{10^5})}$ with f in hertz. Find upper/lower cutoff frequencies,midband voltage gain in dB,and midband output-to-input phase."
+        },
+        "prerequisites": {
+          "zh": "RC阻抗、分压、幅频/相频与分贝；6.1仅概念，详细计算按随题范围标为拓展。",
+          "en": "RC impedance, division, magnitude/phase and decibels. Section6.1 is concepts-only; detailed calculations are labeled extensions."
+        },
+        "recognition": {
+          "zh": "分解成一个归一高通和一个归一低通；两端相距四个十倍频区间。",
+          "en": "Factor into normalized high-pass and low-pass sections separated by four decades."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "常规教材近似",
+              "en": "Standard textbook approximation"
+            },
+            "text": {
+              "zh": "当频率远大于10 Hz又远小于100 kHz时，高通趋1、低通趋1，增益近似正实数100。教材常规答案为下限约10 Hz、上限约100 kHz、中频40 dB，相位差约0°。",
+              "en": "For frequencies well above10 Hz and well below100 kHz,both normalized sections approach unity. The usual textbook answer is lower cutoff about10 Hz,upper about100 kHz,midband40 dB and phase about0 degrees."
+            },
+            "formula": "A_v=100\\frac{j(f/10)}{1+j(f/10)}\\frac1{1+j(f/10^5)},\\quad G_M\\approx20\\log_{10}100=40\\,\\mathrm{dB}"
+          },
+          {
+            "title": {
+              "zh": "精确幅相说明近似",
+              "en": "Exact magnitude and phase explain the approximation"
+            },
+            "text": {
+              "zh": "设a=10 Hz、b=100000 Hz。相位并非整个有限中频区严格为0；在几何中心1000 Hz恰为0。精确峰值约99.990001，对应39.99913145 dB。",
+              "en": "Let a=10 Hz,b=100000 Hz. Phase is not identically zero across the finite midband; it is exactly zero at the geometric center1000 Hz. Exact peak magnitude is about99.990001,or39.99913145 dB."
+            },
+            "formula": "|A_v(f)|=\\frac{100bf}{\\sqrt{(f^2+a^2)(f^2+b^2)}},\\quad \\varphi=90^\\circ-\\arctan\\frac f a-\\arctan\\frac f b,\\quad f_{peak}=\\sqrt{ab},\\quad |A_v|_{peak}=\\frac{100b}{a+b}"
+          },
+          {
+            "title": {
+              "zh": "若严格相对实际峰值定义半功率",
+              "en": "If cutoff is strictly relative to the actual peak"
+            },
+            "text": {
+              "zh": "精确半功率边界满足右式；数值为下限9.99800060 Hz、上限100019.9980 Hz。它们与极点频率10 Hz、100000 Hz略有差别。不要把精确峰值定义和渐近中频定义混用；常规答案已充分利用两端远离的近似。",
+              "en": "Exact half-power boundaries relative to the actual peak satisfy the equation below: lower9.99800060 Hz,upper100019.9980 Hz. They differ slightly from pole frequencies10 and100000 Hz. Do not mix exact-peak and asymptotic-midband definitions; the conventional answer uses well-separated corners."
+            },
+            "formula": "2f^2(a+b)^2=(f^2+a^2)(f^2+b^2),\\quad f_H-f_L=a+b,\\quad f_Hf_L=ab"
+          }
+        ],
+        "answer": {
+          "zh": "常规：下限约10 Hz，上限约100 kHz，中频约40 dB、相位约0°；精确峰值与半功率定义的微小差别见推导。",
+          "en": "Conventional: lower about10 Hz,upper about100 kHz,midband about40 dB and phase about0 degrees; exact-peak/half-power refinements are distinguished above."
+        },
+        "pitfalls": [
+          {
+            "zh": "原式以Hz给f，不应再把10或100000除以2π。详细复频率计算是拓展，不因习题号6.1.6就升级为必考。",
+            "en": "The formula uses f in hertz; do not divide10 or100000 by2pi. Detailed complex-frequency calculations are extensions,not automatically required because of the6.1.6 ID."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "fL",
+          "fH",
+          "gain-dB",
+          "phase"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材223–224页原题；使用独立复数节点方程、低高频极限及数值求根复核，区分渐近图、极点频率与精确半功率定义。",
+            "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
+          }
+        }
       }
     }
   }
