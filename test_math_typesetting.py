@@ -8,6 +8,12 @@ def alltags(e,t):return list(e.iter('{'+NS+'}'+t))
 def value(e):return ''.join(e.itertext())
 
 class MathTypography(unittest.TestCase):
+ def test_simulator_version_is_prose_not_a_subscript(self):
+  for name in ['ngspice47','LTspice17','PSpice23']:
+   rendered=format_text('Verified with '+name+'.','en')
+   self.assertIn(name,rendered)
+   self.assertNotIn('<msub',rendered)
+  self.assertIn('<msub',format_text('R1','en'))
  def test_prose_component_names_have_subscripts(self):
   for name,sub in [('Rb','b'),('Rac','ac'),('Kn','n'),('Ri','i')]:
    e=tree(identifier(name));self.assertEqual(value(alltags(e,'msub')[0][1]),sub)

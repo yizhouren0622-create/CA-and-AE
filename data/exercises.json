@@ -31457,8 +31457,13 @@
         "printedPage": 443,
         "pdfPage": 476,
         "priorityHomework": false,
-        "scopeLabelZh": "综合题，逐问范围待核验",
-        "scopeLabelEn": "integrated problem; subpart scope mapping pending"
+        "scopeLabelZh": "考试范围：第2章求和/积分与10.8.1比较器综合，三个输出均要求",
+        "scopeLabelEn": "in scope: chapter2 summer/integrator and section10.8.1 comparator; all three outputs",
+        "scopeMapping": {
+          "status": "required",
+          "authority": "课程纲领：模电第2章全部及教材小节10.8.1；原题印刷443/PDF476，无振荡反馈回路 / Course plan: all chapter2 and subsection10.8.1; source p443/PDF476, no oscillation loop",
+          "subpartBoundary": "vo1: chapter2 summing; vo2: chapter2 integration; vo3: section10.8.1 hysteresis comparator"
+        }
       },
       {
         "id": "AE-11.1.1",
@@ -52413,6 +52418,1406 @@
             "en": "Source statements checked against printed223–224. Independent complex nodal equations, frequency limits and numerical root checks distinguish asymptotes, pole frequencies and exact half-power definitions."
           }
         }
+      },
+      "AE-5.4.1": {
+        "id": "AE-5.4.1",
+        "bookId": "5.4.1",
+        "title": {
+          "zh": "共射—共基级联与有限β",
+          "en": "Common-emitter/common-base cascade with finite beta"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 187,
+          "pdfPage": 220,
+          "figure": "图题5.4.1"
+        },
+        "statement": {
+          "zh": "电路如图题5.4.1，两管β = 100、VBEQ = 0.7 V，求：(1)IC1Q、VCE1Q、IC2Q、VCE2Q；(2)T1、T2各组成何种组态？(3)Av1、Av2、Av、Ri、Ro。图中集电极电源+15 V，Rc2 = 470 Ω，T2基极固定+6 V，T1发射极经10.2 mA理想恒流源接−15 V，并有交流旁路电容Ce；信号vs直接接T1基极。",
+          "en": "For Fig.5.4.1,both transistors have beta100 and VBEQ0.7 V. Find (1) IC1Q,VCE1Q,IC2Q,VCE2Q; (2) each stage configuration; (3) Av1,Av2,Av,Ri,Ro. Collector supply+15 V,Rc2=470 ohms,T2 base fixed+6 V. T1 emitter connects through an ideal10.2 mA sink to−15 V and is AC-bypassed by Ce; vs directly drives T1 base."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留管型、接地、电源极性及所有器件标注。",
+            "en": "Original textbook figure retaining device types, grounds, supply polarities and component labels."
+          }
+        },
+        "prerequisites": {
+          "zh": "先做直流，再画中频模型并计入级间加载。未给小信号参数的BJT数值采用课件估值：基区电阻200 Ω、热电压26 mV，忽略厄利效应；MOS忽略沟道调制。范围外5.4保留为全书拓展。",
+          "en": "Find bias before drawing the midband model and including interstage loading. Unspecified BJT small-signal numbers use course estimates: base spreading resistance200 ohms,thermal voltage26 mV,no Early effect; MOS channel modulation is neglected. Section5.4 remains a full-book extension."
+        },
+        "recognition": {
+          "zh": "T1集电极电流是T2发射极电流，不能把两只集电极电流都直接等于尾电流。",
+          "en": "T1 collector current is T2 emitter current; neither collector current is exactly the sink current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)静态电流",
+              "en": "(1) Bias currents"
+            },
+            "text": {
+              "zh": "零直流信号令T1基极0 V，发射极−0.7 V。先由恒流源固定T1发射极电流，再依次保留两次基极电流损耗。",
+              "en": "With zero DC signal,T1 base is0 V and emitter−0.7 V. The sink fixes T1 emitter current; retain both base-current losses."
+            },
+            "formula": "I_{E1Q}=10.2\\,\\mathrm{mA},\\quad I_{C1Q}=\\frac{100}{101}I_{E1Q}=10.09900990\\,\\mathrm{mA},\\quad I_{E2Q}=I_{C1Q},\\quad I_{C2Q}=\\frac{100}{101}I_{E2Q}=9.999019704\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "(1)节点电压与工作区",
+              "en": "(1) Voltages and operating regions"
+            },
+            "text": {
+              "zh": "T2基极6 V、发射极5.3 V，也就是T1集电极。T1满足−0.7<0<5.3，T2满足5.3<6<10.30046，均为放大区。",
+              "en": "T2 base is6 V,emitter5.3 V,which is T1 collector. The node order is−0.7<0<5.3 for T1 and5.3<6<10.30046 for T2: both forward active."
+            },
+            "formula": "V_{CE1Q}=5.3-(-0.7)=6\\,\\mathrm V,\\quad V_{C2Q}=15-(470)I_{C2Q}\\approx10.30046074\\,\\mathrm V,\\quad V_{CE2Q}\\approx5.000460739\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)共射后接共基",
+              "en": "(2) CE followed by CB"
+            },
+            "text": {
+              "zh": "交流时Ce短路使T1射极接地，T2基极固定电源也为交流地，所以第一管共射、第二管共基。Rc2是最终输出负载，不能直接当作第一级的集电极负载。",
+              "en": "Ce grounds T1 emitter for AC; T2 base supply is AC ground. Thus T1 is CE and T2 CB. Rc2 loads the final output,not directly the first collector."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)参数与加载",
+              "en": "(3) Parameters and loading"
+            },
+            "text": {
+              "zh": "未另给小信号参数，采用上述课件估值。第一级看到的是共基输入电阻，故第一级电压增益接近−1而不是−100。",
+              "en": "Use the stated course small-signal estimates. The first stage sees the low CB input resistance,so its voltage gain is near−1,not−100."
+            },
+            "formula": "r_{be1}=200+\\frac{101(26\\,\\mathrm{mV})}{I_{E1Q}}\\approx457.4509804\\,\\Omega,\\quad r_{be2}\\approx460.0254902\\,\\Omega,\\quad R_{i2}=\\frac{r_{be2}}{101}\\approx4.554707824\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(3)两级增益及端口电阻",
+              "en": "(3) Gains and port resistances"
+            },
+            "text": {
+              "zh": "以下级增益均采用实际加载，整体从T1基极到T2集电极。忽略厄利效应时，输出测试源只看到470 Ω电阻。",
+              "en": "Stage gains include actual loading; total gain is from T1 base to T2 collector. With no Early effect,the output test source sees only470 ohms."
+            },
+            "formula": "A_{v1}=-\\frac{100R_{i2}}{r_{be1}}\\approx-0.9956712345,\\quad A_{v2}=\\frac{100R_{c2}}{r_{be2}}\\approx102.1682515,\\quad A_v\\approx-101.7259891,\\quad R_i=r_{be1},\\quad R_o=470\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "IC1Q约10.09901 mA、VCE1Q = 6 V；IC2Q约9.99902 mA、VCE2Q约5.00046 V。共射—共基；按课件小信号估值，Av约−101.726，Ri约457.451 Ω，Ro = 470 Ω。",
+          "en": "IC1Q≈10.09901 mA,VCE1Q=6 V; IC2Q≈9.99902 mA,VCE2Q≈5.00046 V. CE–CB; under the stated small-signal estimates,Av≈−101.726,Ri≈457.451 ohms,Ro=470 ohms."
+        },
+        "pitfalls": [
+          {
+            "zh": "恒流源固定发射极电流而非集电极电流；交流旁路电容与直流恒流源必须分开处理。",
+            "en": "The sink fixes emitter rather than collector current; distinguish its DC role from the AC bypass capacitor."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-IC1",
+          "1-VCE1",
+          "1-IC2",
+          "1-VCE2",
+          "2",
+          "3-Av1",
+          "3-Av2",
+          "3-Av",
+          "3-Ri",
+          "3-Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文及原图逐项核对；独立直流电流守恒、工作区不等式与小信号节点矩阵复核。5.4.4符号式另用300组参数与节点方程比较；10.8.10从两个可能初始状态作时域状态跟踪。题目未要求SPICE，未把数值矩阵称作SPICE仿真。",
+            "en": "Source statements/figures checked individually; independent DC current balance,region inequalities and small-signal nodal matrices verified. The5.4.4 expressions match300 parameter sets;10.8.10 is state-tracked from both possible initial states. No SPICE is requested; numerical matrices are not called SPICE simulation."
+          }
+        },
+        "completionNote": {
+          "zh": "题干从印刷187页续至188页，图位于188页。",
+          "en": "Statement continues from printed187 to188; figure on188."
+        },
+        "figure": "ae-5.4.1-figure.png"
+      },
+      "AE-5.4.2": {
+        "id": "AE-5.4.2",
+        "bookId": "5.4.2",
+        "title": {
+          "zh": "共集—共基的共射极节点",
+          "en": "Shared-emitter CC–CB connection"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 188,
+          "pdfPage": 221,
+          "figure": "图题5.4.2"
+        },
+        "statement": {
+          "zh": "电路如图题5.4.2，两管特性一致，β1 = β2 = 50，VBE1Q = VBE2Q = 0.7 V。(1)画交流通路并说明T1、T2各为何种组态；(2)估算IC1Q、VCE1Q、IC2Q、VCE2Q（提示：发射结压降相等，所以IB1Q = IB2Q）；(3)求Av、Ri、Ro。图中两管均为NPN，T1集电极接+6 V，T2基极接地，两发射极相连后经Re = 2 kΩ接−6 V；T2集电极经Rc = 2.2 kΩ接+6 V。输入vi直接接T1基极。",
+          "en": "For Fig.5.4.2,the two matched NPN transistors have beta1=beta2=50 and VBE1Q=VBE2Q=0.7 V. (1) Draw the AC circuit and classify each stage. (2) Estimate both ICQ and VCEQ values; equal junction drops imply equal base currents. (3) Find Av,Ri,Ro. T1 collector is+6 V,T2 base grounded; their emitters join and connect through Re=2 kilohms to−6 V. T2 collector connects through Rc=2.2 kilohms to+6 V; vi drives T1 base directly."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留管型、接地、电源极性及所有器件标注。",
+            "en": "Original textbook figure retaining device types, grounds, supply polarities and component labels."
+          }
+        },
+        "prerequisites": {
+          "zh": "先做直流，再画中频模型并计入级间加载。未给小信号参数的BJT数值采用课件估值：基区电阻200 Ω、热电压26 mV，忽略厄利效应；MOS忽略沟道调制。范围外5.4保留为全书拓展。",
+          "en": "Find bias before drawing the midband model and including interstage loading. Unspecified BJT small-signal numbers use course estimates: base spreading resistance200 ohms,thermal voltage26 mV,no Early effect; MOS channel modulation is neglected. Section5.4 remains a full-book extension."
+        },
+        "recognition": {
+          "zh": "原图T2也是NPN，两只发射极电流在Re中相加，不是PNP负载。",
+          "en": "T2 is also NPN. Both emitter currents add in Re; T2 is not a PNP load."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)交流通路",
+              "en": "(1) AC circuit"
+            },
+            "text": {
+              "zh": "见解析等效图：两电源交流接地，T1集电极接地为共集；T2基极接地、信号由发射极进入为共基。共同发射极还保留Re，并受第二管低输入电阻加载。",
+              "en": "In the equivalent,ground both supplies. T1 grounded collector gives CC; T2 grounded base with emitter input gives CB. Retain Re and the second stage’s low input resistance."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)对称直流分流",
+              "en": "(2) Matched DC current sharing"
+            },
+            "text": {
+              "zh": "T2基极0 V，公共发射极−0.7 V；T1基极也为0 V。匹配与相同发射结电压给相同电流，Re电流由两管各提供一半。",
+              "en": "T2 base is0 V and shared emitter−0.7 V; T1 base is also0 V. Matching and equal junction drops give equal currents,each supplying half the Re current."
+            },
+            "formula": "I_{E1Q}=I_{E2Q}=\\frac{6-0.7}{2(2000)}=1.325\\,\\mathrm{mA},\\quad I_{C1Q}=I_{C2Q}=\\frac{50}{51}(1.325\\,\\mathrm{mA})\\approx1.299019608\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "(2)电压与放大区",
+              "en": "(2) Voltages and active region"
+            },
+            "text": {
+              "zh": "第一管集电极6 V；第二管集电极约3.14216 V，两管均满足发射极−0.7 V低于基极0 V、集电极高于基极。",
+              "en": "T1 collector is6 V; T2 collector≈3.14216 V. Both have emitter−0.7 V below base0 V and collector above base."
+            },
+            "formula": "V_{CE1Q}=6.7\\,\\mathrm V,\\quad V_{C2Q}=6-(2200)I_{C2Q}\\approx3.142156863\\,\\mathrm V,\\quad V_{CE2Q}\\approx3.842156863\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(3)先算加载后的射随器",
+              "en": "(3) Load the emitter follower first"
+            },
+            "text": {
+              "zh": "采用课件估值，两个rbe相同。共基输入电阻与Re并联构成第一级射极交流负载；不能把射随器增益直接取1。",
+              "en": "Using course estimates,the two rbe values match. The CB input resistance in parallel with Re loads the follower; its gain cannot simply be set to unity."
+            },
+            "formula": "r_{be}=200+\\frac{51(26\\,\\mathrm{mV})}{1.325\\,\\mathrm{mA}}\\approx1200.754717\\,\\Omega,\\quad R_E^\\prime=R_e\\parallel\\frac{r_{be}}{51}\\approx23.27027007\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "(3)增益与阻抗",
+              "en": "(3) Gain and resistances"
+            },
+            "text": {
+              "zh": "整体同相。输出电阻在断开外负载、输入电压置零并忽略厄利效应后等于Rc。",
+              "en": "Overall response is noninverting. With external load removed,input zeroed and no Early effect,output resistance is Rc."
+            },
+            "formula": "R_i=r_{be}+51R_E^\\prime\\approx2387.538491\\,\\Omega,\\quad A_{v1}=\\frac{51R_E^\\prime}{r_{be}+51R_E^\\prime}\\approx0.4970741952,\\quad A_{v2}=\\frac{50R_c}{r_{be}}\\approx91.60905091,\\quad A_v\\approx45.53649525,\\quad R_o=2.2\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "共集—共基；两管ICQ均约1.29902 mA；VCE1Q = 6.7 V、VCE2Q约3.84216 V。按课件估值Av约+45.5365，Ri约2.38754 kΩ，Ro = 2.2 kΩ。",
+          "en": "CC–CB; both ICQ≈1.29902 mA; VCE1Q=6.7 V,VCE2Q≈3.84216 V. With stated estimates,Av≈+45.5365,Ri≈2.38754 kilohms,Ro=2.2 kilohms."
+        },
+        "pitfalls": [
+          {
+            "zh": "同为NPN时Re承受两发射极电流之和；公共射极电位为−0.7 V，不是+0.7 V。",
+            "en": "With two NPN devices,Re carries the sum of emitter currents; the shared emitter is−0.7 V,not+0.7 V."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-equivalent",
+          "1-topology",
+          "2-IC1",
+          "2-VCE1",
+          "2-IC2",
+          "2-VCE2",
+          "3-Av",
+          "3-Ri",
+          "3-Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文及原图逐项核对；独立直流电流守恒、工作区不等式与小信号节点矩阵复核。5.4.4符号式另用300组参数与节点方程比较；10.8.10从两个可能初始状态作时域状态跟踪。题目未要求SPICE，未把数值矩阵称作SPICE仿真。",
+            "en": "Source statements/figures checked individually; independent DC current balance,region inequalities and small-signal nodal matrices verified. The5.4.4 expressions match300 parameter sets;10.8.10 is state-tracked from both possible initial states. No SPICE is requested; numerical matrices are not called SPICE simulation."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "complete-small-signal-model",
+            "alt": {
+              "zh": "完整交流等效与各控制量定义。",
+              "en": "Complete AC equivalent with controlled-source definitions."
+            },
+            "caption": {
+              "zh": "电源为交流地；保留原图负载与输入源电阻，控制量按图下方定义。",
+              "en": "Supplies are AC ground; retain the indicated loads and source resistance,with control variables defined below."
+            },
+            "figure": "ae-5.4.2-equivalent.svg"
+          }
+        ],
+        "figure": "ae-5.4.2-figure.png"
+      },
+      "AE-5.4.3": {
+        "id": "AE-5.4.3",
+        "bookId": "5.4.3",
+        "title": {
+          "zh": "源随—共射与交流偏置隔离",
+          "en": "Source follower–CE with AC bias isolation"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 189,
+          "pdfPage": 222,
+          "figure": "图题5.4.3"
+        },
+        "statement": {
+          "zh": "电路如图题5.4.3：VDD = +5 V，Rsi = 100 kΩ，Rg1 = Rg2 = 10 MΩ，Rs = 6.8 kΩ，Rc = 3 kΩ，RL = 1 kΩ；BJT的VBEQ = 0.7 V、β = 200；MOS的VTN = 1 V、Kn = 1 mA/V²。交流时Cb1、Cb2、Cb3可视为短路。(1)求T1的IDQ和T2的ICQ；(2)画交流通路；(3)求Av、Ri、Ro。原图Cb2从两只栅偏置电阻的中点接地。",
+          "en": "In Fig.5.4.3,VDD=+5 V,Rsi=100 kilohms,Rg1=Rg2=10 megohms,Rs=6.8 kilohms,Rc=3 kilohms,RL=1 kilohm. BJT VBEQ=0.7 V,beta200; MOS VTN=1 V,Kn=1 mA per squared volt. Cb1,Cb2,Cb3 are AC shorts. (1) Find T1 IDQ and T2 ICQ. (2) Draw the AC circuit. (3) Find Av,Ri,Ro. Cb2 connects the junction of the two gate-bias resistors to ground."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留管型、接地、电源极性及所有器件标注。",
+            "en": "Original textbook figure retaining device types, grounds, supply polarities and component labels."
+          }
+        },
+        "prerequisites": {
+          "zh": "先做直流，再画中频模型并计入级间加载。未给小信号参数的BJT数值采用课件估值：基区电阻200 Ω、热电压26 mV，忽略厄利效应；MOS忽略沟道调制。范围外5.4保留为全书拓展。",
+          "en": "Find bias before drawing the midband model and including interstage loading. Unspecified BJT small-signal numbers use course estimates: base spreading resistance200 ohms,thermal voltage26 mV,no Early effect; MOS channel modulation is neglected. Section5.4 remains a full-book extension."
+        },
+        "recognition": {
+          "zh": "直流时两只栅偏置电阻没有电流，栅压等于BJT集电极电压；交流时它们中点被Cb2接地，不能误看成自举电容。",
+          "en": "For DC,no current flows in the gate-bias resistors,so gate voltage equals BJT collector voltage. For AC,Cb2 grounds their junction; it is not a bootstrap capacitor."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)联立偏置电流",
+              "en": "(1) Coupled DC bias"
+            },
+            "text": {
+              "zh": "MOS源极与BJT基极相接，电位0.7 V；源极电流分给Rs和基极。MOS采用题设平方律，Kn已包含二分之一因子。",
+              "en": "MOS source joins the BJT base at0.7 V. Source current divides between Rs and base current. Use the stated square law with the half-factor included in Kn."
+            },
+            "formula": "I_D=\\frac{0.7}{6800}+\\frac{I_C}{200},\\quad V_G=V_C=5-3000I_C,\\quad I_D=0.001(V_G-0.7-1)^2"
+          },
+          {
+            "title": {
+              "zh": "(1)筛选物理解",
+              "en": "(1) Select the physical root"
+            },
+            "text": {
+              "zh": "以x表示IC的mA数，方程为右式。两根约0.9905094和1.2100462；后一根使过驱动为负，必须剔除。物理解的MOS过驱动约0.328472 V、VDS = 4.3 V；BJT集电极2.028472 V高于基极0.7 V，两管工作区成立。",
+              "en": "Let x be IC in mA. The roots are≈0.9905094 and1.2100462; the latter gives negative overdrive and must be rejected. The physical MOS overdrive≈0.328472 V,VDS=4.3 V; BJT collector2.028472 V exceeds base0.7 V,validating both regions."
+            },
+            "formula": "(3.3-3x)^2=\\frac{0.7}{6.8}+\\frac{x}{200},\\quad I_{CQ}\\approx0.990509400\\,\\mathrm{mA},\\quad I_{DQ}\\approx0.1078937235\\,\\mathrm{mA},\\quad V_G=V_C\\approx2.028471800\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)交流等效",
+              "en": "(2) AC equivalent"
+            },
+            "text": {
+              "zh": "见图。电源交流接地；Cb2使偏置中点接地，Rg1为输入对地电阻，Rg2成为集电极对地电阻。T1是源极跟随器，源极交流负载为Rs与BJT输入电阻并联；T2为共射，集电极负载为Rc、Rg2和RL并联。",
+              "en": "In the diagram,supply is AC ground. Cb2 grounds the bias junction: Rg1 shunts the input and Rg2 shunts the collector. T1 is a source follower loaded by Rs in parallel with BJT input resistance. T2 is CE,loaded by Rc,Rg2 and RL in parallel."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)各级实际加载增益",
+              "en": "(3) Actual loaded stage gains"
+            },
+            "text": {
+              "zh": "采用课件热电压和基区电阻估值；忽略两种器件输出电阻。小信号Av定义为输出除以栅端输入电压，另列从原图信号源vs到输出的增益，避免漏掉100 kΩ内阻。",
+              "en": "Use the stated thermal-voltage/base-resistance estimates and neglect device output resistances. Define Av from the gate input; also give gain from the drawn source vs,retaining its100 kilohm resistance."
+            },
+            "formula": "g_{m1}=2\\sqrt{K_nI_{DQ}}\\approx0.6569436002\\,\\mathrm{mS},\\quad r_{be2}=200+\\frac{200(26\\,\\mathrm{mV})}{I_{CQ}}\\approx5449.823980\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "源随器不是无条件单位增益",
+              "en": "A source follower is not unconditionally unity gain"
+            },
+            "text": {
+              "zh": "先保留下一级的输入加载再相乘，10 MΩ的集电极偏置电阻虽然影响很小，仍按原图计入。",
+              "en": "Include next-stage input loading before multiplication. Retain the10 megohm collector bias resistor even though its effect is small."
+            },
+            "formula": "R_S^\\prime=R_s\\parallel r_{be2}\\approx3025.251883\\,\\Omega,\\quad R_C^\\prime=R_c\\parallel R_{g2}\\parallel R_L\\approx749.9437542\\,\\Omega,\\quad A_{v1}=\\frac{g_{m1}R_S^\\prime}{1+g_{m1}R_S^\\prime}\\approx0.6652629876,\\quad A_{v2}=-\\frac{200R_C^\\prime}{r_{be2}}\\approx-27.52176059"
+          },
+          {
+            "title": {
+              "zh": "输入输出端口与源增益",
+              "en": "Ports and source gain"
+            },
+            "text": {
+              "zh": "求输出电阻时取走RL，并把vs置零。由于Cb2隔离了输出与栅端的交流偏置反馈，输出只剩Rc与Rg2并联。",
+              "en": "For output resistance remove RL and zero vs. Cb2 isolates the DC gate-feedback path for AC,leaving Rc in parallel with Rg2 at the output."
+            },
+            "formula": "A_v=A_{v1}A_{v2}\\approx-18.30920868,\\quad R_i=R_{g1}=10\\,\\mathrm{M\\Omega},\\quad A_{vs}=A_v\\frac{R_i}{R_i+R_{si}}\\approx-18.12792938,\\quad R_o=R_c\\parallel R_{g2}\\approx2999.100270\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "IDQ约0.107894 mA、ICQ约0.990509 mA。源随—共射；Av约−18.3092，源增益约−18.1279，Ri = 10 MΩ，Ro约2.99910 kΩ（按列明的小信号模型）。",
+          "en": "IDQ≈0.107894 mA,ICQ≈0.990509 mA. Source follower–CE; Av≈−18.3092,source gain≈−18.1279,Ri=10 megohms,Ro≈2.99910 kilohms under the stated model."
+        },
+        "pitfalls": [
+          {
+            "zh": "原图Cb2下端是接地符号，不是接源极的导线；直流偏置反馈存在，不等于交流同样保留。",
+            "en": "The lower terminal of Cb2 is a ground symbol,not a source-node wire. DC bias feedback does not imply the same AC feedback path."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-ID",
+          "1-IC",
+          "2-equivalent",
+          "3-Av",
+          "3-Ri",
+          "3-Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文及原图逐项核对；独立直流电流守恒、工作区不等式与小信号节点矩阵复核。5.4.4符号式另用300组参数与节点方程比较；10.8.10从两个可能初始状态作时域状态跟踪。题目未要求SPICE，未把数值矩阵称作SPICE仿真。",
+            "en": "Source statements/figures checked individually; independent DC current balance,region inequalities and small-signal nodal matrices verified. The5.4.4 expressions match300 parameter sets;10.8.10 is state-tracked from both possible initial states. No SPICE is requested; numerical matrices are not called SPICE simulation."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "complete-small-signal-model",
+            "alt": {
+              "zh": "完整交流等效与各控制量定义。",
+              "en": "Complete AC equivalent with controlled-source definitions."
+            },
+            "caption": {
+              "zh": "电源为交流地；保留原图负载与输入源电阻，控制量按图下方定义。",
+              "en": "Supplies are AC ground; retain the indicated loads and source resistance,with control variables defined below."
+            },
+            "figure": "ae-5.4.3-equivalent.svg"
+          }
+        ],
+        "figure": "ae-5.4.3-figure.png"
+      },
+      "AE-5.4.4": {
+        "id": "AE-5.4.4",
+        "bookId": "5.4.4",
+        "title": {
+          "zh": "共源—共集的符号解",
+          "en": "Symbolic common-source/common-collector cascade"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 189,
+          "pdfPage": 222,
+          "figure": "图题5.4.4"
+        },
+        "statement": {
+          "zh": "设图题5.4.4电路处于正常放大状态，说明T1、T2各构成何种组态，并写出Av、Ri、Ro的表达式。各电容对交流均可视为短路。图中T1栅极经Rg接地，漏极经Rd接VCC并直接接T2基极；源极电阻Rs被Cs旁路；T2集电极接VCC，发射极经Re接地，输出由发射极经C3取出，未画外接负载。",
+          "en": "Assume Fig.5.4.4 operates normally. Identify T1/T2 configurations and give expressions for Av,Ri,Ro. All capacitors are AC shorts. T1 gate has Rg to ground; its drain connects through Rd to VCC and directly to T2 base. Cs bypasses source resistor Rs. T2 collector is at VCC,emitter has Re to ground; C3 takes emitter output with no external load shown."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留管型、接地、电源极性及所有器件标注。",
+            "en": "Original textbook figure retaining device types, grounds, supply polarities and component labels."
+          }
+        },
+        "prerequisites": {
+          "zh": "先做直流，再画中频模型并计入级间加载。未给小信号参数的BJT数值采用课件估值：基区电阻200 Ω、热电压26 mV，忽略厄利效应；MOS忽略沟道调制。范围外5.4保留为全书拓展。",
+          "en": "Find bias before drawing the midband model and including interstage loading. Unspecified BJT small-signal numbers use course estimates: base spreading resistance200 ohms,thermal voltage26 mV,no Early effect; MOS channel modulation is neglected. Section5.4 remains a full-book extension."
+        },
+        "recognition": {
+          "zh": "T1源极被旁路，T2集电极是交流地；由中间节点的加载求总增益。",
+          "en": "T1 source is bypassed and T2 collector is AC ground. Include loading at the interstage node."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "模型与组态",
+              "en": "Model and configurations"
+            },
+            "text": {
+              "zh": "采用常用中频模型：栅极电流为零，忽略FET沟道调制与BJT厄利效应。T1为共源，跨导gm1取正；T2为共集射随器。若计入有限输出电阻，下面式子需用完整模型重算，不能无条件当作精确器件结果。",
+              "en": "Use the usual midband model: zero gate current,no FET channel modulation or BJT Early effect. T1 is common source with positive gm1; T2 is common collector. Finite output resistances require a fuller model; these are not unconditional exact device results."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "两级加载增益",
+              "en": "Loaded gains"
+            },
+            "text": {
+              "zh": "令第二级基极输入电阻为Ri2。先用其加载第一级，再乘射随器实际增益；不能把第一级直接写成负跨导乘Rd。",
+              "en": "Let Ri2 be the follower’s base input resistance. Load the first stage by Ri2,then multiply by the follower’s actual gain."
+            },
+            "formula": "R_{i2}=r_{be2}+(\\beta_2+1)R_e,\\quad A_{v1}=-g_{m1}(R_d\\parallel R_{i2}),\\quad A_{v2}=\\frac{(\\beta_2+1)R_e}{r_{be2}+(\\beta_2+1)R_e}"
+          },
+          {
+            "title": {
+              "zh": "总增益与输入电阻",
+              "en": "Overall gain and input resistance"
+            },
+            "text": {
+              "zh": "展开并联等效可得到一个简洁总式，独立节点矩阵与该式在300组参数下相符。未画外负载时只保留Re；另接RL时，增益式中的Re应换为Re与RL并联。",
+              "en": "Expanding the parallel load gives the compact expression below,matching independent nodal matrices for300 parameter sets. No external load is shown; for an added RL,replace Re by Re in parallel with RL in the gain calculation."
+            },
+            "formula": "A_v=-\\frac{g_{m1}R_d(\\beta_2+1)R_e}{R_d+r_{be2}+(\\beta_2+1)R_e},\\qquad R_i=R_g"
+          },
+          {
+            "title": {
+              "zh": "输出测试源",
+              "en": "Output test source"
+            },
+            "text": {
+              "zh": "输入置零使FET受控源为零，T2基极通过Rd接交流地。从发射极看向基极的等效电阻要除以β2+1，再与Re并联；这不是简单把输出电阻写为Re。",
+              "en": "Zero input so the FET controlled source vanishes; T2 base sees Rd to AC ground. Looking from its emitter divides the base-side resistance by beta2+1,then combines it in parallel with Re."
+            },
+            "formula": "R_o=R_e\\parallel\\frac{r_{be2}+R_d}{\\beta_2+1}"
+          }
+        ],
+        "answer": {
+          "zh": "T1共源、T2共集；Av、Ri与Ro为推导中的加载总式、Rg及射极测试源等效式。",
+          "en": "T1 common source,T2 common collector; Av is the derived loaded expression,Ri=Rg,and Ro is the emitter test-source equivalent."
+        },
+        "pitfalls": [
+          {
+            "zh": "Cs已把Rs交流旁路，不应在中频增益中再保留Rs退化；输出电阻测试要将输入置零并取走外负载。",
+            "en": "Cs bypasses Rs for AC; do not retain source degeneration in midband gain. Zero input and remove external load for the output test."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "topology",
+          "Av",
+          "Ri",
+          "Ro"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文及原图逐项核对；独立直流电流守恒、工作区不等式与小信号节点矩阵复核。5.4.4符号式另用300组参数与节点方程比较；10.8.10从两个可能初始状态作时域状态跟踪。题目未要求SPICE，未把数值矩阵称作SPICE仿真。",
+            "en": "Source statements/figures checked individually; independent DC current balance,region inequalities and small-signal nodal matrices verified. The5.4.4 expressions match300 parameter sets;10.8.10 is state-tracked from both possible initial states. No SPICE is requested; numerical matrices are not called SPICE simulation."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "complete-small-signal-model",
+            "alt": {
+              "zh": "完整交流等效与各控制量定义。",
+              "en": "Complete AC equivalent with controlled-source definitions."
+            },
+            "caption": {
+              "zh": "电源为交流地；保留原图负载与输入源电阻，控制量按图下方定义。",
+              "en": "Supplies are AC ground; retain the indicated loads and source resistance,with control variables defined below."
+            },
+            "figure": "ae-5.4.4-equivalent.svg"
+          }
+        ],
+        "figure": "ae-5.4.4-figure.png"
+      },
+      "AE-10.8.10": {
+        "id": "AE-10.8.10",
+        "bookId": "10.8.10",
+        "title": {
+          "zh": "阶跃经求和、积分与迟滞比较",
+          "en": "Step through a summer,integrator and Schmitt trigger"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 443,
+          "pdfPage": 476,
+          "figure": "图题10.8.10"
+        },
+        "statement": {
+          "zh": "电路如图题10.8.10，A1、A2为理想运放，C3为比较器；电容C的初始电压vC(0) = 0 V。若v1为0.11 V阶跃，求加上信号1 s后vo1、vo2、vo3。图中R1 = 20 kΩ、R2 = 25 kΩ、R3 = 100 kΩ、R4 = 10 kΩ、R5 = 100 kΩ、R6 = 100 kΩ、R7 = 2 kΩ、R8 = 10 kΩ、R9 = 1 kΩ、C = 1 μF，双向限幅标注±6 V；参考源0.1 V的正端接地，送入R2的节点是−0.1 V。",
+          "en": "In Fig.10.8.10,A1/A2 are ideal op-amps and C3 is a comparator. Capacitor initial voltage is0 V. For a0.11 V input step,find vo1,vo2,vo3 after1 s. R1=20,R2=25,R3=100,R4=10,R5=100,R6=100,R7=2,R8=10,R9=1 kilohms; C=1 microfarad. The bidirectional clamp is labeled±6 V. The positive terminal of the0.1 V reference is grounded,so the R2 input node is−0.1 V."
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留管型、接地、电源极性及所有器件标注。",
+            "en": "Original textbook figure retaining device types, grounds, supply polarities and component labels."
+          }
+        },
+        "prerequisites": {
+          "zh": "理想求和与积分（第2章）、比较器与迟滞（10.8.1小节），图注±6 V理想限幅。",
+          "en": "Ideal summing/integration in chapter2,comparators/hysteresis in section10.8.1,and the labeled ideal±6 V clamp."
+        },
+        "recognition": {
+          "zh": "先看参考源极性，再积分；比较器门限由当前限幅输出决定。没有从末级返回前两级的反馈，不是振荡器。",
+          "en": "Read reference polarity before integrating. Comparator thresholds depend on its current clamped output. No path returns from the last stage to the first two; this is not an oscillator."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "第一输出：反相加法器",
+              "en": "First output: inverting summer"
+            },
+            "text": {
+              "zh": "参考源长线正端接地，所以其上端电位为−0.1 V。R4只提供同相端接地，在理想输入电流为零时无压降。",
+              "en": "The reference’s long positive plate is grounded; its upper node is−0.1 V. R4 grounds the noninverting input with zero drop for ideal zero input current."
+            },
+            "formula": "v_{o1}=-R_3\\left(\\frac{0.11}{R_1}+\\frac{-0.1}{R_2}\\right)=-0.15\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "第二输出：保留积分初值",
+              "en": "Second output: retain the integrator initial value"
+            },
+            "text": {
+              "zh": "理想虚地与零电容初始电压给vo2(0)=0。A1输出恒定−0.15 V，积分器输出以正斜率上升；R6同样不承受输入电流。",
+              "en": "Virtual ground and zero initial capacitor voltage give vo2(0)=0. Constant−0.15 V drives a positive output slope. R6 likewise carries no ideal input current."
+            },
+            "formula": "R_5C=0.1\\,\\mathrm s,\\quad v_{o2}(t)=-\\frac1{R_5C}\\int_0^t(-0.15)\\,\\mathrm d\\tau=(1.5\\,\\mathrm{V/s})t,\\quad v_{o2}(1\\,\\mathrm s)=1.5\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "第三输出：迟滞门限",
+              "en": "Third output: hysteresis thresholds"
+            },
+            "text": {
+              "zh": "按图注±6 V理想限幅模型，R9隔离并限流。C3同相端接R7/R8汇合点，反相端接地。零输入电流使同相端是加权平均；翻转边界为同相电位等于0。",
+              "en": "Use the diagram’s ideal±6 V clamp; R9 isolates and limits current. C3 noninverting input joins R7/R8 and inverting input is grounded. Zero input current gives the weighted average; switching boundary is zero at that node."
+            },
+            "formula": "v_+=\\frac{v_{o2}/R_7+v_{o3}/R_8}{1/R_7+1/R_8},\\quad v_{o2,T}=-\\frac{R_7}{R_8}v_{o3},\\quad V_{T+}=1.2\\,\\mathrm V,\\quad V_{T-}=-1.2\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "初始历史不唯一，但1秒后唯一",
+              "en": "Initial history is ambiguous,but the one-second result is unique"
+            },
+            "text": {
+              "zh": "零时刻vo2=0在迟滞区间，题设没有指定vo3初始态。若起始低态−6 V，斜坡越过1.2 V（0.8 s之后）翻到+6 V；若起始高态+6 V，则一直保持高态。因此1 s时两种合法初始历史都给+6 V，不能凭初始历史缺失就把最终结果说成欠定。门限恰相等时不指定唯一稳态。",
+              "en": "At zero time,vo2=0 lies inside hysteresis and initial vo3 is unspecified. Starting low−6 V,switch high after the ramp crosses1.2 V at0.8 s; starting high+6 V,it stays high. Both valid histories yield+6 V at1 s. Missing initial history does not make this final value underdetermined. Equality at a threshold does not specify a unique steady state."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "加阶跃1 s后：vo1 = −0.15 V，vo2 = +1.5 V，vo3 = +6 V。",
+          "en": "At1 s: vo1=−0.15 V,vo2=+1.5 V,vo3=+6 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把参考源误接成+0.1 V，也不能对比较器全程用虚短。积分器与比较器组合不自动等于振荡器；本题仍为范围内的求和、积分和比较器综合。",
+            "en": "Do not change the reference to+0.1 V or apply virtual short continuously to the comparator. Combining an integrator and comparator does not automatically make an oscillator; these requested summer/integrator/comparator responses are in scope."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "vo1",
+          "vo2",
+          "vo3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文及原图逐项核对；独立直流电流守恒、工作区不等式与小信号节点矩阵复核。5.4.4符号式另用300组参数与节点方程比较；10.8.10从两个可能初始状态作时域状态跟踪。题目未要求SPICE，未把数值矩阵称作SPICE仿真。",
+            "en": "Source statements/figures checked individually; independent DC current balance,region inequalities and small-signal nodal matrices verified. The5.4.4 expressions match300 parameter sets;10.8.10 is state-tracked from both possible initial states. No SPICE is requested; numerical matrices are not called SPICE simulation."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "two-initial-histories",
+            "alt": {
+              "zh": "积分斜坡与两个可能初始输出状态。",
+              "en": "Integrator ramp and both possible initial output histories."
+            },
+            "caption": {
+              "zh": "两个初始历史在0.8秒后均给+6 V；图中曲线为题设理想模型。",
+              "en": "Both initial histories yield+6 V after0.8 s; curves use the stated ideal model."
+            },
+            "figure": "ae-10.8.10-equivalent.svg"
+          }
+        ],
+        "figure": "ae-10.8.10-figure.png"
+      },
+      "AE-8.5.1": {
+        "id": "AE-8.5.1",
+        "bookId": "8.5.1",
+        "title": {
+          "zh": "低阻负载上的话筒电压放大",
+          "en": "Microphone voltage gain into a low load"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 356,
+          "pdfPage": 389,
+          "figure": "原题无电路图；解析图为本站绘制 / No source circuit diagram; solution diagrams authored"
+        },
+        "statement": {
+          "zh": "设计电压放大电路，放大内阻5 kΩ的话筒电压。话筒输出10 mV时，75 Ω负载要获得0.5 V。集成运放输入电阻200 kΩ、输出电阻100 Ω、低频电压增益10万。",
+          "en": "Design a voltage amplifier for a microphone with5 kilohm source resistance. A10 mV source must produce0.5 V across75 ohms. The op-amp has input resistance200 kilohms,output resistance100 ohms and low-frequency voltage gain100000."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "要求的是从话筒开路电压到带载输出的50倍，不是忽略负载的开环增益。",
+          "en": "The target is50 from microphone open-circuit voltage to loaded output,not unloaded open-loop gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "选择电压串联负反馈",
+              "en": "Choose voltage-series negative feedback"
+            },
+            "text": {
+              "zh": "话筒经5 kΩ内阻接同相端；反相端经Rg接地、经Rf接75 Ω负载所在的输出节点。反馈直接采样负载电压，抑制输出电阻压降影响。",
+              "en": "Connect the microphone through5 kilohms to the noninverting input; connect the inverting input to ground through Rg and to the loaded output through Rf. Sensing load voltage corrects output-resistance loss."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "名义设计与有限增益校准",
+              "en": "Nominal design and finite-gain calibration"
+            },
+            "text": {
+              "zh": "先取Rg=1 kΩ、Rf=49 kΩ，理想增益50。完整节点方程给实际负载电压0.499399432 V，误差约−0.1201%。若严格按给定线性模型达到0.5 V，可将Rf校准为49.06020134 kΩ。该电阻不受后续8.5.3/4的1～10 kΩ限制。",
+              "en": "Rg=1 kilohm,Rf=49 kilohms give ideal gain50. Full nodal analysis gives0.499399432 V,about−0.1201%. Calibrating Rf to49.06020134 kilohms gives exactly0.5 V in the stated linear model. The1–10 kilohm restriction in later8.5.3/4 does not apply here."
+            },
+            "formula": "A_{vs}\\approx1+\\frac{R_f}{R_g}=50,\\qquad R_g=1\\,\\mathrm{k\\Omega},\\quad R_f\\approx49.06020134\\,\\mathrm{k\\Omega}\\quad\\text{(finite-model calibration)}"
+          },
+          {
+            "title": {
+              "zh": "驱动能力条件",
+              "en": "Drive requirements"
+            },
+            "text": {
+              "zh": "校准方案满幅时，负载电流6.66667 mA，加反馈分压支路后运放约供6.67665 mA。100 Ω内部电阻之前的受控源约需1.16767 V。题目未给最大输出摆幅和电流，实际选型至少需覆盖这些条件，不能只核对50倍增益。",
+              "en": "At full scale,the load draws6.66667 mA; including divider current,the amplifier supplies≈6.67665 mA. Its internal controlled source before100 ohms needs≈1.16767 V. Since output ratings are unspecified,an actual device must support these requirements."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "一种方案：同相反馈，Rg = 1 kΩ，Rf约49.0602 kΩ；在给定低频线性模型中10 mV输入得到0.5 V带载输出。",
+          "en": "One solution: noninverting feedback,Rg=1 kilohm,Rf≈49.0602 kilohms; the stated low-frequency linear model gives0.5 V loaded output for10 mV."
+        },
+        "pitfalls": [
+          {
+            "zh": "反馈线必须取自负载端；不要把开环100 Ω与75 Ω直接分压后就断言运放无法达到要求。",
+            "en": "Sense at the loaded output; do not use open-loop100/75 ohm division alone to judge feasibility."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "topology",
+          "resistors",
+          "loaded-verification",
+          "drive"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "checked-design",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.5.1-design.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "五份设计网表均已实际运行ngspice47并与独立节点矩阵吻合。它们只核验列明的低频线性参数，不含失调、噪声、频率极点、摆幅或限流模型；输出余量须按解析另检查，不把线性网表称为真实器件。",
+            "en": "All five design netlists were executed in ngspice47 and match independent nodal matrices. They check the stated low-frequency linear parameters only,without offset,noise,poles,rail or current limiting. Check compliance separately; these are not real-device models."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.5.1-finite-model.cir",
+              "label": {
+                "zh": "自写有限参数直流核验：8.5.1",
+                "en": "Authored finite-parameter DC check: 8.5.1"
+              }
+            }
+          ]
+        }
+      },
+      "AE-8.5.2": {
+        "id": "AE-8.5.2",
+        "bookId": "8.5.2",
+        "title": {
+          "zh": "电流并联反馈与方向定义",
+          "en": "Current-shunt feedback and reference directions"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 356,
+          "pdfPage": 389,
+          "figure": "原题无电路图；解析图为本站绘制 / No source circuit diagram; solution diagrams authored"
+        },
+        "statement": {
+          "zh": "设计电流放大电路，闭环电流放大倍数Aif = 10，驱动RL = 50 Ω。输入为内阻10 kΩ的电流源。集成运放参数同8.5.1：输入电阻200 kΩ、输出电阻100 Ω、低频开环电压增益10万。",
+          "en": "Design a current amplifier with closed current gain10 driving RL=50 ohms,excited by a current source with10 kilohm internal resistance. Op-amp parameters are those of8.5.1: input200 kilohms,output100 ohms,low-frequency open voltage gain100000."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "采用浮置负载的电流取样，先明确正输出电流方向，再写分流关系。",
+          "en": "Use current sampling with a floating load; define positive output current before writing the current division."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "完整连接",
+              "en": "Connections"
+            },
+            "text": {
+              "zh": "同相端接地；电流源向反相节点n注入is，源内阻10 kΩ从n接地。Rf=9 kΩ连接n与取样节点k，Rs=1 kΩ连接k与地，50 Ω负载连接k与运放输出u。定义io从k经负载流入u，因此放大倍数为正。",
+              "en": "Ground the noninverting input. Inject is into inverting node n,with source resistance10 kilohms from n to ground. Rf=9 kilohms connects n to sense node k; Rs=1 kilohm connects k to ground. The50 ohm load joins k to amplifier output u. Define io from k through the load into u,so gain is positive."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "理想反馈关系",
+              "en": "Ideal feedback relation"
+            },
+            "text": {
+              "zh": "虚地使输入电流全部经Rf流向k；在k再与Rs电流共同进入负载。若把输出电流反向定义为从运放流出，则增益为−10，这是同一电路的参考方向改变。",
+              "en": "At virtual ground,input current flows through Rf to k and adds to the Rs current in the load. Reversing the output reference to current leaving the amplifier gives−10 for the same circuit."
+            },
+            "formula": "v_k=-i_sR_f,\\quad i_o=i_s\\left(1+\\frac{R_f}{R_s}\\right)=10i_s,\\quad F=\\frac{R_s}{R_s+R_f}=0.1"
+          },
+          {
+            "title": {
+              "zh": "有限模型与输出余量",
+              "en": "Finite model and compliance"
+            },
+            "text": {
+              "zh": "完整节点矩阵保留源内阻、输入电阻及输出电阻。当is=1 mA时，取样点约−8.999796 V，输出端约−9.499785 V，io约9.999785 mA，实际倍数约9.999785。输入幅度未指定，所需输出电压和电流必须随所选输入范围检查；这组1 mA只是核验示例。",
+              "en": "Full nodal analysis includes source,input and output resistances. At is=1 mA,sense voltage≈−8.999796 V,output≈−9.499785 V,io≈9.999785 mA and actual gain≈9.999785. The unspecified input range determines drive requirements;1 mA is a verification example."
+            },
+            "formula": "u\\approx-(R_f+10R_L)i_s=-(9500\\,\\Omega)i_s"
+          }
+        ],
+        "answer": {
+          "zh": "Rf = 9 kΩ、Rs = 1 kΩ，负载浮置于取样点与运放输出之间；按图示方向名义电流增益+10，有限模型约9.999785。",
+          "en": "Rf=9 kilohms,Rs=1 kilohm; float the load between sense node and output. Nominal gain is+10 in the defined direction,about9.999785 in the finite model."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能把取样点k直接接地；那会消除Rs上的电流取样电压，改变反馈组态。",
+            "en": "Do not ground sense node k directly; doing so removes the current-sampling voltage and changes the feedback topology."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "topology",
+          "feedback",
+          "gain",
+          "drive"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "checked-design",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.5.2-design.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "五份设计网表均已实际运行ngspice47并与独立节点矩阵吻合。它们只核验列明的低频线性参数，不含失调、噪声、频率极点、摆幅或限流模型；输出余量须按解析另检查，不把线性网表称为真实器件。",
+            "en": "All five design netlists were executed in ngspice47 and match independent nodal matrices. They check the stated low-frequency linear parameters only,without offset,noise,poles,rail or current limiting. Check compliance separately; these are not real-device models."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.5.2-finite-model.cir",
+              "label": {
+                "zh": "自写有限参数直流核验：8.5.2",
+                "en": "Authored finite-parameter DC check: 8.5.2"
+              }
+            }
+          ]
+        }
+      },
+      "AE-8.5.3": {
+        "id": "AE-8.5.3",
+        "bookId": "8.5.3",
+        "title": {
+          "zh": "全千欧电阻的单运放互阻设计",
+          "en": "Single-op-amp transresistance with kilohm resistors only"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 356,
+          "pdfPage": 389,
+          "figure": "原题无电路图；解析图为本站绘制 / No source circuit diagram; solution diagrams authored"
+        },
+        "statement": {
+          "zh": "用单个运放设计电流—电压转换电路（互阻放大器），把传感器0～50 nA电流变为0～5 V输出，要求所用电阻均为1～10 kΩ。运放参数同8.5.1：输入电阻200 kΩ、输出电阻100 Ω、低频开环电压增益10万。",
+          "en": "Use one op-amp to convert a sensor current0–50 nA to output0–5 V,using only1–10 kilohm resistors. Op-amp parameters match8.5.1: input200 kilohms,output100 ohms,low-frequency open gain100000."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "100 MΩ转换系数不等于必须使用单只100 MΩ电阻；可用取样电阻与多节无源反馈衰减。",
+          "en": "A100 megohm transresistance does not require one100 megohm resistor; combine a sense resistor with a multisection passive feedback attenuator."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "为什么简单反馈电阻不满足限制",
+              "en": "Why a single feedback resistor fails the constraint"
+            },
+            "text": {
+              "zh": "所需输出除以输入电流为100 MΩ，普通单电阻反相互阻方案会超出题目电阻范围。这里给一种正向输出方案：电流注入同相端p，p经10 kΩ取样电阻接地，再用四节无源梯形反馈获得高闭环电压增益。",
+              "en": "Required output/current ratio is100 megohms,so a conventional single-resistor inverting TIA violates the resistor constraint. One positive-output solution injects current into p,shunts p with10 kilohms,and uses a four-section passive feedback ladder for high voltage gain."
+            },
+            "formula": "R_T=\\frac{5\\,\\mathrm V}{50\\,\\mathrm{nA}}=100\\,\\mathrm{M\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "逐节点连接",
+              "en": "Node-by-node connections"
+            },
+            "text": {
+              "zh": "从输出o依次经三只10 kΩ串联电阻到x1、x2、x3，再经可调电阻Rt接反相端m；x1、x2、x3、m各用1 kΩ接地。p是电流取样输入。电路共用一个运放；所有独立电阻均在1～10 kΩ内。梯形各节会相互加载，不能把四个独立分压比直接相乘。",
+              "en": "From output o,three10 kilohm series resistors lead successively to x1,x2,x3; a final adjustable Rt leads to inverting input m. Shunt x1,x2,x3,m each by1 kilohm to ground. Current sense node p is the noninverting input. There is one op-amp and every resistor is1–10 kilohms. Ladder sections load one another; do not multiply isolated divider ratios."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "有限输入与输出电阻一起校准",
+              "en": "Calibrate with finite input/output resistances"
+            },
+            "text": {
+              "zh": "完整节点方程取Rt约5.252812461 kΩ，在50 nA时得到输出5 V，p约0.497477098 mV、m约0.447019058 mV，内部电源约5.045804 V。200 kΩ是p与m之间的差分输入电阻，不是把p单独并联200 kΩ到地。线性模型中输入0时输出0，因此全范围转换系数为100 MΩ。",
+              "en": "Full nodal equations give Rt≈5.252812461 kilohms. At50 nA,output is5 V,p≈0.497477098 mV,m≈0.447019058 mV,and the internal source≈5.045804 V. The200 kilohm input resistance is differential between p and m,not a shunt from p to ground. In the linear model,zero input gives zero output and the conversion is100 megohms across the range."
+            },
+            "formula": "i_s=\\frac{v_p}{10\\,\\mathrm{k\\Omega}}+\\frac{v_p-v_m}{200\\,\\mathrm{k\\Omega}},\\quad e=10^5(v_p-v_m),\\quad \\frac{o-e}{100\\,\\Omega}+\\frac{o-x_1}{10\\,\\mathrm{k\\Omega}}=0"
+          },
+          {
+            "title": {
+              "zh": "实现精度边界",
+              "en": "Implementation precision"
+            },
+            "text": {
+              "zh": "这是满足给定低频线性参数及电阻限制的一种设计，不是唯一方案；传感器满幅负担电压约0.497 mV。题目未给输入偏置电流、失调、噪声与带宽，实际nA级测量误差不能由这些已给参数独自确定，不能把理想线性校准称为实物零误差。",
+              "en": "This is one design satisfying the stated low-frequency linear model and resistor range,with sensor full-scale burden≈0.497 mV. Input bias current,offset,noise and bandwidth are unspecified; these data alone do not determine real nanoamp measurement error. Linear calibration is not zero-error hardware."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "一种可行方案：10 kΩ输入取样、四节加载反馈梯形；三只串联10 kΩ、末节约5.252812461 kΩ，四只对地1 kΩ。给定线性模型中0～50 nA对应0～5 V。",
+          "en": "One solution:10 kilohm input sense and a four-section loaded feedback ladder,with three10 kilohm series resistors,last series≈5.252812461 kilohms,and four1 kilohm shunts. The stated linear model maps0–50 nA to0–5 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "不能偷偷用100 MΩ或小于1 kΩ的T形支路，也不能把未缓冲梯形各级按独立分压器相乘。",
+            "en": "Do not introduce100 megohms,a sub-kilohm T branch,or multiply unbuffered ladder sections as independent dividers."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "topology",
+          "all-resistors",
+          "finite-model",
+          "range",
+          "limits"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "checked-design",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.5.3-design.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "五份设计网表均已实际运行ngspice47并与独立节点矩阵吻合。它们只核验列明的低频线性参数，不含失调、噪声、频率极点、摆幅或限流模型；输出余量须按解析另检查，不把线性网表称为真实器件。",
+            "en": "All five design netlists were executed in ngspice47 and match independent nodal matrices. They check the stated low-frequency linear parameters only,without offset,noise,poles,rail or current limiting. Check compliance separately; these are not real-device models."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.5.3-finite-model.cir",
+              "label": {
+                "zh": "自写有限参数直流核验：8.5.3",
+                "en": "Authored finite-parameter DC check: 8.5.3"
+              }
+            }
+          ]
+        }
+      },
+      "AE-8.5.4": {
+        "id": "AE-8.5.4",
+        "bookId": "8.5.4",
+        "title": {
+          "zh": "浮地与接地负载的互导设计",
+          "en": "Transconductance for floating and grounded loads"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 356,
+          "pdfPage": 389,
+          "figure": "原题无电路图；解析图为本站绘制 / No source circuit diagram; solution diagrams authored"
+        },
+        "statement": {
+          "zh": "用单个运放把0～5 V输入变为0～0.5 mA电流输出，分别考虑负载浮地和接地，所用电阻应在1～10 kΩ内。运放输入电阻200 kΩ、输出电阻100 Ω、低频开环电压增益10万，输出电压最大±13 V，最大输出电流±25 mA。",
+          "en": "Use one op-amp to convert0–5 V input to0–0.5 mA output,for floating and grounded loads,using1–10 kilohm resistors. Op-amp input resistance200 kilohms,output resistance100 ohms,low-frequency open gain100000,maximum output voltage±13 V and maximum output current±25 mA."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "转换系数为0.1 mS，但负载能取多大还受输出电压余量约束。",
+          "en": "Target transconductance is0.1 mS; allowable load also depends on voltage compliance."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "浮地负载",
+              "en": "Floating load"
+            },
+            "text": {
+              "zh": "同相端接vi，反相节点n经10 kΩ取样电阻接地；负载接在输出u与n之间，电流正向从u流向n。虚短给n约等于vi，负载电流约为vi除以10 kΩ。电路中唯一设定电阻为10 kΩ。",
+              "en": "Connect vi to noninverting input; sense node n at the inverting input has10 kilohms to ground. Float RL between output u and n,with positive current from u to n. Virtual short gives n≈vi and current≈vi/10 kilohms."
+            },
+            "formula": "i_L\\approx\\frac{v_i}{10\\,\\mathrm{k\\Omega}},\\quad u\\approx v_i+i_LR_L,\\quad R_{L,max}\\approx\\frac{13-5}{0.5\\,\\mathrm{mA}}=16\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "接地负载：平衡Howland桥",
+              "en": "Grounded load: balanced Howland bridge"
+            },
+            "text": {
+              "zh": "用四只10 kΩ。输入vi经R1接同相/负载节点x，输出u经R2也接x；RL从x接地。反相节点m经R3接u、经R4接地。四电阻相等时m约为u的一半、x约等于m，负载电流为vi除以R1。注意负载接在x，不能误接到运放输出u。",
+              "en": "Use four10 kilohm resistors. Vi through R1 and output u through R2 meet at noninverting/load node x; RL connects x to ground. Inverting node m connects through R3 to u and R4 to ground. Equal resistors give m≈u/2 and x≈m,so load current≈vi/R1. The load is at x,not u."
+            },
+            "formula": "u\\approx2x,\\quad i_L=\\frac{v_i-x}{R_1}+\\frac{u-x}{R_2}\\approx\\frac{v_i}{10\\,\\mathrm{k\\Omega}},\\quad R_{L,max}\\approx\\frac{13}{2(0.5\\,\\mathrm{mA})}=13\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "输出电流与内部压降",
+              "en": "Output current and internal drop"
+            },
+            "text": {
+              "zh": "接地方案满摆幅u=13 V时，运放输出电流还包括桥臂电流，总计约1.3 mA，不是只看0.5 mA负载电流；仍远低于25 mA。若把±13 V限制施加在含100 Ω内阻之前的戴维南内源，而不是输出端口，则应额外扣内压降：浮地保守上限15.9 kΩ，接地保守上限约12.8713 kΩ。按通常端口摆幅解释，上述16/13 kΩ是名义界限。",
+              "en": "At u=13 V,the grounded design also supplies bridge current,total≈1.3 mA,still below25 mA. If the±13 V limit is applied to the Thevenin source before the100 ohm resistance rather than to the output port,subtract its drop: conservative load bounds15.9 kilohms floating and≈12.8713 kilohms grounded. Under the usual port-swing interpretation,the nominal bounds are16/13 kilohms."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "有限增益误差不能抹去",
+              "en": "Retain finite-gain error"
+            },
+            "text": {
+              "zh": "保留题给全部线性参数，vi=5 V且浮地RL=16 kΩ时电流约0.4999863 mA、端口输出12.999650 V；接地RL=13 kΩ时电流约0.4999724 mA、端口输出12.999014 V。转换式是反馈设计近似，非有限开环增益下不依赖负载的严格恒流；接地桥还依赖电阻比匹配。",
+              "en": "Including all stated linear parameters,at vi=5 V with floating RL=16 kilohms,current≈0.4999863 mA and port output12.999650 V. Grounded RL=13 kilohms gives≈0.4999724 mA and output12.999014 V. The conversion is a feedback-design approximation,not an exact load-independent current for finite open gain; the grounded bridge also needs ratio matching."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "浮地：10 kΩ取样；接地：四只10 kΩ平衡Howland桥。名义电流均为vi除以10 kΩ；按输出端口±13 V约束，满幅负载上限分别16 kΩ和13 kΩ，有限模型与更保守内部余量见推导。",
+          "en": "Floating:10 kilohm sense. Grounded:four10 kilohm balanced Howland bridge. Nominal current is vi/10 kilohms; under a±13 V port limit,full-scale load bounds are16 and13 kilohms,with finite-model error and conservative internal-headroom interpretation stated above."
+        },
+        "pitfalls": [
+          {
+            "zh": "负载不是设计电阻，不受1～10 kΩ电阻选值限制，但必须满足电压余量。接地桥中运放输出电流不等于负载电流。",
+            "en": "RL is the load,not a chosen design resistor,but must meet compliance. In the grounded bridge,op-amp output current differs from load current."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "floating",
+          "grounded",
+          "resistors",
+          "gain",
+          "compliance",
+          "finite-error"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "checked-design",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.5.4-design.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "五份设计网表均已实际运行ngspice47并与独立节点矩阵吻合。它们只核验列明的低频线性参数，不含失调、噪声、频率极点、摆幅或限流模型；输出余量须按解析另检查，不把线性网表称为真实器件。",
+            "en": "All five design netlists were executed in ngspice47 and match independent nodal matrices. They check the stated low-frequency linear parameters only,without offset,noise,poles,rail or current limiting. Check compliance separately; these are not real-device models."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.5.4-floating-finite-model.cir",
+              "label": {
+                "zh": "自写有限参数直流核验：8.5.4-floating",
+                "en": "Authored finite-parameter DC check: 8.5.4-floating"
+              }
+            },
+            {
+              "file": "ae-8.5.4-grounded-finite-model.cir",
+              "label": {
+                "zh": "自写有限参数直流核验：8.5.4-grounded",
+                "en": "Authored finite-parameter DC check: 8.5.4-grounded"
+              }
+            }
+          ]
+        }
+      },
+      "AE-8.6.1": {
+        "id": "AE-8.6.1",
+        "bookId": "8.6.1",
+        "title": {
+          "zh": "三极点、相位裕度与真实不稳定性",
+          "en": "Three poles,phase margin and instability"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 356,
+          "pdfPage": 389,
+          "figure": "原题无电路图；解析图为本站绘制 / No source circuit diagram; solution diagrams authored"
+        },
+        "statement": {
+          "zh": "运放开环频率响应$A(jf)=\\frac{10^5}{(1+jf/f_{H1})(1+jf/f_{H2})(1+jf/f_{H3})}$，$f_{H1}=1\\,\\mathrm{MHz},f_{H2}=10\\,\\mathrm{MHz},f_{H3}=100\\,\\mathrm{MHz}$。(1)画波特图；(2)引入纯电阻负反馈并要求45°相位裕度，求最大低频环路增益；(3)接电压跟随器能否稳定？(4)用SPICE仿真频率响应，判断跟随器稳定性。",
+          "en": "An op-amp has $A(jf)=\\frac{10^5}{(1+jf/f_{H1})(1+jf/f_{H2})(1+jf/f_{H3})}$ with poles at1,10 and100 MHz. (1) Draw Bode plots. (2) For resistive negative feedback and45-degree phase margin,find maximum low-frequency loop gain. (3) Is a voltage follower stable? (4) Simulate the response in SPICE and assess follower stability."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "相位裕度看环路单位交越点；题目问低频环路增益，不是闭环增益。",
+          "en": "Phase margin is evaluated at loop unity crossing. The requested low-frequency loop gain is not the closed-loop gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)幅相与斜率",
+              "en": "(1) Magnitude,phase and slopes"
+            },
+            "text": {
+              "zh": "低频100 dB；三个转折之后渐近斜率依次为每十倍频−20、−40、−60 dB。相位是三个负反正切之和，不能把幅频折线的折点当作精确相位。见幅相图。",
+              "en": "Low-frequency gain is100 dB; asymptotic slopes after successive corners are−20,−40,−60 dB per decade. Phase is the sum of three negative arctangents; magnitude asymptote corners are not exact phase values."
+            },
+            "formula": "|A|=\\frac{10^5}{\\sqrt{\\prod_{k=1}^3[1+(f/f_{Hk})^2]}},\\quad \\varphi=-\\sum_{k=1}^3\\arctan\\frac{f}{f_{Hk}}"
+          },
+          {
+            "title": {
+              "zh": "(2)45°边界",
+              "en": "(2) 45-degree boundary"
+            },
+            "text": {
+              "zh": "F为正实数、不引入额外相位。45°裕度要求交越相位−135°，本题恰在10 MHz；此时幅度约7001.057。最大反馈系数为该幅度的倒数，所以最大低频环路增益约14.28356。",
+              "en": "Positive real F adds no phase. A45-degree margin puts crossing at−135 degrees,exactly10 MHz here,where magnitude≈7001.057. Maximum F is its reciprocal; maximum low-frequency loop gain≈14.28356."
+            },
+            "formula": "F_{max}\\approx1.428355698\\times10^{-4},\\quad T_0=A_0F\\le14.28355698"
+          },
+          {
+            "title": {
+              "zh": "环路增益与闭环增益分开",
+              "en": "Distinguish loop and closed-loop gain"
+            },
+            "text": {
+              "zh": "若另外求此边界的闭环低频增益，精确为约6542.9795；深反馈近似为7001.057。最大允许环路增益对应的是最小允许闭环增益，不能把14.28写成闭环增益。",
+              "en": "At this boundary,the closed low-frequency gain is≈6542.9795,while the deep-feedback estimate is7001.057. Maximum loop gain corresponds to minimum closed gain;14.28 is not the closed gain."
+            },
+            "formula": "A_f(0)=\\frac{10^5}{1+14.28355698}\\approx6542.979500"
+          },
+          {
+            "title": {
+              "zh": "(3)跟随器不稳定",
+              "en": "(3) Follower is unstable"
+            },
+            "text": {
+              "zh": "F=1时开环单位交越约460.5725 MHz，环路相位约−256.3818°，相位裕度约−76.3818°。独立特征根有两个正实部根，直接证明小扰动会增长。",
+              "en": "With F=1,unity crossing≈460.5725 MHz and phase≈−256.3818 degrees,giving margin≈−76.3818 degrees. Two characteristic roots have positive real parts,independently proving growing perturbations."
+            },
+            "formula": "s\\approx-3.162989626\\times10^9,\\quad s\\approx(1.232778028\\pm j2.514479590)\\times10^9\\quad\\mathrm{s}^{-1}"
+          },
+          {
+            "title": {
+              "zh": "(4)实际SPICE与独立计算",
+              "en": "(4) Executed SPICE versus independent calculations"
+            },
+            "text": {
+              "zh": "下载两份自包含网表，使用三个缓冲隔离的一阶RC环节精确实现题设三极点传递函数；这是自写线性宏模型，不是厂商运放。实际ngspice47开环AC共961点，与独立复函数最大相对误差约1.43×10的−8次方。跟随器用1 μV窄脉冲激励，2～4 ns输出峰值约6.96 μV，10～12 ns增至约0.309 V，和正实部极点一致。模型没有电源限幅，后续无限增长不能解释为真实器件的无限幅度。闭环AC方程有有限值也不代表存在稳定正弦稳态。",
+              "en": "Two downloadable self-contained netlists implement the three poles with buffered RC sections: an authored linear macro-model,not a manufacturer device. Executed ngspice47 open-loop AC has961 points and maximum relative complex error≈1.43 times10 to the minus8 versus independent evaluation. A1 microvolt narrow pulse gives follower output peaks≈6.96 microvolts at2–4 ns and≈0.309 V at10–12 ns,consistent with RHP poles. Without rail limiting,the macro-model’s continued growth is not an infinite real-device swing. Finite closed AC equations do not prove a stable sinusoidal steady state."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "最大低频环路增益约14.28356；跟随器不稳定，实际SPICE和特征根均支持该结论。",
+          "en": "Maximum low-frequency loop gain≈14.28356. The follower is unstable,confirmed by executed SPICE and characteristic roots."
+        },
+        "pitfalls": [
+          {
+            "zh": "稳定性判断要看完整环路；不能因低频为负反馈或闭环AC曲线有限就断言跟随器稳定。",
+            "en": "Assess the complete loop; low-frequency negative feedback or finite closed AC values do not establish follower stability."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-bode",
+          "2-loop-gain",
+          "3-follower",
+          "4-SPICE"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "simulation": {
+          "instructions": {
+            "zh": "在网表所在目录用ngspice运行；网表自写、无外部厂商模型，生成频率/时间数据文件。三个缓冲器使RC环节不相互加载。",
+            "en": "Run ngspice in the netlist directory. Authored,self-contained,no external vendor model; produces frequency/time data. Buffers prevent RC interstage loading."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.6.1-open.cir",
+              "label": {
+                "zh": "题设三极点宏模型：开环AC",
+                "en": "Stated three-pole macro-model: open-loop AC"
+              }
+            },
+            {
+              "file": "ae-8.6.1-follower.cir",
+              "label": {
+                "zh": "题设三极点宏模型：跟随器AC与小扰动瞬态",
+                "en": "Stated three-pole macro-model: follower AC and perturbation transient"
+              }
+            }
+          ]
+        },
+        "solutionDiagrams": [
+          {
+            "role": "stability-analysis",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.6.1-design.svg"
+          },
+          {
+            "role": "executed-spice-transient",
+            "alt": {
+              "zh": "实际ngspice跟随器小扰动响应，振荡包络增长。",
+              "en": "Executed ngspice follower perturbation response with growing oscillation envelope."
+            },
+            "caption": {
+              "zh": "实际执行的无电源限幅线性宏模型；增长反映不稳定，不是实物无限摆幅。",
+              "en": "Executed linear macro-model without rail limiting; growth shows instability,not infinite real-device swing."
+            },
+            "figure": "ae-8.6.1-transient.svg"
+          }
+        ]
+      },
+      "AE-8.6.2": {
+        "id": "AE-8.6.2",
+        "bookId": "8.6.2",
+        "title": {
+          "zh": "从给定波特图限制反馈系数",
+          "en": "Bound feedback using the supplied Bode plot"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 357,
+          "pdfPage": 390,
+          "figure": "图题8.6.2"
+        },
+        "statement": {
+          "zh": "运放开环频响如图题8.6.2。接为电压串联负反馈，反馈系数$F=\\frac{R_1}{R_1+R_2}$。为保证45°相位裕度，求F的变化范围及低频闭环增益范围。",
+          "en": "The op-amp open response is shown in Fig.8.6.2. For voltage-series feedback with $F=\\frac{R_1}{R_1+R_2}$,find the range of F and low-frequency closed gain ensuring45-degree phase margin."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.5设计或8.6稳定性不在授课计划8.1～8.4范围内。设计题答案不唯一；列出一套明确连接并核验的方案。",
+          "en": "Extension: design8.5 and stability8.6 lie outside the required8.1–8.4 range. Design answers are not unique; one explicit,checked implementation is provided."
+        },
+        "recognition": {
+          "zh": "先在相频图找−135°，竖直投到幅频图；不能把−180°稳定边界当45°裕度边界。",
+          "en": "Find−135 degrees on the phase plot and project to magnitude; the−180-degree stability boundary is not the45-degree-margin boundary."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "读图边界",
+              "en": "Read the graph boundary"
+            },
+            "text": {
+              "zh": "原图−135°虚线对应幅频图约80 dB，即幅度约10000。要至少45°裕度，单位环路交越不能向更高频移动，所以F最多约0.0001。若要求恰好45°，则取该边界。",
+              "en": "The−135-degree dashed line corresponds to about80 dB,magnitude10000. For at least45-degree margin,the loop unity crossing must not move higher,so F is at most about0.0001. Exactly45 degrees uses the boundary."
+            },
+            "formula": "|A(f_{135})|\\approx10^{80/20}=10000,\\qquad 0<F\\lesssim10^{-4}"
+          },
+          {
+            "title": {
+              "zh": "闭环低频增益范围",
+              "en": "Low-frequency closed-gain range"
+            },
+            "text": {
+              "zh": "原图低频100 dB给A0约10万。保留有限A0时，下边界约9090.9，上边界在F趋零时趋近10万；常用深反馈近似把下边界写成约10000。F=0本身不再构成负反馈，且不定义反馈相位裕度。",
+              "en": "The100 dB plateau gives A0≈100000. Retaining finite A0 gives a lower boundary≈9090.9 and an upper limit approaching100000 as F tends to zero. The deep-feedback estimate rounds the lower boundary to10000. At F=0 there is no feedback phase margin."
+            },
+            "formula": "A_f(0)=\\frac{A_0}{1+A_0F},\\quad A_{f,min}\\approx\\frac{100000}{11}\\approx9090.9,\\quad A_f(0)<100000"
+          },
+          {
+            "title": {
+              "zh": "读图精度与范围",
+              "en": "Graph precision and scope"
+            },
+            "text": {
+              "zh": "给定的是折线波特图，不是完整复传递函数，因此F约0.0001与增益约9091～100000属于图示精度下的结论，不虚构精确交越频率。8.6稳定性仍是全书拓展。",
+              "en": "The supplied piecewise Bode graph is not a complete complex transfer function. Thus the approximate F boundary and gain range reflect graph precision; no exact crossing frequency is invented. Stability section8.6 remains an extension."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "至少45°裕度：0 < F约不超过0.0001；有限A0闭环增益约从9090.9到趋近100000，深反馈近似下限约10000。",
+          "en": "For at least45-degree margin:0<F approximately at most0.0001. Finite-A0 closed gain ranges from≈9090.9 toward100000; the deep-feedback lower estimate is10000."
+        },
+        "pitfalls": [
+          {
+            "zh": "F增大通常把交越推向高频、降低裕度；闭环增益随F增大而降低，区间方向不能写反。",
+            "en": "Larger F moves crossing higher and reduces margin here; closed gain decreases as F increases. Do not reverse the interval."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "F-range",
+          "gain-range"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原文逐项核对；设计电路用独立节点矩阵保留开环增益10万、差分输入电阻200 kΩ和串联输出电阻100 Ω。稳定性题用复数频响、特征根与Routh判据复核；8.6.1的两个自写三极点宏模型实际运行ngspice47并保存网表及数据。",
+            "en": "Source text checked. Independent design-circuit nodal matrices retain open gain100000,differential input200 kilohms and series output100 ohms. Stability is checked by complex response,characteristic roots and Routh criteria; both authored three-pole8.6.1 macro-models are executed in ngspice47 with saved netlists/data."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原波特图：保留−135°与80 dB的对应虚线。",
+            "en": "Original Bode graph retaining the−135-degree/80 dB correspondence."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "stability-analysis",
+            "alt": {
+              "zh": "核验过的完整连接设计或幅相图，数学标签采用规范排版。",
+              "en": "Checked complete connection design or response plot with mathematical labels."
+            },
+            "caption": {
+              "zh": "连接定义与模型参数见逐步解析；设计题给出一种可行方案，数值不冒充唯一答案。",
+              "en": "See derivation for connections and model parameters. Design problems show one implementation,not a unique answer."
+            },
+            "figure": "ae-8.6.2-design.svg"
+          }
+        ],
+        "figure": "ae-8.6.2-figure.png"
       }
     }
   }

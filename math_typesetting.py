@@ -140,6 +140,7 @@ def identifier(word):
     if word in ALIASES:word=ALIASES[word]
     if word.startswith('\\'):return word
     # Genuine file/model identifiers are literal names, not variable subscripts.
+    if re.fullmatch(r'(?:ngspice|LTspice|PSpice)\d+',word,re.I):return None
     if word.startswith(('UA741','BZX','1N')):return None
     result=[];i=0
     while i<len(word):

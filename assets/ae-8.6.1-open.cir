@@ -1,0 +1,20 @@
+Three isolated poles: authored rational macro-model, not a vendor model
+Vsig in 0 DC 0 AC 1 PULSE(0 1u 1n 0.05n 0.05n 0.2n 40n)
+Eerr err 0 in 0 1
+E0 n0 0 err 0 100000
+R1 n0 n1 1k
+C1 n1 0 159.154943091895p
+Ebuf1 b1 0 n1 0 1
+R2 b1 n2 1k
+C2 n2 0 15.9154943091895p
+Ebuf2 b2 0 n2 0 1
+R3 b2 out 1k
+C3 out 0 1.59154943091895p
+.control
+set wr_vecnames
+set wr_singlescale
+ac dec 120 1k 100G
+wrdata ae-8.6.1-open-ac.dat v(out)
+quit
+.endc
+.end
