@@ -127,7 +127,7 @@ ALIASES.update({name:tex for name,tex in [
 ]})
 
 def identifier(word):
-    if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS'):return None
+    if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS','CMOS'):return None
     if word=='Re':return r'\operatorname{Re}'
     if word in ('K′_nW','i_sR'):
         return {"K′_nW":r"K'_n W",'i_sR':r'i_s R'}[word]
@@ -140,7 +140,7 @@ def identifier(word):
     if word in ALIASES:word=ALIASES[word]
     if word.startswith('\\'):return word
     # Genuine file/model identifiers are literal names, not variable subscripts.
-    if re.fullmatch(r'(?:ngspice|LTspice|PSpice)\d+',word,re.I):return None
+    if re.fullmatch(r'(?:ngspice|LTspice|PSpice|IRF)\d+',word,re.I):return None
     if word.startswith(('UA741','BZX','1N')):return None
     result=[];i=0
     while i<len(word):

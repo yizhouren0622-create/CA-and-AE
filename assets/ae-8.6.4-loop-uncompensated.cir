@@ -1,0 +1,30 @@
+Textbook8.6.4 legacy-model ngspice port; Cc=0,closed=False
+.include ae-8.6.4-modified-models.lib
+.options temp=27 tnom=27 reltol=1e-7 abstol=1e-13
+Vdd vp 0 5
+Vss vn 0 -5
+Iref bias vn 100u
+Vinput inp 0 0
+X1 n1 test tail B24_IRF9512
+X2 n2 0 tail B24_IRF9512
+X3 n1 n1 vn B24_IRF832
+X4 n2 n1 vn B24_IRF832
+X5 out n2 vn B24_IRF840
+X6 out bias vp B24_IRF9510
+X7 tail bias vp B24_IRF9510
+X8 bias bias vp B24_IRF9510
+* no Cc
+Lbreak out fb 1e12
+Cground fb 0 1e12
+Vtest test fb DC 0 AC 1
+.control
+set filetype=ascii
+set wr_singlescale
+set wr_vecnames
+op
+print v(bias) v(tail) v(n1) v(n2) v(out)
+ac dec 160 .01 1e9
+wrdata ae-8.6.4-loop-uncompensated-ac.dat v(out) v(n1) v(n2) v(tail)
+quit
+.endc
+.end

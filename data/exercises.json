@@ -53818,6 +53818,1071 @@
           }
         ],
         "figure": "ae-8.6.2-figure.png"
+      },
+      "AE-8.6.3": {
+        "id": "AE-8.6.3",
+        "bookId": "8.6.3",
+        "title": {
+          "zh": "补偿后的稳定边界与裕度边界",
+          "en": "Stability and margin after compensation"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 357,
+          "pdfPage": 390,
+          "figure": "图题8.6.3（印刷358页；PDF391页）"
+        },
+        "statement": {
+          "zh": "负反馈放大电路与题8.6.2相同，反馈系数$F=\\frac{R_1}{R_1+R_2}$。若补偿后的运放开环频率响应如图题8.6.3，为使电路稳定工作，求F的变化范围。",
+          "en": "The negative-feedback circuit is the same as8.6.2,with $F=\\frac{R_1}{R_1+R_2}$. With compensated open-loop response in Fig.8.6.3,find the range of F for stable operation."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.6稳定性不在授课计划8.1～8.4要求范围。",
+          "en": "Extension: stability section8.6 lies outside required sections8.1–8.4."
+        },
+        "recognition": {
+          "zh": "先定义实际反馈环路、参考方向和工作点，再讨论裕度；不能仅凭补偿电容存在就宣称稳定。",
+          "en": "Define the actual loop,reference directions and operating point before discussing margin; the presence of a compensation capacitor alone does not establish stability."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用−180°处的环路幅值判断稳定",
+              "en": "Use loop magnitude at−180 degrees"
+            },
+            "text": {
+              "zh": "反馈分压为正实数，不增加相移。原图新曲线在幅度降为零之前仍穿越−180°，因此F不能任意取到1。把−180°对应的新幅度记为B180（单位dB）；严格稳定要求该频率环路幅值小于1。等号是临界，不属于渐近稳定。",
+              "en": "The positive real divider adds no phase. The compensated curve still reaches−180 degrees before its magnitude falls below unity; F cannot be increased arbitrarily to1. Let B180 be the new magnitude in dB at−180 degrees. The loop magnitude must be strictly below unity there; equality is marginal,not asymptotically stable."
+            },
+            "formula": "20\\log_{10}F+B_{180}<0\\quad\\Longrightarrow\\quad 0<F<\\min\\!\\left(1,10^{-B_{180}/20}\\right)"
+          },
+          {
+            "title": {
+              "zh": "按原图精度读数",
+              "en": "Read with the source graph precision"
+            },
+            "text": {
+              "zh": "从下图−180°横线竖直上移，交到新幅频曲线的是十几dB，约15 dB；并不是N点34 dB。因原图只有折线和粗刻度，不把0.178当精确器件常数。图示稳定上界约0.18；靠近该上界裕度很小。严格结果以上一步B180表达式为准。",
+              "en": "Project the−180-degree phase line upward to the new magnitude curve: it is in the mid-teens,about15 dB,not the34 dB at N. The coarse piecewise graph does not justify treating0.178 as an exact device constant. The graphical upper limit is about0.18; margin becomes small near it. The B180 expression above is the precise form supported by the given graph."
+            },
+            "formula": "B_{180}\\approx15\\,\\mathrm{dB}\\quad\\Longrightarrow\\quad F_{crit}\\approx10^{-15/20}\\approx0.18"
+          },
+          {
+            "title": {
+              "zh": "34 dB是更保守的45°裕度选取",
+              "en": "34 dB gives a more conservative45-degree choice"
+            },
+            "text": {
+              "zh": "N点在第一原转折频率约100 kHz，新曲线幅度34 dB，相位约−135°。令单位环路交越不超过N，反馈系数不大于约0.01995，可按图保证至少约45°裕度。这是推荐的稳定子区间；不能把它冒充仅要求稳定的最大允许范围。",
+              "en": "At N near the first original corner,about100 kHz,the new magnitude is34 dB and phase is approximately−135 degrees. Keeping loop crossover at or below N gives F at most about0.01995 and at least approximately45-degree margin. This is a recommended stable subset,not the largest range for stability alone."
+            },
+            "formula": "0<F\\lesssim10^{-34/20}\\approx0.01995\\quad\\text{(approximately45-degree margin or more)}"
+          },
+          {
+            "title": {
+              "zh": "答题顺序",
+              "en": "Answering pattern"
+            },
+            "text": {
+              "zh": "题目只问稳定：找−180°、读新幅度、写严格不等式。若还要求45°裕度：改找−135°再读N点。旧黑虚线、34 dB水平线和新绿色曲线必须分别辨认。",
+              "en": "For stability: locate−180 degrees,read the new magnitude,then write a strict inequality. For45-degree margin: use−135 degrees and N. Distinguish the old black dashed curve,the34 dB line and the new green curve."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "严格表达：$0<F<10^{-B_{180}/20}$（并受分压系数小于1限制）；原图约给上界0.18。若取$F\\lesssim0.01995$，还能保留约45°以上裕度。",
+          "en": "Stable range: $0<F<10^{-B_{180}/20}$,also limited by F<1; the source graph suggests an upper limit about0.18. Choosing $F\\lesssim0.01995$ also preserves approximately45-degree margin or more."
+        },
+        "pitfalls": [
+          {
+            "zh": "N点34 dB对应−135°，不是−180°稳定临界；F=1也不会因增加一个主极点自动稳定。",
+            "en": "N at34 dB corresponds to−135 degrees,not the−180-degree stability boundary. Adding a dominant pole does not automatically make F=1 stable."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "stable-range",
+          "graph-precision",
+          "margin-subset"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原题与完整图示逐项核对；读图结论保留图示精度。8.6.4实际运行ngspice47，器件小信号参数取自工作点，再独立组装导纳矩阵和极点方程，与频响、瞬态交叉核验；移植模型及原生PSpice的差异明确说明。",
+            "en": "Source wording and full figures checked; graph conclusions retain graphical precision. Exercise8.6.4 is executed in ngspice47. Operating-point device derivatives feed an independently assembled nodal admittance matrix and pole equation,cross-checked with AC and transient. The model port is distinguished from native PSpice."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材图题8.6.3：保留全部轴、节点、参数与参考方向。",
+            "en": "Textbook Fig.8.6.3 retaining axes,nodes,parameters and reference directions."
+          }
+        },
+        "figure": "ae-8.6.3-figure.png"
+      },
+      "AE-8.6.4": {
+        "id": "AE-8.6.4",
+        "bookId": "8.6.4",
+        "title": {
+          "zh": "两级CMOS的实际返回比与密勒补偿",
+          "en": "Executed CMOS return ratio and Miller compensation"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 357,
+          "pdfPage": 390,
+          "figure": "图题8.6.4（印刷358页；PDF391页）"
+        },
+        "statement": {
+          "zh": "两级CMOS电路如图题8.6.4。用SPICE分析无密勒电容以及有密勒电容$C_c$时的稳定性；增加电容使相位裕度为45°。T1、T2选IRF9512，修改$K_p$=10.15 μA/V²、W=16 μm、L=1 μm、$V_{TO}$=−0.7 V、$R_{DS}$=266.7 kΩ；T3、T4选IRF832，修改$K_p$=20.85 μA/V²、W=16 μm、L=1 μm、$V_{TO}$=0.7 V、$R_{DS}$=2 MΩ；T5选IRF840，修改$K_p$=20.85 μA/V²、W=32 μm、L=1 μm、$V_{TO}$=0.7 V、$R_{DS}$=2 MΩ；T6、T7、T8选IRF9510，修改$K_p$=10.15 μA/V²、W=16 μm、L=1 μm、$V_{TO}$=−0.7 V、$R_{DS}$=266.7 kΩ。其余参数采用模型默认。电源±5 V，参考电流100 μA。",
+          "en": "Use SPICE to analyze the two-stage CMOS circuit of Fig.8.6.4 without and with Miller capacitor $C_c$,increasing it for45-degree phase margin. T1/T2:IRF9512,Kp=10.15 microamperes per volt squared,W=16 micrometres,L=1 micrometre,Vto=−0.7 V,Rds=266.7 kilohms. T3/T4:IRF832,Kp=20.85 microamperes per volt squared,W=16 micrometres,L=1 micrometre,Vto=0.7 V,Rds=2 megohms. T5:IRF840,same Kp,Vto,L,Rds but W=32 micrometres. T6/T7/T8:IRF9510,same modified parameters as T1/T2. Keep other model defaults. Supplies are±5 V and reference current100 microamperes."
+        },
+        "prerequisites": {
+          "zh": "拓展：8.6稳定性不在授课计划8.1～8.4要求范围。",
+          "en": "Extension: stability section8.6 lies outside required sections8.1–8.4."
+        },
+        "recognition": {
+          "zh": "先定义实际反馈环路、参考方向和工作点，再讨论裕度；不能仅凭补偿电容存在就宣称稳定。",
+          "en": "Define the actual loop,reference directions and operating point before discussing margin; the presence of a compensation capacitor alone does not establish stability."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "原题未指定的条件必须补充说明",
+              "en": "State the unspecified conditions"
+            },
+            "text": {
+              "zh": "原图为开环放大器，未画反馈网络；相位裕度是环路量。以下明确取最常检验的单位电压反馈：T1栅接输出、T2栅作输入，输出不外接负载，27°C。原题也未指定模型库版本，所以不存在与库无关的唯一电容值。本页给出可复现的参考实现，不把开环器件本身与反馈跟随器的稳定性混为一谈。",
+              "en": "The figure is an open-loop amplifier without a feedback network; phase margin belongs to a loop. We explicitly test unity voltage feedback:T1 gate to output,T2 gate as input,no external output load,27°C. The library version is also unspecified,so no universal unique $C_c$ exists. This is a reproducible reference implementation; open-loop amplifier behavior and feedback-follower stability are distinguished."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "锁定旧库并显式移植参数",
+              "en": "Fix the legacy library and port parameters explicitly"
+            },
+            "text": {
+              "zh": "采用公开存档的OrCAD功率MOS库，revision1.24、1998-10-19，按原题覆盖参数。ngspice47的MOS3不直接接受该库的全部功率MOS扩展；$W$、$L$移到实例，$R_G$、$R_{DS}$显式接为电阻，体二极管的发射系数、渡越时间、结电容等保留为单独二极管，MOS核心对应项移除以免重复。原库完整内容保持私有；下载准备脚本从用户提供的pwrmos.lib生成所需私有模型文件。该移植版本实际执行，未声称与任意版本原生PSpice逐位等价。",
+              "en": "Use the archived OrCAD power-MOS library revision1.24 dated1998-10-19,overriding the stated parameters. MOS3 in ngspice47 does not directly accept every legacy power extension. Move W/L to instances,represent gate and drain-source resistances explicitly,and retain diode emission coefficient,transit time,junction capacitance and related parameters in a separate body diode while removing duplicates from the MOS core. The complete original library stays private. The preparation script reads a user-supplied pwrmos.lib and creates the private model file. This port was executed; bitwise equivalence with arbitrary native PSpice versions is not claimed."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "保持反馈工作点、从真实反馈端注入",
+              "en": "Preserve bias and inject at the feedback input"
+            },
+            "text": {
+              "zh": "采用大电感维持T1栅的直流反馈、大电容使注入源另一端交流接地，再串入1 V交流测试源；输入T2交流置零。定义返回比为负输出除以测试电压。由于输入级及寄生网络不完全对称，不能把T2到输出的信号增益直接当成这个返回比，更不能拿闭环输出曲线本身当返回比。",
+              "en": "Use a large inductor to preserve DC feedback at T1,a large capacitor to AC-ground the other terminal of a series1 V test source,and zero the T2 input for AC. Define return ratio as minus output divided by test voltage. The input stage and parasitics are not fully symmetric; the T2-to-output signal gain is not this return ratio,and neither is the closed-loop output response."
+            },
+            "formula": "T(j\\omega)=-\\frac{v_o(j\\omega)}{v_{test}(j\\omega)},\\quad |T(j\\omega_c)|=1,\\quad PM=180^\\circ+\\operatorname{arg} T(j\\omega_c)"
+          },
+          {
+            "title": {
+              "zh": "无补偿：负裕度与增长瞬态",
+              "en": "No compensation: negative margin and growing transient"
+            },
+            "text": {
+              "zh": "本移植模型在反馈工作点的低频返回比约2237；单位交越约52.315 kHz，相位裕度约−17.553°，跟随器不稳定。独立小信号矩阵的两个主导极点在右半平面；实际1 mV脉冲后输出振荡增长，150～200 μs内增量峰值约1.374 V。原图开环工作点给出的信号增益约2197，和闭环偏置下的返回比不同。",
+              "en": "This port gives low-frequency return ratio≈2237,unity crossing≈52.315 kHz and margin≈−17.553 degrees at the feedback bias point:the follower is unstable. An independent small-signal matrix has two dominant RHP poles. Executed response to a1 mV pulse grows,with increment peak≈1.374 V at150–200 microseconds. The source figure’s open-loop bias gives signal gain≈2197,distinct from the return ratio at feedback bias."
+            },
+            "formula": "p_{1,2}\\approx(4.3751\\pm j31.9181)\\times10^4\\,\\mathrm{s}^{-1}"
+          },
+          {
+            "title": {
+              "zh": "密勒电容约860 pF达到45°",
+              "en": "About860 pF gives45-degree margin"
+            },
+            "text": {
+              "zh": "按真实返回比搜索，$C_c$约859.77 pF时单位交越约17.274 kHz，裕度约45.000°。独立矩阵没有右半平面极点；1 mV脉冲的输出增量峰值约1.229 mV，随后衰减，和稳定性判断相符。数值应按约860 pF报告；改变原模型默认寄生参数、库版本或负载后需要重测，不能照抄这个电容。",
+              "en": "Searching the actual return ratio gives $C_c$≈859.77 pF,unity crossing≈17.274 kHz and margin≈45.000 degrees. The independent matrix has no RHP poles. The executed1 mV pulse response peaks at≈1.229 mV incremental output and decays. Report about860 pF; changing library defaults,version or load requires a new search."
+            },
+            "formula": "C_c\\approx8.60\\times10^{-10}\\,\\mathrm F,\\quad PM\\approx45^\\circ,\\quad f_c\\approx17.27\\,\\mathrm{kHz}"
+          },
+          {
+            "title": {
+              "zh": "独立复核与复现",
+              "en": "Cross-check and reproduce"
+            },
+            "text": {
+              "zh": "实际每个AC网表1761点；从直流工作点读取器件导数，另行构建G、C节点矩阵，复频响最大相对差约3.75×10的−6次方（含有限断环元件与输出舍入差）。闭环极点由广义电路方程求得，无补偿2个右半平面根、有补偿0个。五个网表和模型准备脚本可下载；先取得所列模型库，再运行准备脚本及ngspice。库来源见本题参考链接。",
+              "en": "Each executed AC deck has1761 samples. Device derivatives from DC bias feed separately assembled G/C matrices; maximum relative complex-response difference is≈3.75 times10 to the minus6,including finite loop-break and exported-value rounding. The generalized circuit equation gives2 RHP poles without compensation and0 with it. Download five decks and the model preparation script,obtain the listed library,then run the script and ngspice. The source link is provided below."
+            },
+            "formula": "(G+sC)v=0,\\qquad\\det(G+sC)=0"
+          }
+        ],
+        "answer": {
+          "zh": "在已注明的旧库ngspice移植、27°C、无外负载、单位电压反馈条件下：无$C_c$跟随器不稳定；$C_c$约860 pF时相位裕度约45°并有衰减瞬态。这是带版本与移植条件的参考结果，不是库无关的唯一电容。",
+          "en": "For the stated legacy-library ngspice port at27°C,no external load and unity voltage feedback:the uncompensated follower is unstable; $C_c$≈860 pF yields≈45-degree margin and a decaying transient. This is a versioned,conditional reference result,not a universal unique capacitor."
+        },
+        "pitfalls": [
+          {
+            "zh": "不静默忽略$R_{DS}$ and $R_G$；不把信号通道增益当实际返回比；相位裕度不属于孤立开环电路。不同库或负载必须重做搜索。",
+            "en": "Do not silently ignore $R_{DS}$ and $R_G$,substitute signal gain for actual return ratio,or assign loop margin to an isolated open-loop circuit. Re-search after changing library or load."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "no-Cc-AC",
+          "no-Cc-transient",
+          "Cc45-search",
+          "compensated-AC",
+          "compensated-transient",
+          "model-conditions"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "原题与完整图示逐项核对；读图结论保留图示精度。8.6.4实际运行ngspice47，器件小信号参数取自工作点，再独立组装导纳矩阵和极点方程，与频响、瞬态交叉核验；移植模型及原生PSpice的差异明确说明。",
+            "en": "Source wording and full figures checked; graph conclusions retain graphical precision. Exercise8.6.4 is executed in ngspice47. Operating-point device derivatives feed an independently assembled nodal admittance matrix and pole equation,cross-checked with AC and transient. The model port is distinguished from native PSpice."
+          },
+          "externalReferences": [
+            {
+              "title": "OrCAD power-MOS library revision1.24 (archived model source)",
+              "url": "https://robustdesignconcepts.com/files/pspice/libs/pwrmos.lib"
+            }
+          ]
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材图题8.6.4：保留全部轴、节点、参数与参考方向。",
+            "en": "Textbook Fig.8.6.4 retaining axes,nodes,parameters and reference directions."
+          }
+        },
+        "conditionalSubparts": [
+          "model-library-version",
+          "ngspice-port",
+          "unity-feedback-no-load"
+        ],
+        "solutionDiagrams": [
+          {
+            "role": "executed-spice-loop",
+            "alt": {
+              "zh": "已实际运行的返回比幅相对照",
+              "en": "Executed return-ratio magnitude/phase comparison"
+            },
+            "caption": {
+              "zh": "旧库显式移植模型，单位电压反馈、无外负载、27°C；约860 pF对应45°裕度。",
+              "en": "Explicit legacy-model port,unity voltage feedback,no external load,27°C; about860 pF gives45-degree margin."
+            },
+            "figure": "ae-8.6.4-loop.svg"
+          },
+          {
+            "role": "executed-spice-transient",
+            "alt": {
+              "zh": "已实际运行的跟随器脉冲响应",
+              "en": "Executed follower pulse response"
+            },
+            "caption": {
+              "zh": "旧库显式移植模型，单位电压反馈、无外负载、27°C；约860 pF对应45°裕度。",
+              "en": "Explicit legacy-model port,unity voltage feedback,no external load,27°C; about860 pF gives45-degree margin."
+            },
+            "figure": "ae-8.6.4-transient.svg"
+          }
+        ],
+        "simulation": {
+          "instructions": {
+            "zh": "下载模型准备脚本与网表到同一目录，独立取得pwrmos.lib后运行python3 ae-8.6.4-prepare-models.py pwrmos.lib，再运行ngspice -b对应网表。完整原库和生成的完整模型不在公开包中。五份网表实际执行；输出文件名按用途区分。",
+            "en": "Save the preparation script and decks together. Obtain pwrmos.lib separately,run python3 ae-8.6.4-prepare-models.py pwrmos.lib,then ngspice -b with each deck. Neither the complete original library nor generated complete models is bundled. All five decks were executed; output files are named by purpose."
+          },
+          "netlists": [
+            {
+              "file": "ae-8.6.4-open-uncompensated.cir",
+              "label": {
+                "zh": "实际执行：open-uncompensated",
+                "en": "Executed: open-uncompensated"
+              }
+            },
+            {
+              "file": "ae-8.6.4-loop-uncompensated.cir",
+              "label": {
+                "zh": "实际执行：loop-uncompensated",
+                "en": "Executed: loop-uncompensated"
+              }
+            },
+            {
+              "file": "ae-8.6.4-loop-compensated.cir",
+              "label": {
+                "zh": "实际执行：loop-compensated",
+                "en": "Executed: loop-compensated"
+              }
+            },
+            {
+              "file": "ae-8.6.4-follower-uncompensated.cir",
+              "label": {
+                "zh": "实际执行：follower-uncompensated",
+                "en": "Executed: follower-uncompensated"
+              }
+            },
+            {
+              "file": "ae-8.6.4-follower-compensated.cir",
+              "label": {
+                "zh": "实际执行：follower-compensated",
+                "en": "Executed: follower-compensated"
+              }
+            },
+            {
+              "file": "ae-8.6.4-prepare-models.py",
+              "label": {
+                "zh": "先运行：从独立取得的原库生成私有移植模型",
+                "en": "Run first: prepare private port from a separately obtained original library"
+              }
+            }
+          ]
+        },
+        "figure": "ae-8.6.4-figure.png"
+      },
+      "AE-10.4.1": {
+        "id": "AE-10.4.1",
+        "bookId": "10.4.1",
+        "title": {
+          "zh": "电荷转移形成等效电阻",
+          "en": "Equivalent resistance from charge transfer"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "原题无图 / No source figure"
+        },
+        "statement": {
+          "zh": "影响开关电容滤波器频率响应的时间常数取决于什么？为什么时钟频率$f_{cp}$通常远大于滤波器工作频率（例如截止频率$f_p$），例如$\\frac{f_{cp}}{f_p}>100$？",
+          "en": "What determines the time constants in a switched-capacitor filter? Why is clock frequency $f_{cp}$ usually much higher than operating frequency,such as cutoff $f_p$,for example $\\frac{f_{cp}}{f_p}>100$?"
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "每周期转移电荷",
+              "en": "Charge transferred each cycle"
+            },
+            "text": {
+              "zh": "电容$C_s$在两个节点电压之间交替充放电，每周期净转移电荷为电容量乘电压差。时钟频率乘每周期电荷得到平均电流，进而得到等效电阻。",
+              "en": "A switched capacitor alternately samples two node voltages. Net charge per cycle equals capacitance times voltage difference; multiply by clock frequency for average current and equivalent resistance."
+            },
+            "formula": "\\Delta Q=C_s(V_1-V_2),\\quad I_{avg}=f_{cp}C_s(V_1-V_2),\\quad R_{eq}=\\frac{1}{f_{cp}C_s}"
+          },
+          {
+            "title": {
+              "zh": "时间常数由电容比与时钟决定",
+              "en": "Time constants depend on capacitor ratio and clock"
+            },
+            "text": {
+              "zh": "若这个等效电阻与积分电容$C_i$形成时间常数，则时间常数取决于电容比和时钟周期。具体滤波器还含拓扑系数，不应给所有滤波器套同一个截止频率系数。",
+              "en": "If the equivalent resistor works with an integrating capacitor,the time constant depends on a capacitor ratio and clock period. Topology adds coefficients; one universal cutoff coefficient does not cover every filter."
+            },
+            "formula": "\\tau=R_{eq}C_i=\\frac{C_i}{C_s}\\frac{1}{f_{cp}}"
+          },
+          {
+            "title": {
+              "zh": "为何强过采样",
+              "en": "Why strong oversampling"
+            },
+            "text": {
+              "zh": "每个信号变化周期内需要足够多次电荷转移，平均等效电阻才接近连续时间描述；也减轻通带内采样镜像和时钟纹波。比值大于100是常见设计条件，不是普适数学定理；输入仍须满足采样抗混叠要求，开关与运放必须在每个相位充分建立，不能无限提高时钟。",
+              "en": "Many charge-transfer events per signal cycle make the averaged resistor approximation useful and reduce in-band sampling images and clock ripple. A ratio above100 is a common design condition,not a universal theorem. Input anti-aliasing and adequate switch/op-amp settling remain necessary."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "等效时间常数由电容比和时钟周期设定；强过采样保证平均电路近似与采样误差可控，仍需抗混叠与建立时间检查。",
+          "en": "Capacitor ratio and clock period set effective time constants; strong oversampling supports the averaged approximation while anti-aliasing and settling remain necessary."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "time-constant",
+          "clock-ratio"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        }
+      },
+      "AE-10.4.2": {
+        "id": "AE-10.4.2",
+        "bookId": "10.4.2",
+        "title": {
+          "zh": "开关电容滤波器的优势与边界",
+          "en": "Advantages and limits of switched-capacitor filters"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "原题无图 / No source figure"
+        },
+        "statement": {
+          "zh": "开关电容滤波器与一般RC有源滤波电路相比，有何主要优点？",
+          "en": "What are the principal advantages of switched-capacitor filters over ordinary active RC filters?"
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "适合集成与比值精度",
+              "en": "Integration and ratio accuracy"
+            },
+            "text": {
+              "zh": "用开关和小电容实现很大的等效电阻，避免片上大电阻的面积和绝对精度问题；同工艺电容比通常比单个RC绝对乘积更易控制。因此时间常数可主要依赖可匹配的电容比和可稳定的时钟。",
+              "en": "Switches and small capacitors emulate large resistances,avoiding large on-chip resistor area and absolute-value errors. Capacitor ratios are generally easier to match than absolute RC products,so time constants can depend on ratios and a stable clock."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "可调谐与追踪",
+              "en": "Tuning and tracking"
+            },
+            "text": {
+              "zh": "改变$f_{cp}$即可成比例移动特征频率；多个滤波单元共用时钟，有利于频率一致性、数字控制和可编程调谐。",
+              "en": "Changing clock frequency shifts characteristic frequencies proportionally. Sharing a clock supports tracking,digital control and programmable tuning."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "不把优点写成无条件优越",
+              "en": "Keep the comparison conditional"
+            },
+            "text": {
+              "zh": "这是离散时间电路，会有时钟馈通、采样噪声、混叠与建立误差。题目问主要优点，答集成、比值精度、时钟调谐即可；不要写成任意频率、噪声和动态范围下都优于连续RC。",
+              "en": "Sampling brings clock feedthrough,sampling noise,aliasing and settling errors. The requested advantages are integration,ratio accuracy and clock tuning,not unconditional superiority in bandwidth,noise or dynamic range."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "主要优点：易集成、以电容比获得较好的时间常数精度、由时钟方便地调谐并保持多级频率追踪。",
+          "en": "Main advantages:integration,ratio-based time-constant accuracy,and convenient clock tuning with frequency tracking."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "advantages"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        }
+      },
+      "AE-10.6.1": {
+        "id": "AE-10.6.1",
+        "bookId": "10.6.1",
+        "title": {
+          "zh": "文氏桥与放大器反相次数",
+          "en": "Wien bridge and amplifier inversion count"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "图题10.6.1"
+        },
+        "statement": {
+          "zh": "电路如图题10.6.1，试用相位平衡条件判断哪个电路可能振荡、哪个不能，并简述理由。",
+          "en": "Use the phase-balance condition to decide which circuit in Fig.10.6.1 can potentially oscillate and which cannot,giving reasons."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先求RC网络的相位",
+              "en": "RC-network phase first"
+            },
+            "text": {
+              "zh": "两幅图均用输出经串联RC到取样点、取样点经并联RC接地的选频网络。等值R、C时，在$f_0$处反馈系数实正且为三分之一，网络相位只能在正负90°之间变化。",
+              "en": "Both use a series RC arm from output to sense node and a parallel RC arm to ground. With equal R/C,the feedback at center is positive real and one third; its phase lies between plus and minus90 degrees."
+            },
+            "formula": "F(s)=\\frac{sRC}{(sRC)^2+3sRC+1},\\quad f_0=\\frac{1}{2\\pi RC},\\quad F(j\\omega_0)=\\frac13"
+          },
+          {
+            "title": {
+              "zh": "(a)共源加共集，整体反相",
+              "en": "(a) Common source plus follower inverts"
+            },
+            "text": {
+              "zh": "T1为共源放大、反相；T2为共集跟随、同相，因此放大部分整体反相。文氏网络在任何有限频率都不能再提供180°补偿，不能满足同相反馈相位条件；按所用中频器件模型不能振荡。",
+              "en": "T1 is common source and inverts; T2 is a common-collector follower. The amplifier therefore inverts overall. The Wien network cannot supply another180 degrees at a finite frequency,so the midband model fails phase balance."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(b)同相放大，可能振荡",
+              "en": "(b) Noninverting amplifier can oscillate"
+            },
+            "text": {
+              "zh": "文氏网络接同相端；灯泡$R_1$与$R_2$组成反相端负反馈，在$f_0$处满足相位条件。还需小信号增益大于3才能起振，稳定后有效增益约3。灯丝随幅度升温电阻增大，使增益下降，可稳幅；相位允许并不等于无条件起振。",
+              "en": "The Wien arm feeds the noninverting input. The lamp and feedback resistor set negative feedback at the inverting input. Phase balance holds at center,but startup still requires gain above3 and settled effective gain near3. Lamp heating raises resistance and lowers gain,providing amplitude control."
+            },
+            "formula": "A\\approx1+\\frac{R_2}{R_1},\\quad A_{start}>3,\\quad A_{steady}\\approx3"
+          }
+        ],
+        "answer": {
+          "zh": "(a)不能满足相位平衡；(b)可能振荡，还需增益与稳幅条件。",
+          "en": "(a) Fails phase balance. (b) Can oscillate if gain and amplitude-control conditions are met."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-phase",
+          "b-phase",
+          "b-magnitude"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.1，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.1 with complete connections,parameters and subfigures."
+          }
+        },
+        "figure": "ae-10.6.1-figure.png"
+      },
+      "AE-10.6.2": {
+        "id": "AE-10.6.2",
+        "bookId": "10.6.2",
+        "title": {
+          "zh": "双反相级的文氏桥振荡",
+          "en": "Wien oscillator with two inverting stages"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "图题10.6.2"
+        },
+        "statement": {
+          "zh": "电路如图题10.6.2。（1）从相位平衡分析能否产生正弦振荡；（2）若能，$R_f$与$R_{e1}$应满足什么关系？振荡频率多少？为稳幅可将哪个电阻选为热敏电阻，温度系数如何？图中选频电阻68 kΩ、电容0.047 μF。",
+          "en": "For Fig.10.6.2:(1) Test sinusoidal oscillation using phase balance. (2) Find the relation between $R_f$ and $R_{e1}$,the oscillation frequency,and a thermistor location and temperature coefficient for amplitude control. Both frequency-selective resistors are68 kilohms and capacitors0.047 microfarads."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)两级反相给同相放大",
+              "en": "(1) Two inversions give noninverting gain"
+            },
+            "text": {
+              "zh": "T1共源与T2共射各反相一次，整体同相；RC串并联网络在中心频率同相，故可能满足相位平衡。把C1、C2视为振荡频率附近的交流短路，并假定器件工作在正常放大区。",
+              "en": "T1 common source and T2 common emitter each invert,so overall gain is noninverting. The series-parallel RC network has zero phase at center. C1/C2 are treated as AC shorts near oscillation and devices must remain in their active regions."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)先用负反馈定增益",
+              "en": "(2) Set gain using negative feedback"
+            },
+            "text": {
+              "zh": "$R_f$把输出经C1回送T1源极，$R_{e1}$接地形成局部负反馈。足够大环路增益时，闭环电压增益近似为下面的式子；文氏网络衰减三倍，所以起振需严格大于3，稳态等幅约等于3。有限器件参数未给，不能把深反馈式当任意参数下的精确等式。",
+              "en": "$R_f$ returns output through C1 to the T1 source; $R_{e1}$ to ground closes local negative feedback. With sufficient loop gain,the voltage gain has the following approximation. The Wien attenuation is three,so startup requires strictly more than3 and steady effective gain near3. Without device parameters,this deep-feedback expression is not an exact universal identity."
+            },
+            "formula": "A\\approx1+\\frac{R_f}{R_{e1}},\\quad R_f>2R_{e1}\\ \\text{at startup},\\quad R_f\\approx2R_{e1}\\ \\text{in steady operation}"
+          },
+          {
+            "title": {
+              "zh": "频率与热敏稳幅",
+              "en": "Frequency and thermistor amplitude control"
+            },
+            "text": {
+              "zh": "由等值RC网络得到约49.80 Hz。可将$R_f$选为负温度系数热敏电阻：幅度增大使它受热、电阻下降，负反馈增强、增益下降，形成稳幅负作用。若采用正温度系数的源极电阻也可降低增益，但会影响直流偏置，必须额外核查；不能把所有热敏位置都当等价。",
+              "en": "The matched RC network gives about49.80 Hz. An NTC thermistor at $R_f$ heats as amplitude increases; resistance and gain fall,providing amplitude control. A PTC source resistor can also reduce gain but changes DC bias and needs an extra check."
+            },
+            "formula": "f_0=\\frac{1}{2\\pi(68\\,\\mathrm{k\\Omega})(0.047\\,\\mathrm{\\mu F})}\\approx49.798\\,\\mathrm{Hz}"
+          }
+        ],
+        "answer": {
+          "zh": "可以振荡；深反馈近似下起振$R_f$大于2$R_{e1}$、稳态有效值约等于2$R_{e1}$；频率约49.80 Hz，$R_f$可采用负温度系数热敏电阻。",
+          "en": "Oscillation is possible. Under deep feedback,start with $R_f$>2$R_{e1}$ and settle near $R_f$=2$R_{e1}$. Frequency≈49.80 Hz; an NTC thermistor at $R_f$ can stabilize amplitude."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-phase",
+          "2-resistors",
+          "2-frequency",
+          "2-thermistor"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.2，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.2 with complete connections,parameters and subfigures."
+          }
+        },
+        "figure": "ae-10.6.2-figure.png"
+      },
+      "AE-10.6.3": {
+        "id": "AE-10.6.3",
+        "bookId": "10.6.3",
+        "title": {
+          "zh": "三级与两级RC移相的区别",
+          "en": "Three versus two RC phase-shift sections"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "图题10.6.3"
+        },
+        "statement": {
+          "zh": "一节RC高通或低通电路的最大相移绝对值小于90°。从相位平衡出发，判断图题10.6.3中哪个电路可能振荡、哪个不能，并简述理由。",
+          "en": "Each RC high-pass or low-pass section has phase-shift magnitude below90 degrees. Use phase balance to classify the two circuits in Fig.10.6.3."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)三级低通可以补足180°",
+              "en": "(a) Three low-pass sections can supply180 degrees"
+            },
+            "text": {
+              "zh": "反相运放给出180°；三级低通网络在有限频率可以提供另外−180°，因此相位上允许振荡。级间互相加载、末端又被输入电阻加载，不能不经分析就套用隔离三级网络的频率或固定增益数字；还须选择足够大的反相增益。",
+              "en": "The inverting amplifier supplies180 degrees. Three low-pass stages can supply−180 degrees at a finite frequency,so phase balance is possible. Interstage and input-resistance loading prevent blindly copying isolated-stage frequency or gain values; sufficient inverting gain is also required."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "带加载实例检验",
+              "en": "A loaded example verifies possibility"
+            },
+            "text": {
+              "zh": "仅为独立检验，若图中末端输入电阻$R_1$也取R，令$x=sRC$，三个节点方程给下式；在归一化角频率根号10时反馈为负的五十六分之一，因此反相增益幅值56是等幅边界。这个实例不是把原题未指定的$R_1$擅自定值。",
+              "en": "As an independent example only,set the final input resistor equal to R and let x=sRC. Three-node equations give the following function. At normalized frequency square-root10,the feedback is−1/56,so inverting gain magnitude56 is the steady boundary. This example does not assign an unspecified source parameter."
+            },
+            "formula": "F(x)=\\frac{1}{x^3+6x^2+10x+4},\\quad F(j\\sqrt{10})=-\\frac1{56}"
+          },
+          {
+            "title": {
+              "zh": "(b)两级高通相移不足",
+              "en": "(b) Two high-pass sections cannot supply the needed phase"
+            },
+            "text": {
+              "zh": "两级高通在任何非零有限频率的正相移严格小于180°；无法补足反相放大的180°。仅在频率趋零时相移趋近180°，但反馈幅度也趋零，不能在直流形成正弦振荡条件。",
+              "en": "At every nonzero finite frequency,the two high-pass stages supply strictly less than180 degrees. Their limiting180-degree shift occurs only as frequency tends to zero,where feedback magnitude also vanishes. They cannot satisfy sinusoidal oscillation phase balance."
+            },
+            "formula": "F_b(x)=\\frac{x^2}{x^2+3x+1}\\quad\\text{for the equal-component network}"
+          }
+        ],
+        "answer": {
+          "zh": "(a)相位上可能振荡，仍须满足幅值条件；(b)不能在有限非零频率满足相位平衡。",
+          "en": "(a) Phase allows oscillation if magnitude conditions also hold. (b) Fails phase balance at a finite nonzero frequency."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-phase",
+          "b-phase"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.3，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.3 with complete connections,parameters and subfigures."
+          }
+        },
+        "figure": "ae-10.6.3-figure.png"
+      },
+      "AE-10.6.5": {
+        "id": "AE-10.6.5",
+        "bookId": "10.6.5",
+        "title": {
+          "zh": "稳压管跨反馈支路的稳幅",
+          "en": "Amplitude limiting across a feedback branch"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 436,
+          "pdfPage": 469,
+          "figure": "图题10.6.5"
+        },
+        "statement": {
+          "zh": "运放A理想，分析图题10.6.5的正弦振荡电路。（1）标出同相与反相端；（2）起振时$R_P+R_2$应大于何值；（3）求$f_0$；（4）证明稳态输出峰值$V_{om}=\\frac{3R_1}{2R_1-R_P}V_Z$。图中R=10 kΩ、C=0.01 μF、R1=5.1 kΩ，双向稳压管标注±Vz=±6 V。",
+          "en": "For the ideal-op-amp oscillator in Fig.10.6.5:(1) Mark noninverting/inverting inputs. (2) Find the startup lower bound on $R_P+R_2$. (3) Find $f_0$. (4) Derive the steady peak estimate $V_{om}=\\frac{3R_1}{2R_1-R_P}V_Z$. R=10 kilohms,C=0.01 microfarads,R1=5.1 kilohms and the bidirectional clamp is labeled±6 V."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)(2)相位连接和起振",
+              "en": "(1)(2) Input polarity and startup"
+            },
+            "text": {
+              "zh": "上端接文氏选频节点，为同相端；下端接R1与$R_P$分压节点，为反相端。小信号时稳压管未导通，反馈上臂为$R_P$+R2，增益应大于3。",
+              "en": "The upper input connected to the Wien node is noninverting; the lower R1/$R_P$ divider input is inverting. With the clamp off at small signal,the upper feedback arm is $R_P$+R2 and gain must exceed3."
+            },
+            "formula": "1+\\frac{R_P+R_2}{R_1}>3\\quad\\Longrightarrow\\quad R_P+R_2>2R_1=10.2\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(3)振荡频率",
+              "en": "(3) Frequency"
+            },
+            "text": {
+              "zh": "等值文氏选频网络在零相位处衰减三倍。",
+              "en": "The matched Wien network has zero phase and attenuation three at center."
+            },
+            "formula": "f_0=\\frac1{2\\pi RC}\\approx1591.55\\,\\mathrm{Hz}"
+          },
+          {
+            "title": {
+              "zh": "(4)正峰值的节点关系",
+              "en": "(4) Node relation at positive peak"
+            },
+            "text": {
+              "zh": "以近正弦、文氏网络在基波衰减三倍的稳幅模型，反相节点峰值为输出峰值三分之一。设$R_P$与R2交点为k，流过R1和$R_P$的电流相等，得到k点电压；稳压管导通时输出与k点之差为Vz。按题图双向钳位值取6 V，不额外加一个未给的正向管压降。",
+              "en": "Under the near-sinusoidal Wien fundamental model,the inverting-node peak is one third of output peak. Let k join $R_P$/R2. Equal R1/$R_P$ currents determine k; the conducting clamp fixes output minus k to Vz. Use the indicated bidirectional clamp value6 V without adding an unspecified forward drop."
+            },
+            "formula": "v_{N,m}=\\frac{V_{om}}3,\\quad v_{k,m}=\\frac{V_{om}}3\\left(1+\\frac{R_P}{R_1}\\right),\\quad V_{om}-v_{k,m}=V_Z"
+          },
+          {
+            "title": {
+              "zh": "解出峰值并检查适用条件",
+              "en": "Solve the peak and check validity"
+            },
+            "text": {
+              "zh": "解出题给关系。要求$R_P$小于2R1使正峰值有限；起振条件还使钳位电流为正。此式是近正弦稳幅的峰值平衡估计，不是任意强削波下的精确全波形解；实际运放还须有足够摆幅。",
+              "en": "Solving gives the stated result. $R_P$ must be below2R1 for a finite positive peak; startup also ensures positive clamp current. This is a near-sinusoidal peak-balance estimate,not an exact arbitrary-clipping waveform solution. A real amplifier needs enough output swing."
+            },
+            "formula": "V_{om}=\\frac{3R_1}{2R_1-R_P}V_Z,\\quad 0\\le R_P<2R_1,\\quad I_{Z,m}=\\frac{V_Z}{2R_1-R_P}-\\frac{V_Z}{R_2}>0"
+          }
+        ],
+        "answer": {
+          "zh": "上同相、下反相；起振$R_P$+R2>10.2 kΩ；f0约1.592 kHz；在列明的近正弦钳位模型下得到题给峰值公式。",
+          "en": "Upper input noninverting,lower inverting. Startup $R_P$+R2>10.2 kilohms; f0≈1.592 kHz. The stated near-sinusoidal clamp model gives the requested peak formula."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-input-signs",
+          "2-startup",
+          "3-frequency",
+          "4-peak-derivation",
+          "4-validity"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.5，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.5 with complete connections,parameters and subfigures."
+          }
+        },
+        "conditionalSubparts": [
+          "near-sinusoidal-peak-model"
+        ],
+        "figure": "ae-10.6.5-figure.png"
+      },
+      "AE-10.6.6": {
+        "id": "AE-10.6.6",
+        "bookId": "10.6.6",
+        "title": {
+          "zh": "二极管动态电阻与可调反馈",
+          "en": "Diode incremental resistance in adjustable feedback"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 437,
+          "pdfPage": 470,
+          "figure": "图题10.6.6"
+        },
+        "statement": {
+          "zh": "图题10.6.6为正弦振荡电路，$R_P$在0～5 kΩ可调。运放A理想，稳幅后二极管动态电阻近似为$r_d=500\\,\\Omega$，$R_P$应调到多大？图中R1=2 kΩ、R2=4.5 kΩ，文氏网络R=10 kΩ、C=0.1 μF。",
+          "en": "For Fig.10.6.6,$R_P$ is adjustable0–5 kilohms and the op-amp is ideal. With stabilized diode incremental resistance $r_d=500\\,\\Omega$,find $R_P$. R1=2 kilohms,R2=4.5 kilohms and Wien-network R=10 kilohms,C=0.1 microfarads."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用题给的动态等效",
+              "en": "Use the specified incremental model"
+            },
+            "text": {
+              "zh": "在题设稳幅动态等效中，反向并联二极管由当时导通的一只提供动态电阻，另一只截止，不能把两只500 Ω再并成250 Ω。它与R2并联，再与$R_P$串联。",
+              "en": "In the stated stabilized incremental model,one antiparallel diode conducts and supplies the given resistance; the other is off. Do not parallel two500 ohm resistors. The active diode is parallel to R2,and that combination is in series with $R_P$."
+            },
+            "formula": "R_{eq}=R_2\\parallel r_d=\\frac{4500\\times500}{4500+500}=450\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "增益等于三并回代",
+              "en": "Set gain to three and substitute back"
+            },
+            "text": {
+              "zh": "文氏网络中心反馈为三分之一；按题给动态电阻稳幅模型，非反相增益等于3，得到$R_P$约3.55 kΩ，在允许范围内。二极管截止时增益为5.025，大于3，满足起振方向。",
+              "en": "The Wien center feedback is one third. Under the specified incremental steady model,the noninverting gain is3,giving $R_P$≈3.55 kilohms,within range. With diodes off,the gain is5.025,above3 for startup."
+            },
+            "formula": "1+\\frac{R_P+450}{2000}=3\\quad\\Longrightarrow\\quad R_P=3550\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "动态电阻不是完整大信号曲线",
+              "en": "Incremental resistance is not a complete large-signal law"
+            },
+            "text": {
+              "zh": "该结果是题目动态等效的调节值；仅给动态电阻不能唯一确定二极管电流、输出振幅或精确失真。频率按等值RC网络约159.15 Hz。",
+              "en": "This is the setting in the requested incremental approximation. Incremental resistance alone does not fix diode DC current,output amplitude or exact distortion. The matched RC network gives about159.15 Hz."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "按题给稳幅动态电阻模型，$R_P$约3.55 kΩ；不是把两只反并联二极管同时导通计算。",
+          "en": "Under the specified stabilized incremental model,$R_P$≈3.55 kilohms. Both antiparallel diodes are not conducting simultaneously."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "Rp-setting",
+          "model-boundary"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.6，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.6 with complete connections,parameters and subfigures."
+          }
+        },
+        "conditionalSubparts": [
+          "incremental-amplitude-control-model"
+        ],
+        "figure": "ae-10.6.6-figure.png"
+      },
+      "AE-10.6.8": {
+        "id": "AE-10.6.8",
+        "bookId": "10.6.8",
+        "title": {
+          "zh": "电子琴音阶电阻与全音域起振",
+          "en": "Organ-note resistors and startup across the scale"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 438,
+          "pdfPage": 471,
+          "figure": "图题10.6.8"
+        },
+        "statement": {
+          "zh": "图题10.6.8为简易电子琴，按键选择R2（R21至R28）。C1=C2=C时、R1不等于R2，$f_0=\\frac1{2\\pi C\\sqrt{R_1R_2}}$，且$F=\\frac1{2+R_1/R_2}$；R2远大于R1时F约二分之一。8音C调频率依次264、297、330、352、396、440、495、528 Hz。（1）算R21至R28；（2）$R_P$大致调到多大能起振？图中R1=1 kΩ、C=0.1 μF、$R_f$=R3=1 kΩ、$R_P$最大3.3 kΩ。",
+          "en": "The electronic organ in Fig.10.6.8 selects R2 through R21–R28. For C1=C2=C and unequal R1/R2,$f_0=\\frac1{2\\pi C\\sqrt{R_1R_2}}$ and $F=\\frac1{2+R_1/R_2}$,approaching one half when R2 is much larger than R1. The eight C-major frequencies are264,297,330,352,396,440,495,528 Hz. (1) Find R21–R28. (2) Give an approximate $R_P$ setting for startup. R1=1 kilohm,C=0.1 microfarads,$R_f$=R3=1 kilohm and $R_P$ has maximum3.3 kilohms."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：开关电容及RC振荡不在当前课程要求的第10章滤波/比较器范围内。",
+          "en": "Full-book extension: switched capacitors and RC oscillation lie outside the required chapter10 filter/comparator scope."
+        },
+        "recognition": {
+          "zh": "先分清相位必要条件、起振的幅值条件与稳幅模型；等幅条件不能替代起振不等式。",
+          "en": "Distinguish phase necessity,startup magnitude and amplitude-control models; steady gain equality is not the startup inequality."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)逐音反解电阻",
+              "en": "(1) Solve resistance for each note"
+            },
+            "text": {
+              "zh": "用题给的不等值文氏桥公式反解，单位统一为Ω、F、Hz。八个电阻是按键单独选择的支路，不是八个电阻同时并联；取值见下表式，依次对应低音到高音。",
+              "en": "Invert the supplied unequal-component Wien formula using ohms,farads and hertz. Each key selects one branch; the eight resistors are not all paralleled. Values below run from lowest to highest note."
+            },
+            "formula": "R_{2k}=\\frac{1}{(2\\pi f_k C)^2R_1},\\qquad \\begin{array}{c|rrrrrrrr}f_k/\\mathrm{Hz}&264&297&330&352&396&440&495&528\\\\R_{2k}/\\mathrm{k\\Omega}&36.344&28.716&23.260&20.443&16.153&13.084&10.338&9.086\\end{array}"
+          },
+          {
+            "title": {
+              "zh": "(2)小信号时二极管截止",
+              "en": "(2) Diodes are off at startup"
+            },
+            "text": {
+              "zh": "起振时上反馈臂为$R_f$+R3=2 kΩ，下臂为$R_P$，增益是1加2 kΩ除以$R_P$，必须大于对应音的反馈衰减倒数。粗略把F当二分之一时，得到$R_P$应略小于2 kΩ；这是题目的大致判断。",
+              "en": "At startup the upper negative-feedback arm is $R_f$+R3=2 kilohms and the lower arm is $R_P$. Its gain must exceed the reciprocal positive-feedback factor for the selected note. Approximating F by one half gives $R_P$ slightly below2 kilohms,the rough answer requested."
+            },
+            "formula": "1+\\frac{2000}{R_P}>\\frac1F=2+\\frac{1000}{R_2}\\quad\\Longrightarrow\\quad R_P<\\frac{2000}{1+1000/R_2}\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "若要求八个音都能起振",
+              "en": "For startup on all eight notes"
+            },
+            "text": {
+              "zh": "最高音电阻最小，对增益要求最高。用精确反馈系数，全音域都能起振需$R_P$严格小于约1.802 kΩ；可先调约1.7～1.8 kΩ并留容差裕量，不能取等号当可靠起振。这个修正说明最高音R2约为R1的9倍，二分之一近似有可见误差。",
+              "en": "The highest note has the smallest R2 and largest gain requirement. Using the exact factor,startup across all notes requires $R_P$ strictly below about1.802 kilohms. An initial1.7–1.8 kilohm setting leaves some margin; equality does not ensure reliable startup. At the top note,R2 is only about nine times R1,so the one-half approximation has visible error."
+            },
+            "formula": "R_{P,max,all}=\\frac{2000}{1+1000/9085.9934}\\approx1801.705\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "R21至R28约36.344、28.716、23.260、20.443、16.153、13.084、10.338、9.086 kΩ。粗略起振$R_P$略小于2 kΩ；若八音都可靠起振，精确界限约$R_P$<1.802 kΩ，还应留实际容差余量。",
+          "en": "R21–R28≈36.344,28.716,23.260,20.443,16.153,13.084,10.338,9.086 kilohms. Rough startup uses $R_P$ slightly below2 kilohms; the all-note exact bound is about $R_P$<1.802 kilohms,with practical tolerance margin still needed."
+        },
+        "pitfalls": [
+          {
+            "zh": "起振用严格不等式，稳态才用有效增益等式；明确理想器件、动态电阻及近正弦近似的边界。",
+            "en": "Use a strict startup inequality and a settled effective-gain equality. Keep ideal-device,incremental-resistance and near-sinusoidal assumptions explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-eight-resistors",
+          "2-approx-startup",
+          "2-all-notes-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对题干与完整图示；独立复数节点方程、极限、单位、峰值节点KCL与数值代回复核。二极管动态等效与近正弦峰值估计分别注明；本批未要求SPICE，不冒充已执行器件仿真。",
+            "en": "Wording and full figures checked. Independent complex nodal equations,limits,units,peak-node KCL and numerical substitutions cross-check results. Diode incremental approximations and near-sinusoidal peak estimates are labeled separately. SPICE is not requested for this batch and device simulation is not claimed."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图10.6.8，保留完整连接、参数与子图。",
+            "en": "Source Fig.10.6.8 with complete connections,parameters and subfigures."
+          }
+        },
+        "figure": "ae-10.6.8-figure.png"
       }
     }
   }
