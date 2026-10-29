@@ -126,7 +126,16 @@ ALIASES.update({name:tex for name,tex in [
  ('IEQ','I_EQ'),('IDQ','I_DQ'),('ICM','I_CM'),('PCM','P_CM')
 ]})
 
+# Plain English followed by a number (chapter6, about3) is not a product
+# of letter variables with a final subscript. Keep recognized circuit names.
+INDEXED_NAMES=set(SCOPED_SUBS)|set(ALIASES)|{'RC','LC','sRC','sCR','sC','sR','jC','jR','jL'}
+INDEXED_NAMES.update(re.sub(r'\d+$','',base+sub) for base,subs in SCOPED_SUBS.items() for sub in subs)
+
 def identifier(word):
+    stem=re.match(r'[A-Za-z]+(?=\d)',word)
+    if stem and '_' not in word:
+        if stem[0] in {'is','as','at','and','to','of','in','on','or','for','by'}:return None
+        if len(stem[0])>1 and stem[0] not in INDEXED_NAMES:return None
     if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS','CMOS'):return None
     if word=='Re':return r'\operatorname{Re}'
     if word in ('K′_nW','i_sR'):
@@ -283,7 +292,7 @@ def _legacy_text(s,language):
         raw=s[t.start():tokens[end-1].end()]
         # Preserve ordinary counts, standalone punctuation and English articles.
         substantive=any(c.isalpha() or c in GREEK or c in SUB or c in SUP for c in raw) or '/' in raw or '^' in raw
-        if has_math and substantive and raw.strip() not in ('a','I','s','A','V'):
+        if has_math and substantive and raw.strip() not in ('a','I','s','A','V') and not (language=='en' and re.fullmatch(r'\(\d+\)\s+[Aa]',raw.strip())):
             try:
                 leading=raw[:len(raw)-len(raw.lstrip())]
                 out.append(plain(leading)+'<span class="math-inline">'+render_math(raw_to_tex(raw.strip()))+'</span>')

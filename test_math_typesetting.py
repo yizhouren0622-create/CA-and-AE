@@ -14,6 +14,14 @@ class MathTypography(unittest.TestCase):
    self.assertIn(name,rendered)
    self.assertNotIn('<msub',rendered)
   self.assertIn('<msub',format_text('R1','en'))
+ def test_english_words_before_numbers_stay_prose(self):
+  for word in ['chapter6','and6','about3','to6','is5','resistance100','collector2','above3','below2']:
+   self.assertIsNone(identifier(word),word)
+   self.assertNotIn('<msub',format_text(word+' Hz','en'))
+  for word in ['R1','Rg1','IC13A','sRC1']:
+   self.assertIsNotNone(identifier(word),word)
+ def test_enumerated_english_article_is_not_math(self):
+  self.assertNotIn('<math',format_text('(2) A strict bound','en'))
  def test_prose_component_names_have_subscripts(self):
   for name,sub in [('Rb','b'),('Rac','ac'),('Kn','n'),('Ri','i')]:
    e=tree(identifier(name));self.assertEqual(value(alltags(e,'msub')[0][1]),sub)
