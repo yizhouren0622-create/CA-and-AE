@@ -1,0 +1,29 @@
+ae-8.4.2-textbook; authored textbook approximation, not a manufacturer model
+Vp vp 0 5
+Vn vn 0 -5
+Vin inp 0 DC 0 AC 1 SIN(0 1m 1k)
+R1 inp g1 100
+M1 d1 g1 tail vn N
+M2 d2 fb tail vn N
+M3 d1 d1 vp vp P
+M4 d2 d1 vp vp P
+Vprobe vp drain5 0
+M5 drain5 d2 fb vn N
+Itail tail vn 1m
+R2 fb vn 10k
+.model N NMOS LEVEL=1 VTO=1 KP=.02 LAMBDA=0 GAMMA=0
+.model P PMOS LEVEL=1 VTO=-1 KP=.008 LAMBDA=0 GAMMA=0
+.options temp=27 reltol=1e-8 abstol=1e-13 vntol=1e-10 gmin=1e-14
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+wrdata ae-8.4.2-textbook-op.dat v(g1) v(d1) v(d2) v(tail) v(fb) @m1[id] @m1[gm] @m1[gds] @m1[gmbs] @m1[vgs] @m1[vds] @m1[von] @m1[vdsat] @m2[id] @m2[gm] @m2[gds] @m2[gmbs] @m2[vgs] @m2[vds] @m2[von] @m2[vdsat] @m3[id] @m3[gm] @m3[gds] @m3[gmbs] @m3[vgs] @m3[vds] @m3[von] @m3[vdsat] @m4[id] @m4[gm] @m4[gds] @m4[gmbs] @m4[vgs] @m4[vds] @m4[von] @m4[vdsat] @m5[id] @m5[gm] @m5[gds] @m5[gmbs] @m5[vgs] @m5[vds] @m5[von] @m5[vdsat]
+ac dec 20 1 1meg
+let gain=i(Vprobe)
+wrdata ae-8.4.2-textbook-ac.dat gain
+tran 2u 20m
+wrdata ae-8.4.2-textbook-tran.dat v(inp) v(fb) i(Vprobe)
+.endc
+.end

@@ -1,0 +1,23 @@
+Exercise 2.3.3 -- ti40, RL=100 ohm, TI UA741 macro model
+* Obtain UA741.lib from https://www.ti.com/lit/zip/sloj138 (UA741.301).
+* Remove the terminal Ctrl-Z (0x1a). For ti40, copy to UA741_40mA.lib and
+* change only VLP and VLN DC values from 25 to 40. The original TI model uses 25 mA.
+.include UA741_40mA.lib
+VCC vcc 0 15
+VEE vee 0 -15
+VIN vp 0 SIN(0 0.2 100)
+XU vp vn vcc vee out UA741
+VSENSE out vo 0
+R1 vn 0 1k
+R2 vo vn 59k
+RL vo 0 100
+.options reltol=1e-6 abstol=1e-12 vntol=1e-9
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+tran 2u 40m 0 2u
+wrdata ae-2.3.3-ti40-RL100.dat v(vp) v(vo) v(vn) i(VSENSE)
+quit
+.endc
+.end

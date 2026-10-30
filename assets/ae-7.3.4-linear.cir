@@ -1,0 +1,42 @@
+* Authored linear small-signal verification, NOT a vendor nonlinear device model
+V1 i1 0 .5
+V2 i2 0 -.5
+Itest 0 out 0
+Rt e 0 512574.2614401457
+Rb1 i1 b1 200
+Rpi1 b1 e 4586.944993926773
+Ro1 x e 167000
+G1 x e b1 e 0.02332707284296424
+Rb2 i2 b2 200
+Rpi2 b2 e 4586.944993926773
+Ro2 out e 167000
+G2 out e b2 e 0.02332707284296424
+Rb3 x b3 200
+Rpi3 b3 0 4586.944993926773
+Ro3 x 0 167000
+G3 x 0 b3 0 0.02332707284296424
+Rb4 x b4 200
+Rpi4 b4 0 4586.944993926773
+Ro4 out 0 167000
+G4 out 0 b4 0 0.02332707284296424
+
+.control
+set noaskquit
+op
+let ad=v(out)
+let rid=2/(-i(V1)+i(V2))
+print ad rid
+alter V1=1
+alter V2=1
+op
+let ac=v(out)
+print ac
+alter V1=0
+alter V2=0
+alter Itest=1
+op
+let rout=v(out)
+print rout
+quit
+.endc
+.end

@@ -1,0 +1,635 @@
+[
+  {
+    "course": "circuit",
+    "id": "signs",
+    "zh": "参考方向、功率与元件",
+    "en": "Reference directions, power and elements",
+    "scope": "第1章",
+    "source": "§1-2 电路变量；§1-4 电阻元件",
+    "concept": "电压和电流的参考方向由你选定，求得负值表示实际方向相反。先判断电流参考箭头是否进入电压标记的正端，再选功率式。关联方向下，正功率表示吸收；负功率表示供出。电源也可能吸收功率。",
+    "concept_en": "Choose reference directions before calculating. A negative result reverses the actual direction. First check whether the reference current enters the labeled positive terminal. Under the passive sign convention, positive power is absorbed and negative power is delivered. A source can absorb power.",
+    "formulas": [
+      "p_{\\rm abs}=ui\\quad\\text{(passive sign convention)}",
+      "p_{\\rm abs}=-ui\\quad\\text{(opposite convention)}",
+      "u=Ri,\\quad p_R=i^2R=u^2/R"
+    ],
+    "steps": [
+      "在图上标出电流箭头与电压正负端，不先猜实际方向。",
+      "写出关联或非关联功率关系；电阻的欧姆定律也必须与参考方向一致。",
+      "把单位统一到 V、A、Ω 后计算；最后写明吸收或供出。"
+    ],
+    "steps_en": [
+      "Label current arrows and voltage polarity before guessing the actual direction.",
+      "Write the power relation for the chosen convention. Match the resistor law to the reference directions.",
+      "Use V, A and ohms consistently; state whether power is absorbed or delivered."
+    ],
+    "traps": "不能看到“电源”就认定供电，也不能看到负电流就判供出功率。功率取决于电压、电流和两者参考方向。",
+    "traps_en": "A source symbol does not prove that power is delivered. A negative current alone does not determine the power sign. Use voltage, current and their reference directions together.",
+    "check": "关联方向 u = −6 V、i = 2 A：吸收功率 −12 W，即供出 12 W。",
+    "check_en": "With passive references, u = −6 V and i = 2 A give absorbed power −12 W, so 12 W is delivered.",
+    "figure": "passive.svg"
+  },
+  {
+    "course": "circuit",
+    "id": "kcl-kvl",
+    "zh": "KCL、KVL与图论计数",
+    "en": "KCL, KVL and topology",
+    "scope": "第1章；2.1–2.3",
+    "source": "§1-3 基尔霍夫定律；§2-1～§2-3",
+    "concept": "KCL约束节点电流，KVL约束闭合路径电压。连接结构先于元件数值。对连通图，选定参考节点后有 n−1 个独立KCL方程，独立回路数为 b−n+1。交叉导线只有明确连接时才算同一节点。",
+    "concept_en": "KCL constrains node currents and KVL constrains voltages around closed paths. Topology comes before component values. A connected graph has n−1 independent KCL equations and b−n+1 independent loops. Crossing wires form one node only when connected.",
+    "formulas": [
+      "\\sum i_{\\rm out}=0,\\qquad \\sum_{\\rm loop}u=0",
+      "N_{\\rm KCL}=n-1,\\quad N_{\\rm loop}=b-n+1"
+    ],
+    "steps": [
+      "把由理想导线连接的点合并成节点，数清支路与节点。",
+      "KCL统一取流出为正；KVL先固定绕行方向。",
+      "支路电流法以支路电流为未知量，补齐元件伏安关系，检查独立方程数是否足够。"
+    ],
+    "steps_en": [
+      "Merge points joined by ideal wires into nodes and count branches.",
+      "Use one KCL sign convention and choose a loop traversal direction.",
+      "For branch-current analysis, add element relations and check the number of independent equations."
+    ],
+    "traps": "重复列写所有节点KCL会产生冗余方程。电阻所在支路的电压正负号取决于绕行方向，不能只抄电源符号。",
+    "traps_en": "Writing KCL at every node adds a redundant equation. Resistor voltage signs depend on the loop traversal; source polarity alone is insufficient.",
+    "check": "连通网络 n = 4、b = 6：独立节点方程3个，独立回路方程3个。",
+    "check_en": "For a connected graph with n = 4 and b = 6: three independent node equations and three independent loop equations.",
+    "figure": "node.svg"
+  },
+  {
+    "course": "circuit",
+    "id": "sources",
+    "zh": "电源、等效变换与受控源",
+    "en": "Sources, transformations and dependent sources",
+    "scope": "第1章",
+    "source": "§1-5～§1-9",
+    "concept": "理想电压源规定端电压，理想电流源规定支路电流。源变换保持端口的伏安特性，不保证内部电流和功率逐项相同。受控源的控制量是电路未知量的一部分，必须保留控制关系。",
+    "concept_en": "An ideal voltage source fixes terminal voltage; an ideal current source fixes branch current. A source transformation preserves terminal behavior, not every internal current or power. A dependent source requires its controlling equation.",
+    "formulas": [
+      "I_s=U_s/R,\\quad R_{\\rm series}=R_{\\rm parallel}",
+      "u=\\mu u_x,\\quad i=g u_x,\\quad u=r i_x,\\quad i=\\beta i_x"
+    ],
+    "steps": [
+      "确认电压源串联电阻，或电流源并联电阻，且对外只有同一对端口。",
+      "标清转换后电源方向，使开路电压和短路电流一致。",
+      "遇受控源先写控制量；求等效电阻时只置零独立源。"
+    ],
+    "steps_en": [
+      "Identify a voltage source in series with a resistance or a current source in parallel with it.",
+      "Choose transformed source direction to preserve open-circuit voltage and short-circuit current.",
+      "Write the dependent-source control relation. Zero only independent sources when finding equivalent resistance."
+    ],
+    "traps": "不能把独立电压源“置零”成开路。电压源置零是短路，电流源置零是开路；受控源不置零。",
+    "traps_en": "A zero independent voltage source is a short; a zero independent current source is an open. Dependent sources remain active.",
+    "check": "12 V 串联3 kΩ的端口等效为4 mA并联3 kΩ；电流源方向应使原正端为正。",
+    "check_en": "A 12 V source in series with 3 kilohms is terminal-equivalent to 4 mA in parallel with 3 kilohms, oriented to preserve the original positive terminal.",
+    "figure": null
+  },
+  {
+    "course": "circuit",
+    "id": "nodal",
+    "zh": "节点电压法与网孔法怎么选",
+    "en": "Choosing nodal or mesh analysis",
+    "scope": "2.4–2.5",
+    "source": "§2-4 节点电压法；§2-5 网孔分析法",
+    "concept": "比较未知量数量和源的类型。节点少、电流源多时常选节点法；平面网络且网孔少时可选网孔法。没有与参考节点相连的理想电压源不能直接用电导表示，可增加源电流未知量和电压约束，或使用超节点。",
+    "concept_en": "Compare unknown counts and source types. Few nodes and many current sources favor nodal analysis. A planar network with few meshes may favor mesh analysis. A floating ideal voltage source needs an extra current unknown and a voltage constraint, or a supernode.",
+    "formulas": [
+      "\\sum_k\\frac{V_a-V_k}{R_{ak}}=I_{\\rm injected}",
+      "V_a-V_b=U_s",
+      "R_{\\rm shared}(I_1-I_2)\\quad\\text{(same mesh orientation)}"
+    ],
+    "steps": [
+      "选参考节点，优先让尽可能多的已知电压源一端接参考地。",
+      "逐条支路写电流，明确流出与注入方向；受控量化成节点电压。",
+      "求解后用另一个节点或全电路功率平衡复核。"
+    ],
+    "steps_en": [
+      "Choose a reference node, preferably connected to known voltage sources.",
+      "Write each branch current with a consistent direction; express control quantities in node voltages.",
+      "After solving, check a different node or the total power balance."
+    ],
+    "traps": "网孔法只直接适用于平面电路；共享电阻电流通常是两个网孔电流之差。不能把每个闭合路径都当成独立网孔。",
+    "traps_en": "Direct mesh analysis requires a planar circuit. Shared resistor current is usually the difference of mesh currents. Not every closed path is an independent mesh.",
+    "check": "节点接12 V经2 kΩ、接地经4 kΩ、另有1 mA注入时：(V−12)/2k + V/4k = 1m，V = 28/3 V。",
+    "check_en": "For a node connected to 12 V through 2 kilohms, ground through 4 kilohms, and a 1 mA injection: (V−12)/2k + V/4k = 1m, giving V = 28/3 V.",
+    "figure": "node.svg"
+  },
+  {
+    "course": "circuit",
+    "id": "theorems",
+    "zh": "叠加、戴维南与最大功率",
+    "en": "Superposition, Thevenin and maximum power",
+    "scope": "3.1–3.5",
+    "source": "§3-1～§3-5",
+    "concept": "线性电路先判断所求量是电压或电流还是功率。叠加适用于线性响应，功率不能直接叠加。戴维南法适合研究同一端口负载变化：先求开路电压，再求从端口看到的等效电阻。",
+    "concept_en": "Determine whether the requested quantity is a linear voltage/current response or power. Superposition applies to linear responses, not directly to power. Thevenin analysis is useful for changing a load at a fixed port: find open-circuit voltage, then the resistance seen into the port.",
+    "formulas": [
+      "U_{\\rm Th}=U_{\\rm oc},\\quad R_{\\rm Th}=U_{\\rm test}/I_{\\rm test}",
+      "I_L=\\frac{U_{\\rm Th}}{R_{\\rm Th}+R_L}",
+      "R_L=R_{\\rm Th}>0,\\quad P_{\\max}=\\frac{U_{\\rm Th}^2}{4R_{\\rm Th}}\\quad\\text{(resistive load)}"
+    ],
+    "steps": [
+      "明确端口与负载，卸下负载求开路电压。",
+      "置零独立源，保留受控源。需要时向端口施加测试源。",
+      "接回负载求电压电流，功率最后计算；最大功率公式要求正的戴维南电阻及可调纯电阻负载。"
+    ],
+    "steps_en": [
+      "Identify the port and remove the load to find open-circuit voltage.",
+      "Zero independent sources, retain dependent sources and apply a test source if needed.",
+      "Reconnect the load; compute power last. The resistive matching formula assumes positive Thevenin resistance and an adjustable resistive load."
+    ],
+    "traps": "受控源存在时不能随手按串并联求等效电阻。开路电压/短路电流法遇到0/0时应改用测试源。",
+    "traps_en": "Do not casually reduce a dependent-source network as passive resistors. If the open/short ratio becomes 0/0, use a test source.",
+    "check": "UTh = 8 V、RTh = 4/3 kΩ 时，匹配负载为4/3 kΩ，最大功率12 mW。",
+    "check_en": "For UTh = 8 V and RTh = 4/3 kilohms, the matched load is 4/3 kilohms and maximum power is 12 mW.",
+    "figure": null
+  },
+  {
+    "course": "circuit",
+    "id": "storage",
+    "zh": "储能元件、换路与初值",
+    "en": "Storage elements, switching and initial values",
+    "scope": "5.1–5.4",
+    "source": "§5-1 电容；§5-2 电感；§5-3 忆阻；§5-4 换路",
+    "concept": "电容记住电压，电感记住电流。无冲激电流或电压时，换路瞬间电容电压与电感电流连续。电容电流与电感电压可以跳变。直流稳态下，理想电容开路、理想电感短路。",
+    "concept_en": "A capacitor retains voltage and an inductor retains current. Without impulsive current or voltage, capacitor voltage and inductor current are continuous at switching. Capacitor current and inductor voltage may jump. At DC steady state, an ideal capacitor is open and an ideal inductor is short.",
+    "formulas": [
+      "i_C=C\\,du_C/dt,\\quad u_L=L\\,di_L/dt",
+      "W_C=\\tfrac12 Cu_C^2,\\quad W_L=\\tfrac12 Li_L^2",
+      "u_C(0^+)=u_C(0^-),\\quad i_L(0^+)=i_L(0^-)\\quad\\text{(no impulses)}"
+    ],
+    "steps": [
+      "画换路前长期稳态电路，求uC(0−)、iL(0−)。",
+      "用连续性得到0+储能状态；在0+电路中用相应电压源或电流源替代储能元件求其他量。",
+      "忆阻元件按课件给定的状态关系处理，不能把所有具有记忆的元件都当线性电阻。"
+    ],
+    "steps_en": [
+      "Draw the pre-switch DC steady-state circuit and find the storage variables.",
+      "Transfer continuous states to 0+. Replace the storage element by its initial voltage/current constraint to find other quantities.",
+      "Use the stated state relation for a memristive element; it is not automatically a linear resistor."
+    ],
+    "traps": "“电容电压连续”不等于“任何电容支路电流都连续”。存在理想冲激激励时必须回到积分形式判断。",
+    "traps_en": "Continuous capacitor voltage does not imply continuous capacitor current. With ideal impulses, check the integrated element equations.",
+    "check": "10 μF电容电压从2 V变到10 V，储能增加0.48 mJ。",
+    "check_en": "A 10 microfarad capacitor changing from 2 V to 10 V gains 0.48 mJ of stored energy.",
+    "figure": null
+  },
+  {
+    "course": "circuit",
+    "id": "first-order",
+    "zh": "一阶电路的三要素与分段响应",
+    "en": "First-order responses and piecewise switching",
+    "scope": "5.5–5.9",
+    "source": "§5-5～§5-9",
+    "concept": "把动态问题化成初值、终值和时间常数。零输入响应来自初始储能，零状态响应来自外加激励，两者相加得到全响应。多次换路时，每段末值成为下一段初值，时间变量从该段起点重新计。",
+    "concept_en": "Reduce a first-order transient to initial value, final value and time constant. Zero-input response comes from stored energy; zero-state response comes from excitation. Their sum is the total response. At each later switching time, carry forward the previous final state and restart elapsed time.",
+    "formulas": [
+      "x(t)=x(\\infty)+[x(0^+)-x(\\infty)]e^{-t/\\tau}",
+      "\\tau_{RC}=R_{\\rm eq}C,\\qquad \\tau_{RL}=L/R_{\\rm eq}"
+    ],
+    "steps": [
+      "先求储能状态初值，再求换路后长期稳态终值。",
+      "只置零独立源，从储能元件端口求Req；受控源保留。",
+      "写三要素式，再代t = 0和t → ∞检验；需要其他变量时由KCL/KVL或微分关系求出。"
+    ],
+    "steps_en": [
+      "Find the initial storage state and post-switch final steady state.",
+      "Zero independent sources and find the resistance seen by the storage element, retaining dependent sources.",
+      "Write the response and check t = 0 and infinity. Derive other variables using KCL/KVL or element derivatives."
+    ],
+    "traps": "时间常数取换路后的网络。三要素指数式要求该时间段为线性一阶、参数恒定、外加激励恒定且有限终值存在；不能直接套在持续正弦或斜坡激励上。",
+    "traps_en": "Use the post-switch network. This three-parameter exponential requires a linear first-order interval, constant parameters, constant excitation and a finite final value. Do not apply it directly to ongoing sinusoidal or ramp excitation.",
+    "check": "u0 = 2 V、u∞ = 10 V、τ = 20 ms时，u(τ) = 10−8/e ≈ 7.057 V。",
+    "check_en": "For u0 = 2 V, u∞ = 10 V and tau = 20 ms, u(tau) = 10−8/e ≈ 7.057 V.",
+    "figure": "rc.svg"
+  },
+  {
+    "course": "circuit",
+    "id": "phasors",
+    "zh": "相量、阻抗与交流解题",
+    "en": "Phasors, impedance and AC analysis",
+    "scope": "7.1–7.6",
+    "source": "§7-1～§7-6",
+    "concept": "相量法把同频正弦稳态的微分运算变成复数代数。本站统一使用余弦参考和有效值相量。先把所有源变成同一约定，再把R、L、C转为阻抗，随后复用节点法或戴维南法。",
+    "concept_en": "Phasors turn same-frequency sinusoidal steady-state differential equations into complex algebra. This site uses cosine reference and RMS phasors. Convert all sources to the same convention, replace R/L/C by impedances, then reuse nodal or Thevenin methods.",
+    "formulas": [
+      "u(t)=\\sqrt2 U\\cos(\\omega t+\\phi)\\ \\Longleftrightarrow\\ \\underline U=Ue^{j\\phi}",
+      "Z_R=R,\\quad Z_L=j\\omega L,\\quad Z_C=1/(j\\omega C)",
+      "\\underline I=\\underline U/Z"
+    ],
+    "steps": [
+      "把sin换成cos时相位减90°；峰值除以√2得到有效值。",
+      "乘除优先极坐标，加减必须转直角坐标。",
+      "结果回到时域时乘√2，并核对电感电流滞后、电容电流超前。"
+    ],
+    "steps_en": [
+      "Converting sine to cosine subtracts 90 degrees; divide peak amplitude by sqrt(2) for RMS.",
+      "Polar form is convenient for multiplication/division; use rectangular form for addition/subtraction.",
+      "Multiply by sqrt(2) when returning to the time domain. Check inductor lag and capacitor lead."
+    ],
+    "traps": "不能把不同频率的相量放进同一方程。课程只列到7.6，7.7起功率章节不进入默认考试卷。",
+    "traps_en": "Do not combine different-frequency phasors in one equation. The plan stops at §7.6, so the later AC-power sections are excluded from default exam papers.",
+    "check": "Z = 6+j8 Ω，U = 10∠30° V，则I = 1∠−23.130° A（有效值）。",
+    "check_en": "For Z = 6+j8 ohms and U = 10 angle 30 degrees V, I = 1 angle −23.130 degrees A RMS.",
+    "figure": null
+  },
+  {
+    "course": "circuit",
+    "id": "frequency",
+    "zh": "RC频率特性：只先掌握概念",
+    "en": "RC frequency response: conceptual bridge",
+    "scope": "电路第10章合讲；模电6.1概念",
+    "source": "§10-1、§10-2；ch06.pptx 第1–9页",
+    "concept": "频率响应问同一电路对不同频率的正弦信号怎样改变幅值和相位。RC低通从电容取输出，低频通过；RC高通从电阻取输出，高频通过。截止处幅值为通带值的1/√2，约−3 dB。",
+    "concept_en": "Frequency response describes amplitude and phase changes as sinusoidal frequency varies. An RC low-pass takes output across C; an RC high-pass takes output across R. At the cutoff, magnitude is 1/sqrt(2) of the passband value, approximately −3 dB.",
+    "formulas": [
+      "H_{\\rm LP}(j\\omega)=1/(1+j\\omega RC)",
+      "H_{\\rm HP}(j\\omega)=j\\omega RC/(1+j\\omega RC)",
+      "f_c=1/(2\\pi RC)"
+    ],
+    "steps": [
+      "先看输出取在哪个元件上，不按电路画法猜低通或高通。",
+      "分别用ω → 0和ω → ∞检验输出极限。",
+      "本节作为频域概念桥梁；不把未明确要求的高阶频率计算加入默认试卷。"
+    ],
+    "steps_en": [
+      "Identify which element carries the output.",
+      "Check the low- and high-frequency limits.",
+      "Treat this as a conceptual bridge; do not infer advanced frequency-analysis exam requirements."
+    ],
+    "traps": "−3 dB对应幅度约0.707，不是0.5。电路第10章的详细考试深度尚未在纲领中明确。",
+    "traps_en": "−3 dB corresponds to amplitude about 0.707, not 0.5. The detailed examination depth of Circuit Chapter 10 is not specified.",
+    "check": "低通电路频率越高，电容阻抗越小，电容两端输出越小。",
+    "check_en": "For a low-pass output across C, increasing frequency reduces capacitor impedance and therefore output voltage.",
+    "figure": "rc.svg"
+  },
+  {
+    "course": "analog",
+    "id": "models",
+    "zh": "信号、放大器与输入输出负载",
+    "en": "Signals, amplifiers and loading",
+    "scope": "1.1、1.3–1.5",
+    "source": "ch01.pptx 第1–24页，跳过1.2",
+    "concept": "先分清直流偏置、交流信号、输入端和信号源端。放大器的电压增益vo/vi，与源电压增益vo/vs不同；输入电阻与源内阻分压，输出电阻与负载再次分压。",
+    "concept_en": "Separate DC bias, AC signal, amplifier input and source terminals. Voltage gain vo/vi differs from source-to-output gain vo/vs. Source resistance and input resistance form one divider; output resistance and load form another.",
+    "formulas": [
+      "v_i=v_sR_i/(R_s+R_i)",
+      "v_o=A_{v0}v_iR_L/(R_o+R_L)",
+      "A_{\\rm dB}=20\\log_{10}|A_v|\\quad\\text{(voltage ratio)}"
+    ],
+    "steps": [
+      "把题目要的增益写成明确的电压比，标出两个测量端口。",
+      "画输入和输出等效模型，再计入负载。",
+      "讨论带宽时区分幅度值与分贝值；信号频谱1.2不列入范围。"
+    ],
+    "steps_en": [
+      "Write the requested gain as an explicit voltage ratio at labeled ports.",
+      "Draw input/output equivalent models and include loading.",
+      "Distinguish magnitude from decibels when discussing bandwidth; §1.2 spectra is outside scope."
+    ],
+    "traps": "不要把空载增益直接当带载源电压增益。只有同一类电压幅度比才直接用20log10。",
+    "traps_en": "Unloaded gain is not loaded source-to-output gain. Apply 20log10 to consistent voltage-amplitude ratios.",
+    "check": "输入分压0.8、空载增益−20、输出分压0.8，则总源增益−12.8。",
+    "check_en": "With input divider 0.8, unloaded gain −20 and output divider 0.8, total source-to-output gain is −12.8.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "opamp",
+    "zh": "理想运放：先判断工作状态",
+    "en": "Ideal op-amps: decide the operating regime",
+    "scope": "第2章全部",
+    "source": "ch02.pptx 第14–38页",
+    "concept": "理想运放输入电流为零。虚短还要求电路处于稳定负反馈的线性工作区，不能无条件套在开环比较器或已饱和电路上。先求候选线性解，再与供电及输出限制核对。",
+    "concept_en": "An ideal op-amp draws zero input current. A virtual short additionally requires stable negative-feedback linear operation. It cannot be applied unconditionally to open-loop comparators or saturated circuits. Calculate a candidate linear solution, then check output limits.",
+    "formulas": [
+      "i_+=i_-=0,\\quad v_+\\approx v_-\\quad\\text{(linear negative feedback)}",
+      "A_{\\rm inv}=-R_f/R_{\\rm in}",
+      "A_{\\rm noninv}=1+R_f/R_g"
+    ],
+    "steps": [
+      "检查输出是否反馈到反相端，并判断该反馈是否负反馈。",
+      "用虚短确定输入节点电压，用虚断在节点列KCL。",
+      "解出输出后检查是否超出可用输出摆幅；超限时改按饱和状态分析。"
+    ],
+    "steps_en": [
+      "Identify the feedback path and determine its sign.",
+      "Use equal input voltages and zero input current to write node KCL.",
+      "Check the computed output against available swing. If it exceeds the limits, analyze saturation instead."
+    ],
+    "traps": "虚地只有在另一输入端接地且虚短成立时出现。运放输出电流不为零，反馈支路和负载都要计入。",
+    "traps_en": "Virtual ground requires a grounded opposite input and a valid virtual short. Op-amp output current is not zero; it includes feedback and load currents.",
+    "check": "Rin = 10 kΩ、Rf = 100 kΩ、vi = 0.2 V：vo = −2 V；若输出允许±12 V，候选解未超限。",
+    "check_en": "With Rin = 10 kilohms, Rf = 100 kilohms and vi = 0.2 V: vo = −2 V, within assumed ±12 V output limits.",
+    "figure": "opamp.svg"
+  },
+  {
+    "course": "analog",
+    "id": "opamp-apps",
+    "zh": "求和、求差、积分与微分",
+    "en": "Summing, subtraction, integration and differentiation",
+    "scope": "2.4",
+    "source": "ch02.pptx 第40–58页",
+    "concept": "识别输入电阻和反馈元件，再从KCL推关系，比死记电路轮廓可靠。多输入运放可以叠加，但最终仍须检查输出范围。电容在输入端或反馈端的位置决定微分或积分。",
+    "concept_en": "Identify the input and feedback elements, then derive KCL rather than memorizing the drawing. Superposition can handle multiple inputs, but output limits still apply. A capacitor in the input versus feedback path distinguishes differentiation from integration.",
+    "formulas": [
+      "v_o=-R_f\\sum_k v_k/R_k",
+      "v_o(t)=v_o(0)-\\frac1{RC}\\int_0^t v_i(\\xi)\\,d\\xi",
+      "v_o=-RC\\,dv_i/dt"
+    ],
+    "steps": [
+      "在求和节点列各输入电流和反馈电流。",
+      "求差电路先求同相端的分压，再列反相端KCL；只有电阻比匹配时才化为纯差模比例式。",
+      "积分题保留初值；微分题先区分理想阶跃与真实有限上升时间。"
+    ],
+    "steps_en": [
+      "Write input and feedback currents at the summing node.",
+      "For subtraction, first find the non-inverting divider voltage. A pure difference expression requires matched resistor ratios.",
+      "Keep the integrator initial condition; distinguish ideal steps from finite rise times in differentiators."
+    ],
+    "traps": "理想积分器恒定输入会使输出持续变化，最后可能饱和。不能无限延伸理想线性斜坡。",
+    "traps_en": "A constant input drives an ideal integrator continuously and may cause saturation. Do not extend a linear ramp indefinitely.",
+    "check": "RC = 1 ms、vi = 1 V、vo(0) = 0：2 ms时vo = −2 V，须仍在线性输出范围内。",
+    "check_en": "For RC = 1 ms, vi = 1 V and vo(0) = 0: vo(2 ms) = −2 V, provided the output remains within its linear range.",
+    "figure": "opamp.svg"
+  },
+  {
+    "course": "analog",
+    "id": "diode",
+    "zh": "PN结与二极管：假设后要验算",
+    "en": "PN junctions and diode state validation",
+    "scope": "第3章全部",
+    "source": "ch03.pptx 第16–38、41–71页",
+    "concept": "PN结由多子扩散、空间电荷区和内建电场形成；热平衡时扩散与漂移电流抵消。电路题先选理想、恒压降或小信号模型。分段线性分析必须先假设导通状态、求候选解，再检验状态不等式。",
+    "concept_en": "A PN junction involves majority-carrier diffusion, a depletion region and a built-in field. At thermal equilibrium, diffusion and drift currents cancel. Choose the ideal, constant-drop or small-signal model first. Assume states, solve, then verify the corresponding inequalities.",
+    "formulas": [
+      "i_D=I_S(e^{v_D/(nV_T)}-1)",
+      "v_D=V_\\gamma,\\ i_D\\ge0\\quad\\text{(on, constant-drop model)}",
+      "i_D=0,\\ v_D\\le V_\\gamma\\quad\\text{(off, same model)}"
+    ],
+    "steps": [
+      "标出阳极、阴极，定义vD = vA−vK，电流从阳极流向阴极为正。",
+      "从断开状态或直观电位关系开始假设，解线性电路。",
+      "检查每只管的导通电流非负、截止电压不超过导通阈值；不满足时更换状态。"
+    ],
+    "steps_en": [
+      "Label anode/cathode and define positive diode voltage/current.",
+      "Assume a state based on open-circuit voltages, then solve the resulting linear circuit.",
+      "Check nonnegative on-current and an off-voltage below the threshold. Revise inconsistent states."
+    ],
+    "traps": "0.7 V是题目采用的模型值，不是所有二极管在所有电流下的精确常数。反向击穿不能与普通截止混为一谈。",
+    "traps_en": "0.7 V is a chosen model value, not an exact universal diode voltage. Reverse breakdown differs from ordinary cutoff.",
+    "check": "5 V经1 kΩ正向接恒压降0.7 V的二极管，电流4.3 mA；反接且未击穿时电流0。",
+    "check_en": "A 5 V source feeding a forward 0.7 V diode through 1 kilohm gives 4.3 mA; reversed below breakdown, current is zero.",
+    "figure": "diode.svg"
+  },
+  {
+    "course": "analog",
+    "id": "zener",
+    "zh": "稳压管与限流条件",
+    "en": "Zener regulation and current limits",
+    "scope": "3.5",
+    "source": "ch03.pptx 第63–71页",
+    "concept": "稳压管利用反向击穿区的近似恒压特性，但需要限流。总电阻电流分给负载与稳压管；负载改变时先检查稳压管是否仍有足够电流及是否超功耗。",
+    "concept_en": "Zener regulation uses an approximately constant reverse-breakdown voltage and needs current limiting. Series-resistor current splits between the load and Zener. Check minimum Zener current and maximum dissipation whenever load or supply changes.",
+    "formulas": [
+      "I_R=(V_I-V_Z)/R,\\quad I_L=V_Z/R_L,\\quad I_Z=I_R-I_L",
+      "P_Z=V_ZI_Z,\\quad I_{Z,\\min}\\le I_Z\\le I_{Z,\\max}"
+    ],
+    "steps": [
+      "先假定稳压成立令vo = VZ。",
+      "求IR、IL、IZ，并与允许电流范围核对。",
+      "若IZ太小，改成未稳压电路求输出；若太大，指出模型虽有解但器件超限。"
+    ],
+    "steps_en": [
+      "Assume regulation and set vo = VZ.",
+      "Calculate resistor, load and Zener currents, then check limits.",
+      "If Zener current is too low, solve the unregulated circuit. If too high, identify device overstress."
+    ],
+    "traps": "不能把限流电阻电流全部当成稳压管电流。负载越重，稳压管分得的电流通常越少。",
+    "traps_en": "Series-resistor current is not all Zener current. A heavier load usually leaves less current for the Zener.",
+    "check": "Vi = 12 V、VZ = 5 V、R = 1 kΩ、RL = 5 kΩ：IR = 7 mA，IL = 1 mA，IZ = 6 mA。",
+    "check_en": "For Vi = 12 V, VZ = 5 V, R = 1 kilohm and RL = 5 kilohms: IR = 7 mA, IL = 1 mA and IZ = 6 mA.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "mosfet",
+    "zh": "MOSFET：静态工作区先于增益",
+    "en": "MOSFET bias before small-signal gain",
+    "scope": "4.1–4.5、4.7",
+    "source": "ch04.pptx 第3–52、55–97页及4.7",
+    "concept": "增强型NMOS首先判断栅源电压，再判断漏源电压。饱和区在放大电路中常称恒流区，与BJT饱和的意义不同。必须先求Q点并确认处于所假设工作区，才能由该点求gm和小信号增益。",
+    "concept_en": "For enhancement NMOS, check gate-source voltage and then drain-source voltage. MOS saturation is the usual amplification region and differs from BJT saturation. Find and validate the bias point before deriving transconductance and small-signal gain.",
+    "formulas": [
+      "V_{\\rm OV}=V_{GS}-V_T,\\quad V_{DS}\\ge V_{\\rm OV}>0\\quad\\text{(NMOS saturation)}",
+      "I_D=K(V_{GS}-V_T)^2,\\quad g_m=2K V_{\\rm OV}\\quad\\text{(this K convention)}",
+      "A_v\\approx-g_m(R_D\\parallel R_L\\parallel r_o)\\quad\\text{(source AC-grounded)}"
+    ],
+    "steps": [
+      "明确K的定义：有的书把1/2并入K，有的没有。",
+      "写直流KVL与器件方程，逐个候选根检查电压、电流和工作区。",
+      "画交流模型，电源交流接地、耦合电容按中频短路；求端口负载后的增益。",
+      "多级放大要先算下一级对上一级的加载，再乘各级实际增益。"
+    ],
+    "steps_en": [
+      "State whether the factor 1/2 is included in K.",
+      "Solve DC KVL and the device law, then validate each candidate root and operating region.",
+      "Draw the AC model with supply at AC ground and midband coupling capacitors shorted. Include loading.",
+      "For cascaded stages, calculate interstage loading before multiplying actual stage gains."
+    ],
+    "traps": "不能把MOSFET恒流区与BJT饱和区混用。共漏近似同相、共栅近似同相，共源反相；精确增益仍取决于负载和源极电阻。",
+    "traps_en": "Do not confuse MOS saturation with BJT saturation. Common drain and common gate are normally non-inverting; common source is inverting. Exact gains depend on loading and source resistance.",
+    "check": "K = 1 mA/V²、VT = 1 V、VGS = 3 V，得ID = 4 mA、gm = 4 mS；还必须验证VDS ≥ 2 V。",
+    "check_en": "With K = 1 mA/V², VT = 1 V and VGS = 3 V: ID = 4 mA and gm = 4 mS; VDS must still be at least 2 V.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "bjt",
+    "zh": "BJT共射：直流、模型、交流",
+    "en": "BJT common-emitter: DC, model, AC",
+    "scope": "5.1–5.3；排除教材小节5.2.5详细共集/共基放大，保留5.3性能比较",
+    "source": "ch05.pptx 第1–53页及5.3，排除共集/共基5.2.5",
+    "concept": "先检查发射结正偏、集电结反偏，建立放大区Q点。把基极偏置网络化为戴维南等效时，可保留基极电流引起的加载。交流计算使用该Q点对应的模型参数，不能把直流β、rbe与电阻档读数混同。",
+    "concept_en": "Establish a forward-biased base-emitter junction and reverse-biased collector-base junction. A Thevenin bias equivalent can retain base-current loading. AC model parameters depend on the Q point; rbe is not simply an ohmmeter reading.",
+    "formulas": [
+      "I_B=\\frac{V_{\\rm Th}-V_{BE}}{R_{\\rm Th}+(\\beta+1)R_E}",
+      "I_C=\\beta I_B,\\quad I_E=(\\beta+1)I_B",
+      "V_{CE}=V_{CC}-I_CR_C-I_ER_E",
+      "A_v\\approx-\\frac{\\beta(R_C\\parallel R_L)}{r_{be}+(\\beta+1)R_E}\\quad\\text{(unbypassed emitter)}",
+      "r_{be}=r_{bb\\prime}+\\frac{(1+\\beta)V_T}{I_{EQ}},\\qquad A_{vs}=A_v\\frac{R_i}{R_{si}+R_i}"
+    ],
+    "steps": [
+      "直流电路中电容开路；直接接在集电极上的负载仍参与Q点，电容耦合负载不参与。求Q点并验两结偏置。",
+      "区分发射极电阻是否被交流旁路，写清rbe采用的参数定义。",
+      "把耦合和旁路电容按题目频段处理，计算Ri、Ro和带载增益。",
+      "若要求源增益，再乘输入分压。教材小节5.2.5共集/共基详细推导不在范围内；习题5.2.5偏置设计在范围内，5.3组态性能比较仍需掌握。"
+    ],
+    "steps_en": [
+      "Open capacitors for DC. A directly connected collector load remains in the bias circuit; a capacitor-coupled load does not. Solve Q and check both junctions.",
+      "Determine whether emitter resistance is bypassed for AC; state the rbe model.",
+      "Handle coupling/bypass capacitors for the given band and compute loaded gain and port resistances.",
+      "For source gain,include input division. Detailed CC/CB derivations in textbook section5.2.5 are excluded; exercise5.2.5 is included CE bias design,and section5.3 configuration comparisons remain required."
+    ],
+    "traps": "用两结偏置验工作区：NPN应VE<VB<VC，PNP相反；不能一看到负VCE就断言所有类型都失效。未旁路的RE须保留，求Ro时断开外接负载。未给小信号参数时，本项目按课件取r_bb′≈200 Ω、V_T≈26 mV并忽略厄利效应；数值需注明模型。",
+    "traps_en": "Check both junctions: NPN needs VE<VB<VC; PNP reverses this order. Negative VCE alone does not invalidate a PNP active point. Retain unbypassed RE and remove the external load for Ro. Unspecified small-signal parameters use the course estimates r_bb′≈200 Ω,V_T≈26 mV and no Early effect; label these assumptions.",
+    "check": "基极戴维南2.7 V、20 kΩ，RE = 1 kΩ、β = 99、VBE = 0.7 V：IB = 16.667 μA。",
+    "check_en": "For base Thevenin 2.7 V and 20 kilohms, RE = 1 kilohm, beta = 99 and VBE = 0.7 V: IB = 16.667 microamps.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "frequency-concepts",
+    "zh": "频率响应与RC：仅概念",
+    "en": "Frequency response and RC: concepts only",
+    "scope": "第6章引言、6.1，仅概念 / Chapter 6 introduction and 6.1, concepts only",
+    "source": "教材第7版190–193页，图6.0.1、6.1.1、6.1.3；授课计划 / 7th ed., pp.190–193, Figs.6.0.1,6.1.1,6.1.3; course plan",
+    "concept": "频率响应同时描述增益幅度与相位随频率的变化。耦合、旁路电容主要决定低频衰减，小寄生及负载电容主要影响高频。RC输出取电容两端通常是低通，取串联电路的电阻两端通常是高通。放大器的中频区位于下限与上限之间；带宽需满足信号频带要求，但只说“在通带内”并不能保证严格无失真。",
+    "concept_en": "Frequency response describes both gain magnitude and phase versus frequency. Coupling/bypass capacitors mainly affect the low-frequency end, while small parasitic and load capacitances affect the high-frequency end. An RC voltage output across the capacitor is typically low-pass; across the resistor in a series RC it is high-pass. An amplifier’s midband lies between lower and upper cutoffs. Bandwidth must cover the signal band, but passband membership alone does not guarantee exact waveform fidelity.",
+    "formulas": [
+      "|A_v(f_L)|=|A_v(f_H)|=\\frac{|A_{vM}|}{\\sqrt2},\\qquad BW=f_H-f_L",
+      "\\tau=RC,\\qquad f_c=\\frac1{2\\pi\\tau}",
+      "H_{LP}(j\\omega)=\\frac1{1+j\\omega RC},\\qquad H_{HP}(j\\omega)=\\frac{j\\omega RC}{1+j\\omega RC}"
+    ],
+    "steps": [
+      "先标清输出取在哪里，再考察极低频和极高频的电容近似；不凭“有电容”判断滤波类型。",
+      "阅读幅频图：相对中频幅度下降约3 dB的两点是上下限，幅度比为根号2的倒数，不能写成一半。",
+      "阅读相频图：RC低通在转折处滞后45°，高通超前45°；这些是基础识别关系。",
+      "结合电路分析已学的时间常数理解转折频率；此处公式用于建立概念联系，不把晶体管高频模型、米勒效应或多极点详细推导列作必考。"
+    ],
+    "steps_en": [
+      "Locate the output before using low/high-frequency capacitor limits; the presence of a capacitor alone does not identify the filter.",
+      "Read magnitude plots: the lower/upper cutoffs are about 3 dB below midband, with amplitude ratio the reciprocal square root of two, not one half.",
+      "Read phase plots: RC low-pass lags by 45 degrees at its corner; RC high-pass leads by 45 degrees. These are basic recognition relations.",
+      "Connect the corner frequency to the time constant learned in Circuit Analysis. The formulas support concepts; transistor high-frequency models, Miller effect and detailed multipole derivations are not required here."
+    ],
+    "traps": "幅度减半约为−6 dB；同电阻条件下功率减半才约为−3 dB。Hz与rad/s不可混用。电路第10章的具体计算深度尚未明确，不据此扩充考试要求。",
+    "traps_en": "Halving amplitude is about −6 dB; halving power at the same resistance is about −3 dB. Distinguish hertz from radians per second. The calculation depth of Circuit chapter 10 remains unspecified and is not expanded by this guide.",
+    "check": "中频幅度100、下限20 Hz、上限20 kHz：边界幅度约70.71，带宽19.98 kHz；电容输出低通保留低频，电阻输出高通抑制直流。",
+    "check_en": "Midband magnitude 100, lower cutoff 20 Hz and upper cutoff 20 kHz give boundary magnitude about 70.71 and bandwidth 19.98 kHz. Capacitor-output low-pass retains low frequencies; resistor-output high-pass rejects DC.",
+    "figure": "rc-frequency-concept.svg"
+  },
+  {
+    "course": "analog",
+    "id": "diff-frequency",
+    "zh": "差分输入与共模抑制：仅概念",
+    "en": "Differential inputs and common-mode rejection: concepts only",
+    "scope": "7.2.1，仅概念 / Section 7.2.1, concepts only",
+    "source": "教材第7版233–234页，图7.2.1；授课计划 / 7th ed., pp.233–234, Fig.7.2.1; course plan",
+    "concept": "直接耦合会把静态漂移传到后级。对称差分结构以两路输入的差为有用量：共同变化在差分输出中相消。MOS源极耦合对的两管共用源节点和尾电流；匹配、足够的尾源输出电阻以及正确工作区是理想抑制的前提。单端输出与双端差分输出的共模表现不能混为一谈。",
+    "concept_en": "Direct coupling passes bias drift to later stages. A symmetric differential structure amplifies input difference while common changes cancel in differential output. A MOS source-coupled pair shares a source node and tail current. Matching, adequate tail-source output resistance and valid operating regions are prerequisites for ideal rejection. Single-ended and differential-output common-mode behavior must be distinguished.",
+    "formulas": [
+      "v_{id}=v_1-v_2,\\qquad v_{ic}=(v_1+v_2)/2",
+      "v_1=v_{ic}+v_{id}/2,\\quad v_2=v_{ic}-v_{id}/2"
+    ],
+    "steps": [
+      "定义差模为第一端减第二端，共模为两端平均；再用两式重构原输入。",
+      "同增量属于共模；一增一减同样大小是纯差模；仅一端变化通常同时含两种分量。",
+      "从对称性与总尾电流解释共同扰动的抑制，再指出失配、有限输出电阻和电压余量限制。",
+      "考试路线只要求识别、分解和定性说明，不要求本章详细差分增益、共模抑制比或器件参数推导。"
+    ],
+    "steps_en": [
+      "Define differential input as input 1 minus input 2 and common input as their average; reconstruct the original pair.",
+      "Equal increments are common-mode; equal opposite increments are purely differential. A single-input change usually includes both.",
+      "Explain rejection through symmetry and tail-current constraint, then identify mismatch, finite output resistance and headroom limits.",
+      "The exam route requires recognition, decomposition and qualitative explanation, not detailed gain, CMRR or device-parameter derivations."
+    ],
+    "traps": "理想差分共模输出为零需要相应理想条件，不表示实际电路在任何输入电平下都抑制共模。不能把教材小节7.2.1直接当成同号习题的范围判定。",
+    "traps_en": "Zero ideal differential output for common input requires the stated ideal conditions; actual rejection fails outside valid operating ranges. Subsection 7.2.1 does not automatically determine coverage of an exercise with the same number.",
+    "check": "输入102 mV与98 mV：共模100 mV、差模4 mV；两端各增10 mV只改变共模。仅第一端再增加2 mV则共模增加1 mV、差模增加2 mV。",
+    "check_en": "Inputs 102 and 98 mV give common mode 100 mV and differential mode 4 mV. Equal 10 mV increments change only common mode. Increasing only input 1 by 2 mV adds 1 mV common mode and 2 mV differential mode.",
+    "figure": "differential-concept.svg"
+  },
+  {
+    "course": "analog",
+    "id": "feedback",
+    "zh": "反馈分类与深度负反馈",
+    "en": "Feedback classification and deep negative feedback",
+    "scope": "8.1–8.4",
+    "source": "ch08.pptx 8.1–8.4",
+    "concept": "先用瞬时极性法判断反馈正负，再判断输入混合与输出取样方式。电压/电流取样和串联/并联混合组成四种反馈组态。开环增益、反馈系数和闭环增益必须采用相容的输入输出变量及单位。",
+    "concept_en": "Use instantaneous polarity to determine feedback sign, then classify input mixing and output sampling. Voltage/current sampling and series/shunt mixing form four topologies. Open-loop gain, feedback factor and closed-loop gain must use compatible variables and units.",
+    "formulas": [
+      "A_f=A/(1+AF)\\quad\\text{(negative-feedback convention)}",
+      "|AF|\\gg1\\ \\Longrightarrow\\ A_f\\approx1/F"
+    ],
+    "steps": [
+      "人为令输入上升，沿前向链路与反馈链路追踪返回量，看它削弱还是增强净输入。",
+      "输入看反馈量是串联电压还是并联电流；输出用短路法等判断取样类型。",
+      "检查深度负反馈条件后才用1/F；最后从端口关系求题目要求的闭环电压增益。"
+    ],
+    "steps_en": [
+      "Perturb the input and track the forward and feedback signals to see whether net input is reduced.",
+      "Identify series-voltage versus shunt-current mixing and voltage versus current sampling.",
+      "Use 1/F only after checking deep-feedback conditions; then convert to the requested terminal voltage gain."
+    ],
+    "traps": "跨导、跨阻组态的1/F不一定是无量纲电压增益。负反馈改善性能依赖具体组态和成立频段。",
+    "traps_en": "For transconductance/transresistance topologies, 1/F is not necessarily a dimensionless voltage gain. Performance changes depend on topology and frequency range.",
+    "check": "A = 1000、F = 0.09：Af = 1000/91 ≈ 10.989，深反馈近似11.111，相对精确值误差约1.11%。",
+    "check_en": "For A = 1000 and F = 0.09: Af = 1000/91 ≈ 10.989; the deep-feedback estimate 11.111 differs by about 1.11%.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "filters",
+    "zh": "有源滤波：通带、极点与高阶",
+    "en": "Active filters: passband, poles and order",
+    "scope": "10.1–10.3",
+    "source": "ch10.pptx 第1–30页",
+    "concept": "先确定低通、高通、带通、带阻或全通，再决定输出需要保留哪个频段。有源器件提供增益或缓冲。电路阶数与储能及极点有关；只有没有发生极零相消等退化时，才能简单由最高幂判断。",
+    "concept_en": "First identify low-pass, high-pass, band-pass, band-stop or all-pass behavior and the desired band. Active devices provide gain or buffering. Order is related to energy storage and poles; apparent highest polynomial degree can mislead when cancellations occur.",
+    "formulas": [
+      "H_{\\rm LP}(s)=A_0/(1+s/\\omega_c)",
+      "H_2(s)=\\frac{A_0\\omega_0^2}{s^2+(\\omega_0/Q)s+\\omega_0^2}",
+      "|H(j\\omega_c)|=|A_0|/\\sqrt2\\quad\\text{(first-order low-pass)}"
+    ],
+    "steps": [
+      "用直流与高频极限核对滤波类型。",
+      "由KCL或运放线性关系求传递函数，再与标准型比较。",
+      "二阶题同时检查ω0和Q，不能一律把ω0当作所有响应的−3dB频率。"
+    ],
+    "steps_en": [
+      "Check DC and high-frequency limits.",
+      "Derive the transfer function from KCL/op-amp relations and compare with a standard form.",
+      "For second-order responses, check both omega0 and Q. Omega0 is not universally the −3 dB frequency."
+    ],
+    "traps": "两个RC环节直接级联会相互加载；有缓冲时才可按独立级简单相乘。模拟卷中的截止计算会明确模型。",
+    "traps_en": "Directly cascaded RC stages load one another. Multiply independent stage responses only when isolation assumptions hold. Mock questions state the model.",
+    "check": "一阶低通通带增益2时，截止处幅度为√2，约1.414。",
+    "check_en": "A first-order low-pass with passband gain 2 has magnitude sqrt(2), about 1.414, at cutoff.",
+    "figure": null
+  },
+  {
+    "course": "analog",
+    "id": "comparators",
+    "zh": "比较器与迟滞：不使用虚短",
+    "en": "Comparators and hysteresis",
+    "scope": "10.8.1",
+    "source": "ch10.pptx 第53–67页",
+    "concept": "比较器按差分输入符号输出高或低电平。迟滞比较器加入正反馈，门限随当前输出变化，两门限之间的输出取决于历史状态。翻转边界可以用输入相等求门限，但这不等于整个工作过程满足虚短。",
+    "concept_en": "A comparator selects a high or low output according to the differential input sign. Positive feedback creates hysteresis: the threshold depends on the current output, so the state between thresholds depends on history. Equality at a switching boundary is not a continuous virtual short.",
+    "formulas": [
+      "v_+>v_-\\Rightarrow v_o=V_{OH},\\qquad v_+<v_-\\Rightarrow v_o=V_{OL}",
+      "v_+=\\beta v_o\\Rightarrow V_{T+}=\\beta V_{OH},\\quad V_{T-}=\\beta V_{OL}\\quad\\text{(inverting input signal)}"
+    ],
+    "steps": [
+      "标出信号输入端，判断输出与输入是同向还是反向翻转。",
+      "分别假设当前输出为高和低，求对应反馈门限。",
+      "沿输入上升和下降分别追踪翻转；门限之间保留先前状态。"
+    ],
+    "steps_en": [
+      "Identify the signal input and switching direction.",
+      "Assume each output state and find its feedback threshold.",
+      "Trace increasing and decreasing input separately; retain history between thresholds."
+    ],
+    "traps": "题号10.8.2是“10.8组第2题”，不自动等同于被排除的小节10.8.2。章节范围与习题编号需要分别核对。",
+    "traps_en": "Exercise 10.8.2 means problem 2 in group 10.8; it does not automatically mean excluded subsection 10.8.2. Exercise numbering and section scope must be checked separately.",
+    "check": "反相迟滞比较器vo = ±10 V、v+ = 0.2vo：上门限+2 V，下门限−2 V，回差4 V。",
+    "check_en": "For an inverting Schmitt trigger with vo = ±10 V and v+ = 0.2vo: thresholds are +2 V and −2 V, with 4 V hysteresis.",
+    "figure": "comparator.svg"
+  }
+]
