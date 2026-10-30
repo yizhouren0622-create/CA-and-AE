@@ -138,7 +138,7 @@ for cid,c in courses.items():
                 if st.get('formula'):steps+=math(st['formula'])
             for diagram in sol.get('solutionDiagrams',[]):
                 caption=diagram.get('caption') or ({'zh':'实际SPICE数据；运行条件和模型见本题解析。','en':'Executed SPICE data; see this solution for model and run conditions.'} if diagram.get('kind','').startswith('executed-spice') else None)
-                steps+=figure(diagram['figure'],diagram['alt']['zh']+' · '+diagram['alt']['en'],caption_text=caption)+b(diagram['alt'],'p','diagram-description')
+                steps+=figure(diagram['figure'],diagram['alt']['zh']+' · '+diagram['alt']['en'],caption_text=caption)+('' if caption==diagram['alt'] else b(diagram['alt'],'p','diagram-description'))
             steps+=b(sol['answer'],'p','key')+bi('易错点','Common errors','h4')+'<ul>'+''.join(b(x,'li') for x in sol['pitfalls'])+'</ul>'+bi('核验依据','Verification','h4')
             if isinstance(sol['verification'].get('assumptions'),dict):steps+=b(sol['verification']['assumptions'],'p','scope-note')
             steps+=b(sol['verification']['methods'],'p')

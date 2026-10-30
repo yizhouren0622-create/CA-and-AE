@@ -28310,6 +28310,1605 @@
             }
           }
         }
+      },
+      "CA-4-1": {
+        "id": "CA-4-1",
+        "bookId": "4-1",
+        "title": {
+          "zh": "平方项产生直流与二倍频",
+          "en": "The square term creates DC and double frequency"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 101,
+          "pdfPage": 110
+        },
+        "statement": {
+          "zh": "非线性电阻采用关联参考方向，$u=f(i)=100i+i^2$。分别求$i_1=2\\,\\mathrm A$与$i_2(t)=2\\sin314t\\,\\mathrm A$对应的电压。",
+          "en": "Under passive reference directions, a nonlinear resistor has $u=100i+i^2$ in SI units. Find voltage for current 2 A and for sinusoidal current $2\\sin314t$ A."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "常量电流直接代入",
+              "en": "Substitute the constant current"
+            },
+            "text": {
+              "zh": "不能只把100看成电阻后遗漏平方项。",
+              "en": "The coefficient 100 does not eliminate the quadratic contribution."
+            },
+            "formula": "u_1=100(2)+2^2=204\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "正弦输入先保留平方再展开",
+              "en": "Keep the square before expanding the sine"
+            },
+            "text": {
+              "zh": "平方项包含直流2 V和二倍频分量，非线性元件即使输入只有单频也可产生新频率。",
+              "en": "The square creates 2 V DC and a second harmonic; a single-frequency input does not imply a single-frequency nonlinear output."
+            },
+            "formula": "u_2(t)=200\\sin314t+4\\sin^2 314t=2+200\\sin314t-2\\cos628t\\quad(\\mathrm V)"
+          }
+        ],
+        "answer": {
+          "zh": "$u_1=204$ V；$u_2=2+200\\sin314t-2\\cos628t$ V。",
+          "en": "$u_1=204$ V; $u_2=2+200\\sin314t-2\\cos628t$ V."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "constant-input",
+          "sinusoidal-output-and-harmonics"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "at2A": 204,
+            "waveform": "2+200*sin(314t)-2*cos(628t)"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        }
+      },
+      "CA-4-2": {
+        "id": "CA-4-2",
+        "bookId": "4-2",
+        "title": {
+          "zh": "从同一点求割线与切线",
+          "en": "Secant and tangent at the same operating point"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111
+        },
+        "statement": {
+          "zh": "非线性电阻$i=0.5u^2$，关联参考方向。工作电压0.4 V时，求静态电阻和动态电阻。",
+          "en": "A nonlinear resistor has $i=0.5u^2$ under passive references. At 0.4 V find static and incremental resistance."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "静态电阻是工作点电压除电流",
+              "en": "Static resistance is the point ratio"
+            },
+            "text": {
+              "zh": "先求偏置电流0.08 A，再作电压电流比；不是对曲线求导。",
+              "en": "First evaluate bias current 0.08 A, then take voltage divided by current."
+            },
+            "formula": "I_Q=0.5(0.4)^2=0.08\\,\\mathrm A,\\qquad R_{static}=\\frac{U_Q}{I_Q}=5\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "动态电阻是局部斜率的倒数",
+              "en": "Incremental resistance is inverse local conductance"
+            },
+            "text": {
+              "zh": "原式以电流为因变量，先求导的是电导；求电阻还要取倒数。",
+              "en": "The derivative of current versus voltage is conductance, so invert it to obtain resistance."
+            },
+            "formula": "r_d=\\left(\\frac{di}{du}\\right)^{-1}_{Q}=\\frac1{U_Q}=2.5\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "静态5 Ω，动态2.5 Ω。",
+          "en": "Static resistance 5 ohms, incremental resistance 2.5 ohms."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "bias-current",
+          "static-resistance",
+          "incremental-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "I": 0.08000000000000002,
+            "Rdc": 5,
+            "Rd": 2.5
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "同一点的原点割线与局部切线，分别决定静态和动态电阻。",
+              "en": "Secant from the origin and local tangent determine static and incremental resistance."
+            },
+            "caption": {
+              "zh": "同一点的原点割线与局部切线，分别决定静态和动态电阻。",
+              "en": "Secant from the origin and local tangent determine static and incremental resistance."
+            },
+            "figure": "ca-4-2-static-dynamic.svg"
+          }
+        ]
+      },
+      "CA-4-3": {
+        "id": "CA-4-3",
+        "bookId": "4-3",
+        "title": {
+          "zh": "分段曲线的动态斜率与静态比值",
+          "en": "Piecewise slope differs from the point ratio"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-1",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "题图4-1给出的关联伏安曲线经过$(0,0),(0.4\\,\\mathrm V,10\\,\\mathrm{mA}),(0.6\\,\\mathrm V,30\\,\\mathrm{mA})$，相邻点间为直线。分别在0.2 V和0.5 V求静态、动态电阻。",
+          "en": "The piecewise-linear characteristic in Fig. 4-1 passes through (0,0), (0.4 V,10 mA) and (0.6 V,30 mA). Find static and incremental resistances at 0.2 V and 0.5 V."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "0.2 V在过原点第一段",
+              "en": "0.2 V lies on the origin segment"
+            },
+            "text": {
+              "zh": "第一段电导25 mS，电流5 mA；割线与切线相同。",
+              "en": "The first-segment conductance is 25 mS and current 5 mA. Secant and tangent coincide."
+            },
+            "formula": "i=0.025u,\\quad R_{static}(0.2)=r_d(0.2)=40\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "0.5 V在不经过原点的第二段",
+              "en": "0.5 V lies on the offset second segment"
+            },
+            "text": {
+              "zh": "第二段斜率100 mS，电流20 mA。静态电阻25 Ω，但切线电阻10 Ω，不可把两种电阻互换。",
+              "en": "The second slope is 100 mS and current 20 mA. Static resistance is 25 ohms, while tangent resistance is 10 ohms."
+            },
+            "formula": "i=0.01+0.1(u-0.4),\\quad R_{static}(0.5)=\\frac{0.5}{0.02}=25\\,\\Omega,\\quad r_d(0.5)=10\\,\\Omega"
+          }
+        ],
+        "answer": {
+          "zh": "0.2 V：40 Ω、40 Ω；0.5 V：25 Ω、10 Ω。",
+          "en": "At 0.2 V: 40/40 ohms; at 0.5 V: 25/10 ohms, static/incremental respectively."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "u0.2-static-and-dynamic",
+          "u0.5-static-and-dynamic"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "u0.2": {
+              "I": 0.005,
+              "Rdc": 40,
+              "Rd": 40
+            },
+            "u0.5": {
+              "I": 0.02,
+              "Rdc": 25,
+              "Rd": 10
+            }
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-3-figure.png"
+      },
+      "CA-4-4": {
+        "id": "CA-4-4",
+        "bookId": "4-4",
+        "title": {
+          "zh": "二次节点方程保留两个实根",
+          "en": "Retain both real roots of the quadratic node equation"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-2",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "题图4-2中$u_s=84$ V，$R_1=2$ kΩ、$R_2=10$ kΩ，非线性支路采用关联方向，$i_3=0.3u_3+0.04u_3^2$（SI单位）。求图示串联输入电流$i_1$和线性并联支路电流$i_2$。",
+          "en": "In Fig. 4-2 the source is 84 V, series resistor 2 kilohms and shunt resistor 10 kilohms. The nonlinear branch has $i_3=0.3u_3+0.04u_3^2$ in SI units under passive reference directions. Find source-path current and linear-shunt current."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用并联节点电压列KCL",
+              "en": "Write KCL in the shared shunt voltage"
+            },
+            "text": {
+              "zh": "两个电阻必须用欧姆；特性式电流按安培。不要把0.3和0.04自行改成毫安系数。",
+              "en": "Use resistances in ohms and characteristic current in amperes. Do not silently reinterpret the coefficients as milliamps."
+            },
+            "formula": "\\frac{84-u_3}{2000}=\\frac{u_3}{10000}+0.3u_3+0.04u_3^2\\quad\\Rightarrow\\quad0.04u_3^2+0.3006u_3-0.042=0"
+          },
+          {
+            "title": {
+              "zh": "两个电压根分别还原电流",
+              "en": "Recover currents for both voltage roots"
+            },
+            "text": {
+              "zh": "原题未限制非线性特性的适用电压区间，所以两个实根都须保留。负电压根的并联电阻电流为负，只表示方向与箭头相反，不应直接删除。",
+              "en": "No voltage-domain restriction is stated, so retain both real roots. Negative shunt-resistor current means reverse flow under the chosen arrow, not grounds to discard a root."
+            },
+            "formula": "\\begin{array}{c|rr}u_3\\;(\\mathrm V)&i_1\\;(\\mathrm{mA})&i_2\\;(\\mathrm{mA})\\\\0.137215&41.931392&0.013722\\\\-7.652215&45.826108&-0.765222\\end{array}"
+          },
+          {
+            "title": {
+              "zh": "代回功率与附录差异",
+              "en": "Check power and the appendix discrepancy"
+            },
+            "text": {
+              "zh": "两根均满足$i_1=i_2+i_3$与源发出功率等于三支路吸收功率的代数和。负电压分支中非线性元件供能，属于题给多项式包含的主动工作点。附录该分支第一电流41.825 mA不符合84 V与2 kΩ的原KVL，正确为45.826 mA；另外两项与附录舍入一致。",
+              "en": "Both roots satisfy branch KCL and algebraic power balance. At the negative-voltage root the nonlinear element supplies energy, a behavior included by the stated polynomial. The appendix first current 41.825 mA for that root violates the original 84 V/2-kilohm KVL; the correct value is 45.826 mA. The other listed values agree after rounding."
+            },
+            "formula": "84i_1=2000i_1^2+10000i_2^2+u_3i_3"
+          }
+        ],
+        "answer": {
+          "zh": "两组$(i_1,i_2)$约为$(41.9314,0.01372)$ mA或$(45.8261,-0.76522)$ mA；附录负电压根的第一电流有误。",
+          "en": "The two current pairs are approximately (41.9314,0.01372) mA and (45.8261,−0.76522) mA. The appendix first current for the negative-voltage root is incorrect."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "node-equation",
+          "both-roots",
+          "both-current-pairs",
+          "KCL-power-and-appendix"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": [
+            {
+              "u3": -7.652215169303141,
+              "i1": 0.045826107584651575,
+              "i2": -0.0007652215169303142,
+              "i3": 0.04659132910158226
+            },
+            {
+              "u3": 0.13721516930314176,
+              "i1": 0.04193139241534843,
+              "i2": 1.3721516930314176e-05,
+              "i3": 0.04191767089841812
+            }
+          ],
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-4-figure.png"
+      },
+      "CA-4-5": {
+        "id": "CA-4-5",
+        "bookId": "4-5",
+        "title": {
+          "zh": "跨节点非线性支路使用电位差",
+          "en": "Use node-voltage difference in a nonlinear bridge"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-3",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "按题图4-3指定参考节点0列节点电压方程。上方节点为1、2；8 A、5 A电流源分别由节点0注入1、2。元件关系$i_1=u_1^3,i_2=u_2^2,i_3=u_3^{3/2}$；$i_1,i_3$向下，$i_2$从1流向2，$u_2$左正右负。",
+          "en": "Write nodal equations for Fig. 4-3 with reference node 0 and upper nodes 1/2. Sources inject 8/5 A into those nodes. Characteristics are $i_1=u_1^3,i_2=u_2^2,i_3=u_3^{3/2}$; the first/third currents point downward and the second from node 1 to 2, with left-positive voltage."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先把三个元件电压换成节点电位",
+              "en": "Express every element voltage in node potentials"
+            },
+            "text": {
+              "zh": "设节点电位$v_1,v_2$，跨节点元件电压是两电位之差，不是其中一个电位。",
+              "en": "Let node potentials be first and second voltage. The bridge voltage is their difference."
+            },
+            "formula": "u_1=v_1,\\quad u_2=v_1-v_2,\\quad u_3=v_2"
+          },
+          {
+            "title": {
+              "zh": "两个节点分别列流出等于注入",
+              "en": "At each node equate outgoing current to injection"
+            },
+            "text": {
+              "zh": "第二支路电流对节点1是流出，对节点2是流入，因此两个方程中的平方项符号相反。实数幂模型还要求第二节点电压非负。本题仅要求列方程，不添加多余求解条件。",
+              "en": "The bridge current leaves node 1 and enters node 2, hence opposite signs. The real fractional-power model also requires nonnegative second-node voltage. The exercise asks only for equations; no extra solution assumptions are imposed."
+            },
+            "formula": "\\begin{cases}v_1^3+(v_1-v_2)^2=8\\\\v_2^{3/2}-(v_1-v_2)^2=5\\end{cases}\\qquad(v_2\\ge0)"
+          }
+        ],
+        "answer": {
+          "zh": "节点方程如上；平方支路对两个节点的符号相反，实数域需$v_2\\ge0$。",
+          "en": "The equations above use opposite bridge-current signs; the real domain requires nonnegative second-node voltage."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "three-voltages",
+          "node1",
+          "node2",
+          "real-domain"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "nodes": [
+              "v1^3+(v1-v2)^2=8",
+              "v2^(3/2)-(v1-v2)^2=5"
+            ],
+            "realDomain": "v2>=0"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-5-figure.png"
+      },
+      "CA-4-6": {
+        "id": "CA-4-6",
+        "bookId": "4-6",
+        "title": {
+          "zh": "并联特性相加后再与外电路相交",
+          "en": "Add parallel characteristics before intersecting the source line"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-4",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "题图4-4的单口网络由1 Ω与非线性电阻并联，$i_R=u_R^2-3u_R+1$，端口$u=u_R$、$i$流入上正端。外部3 V电源串联1 Ω接此端口。（1）求单口伏安关系；（2）求所有静态工作点的端口电压、电流。",
+          "en": "The one-port in Fig. 4-4 parallels 1 ohm and a nonlinear resistor with $i_R=u_R^2-3u_R+1$. Port voltage is top-positive and current enters it. A 3 V source and series 1 ohm drive the port. (1) Find port characteristic. (2) Find all DC voltage/current points."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)同电压下并联电流相加",
+              "en": "(1) Add currents at the same port voltage"
+            },
+            "text": {
+              "zh": "并联1 Ω支路电流为端口电压的数值，不能把两元件的电阻值直接并联计算。",
+              "en": "The 1-ohm current equals port voltage numerically; nonlinear characteristics are combined as currents, not constant resistances."
+            },
+            "formula": "i=u+i_R=u^2-2u+1=(u-1)^2"
+          },
+          {
+            "title": {
+              "zh": "(2)与外部负载线联立",
+              "en": "(2) Intersect the source load line"
+            },
+            "text": {
+              "zh": "外回路$i=3-u$。方程有负电压与正电压两个根，两根都符合原图。",
+              "en": "The source line is current equals three minus voltage. Both negative- and positive-voltage roots satisfy the circuit."
+            },
+            "formula": "(u-1)^2=3-u\\Rightarrow(u-2)(u+1)=0,\\qquad Q_1:(u,i)=(-1\\,\\mathrm V,4\\,\\mathrm A),\\quad Q_2:(2\\,\\mathrm V,1\\,\\mathrm A)"
+          },
+          {
+            "title": {
+              "zh": "逐点核对非线性支路电流",
+              "en": "Check the nonlinear branch separately at each point"
+            },
+            "text": {
+              "zh": "负1 V时线性电阻电流负1 A、非线性支路5 A，合计4 A；2 V时分别2 A和负1 A，合计1 A。负支流不等于总解错误。仅有静态曲线不足以判断哪个动态稳定，题目没有储能或动态方程。",
+              "en": "At minus 1 V the linear/nonlinear currents are minus 1 and plus 5 A, totaling 4 A; at 2 V they are plus 2 and minus 1 A, totaling 1 A. A negative branch current does not invalidate a solution. Static curves alone do not determine dynamic stability without storage or dynamics."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "端口$i=(u-1)^2$；工作点$(-1\\,\\mathrm V,4\\,\\mathrm A)$和$(2\\,\\mathrm V,1\\,\\mathrm A)$。",
+          "en": "Port current is $(u-1)^2$; DC points (−1 V,4 A) and (2 V,1 A)."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-port-characteristic",
+          "2-both-points",
+          "branch-substitution"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": [
+            {
+              "u": -1,
+              "i": 4,
+              "iR": 5
+            },
+            {
+              "u": 2,
+              "i": 1,
+              "iR": -1
+            }
+          ],
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-6-figure.png"
+      },
+      "CA-4-7": {
+        "id": "CA-4-7",
+        "bookId": "4-7",
+        "title": {
+          "zh": "先消去左节点，再解非线性支流",
+          "en": "Eliminate the left node before solving the nonlinear current"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-5",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "题图4-5中左支路2 A电流源向上，左并联电阻1 Ω，上方横接1 Ω；右侧一支路为2 Ω串联上正下负2 V电源，另一支路为关联非线性元件A，$u=i^2$。求A向下电流$i$、左电阻向下电流$i_1$和右端电压$u$。",
+          "en": "Fig. 4-5 has an upward 2 A left source, a 1-ohm left shunt and 1-ohm top link. On the right, a 2-ohm resistor is in series with a top-positive 2 V source, in parallel with element A satisfying $u=i^2$ under downward current. Find its current, left-shunt current and output voltage."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "两节点KCL得到线性外特性",
+              "en": "Two-node KCL gives the linear driving characteristic"
+            },
+            "text": {
+              "zh": "设左上电位$v$，右上电位即$u$。右中支路电流是$(u-2)/2$，不能把2 V电源看成短路。",
+              "en": "Let the left-node voltage be first potential and right node be output. The right middle current is $(u-2)/2$; retain the 2 V source."
+            },
+            "formula": "v+(v-u)=2,\\qquad i+\\frac{u-2}{2}+(u-v)=0\\quad\\Rightarrow\\quad v=1+\\frac u2,\\quad i+u=2"
+          },
+          {
+            "title": {
+              "zh": "非线性式给两个实根",
+              "en": "The nonlinear relation gives two real roots"
+            },
+            "text": {
+              "zh": "代入$u=i^2$，电流根为1 A或负2 A，依次求出左电流和输出。不要在题未限制电流方向时抛弃负根。",
+              "en": "Substitution gives currents 1 A or minus 2 A. Recover left-shunt current and output for each; no current-domain restriction allows discarding the negative root."
+            },
+            "formula": "i^2+i-2=0\\quad\\Rightarrow\\quad(i,i_1,u)=(1\\,\\mathrm A,1.5\\,\\mathrm A,1\\,\\mathrm V)\\quad\\text{or}\\quad(-2\\,\\mathrm A,3\\,\\mathrm A,4\\,\\mathrm V)"
+          },
+          {
+            "title": {
+              "zh": "按原支路检查方向与能量含义",
+              "en": "Check branch directions and energy interpretation"
+            },
+            "text": {
+              "zh": "第一根的2 V支路电流负0.5 A，即电源向节点送电；第二根该支流为1 A，A支路则向节点送电。两种都满足全电路KCL，且与附录列出的两组一致。",
+              "en": "For the first root the 2 V branch current is minus 0.5 A, injecting current. For the second it is plus 1 A while element A supplies current. Both satisfy full-circuit KCL and match the two appendix sets."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "两解依次为$(1\\,\\mathrm A,1.5\\,\\mathrm A,1\\,\\mathrm V)$或$(-2\\,\\mathrm A,3\\,\\mathrm A,4\\,\\mathrm V)$。",
+          "en": "The two triples are (1 A,1.5 A,1 V) and (−2 A,3 A,4 V)."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "external-characteristic",
+          "two-real-roots",
+          "all-three-quantities",
+          "branch-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": [
+            {
+              "i": 1,
+              "i1": 1.5,
+              "u": 1,
+              "source2VbranchCurrent": -0.5
+            },
+            {
+              "i": -2,
+              "i1": 3.0,
+              "u": 4,
+              "source2VbranchCurrent": 1.0
+            }
+          ],
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-7-figure.png"
+      },
+      "CA-4-8": {
+        "id": "CA-4-8",
+        "bookId": "4-8",
+        "title": {
+          "zh": "理想二极管的端口曲线含竖直支段",
+          "en": "An ideal diode creates vertical port-characteristic branches"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-6",
+          "figurePrintedPage": 102,
+          "figurePdfPage": 111
+        },
+        "statement": {
+          "zh": "题图4-6(a)中二极管VD与10 kΩ并联。VD特性见(b)：正向电压零、电流非负；反向截止至负10 V，击穿时电压负10 V、电流非正。画出上正下负、上端流入的单口伏安特性。",
+          "en": "Fig. 4-6 parallels a diode and 10 kilohms. The supplied ideal diode has zero-voltage nonnegative forward current, zero reverse current between −10 and 0 V, and nonpositive current at −10 V breakdown. Draw the top-positive, current-entering port characteristic."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "截止时只有电阻电流",
+              "en": "During cutoff only resistor current remains"
+            },
+            "text": {
+              "zh": "端口电压等于二极管电压；中间段为电阻斜线，负10 V对应负1 mA，零伏对应零流。",
+              "en": "Port and diode voltages coincide. The middle segment is the resistor line from (−10 V,−1 mA) to the origin."
+            },
+            "formula": "-10\\le u\\le0:\\quad i=\\frac{u}{10\\,\\mathrm{k\\Omega}}"
+          },
+          {
+            "title": {
+              "zh": "导通与击穿时保留竖直半直线",
+              "en": "Keep vertical half-lines for conduction and breakdown"
+            },
+            "text": {
+              "zh": "正向导通钳在零伏，电流可为任意非负；击穿钳在负10 V，电阻已吸收负1 mA参考电流，叠加二极管负电流后总电流不大于负1 mA。不能把这两段画成水平线。",
+              "en": "Forward conduction clamps zero voltage at any nonnegative current. Breakdown clamps minus 10 V; the resistor already contributes minus 1 mA, so adding nonpositive diode current gives total no greater than minus 1 mA. These are vertical, not horizontal, branches."
+            },
+            "formula": "\\begin{cases}u=-10\\,\\mathrm V,&i\\le-1\\,\\mathrm{mA}\\\\i=\\frac{u}{10\\,\\mathrm{k\\Omega}},&-10\\le u\\le0\\\\u=0,&i\\ge0\\end{cases}"
+          }
+        ],
+        "answer": {
+          "zh": "中间斜线连接$(-10\\,\\mathrm V,-1\\,\\mathrm{mA})$与原点，左端向下、原点向上各接竖直半直线。",
+          "en": "A sloping segment connects (−10 V,−1 mA) to the origin, with a downward vertical ray at −10 V and upward ray at zero."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "cutoff-line",
+          "forward-ray",
+          "breakdown-ray",
+          "characteristic-plot"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "reverseKnee": {
+              "u": -10,
+              "i": -0.001
+            },
+            "forwardKnee": {
+              "u": 0,
+              "i": 0
+            },
+            "middleSlopeS": 0.0001
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "截止电阻斜线及导通、击穿竖直半直线。",
+              "en": "Resistor cutoff line and vertical forward/breakdown rays."
+            },
+            "caption": {
+              "zh": "截止电阻斜线及导通、击穿竖直半直线。",
+              "en": "Resistor cutoff line and vertical forward/breakdown rays."
+            },
+            "figure": "ca-4-8-port-curve.svg"
+          }
+        ],
+        "figure": "ca-4-8-figure.png"
+      },
+      "CA-4-9": {
+        "id": "CA-4-9",
+        "bookId": "4-9",
+        "title": {
+          "zh": "反接电源使工作点进入反向击穿",
+          "en": "The reversed source drives a breakdown operating point"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-7",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "题图4-7(a)：$U_s=20$ V，$R_1=900\\,\\Omega,R_2=1100\\,\\Omega$，稳压管曲线见(b)。电流$i$按左支路向下，管压$u$上正下负；电源长极板在上。求静态工作点。",
+          "en": "Fig. 4-7(a) has source 20 V, resistors 900 and 1100 ohms, and the regulator-diode curve in (b). Current reference points down the left branch, diode voltage is top-positive and the source positive plate is above. Find the DC operating point."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "沿电流箭头绕回路写电压降",
+              "en": "Write KVL in the drawn current direction"
+            },
+            "text": {
+              "zh": "沿左支路向下经过电源是从正到负，再过稳压管；两个串联电阻合计2000 Ω，故负载线截距为负20 V而不是正20 V。注意原值900 Ω、1100 Ω，不要误读少一个零。",
+              "en": "Down the left branch crosses the source from positive to negative before the diode. The resistors total 2000 ohms, so the load-line intercept is minus 20 V, not plus 20. Retain the original 900/1100-ohm values."
+            },
+            "formula": "20+u+2000i=0\\quad\\Rightarrow\\quad i=-\\frac{u+20}{2000}"
+          },
+          {
+            "title": {
+              "zh": "与原曲线的反向击穿段相交",
+              "en": "Intersect the reverse-breakdown branch"
+            },
+            "text": {
+              "zh": "在原图可读到交点约负10 V、负5 mA，代回线性回路恰满足电源与电阻压降。图像没有足够细数据支持更多精确小数；附录同样给这组图读数。负电流是实际方向向上，不能改成正5 mA而保留原箭头。",
+              "en": "The graph gives an intersection near minus 10 V and minus 5 mA, satisfying source/resistor KVL. The graphical data do not justify extra precision; the appendix gives the same reading. Negative current means actual upward flow; do not change its sign without changing the reference."
+            },
+            "formula": "U_Q\\approx-10\\,\\mathrm V,\\quad I_Q\\approx-5\\,\\mathrm{mA}"
+          }
+        ],
+        "answer": {
+          "zh": "静态工作点约$(-10\\,\\mathrm V,-5\\,\\mathrm{mA})$，实际电流向上。",
+          "en": "The DC point is approximately (−10 V,−5 mA); actual current flows upward."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "source-polarity",
+          "load-line",
+          "graphical-point",
+          "current-direction"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "Rsum": 2000,
+            "uGraphApprox": -10,
+            "iGraphApprox": -0.005
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-9-figure.png"
+      },
+      "CA-4-10": {
+        "id": "CA-4-10",
+        "bookId": "4-10",
+        "title": {
+          "zh": "三个互异工作点需要严格边界",
+          "en": "Three distinct operating points require strict boundaries"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 102,
+          "pdfPage": 111,
+          "figure": "题图4-8",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "题图4-8(a)为电源$U_s$串联电阻$R$和隧道二极管，电流顺时针。原分段曲线通过$(0,0),(0.1\\,\\mathrm V,1.0\\,\\mathrm{mA}),(0.7\\,\\mathrm V,0.1\\,\\mathrm{mA}),(1.5\\,\\mathrm V,1.0\\,\\mathrm{mA})$。若要求3个静态工作点，求$U_s,R$可取范围。",
+          "en": "Fig. 4-8 places source and resistor in series with a tunnel diode under clockwise current. Its piecewise characteristic joins (0,0), (0.1 V,1 mA), (0.7 V,0.1 mA), (1.5 V,1 mA). Find source/resistance values giving three DC operating points."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "负阻段两端限制电源截距",
+              "en": "The negative-slope endpoints constrain the source intercept"
+            },
+            "text": {
+              "zh": "负载线为$i=(U_s-u)/R$。要每个线段内各有一个交点，峰点处负载线应在曲线下方，谷点处在曲线上方，整理得如下电源范围。",
+              "en": "The load line is $(U_s-u)/R$. One intersection inside each segment requires it below the curve at the peak and above at the valley, giving the source interval."
+            },
+            "formula": "0.7\\,\\mathrm V+(0.1\\,\\mathrm{mA})R<U_s<0.1\\,\\mathrm V+(1.0\\,\\mathrm{mA})R"
+          },
+          {
+            "title": {
+              "zh": "先确保区间宽度为正",
+              "en": "First ensure the interval is nonempty"
+            },
+            "text": {
+              "zh": "由上下限比较，电阻必须大于666.667 Ω。这个条件同时保证负载线比负阻段更平缓，不能只给电源不说明电阻约束。",
+              "en": "Comparing interval endpoints requires resistance greater than 666.667 ohms, making the load line shallower than the negative-slope branch. The voltage interval alone is incomplete."
+            },
+            "formula": "R>\\frac{0.7-0.1}{(1.0-0.1)\\,\\mathrm{mA}}=666.667\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "给可检验的非唯一方案",
+              "en": "Give one independently checkable choice"
+            },
+            "text": {
+              "zh": "选1 kΩ、1 V，三个交点如下，均在各自原线段内部。675组独立参数网格也逐段检查均得三个合法交点。",
+              "en": "Choose 1 kilohm and 1 V. The three intersections below lie inside their original segments. An independent 675-case parameter grid also verifies three valid segment roots."
+            },
+            "formula": "R=1\\,\\mathrm{k\\Omega},\\quad U_s=1\\,\\mathrm V:\\quad(u,i)\\approx(0.090909\\,\\mathrm V,0.909091\\,\\mathrm{mA}),\\ (0.300\\,\\mathrm V,0.700\\,\\mathrm{mA}),\\ (0.794118\\,\\mathrm V,0.205882\\,\\mathrm{mA})"
+          },
+          {
+            "title": {
+              "zh": "边界重根不能算三个不同工作点",
+              "en": "Coincident corner roots are not three different points"
+            },
+            "text": {
+              "zh": "附录用非严格不等式，包含负载线通过峰点或谷点的边界；相邻两段在那里是同一个工作点，只有两个互异交点。电阻恰666.667 Ω且电源恰0.766667 V时负载线与整个负阻段重合，反而出现连续无穷多静态点，不是恰好三个。",
+              "en": "The appendix uses non-strict bounds, including a load line through a peak or valley. Adjacent-segment roots then coincide, giving only two distinct points. At exactly 666.667 ohms and 0.766667 V the whole negative-slope segment coincides with the load line, giving a continuum rather than exactly three points."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "三个互异点要求$R>666.667\\,\\Omega$及严格电源区间；例如1 kΩ、1 V满足。",
+          "en": "Three distinct points require resistance above 666.667 ohms and the strict source interval. One choice is 1 kilohm and 1 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "R-range",
+          "Us-range",
+          "nonunique-example",
+          "three-example-points",
+          "boundary-degeneracy"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "RstrictMin": 666.6666666666666,
+            "UsLower": 0.7999999999999999,
+            "UsUpper": 1.1,
+            "example": [
+              {
+                "u": 0.09090909090909091,
+                "i": 0.0009090909090909091
+              },
+              {
+                "u": 0.3,
+                "i": 0.0007
+              },
+              {
+                "u": 0.7941176470588235,
+                "i": 0.0002058823529411765
+              }
+            ],
+            "threeRootGridCases": 675
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "discrepancy",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "严格参数区间内，三个交点各在一个原线段内部。",
+              "en": "Inside the strict parameter interval, each intersection lies within one original segment."
+            },
+            "caption": {
+              "zh": "严格参数区间内，三个交点各在一个原线段内部。",
+              "en": "Inside the strict parameter interval, each intersection lies within one original segment."
+            },
+            "figure": "ca-4-10-three-points.svg"
+          }
+        ],
+        "figure": "ca-4-10-figure.png"
+      },
+      "CA-4-11": {
+        "id": "CA-4-11",
+        "bookId": "4-11",
+        "title": {
+          "zh": "带并联电阻的负载线不能漏分流",
+          "en": "Include the resistor shunt in the driving load line"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 103,
+          "pdfPage": 112,
+          "figure": "题图4-9",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "题图4-9(a)中$u_s=10$ V，两电阻均$R=2\\,\\Omega$，网络N特性见(b)：$u\\le2$ V时$i=0$，2至5 V时电流从0线性增至6 A，之后电流为6 A。（1）求端口静态$u,i$及并联电阻电流$i_1$、串联电阻电流$i_2$；（2）电源在4至10 V变化时，求静态工作点范围。",
+          "en": "Fig. 4-9 uses source 10 V and two 2-ohm resistors. Network N has zero current through 2 V, then a straight rise to 6 A at 5 V, followed by constant 6 A. (1) Find port voltage/current and shunt/series resistor currents. (2) Find the DC-point range as source varies from 4 to 10 V."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)从节点KCL求外部特性",
+              "en": "(1) Derive the driving characteristic by KCL"
+            },
+            "text": {
+              "zh": "串联支路电流先分给2 Ω电阻，再流入N。等效戴维南电压是源电压一半，电阻1 Ω。",
+              "en": "The series current splits into the resistor and network. The Thevenin source is half the original source with 1-ohm resistance."
+            },
+            "formula": "\\frac{u_s-u}{2}=\\frac u2+i\\quad\\Rightarrow\\quad i=\\frac{u_s}{2}-u"
+          },
+          {
+            "title": {
+              "zh": "选正确线段求端口与两支流",
+              "en": "Solve the valid segment and both resistor currents"
+            },
+            "text": {
+              "zh": "在10 V时联立斜升段$i=2(u-2)$得3 V、2 A，确在2至5 V内。电阻支流依原图箭头都为正。",
+              "en": "For 10 V, intersect rising segment $i=2(u-2)$ to get 3 V and 2 A, inside the 2–5 V segment. Both resistor currents are positive under the drawn arrows."
+            },
+            "formula": "u=3\\,\\mathrm V,\\quad i=2\\,\\mathrm A,\\quad i_1=\\frac u2=1.5\\,\\mathrm A,\\quad i_2=\\frac{10-u}{2}=3.5\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "(2)沿同一线段追踪工作点",
+              "en": "(2) Track the same segment over the source range"
+            },
+            "text": {
+              "zh": "当源从4增至10 V，起点正好在曲线拐点2 V、零电流，终点为3 V、2 A。给出耦合关系，不能把两个独立区间任意组合成所有可能点。",
+              "en": "As source rises from 4 to 10 V, the point moves from the corner (2 V,0 A) to (3 V,2 A). Retain their coupled relation rather than treating voltage/current intervals as freely combinable."
+            },
+            "formula": "u=\\frac{u_s}{6}+\\frac43\\,\\mathrm V,\\quad i=\\frac{u_s-4\\,\\mathrm V}{3\\,\\Omega},\\quad 2\\le u\\le3\\,\\mathrm V,\\quad i=2(u-2)"
+          }
+        ],
+        "answer": {
+          "zh": "10 V时端口3 V、2 A，支流1.5 A、3.5 A；源4至10 V时工作点沿斜线从(2 V,0 A)到(3 V,2 A)。",
+          "en": "At source 10 V: port 3 V/2 A and resistor currents 1.5/3.5 A. Over source 4–10 V, the point follows the rising segment from (2 V,0 A) to (3 V,2 A)."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-port-point",
+          "1-two-resistor-currents",
+          "2-range-and-parametric-relation"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "atUs10": {
+              "u": 3,
+              "i": 2,
+              "i1": 1.5,
+              "i2": 3.5
+            },
+            "range": {
+              "u": [
+                2,
+                3
+              ],
+              "i": [
+                0,
+                2
+              ]
+            }
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "figure": "ca-4-11-figure.png"
+      },
+      "CA-4-12": {
+        "id": "CA-4-12",
+        "bookId": "4-12",
+        "title": {
+          "zh": "从折点电压和斜率合成网络",
+          "en": "Synthesize a network from knee voltage and slope"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 103,
+          "pdfPage": 112,
+          "figure": "题图4-10",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "用电阻、理想二极管和独立电源组成两个单口网络，分别实现题图4-10(a)(b)特性：(a)在2 V前电流为零，此后直线经过(3 V,1 A)；(b)直线经过(0 V,−1 A)和(1 V,0 A)，端口采用关联方向。",
+          "en": "Construct two one-ports using resistors, ideal diodes and independent sources for Fig. 4-10: (a) zero current up to 2 V, then a line through (3 V,1 A); (b) a line through (0 V,−1 A) and (1 V,0 A), with passive port references."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(a)1 Ω决定斜率，2 V源决定开启点",
+              "en": "(a) One ohm sets slope and a 2 V source sets the knee"
+            },
+            "text": {
+              "zh": "从上正端依次串入正向二极管、1 Ω电阻、上正下负2 V独立电压源，再回到负端。二极管截止时电流零，正向压为$u-2$不大于零；导通时理想管压零，剩余电压落在电阻上。",
+              "en": "From the positive port connect a forward diode, 1-ohm resistor and top-positive 2 V source in series to the negative port. Off-state current is zero and diode voltage $u-2$ is nonpositive. On-state diode voltage is zero and the remaining voltage falls on the resistor."
+            },
+            "formula": "i=\\begin{cases}0,&u\\le2\\,\\mathrm V\\\\\\frac{u-2\\,\\mathrm V}{1\\,\\Omega},&u\\ge2\\,\\mathrm V\\end{cases}"
+          },
+          {
+            "title": {
+              "zh": "(b)线性曲线无需另加二极管",
+              "en": "(b) A straight line needs no additional diode"
+            },
+            "text": {
+              "zh": "可用1 Ω电阻并联向上1 A电流源，端口流入电流等于电阻电流减去源注入电流。等效地，也可用1 Ω串联上正1 V电压源。实现不是唯一，不必强行在整条直线上加一个会限制方向的二极管。",
+              "en": "Use a 1-ohm resistor in parallel with an upward 1 A source. Port-entering current is resistor current minus source injection. Equivalently use a 1-ohm resistor in series with a top-positive 1 V source. The realization is nonunique; no diode is needed to restrict an otherwise bidirectional line."
+            },
+            "formula": "i=\\frac{u}{1\\,\\Omega}-1\\,\\mathrm A\\qquad\\Leftrightarrow\\qquad u=(1\\,\\Omega)i+1\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "(a)正向理想管、1 Ω与2 V源串联；(b)1 Ω并联向上1 A源，或等效串联1 V源。配图给出端口和电源方向。",
+          "en": "(a) Series forward ideal diode, 1 ohm and 2 V source. (b) Parallel 1 ohm/upward 1 A source, or equivalent series 1 V source. The diagram gives explicit references."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-network",
+          "a-on-off-check",
+          "b-network",
+          "b-alternative"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "a": "i=max(u-2,0), R=1 ohm + ideal forward diode + 2 V series source",
+            "b": "i=u-1, R=1 ohm + upward parallel 1 A source"
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "一组可复现的非唯一网络方案，标明二极管、电源与端口方向。",
+              "en": "One reproducible, nonunique realization with diode, source and port references."
+            },
+            "caption": {
+              "zh": "一组可复现的非唯一网络方案，标明二极管、电源与端口方向。",
+              "en": "One reproducible, nonunique realization with diode, source and port references."
+            },
+            "figure": "ca-4-12-network-realizations.svg"
+          }
+        ],
+        "figure": "ca-4-12-figure.png"
+      },
+      "CA-4-13": {
+        "id": "CA-4-13",
+        "bookId": "4-13",
+        "title": {
+          "zh": "先化戴维南，再拟合指定电压区间",
+          "en": "Thevenin reduction followed by local piecewise fitting"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 103,
+          "pdfPage": 112,
+          "figure": "题图4-11",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "题图4-11(a)：$U_1=50$ V、$U_2=64$ V、$R_1=3.5\\,\\Omega,R_2=3\\,\\Omega,R_3=55\\,\\Omega$；非线性$R_4$的曲线如(b)，工作电压范围20至50 V。用分段线性化法求流过$R_4$的向下电流$I$。",
+          "en": "Fig. 4-11(a) has sources 50/64 V, branch resistors 3.5/3 ohms and a 55-ohm resistor in series with nonlinear R4. Use its plotted characteristic over working voltage 20–50 V and piecewise linearization to find downward current."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "两电源支路合成戴维南源",
+              "en": "Reduce the two source branches to Thevenin form"
+            },
+            "text": {
+              "zh": "两个电压源带不同串联电阻，开路端压按电导加权；置零电压源后两电阻并联。55 Ω是负载支路串联电阻，仍须保留。",
+              "en": "The two source voltages combine with conductance weighting; zeroing them leaves parallel resistors. Retain the 55-ohm series load resistor."
+            },
+            "formula": "U_{th}=\\frac{50/3.5+64/3}{1/3.5+1/3}=57.538462\\,\\mathrm V,\\quad R_{th}=3.5\\parallel3=1.615385\\,\\Omega"
+          },
+          {
+            "title": {
+              "zh": "读指定工作区两端作弦线近似",
+              "en": "Fit a secant through the specified working interval"
+            },
+            "text": {
+              "zh": "按图在20 V附近电流约0.2 A、50 V附近约0.3 A，取这两点连成线段，动态近似电阻300 Ω、截距负40 V。这是题目要求的分段近似，原曲线本身并未给解析式，不能声称完全精确。",
+              "en": "The plot gives approximately 0.2 A at 20 V and 0.3 A at 50 V. Their secant has 300-ohm slope and minus-40-V intercept. This is the requested piecewise approximation; no exact analytic characteristic is supplied."
+            },
+            "formula": "U\\simeq20+\\frac{50-20}{0.3-0.2}(I-0.2)=300I-40\\quad(\\mathrm V)"
+          },
+          {
+            "title": {
+              "zh": "求交点并验证仍落在原区间",
+              "en": "Solve the intersection and verify interval membership"
+            },
+            "text": {
+              "zh": "代入端口回路得电流约0.273512 A、非线性元件电压约42.0535 V，处于20至50 V内，所选分段自洽。左50 V源支流为负约2.02761 A，右64 V源约2.30112 A，两者代数和等于负载电流。数值小数只是线段模型的运算精度，最终应报告约0.274 A的图解精度。",
+              "en": "The intersection gives current about 0.273512 A and nonlinear voltage 42.0535 V, inside the assumed interval. Source-branch currents are approximately minus 2.02761 A and plus 2.30112 A, summing to load current. Extra digits describe arithmetic in the secant model; the graphical answer is about 0.274 A."
+            },
+            "formula": "I\\simeq\\frac{57.538462+40}{300+55+1.615385}=0.273512\\,\\mathrm A,\\quad U\\simeq42.0535\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "指定区间弦线近似给$I\\approx0.274$ A，元件电压约42.1 V，落在20至50 V内。",
+          "en": "The specified-interval secant gives about 0.274 A and nonlinear voltage 42.1 V, within 20–50 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "Thevenin-source",
+          "piecewise-line",
+          "current",
+          "voltage-and-interval",
+          "source-current-cross-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "Uth": 57.53846153846154,
+            "Rth": 1.6153846153846154,
+            "RtotalLinear": 56.61538461538461,
+            "I": 0.27351164797238997,
+            "U": 42.053494391716995,
+            "upperNode": 57.09663503019844,
+            "sourceBranchCurrents": [
+              -2.0276100086281263,
+              2.3011216566005195
+            ]
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "not-listed",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "conditionalSubparts": [
+          "graphical-secant-approximation"
+        ],
+        "figure": "ca-4-13-figure.png"
+      },
+      "CA-4-14": {
+        "id": "CA-4-14",
+        "bookId": "4-14",
+        "title": {
+          "zh": "偏置处求导，别把静态电阻用于交流",
+          "en": "Differentiate at the bias instead of using DC resistance"
+        },
+        "source": {
+          "title": "电路分析基础",
+          "edition": 3,
+          "printedPage": 103,
+          "pdfPage": 112,
+          "figure": "题图4-12",
+          "figurePrintedPage": 103,
+          "figurePdfPage": 112
+        },
+        "statement": {
+          "zh": "题图4-12：2 Ω电阻、上正下负直流5 V源及小交流源$u_s(t)$串联非线性元件，$u=2i+i^3$，电流顺时针。已知$u_s=0$时电流1 A；若$u_s(t)=\\cos\\omega t$ V，用小信号分析法求回路电流。",
+          "en": "Fig. 4-12 places 2 ohms, a top-positive 5 V source and small AC source in series with $u=2i+i^3$, under clockwise current. At zero AC current is 1 A. For a cosine source of 1 V peak, find loop current by small-signal analysis."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：第4章不在已给考试学习路线内；用于完整教材覆盖及非线性建模训练，不升为必考。",
+          "en": "Full-book extension: chapter 4 is outside the supplied exam study route. It completes the textbook and practices nonlinear modeling, without adding exam requirements."
+        },
+        "recognition": {
+          "zh": "先按图中关联方向列KCL/KVL，再代元件特性；保留全部实根，并逐个核验分段和工作区。图读数、线性化近似与精确代数结果分别注明。",
+          "en": "Write KCL/KVL using the drawn references before inserting characteristics. Retain every real root and check its segment and operating region. Distinguish graph readings, linear approximations and exact algebra."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先核对给出的静态工作点",
+              "en": "Check the supplied bias first"
+            },
+            "text": {
+              "zh": "1 A时非线性元件3 V、线性电阻2 V，正好等于直流5 V。非线性元件静态电阻3 Ω不用于求交流增量。",
+              "en": "At 1 A the nonlinear element drops 3 V and the resistor 2 V, totaling the 5 V source. Its static resistance 3 ohms is not the incremental resistance."
+            },
+            "formula": "5=2I_Q+(2I_Q+I_Q^3),\\quad I_Q=1\\,\\mathrm A"
+          },
+          {
+            "title": {
+              "zh": "在1 A处求切线并叠加偏置",
+              "en": "Linearize at 1 A and add the bias"
+            },
+            "text": {
+              "zh": "局部动态电阻为5 Ω，与外部2 Ω串联得到7 Ω。先求交流电流，再加原静态1 A。这里允许的叠加仅在已经线性化的增量模型中，不能用于原三次元件全局。",
+              "en": "Local incremental resistance is 5 ohms; with the external 2 ohms total incremental resistance is 7 ohms. Add the resulting AC change to the 1 A bias. Superposition applies to this linearized model, not the original cubic globally."
+            },
+            "formula": "r_d=\\left.\\frac{du}{di}\\right|_{1}=2+3(1)^2=5\\,\\Omega,\\quad i(t)\\simeq1+\\frac17\\cos\\omega t\\quad(\\mathrm A)"
+          },
+          {
+            "title": {
+              "zh": "用原方程说明小信号误差",
+              "en": "Use the original equation to quantify approximation"
+            },
+            "text": {
+              "zh": "原电路精确瞬时关系为$i^3+4i=5+\\cos\\omega t$，导数始终正，故每时刻只有一个实电流。数值逐相位求解的范围约0.847708至1.134728 A；线性解约0.857143至1.142857 A，最大差约9.44 mA。题目要求的是小信号近似，不能把七分之一余弦写成严格等号。",
+              "en": "The exact relation is $i^3+4i=5+\\cos\\omega t$. Its positive derivative gives one real current at each time. Phase-by-phase solution spans about 0.847708–1.134728 A, compared with linear 0.857143–1.142857 A; maximum difference is about 9.44 mA. The requested answer is a small-signal approximation, not an exact equality."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "$i(t)\\simeq1+\\frac17\\cos\\omega t$ A；动态电阻5 Ω，原三次关系的有限幅度误差另列。",
+          "en": "$i(t)\\simeq1+\\frac17\\cos\\omega t$ A, using incremental resistance 5 ohms. The finite-amplitude cubic-model error is separately quantified."
+        },
+        "pitfalls": [
+          {
+            "zh": "非线性元件不能随意叠加；静态电阻和动态电阻不是同一个量。多根须代回原方程，图读数不应冒称任意位数精确值。",
+            "en": "Do not apply superposition to nonlinear elements. Static and incremental resistance differ. Substitute all roots into original equations; graph readings do not support arbitrary numerical precision."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "DC-point",
+          "dynamic-resistance",
+          "AC-current",
+          "total-small-signal-current",
+          "finite-amplitude-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照第3版原题全部小问与原图，独立KCL/KVL、实根代回、功率与分段条件核验；附录第335页只作交叉参考，不当作绝对正确。",
+            "en": "All supplied 3rd-edition subparts/figures checked with independent KCL/KVL, root substitution, power and segment conditions. The page-335 appendix is a cross-reference, not assumed infallible."
+          },
+          "results": {
+            "static": 1,
+            "Rd": 5,
+            "linearAmplitude": 0.14285714285714285,
+            "exactMin": 0.8477075981395665,
+            "exactMax": 1.1347284533618458,
+            "maxLinearErrorAt1VSource": 0.009435259003290675
+          },
+          "appendixPrintedPage": 335,
+          "appendixPdfPage": 344,
+          "appendixComparison": {
+            "status": "matched",
+            "reason": {
+              "zh": "附录未列4-5、4-8、4-12、4-13。4-4负电压根的第一电流由原电路得45.826 mA，而附录列41.825 mA，不满足原KCL/KVL。4-10附录非严格边界包含重合拐点；三个互异工作点须用严格不等式。其余已列结果一致或为图读数/常规舍入。",
+              "en": "The appendix omits 4-5/8/12/13. For the negative-voltage root of 4-4, the source circuit gives first current 45.826 mA, not the listed 41.825 mA, which violates original KCL/KVL. The non-strict appendix boundaries for 4-10 include coincident corner roots; three distinct points require strict inequalities. Other listed results agree or are graph/rounding approximations."
+            }
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原题图，保留参考方向、参数与伏安曲线坐标。",
+            "en": "Source figure retaining reference directions, values and characteristic axes."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "原三次方程逐相位求解与局部线性结果比较。",
+              "en": "Phase-by-phase cubic solution compared with the local linear result."
+            },
+            "caption": {
+              "zh": "原三次方程逐相位求解与局部线性结果比较。",
+              "en": "Phase-by-phase cubic solution compared with the local linear result."
+            },
+            "figure": "ca-4-14-small-signal.svg"
+          }
+        ],
+        "figure": "ca-4-14-figure.png"
       }
     }
   },
