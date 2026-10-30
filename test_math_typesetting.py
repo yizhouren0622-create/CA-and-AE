@@ -9,7 +9,7 @@ def value(e):return ''.join(e.itertext())
 
 class MathTypography(unittest.TestCase):
  def test_simulator_version_is_prose_not_a_subscript(self):
-  for name in ['ngspice47','LTspice17','PSpice23','IRF9512','IRF832','IRF840','IRF9510','CMOS']:
+  for name in ['ngspice47','LTspice17','PSpice23','IRF9512','IRF832','IRF840','IRF9510','CMOS','FET','JFET','BJT','BiFET','CMRR','RMS','KCL','KVL','NPN','PNP','BALANCE']:
    rendered=format_text('Verified with '+name+'.','en')
    self.assertIn(name,rendered)
    self.assertNotIn('<msub',rendered)

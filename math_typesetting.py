@@ -136,7 +136,7 @@ def identifier(word):
     if stem and '_' not in word:
         if stem[0] in {'is','as','at','and','to','of','in','on','or','for','by'}:return None
         if len(stem[0])>1 and stem[0] not in INDEXED_NAMES:return None
-    if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS','CMOS'):return None
+    if word in ('An','At','In','If','It','As','DC','AC','SI','PDF','PIV','TI','SPICE','NMOS','PMOS','CMOS','FET','JFET','BJT','BiFET','CMRR','RMS','KCL','KVL','NPN','PNP','BALANCE'):return None
     if word=='Re':return r'\operatorname{Re}'
     if word in ('K′_nW','i_sR'):
         return {"K′_nW":r"K'_n W",'i_sR':r'i_s R'}[word]

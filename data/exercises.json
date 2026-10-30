@@ -59810,6 +59810,1704 @@
           "finite-input-vs-steering-envelope"
         ],
         "figure": "ae-7.2.12-figure.png"
+      },
+      "AE-7.2.2": {
+        "id": "AE-7.2.2",
+        "bookId": "7.2.2",
+        "title": {
+          "zh": "尾源有限电阻：共模电流如何形成",
+          "en": "Finite tail resistance converts common input into current"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 293,
+          "pdfPage": 326,
+          "figure": "正文图7.2.7",
+          "figurePdfPage": 274,
+          "figurePrintedPage": 241
+        },
+        "statement": {
+          "zh": "电路为正文图7.2.7。$V_{DD}=V_{SS}=1.5\\,\\mathrm V,R_d=2.5\\,\\mathrm{k\\Omega}$；$T_1,T_2$的$K_n=2\\,\\frac{\\mathrm{mA}}{\\mathrm V^2},\\lambda_{n1}=\\lambda_{n2}=0.001\\,\\mathrm V^{-1},V_{TN}=0.5\\,\\mathrm V$；尾管$T_3$的$\\lambda_{n3}=0.002\\,\\mathrm V^{-1}$，$I_O=I_{REF}=0.4\\,\\mathrm{mA}$。（1）两输入为零时求$I_{D1},I_{D2},V_S,V_{D1},V_{D2}$；（2）共模输入$v_{ic}=0.2\\,\\mathrm V$时求增量$i_{D1},i_{D2},v_s,v_{d1},v_{ds1}$；（3）求双端差模增益、第一漏极单端的差模增益、共模增益与共模抑制比。",
+          "en": "Use text Fig. 7.2.7 with supplies ±1.5 V, drain resistors 2.5 kilohms, input MOS coefficient 2 milliamps per volt squared, input channel modulation 0.001 inverse volts, threshold 0.5 V, tail modulation 0.002 inverse volts, and tail/reference currents 0.4 mA. (1) Find both drain currents, common source voltage and both drain voltages at zero inputs. (2) For common input 0.2 V, find incremental drain currents, source voltage, first drain voltage and first drain-to-source voltage. (3) Find differential two-output gain and first-output differential/common gains and CMRR."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)静态平方律与动态沟道调制分开",
+              "en": "(1) Separate square-law bias from dynamic modulation"
+            },
+            "text": {
+              "zh": "沿用教材静态近似：忽略沟道调制对偏置的微小修正，但在小信号中保留输出电阻。每管分得尾流的一半，零输入使源极为负栅源电压。",
+              "en": "Use the textbook bias approximation, neglecting modulation in DC while retaining output resistance in small signal. Each device takes half the tail current and the source is minus the gate-source bias."
+            },
+            "formula": "I_D=0.2\\,\\mathrm{mA},\\quad V_S=-0.5-\\sqrt{\\frac{0.2}{2}}=-0.816228\\,\\mathrm V,\\quad V_{D1}=V_{D2}=1.5-I_DR_d=1.000\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "建立三节点模型，避免漏掉源极跟随",
+              "en": "Build three nodal equations, including source following"
+            },
+            "text": {
+              "zh": "跨导1.264911 mS，输入管输出电阻5 MΩ，尾源输出电阻1.25 MΩ。令$g_d$为输入管输出电导、$g_t$为尾源输出电导；两漏极和公共源极KCL如下。此方程保留输入管有限输出电阻，不把后面的数值说成完整非线性精确解。",
+              "en": "Transconductance is 1.264911 mS, input output resistance 5 megohms and tail resistance 1.25 megohms. With input conductance $g_d$ and tail conductance $g_t$, write both drain equations and source KCL. This retains finite output resistance but is not a full nonlinear DC solution."
+            },
+            "formula": "\\begin{array}{rl}(R_d^{-1}+g_d)v_{dk}-(g_m+g_d)v_s&=-g_mv_{ik}\\\\ [g_t+2(g_m+g_d)]v_s-g_d(v_{d1}+v_{d2})&=g_m(v_{i1}+v_{i2})\\\\ g_d&=\\lambda_n I_D,\\quad g_t=\\lambda_{n3}I_O\\end{array}"
+          },
+          {
+            "title": {
+              "zh": "(2)代入共模输入，报告增量而非总量",
+              "en": "(2) Substitute common input and report increments"
+            },
+            "text": {
+              "zh": "求得源极几乎跟随输入，漏极反而只有微小负变化。两漏流各增加79.962 nA，源极增加0.199905 V；漏源电压变化还要减去源极变化，不能只抄漏极的变化。",
+              "en": "The source nearly follows the input while each drain changes slightly downward. Each current increases by 79.962 nA and source by 0.199905 V. Drain-to-source change must also subtract source motion."
+            },
+            "formula": "i_{D1}=i_{D2}=79.962\\,\\mathrm{nA},\\quad v_s=0.199905\\,\\mathrm V,\\quad v_{d1}=-0.199905\\,\\mathrm{mV},\\quad v_{ds1}=-0.200105\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(3)按约定方向计算增益",
+              "en": "(3) Use the defined output polarity"
+            },
+            "text": {
+              "zh": "定义$v_{id}=v_{i1}-v_{i2}$，双端输出为$v_{d1}-v_{d2}$。差模下公共源极交流接地，第一输出为负；共模增益也为负。若忽略输入管5 MΩ，常规近似双端增益负3.1623，与保留它的结果接近。",
+              "en": "Define differential input as first minus second and differential output as first drain minus second. Differential excitation makes the source an AC ground and first output is negative. Common gain is also negative. Omitting the 5-megohm device resistance gives the nearby conventional two-output gain minus 3.1623."
+            },
+            "formula": "A_d=-3.160697,\\quad A_{d1}=-1.580349,\\quad A_{c1}=-9.99526\\times10^{-4},\\quad K_{CMR}=\\left|\\frac{A_{d1}}{A_{c1}}\\right|=1581.10"
+          }
+        ],
+        "answer": {
+          "zh": "静态两漏流0.2 mA，源极−0.816228 V、两漏极1 V；共模增量与三个增益见步骤，均按教材偏置及小信号模型。",
+          "en": "Bias: 0.2 mA each, source −0.816228 V and drains 1 V. Common-mode increments and gains are listed with their textbook bias/small-signal assumptions."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-bias-currents",
+          "1-source-and-drains",
+          "2-current-increments",
+          "2-source-drain-vds-increments",
+          "3-four-gains"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "textbook-DC-and-local-small-signal-model"
+        ],
+        "figure": "ae-7.2.2-figure.png"
+      },
+      "AE-7.2.3": {
+        "id": "AE-7.2.3",
+        "bookId": "7.2.3",
+        "title": {
+          "zh": "共模上下界分别由尾管和输入管决定",
+          "en": "The tail and input devices set opposite common-mode limits"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 293,
+          "pdfPage": 326,
+          "figure": "正文图7.2.7",
+          "figurePdfPage": 274,
+          "figurePrintedPage": 241
+        },
+        "statement": {
+          "zh": "电路参数同7.2.2；忽略尾管$\\lambda_{n3}$，另给$V_{TN3}=0.5\\,\\mathrm V,K_{n3}=4\\,\\frac{\\mathrm{mA}}{\\mathrm V^2}$。求共模输入电压范围。",
+          "en": "Use the circuit and values of 7.2.2, neglect tail channel modulation, and take tail threshold 0.5 V and coefficient 4 milliamps per volt squared. Find the common-mode input range."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "下限由尾管饱和余量决定",
+              "en": "Tail saturation sets the lower limit"
+            },
+            "text": {
+              "zh": "尾管源极在负1.5 V，过驱动为0.316228 V。公共源极必须不低于负1.183772 V；再加上输入管0.816228 V栅源压得到共模下限。",
+              "en": "The tail source is at minus 1.5 V and its overdrive is 0.316228 V. The common source must be at least minus 1.183772 V. Adding the input gate-source bias 0.816228 V gives the lower input limit."
+            },
+            "formula": "V_{OV3}=\\sqrt{\\frac{I_O}{K_{n3}}}=0.316228\\,\\mathrm V,\\quad V_{ic,min}=-V_{SS}+V_{OV3}+V_{GS1}=-0.367544\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "上限由输入管漏极电位决定",
+              "en": "The input drain voltage sets the upper limit"
+            },
+            "text": {
+              "zh": "共模时每管漏流仍0.2 mA，漏极仍1 V。NMOS饱和条件$V_{DS}\\ge V_{GS}-V_{TN}$可化为漏极电位不低于栅极减阈值，源极正好消掉。",
+              "en": "Common excitation leaves each nominal current at 0.2 mA and drain at 1 V. Rearranging NMOS saturation cancels the source voltage: drain must be at least gate minus threshold."
+            },
+            "formula": "V_{ic,max}=V_D+V_{TN}=1.500\\,\\mathrm V,\\qquad -0.367544\\le V_{ic}\\le1.500\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "边界等号是工作区交界，实用需留余量",
+              "en": "Equality is a region boundary; practical operation needs margin"
+            },
+            "text": {
+              "zh": "上述范围沿用前题忽略静态沟道调制的偏置近似；两端等号恰好是饱和边界。若把前题的输入管沟道调制也加入完整直流模型，应重新求偏置，而不能把小信号输出电阻直接外推为精确边界。",
+              "en": "This range uses the preceding textbook DC approximation. Equality is exactly the saturation boundary. Including full input-device DC channel modulation requires a new bias solution; a local output resistance is not a global exact boundary."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "教材静态模型给共模范围约−0.3675至+1.500 V；下限看尾管，上限看输入管。",
+          "en": "The textbook DC model gives approximately −0.3675 to +1.500 V: tail saturation sets the lower bound, input saturation the upper."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "tail-overdrive",
+          "lower-bound",
+          "upper-bound",
+          "model-boundary"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "figure": "ae-7.2.3-figure.png"
+      },
+      "AE-7.2.5": {
+        "id": "AE-7.2.5",
+        "bookId": "7.2.5",
+        "title": {
+          "zh": "PMOS正负号与有限差模输入",
+          "en": "PMOS polarity and finite differential input"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 293,
+          "pdfPage": 326,
+          "figure": "图题7.2.5",
+          "figurePdfPage": 327,
+          "figurePrintedPage": 294
+        },
+        "statement": {
+          "zh": "图题7.2.5为PMOS差分对，$V_{DD}=V_{SS}=5\\,\\mathrm V,I_O=0.15\\,\\mathrm{mA},R_d=30\\,\\mathrm{k\\Omega},V_{Tp}=-0.5\\,\\mathrm V,K_p=0.12\\,\\frac{\\mathrm{mA}}{\\mathrm V^2},\\lambda=0$，尾源动态电阻4 MΩ。（1）输入分别为$(+0.05,-0.05)$ V和$(+0.1,-0.1)$ V时求$v_{o1}-v_{o2}$；（2）输入由零变为$(+0.1,-0.1)$ V，求第二输出变化；（3）输入由零变为$(−1.1,−0.9)$ V，求第二输出变化。",
+          "en": "The PMOS pair has supplies ±5 V, tail 0.15 mA, drain resistors 30 kilohms, threshold −0.5 V, coefficient 0.12 milliamps per volt squared, zero channel modulation and tail dynamic resistance 4 megohms. (1) Find first minus second output for inputs (+0.05,−0.05) and (+0.1,−0.1) V. (2) Find second-output change from zero inputs to (+0.1,−0.1) V. (3) Repeat for (−1.1,−0.9) V."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "先建立小信号增益",
+              "en": "Establish local gains first"
+            },
+            "text": {
+              "zh": "静态每管75 μA，输出均负2.75 V。正的第一栅极变化减小第一支路电流，所以第一输出下降，第二输出上升。尾源有限动态电阻使共模增益为负。",
+              "en": "Each device carries 75 microamps and both outputs are minus 2.75 V. A positive first-gate change reduces its current, lowering first output and raising second. Finite tail resistance gives negative common gain."
+            },
+            "formula": "g_m=2\\sqrt{K_pI_O/2}=0.189737\\,\\mathrm{mS},\\quad A_d=-g_mR_d=-5.692100,\\quad A_{d2}=2.846050,\\quad A_{c2}=-\\frac{g_mR_d}{1+2g_mr_o}=-0.003747531"
+          },
+          {
+            "title": {
+              "zh": "(1)(2)按教材线性模型计算",
+              "en": "(1)(2) Calculate with the textbook linear model"
+            },
+            "text": {
+              "zh": "两种输入差值为0.1和0.2 V，共模均零，双端输出变化分别负0.569210和负1.138420 V。第二问第二输出变化正0.569210 V；不要把单端的二分之一漏掉。",
+              "en": "Differential inputs are 0.1 and 0.2 V with zero common input. Two-output changes are minus 0.569210 and minus 1.138420 V. Part 2 second-output change is plus 0.569210 V; retain the single-output factor one-half."
+            },
+            "formula": "v_{o1}-v_{o2}\\simeq-0.569210,\\,-1.138420\\,\\mathrm V,\\qquad\\Delta v_{o2}^{(2)}\\simeq+0.569210\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(3)分解成负差模与负共模",
+              "en": "(3) Resolve negative differential and common components"
+            },
+            "text": {
+              "zh": "第三问$v_{id}=-0.2$ V、$v_{ic}=-1$ V，故第二输出是差模负变化加共模正变化。4 MΩ只是局部斜率，未规定尾源随一整伏变化的完整直流特性，因此此值明确标作教材线性估计，而非无条件精确结果。",
+              "en": "Part 3 has differential minus 0.2 V and common minus 1 V. The negative differential contribution combines with a positive common contribution. The 4-megohm value is only a local slope and does not define the tail current over a full volt; this is explicitly a textbook linear estimate."
+            },
+            "formula": "\\Delta v_{o2}^{(3)}\\simeq A_{d2}(-0.2)+A_{c2}(-1)=-0.565462\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "用平方律核对差模有限幅度误差",
+              "en": "Check finite differential amplitude with the square law"
+            },
+            "text": {
+              "zh": "若另假设直流尾流严格固定，令$d=v_{id}$，平方律可独立求出精确转向式。两种双端结果为负0.568070和负1.129276 V，第二问第二输出正0.564638 V。这些是固定尾流模型结果，不能拿它们冒充含未给全局尾源特性的第三问唯一精确答案。",
+              "en": "Under the additional assumption of fixed DC tail current, the square law gives an independent finite-steering expression. Two-output values are minus 0.568070 and minus 1.129276 V, and part 2 change plus 0.564638 V. These belong to the fixed-tail model, not a unique exact solution to part 3 with unspecified global tail behavior."
+            },
+            "formula": "v_{o1}-v_{o2}=-K_pR_dd\\sqrt{\\frac{2I_O}{K_p}-d^2},\\qquad |d|\\le\\sqrt{\\frac{I_O}{K_p}}"
+          }
+        ],
+        "answer": {
+          "zh": "线性答案依次：双端−0.569210/−1.138420 V，第二输出变化+0.569210与−0.565462 V。固定尾流平方律修正与大共模欠定条件另列。",
+          "en": "Linear answers: two-output −0.569210/−1.138420 V; second-output changes +0.569210 and −0.565462 V. Fixed-tail square-law corrections and the global-tail limitation are separately stated."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-two-input-cases",
+          "2-second-output-change",
+          "3-differential-and-common",
+          "finite-amplitude-and-tail-model"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "finite-common-mode-tail-DC-unspecified"
+        ],
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "固定尾流平方律与局部切线的比较；它不指定尾源的大范围直流特性。",
+              "en": "Fixed-tail square law versus local tangent; the global tail DC law is not specified."
+            },
+            "caption": {
+              "zh": "固定尾流平方律与局部切线的比较；它不指定尾源的大范围直流特性。",
+              "en": "Fixed-tail square law versus local tangent; the global tail DC law is not specified."
+            },
+            "figure": "ae-7.2.5-steering.svg"
+          }
+        ],
+        "figure": "ae-7.2.5-figure.png"
+      },
+      "AE-7.2.7": {
+        "id": "AE-7.2.7",
+        "bookId": "7.2.7",
+        "title": {
+          "zh": "尾流是发射极电流之和",
+          "en": "Tail current is the sum of emitter currents"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 294,
+          "pdfPage": 327,
+          "figure": "正文图7.2.9(a)",
+          "figurePdfPage": 277,
+          "figurePrintedPage": 244
+        },
+        "statement": {
+          "zh": "正文图7.2.9(a)，$V_{CC}=V_{EE}=10\\,\\mathrm V,I_O=1\\,\\mathrm{mA},r_o=25\\,\\mathrm{k\\Omega},R_{c1}=R_{c2}=10\\,\\mathrm{k\\Omega},\\beta=200,V_{BE}=0.7\\,\\mathrm V$。（1）零输入求两管$I_C,V_E,V_{CE}$；（2）求双端差模增益、第一集电极单端差模/共模增益与共模抑制比。",
+          "en": "Text Fig. 7.2.9(a) uses supplies ±10 V, tail 1 mA with dynamic resistance 25 kilohms, collector resistors 10 kilohms, beta 200 and junction voltage 0.7 V. (1) At zero inputs find both collector currents, emitter potential and collector-emitter voltages. (2) Find two-output differential gain and first-output differential/common gains and CMRR."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)保留有限电流增益",
+              "en": "(1) Retain finite beta in the bias"
+            },
+            "text": {
+              "zh": "每管发射极流0.5 mA，集电极要乘$\\alpha$。发射极负0.7 V，先求集电极电位再减发射极，得到正的集射压。",
+              "en": "Each emitter carries 0.5 mA; multiply by alpha for collector current. Emitter potential is minus 0.7 V. Subtract it from collector potential to obtain the positive collector-emitter voltage."
+            },
+            "formula": "\\alpha=\\frac{200}{201},\\quad I_C=\\alpha\\frac{I_O}{2}=0.497512\\,\\mathrm{mA},\\quad V_C=5.024876\\,\\mathrm V,\\quad V_E=-0.700\\,\\mathrm V,\\quad V_{CE}=5.724876\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)差模半电路与共模半电路",
+              "en": "(2) Differential and common half-circuits"
+            },
+            "text": {
+              "zh": "题目未指定温度，数值取$V_T=26$ mV，忽略未给出的晶体管输出电阻。差模下公共发射极交流接地；共模下每半电路看到两倍尾源电阻，且折算到基极须乘$\\beta+1$。",
+              "en": "Temperature is unspecified; numerical values assume thermal voltage 26 mV and neglect unspecified transistor output resistance. The emitter is AC ground for differential excitation. Each common-mode half sees twice the tail resistance, reflected to base by beta plus one."
+            },
+            "formula": "r_\\pi=\\frac{\\beta V_T}{I_C}=10.452\\,\\mathrm{k\\Omega},\\quad A_d=-\\frac{\\beta R_C}{r_\\pi}=-191.350938,\\quad A_{d1}=\\frac{A_d}{2}=-95.675469"
+          },
+          {
+            "title": {
+              "zh": "共模与抑制比使用同一单端输出",
+              "en": "Use the same single output for common gain and CMRR"
+            },
+            "text": {
+              "zh": "共模输出第一端为负，不可把双端差模增益除单端共模增益，否则抑制比多一倍。若采用大电流增益偏置近似，会得到略有差别的常规数值，应保持一套模型到底。",
+              "en": "First-output common gain is negative. Do not divide two-output differential gain by single-output common gain, which doubles CMRR incorrectly. Large-beta bias approximations give slightly different conventional values; use one consistent model."
+            },
+            "formula": "A_{c1}=-\\frac{\\beta R_C}{r_\\pi+2(\\beta+1)r_o}=-0.1987982,\\quad K_{CMR}=\\left|\\frac{A_{d1}}{A_{c1}}\\right|=481.269"
+          }
+        ],
+        "answer": {
+          "zh": "每管集电极0.497512 mA、集射压5.724876 V；26 mV热电压下双端增益−191.351，第一单端−95.6755，共模−0.198798，CMRR约481.27。",
+          "en": "Each collector carries 0.497512 mA with 5.724876 V collector-emitter bias. At thermal voltage 26 mV: differential two-output −191.351, first output −95.6755, common −0.198798, CMRR 481.27."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-two-collector-currents",
+          "1-emitter-and-VCE",
+          "2-differential-gains",
+          "2-common-and-CMRR"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "figure": "ae-7.2.7-figure.png"
+      },
+      "AE-7.2.8": {
+        "id": "AE-7.2.8",
+        "bookId": "7.2.8",
+        "title": {
+          "zh": "跨接负载必须先分成两半",
+          "en": "Split a bridge load before using a half-circuit"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 294,
+          "pdfPage": 327,
+          "figure": "图题7.2.8",
+          "figurePdfPage": 327,
+          "figurePrintedPage": 294
+        },
+        "statement": {
+          "zh": "图题7.2.8：$R_{c1}=R_{c2}=5.6\\,\\mathrm{k\\Omega},R_{e1}=R_{e2}=100\\,\\Omega$，电源正负10 V，尾流2 mA、动态电阻100 kΩ，$\\beta=100,V_{BE}=0.6\\,\\mathrm V$。（1）输入$(+0.01,-0.01)$ V求双端输出；（2）两集电极间接$R_L=5.6$ kΩ再求；（3）无跨接负载时求第二单端差模/共模增益及CMRR；（4）求差模输入电阻、共模输入电阻、第二输出电阻。",
+          "en": "Fig. 7.2.8 has collector resistors 5.6 kilohms, emitter resistors 100 ohms, supplies ±10 V, tail 2 mA with dynamic resistance 100 kilohms, beta 100 and junction drop 0.6 V. (1) Find two-output voltage for inputs (+0.01,−0.01) V. (2) Repeat with 5.6 kilohms across collectors. (3) Without that load, find second-output differential/common gains and CMRR. (4) Find differential input, common input and second-output resistances."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "偏置与发射极退化",
+              "en": "Bias and emitter degeneration"
+            },
+            "text": {
+              "zh": "取$V_T=26$ mV，每管集电极0.990099 mA，$r_\\pi=2626$ Ω。每半输入电阻包含发射极电阻折算项。未给晶体管输出电阻，按无穷大处理。",
+              "en": "Assume thermal voltage 26 mV. Each collector carries 0.990099 mA, giving intrinsic input resistance 2626 ohms. Each input half includes the reflected emitter resistor. Unspecified collector output resistance is neglected."
+            },
+            "formula": "D=r_\\pi+(\\beta+1)R_e=12726\\,\\Omega,\\quad A_d=-\\frac{\\beta R_C}{D}=-44.004400"
+          },
+          {
+            "title": {
+              "zh": "(1)(2)桥负载不是单边接地负载",
+              "en": "(1)(2) A bridge load differs from a grounded load"
+            },
+            "text": {
+              "zh": "原输出为负0.880088 V。纯差模时跨接5.6 kΩ在每半电路成为2.8 kΩ，仍须和原5.6 kΩ集电极电阻并联，得到1.866667 kΩ。新输出为原来的三分之一，负0.293363 V，不能只把集电极阻替换成2.8 kΩ。",
+              "en": "Original output is minus 0.880088 V. A 5.6-kilohm bridge becomes 2.8 kilohms per differential half, still in parallel with the original 5.6 kilohms: effective resistance is 1.866667 kilohms. Output is one-third, minus 0.293363 V. Do not simply replace the collector resistor by 2.8 kilohms."
+            },
+            "formula": "v_o=A_d(0.02)=-0.880088\\,\\mathrm V,\\quad R_C^*=R_C\\parallel\\frac{R_L}{2}=1.866667\\,\\mathrm{k\\Omega},\\quad v_{o,L}=-0.293363\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(3)第二输出差模为正，共模为负",
+              "en": "(3) Second-output differential gain is positive"
+            },
+            "text": {
+              "zh": "移除跨接负载，第二单端差模增益取双端增益的负一半；共模时尾源100 kΩ加倍后折算到基极。",
+              "en": "Remove the bridge. Second-output differential gain is minus half the two-output gain. For common excitation, double the 100-kilohm tail resistance before reflecting it to the base."
+            },
+            "formula": "A_{d2}=22.002200,\\quad A_{c2}=-\\frac{\\beta R_C}{r_\\pi+(\\beta+1)(R_e+2r_o)}=-0.02770532,\\quad K_{CMR}=794.1508"
+          },
+          {
+            "title": {
+              "zh": "(4)说明共模输入电阻的端口定义",
+              "en": "(4) Define the common-mode resistance port"
+            },
+            "text": {
+              "zh": "差模输入阻抗是两半串联。共模输入电阻可指单个输入端对共模电压的比，也可指两输入绑一起后对总电流的比，后一数值小一半；两种约定均列出。输出测量时移去外负载。",
+              "en": "Differential input resistance is the series sum of both halves. Common resistance can refer to one input current or total current when inputs are tied; the tied-port value is half. Both conventions are stated. Remove external load when measuring output resistance."
+            },
+            "formula": "R_{id}=2D=25.452\\,\\mathrm{k\\Omega},\\quad R_{ic,each}=D+2(\\beta+1)r_o=20.212726\\,\\mathrm{M\\Omega},\\quad R_{ic,tied}=10.106363\\,\\mathrm{M\\Omega},\\quad R_{o2}=5.6\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "双端输出−0.880088 V；加桥负载后−0.293363 V。第二输出增益22.0022、共模−0.0277053、CMRR794.15；三种电阻及共模端口定义见步骤。",
+          "en": "Two-output voltage −0.880088 V, or −0.293363 V with bridge load. Second-output gains 22.0022 and −0.0277053, CMRR 794.15. Resistances and common-port convention are specified above."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-output",
+          "2-bridge-output",
+          "3-three-gains",
+          "4-Rid",
+          "4-Ric-two-conventions",
+          "4-output-resistance"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "跨接负载每半为原值一半，还须与集电极电阻并联。",
+              "en": "Each differential half sees half the bridge load, still in parallel with its collector resistor."
+            },
+            "caption": {
+              "zh": "跨接负载每半为原值一半，还须与集电极电阻并联。",
+              "en": "Each differential half sees half the bridge load, still in parallel with its collector resistor."
+            },
+            "figure": "ae-7.2.8-bridge-half.svg"
+          }
+        ],
+        "figure": "ae-7.2.8-figure.png"
+      },
+      "AE-7.2.9": {
+        "id": "AE-7.2.9",
+        "bookId": "7.2.9",
+        "title": {
+          "zh": "微安表支路加载与输入基流压降",
+          "en": "Meter loading and input base-current drops"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 294,
+          "pdfPage": 327,
+          "figure": "图题7.2.9",
+          "figurePdfPage": 328,
+          "figurePrintedPage": 295
+        },
+        "statement": {
+          "zh": "图题7.2.9：电源正负6 V，$R_{c1}=R_{c2}=5.1$ kΩ、公共发射极电阻5.1 kΩ，两基极串联电阻10 kΩ；电流表满偏100 μA，支路总电阻2 kΩ。两管$\\beta=50,V_{BE}=0.7\\,\\mathrm V,r_{bb\\prime}=300\\,\\Omega$。（1）零输入求各管$I_C,I_B,V_{CE}$；（2）求使表满偏所需差模输入电压。",
+          "en": "Fig. 7.2.9 has supplies ±6 V, collector resistors and shared emitter resistor 5.1 kilohms, base series resistors 10 kilohms, meter full scale 100 microamps and branch resistance 2 kilohms. Both transistors have beta 50, terminal base-emitter bias 0.7 V and spreading resistance 300 ohms. (1) At zero inputs find each collector/base current and collector-emitter voltage. (2) Find differential input for full scale."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)基极外串电阻也参加直流回路",
+              "en": "(1) The external base resistor affects DC bias"
+            },
+            "text": {
+              "zh": "按给出的端口$V_{BE}=0.7$ V作为直流压降；$r_{bb\\prime}$用于后续交流输入电阻，不重复加到已规定的端口压降。零输入时电流表无流，公共发射极流为两倍发射极电流。",
+              "en": "Use the specified terminal base-emitter drop of 0.7 V for DC. Spreading resistance enters subsequent AC input resistance and is not added again to this specified terminal drop. At zero input the meter carries no current; the shared resistor carries twice an emitter current."
+            },
+            "formula": "I_B=\\frac{6-0.7}{10\\,\\mathrm{k\\Omega}+2(\\beta+1)5.1\\,\\mathrm{k\\Omega}}=9.996228\\,\\mathrm{\\mu A},\\quad I_C=0.499811\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "逐级求节点电位，核对工作区",
+              "en": "Find node potentials and check the active region"
+            },
+            "text": {
+              "zh": "基极由于基流为负约0.100 V，发射极负0.800 V，集电极3.451 V。集射压4.251 V，两个晶体管均有充足余量。",
+              "en": "Base current puts each base near minus 0.100 V, emitter near minus 0.800 V and collector at 3.451 V. Collector-emitter voltage is 4.251 V with ample active-region headroom."
+            },
+            "formula": "V_E=-0.799962\\,\\mathrm V,\\quad V_C=3.450962\\,\\mathrm V,\\quad V_{CE}=4.250924\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)把满偏电流换为跨接输出电压",
+              "en": "(2) Convert full-scale current to bridge voltage"
+            },
+            "text": {
+              "zh": "满偏需两集电极差电压绝对值0.2 V。差模每半电路的负载为5.1 kΩ并1 kΩ；输入每半包括10 kΩ、300 Ω及按26 mV热电压计算的$r_\\pi$。",
+              "en": "Full scale requires collector difference magnitude 0.2 V. Each differential half sees 5.1 kilohms in parallel with 1 kilohm. Each input half includes 10 kilohms, 300 ohms and intrinsic resistance evaluated at thermal voltage 26 mV."
+            },
+            "formula": "R_C^*=5.1\\,\\mathrm{k\\Omega}\\parallel1\\,\\mathrm{k\\Omega}=836.0656\\,\\Omega,\\quad r_\\pi=\\frac{\\beta V_T}{I_C},\\quad A_d=-\\frac{\\beta R_C^*}{10\\,\\mathrm{k\\Omega}+300\\,\\Omega+r_\\pi}"
+          },
+          {
+            "title": {
+              "zh": "给出教材线性输入及指针方向",
+              "en": "Give the textbook linear input and pointer direction"
+            },
+            "text": {
+              "zh": "所得输入幅值约61.722 mV，是在偏置处线性化的答案。正的第一输入使第一集电极下降，电流从第二集电极流向第一，与原图从左到右的正表流相反；按图向右满偏应取负的差模输入。更精确大信号解还需明确温度和完整结模型，不能把小信号结果称为无失真精确阈值。",
+              "en": "The required magnitude is about 61.722 mV, a bias-linearized result. Positive first input lowers the first collector, producing meter current from second to first, opposite the drawn left-to-right positive arrow. Full scale along the arrow therefore requires negative differential input. A more exact large-signal threshold needs a specified temperature and complete junction model."
+            },
+            "formula": "|v_{s1}-v_{s2}|\\simeq\\frac{0.2\\,\\mathrm V}{|A_d|}=61.7223\\,\\mathrm{mV},\\quad I_M=+100\\,\\mathrm{\\mu A}\\Rightarrow v_{s1}-v_{s2}\\simeq-61.7223\\,\\mathrm{mV}"
+          }
+        ],
+        "answer": {
+          "zh": "每管基流9.99623 μA、集流0.499811 mA、集射压4.250924 V；26 mV热电压下满偏差模输入幅值约61.722 mV，沿图表流方向对应负输入。",
+          "en": "Each transistor: base 9.99623 microamps, collector 0.499811 mA, collector-emitter 4.250924 V. At thermal voltage 26 mV, full-scale differential input is about 61.722 mV in magnitude, negative for the drawn meter-current direction."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-Ic-Ib",
+          "1-VCE",
+          "2-loaded-gain",
+          "2-input-magnitude-and-direction"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "figure": "ae-7.2.9-figure.png"
+      },
+      "AE-7.2.11": {
+        "id": "AE-7.2.11",
+        "bookId": "7.2.11",
+        "title": {
+          "zh": "转向边界不等于严格无失真范围",
+          "en": "Full steering is not an exact distortion-free range"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 294,
+          "pdfPage": 327,
+          "figure": "正文图7.2.1(c)",
+          "figurePdfPage": 267,
+          "figurePrintedPage": 234
+        },
+        "statement": {
+          "zh": "正文图7.2.1(c)：$R_{d1}=R_{d2}=5$ kΩ，电源正负5 V，$I_O=400\\,\\mathrm{\\mu A},V_{TN}=0.5\\,\\mathrm V,W=20\\,\\mathrm{\\mu m},L=0.5\\,\\mathrm{\\mu m},K_n\\prime=200\\,\\frac{\\mathrm{\\mu A}}{\\mathrm V^2}$。（1）求$V_{GS},g_m$及“线性区”的最大差模输入、输出；（2）使最大差模输入加倍，分别求固定工艺和几何比时的新尾流及最大输出，或固定工艺和尾流时的新宽长比及最大输出。",
+          "en": "Text Fig. 7.2.1(c): drain resistors 5 kilohms, supplies ±5 V, tail 400 microamps, threshold 0.5 V, width 20 micrometres, length 0.5 micrometres and primed process coefficient 200 microamps per volt squared. (1) Find gate-source bias, transconductance and maximum differential input/output in the stated linear region. (2) Double that input limit by changing tail current at fixed geometry/process or geometry at fixed current/process; find the new parameter and output limit in each case."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)先把工艺系数换成器件平方律系数",
+              "en": "(1) Convert the primed process coefficient"
+            },
+            "text": {
+              "zh": "这里带撇号的工艺系数须乘宽长比并除以2。静态每管200 μA，由平方律求过驱动，再求跨导。",
+              "en": "The primed process coefficient is multiplied by geometry and divided by two. Each device carries 200 microamps; use the square law for overdrive and transconductance."
+            },
+            "formula": "K_n=\\frac12K_n\\prime\\frac WL=4\\,\\frac{\\mathrm{mA}}{\\mathrm V^2},\\quad V_{GS}=0.5+\\sqrt{\\frac{I_O}{2K_n}}=0.723607\\,\\mathrm V,\\quad g_m=1.788854\\,\\mathrm{mS}"
+          },
+          {
+            "title": {
+              "zh": "教材最大值指两管导通的转向边界",
+              "en": "The textbook maximum is the full-steering boundary"
+            },
+            "text": {
+              "zh": "一管刚截止时另一管承担全部尾流，得到最大差输入0.316228 V和差输出包络2 V。该曲线在边界前已经弯曲；若要求特定失真率或严格小信号线性，还需更小输入，题目没有给失真标准。",
+              "en": "When one device just turns off, the other takes the full tail current: input boundary 0.316228 V and output envelope 2 V. The transfer is already curved before cutoff. A specified distortion tolerance or strict small-signal linearity would require a smaller input; no tolerance is supplied."
+            },
+            "formula": "|v_{id}|_{steer}=\\sqrt{\\frac{I_O}{K_n}}=0.316228\\,\\mathrm V,\\quad |v_{od}|_{steer}=I_OR_d=2\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "(2)分别按平方比例改尾流或宽长比",
+              "en": "(2) Apply square scaling to current or geometry"
+            },
+            "text": {
+              "zh": "输入边界加倍要求尾流增四倍，或平方律系数减到四分之一。形式结果分别为1.6 mA、差输出8 V，或宽长比10、差输出2 V。",
+              "en": "Doubling the boundary requires four times tail current or one-quarter device coefficient. Formal results are 1.6 mA and 8 V output, or geometry ratio 10 and 2 V output."
+            },
+            "formula": "I_O^*=4I_O=1.6\\,\\mathrm{mA},\\quad |v_{od}^*|=8\\,\\mathrm V;\\qquad \\left(\\frac WL\\right)^*=10,\\quad |v_{od}^*|=2\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "8 V形式结果还要核对共模和电源余量",
+              "en": "Check common-mode headroom for the formal 8 V result"
+            },
+            "text": {
+              "zh": "尾流增四倍时，全转向导通管漏极为负3 V。若共模仍零，栅极约正0.316 V，该管已不满足饱和，不能在原偏置直接宣称得到8 V。要在边界保持饱和需共模不高于负2.81623 V，例如负3 V时源极约负3.81623 V，仍须尾源允许约1.18377 V余量。原图共模可调而题目未规定尾源余量，因此8 V须附这些条件；减几何比方案在零共模则无此漏极余量问题。",
+              "en": "With four times tail current, the conducting drain at full steering is minus 3 V. At zero common input its gate is about plus 0.316 V, violating saturation, so 8 V is not available at the original bias. Saturation requires common input no higher than minus 2.81623 V. At minus 3 V the source is about minus 3.81623 V, requiring tail compliance within 1.18377 V. The figure permits common adjustment but does not specify tail compliance, so 8 V is conditional. The geometry-change option avoids this drain-headroom problem at zero common input."
+            },
+            "formula": "V_{ic}+\\frac{|v_{id}^*|}{2}-V_{TN}\\le-3\\,\\mathrm V\\quad\\Rightarrow\\quad V_{ic}\\le-2.816228\\,\\mathrm V"
+          }
+        ],
+        "answer": {
+          "zh": "原偏置VGS0.723607 V、gm1.788854 mS；转向边界0.316228 V、输出2 V。输入加倍可用尾流1.6 mA或宽长比10；前者8 V输出须调整共模并满足尾源余量。",
+          "en": "Original bias: gate-source 0.723607 V, transconductance 1.788854 mS, steering input 0.316228 V and output 2 V. Doubling uses tail 1.6 mA or geometry ratio 10; the formal 8 V current-change output requires common-mode adjustment and tail compliance."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-VGS-gm",
+          "1-steering-limits",
+          "2-current-and-output",
+          "2-geometry-and-output",
+          "2-headroom-condition"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "no-distortion-tolerance",
+          "tail-compliance-for-8V-envelope"
+        ],
+        "figure": "ae-7.2.11-figure.png"
+      },
+      "AE-7.3.1": {
+        "id": "AE-7.3.1",
+        "bookId": "7.3.1",
+        "title": {
+          "zh": "电流镜把两半差模电流相加",
+          "en": "A mirror adds the two differential current changes"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 295,
+          "pdfPage": 328,
+          "figure": "图题7.3.1",
+          "figurePdfPage": 328,
+          "figurePrintedPage": 295
+        },
+        "statement": {
+          "zh": "图题7.3.1为NMOS输入对、PMOS镜像负载的CMOS差分放大器。电源正负10 V，$I_O=0.1\\,\\mathrm{mA}$；PMOS的$K_p=100\\,\\frac{\\mathrm{\\mu A}}{\\mathrm V^2},\\lambda_p=0.015\\,\\mathrm V^{-1},V_{Tp}=-1\\,\\mathrm V$；NMOS的$K_n=100\\,\\frac{\\mathrm{\\mu A}}{\\mathrm V^2},\\lambda_n=0.01\\,\\mathrm V^{-1},V_{Tn}=1\\,\\mathrm V$。求第二漏极单端差模电压增益。",
+          "en": "Fig. 7.3.1 uses an NMOS input pair and PMOS mirror load, supplies ±10 V and tail 0.1 mA. Both device coefficients are 100 microamps per volt squared; PMOS modulation/threshold are 0.015 inverse volts and −1 V, NMOS 0.01 inverse volts and +1 V. Find second-drain single-output differential voltage gain."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从每管一半尾流求跨导与电阻",
+              "en": "Find transconductance and resistances from half-tail bias"
+            },
+            "text": {
+              "zh": "沿用教材偏置忽略静态沟道调制，每管50 μA。这里$K_n$不带撇号，不能再除以2。漏极输出电阻由各自沟道调制求得。",
+              "en": "Use the textbook bias without DC channel modulation: 50 microamps per device. The coefficient is unprimed and must not be halved again. Output resistances follow the respective modulation parameters."
+            },
+            "formula": "g_m=2\\sqrt{K_nI_O/2}=0.141421\\,\\mathrm{mS},\\quad r_{on}=2\\,\\mathrm{M\\Omega},\\quad r_{op}=1.333333\\,\\mathrm{M\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "差模电流汇合后不再除以2",
+              "en": "Do not halve the combined differential current again"
+            },
+            "text": {
+              "zh": "正的第一输入使左支路增加，镜像负载把这份增量送到右支路；右输入为负又减小下拉电流，两者使第二输出上升。因此单端增益为正，且近似保留完整跨导。",
+              "en": "A positive first input increases left current, which is mirrored into the right branch. Negative second input also reduces pull-down current. Both raise second output, giving positive gain with the full transconductance."
+            },
+            "formula": "A_{d2}\\simeq g_m(r_{on}\\parallel r_{op})=0.141421\\,\\mathrm{mS}\\times0.8\\,\\mathrm{M\\Omega}=+113.1371"
+          },
+          {
+            "title": {
+              "zh": "有限镜像输入电阻的独立节点复核",
+              "en": "Independent nodal check with finite mirror input resistance"
+            },
+            "text": {
+              "zh": "不把左二极管连接管视为零阻，保留全部四管局部输出电阻，并令理想尾源交流开路，可由左漏极、右漏极、公共源极三节点方程得到112.8387。它是给定名义偏置下更完整的小信号结果，与教材113.14近似分列。",
+              "en": "Retain finite diode-connected mirror input resistance and all four local output resistances with an ideal AC tail. Three-node equations give 112.8387 at the nominal bias. This fuller small-signal result is stated alongside the textbook 113.14 approximation."
+            },
+            "formula": "v_{i1}=\\frac{v_{id}}2,\\quad v_{i2}=-\\frac{v_{id}}2,\\qquad A_{d2,\\,nodal}=+112.8387"
+          }
+        ],
+        "answer": {
+          "zh": "教材近似单端差模增益+113.14；保留镜像输入节点有限阻抗的名义小信号模型为+112.84。",
+          "en": "Textbook single-output differential gain is +113.14; the fuller nominal small-signal nodal model gives +112.84."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "half-tail-bias",
+          "gm-and-output-resistances",
+          "positive-single-output-gain",
+          "finite-mirror-check"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "simulation": {
+          "netlists": [
+            {
+              "file": "ae-7.3.1-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 1",
+                "en": "Executed authored local linear model 1"
+              }
+            }
+          ]
+        },
+        "figure": "ae-7.3.1-figure.png"
+      },
+      "AE-7.3.2": {
+        "id": "AE-7.3.2",
+        "bookId": "7.3.2",
+        "title": {
+          "zh": "三个串联二极管MOS决定参考电流",
+          "en": "Three diode-connected MOS devices set reference current"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 295,
+          "pdfPage": 328,
+          "figure": "正文图7.3.3",
+          "figurePdfPage": 286,
+          "figurePrintedPage": 253
+        },
+        "statement": {
+          "zh": "电路为正文图7.3.3，电源正负5 V。$T_5$至$T_8$完全相同，$K_n=10\\,\\frac{\\mathrm{\\mu A}}{\\mathrm V^2},V_{Tn}=2.33\\,\\mathrm V,\\lambda=0$；输入对与负载对匹配，$K_{n1}=K_{n2}=K_{p3}=K_{p4}=45\\,\\frac{\\mathrm{\\mu A}}{\\mathrm V^2},\\lambda_{1\\ldots4}=0.05\\,\\mathrm V^{-1}$。（1）求$I_{REF},I_O,I_{D1},I_{D2}$；（2）$v_{i1}=+5\\,\\mathrm{\\mu V},v_{i2}=-5\\,\\mathrm{\\mu V}$时，求第二输出信号电压、差模增益、共模增益与CMRR。",
+          "en": "Text Fig. 7.3.3 uses supplies ±5 V. Identical tail/reference devices T5–T8 have coefficient 10 microamps per volt squared, threshold 2.33 V and zero modulation. Matched input/load pairs have coefficient 45 microamps per volt squared and modulation 0.05 inverse volts. (1) Find reference/tail currents and both input drain currents. (2) For inputs +5/−5 microvolts, find second-output signal, differential/common gains and CMRR."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)参考支路先分电源跨度",
+              "en": "(1) Divide the supply span in the reference branch"
+            },
+            "text": {
+              "zh": "图中$T_5,T_6,T_7$串联跨10 V，三管相同且无沟道调制，所以每管栅源压10/3 V；$T_8$和$T_7$镜像得到尾流，两输入管再均分。",
+              "en": "The identical diode-connected devices T5–T7 span 10 V with zero modulation, so each gate-source voltage is one-third of 10 V. T8 mirrors T7 and the input pair splits the tail current."
+            },
+            "formula": "V_{GS5,6,7}=\\frac{10}{3}\\,\\mathrm V,\\quad I_{REF}=I_O=10\\left(\\frac{10}{3}-2.33\\right)^2\\,\\mathrm{\\mu A}=10.066778\\,\\mathrm{\\mu A},\\quad I_{D1}=I_{D2}=5.033389\\,\\mathrm{\\mu A}"
+          },
+          {
+            "title": {
+              "zh": "(2)求增益后乘完整差输入",
+              "en": "(2) Multiply gain by the full differential input"
+            },
+            "text": {
+              "zh": "输入差值是10 μV，不是5 μV。每管跨导30.1 μS，局部输出电阻3.973466 MΩ，教材理想镜像近似增益59.800664，故信号输出约正0.598007 mV。输出是交流增量，不是未给出的静态输出电位。",
+              "en": "Differential input is 10 microvolts, not 5. Each transconductance is 30.1 microsiemens and local output resistance 3.973466 megohms. The ideal-mirror textbook gain is 59.800664, giving positive 0.598007 mV signal. This is an increment, not an unspecified DC output."
+            },
+            "formula": "A_{d2}\\simeq g_m(r_{o2}\\parallel r_{o4})=59.800664,\\quad v_{o2}\\simeq A_{d2}(10\\,\\mathrm{\\mu V})=+0.598007\\,\\mathrm{mV}"
+          },
+          {
+            "title": {
+              "zh": "理想尾源的共模与有限镜像修正",
+              "en": "Ideal-tail common mode and finite-mirror correction"
+            },
+            "text": {
+              "zh": "尾源无沟道调制，交流输出电阻无穷大，匹配小信号电路的共模激励只使公共源极跟随，不改变漏极电流，故共模增益零、CMRR无穷大。保留左镜像节点有限阻抗时差模增益59.552737，输出0.595527 mV，共模仍为零；真实失配、寄生和有限尾阻不在这一理想结论内。",
+              "en": "Zero tail modulation gives infinite AC tail resistance. Matched common excitation makes the source follow without changing drain current, so common gain is zero and CMRR infinite. Finite mirror-node impedance changes differential gain to 59.552737 and output to 0.595527 mV, while common gain stays zero. Real mismatch, parasitics and finite tail resistance are outside this ideal conclusion."
+            },
+            "formula": "A_{c2}=0,\\quad K_{CMR}\\to\\infty;\\qquad A_{d2,\\,nodal}=59.552737,\\quad v_{o2,\\,nodal}=+0.595527\\,\\mathrm{mV}"
+          }
+        ],
+        "answer": {
+          "zh": "参考与尾流10.066778 μA，两支路各5.033389 μA；教材差模增益59.8007、输出+0.598007 mV；理想尾源下共模零、CMRR无穷大。",
+          "en": "Reference/tail 10.066778 microamps, each input branch 5.033389 microamps. Textbook gain 59.8007 and output +0.598007 mV; ideal-tail common gain zero and CMRR infinite."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-four-currents",
+          "2-differential-gain",
+          "2-signal-output",
+          "2-common-and-CMRR",
+          "finite-mirror-correction"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "simulation": {
+          "netlists": [
+            {
+              "file": "ae-7.3.2-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 1",
+                "en": "Executed authored local linear model 1"
+              }
+            }
+          ]
+        },
+        "figure": "ae-7.3.2-figure.png"
+      },
+      "AE-7.3.3": {
+        "id": "AE-7.3.3",
+        "bookId": "7.3.3",
+        "title": {
+          "zh": "反向供电图中的P沟道差分对",
+          "en": "A P-channel pair with the negative rail drawn above"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 295,
+          "pdfPage": 328,
+          "figure": "图题7.3.3",
+          "figurePdfPage": 328,
+          "figurePrintedPage": 295
+        },
+        "statement": {
+          "zh": "图题7.3.3为P沟道JFET输入对与NPN镜像负载，$V_-=-15\\,\\mathrm V,V_+=+15\\,\\mathrm V,I_O=1\\,\\mathrm{mA}$，尾源动态电阻2000 kΩ，输出接40 kΩ。输入JFET的$g_m=1.41\\,\\mathrm{mS},\\lambda=0.01\\,\\mathrm V^{-1}$；BJT的$r_{ce}=100$ kΩ。设电路可在线性区正常工作。（1）求第二输出的差模/共模增益与CMRR；（2）差输入40 mV时求负载信号电压。",
+          "en": "Fig. 7.3.3 has a P-channel JFET input pair with NPN mirror load, rails −15/+15 V, tail 1 mA, tail dynamic resistance 2 megohms and load 40 kilohms. JFET transconductance is 1.41 mS and modulation 0.01 inverse volts; BJT output resistance is 100 kilohms. Assume linear-region operation. (1) Find second-output differential/common gains and CMRR. (2) Find loaded signal for differential input 40 mV."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "看器件与电流方向，不按图的上下猜极性",
+              "en": "Use device polarity and current flow, not page position"
+            },
+            "text": {
+              "zh": "每个JFET偏置电流近似0.5 mA，输出电阻200 kΩ。第二输出等效负载还包含100 kΩ镜像管和40 kΩ外负载，三者并联为25 kΩ。正的第一输入减小左P沟道电流及其镜像下拉；第二输入为负又增加右P沟道注入，输出因此上升。",
+              "en": "Each JFET nominally carries 0.5 mA with output resistance 200 kilohms. Parallel this with the 100-kilohm mirror output resistance and 40-kilohm load to obtain 25 kilohms. Positive first input reduces left P-channel current and mirrored pull-down; negative second input raises right-side injection, so output rises."
+            },
+            "formula": "r_{oJ}=\\frac{1}{\\lambda I_D}=200\\,\\mathrm{k\\Omega},\\quad R_L^*=200\\parallel100\\parallel40=25\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "(1)(2)教材单位镜像近似",
+              "en": "(1)(2) Textbook unity-mirror approximation"
+            },
+            "text": {
+              "zh": "用理想等比电流镜，两份差模电流相加，增益为正35.25。共模变化在输出相消，故近似共模零、抑制比无穷大；40 mV输入给负载正1.410 V。无穷大是该近似下的相消，不代表真实电路无限抑制。",
+              "en": "With an ideal unity current mirror, differential contributions add, giving positive 35.25. Common contributions cancel approximately, giving zero common gain and infinite CMRR. Differential input 40 mV gives positive 1.410 V. Infinite CMRR belongs to this approximation, not a physical guarantee."
+            },
+            "formula": "A_{d2}\\simeq g_mR_L^*=+35.25,\\quad A_{c2}\\simeq0,\\quad K_{CMR}\\simeq\\infty,\\quad v_L\\simeq+1.410\\,\\mathrm V"
+          },
+          {
+            "title": {
+              "zh": "为什么题设不足以指定精确有限CMRR",
+              "en": "Why an exact finite CMRR is not specified"
+            },
+            "text": {
+              "zh": "已给100 kΩ只能确定BJT输出电导，不能确定二极管连接镜像管的跨导及基流；缺BJT电流增益与温度，不能从这些数推出唯一的精确共模增益。作为明确补充条件的例子，取26 mV热电压、忽略镜像基流而保留有限镜像输入跨导，三节点求解得差模35.23798、共模负4.854×10的负6次方、CMRR约726万。该例不冒充原题唯一答案。",
+              "en": "The supplied 100 kilohms fixes output conductance but not the diode-connected BJT transconductance or base currents. Missing beta and temperature prevent a unique exact common gain. As an explicit example, assume thermal voltage 26 mV and negligible base currents while retaining finite mirror input transconductance: nodal analysis gives differential 35.23798, common minus 4.854 millionths and CMRR about 7.26 million. This is not a unique original-data answer."
+            },
+            "formula": "\\text{Conditional example:}\\quad A_{d2}=35.23798,\\quad A_{c2}=-4.853997\\times10^{-6},\\quad K_{CMR}=7.25958\\times10^6"
+          }
+        ],
+        "answer": {
+          "zh": "教材近似差模+35.25、共模约零、CMRR形式无穷大，负载信号+1.410 V；精确有限CMRR仍需镜像管参数，条件示例另列。",
+          "en": "Textbook approximation: differential +35.25, common approximately zero, formal infinite CMRR and load signal +1.410 V. Exact finite CMRR requires mirror-device parameters; a conditional example is separated."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-differential",
+          "1-common-and-CMRR-approximation",
+          "2-loaded-signal",
+          "missing-mirror-model"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "BJT-beta-and-temperature-unspecified"
+        ],
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "P沟道输入与NPN镜像，两个差模变化均抬高第二输出。",
+              "en": "P-channel input and NPN mirror: both differential changes raise the second output."
+            },
+            "caption": {
+              "zh": "P沟道输入与NPN镜像，两个差模变化均抬高第二输出。",
+              "en": "P-channel input and NPN mirror: both differential changes raise the second output."
+            },
+            "figure": "ae-7.3.3-polarity.svg"
+          }
+        ],
+        "simulation": {
+          "netlists": [
+            {
+              "file": "ae-7.3.3-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 1",
+                "en": "Executed authored local linear model 1"
+              }
+            }
+          ]
+        },
+        "figure": "ae-7.3.3-figure.png"
+      },
+      "AE-7.3.4": {
+        "id": "AE-7.3.4",
+        "bookId": "7.3.4",
+        "title": {
+          "zh": "镜像负载近似相消与有限基流修正",
+          "en": "Mirror cancellation versus finite-base-current corrections"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 295,
+          "pdfPage": 328,
+          "figure": "正文图7.3.4",
+          "figurePdfPage": 287,
+          "figurePrintedPage": 254
+        },
+        "statement": {
+          "zh": "电路为正文图7.3.4：电源正负6 V，参考电阻4.7 kΩ，$R_{e6}=51\\,\\Omega,R_{e5}=100\\,\\Omega$。$T_1$至$T_4$匹配，$\\beta=107,r_{bb\\prime}=200\\,\\Omega,V_{BE}=0.7\\,\\mathrm V,r_{ce2}=r_{ce4}=167$ kΩ，$T_5$的$r_{ce5}=100$ kΩ。（1）求偏置电流；（2）求第二集电极差模/共模增益与CMRR；（3）求差模输入电阻及第二集电极输出电阻。提示$R_{o5}=r_{ce5}\\left(1+\\frac{\\beta R_{e5}}{r_{be5}+R_{e5}}\\right)$。",
+          "en": "Text Fig. 7.3.4 uses supplies ±6 V, reference resistor 4.7 kilohms and emitter resistors 51/100 ohms for T6/T5. Matched T1–T4 have beta 107, spreading resistance 200 ohms and junction voltage 0.7 V; output resistances T2/T4 are 167 kilohms and T5 100 kilohms. (1) Find bias currents. (2) Find second-collector differential/common gains and CMRR. (3) Find differential input and second-collector output resistance. Use the stated emitter-degenerated tail-resistance formula."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)先给正文采用的名义偏置",
+              "en": "(1) Start with the text nominal bias"
+            },
+            "text": {
+              "zh": "按正文忽略基流分流的直流近似，参考支路发射极电流由4.7 kΩ与51 Ω串联决定；两尾源管采用相同0.7 V，故尾流比例由51 Ω与100 Ω决定。输入与负载每支路名义集电极流约0.606504 mA，输入基流约5.66826 μA。这些是教材偏置近似，不是保留有限基流和Early效应后的完整直流解。",
+              "en": "Use the text DC approximation neglecting base-current loading. The reference emitter current is set by 4.7 kilohms plus 51 ohms; equal junction drops make the tail ratio 51 over 100. Nominal input/load collector currents are about 0.606504 mA each, with input base current about 5.66826 microamps. These are textbook bias approximations, not a full finite-base-current/Early-effect DC solution."
+            },
+            "formula": "I_{E6}\\simeq I_{REF}=\\frac{12-0.7}{4700+51}=2.378447\\,\\mathrm{mA},\\quad I_O\\simeq\\frac{51}{100}I_{E6}=1.213008\\,\\mathrm{mA},\\quad I_{C1\\ldots4}\\simeq\\frac{I_O}{2}=0.606504\\,\\mathrm{mA}"
+          },
+          {
+            "title": {
+              "zh": "(2)(3)教材理想镜像的主要结果",
+              "en": "(2)(3) Main results in the text ideal-mirror approximation"
+            },
+            "text": {
+              "zh": "取热电压26 mV，输入$r_{be}$包含200 Ω体电阻。镜像使两份差模电流汇合，共模近似相消；差模输入阻抗为两输入电阻串联，输出主要由两管输出电阻并联。CMRR无穷大只是忽略镜像误差的形式答案。",
+              "en": "Assume thermal voltage 26 mV and include the 200-ohm spreading resistance in input resistance. The mirror combines both differential currents and approximately cancels common current. Differential input resistance is the sum of both input resistances and output is mainly the parallel device resistances. Infinite CMRR is formal mirror-error neglect."
+            },
+            "formula": "r_{be}=200+\\frac{107(26\\,\\mathrm{mV})}{0.606504\\,\\mathrm{mA}}=4.786945\\,\\mathrm{k\\Omega},\\quad A_{d2}\\simeq\\frac{\\beta(r_{ce2}\\parallel r_{ce4})}{r_{be}}=+1866.43,\\quad A_{c2}\\simeq0,\\quad K_{CMR}\\simeq\\infty,\\quad R_{id}\\simeq9.573890\\,\\mathrm{k\\Omega},\\quad R_o\\simeq83.5\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "保留尾阻与镜像有限基流的条件复核",
+              "en": "Conditional check retaining tail resistance and mirror base currents"
+            },
+            "text": {
+              "zh": "原题仅给T5输出电阻，未完整给出它的输入参数；为展示提示式的数值，另假设T5也取β107、体电阻200 Ω和26 mV热电压。得到尾阻约512.574 kΩ。在上述名义偏置建立完整混合π节点模型，保留T1～T4体电阻、镜像基流和有限输出电阻，求得以下有限共模结果。它是明确参数模型的局部改进，不是替未给的厂商直流模型确定唯一失调工作点。",
+              "en": "Only T5 output resistance is fully specified. For a numerical use of the hint, additionally give T5 beta 107, spreading resistance 200 ohms and thermal voltage 26 mV: tail resistance is about 512.574 kilohms. A hybrid-pi model at the nominal bias, retaining T1–T4 spreading/base-current/output effects, gives the following finite common result. This is a declared local model refinement, not a unique offset bias inferred from an unspecified vendor DC model."
+            },
+            "formula": "R_{o5}=512.574\\,\\mathrm{k\\Omega},\\quad A_{d2}=1857.50335,\\quad A_{c2}=-0.001441473,\\quad K_{CMR}=1.288615\\times10^6,\\quad R_o=83.8920\\,\\mathrm{k\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "输入阻抗按差模端口电流定义",
+              "en": "Use differential-port current for input resistance"
+            },
+            "text": {
+              "zh": "镜像电路单端输出会产生不对称的共模输入电流，不能仅用第一输入电流倒数当作差模输入电阻。用两个端口电流差的一半定义差模电流，完整节点模型仍得9.573890 kΩ。若进一步保留全部有限基流，静态镜像也会出现不平衡，需重求输出偏置；不能同时硬指定所有电流相等、所有结压相同并宣称精确KCL。",
+              "en": "The single-output mirror can cause unequal common input currents, so the reciprocal first-input current is not the differential input resistance. Define differential current as half the port-current difference: the full nodal model still gives 9.573890 kilohms. Retaining every DC base current also unbalances the mirror and requires a new output bias; exact equal currents, fixed equal junction drops and exact KCL cannot all be imposed simultaneously."
+            },
+            "formula": "R_{id}=\\frac{v_{i1}-v_{i2}}{(i_{i1}-i_{i2})/2}=9.573890\\,\\mathrm{k\\Omega}"
+          }
+        ],
+        "answer": {
+          "zh": "正文近似：参考2.378447 mA、尾流1.213008 mA、每支路0.606504 mA；差模+1866.43、共模近零、输入9.57389 kΩ、输出83.5 kΩ。有限镜像与尾源条件模型的修正另列。",
+          "en": "Text approximation: reference 2.378447 mA, tail 1.213008 mA, each branch 0.606504 mA; gain +1866.43, common approximately zero, input 9.57389 kilohms and output 83.5 kilohms. Finite-mirror/tail conditional refinements are separated."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-reference-tail-and-branch-currents",
+          "2-differential",
+          "2-common-and-CMRR",
+          "3-input-resistance",
+          "3-output-resistance",
+          "finite-beta-and-tail-assumptions"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "VT26",
+          "T5-input-model-unspecified",
+          "textbook-nominal-DC"
+        ],
+        "simulation": {
+          "netlists": [
+            {
+              "file": "ae-7.3.4-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 1",
+                "en": "Executed authored local linear model 1"
+              }
+            }
+          ]
+        },
+        "figure": "ae-7.3.4-figure.png"
+      },
+      "AE-7.4.1": {
+        "id": "AE-7.4.1",
+        "bookId": "7.4.1",
+        "title": {
+          "zh": "互补输入与共源输出的轨到轨能力",
+          "en": "Complementary inputs and common-source rail-reaching output"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 296,
+          "pdfPage": 329,
+          "figure": "图题7.4.1",
+          "figurePdfPage": 329,
+          "figurePrintedPage": 296
+        },
+        "statement": {
+          "zh": "图题7.4.1为CMOS运放TLV9001的原理示意。输入级由NMOS对$T_1,T_2$和PMOS对$T_3,T_4$并联；第二级由互补MOS对$T_5,T_6$与$T_7,T_8$构成两个栅极耦合差分电路，上下对称并联。（1）说明共模输入范围可延伸到正负电源的原因；（2）从上半或下半看，前两级构成什么组合电路，有什么优点；（3）输出管阈值$V_{TN}=|V_{TP}|=0.5\\,\\mathrm V$，若要求输出范围$-V_{SS}+0.02\\,\\mathrm V$至$+V_{DD}-0.02\\,\\mathrm V$，其栅压有何要求？",
+          "en": "Fig. 7.4.1 sketches TLV9001. Parallel NMOS and PMOS differential input pairs feed two complementary common-gate differential stages; the upper/lower circuits are symmetric and combined. (1) Explain rail-reaching input common-mode range. (2) Identify the first-two-stage combination and its advantages. (3) Output thresholds have magnitude 0.5 V. State gate-drive requirements for output within 0.02 V of either supply rail."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "按箭头认器件，沿电流路径分级，再检查哪个电压是真正的栅源压或漏源压。不要只看器件在图中的上下位置。",
+          "en": "Identify devices by arrows and follow current paths, then distinguish gate-source and drain-source voltages. Do not infer device role from its position on the page."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)两种输入对互补覆盖共模范围",
+              "en": "(1) Complementary pairs cover opposite common-mode limits"
+            },
+            "text": {
+              "zh": "输入靠近正电源时，NMOS输入对仍可保留下面尾源余量；靠近负电源时，由PMOS输入对接替。两对输入接同一外部端口，覆盖范围重叠后可把输入共模范围扩展到两轨附近。中间交接处跨导变化和实际偏置条件仍需控制，不能从对称图自动推断所有失真为零。",
+              "en": "Near the positive rail the NMOS input pair can retain lower-tail headroom; near the negative rail the PMOS pair takes over. Their tied inputs and overlapping ranges extend common-mode coverage toward both rails. Crossover transconductance and bias still need control; symmetry alone does not imply zero distortion."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)共源—共栅的折叠共源共栅组合",
+              "en": "(2) A folded common-source/common-gate cascode"
+            },
+            "text": {
+              "zh": "输入管以共源方式把差电压变电流，互补共栅管把电流折叠传到高阻节点，组成折叠共源共栅。它提高输出电阻与电压增益，减少输入管漏极电压摆动及米勒作用；采用互补折叠支路也有利于输入共模与电源余量安排，但不会消除所有器件压降。",
+              "en": "The common-source input converts differential voltage to current; complementary common-gate devices fold it into high-impedance nodes. This folded cascode raises output resistance/gain and reduces input-drain swing and Miller feedback. Complementary folding helps common-mode/headroom allocation but does not remove device voltage drops."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)先认清上PMOS、下NMOS的共源输出",
+              "en": "(3) Identify upper PMOS and lower NMOS common-source output"
+            },
+            "text": {
+              "zh": "上管T9是源极接正轨的PMOS，下管T10是源极接负轨的NMOS，输出在两漏极相接处，不是源极跟随器。因此不需要把栅极驱到电源外再加一个阈值。上拉时需T9导通并使T10关断；下拉时相反。",
+              "en": "T9 is a PMOS with source at the positive rail; T10 is an NMOS with source at the negative rail. Joined drains are the output, not source followers, so gate drive need not exceed the supply rails by a threshold. Pull-up requires T9 on and T10 off; pull-down reverses these states."
+            },
+            "formula": "\\begin{array}{rl}\\text{Pull up:}&V_{G9}<V_{DD}-0.5,\\quad V_{G10}\\le -V_{SS}+0.5\\\\\\text{Pull down:}&V_{G10}>-V_{SS}+0.5,\\quad V_{G9}\\ge V_{DD}-0.5\\end{array}\\quad(\\mathrm V)"
+          },
+          {
+            "title": {
+              "zh": "20 mV余量必须连同负载与导通区解释",
+              "en": "Interpret 20 mV headroom with load and operating region"
+            },
+            "text": {
+              "zh": "高电平时T9的源漏压、低电平时T10的漏源压都只有20 mV。常用低导通电阻工作要求导通管进入线性区，即过驱动大于20 mV，对应下面的0.52 V条件。若过驱动小于20 mV，也可在饱和区输送很小电流，并非逻辑上绝对不可能到达该电平；但是否满足负载还需器件系数与负载电流。题目未给它们，不能指定唯一栅压或保证任意负载均达20 mV。",
+              "en": "At the upper/lower endpoint the conducting device has only 20 mV across source-drain/drain-source. Usual low-resistance operation uses the triode region with overdrive exceeding 20 mV, giving the 0.52 V conditions below. Smaller overdrive can still carry a tiny saturation current, so it is not logically impossible to reach the level. Supporting a stated load additionally needs device coefficient and current, absent here; no unique gate voltage or arbitrary-load guarantee follows."
+            },
+            "formula": "\\begin{array}{rl}\\text{Upper triode:}&V_{G9}<V_{DD}-0.52\\,\\mathrm V\\\\\\text{Lower triode:}&V_{G10}>-V_{SS}+0.52\\,\\mathrm V\\\\I_{triode}&=K[2V_{OV}(0.02\\,\\mathrm V)-(0.02\\,\\mathrm V)^2]\\end{array}"
+          }
+        ],
+        "answer": {
+          "zh": "互补输入对覆盖两轨，前两级为折叠共源共栅；输出是上PMOS下NMOS共源对。20 mV端点下常用线性区导通要求栅源驱动超过0.52 V，精确驱动还取决于负载。",
+          "en": "Complementary input pairs cover both rails; the first stages form a folded cascode. Output is upper-PMOS/lower-NMOS common source. Usual triode operation at 20 mV headroom needs gate-source drive above 0.52 V; exact drive also depends on load."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-input-common-range",
+          "2-stage-type",
+          "2-benefits",
+          "3-output-device-polarity",
+          "3-gate-conditions",
+          "3-load-dependent-headroom"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "output-load-and-device-coefficients-unspecified"
+        ],
+        "solutionDiagrams": [
+          {
+            "role": "derived",
+            "alt": {
+              "zh": "20 mV余量下常用线性区驱动条件；精确负载能力仍需器件系数。",
+              "en": "Usual triode-drive conditions at 20 mV headroom; exact load capability still needs device coefficients."
+            },
+            "caption": {
+              "zh": "20 mV余量下常用线性区驱动条件；精确负载能力仍需器件系数。",
+              "en": "Usual triode-drive conditions at 20 mV headroom; exact load capability still needs device coefficients."
+            },
+            "figure": "ae-7.4.1-gate-drive.svg"
+          }
+        ],
+        "figure": "ae-7.4.1-figure.png"
+      },
+      "AE-7.4.2": {
+        "id": "AE-7.4.2",
+        "bookId": "7.4.2",
+        "title": {
+          "zh": "同名共模端也要按连接区分设定与采样",
+          "en": "Distinguish common-mode command and sensing by connection"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 296,
+          "pdfPage": 329,
+          "figure": "图题7.4.2",
+          "figurePdfPage": 329,
+          "figurePrintedPage": 296
+        },
+        "statement": {
+          "zh": "图题7.4.2(a)(b)为两种全差分运放框图。标记$V_{OCM}=V_{OC(set)}$表示输出共模控制端；图(b)含差分放大器$G_{DIFF}$，$G_O,G_{CM}$可看作标准运放。比较两种共模端的用法并解释原因。图(a)端口接两个3.6 MΩ电阻的中点；图(b)同名节点在两个相等输出采样电阻的中点，并与$G_{CM}$及$V_{REF}$相连。",
+          "en": "Fig. 7.4.2(a)(b) shows two fully differential architectures with a node labeled output-common-mode control. In (a), the node is the midpoint of two 3.6-megohm supply-divider resistors. In (b), it is the midpoint of equal output-sense resistors and feeds the common-mode amplifier against a reference. Compare how the two nodes are used and explain why."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "图(a)是高阻设定输入，有默认中点",
+              "en": "Diagram (a) is a command input with a midpoint default"
+            },
+            "text": {
+              "zh": "两个3.6 MΩ电阻跨正负电源，未外接时将设定端偏在两电源平均值。外接低输出电阻参考电压可覆盖分压值，指定期望的输出共模；它不应该被误当作差分信号输入。输入电阻高并不意味着可以不考虑允许控制范围。",
+              "en": "The two 3.6-megohm resistors span the supplies and default the command to their mean. An external low-impedance reference can override this divider and set desired output common mode. This is not a differential signal input; high impedance does not remove its allowed voltage range."
+            },
+            "formula": "V_{OCM,a,default}=\\frac{V_++V_-}{2},\\qquad V_{OC,out}=\\frac{V_{out+}+V_{out-}}2\\simeq V_{OCM,a}"
+          },
+          {
+            "title": {
+              "zh": "图(b)画出的节点是输出平均值采样",
+              "en": "The drawn node in (b) senses the output mean"
+            },
+            "text": {
+              "zh": "相等电阻把两输出取平均，接到共模误差放大器的比较端；另一端是$V_{REF}$。共模控制经两个输出级同向校正，保持输出平均值接近参考，同时不改变理想差分分量。",
+              "en": "Equal resistors average both outputs and feed the common-error amplifier against $V_{REF}$. Common control corrects both output stages together, keeping their mean near reference without altering the ideal differential component."
+            },
+            "formula": "V_{sense}=\\frac{V_{out+}+V_{out-}}2,\\quad e_{CM}=V_{REF}-V_{sense},\\quad V_{sense}\\simeq V_{REF}"
+          },
+          {
+            "title": {
+              "zh": "用法差异来自“设定值”和“反馈值”不同",
+              "en": "The difference is command versus feedback"
+            },
+            "text": {
+              "zh": "按图(b)所画连接，改变目标共模应改变参考或其设计允许的控制输入；不能照搬图(a)把一个任意低阻电压源直接钳在输出平均值节点，否则会旁路采样关系并造成与参考冲突。两图都使用“共模控制”这个名称，但在具体电路中连接到设定端与连接到反馈采样点，电气作用不同。实际芯片外部引脚需按其框图和说明确认，不能仅凭符号名称互换。",
+              "en": "For the shown diagram (b), change desired common mode through its reference or intended command input. Copying (a) by clamping the output-average sense node to an arbitrary low-impedance source bypasses sensing and can conflict with the reference. Both use a common-mode-control label, but command and feedback nodes have different electrical roles. Follow the actual chip block diagram rather than interchanging pins by name."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "图(a)的高阻端可外加共模设定电压、悬空时默认两轨中点；图(b)画出的同名节点是输出平均值反馈，目标共模由参考决定，不能按图(a)直接任意钳位。",
+          "en": "(a) accepts a common-mode command and defaults to supply midpoint. The node drawn in (b) is output-average feedback; its reference sets the target and it cannot be treated as an interchangeable command node."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "a-command-and-default",
+          "b-output-average-feedback",
+          "reference-and-use-difference"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "figure": "ae-7.4.2-figure.png"
+      },
+      "AE-7.4.3": {
+        "id": "AE-7.4.3",
+        "bookId": "7.4.3",
+        "title": {
+          "zh": "有限输出电阻与发射极退化同时存在",
+          "en": "Finite output resistance couples to emitter degeneration"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 297,
+          "pdfPage": 330,
+          "figure": "图题7.4.3",
+          "figurePdfPage": 330,
+          "figurePrintedPage": 297
+        },
+        "statement": {
+          "zh": "图题7.4.3为LM741中间级局部。$\\beta_{16}=\\beta_{17}=200,r_{ce17}=r_{ce13}=1$ MΩ，$r_{be16}=r_{be17}=3$ kΩ，后级输入$R_{i24}=800$ kΩ；$R_6=50$ kΩ、$R_7=50\\,\\Omega$。求T17共射增益$A_v=\\frac{v_{o2}}{v_{i2}}$及T16基极输入电阻$R_{i16}$。",
+          "en": "The LM741 intermediate-stage fragment has beta 200 for T16/T17, output resistances 1 megohm for T17/T13, input resistances 3 kilohms for T16/T17, next-stage load 800 kilohms, emitter resistors 50 kilohms for T16 and 50 ohms for T17. Find T17 common-emitter gain and T16 base input resistance."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "外部集电极负载与T17自身电阻分开",
+              "en": "Separate external collector load from T17 output resistance"
+            },
+            "text": {
+              "zh": "T13输出电阻和后级输入电阻并联成444.444 kΩ。T17自身1 MΩ跨集射极，而非直接接地；当发射极随信号变化时，不能不加说明把它并到负载后仍沿用无输出电阻的发射极反馈公式。将3 kΩ视为不另含体电阻的等效混合π电阻，跨导为200除以3 kΩ。",
+              "en": "T13 output resistance and next-stage input form 444.444 kilohms. T17 own 1 megohm spans collector to emitter, not ground; when the emitter moves, simply paralleling it with load while using an infinite-output-resistance degeneration formula is an approximation. Treat the 3-kilohm input value as lumped hybrid-pi resistance without extra spreading resistance."
+            },
+            "formula": "R_L=r_{ce13}\\parallel R_{i24}=444.444\\,\\mathrm{k\\Omega},\\quad g_m=\\frac{200}{3000}=0.0666667\\,\\mathrm S"
+          },
+          {
+            "title": {
+              "zh": "写集电极与发射极两条KCL",
+              "en": "Write collector and emitter KCL"
+            },
+            "text": {
+              "zh": "令输入为1 V测试信号，解两节点方程即可求增益与发射极跟随比例；计算使用线性测试归一化，不表示真实器件可承受对应数千伏输出。",
+              "en": "Normalize the linear input to a 1 V test signal and solve two nodes for gain and emitter-following ratio. This linear test normalization does not imply a physical output of thousands of volts."
+            },
+            "formula": "\\begin{array}{rl}\\frac{v_o}{R_L}+\\frac{v_o-v_e}{r_{ce17}}+g_m(v_i-v_e)&=0\\\\\\frac{v_e}{R_7}+\\frac{v_e-v_i}{r_\\pi}+\\frac{v_e-v_o}{r_{ce17}}-g_m(v_i-v_e)&=0\\end{array}"
+          },
+          {
+            "title": {
+              "zh": "先求T17输入，再折算T16基极",
+              "en": "Find T17 input before reflecting through T16"
+            },
+            "text": {
+              "zh": "两节点解得增益负6170.393，发射极跟随比0.699183，所以T17基极输入9.972836 kΩ。T16是射极跟随器，其发射极看到50 kΩ并该输入，再乘201折算到基极。T16自身输出电阻未给，以下数值按无穷大；若有限，须再并入发射极负载。",
+              "en": "The nodal solution gives gain minus 6170.393 and emitter ratio 0.699183, hence T17 input 9.972836 kilohms. T16 is a follower loaded by this input in parallel with 50 kilohms, reflected by 201 to its base. T16 output resistance is unspecified and taken infinite; a finite value must additionally parallel the emitter load."
+            },
+            "formula": "A_v=-6170.3931,\\quad R_{i17}=\\frac{3000}{1-0.69918285}=9.972836\\,\\mathrm{k\\Omega},\\quad R_{i16}=3000+201(50\\,\\mathrm{k\\Omega}\\parallel R_{i17})=1.674207\\,\\mathrm{M\\Omega}"
+          },
+          {
+            "title": {
+              "zh": "与常见近似比较，明确适用边界",
+              "en": "Compare with the conventional approximation"
+            },
+            "text": {
+              "zh": "若把T17输出电阻近似并到交流地，再使用简化退化公式，会得到增益约负6811.41，输入约2.083 MΩ。这是忽略跨集射反馈作用的近似，并非前面两节点模型的同一精确结果。题目给出的输出电阻与高增益组合使这项差别不可直接省略。",
+              "en": "Treating T17 output resistance as grounded and using the simplified degeneration formula gives gain about minus 6811.41 and input about 2.083 megohms. This neglects collector-emitter feedback and is not the same exact result as the two-node model. The specified high gain and finite output resistance make the difference material."
+            },
+            "formula": "A_{v,approx}=-\\frac{\\beta(r_{ce17}\\parallel r_{ce13}\\parallel R_{i24})}{r_\\pi+(\\beta+1)R_7}\\simeq-6811.41"
+          }
+        ],
+        "answer": {
+          "zh": "保留T17有限集射电阻的两节点模型：增益−6170.393、T17输入9.97284 kΩ；忽略未给的T16输出电阻时，其基极输入约1.67421 MΩ。",
+          "en": "The two-node model retaining T17 collector-emitter resistance gives gain −6170.393 and T17 input 9.97284 kilohms. Neglecting unspecified T16 output resistance, its base input is about 1.67421 megohms."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "T17-loaded-gain",
+          "T17-input-resistance",
+          "T16-base-input-resistance",
+          "approximation-and-missing-T16-output-model"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐问对照教材原文和图示，独立节点KCL、对称半电路、工作区条件与数值方程交叉核验；本题未要求SPICE。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。 另实际执行自写线性小信号ngspice47网表，与独立节点矩阵交叉核验；只验证明确的名义局部模型，不冒充厂商非线性器件仿真。",
+            "en": "Every source subpart and figure is checked; independent nodal KCL, symmetry half-circuits, operating-region conditions and numerical equations cross-check the results. SPICE is not requested. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device. Authored linear small-signal ngspice47 decks were also executed against independent nodal matrices; this checks the declared nominal local model, not a manufacturer nonlinear device."
+          }
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "conditionalSubparts": [
+          "lumped-hybrid-pi",
+          "T16-output-resistance-unspecified"
+        ],
+        "simulation": {
+          "netlists": [
+            {
+              "file": "ae-7.4.3-ce-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 1",
+                "en": "Executed authored local linear model 1"
+              }
+            },
+            {
+              "file": "ae-7.4.3-follower-linear.cir",
+              "label": {
+                "zh": "已执行：自写局部线性模型 2",
+                "en": "Executed authored local linear model 2"
+              }
+            }
+          ]
+        },
+        "figure": "ae-7.4.3-figure.png"
+      },
+      "AE-7.4.4": {
+        "id": "AE-7.4.4",
+        "bookId": "7.4.4",
+        "title": {
+          "zh": "JFET高阻输入、BJT增益与互补输出",
+          "en": "JFET high-impedance input, BJT gain and complementary output"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 297,
+          "pdfPage": 330,
+          "figure": "图题7.4.4",
+          "figurePdfPage": 330,
+          "figurePrintedPage": 297
+        },
+        "statement": {
+          "zh": "图题7.4.4是BiFET型LF356简化原理电路。（1）指出输入级、中间级和输出级分别由哪些电路组成；（2）说明25 kΩ电位器$R_p$的作用；（3）概括电路特点。图中1、5脚接电位器两端，滑动端接正电源；3脚为同相、2脚为反相、6脚为输出，$C_C$为补偿电容，输出串联25 Ω电阻。",
+          "en": "Fig. 7.4.4 is the simplified BiFET LF356 circuit. (1) Identify input, intermediate and output stages. (2) Explain the 25-kilohm potentiometer. (3) Describe the main features. Pins 1/5 connect the potentiometer ends and the wiper connects positive supply; pins 3/2 are noninverting/inverting inputs and pin 6 output. The diagram includes compensation capacitor and 25-ohm output resistor."
+        },
+        "prerequisites": {
+          "zh": "全书拓展：课程纲领第7章仅要求教材7.2.1的概念；本题定量推导及器件结构细节不升为必考。",
+          "en": "Full-book extension: the course plan requires only the concepts of textbook section 7.2.1 in chapter 7; these quantitative derivations and device details are not promoted to exam requirements."
+        },
+        "recognition": {
+          "zh": "先确定差模、共模和输出参考方向，再由静态工作点建立小信号模型；大幅度变化另核对截止、饱和和电源余量。",
+          "en": "Define differential/common-mode inputs and output polarity first, then linearize at the bias point. For finite changes, separately check cutoff, saturation and supply headroom."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "(1)输入级和中间级沿节点逐段辨认",
+              "en": "(1) Identify input and intermediate stages by nodes"
+            },
+            "text": {
+              "zh": "T1、T2为源极耦合JFET差分输入对，由尾流和各支路恒流偏置；T3、T4提供有源负载与平衡调节。输入对两漏极分别送到T6、T5基极，T5、T6构成BJT射极耦合差分中间级，T6集电极是主要高增益输出节点。T7为后续驱动的射极跟随缓冲，不能把每个恒流偏置管都当成另一级信号放大器。",
+              "en": "T1/T2 form the source-coupled JFET differential input pair with current-source bias. T3/T4 supply active loads and balancing. The input drains feed T6/T5 bases respectively; T5/T6 form a BJT emitter-coupled intermediate differential stage with the T6 collector as a high-gain node. T7 is an emitter-follower driver buffer. Bias sources are not separate signal-gain stages."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "输出级是互补推挽并带偏置和保护",
+              "en": "The output stage is complementary push-pull with bias/protection"
+            },
+            "text": {
+              "zh": "T9、T10为互补BJT输出管，负责正负方向负载电流；T7、T8、D1及相应恒流支路形成驱动与偏置，降低输出阻抗并改善过零区。T11、25 Ω电阻和D2相关支路提供限流保护。$C_C$跨高增益级作内部频率补偿，不能把它解释为外部信号耦合电容。",
+              "en": "T9/T10 are complementary BJT output devices supplying both load-current directions. T7/T8/D1 and bias-current branches drive and bias them, lowering output impedance and improving crossover behavior. T11, the 25-ohm resistor and D2-related path provide current limiting. The capacitor internally compensates the high-gain stage; it is not an external signal-coupling capacitor."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(2)电位器调负载源极支路平衡，抵消失调",
+              "en": "(2) The potentiometer balances load source branches to null offset"
+            },
+            "text": {
+              "zh": "按原图连线，T3、T4的栅极接正电源；电位器两端经1、5脚接这两管的源极支路，滑动端也接正电源。调节两侧串联电阻改变两负载支路工作点，用以补偿输入等效失调，使零差输入时输出归零。它不是闭环增益旋钮，也不能说成直接调T1、T2输入栅压。厂商资料同样规定25 kΩ、1和5脚、滑动端接正电源的失调调节接法。",
+              "en": "Follow the source connections: T3/T4 gates connect positive supply, while potentiometer ends reach their source branches through pins 1/5, with wiper also at positive supply. Unequal series adjustments balance load operating points and cancel input-referred offset, nulling output at zero differential input. This is neither closed-loop gain adjustment nor direct adjustment of T1/T2 input gates. The manufacturer specifies the same 25-kilohm pin-1/5, positive-wiper offset-null connection."
+            },
+            "formula": ""
+          },
+          {
+            "title": {
+              "zh": "(3)说明BiFET组合的收益与限制",
+              "en": "(3) State the BiFET benefits and limits"
+            },
+            "text": {
+              "zh": "JFET输入提供高输入阻抗和低偏流；BJT中间级提供较高跨导与电压增益；互补输出提供较低输出阻抗和负载驱动。恒流偏置提高共模抑制，补偿电容控制高频稳定性，限流支路提高输出保护能力。输入失调与偏流仍非零，输出摆幅、输入共模、带宽和负载能力仍有器件限值，不能把它当成理想轨到轨运放。",
+              "en": "JFET input provides high impedance and low bias current; the BJT middle stage provides transconductance and voltage gain; complementary output lowers output impedance and drives load current. Current bias supports common rejection, compensation controls high-frequency stability and limiting protects output. Offset/bias remain nonzero and swing, common range, bandwidth and load capability remain finite; this is not an ideal rail-to-rail amplifier."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "输入JFET差分对加可平衡有源负载，中间为BJT差分增益级及驱动，输出互补推挽并带限流；25 kΩ电位器用于调零，补偿电容用于内部频率补偿。",
+          "en": "JFET differential input with balanced active loads, BJT differential gain/driver and complementary current-limited output. The 25-kilohm potentiometer nulls offset; the capacitor supplies internal frequency compensation."
+        },
+        "pitfalls": [
+          {
+            "zh": "下标、正负号和负载接法决定结果；小信号参数不是整个大信号范围内的器件模型。未给的模型参数须保留条件。",
+            "en": "Subscripts, signs and load connections determine the result. Small-signal parameters do not specify a global large-signal model; keep missing model parameters explicit."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1-input-stage",
+          "1-intermediate-stage",
+          "1-output-stage",
+          "2-offset-null",
+          "3-main-features"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "对照原题全部节点与功能；用TI LFx5x数据手册Rev.D的结构图、1/5脚BALANCE说明及25 kΩ正电源滑动端调零接法交叉核验。不据简化图编造具体失调或输出指标。",
+            "en": "All source nodes/functions checked against TI LFx5x Rev.D schematic, BALANCE pins 1/5 and the 25-kilohm positive-supply-wiper null connection. No numerical offset/output specifications are invented from the simplified figure."
+          },
+          "references": [
+            {
+              "title": "TI LFx5x JFET Input Operational Amplifiers, Rev. D",
+              "url": "https://www.ti.com/lit/ds/symlink/lf356.pdf",
+              "sections": "Pin functions; functional schematic; VOS adjustment"
+            }
+          ]
+        },
+        "diagram": {
+          "alt": {
+            "zh": "教材原图，保留元件数值、输入输出方向及电源极性。",
+            "en": "Source figure retaining values, input/output directions and supply polarities."
+          }
+        },
+        "figure": "ae-7.4.4-figure.png"
       }
     }
   }
