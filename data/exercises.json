@@ -67848,6 +67848,1450 @@
           }
         },
         "figure": "ae-7.4.4-figure.png"
+      },
+      "AE-9.1.1": {
+        "id": "AE-9.1.1",
+        "bookId": "9.1.1",
+        "title": {
+          "zh": "导通角与效率",
+          "en": "Conduction angle and efficiency"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 379,
+          "pdfPage": 412
+        },
+        "statement": {
+          "zh": "在甲类、乙类和甲乙类放大电路中，放大管的导通角分别等于多少？它们中哪一类放大电路效率最高？",
+          "en": "What are the conduction angles in class A, class B and class AB amplifiers? Which class has the highest efficiency?"
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "按周期内导通时间判断。",
+          "en": "Use the conducting fraction of a period."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "导通角与效率",
+              "en": "Conduction angle and efficiency"
+            },
+            "text": {
+              "zh": "甲类在整个周期内导通，为 $360^\\circ$。乙类的每只管约导通半周期，为 $180^\\circ$。甲乙类每只管的导通角介于二者之间，零点附近有同时导通区。按本章讨论的三类线性输出级及理想最大效率比较，乙类最高，理想双电源互补级满摆幅效率为 $\\frac{\\pi}{4}\\approx78.54\\%$。",
+              "en": "Each class A device conducts for $360^\\circ$. Each class B device conducts for $180^\\circ$ in the ideal model. Class AB lies between these values and has overlapping conduction near the zero crossing. Class B gives the highest ideal maximum efficiency in the comparison, reaching $\\frac{\\pi}{4}\\approx78.54\\%$ for a full-swing complementary stage."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "甲类 $360^\\circ$，乙类 $180^\\circ$，甲乙类介于二者之间。乙类理想效率最高。",
+          "en": "Class A $360^\\circ$, class B $180^\\circ$, class AB between them. Class B has the highest ideal efficiency."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        }
+      },
+      "AE-9.3.1": {
+        "id": "AE-9.3.1",
+        "bookId": "9.3.1",
+        "title": {
+          "zh": "电阻负载甲类",
+          "en": "Resistor-loaded class A"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 379,
+          "pdfPage": 412,
+          "figure": "9.3.1",
+          "figurePdfPage": 412,
+          "figurePrintedPage": 379
+        },
+        "statement": {
+          "zh": "在图题9.3.1所示电路中，设 BJT 的 $\\beta=100$，$V_{BE}=0.7\\,\\mathrm V$，$V_{CES}=0.5\\,\\mathrm V$，$I_{CEO}=0$，电容 $C$ 对交流可视为短路。输入信号 $v_i$ 为正弦波。(1) 计算电路可能达到的最大不失真输出功率 $P_{om}$。(2) 此时 $R_b$ 应调节到什么数值？(3) 此时电路的效率 $\\eta$ 为多少？试与工作在乙类的互补对称电路比较。(4) 图中 $T$ 采用 Q2N3904，将其电流放大系数改为100，利用 SPICE 仿真电路的静态工作点。当输入正弦波的幅值为 $50\\,\\mathrm{mV}$、频率为 $1\\,\\mathrm{kHz}$ 时，仿真绘出输入和输出信号的波形。",
+          "en": "In exercise Fig. 9.3.1, use $\\beta=100$, $V_{BE}=0.7\\,\\mathrm V$, $V_{CES}=0.5\\,\\mathrm V$ and $I_{CEO}=0$. Treat $C$ as a short for AC and use sinusoidal input $v_i$. (1) Find the highest undistorted output power. (2) Find the corresponding $R_b$. (3) Find the efficiency and compare with complementary class B. (4) Use Q2N3904 with its current-gain parameter changed to 100. Simulate the bias and plot both signals for a $50\\,\\mathrm{mV}$ peak, $1\\,\\mathrm{kHz}$ sine."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "从截止和饱和端点找静态中点。",
+          "en": "Center the bias between cutoff and saturation."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "电阻负载甲类",
+              "en": "Resistor-loaded class A"
+            },
+            "text": {
+              "zh": "截止端集电极电压为 $12\\,\\mathrm V$，饱和端为 $0.5\\,\\mathrm V$，对称摆幅要求 $V_{CQ}=6.25\\,\\mathrm V$，峰值 $5.75\\,\\mathrm V$，$I_{CQ}=0.71875\\,\\mathrm A$。(1) 负载交流功率 $P_{om}=2.06640625\\,\\mathrm W$。(2) $I_{BQ}=7.1875\\,\\mathrm{mA}$，$R_b=\\frac{12-0.7}{0.0071875}\\,\\Omega\\approx1.57217\\,\\mathrm{k\\Omega}$。(3) 计入偏置电阻电流后，$P_V=12(I_{CQ}+I_{BQ})=8.71125\\,\\mathrm W$，$\\eta\\approx23.72\\%$；教材忽略基极供电时约 $23.96\\%$。同为理想上限，乙类互补级为 $78.54\\%$。(4) 该静态电流超出 onsemi 2N3904 连续电流额定值 $200\\,\\mathrm{mA}$，不能把所得波形视作实际可运行的设计。实际 ngspice 47 使用历史 National Q2N3904 卡并将 BF 设为100，保留高注入和寄生电阻。27 °C、输入耦合电容取1000 μF 时，静态集电极为10.43813 V、集电流195.2335 mA、基流7.058801 mA，有效直流电流增益27.658。50 mV峰值、1 kHz输入下，集电极波形范围10.00686至10.94587 V。",
+              "en": "The cutoff and saturation collector voltages are $12\\,\\mathrm V$ and $0.5\\,\\mathrm V$. The centered bias gives $V_{CQ}=6.25\\,\\mathrm V$, $I_{CQ}=0.71875\\,\\mathrm A$ and a $5.75\\,\\mathrm V$ peak. (1) The AC load power is $2.06640625\\,\\mathrm W$. (2) The bias resistor is approximately $1.57217\\,\\mathrm{k\\Omega}$. (3) Including base-bias supply current gives $8.71125\\,\\mathrm W$ and $23.72\\%$ efficiency. Ignoring that supply current gives $23.96\\%$. Ideal complementary class B reaches $78.54\\%$. (4) The ideal collector bias exceeds the device's $200\\,\\mathrm{mA}$ continuous rating. The executed ngspice 47 run uses the legacy National Q2N3904 card at 27 °C, BF set to 100, and a 1000 μF coupling capacitor to approximate an AC short. The DC collector voltage and current are 10.43813 V and 195.2335 mA, with 7.058801 mA base current and effective current gain 27.658. The collector waveform spans 10.00686 to 10.94587 V with the specified input."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "最大交流功率2.0664 W，偏置电阻1.5722 kΩ，计基流效率23.72%。仿真工作点与输出波形见下。",
+          "en": "Maximum AC power is 2.0664 W, bias resistance 1.5722 kΩ and efficiency 23.72% including base current. The simulated bias and waveform are shown below."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          },
+          "externalReferences": [
+            {
+              "title": "Historical National model cards (archive)",
+              "url": "https://github.com/sunnyiisc/Spice-Model-Collections/blob/main/BJT%20Models.txt"
+            },
+            {
+              "title": "onsemi 2N3904",
+              "url": "https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf"
+            }
+          ]
+        },
+        "figure": "ae9-fig-9.3.1-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        },
+        "simulation": {
+          "netlist": "ae-9.3.1-class-a.cir",
+          "instructions": {
+            "zh": "将网表放入工作目录，运行 ngspice 的批处理模式，输出为 DAT 文件。 从参考模型档案提取 Q2N3904 和 Q2N3906 两卡，保存为与网表同目录的 national-private.lib。",
+            "en": "Run the deck in ngspice batch mode from a writable directory to produce DAT traces. Extract Q2N3904 and Q2N3906 from the linked archive into national-private.lib beside the deck."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "figure": "ae-9.3.1-class-a.svg",
+            "kind": "executed-spice",
+            "alt": {
+              "zh": "ngspice 47 实际输出的时间波形。",
+              "en": "Time-domain traces from the ngspice 47 run."
+            }
+          }
+        ]
+      },
+      "AE-9.3.2": {
+        "id": "AE-9.3.2",
+        "bookId": "9.3.2",
+        "title": {
+          "zh": "双电源乙类级",
+          "en": "Dual-supply class B stage"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.3.2",
+          "figurePdfPage": 413,
+          "figurePrintedPage": 380
+        },
+        "statement": {
+          "zh": "一双电源互补对称电路如图题9.3.2所示，设已知 $V_{CC}=12\\,\\mathrm V$，$R_L=16\\,\\Omega$，$v_i$ 为正弦波。求 (1) 在 BJT 的饱和压降 $V_{CES}$ 可以忽略不计的条件下，负载上可能得到的最大输出功率 $P_{om}$。(2) 每个管子允许的管耗 $P_{CM}$ 至少应为多少？(3) 每个管子的耐压 $\\lvert V_{(BR)CEO}\\rvert$ 应大于多少？(4) 若 BJT 管的饱和压降 $V_{CES}=2\\,\\mathrm V$，重新计算上述问题。",
+          "en": "For the complementary stage of exercise Fig. 9.3.2, the rails have magnitude $12\\,\\mathrm V$, $R_L=16\\,\\Omega$ and the input is sinusoidal. Neglecting the BJT saturation drop, find (1) maximum load power, (2) minimum dissipation rating per transistor and (3) the required collector-emitter breakdown rating. (4) Repeat for a saturation drop of $2\\,\\mathrm V$."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "先算满摆幅，再对平均单管功耗求最大值。",
+          "en": "Find full swing, then maximize mean dissipation per device."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "双电源乙类级",
+              "en": "Dual-supply class B stage"
+            },
+            "text": {
+              "zh": "每侧电源电压 $V_{CC}=12\\,\\mathrm V$，$R_L=16\\,\\Omega$。设负载正弦峰值为 $A$，单管周期平均功耗由半周期的 $(V_{CC}-A\\sin\\theta)\\frac{A}{R_L}\\sin\\theta$ 积分，得到 $P_T=\\frac{V_{CC}A}{\\pi R_L}-\\frac{A^2}{4R_L}$，在 $A=\\frac{2V_{CC}}{\\pi}\\approx7.639\\,\\mathrm V$ 最大。忽略饱和压降时，(1) $A=12\\,\\mathrm V$ 对应 $P_{om}=\\frac{A^2}{2R_L}=4.5\\,\\mathrm W$；(2) 单管的最低耗散额定值为 $\\frac{V_{CC}^2}{\\pi^2 R_L}\\approx0.912\\,\\mathrm W$；(3) 截止管需承受约 $24\\,\\mathrm V$，设计额定值应高于此值。(4) 饱和压降 $2\\,\\mathrm V$ 时，$A=10\\,\\mathrm V$，$P_{om}=3.125\\,\\mathrm W$，最热工作点仍可到达，故最低耗散额定值仍约 $0.912\\,\\mathrm W$；截止管最大电压为 $12+10=22\\,\\mathrm V$。",
+              "en": "For $V_{CC}=12\\,\\mathrm V$ per rail and $R_L=16\\,\\Omega$, let $A$ be the sinusoidal peak across the load. Integrating the product of collector-emitter voltage and current over the conducting half-cycle gives mean dissipation $P_T=\\frac{V_{CC}A}{\\pi R_L}-\\frac{A^2}{4R_L}$ for one transistor. Its maximum occurs at $A=\\frac{2V_{CC}}{\\pi}\\approx7.639\\,\\mathrm V$. For zero saturation drop, (1) a $12\\,\\mathrm V$ peak gives $4.5\\,\\mathrm W$; (2) the maximum device dissipation is approximately $0.912\\,\\mathrm W$; (3) the off transistor sees up to $24\\,\\mathrm V$ and the voltage rating should exceed this. (4) With a $2\\,\\mathrm V$ saturation drop, the peak is $10\\,\\mathrm V$ and load power is $3.125\\,\\mathrm W$. The same worst dissipation point remains attainable and the maximum off-state voltage falls to $22\\,\\mathrm V$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "两种压降下输出4.5 W和3.125 W。单管耗散额定值至少0.912 W，耐压分别高于24 V和22 V。",
+          "en": "The two cases give 4.5 W and 3.125 W. Each device needs at least 0.912 W dissipation rating and voltage ratings above 24 V and 22 V, respectively."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.3.2-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.3.3": {
+        "id": "AE-9.3.3",
+        "bookId": "9.3.3",
+        "title": {
+          "zh": "九瓦指标与器件额定值",
+          "en": "Nine-watt target and device ratings"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.3.2",
+          "figurePdfPage": 413,
+          "figurePrintedPage": 380
+        },
+        "statement": {
+          "zh": "在图题9.3.2所示电路中，设 $v_i$ 为正弦波，$R_L=8\\,\\Omega$，要求最大输出功率 $P_{om}=9\\,\\mathrm W$。试在 BJT 的饱和压降 $V_{CES}$ 可以忽略不计的条件下，求 (1) 正、负电源 $V_{CC}$ 的最小值。(2) 根据所求 $V_{CC}$ 最小值，计算相应的 $I_{CM}$、$\\lvert V_{(BR)CEO}\\rvert$ 的最小值。(3) 输出功率最大时，电源供给的功率 $P_V$。(4) 每个管子允许的管耗 $P_{CM}$ 的最小值。(5) 输出功率最大时的输入电压有效值。(6) 图中 $T_1$ 采用 Q2N3904，$T_2$ 采用 Q2N3906，试利用 SPICE 仿真求解，当 $R_L=8\\,\\Omega$、电源电压为 $\\pm12\\,\\mathrm V$ 时，可输出的最大功率是多少？并与题目给定的最大功率作比较。",
+          "en": "Exercise Fig. 9.3.2 has sinusoidal input, $R_L=8\\,\\Omega$ and a $9\\,\\mathrm W$ maximum output target. Neglect saturation drop and find (1) minimum rail magnitudes, (2) minimum current and breakdown ratings at those rails, (3) supply power at maximum output, (4) minimum transistor dissipation rating and (5) input RMS voltage at maximum output. (6) Simulate Q2N3904 and Q2N3906 with $8\\,\\Omega$ and $\\pm12\\,\\mathrm V$ rails. Find the maximum output power and compare with the target."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "先把目标瓦数变成负载峰值，再核对额定值。",
+          "en": "Convert target watts to the peak load voltage, then check device ratings."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "九瓦指标与器件额定值",
+              "en": "Nine-watt target and device ratings"
+            },
+            "text": {
+              "zh": "按半正弦电流与理想跟随模型，(1) $V_{CC,\\min}=\\sqrt{2(8)(9)}=12\\,\\mathrm V$（每侧）。(2) 电流峰值 $1.5\\,\\mathrm A$，截止管集射峰值 $24\\,\\mathrm V$，选型需有余量。(3) $P_V=\\frac{36}{\\pi}\\,\\mathrm W\\approx11.4592\\,\\mathrm W$。(4) 耗散最坏点对应输出峰值 $\\frac{24}{\\pi}\\,\\mathrm V$，每管 $P_{T,\\max}=\\frac{18}{\\pi^2}\\,\\mathrm W\\approx1.82378\\,\\mathrm W$。(5) 理想输入有效值 $6\\sqrt2\\,\\mathrm V\\approx8.48528\\,\\mathrm V$；若保留基射压降，输入正弦经互补级会出现死区，须说明采用的幅值或失真口径。(6) 指定晶体管的电流额定值均为 $0.2\\,\\mathrm A$。若将它作为保守的瞬时电流上限，正弦输出至多 $0.16\\,\\mathrm W$，热限制还需另查；这是额定约束推算，SPICE 的电压削顶、交越失真及超额模型外推要独立报告。指定型号的历史 National 模型已在 ngspice 47 运行。若输入峰值限定为12 V，在本模型的单调转移范围内，准静态功率随输入幅度上升，1 kHz 瞬态在该上限得负载6.252 W（失真约3.80%，两峰约−9.381 V和+10.350 V），峰值电流已超额。若将输入峰值提高到18 V，模型给出9.449 W总负载功率，基波仅9.289 W，失真约12.73%，且理想信号源本身额外提供4.158 W。仅凭±12 V电源无法定义一个模型、驱动与失真口径无关的最大功率。",
+              "en": "With ideal half-sine conduction and unity follower gain, (1) the minimum rails are $\\pm12\\,\\mathrm V$. (2) The peak current and off-state voltage are $1.5\\,\\mathrm A$ and $24\\,\\mathrm V$. (3) The full-output supply power is $\\frac{36}{\\pi}\\,\\mathrm W\\approx11.4592\\,\\mathrm W$. (4) Each device reaches its maximum average dissipation at an output peak of $\\frac{24}{\\pi}\\,\\mathrm V$, dissipating $\\frac{18}{\\pi^2}\\,\\mathrm W\\approx1.82378\\,\\mathrm W$. (5) Ideal input is $6\\sqrt2\\,\\mathrm V$ RMS. Base-emitter drops introduce crossover distortion with a sine drive. (6) Both named devices have a $0.2\\,\\mathrm A$ continuous rating. A conservative peak current cap at that value would allow at most $0.16\\,\\mathrm W$ into $8\\,\\Omega$, subject to thermal limits. Executed ngspice 47 with legacy National cards gives 6.252 W load power and approximately 3.80% THD at 1 kHz with a 12 V peak ideal drive. This conditional limit uses the monotone quasistatic transfer up to the chosen drive cap. At 18 V peak the extrapolated model gives 9.449 W total, 9.289 W fundamental and approximately 12.73% THD, with 4.158 W from the input source itself. Neither run meets the device current rating. Rail voltages alone do not fix the drive or distortion criterion."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "理想最低双电源 $\\pm12\\,\\mathrm V$，峰值电流1.5 A，耐压边界24 V，取电11.459 W，单管耗散上限1.824 W，输入有效值8.485 V。12 V峰值驱动的指定模型仿真为6.252 W。",
+          "en": "Ideal rails $\\pm12\\,\\mathrm V$, peak current 1.5 A, blocking requirement 24 V, rail power 11.459 W, per-device dissipation 1.824 W, RMS input 8.485 V. The simulated case with 12 V peak drive gives 6.252 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          },
+          "externalReferences": [
+            {
+              "title": "Historical National model cards (archive)",
+              "url": "https://github.com/sunnyiisc/Spice-Model-Collections/blob/main/BJT%20Models.txt"
+            },
+            {
+              "title": "onsemi 2N3904",
+              "url": "https://www.onsemi.com/pdf/datasheet/2n3904-d.pdf"
+            },
+            {
+              "title": "onsemi 2N3906",
+              "url": "https://www.onsemi.com/pdf/datasheet/2n3906-d.pdf"
+            }
+          ]
+        },
+        "figure": "ae9-fig-9.3.2-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        },
+        "simulation": {
+          "netlist": "ae-9.3.3-class-b.cir",
+          "instructions": {
+            "zh": "将网表放入工作目录，运行 ngspice 的批处理模式，输出为 DAT 文件。 从参考模型档案提取 Q2N3904 和 Q2N3906 两卡，保存为与网表同目录的 national-private.lib。",
+            "en": "Run the deck in ngspice batch mode from a writable directory to produce DAT traces. Extract Q2N3904 and Q2N3906 from the linked archive into national-private.lib beside the deck."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "figure": "ae-9.3.3-tran-12.svg",
+            "kind": "executed-spice",
+            "alt": {
+              "zh": "ngspice 47 实际输出的时间波形。",
+              "en": "Time-domain traces from the ngspice 47 run."
+            }
+          }
+        ]
+      },
+      "AE-9.3.4": {
+        "id": "AE-9.3.4",
+        "bookId": "9.3.4",
+        "title": {
+          "zh": "两种摆幅下的功率",
+          "en": "Power at two output swings"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.3.2",
+          "figurePdfPage": 413,
+          "figurePrintedPage": 380
+        },
+        "statement": {
+          "zh": "设电路如图题9.3.2所示，管子在输入信号 $v_i$ 作用下，在一周期内 $T_1$ 和 $T_2$ 轮流导通约 $180^\\circ$，电源电压 $V_{CC}=20\\,\\mathrm V$，负载 $R_L=8\\,\\Omega$。试计算 (1) 在输入信号 $V_i=10\\,\\mathrm V$（有效值）时，电路的输出功率、管耗、直流电源供给的功率和效率。(2) 当输入信号 $v_i$ 的幅值为 $V_{im}=V_{CC}=20\\,\\mathrm V$ 时，电路的输出功率、管耗、直流电源供给的功率和效率。",
+          "en": "In exercise Fig. 9.3.2 the devices alternately conduct for about $180^\\circ$. With rail magnitude $20\\,\\mathrm V$ and $R_L=8\\,\\Omega$, find load power, transistor dissipation, DC supply power and efficiency for (1) a $10\\,\\mathrm V$ RMS input and (2) a $20\\,\\mathrm V$ peak input."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "统一换成峰值后再算电源电流。",
+          "en": "Use peaks for the half-cycle supply-current calculation."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "两种摆幅下的功率",
+              "en": "Power at two output swings"
+            },
+            "text": {
+              "zh": "按题设约半周期轮流导通、跟随器单位增益近似，$V_{CC}=20\\,\\mathrm V$、$R_L=8\\,\\Omega$。两电源合计 $P_V=\\frac{2V_{CC}A}{\\pi R_L}$，负载功率 $P_o=\\frac{A^2}{2R_L}$，两管总耗散 $P_V-P_o$，效率 $\\frac{\\pi A}{4V_{CC}}$。(1) $10\\,\\mathrm V$ 有效值对应 $A=10\\sqrt2\\,\\mathrm V$，结果依次为 $P_o=12.5\\,\\mathrm W$、两管共 $10.008\\,\\mathrm W$（每管 $5.004\\,\\mathrm W$）、$P_V=22.508\\,\\mathrm W$、$\\eta=55.54\\%$。(2) $20\\,\\mathrm V$ 峰值对应 $P_o=25\\,\\mathrm W$、两管共 $6.831\\,\\mathrm W$（每管 $3.415\\,\\mathrm W$）、$P_V=31.831\\,\\mathrm W$、$\\eta=78.54\\%$。",
+              "en": "Use the near-half-cycle conduction and unity follower gain approximations with $20\\,\\mathrm V$ rails and $8\\,\\Omega$. The two rails supply $P_V=\\frac{2V_{CC}A}{\\pi R_L}$, the load receives $P_o=\\frac{A^2}{2R_L}$, and total transistor dissipation is $P_V-P_o$. (1) For $10\\,\\mathrm V$ RMS, $A=10\\sqrt2\\,\\mathrm V$. Output is $12.5\\,\\mathrm W$, dissipation is $10.008\\,\\mathrm W$ total or $5.004\\,\\mathrm W$ each, supply is $22.508\\,\\mathrm W$, and efficiency is $55.54\\%$. (2) At a $20\\,\\mathrm V$ peak, the respective results are $25\\,\\mathrm W$, $6.831\\,\\mathrm W$ total or $3.415\\,\\mathrm W$ each, $31.831\\,\\mathrm W$, and $78.54\\%$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "两种情况下负载分别得12.5 W、25 W，效率55.54%、78.54%。",
+          "en": "Load powers are 12.5 W and 25 W, with efficiencies 55.54% and 78.54%."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.3.2-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.3.5": {
+        "id": "AE-9.3.5",
+        "bookId": "9.3.5",
+        "title": {
+          "zh": "MOS 源极跟随器",
+          "en": "MOS source follower"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.3.4",
+          "figurePdfPage": 400,
+          "figurePrintedPage": 367
+        },
+        "statement": {
+          "zh": "电路如图9.3.4所示，设 MOS 管 $T_1$ 和 $T_2$ 的 $K_n=K_p=0.25\\,\\mathrm{A\\,V^{-2}}$，忽略它们的阈值电压，即 $V_{TN}=V_{TP}=0$。若电路中 $V_{DD}=V_{SS}=10\\,\\mathrm V$，$R_L=8\\,\\Omega$。当 $T_1$ 工作于恒流区时，试求输出电压的最大值，以及对应的负载电流和输入电压。",
+          "en": "In text Fig. 9.3.4, both MOS coefficients are $0.25\\,\\mathrm{A\\,V^{-2}}$ and both thresholds are zero. With $V_{DD}=V_{SS}=10\\,\\mathrm V$ and $R_L=8\\,\\Omega$, find the largest output voltage in the constant-current region of $T_1$ and the corresponding load current and input voltage."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "上管恒流区边界由栅压达到漏压给出。",
+          "en": "The upper device reaches the region boundary when gate and drain voltages meet."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "MOS 源极跟随器",
+              "en": "MOS source follower"
+            },
+            "text": {
+              "zh": "正文图9.3.4的上管是 NMOS 源极跟随器。题设 $V_{TN}=V_{TP}=0$、$K_n=K_p=0.25\\,\\mathrm{A\\,V^{-2}}$、双电源幅值 $10\\,\\mathrm V$、负载 $8\\,\\Omega$。在正半周下管截止，$i_L=\\frac{v_o}{R_L}=K_n(v_i-v_o)^2$。上管恒流区边界是 $V_{DS}=V_{GS}$，即 $v_i=V_{DD}=10\\,\\mathrm V$。代入得 $v_o=8\\,\\mathrm V$、$i_L=1\\,\\mathrm A$；另一个代数根 $12.5\\,\\mathrm V$ 违反正过驱与漏源电压条件。",
+              "en": "The upper device in text Fig. 9.3.4 is an NMOS source follower. The thresholds are zero, both square-law coefficients are $0.25\\,\\mathrm{A\\,V^{-2}}$, the rails are $\\pm10\\,\\mathrm V$, and the load is $8\\,\\Omega$. On the positive half-cycle the lower device is off and $\\frac{v_o}{R_L}=K_n(v_i-v_o)^2$. The boundary $V_{DS}=V_{GS}$ occurs at $v_i=10\\,\\mathrm V$. The admissible root gives $v_o=8\\,\\mathrm V$ and $i_L=1\\,\\mathrm A$. The $12.5\\,\\mathrm V$ root violates both positive overdrive and drain-source headroom."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "最大输出8 V，负载电流1 A，输入10 V。",
+          "en": "Maximum output 8 V, load current 1 A and input 10 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.3.4-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.1": {
+        "id": "AE-9.4.1",
+        "bookId": "9.4.1",
+        "title": {
+          "zh": "从目标功率倒推电源",
+          "en": "Derive supply voltage from the power target"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.4.1",
+          "figurePdfPage": 413,
+          "figurePrintedPage": 380
+        },
+        "statement": {
+          "zh": "单电源互补对称功放电路如图题9.4.1所示，设 $v_i$ 为正弦波，$R_L=8\\,\\Omega$，管子的饱和压降 $V_{CES}$ 可忽略不计。试求最大不失真输出功率 $P_{om}$（不考虑交越失真）为 $9\\,\\mathrm W$ 时，电源电压 $V_{CC}$ 至少应为多大？",
+          "en": "For exercise Fig. 9.4.1, use sinusoidal input and $R_L=8\\,\\Omega$. Neglect saturation drop and crossover distortion. Find the minimum single supply for $9\\,\\mathrm W$ maximum undistorted output."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "直流中点给交流输出留出上下各半个电源。",
+          "en": "The DC midpoint leaves half the supply for swing in either direction."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "从目标功率倒推电源",
+              "en": "Derive supply voltage from the power target"
+            },
+            "text": {
+              "zh": "静态中点为 $\\frac{V_{CC}}2$，大耦合电容将中点直流与负载隔开。目标需要峰值 $\\sqrt{2R_LP_{om}}=12\\,\\mathrm V$，所以理想最小电源为 $24\\,\\mathrm V$。",
+              "en": "The DC midpoint is $\\frac{V_{CC}}2$, and the coupling capacitor blocks it from the load. The target requires a $\\sqrt{2R_LP_{om}}=12\\,\\mathrm V$ output peak, giving an ideal minimum supply of $24\\,\\mathrm V$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "最低电源24 V。",
+          "en": "Minimum supply 24 V."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.1-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.2": {
+        "id": "AE-9.4.2",
+        "bookId": "9.4.2",
+        "title": {
+          "zh": "饱和压降减少输出摆幅",
+          "en": "Saturation drop reduces available swing"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.4.1",
+          "figurePdfPage": 413,
+          "figurePrintedPage": 380
+        },
+        "statement": {
+          "zh": "在图题9.4.1所示单电源互补对称电路中，设 $V_{CC}=12\\,\\mathrm V$，$R_L=8\\,\\Omega$，$C$ 的电容量很大，$v_i$ 为正弦波。(1) 在忽略管子饱和压降 $V_{CES}$ 情况下，试求该电路的最大输出功率 $P_{om}$。(2) 设三极管饱和压降 $V_{CES}=1\\,\\mathrm V$，再求该电路的最大输出功率 $P_{om}$。",
+          "en": "Exercise Fig. 9.4.1 uses $12\\,\\mathrm V$, $8\\,\\Omega$, a large coupling capacitor and sine input. Find maximum output power (1) with negligible saturation drop and (2) with saturation drop $1\\,\\mathrm V$."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "以半电源减去单管饱和压降。",
+          "en": "Subtract one device drop from half the supply."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "饱和压降减少输出摆幅",
+              "en": "Saturation drop reduces available swing"
+            },
+            "text": {
+              "zh": "大耦合电容下，负载峰值 $A=\\frac{V_{CC}}2-V_{CES}$。分别代入两种压降。(1) $A=6\\,\\mathrm V$，$P_{om}=2.25\\,\\mathrm W$。(2) $A=5\\,\\mathrm V$，$P_{om}=1.5625\\,\\mathrm W$。",
+              "en": "With a large coupling capacitor the load peak is $A=\\frac{V_{CC}}2-V_{CES}$. (1) Zero drop gives a $6\\,\\mathrm V$ peak and $2.25\\,\\mathrm W$. (2) A $1\\,\\mathrm V$ drop gives a $5\\,\\mathrm V$ peak and $1.5625\\,\\mathrm W$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "零压降时2.25 W，1 V压降时1.5625 W。",
+          "en": "Output is 2.25 W for zero drop and 1.5625 W for a 1 V drop."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.1-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.3": {
+        "id": "AE-9.4.3",
+        "bookId": "9.4.3",
+        "title": {
+          "zh": "偏置调节及开路故障",
+          "en": "Bias adjustment and open circuits"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.4.3",
+          "figurePdfPage": 414,
+          "figurePrintedPage": 381
+        },
+        "statement": {
+          "zh": "一单电源互补对称电路如图题9.4.3所示，设 $T_1$、$T_2$ 的特性完全对称，$v_i$ 为正弦波，$V_{CC}=12\\,\\mathrm V$，$R_L=8\\,\\Omega$。试回答下列问题。(1) 静态时，电容 $C_1$ 两端电压应是多少？调整哪个电阻能满足这一要求？(2) 动态时，若输出电压 $v_o$ 出现交越失真，应调整哪个电阻？如何调整？(3) 若 $R_1=R_3=1.1\\,\\mathrm{k\\Omega}$，$T_1$ 和 $T_2$ 的 $\\beta=40$，$\\lvert V_{BE}\\rvert=0.7\\,\\mathrm V$，$P_{CM}=400\\,\\mathrm{mW}$，假设 $D_1$、$D_2$、$R_2$ 中任意一个开路，将会产生什么后果？",
+          "en": "For the matched pair in exercise Fig. 9.4.3 with sinusoidal drive, $12\\,\\mathrm V$ supply and $8\\,\\Omega$ load, find (1) the DC voltage across $C_1$ and the resistor adjustment, (2) how to adjust the resistor that reduces crossover distortion, and (3) what happens if any of $D_1$, $D_2$, or $R_2$ opens, given $R_1=R_3=1.1\\,\\mathrm{k\\Omega}$, $\\beta=40$, $\\lvert V_{BE}\\rvert=0.7\\,\\mathrm V$ and $P_{CM}=400\\,\\mathrm{mW}$."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "依次跟踪输入电容、两基极间偏置、开路后的剩余路径。",
+          "en": "Trace the input capacitor, base-to-base bias and remaining paths after an open."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "偏置调节及开路故障",
+              "en": "Bias adjustment and open circuits"
+            },
+            "text": {
+              "zh": "(1) 原题问输入耦合电容 $C_1$，图中正端接上管基极。为获得对称输出余量，将发射极共点调到 $6\\,\\mathrm V$，令对称器件的 $R_1=R_3$。题设纯正弦的直流分量为零，因此 $V_{C1}=6\\,\\mathrm V+V_{BE1,Q}$。采用第(3)问的 $0.7\\,\\mathrm V$ 模型时约为 $6.7\\,\\mathrm V$。输出耦合电容 $C_2$ 的电压才是 $6\\,\\mathrm V$。(2) 增加 $R_2$ 所产生的压降可增大两基极间偏置，减少交越失真。由较小偏置逐步增大并监测静态电流，避免过热。(3) $D_1$、$D_2$ 或 $R_2$ 任一开路均切断上下基极之间的偏置串路。$R_1$ 仍由电源向上管供基流，$R_3$ 仍由下管基极接向地，于是两管同时导通。对称模型下发射极共点 $6\\,\\mathrm V$，每管基流 $\\frac{6-0.7}{1.1\\,\\mathrm{k\\Omega}}\\approx4.818\\,\\mathrm{mA}$，集电流约 $0.1927\\,\\mathrm A$，集射功耗约 $1.156\\,\\mathrm W$，远高于 $400\\,\\mathrm{mW}$。",
+              "en": "(1) The exercise asks about input coupling capacitor $C_1$. Its positive plate is at the upper base. Set $R_1=R_3$ for matched devices to center the emitter node at $6\\,\\mathrm V$. With a zero-mean sine source, $V_{C1}=6\\,\\mathrm V+V_{BE1,Q}$, approximately $6.7\\,\\mathrm V$ using the junction drop given in part (3). The output capacitor $C_2$ has $6\\,\\mathrm V$ across it. (2) Increase the voltage drop across $R_2$ to raise the base-to-base bias and reduce crossover distortion, while monitoring idle current. (3) Opening either diode or $R_2$ disconnects the inter-base string. The remaining pull-up and pull-down resistors turn both devices on. Symmetry puts the emitter node at $6\\,\\mathrm V$, giving about $4.818\\,\\mathrm{mA}$ base current, $0.1927\\,\\mathrm A$ collector current, and $1.156\\,\\mathrm W$ collector-emitter dissipation per transistor, exceeding $400\\,\\mathrm{mW}$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "$C_1$ 约6.7 V。匹配时令 $R_1=R_3$，增大 $R_2$ 可减轻交越失真。偏置串路开路时每管约耗1.156 W。",
+          "en": "$C_1$ is about 6.7 V. Match $R_1$ and $R_3$, then increase $R_2$ to reduce crossover. An open in the bias string gives approximately 1.156 W per device."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.3-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.4": {
+        "id": "AE-9.4.4",
+        "bookId": "9.4.4",
+        "title": {
+          "zh": "单电源正半波取能",
+          "en": "Half-wave single-rail current"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.4.3",
+          "figurePdfPage": 414,
+          "figurePrintedPage": 381
+        },
+        "statement": {
+          "zh": "在图题9.4.3所示单电源互补对称电路中，已知 $V_{CC}=35\\,\\mathrm V$，$R_L=35\\,\\Omega$，流过负载电阻的电流为 $i_o=0.45\\cos\\omega t\\,\\mathrm A$。求 (1) 负载上所能得到的功率 $P_o$。(2) 电源供给的功率 $P_V$。",
+          "en": "In exercise Fig. 9.4.3 use $V_{CC}=35\\,\\mathrm V$, $R_L=35\\,\\Omega$ and $i_o=0.45\\cos\\omega t\\,\\mathrm A$. Find (1) the load power and (2) the supply power."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "负载使用全周期有效值，正电源近似只供正半波。",
+          "en": "Use full-period load RMS and positive half-wave rail current."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "单电源正半波取能",
+              "en": "Half-wave single-rail current"
+            },
+            "text": {
+              "zh": "负载功率 $P_o=\\frac{(0.45)^2(35)}{2}\\,\\mathrm W=3.54375\\,\\mathrm W$。忽略基流和静态偏置电流，上管仅在正半周向负载供流，电源周期平均电流为 $\\frac{0.45}{\\pi}\\,\\mathrm A$，$P_V=\\frac{15.75}{\\pi}\\,\\mathrm W\\approx5.01338\\,\\mathrm W$。实际甲乙类的电源总功率还取决于上下管重叠导通及偏置支路，题目未给这些参数。输出峰值 $15.75\\,\\mathrm V$ 小于 $17.5\\,\\mathrm V$ 半电源值，尚有 $1.75\\,\\mathrm V$ 余量供器件压降。",
+              "en": "The load power is $3.54375\\,\\mathrm W$. In the half-wave approximation with negligible base and idle currents, the positive supply delivers a mean $\\frac{0.45}{\\pi}\\,\\mathrm A$, or $5.01338\\,\\mathrm W$. Total class AB supply power also depends on conduction overlap and bias current, which are unspecified. The $15.75\\,\\mathrm V$ output peak leaves $1.75\\,\\mathrm V$ of transistor headroom."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "负载3.54375 W，半波近似电源5.01338 W。",
+          "en": "Load 3.54375 W and approximate supply power 5.01338 W."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.3-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.5": {
+        "id": "AE-9.4.5",
+        "bookId": "9.4.5",
+        "title": {
+          "zh": "驱动增益与功率",
+          "en": "Driver gain and power"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 380,
+          "pdfPage": 413,
+          "figure": "9.4.5",
+          "figurePdfPage": 414,
+          "figurePrintedPage": 381
+        },
+        "statement": {
+          "zh": "一双电源互补对称电路如图题9.4.5所示（图中未画出 $T_3$ 的偏置电路），设输入电压 $v_i$ 为正弦波，电源电压 $V_{CC}=24\\,\\mathrm V$，$R_L=16\\,\\Omega$，由 $T_3$ 组成的放大电路的电压增益 $\\frac{\\Delta v_{C3}}{\\Delta v_{B3}}=-16$，射极输出器的电压增益为1，当输入电压有效值 $V_i=1\\,\\mathrm V$ 时，试计算电路的输出功率 $P_o$、电源供给的功率 $P_V$、两管的管耗 $P_T$ 以及效率 $\\eta$。",
+          "en": "Exercise Fig. 9.4.5 omits the bias circuit of $T_3$. Use sinusoidal input, $24\\,\\mathrm V$ rails, $16\\,\\Omega$ load, $T_3$ stage gain $-16$ and follower gain 1. At $1\\,\\mathrm V$ RMS input, find load power, supply power, dissipation of the two devices and efficiency."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "级联增益确定负载电压，再估算末级电源与管耗。",
+          "en": "Use the cascaded gain for load voltage, then estimate output-stage power."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "驱动增益与功率",
+              "en": "Driver gain and power"
+            },
+            "text": {
+              "zh": "中频总增益 $-16$，$1\\,\\mathrm V$ 有效输入产生 $16\\,\\mathrm V$ 有效输出，峰值 $16\\sqrt2\\,\\mathrm V\\approx22.627\\,\\mathrm V$。按不削顶的教材近似，$P_o=16\\,\\mathrm W$，$P_V=\\frac{48\\sqrt2}{\\pi}\\,\\mathrm W\\approx21.6076\\,\\mathrm W$，两管总耗散约 $5.6076\\,\\mathrm W$（每管 $2.8038\\,\\mathrm W$），效率 $\\frac{\\pi\\sqrt2}{6}\\approx74.05\\%$。计算包含两个电源给输出对管的功率，未画出的驱动偏置、交越区静态电流和实际削顶余量需要额外器件条件。",
+              "en": "The midband gain is $-16$, so $1\\,\\mathrm V$ RMS input gives a $16\\,\\mathrm V$ RMS output, or $22.627\\,\\mathrm V$ peak. In the unclipped half-wave approximation, load power is $16\\,\\mathrm W$, supply power is $21.6076\\,\\mathrm W$, dissipation is $5.6076\\,\\mathrm W$ total or $2.8038\\,\\mathrm W$ each, and efficiency is approximately $74.05\\%$. The exact circuit total depends on the driver bias, output-stage idle current and available swing."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "负载16 W，末级电源21.6076 W，两管总耗5.6076 W，效率74.05%。",
+          "en": "Load 16 W, output-stage rails 21.6076 W, two devices dissipate 5.6076 W total, efficiency 74.05%."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.5-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.6": {
+        "id": "AE-9.4.6",
+        "bookId": "9.4.6",
+        "title": {
+          "zh": "偏置与双向过流保护",
+          "en": "Bias and bidirectional current limiting"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 381,
+          "pdfPage": 414,
+          "figure": "9.4.6",
+          "figurePdfPage": 414,
+          "figurePrintedPage": 381
+        },
+        "statement": {
+          "zh": "某集成电路的输出级如图题9.4.6所示。试说明 (1) $R_1$、$R_2$ 和 $T_3$ 组成什么电路，在电路中起何作用？(2) 恒流源 $I$ 在电路中起何作用？(3) 电路中引入了 $D_1$、$D_2$ 作为过载保护，试说明其理由。",
+          "en": "For the output stage of exercise Fig. 9.4.6, explain (1) the circuit formed by $R_1$, $R_2$ and $T_3$ and its function, (2) the role of current source $I$, and (3) how $D_1$ and $D_2$ provide overload protection."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "沿两只反并联二极管追踪感测电压。",
+          "en": "Trace the sensed voltage across the antiparallel diodes."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "偏置与双向过流保护",
+              "en": "Bias and bidirectional current limiting"
+            },
+            "text": {
+              "zh": "(1) $R_1$、$R_2$ 和 $T_3$ 组成 $V_{BE}$ 倍增器，产生近似 $\\bigl(1+\\frac{R_1}{R_2}\\bigr)V_{BE3}$ 的两侧驱动偏压，减轻交越失真，管温跟踪合适时可改善热稳定。(2) 恒流源 $I$ 为偏置倍增器和上管基极供流，并充当下方达林顿驱动的有源负载。(3) 令 $v_m$ 为偏置分压中点，$v_m-v_o=V_{BE4}+i_4R_3-v_{R1}$（上半周），而 $v_o-v_m=V_{EB5}+i_5R_4-v_{R2}$（下半周）。正向电流过大使 $D_1$ 由中点向输出导通，负向电流过大使 $D_2$ 反向路径导通。两者通过钳住中点与输出的电压差，限制相应电阻压降及功率管驱动。限流数值依赖二极管压降、偏置与电阻。",
+              "en": "(1) $R_1$, $R_2$ and $T_3$ make a base-emitter voltage multiplier that establishes class AB bias. Thermal tracking can improve bias stability. (2) Current source $I$ supplies the bias network and upper base drive and acts as the load for the lower Darlington driver. (3) Excess sourcing current raises the sensed drop across $R_3$ and forward-biases $D_1$ from the divider midpoint toward the output. Excess sinking current raises the drop across $R_4$ in the opposite sensing polarity, turning on $D_2$ from output to midpoint. Clamping the midpoint-to-output difference limits the drive and current in the active output branch. The exact threshold depends on the diode drops, bias and sense resistors."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "偏置由基射压倍增器产生。恒流源供偏置及驱动，两二极管分别限制正负方向的过流。",
+          "en": "The base-emitter multiplier establishes bias, the current source supplies bias and drive, and the diodes limit current in opposite directions."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.6-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.4.7": {
+        "id": "AE-9.4.7",
+        "bookId": "9.4.7",
+        "title": {
+          "zh": "MOS 互补级静态电流",
+          "en": "MOS class AB bias"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 381,
+          "pdfPage": 414,
+          "figure": "9.4.5",
+          "figurePdfPage": 403,
+          "figurePrintedPage": 370
+        },
+        "statement": {
+          "zh": "电路如图9.4.5所示，MOS 管的参数为 $V_{TN}=-V_{TP}=1\\,\\mathrm V$，$K_{n1}=K_{p2}=5\\,\\mathrm{mA\\,V^{-2}}$，电路中 $R_L=0.5\\,\\mathrm{k\\Omega}$，$I_{\\mathrm{bias}}=200\\,\\mathrm{\\mu A}$，$V_{DD}=V_{SS}=12\\,\\mathrm V$。若 $T_3$ 和 $T_4$ 的 $K_{n3}=K_{p4}$，为了使 $T_3$ 和 $T_4$ 的静态电流为 $5\\,\\mathrm{mA}$，试求 $K_{n3}$ 和 $K_{p4}$ 的值。",
+          "en": "In text Fig. 9.4.5 use $V_{TN}=-V_{TP}=1\\,\\mathrm V$, $K_{n1}=K_{p2}=5\\,\\mathrm{mA\\,V^{-2}}$, $R_L=0.5\\,\\mathrm{k\\Omega}$, $I_{\\mathrm{bias}}=200\\,\\mathrm{\\mu A}$ and $V_{DD}=V_{SS}=12\\,\\mathrm V$. Find the equal coefficients $K_{n3}$ and $K_{p4}$ for $5\\,\\mathrm{mA}$ idle current in each output device."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "用二极管连接管的偏置电流先求栅过驱。",
+          "en": "Find gate overdrive from the diode-connected bias devices."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "MOS 互补级静态电流",
+              "en": "MOS class AB bias"
+            },
+            "text": {
+              "zh": "正文图9.4.5左边 $T_1$、$T_2$ 均为二极管连接，流过 $200\\,\\mathrm{\\mu A}$。在忽略沟道长度调制的平方律模型下，两管各需要 $V_{OV}=\\sqrt{\\frac{200\\,\\mathrm{\\mu A}}{5\\,\\mathrm{mA\\,V^{-2}}}}=0.2\\,\\mathrm V$，相应栅源电压幅值为 $1.2\\,\\mathrm V$。零输出偏置下，两输出管的过驱也各为 $0.2\\,\\mathrm V$，因此 $K_{n3}=K_{p4}=\\frac{5\\,\\mathrm{mA}}{(0.2\\,\\mathrm V)^2}=125\\,\\mathrm{mA\\,V^{-2}}$。静态两管各有约 $12\\,\\mathrm V$ 漏源余量，大于过驱，负载无直流电流。",
+              "en": "In text Fig. 9.4.5, the two diode-connected reference devices each carry $200\\,\\mathrm{\\mu A}$. With the stated square-law coefficient of $5\\,\\mathrm{mA\\,V^{-2}}$ and no channel-length modulation, each overdrive is $0.2\\,\\mathrm V$ and each gate-source magnitude is $1.2\\,\\mathrm V$. At the zero-output bias, both output devices have the same overdrive. Requiring $5\\,\\mathrm{mA}$ in each sets $K_{n3}=K_{p4}=125\\,\\mathrm{mA\\,V^{-2}}$. Each output device has about $12\\,\\mathrm V$ drain-source headroom, and the load carries zero DC current."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "$K_{n3}=K_{p4}=125\\,\\mathrm{mA\\,V^{-2}}$。",
+          "en": "$K_{n3}=K_{p4}=125\\,\\mathrm{mA\\,V^{-2}}$."
+        },
+        "pitfalls": [
+          {
+            "zh": "计算时区分静态电流、峰值电流和周期平均电流。",
+            "en": "Distinguish idle, peak and cycle-average currents."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.4.5-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.5.1": {
+        "id": "AE-9.5.1",
+        "bookId": "9.5.1",
+        "title": {
+          "zh": "直流输入设定 PWM 占空比",
+          "en": "DC input sets PWM duty cycle"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 381,
+          "pdfPage": 414,
+          "figure": "9.5.1",
+          "figurePdfPage": 404,
+          "figurePrintedPage": 371
+        },
+        "statement": {
+          "zh": "在图9.5.1所示的电路中，若 $v_t$ 是峰值为 $\\pm10\\,\\mathrm V$、频率为 $1\\,\\mathrm{kHz}$ 的三角波，比较器的输出电压为 $\\pm10\\,\\mathrm V$，若音频信号输入端的电压分别为 (1) $0\\,\\mathrm V$、(2) $5\\,\\mathrm V$、(3) $10\\,\\mathrm V$、(4) $-5\\,\\mathrm V$、(5) $-10\\,\\mathrm V$ 时，试求输出波形的占空比和输出电压的平均值。",
+          "en": "In text Fig. 9.5.1 the carrier is a $1\\,\\mathrm{kHz}$ triangle spanning $\\pm10\\,\\mathrm V$, and the comparator levels are $\\pm10\\,\\mathrm V$. Find duty cycle and mean comparator output for (1) $0\\,\\mathrm V$, (2) $5\\,\\mathrm V$, (3) $10\\,\\mathrm V$, (4) $-5\\,\\mathrm V$, and (5) $-10\\,\\mathrm V$ audio input."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "比较同相音频与反相三角载波。",
+          "en": "Compare audio on the positive input with carrier on the negative input."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "直流输入设定 PWM 占空比",
+              "en": "DC input sets PWM duty cycle"
+            },
+            "text": {
+              "zh": "图9.5.1中音频接同相端，三角载波接反相端。9.5.1 给定频率 $1\\,\\mathrm{kHz}$ 的对称三角波在 $\\pm10\\,\\mathrm V$ 间线性扫描。比较器在音频输入大于载波时输出 $+10\\,\\mathrm V$，故输入固定为 $U$ 时 $D=\\frac{U+10\\,\\mathrm V}{20\\,\\mathrm V}$（限定在零至一），$\\overline v_1=(2D-1)10\\,\\mathrm V$。按题给的 $0,+5,+10,-5,-10\\,\\mathrm V$，占空比分别为 $50\\%,75\\%,100\\%,25\\%,0\\%$，平均输出分别等于五个输入值。孤立的相等时刻不影响平均。",
+              "en": "Fig. 9.5.1 sends the audio to the noninverting input and the symmetric triangle to the inverting input. At constant audio $U$, the high fraction of a triangle cycle is $D=\\frac{U+10\\,\\mathrm V}{20\\,\\mathrm V}$ over the stated range. The five duty cycles are $50\\%,75\\%,100\\%,25\\%,0\\%$, and the means equal the five input voltages. Isolated equality points have zero duration."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "占空比 $50\\%,75\\%,100\\%,25\\%,0\\%$，平均输出分别为 $0,5,10,-5,-10\\,\\mathrm V$。",
+          "en": "Duty cycles $50\\%,75\\%,100\\%,25\\%,0\\%$ with means $0,5,10,-5,-10\\,\\mathrm V$."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.5.1-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.5.2": {
+        "id": "AE-9.5.2",
+        "bookId": "9.5.2",
+        "title": {
+          "zh": "正弦输入的 PWM 边沿",
+          "en": "PWM edges with sinusoidal input"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 382,
+          "pdfPage": 415,
+          "figure": "9.5.1",
+          "figurePdfPage": 404,
+          "figurePrintedPage": 371
+        },
+        "statement": {
+          "zh": "在图9.5.1所示的电路中，(1) 若 $v_i$ 是幅值为 $5\\,\\mathrm V$ 的正弦波，$v_t$ 为峰值为 $\\pm10\\,\\mathrm V$ 的三角波，$v_t$ 的频率为 $v_i$ 的5倍，且比较器的输出电压幅值为 $\\pm10\\,\\mathrm V$，试画出比较器的输出电压 $v_1$ 的波形。(2) 利用 SPICE 仿真比较器输出的 $v_1$ 波形。",
+          "en": "In text Fig. 9.5.1, (1) sketch comparator output $v_1$ for a $5\\,\\mathrm V$ peak sine and a triangle spanning $\\pm10\\,\\mathrm V$ at five times the sine frequency. The comparator levels are $\\pm10\\,\\mathrm V$. (2) Simulate $v_1$ with SPICE."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "用正弦和三角波的交点确定开关时刻。",
+          "en": "Use sine and triangle crossings for switching times."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "正弦输入的 PWM 边沿",
+              "en": "PWM edges with sinusoidal input"
+            },
+            "text": {
+              "zh": "取音频 $5\\sin(2\\pi\\cdot1000t)\\,\\mathrm V$，载波 $5\\,\\mathrm{kHz}$，起点 $-10\\,\\mathrm V$ 并上升。题目只规定频率比，绝对频率和相位用于固定作图实例。逐个三角半周期求正弦与载波的交点，正弦较高处置高电平，得到五个载波周期占空比约 $63.731\\%,73.381\\%,48.824\\%,28.452\\%,35.611\\%$。实际 ngspice 47 产生10035个采样点，与独立求根的10个边沿最大相差 $38.15\\,\\mathrm{ns}$。输出稳态电平为 $\\pm10\\,\\mathrm V$。网表的双曲正切仅用于数值平滑，过渡尺度 $10\\,\\mathrm{\\mu V}$。",
+              "en": "Choose $1\\,\\mathrm{khz}$ for the $5\\,\\mathrm v$ peak sine and $5\\,\\mathrm{khz}$ for the $\\pm10\\,\\mathrm v$ triangle. start the triangle rising from $-10\\,\\mathrm v$ with zero sine phase. solve one crossing per triangular ramp and switch between $\\pm10\\,\\mathrm v$ at each crossing. the resulting duty cycles are approximately $63.731\\%,73.381\\%,48.824\\%,28.452\\%,35.611\\%$. the ngspice 47 transient produced 10,035 samples. the ten simulated edges agree with independently computed crossings within $38.15\\,\\mathrm{ns}$. the behavioral comparator uses a $10\\,\\mathrm{\\mu v}$ smoothing scale."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "输出在正负10 V间切换，十个边沿的仿真与解析最大差38.15 ns。",
+          "en": "Output switches between plus and minus 10 V. The ten simulated edges agree with the analytical crossings within 38.15 ns."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.5.1-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        },
+        "simulation": {
+          "netlist": "ae-9.5.2-pwm.cir",
+          "instructions": {
+            "zh": "将网表放入工作目录，运行 ngspice 的批处理模式，输出为 DAT 文件。",
+            "en": "Run the deck in ngspice batch mode from a writable directory to produce DAT traces."
+          }
+        },
+        "solutionDiagrams": [
+          {
+            "figure": "ae-9.5.2-pwm.svg",
+            "kind": "executed-spice",
+            "alt": {
+              "zh": "ngspice 47 实际输出的时间波形。",
+              "en": "Time-domain traces from the ngspice 47 run."
+            }
+          }
+        ]
+      },
+      "AE-9.7.1": {
+        "id": "AE-9.7.1",
+        "bookId": "9.7.1",
+        "title": {
+          "zh": "集成功放",
+          "en": "Integrated power amplifier"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 382,
+          "pdfPage": 415,
+          "figure": "9.7.3",
+          "figurePdfPage": 411,
+          "figurePrintedPage": 378
+        },
+        "statement": {
+          "zh": "在图9.7.3b所示的 LM386 的应用电路中，说明图中 $250\\,\\mathrm{\\mu F}$ 电容的作用。",
+          "en": "In the LM386 application of text Fig. 9.7.3b, explain the function of the $250\\,\\mathrm{\\mu F}$ capacitor."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "先看电容与扬声器是串联还是并联。",
+          "en": "Identify how the capacitor connects to the speaker."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "集成功放",
+              "en": "Integrated power amplifier"
+            },
+            "text": {
+              "zh": "图9.7.3b中的 $250\\,\\mathrm{\\mu F}$ 电容串在扬声器前，隔断静态输出直流，同时传送音频交流。在忽略前级滤波网络低频串联阻抗的近似下，它与 $8\\,\\Omega$ 扬声器形成高通，$f_c\\approx79.6\\,\\mathrm{Hz}$。",
+              "en": "The $250\\,\\mathrm{\\mu F}$ capacitor in series with the speaker blocks the output DC bias and couples AC audio. With the preceding network approximated by negligible series impedance at low frequency, it forms a high-pass with the $8\\,\\Omega$ speaker at about $79.6\\,\\mathrm{Hz}$."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "隔直并耦合音频，近似低频截止79.6 Hz。",
+          "en": "Blocks DC and couples audio, with approximate low cutoff 79.6 Hz."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.7.3-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.7.2": {
+        "id": "AE-9.7.2",
+        "bookId": "9.7.2",
+        "title": {
+          "zh": "用数据手册确定闭环增益",
+          "en": "Closed-loop gain from the datasheet"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 382,
+          "pdfPage": 415,
+          "figure": "9.7.3",
+          "figurePdfPage": 411,
+          "figurePrintedPage": 378
+        },
+        "statement": {
+          "zh": "阅读 LM386 的数据手册，说明在图9.7.3b所示的 LM386 的应用电路中，若将一个阻值为 $1.2\\,\\mathrm{k\\Omega}$ 的电阻与 $10\\,\\mathrm{\\mu F}$ 电容串接于1脚和8脚之间，此时电路的闭环电压增益为多少？",
+          "en": "Using the LM386 datasheet, find the closed-loop voltage gain for text Fig. 9.7.3b with $1.2\\,\\mathrm{k\\Omega}$ in series with $10\\,\\mathrm{\\mu F}$ between pins 1 and 8."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "按数据手册核对增益控制脚的网络。",
+          "en": "Identify the gain-control network in the datasheet."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "用数据手册确定闭环增益",
+              "en": "Closed-loop gain from the datasheet"
+            },
+            "text": {
+              "zh": "将 $1.2\\,\\mathrm{k\\Omega}$ 与 $10\\,\\mathrm{\\mu F}$ 串联后接在1、8脚间。TI 数据手册图9-5给出标称通带增益50，约 $34\\,\\mathrm{dB}$。电容使该支路只在交流下显著参与增益设定。",
+              "en": "Connect $1.2\\,\\mathrm{k\\Omega}$ and $10\\,\\mathrm{\\mu F}$ in series between pins 1 and 8. TI datasheet Fig. 9-5 gives nominal passband gain 50, about $34\\,\\mathrm{dB}$. The capacitor makes the added gain-setting branch frequency dependent."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "标称闭环增益50，约34 dB。",
+          "en": "Nominal closed-loop gain 50, about 34 dB."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          },
+          "externalReferences": [
+            {
+              "title": "TI LM386, Fig. 9-5",
+              "url": "https://www.ti.com/lit/ds/symlink/lm386.pdf"
+            }
+          ]
+        },
+        "figure": "ae9-fig-9.7.3-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.7.3": {
+        "id": "AE-9.7.3",
+        "bookId": "9.7.3",
+        "title": {
+          "zh": "集成功放",
+          "en": "Integrated power amplifier"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 382,
+          "pdfPage": 415,
+          "figure": "9.7.3",
+          "figurePdfPage": 415,
+          "figurePrintedPage": 382
+        },
+        "statement": {
+          "zh": "某集成功放组成的功率放大电路如图题9.7.3所示。已知电路在通带内的电压增益为 $40\\,\\mathrm{dB}$，在 $R_L=8\\,\\Omega$ 时不失真的最大输出电压（峰峰值）可达 $18\\,\\mathrm V$（接 $47\\,\\mathrm{\\mu F}$ 电容的引脚类似于 LM386 的7号引脚）。求当 $v_i$ 为正弦信号时 (1) 最大不失真输出功率 $P_{om}$。(2) 输出功率最大时的输入电压有效值。",
+          "en": "Exercise Fig. 9.7.3 has $40\\,\\mathrm{dB}$ passband gain and up to $18\\,\\mathrm V$ peak to peak undistorted across $8\\,\\Omega$. The pin with the $47\\,\\mathrm{\\mu F}$ capacitor serves a role similar to LM386 pin 7. With sinusoidal input, find (1) maximum undistorted output power and (2) corresponding input RMS voltage."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "按峰峰值、峰值、有效值的顺序换算。",
+          "en": "Convert from peak-to-peak to peak and then RMS."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "集成功放",
+              "en": "Integrated power amplifier"
+            },
+            "text": {
+              "zh": "按题图的 $22\\,\\mathrm V$ 电源、$8\\,\\Omega$、通带 $40\\,\\mathrm{dB}$ 及负载最大 $18\\,\\mathrm V$ 峰峰值，(1) 负载峰值 $9\\,\\mathrm V$，$P_{om}=\\frac{9^2}{2(8)}=5.0625\\,\\mathrm W$；(2) 通带增益 $10^{\\frac{40}{20}}=100$，输入有效值 $\\frac{9}{100\\sqrt2}\\,\\mathrm V\\approx63.64\\,\\mathrm{mV}$。",
+              "en": "With the stated $22\\,\\mathrm V$ supply, $8\\,\\Omega$ load, $40\\,\\mathrm{dB}$ passband gain and maximum $18\\,\\mathrm V$ peak-to-peak output, (1) a $9\\,\\mathrm V$ peak gives $5.0625\\,\\mathrm W$ and (2) gain $100$ gives $63.64\\,\\mathrm{mV}$ RMS input."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "最大5.0625 W，输入有效值约63.64 mV。",
+          "en": "Maximum 5.0625 W, with roughly 63.64 mV RMS input."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1",
+          "2"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.7.3-exercise.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
+      },
+      "AE-9.7.4": {
+        "id": "AE-9.7.4",
+        "bookId": "9.7.4",
+        "title": {
+          "zh": "集成功放",
+          "en": "Integrated power amplifier"
+        },
+        "source": {
+          "title": "电子技术基础·模拟部分",
+          "edition": 7,
+          "printedPage": 382,
+          "pdfPage": 415,
+          "figure": "9.7.2",
+          "figurePdfPage": 410,
+          "figurePrintedPage": 377
+        },
+        "statement": {
+          "zh": "电路如图9.7.2所示，若 $R_2=1.2\\,\\mathrm{k\\Omega}$，$R_3=12\\,\\mathrm{k\\Omega}$，若电路的输入和输出电压均在合理范围时，试求电路交流的电压增益值。",
+          "en": "For text Fig. 9.7.2 with $R_2=1.2\\,\\mathrm{k\\Omega}$ and $R_3=12\\,\\mathrm{k\\Omega}$, find the AC voltage gain when the input and output remain within their operating ranges."
+        },
+        "prerequisites": {
+          "zh": "第9章功率放大电路，全书拓展。",
+          "en": "Power-amplifier circuits, a full-book extension."
+        },
+        "recognition": {
+          "zh": "按电阻取样比求同相通带增益。",
+          "en": "Use the feedback divider ratio for noninverting passband gain."
+        },
+        "steps": [
+          {
+            "title": {
+              "zh": "集成功放",
+              "en": "Integrated power amplifier"
+            },
+            "text": {
+              "zh": "图9.7.2是同相反馈，题给电阻覆盖图中的示例标值。通带内 $C_1$、$C_2$ 近似交流短路，反相端取样 $\\frac{R_2}{R_2+R_3}v_o$，故 $A_v=1+\\frac{12}{1.2}=11$，约 $20.83\\,\\mathrm{dB}$。靠近低频截止需保留电容阻抗。",
+              "en": "Text Fig. 9.7.2 uses noninverting feedback. With $C_1$ and $C_2$ effectively shorted in the passband, the inverting input samples $\\frac{R_2}{R_2+R_3}v_o$. Using the exercise resistor values gives gain $11$, or approximately $20.83\\,\\mathrm{dB}$. Near the lower cutoff the capacitors retain their impedance."
+            },
+            "formula": ""
+          }
+        ],
+        "answer": {
+          "zh": "通带电压增益11，约20.83 dB。",
+          "en": "Passband voltage gain 11, approximately 20.83 dB."
+        },
+        "pitfalls": [
+          {
+            "zh": "按原图确认接线和符号，留意题中量程或通带条件。",
+            "en": "Check signal connections and signs against the source figure and observe the stated range or passband."
+          }
+        ],
+        "fullStatementTranscribed": true,
+        "resolvedSubparts": [
+          "1"
+        ],
+        "pendingSubparts": [],
+        "verification": {
+          "status": "independently-checked",
+          "methods": {
+            "zh": "逐项核对教材条件及图示。按题型复核工作区、支路功率、PWM 交点或反馈取样。",
+            "en": "Checked the statement and source diagram. Verified applicable device regions, branch power, PWM crossings or feedback ratios."
+          }
+        },
+        "figure": "ae9-fig-9.7.2-text.png",
+        "diagram": {
+          "alt": {
+            "zh": "本题采用的原教材电路图。",
+            "en": "Original textbook circuit used by this exercise."
+          }
+        }
       }
     }
   }

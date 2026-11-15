@@ -1,0 +1,22 @@
+AE 9.3.1 class A collector stage
+* Copy the National Q2N3904 card into national-private.lib.
+* BF is the model parameter, not the effective gain at every bias.
+.include national-private.lib
+.temp 27
+VCC rail 0 12
+VS in 0 SIN(0 50m 1k)
+CC in b 1000u
+RB rail b 1572.173913
+RL rail out 8
+Q1 out b 0 Q2N3904
+.control
+altermod Q2N3904 bf=100
+op
+print v(b) v(out) @q1[ic] @q1[ib]
+tran 0.5u 12m 10m
+set wr_singlescale
+set wr_vecnames
+wrdata ae-9.3.1-class-a.dat v(in) v(b) v(out)
+quit
+.endc
+.end

@@ -1,0 +1,25 @@
+AE 9.3.3 direct-drive complementary followers
+* Supply the National Q2N3904 and Q2N3906 cards locally.
+* DC transfer locates the rail-compression and 200 mA boundaries.
+* Transients compare realistic input ranges and the model extrapolation.
+.include national-private.lib
+.temp 27
+VP pos 0 12
+VN neg 0 -12
+VS in 0 DC 0 SIN(0 1 1k)
+Q1 pos in out Q2N3904
+Q2 neg in out Q2N3906
+RL out 0 8
+.control
+dc VS -18 18 .001
+set wr_singlescale
+set wr_vecnames
+wrdata ae-9.3.3-class-b.dat v(out) i(VP) i(VN)
+foreach amplitude 2.4 12 18
+  alter @vs[sin] = [ 0 $amplitude 1000 ]
+  tran 0.5u 4m 3m 0.5u
+  wrdata ae-9.3.3-tran-{$amplitude}.dat v(in) v(out) i(VP) i(VN)
+end
+quit
+.endc
+.end

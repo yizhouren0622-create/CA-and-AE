@@ -5,7 +5,7 @@
 | 课程 / Course | 全书主习题 / Inventory | 完整核验 / Complete | 部分解析 / Partial | 未开始 / Not started | 指定作业 / Assigned |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 电路分析 / Circuit | 360 | 268 | 0 | 92 | 31 |
-| 模电 / Analog | 298 | 258 | 0 | 40 | 34 |
+| 模电 / Analog | 298 | 277 | 0 | 21 | 34 |
 
 核验解析包含CA-3-34的原题条件矛盾说明：已完成一致性核验，但不存在满足全部原图条件的无源电阻网络数值解。 / Checked analyses include the inconsistent-data report for CA-3-34; no passive resistor-network numerical solution satisfies all supplied conditions.
 
@@ -29,9 +29,9 @@ Implemented: separate course entries, 21 concept guides, 4 original papers (40 p
 
 Circuit solutions are independently verified through equations, topology or power checks and compared with listed answers in the supplied 3rd-edition appendix. Exercises without a listed answer, such as 1-17, are identified individually. Discrepancies with source diagrams or governing equations are documented per exercise. Analog solutions are derived under stated device models and checked independently, without claiming comparison against a complete external answer key. Exercise 4.4.3 has an executed ngspice 47 simulation cross-checked against independent complex nodal equations. Exercise 2.3.3 and the diode chapter’s SPICE subparts also have executed plots and downloadable netlists, distinguishing textbook, manufacturer and authored approximate models. All 49 Circuit chapter-1, 30 Circuit chapter-2 and 41 Circuit chapter-3 and 37 Circuit chapter-5 and 51 Circuit chapter-7, 11 Analog chapter-1, 33 Analog chapter-2, 23 Analog chapter-3 and 33 Analog chapter-4 main exercises are complete. All 33 Analog chapter-4 IDs have scope labels: 27 required and 6 extensions. All 21 chapter-5 IDs are mapped: 13 required, 3 mixed-subpart, and 5 extensions; all required and mixed-subpart chapter-5 exercises are complete. Exercise5.2.9 includes executed SPICE and independent complex nodal verification. Textbook section5.2.5 is distinguished from exercise5.2.5.
 
-课程指定的65道主习题已全部完成（电路31道、模电34道）。尚未完成：其余132道教材主习题的题干和解析、部分章节的逐题范围映射，以及全书拓展内容。后续先补范围内其他习题，再覆盖全书其余章节。
+课程指定的65道主习题已全部完成（电路31道、模电34道）。尚未完成：其余113道教材主习题的题干和解析、部分章节的逐题范围映射，以及全书拓展内容。后续先补范围内其他习题，再覆盖全书其余章节。
 
-All 65 assigned main exercises are complete (31 circuit, 34 analog). Remaining: statements and solutions for 132 other textbook exercises, individual scope mapping in partially taught chapters, and full-book extension content. Other in-scope exercises come next, followed by the rest of the books.
+All 65 assigned main exercises are complete (31 circuit, 34 analog). Remaining: statements and solutions for 113 other textbook exercises, individual scope mapping in partially taught chapters, and full-book extension content. Other in-scope exercises come next, followed by the rest of the books.
 
 ## 概念与综合训练 / Concepts and integrated practice
 
@@ -104,3 +104,9 @@ All14 circuit chapter4 exercises and subparts are checked against the supplied3r
 新增电路第6章12题、第8章21题、第9章13题，全部主习题与小问完成条件分析，仍为考试路线外拓展。6-11/12附录系数按一般不等电阻和量纲/节点方程更正。第8章明确ABC正序，BC与AB线压不混用；380 V不提前舍为220 V相压。8-20负载三角形、补偿星形，每相电容约69.845 μF；8-21单相支路返回点在中线阻抗之前。第9章逐频判断谐振；9-3/8/10理想无损初态未给，教材谐波特解或零自由直流答案与一般解分列，不虚构唯一总有效值。
 
 All12 chapter6,21 chapter8 and13 chapter9 exercises and subparts are checked as full-book extensions. General unequal-resistance and dimensional/nodal checks correct appendix coefficients in6-11/12. Chapter8 states positive ABC sequence, distinguishes BC from AB and retains380 V without early220 V phase rounding. Delta8-20 load and star compensation give about69.845 microfarads per phase;8-21 single-phase return precedes the neutral impedance. Chapter9 checks resonance per frequency. Ideal lossless9-3/8/10 lack initial states: textbook harmonic or zero-free-DC answers are distinguished from general responses, without inventing unique total RMS.
+
+## 模电第9章 / Analog chapter 9
+
+第9章19题均有双语题干和解析，归入全书拓展。三道要求仿真的题附已运行的波形及可复现网表。
+
+All 19 chapter 9 exercises have bilingual statements and solutions and are marked as extensions. Waveforms and reproducible decks accompany the three requested simulations.
