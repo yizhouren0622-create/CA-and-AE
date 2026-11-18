@@ -1,0 +1,20 @@
+Exercise 2.3.3 -- textbook ideal op amp with strict 40 mA output current limit
+* Self-authored behavioral transconductance implementation, gm=1e6 A/V.
+* No supply-limiting element is needed here: the computed output stays within +/-15 V.
+* Finite gm error is below 1.5 microvolts for RL=500 ohm; saturation is a strict current limit.
+VIN vp 0 SIN(0 0.2 100)
+BOUT 0 vo I = min(max(1e6*V(vp,vn),-0.04),0.04)
+R1 vn 0 1k
+R2 vo vn 59k
+RL vo 0 100
+.options reltol=1e-8 abstol=1e-13 vntol=1e-10
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+tran 2u 40m 0 2u
+let io = v(vo)/100+(v(vo)-v(vn))/59000
+wrdata ae-2.3.3-ideal40-RL100.dat v(vp) v(vo) v(vn) io
+quit
+.endc
+.end

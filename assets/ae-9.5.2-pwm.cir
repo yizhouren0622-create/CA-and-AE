@@ -1,0 +1,17 @@
+AE 9.5.2 ideal PWM comparator (Fig. 9.5.1)
+* Unspecified absolute frequencies and phase: choose 1 kHz audio,
+* 5 kHz carrier, zero audio phase, triangle starting at -10 V.
+Vaudio audio 0 SIN(0 5 1k)
+Vtri tri 0 PWL(0 -10 100u 10 200u -10 300u 10 400u -10
++ 500u 10 600u -10 700u 10 800u -10 900u 10 1m -10)
+* Finite transition band of width 20 uV aids the transient solver.
+Bcmp pwm 0 V=10*tanh((V(audio)-V(tri))/10u)
+.tran 100n 1m 0 100n
+.control
+run
+set wr_singlescale
+set wr_vecnames
+wrdata ae-9.5.2-pwm.dat v(audio) v(tri) v(pwm)
+quit
+.endc
+.end

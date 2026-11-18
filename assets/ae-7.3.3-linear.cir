@@ -1,0 +1,27 @@
+* Authored linear small-signal verification, NOT a vendor nonlinear device model
+V1 i1 0 .5
+V2 i2 0 -.5
+G1 x s i1 s 0.00141
+G2 y s i2 s 0.00141
+Rn1 x s 199999.99999999997
+Rn2 y s 199999.99999999997
+Rp1 x 0 99999.99999999999
+Rp2 y 0 99999.99999999999
+G3 x 0 x 0 0.019230769230769232
+G4 y 0 x 0 0.019230769230769232
+Rt s 0 2000000.0
+RL y 0 40000.0
+
+.control
+set noaskquit
+op
+let ad=v(y)
+print ad
+alter V1=1
+alter V2=1
+op
+let ac=v(y)
+print ac
+quit
+.endc
+.end

@@ -1,0 +1,21 @@
+* Textbook exercise 3.5.2; authored circuit, ngspice 47.
+* Diode parameters: OUP Microelectronic Circuits 8e SPICE guide, PDF p.10.
+.options reltol=1e-8 abstol=1e-12 vntol=1e-10
+* Illustrative piecewise zener, NOT a manufacturer 1N4733 macro-model.
+* Local line anchored at 5.1 V / 49 mA; chosen rz=7 ohm is the
+* datasheet maximum differential impedance at that test current.
+* This extrapolation does not guarantee the actual nonlinear I-V curve.
+VIN in 0 10
+R1 in out 30
+ILOAD out 0 DC 0
+BZ out 0 I=max((v(out)-4.757)/7,0)
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+dc ILOAD 0 0.18 0.00001
+wrdata ae-3.5.2-sweep.dat v(out) i(VIN)
+quit
+.endc
+.end

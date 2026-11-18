@@ -1,0 +1,15 @@
+Authored finite DC op-amp design check: not a vendor model
+Vsig p 0 5
+Rsense m 0 10k
+RL o m 16k
+Rinput p m 200k
+Egain e 0 p m 100000
+Routput e o 100
+.control
+set wr_vecnames
+set wr_singlescale
+op
+wrdata ae-8.5.4-floating-finite-model.dat v(o) v(m)
+quit
+.endc
+.end

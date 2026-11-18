@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" role="img" aria-labelledby="title desc">
+  <title id="title">Exercise 1-1: actual voltage and current directions</title>
+  <desc id="desc">Terminal a at left is 5 volts higher than b. The actual voltage drop points from a to b. Actual current is 2 amperes from b to a.</desc>
+  <defs><marker id="arrowV" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#225ac7"/></marker><marker id="arrowI" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#bb3c2c"/></marker></defs>
+  <rect width="800" height="360" rx="20" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#192435">
+    <text x="400" y="40" font-size="24" text-anchor="middle">Actual directions</text>
+    <path d="M145 165H320M480 165H655" fill="none" stroke="#192435" stroke-width="3"/>
+    <rect x="320" y="125" width="160" height="80" fill="#f3f6fb" stroke="#192435" stroke-width="3"/>
+    <circle cx="145" cy="165" r="6" fill="#fff" stroke="#192435" stroke-width="3"/>
+    <circle cx="655" cy="165" r="6" fill="#fff" stroke="#192435" stroke-width="3"/>
+    <text x="118" y="173" font-size="24">a</text><text x="674" y="173" font-size="24">b</text>
+    <text x="400" y="174" text-anchor="middle" font-size="22">element</text>
+    <path d="M175 93H625" stroke="#225ac7" stroke-width="3" marker-end="url(#arrowV)"/>
+    <text x="400" y="77" text-anchor="middle" fill="#225ac7" font-size="21">5 V drop: a to b</text>
+    <text x="150" y="220" text-anchor="middle" fill="#225ac7" font-size="26">+</text>
+    <text x="650" y="220" text-anchor="middle" fill="#225ac7" font-size="26">−</text>
+    <path d="M625 265H175" stroke="#bb3c2c" stroke-width="3" marker-end="url(#arrowI)"/>
+    <text x="400" y="300" text-anchor="middle" fill="#bb3c2c" font-size="21">Actual current 2 A: b to a</text>
+    <text x="400" y="333" text-anchor="middle" fill="#586576" font-size="17">Given reference current a to b is −2 A.</text>
+  </g>
+</svg>

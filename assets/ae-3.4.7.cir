@@ -1,0 +1,23 @@
+* Textbook exercise 3.4.7; authored circuit, ngspice 47.
+* Diode parameters: OUP Microelectronic Circuits 8e SPICE guide, PDF p.10.
+.model D1N4148 D(Is=2.682n N=1.836 Rs=.5664 Ikf=44.17m Xti=3 Eg=1.11 Cjo=4p
++ M=.3333 Vj=.5 Fc=.5 Isr=1.565n Nr=2 Bv=100 Ibv=100u Tt=11.54n)
+
+VIN in 0 DC 0 SIN(0 6 100)
+R1 in out 1k
+VP vp 0 3
+VN vn 0 -3
+D1 out vp D1N4148
+D2 vn out D1N4148
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+tran 1u 30m
+wrdata ae-3.4.7-waveforms.dat v(in) v(out)
+dc VIN -6 6 0.002
+wrdata ae-3.4.7-transfer.dat v(in) v(out)
+quit
+.endc
+.end

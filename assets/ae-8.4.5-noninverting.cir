@@ -1,0 +1,32 @@
+ae-8.4.5-noninverting; authored textbook approximation, not a manufacturer model
+Vp vp 0 15
+Vn vn 0 -15
+Vin inp 0 DC 0 AC 1 SIN(0 1m 1k)
+Rc1 vp c1 10k
+Rc2 vp c2 10k
+Rc3 c3 vn 5k
+Re4 out vn 10k
+Rf out b1 10k
+Q1 c1 b1 tail N
+Q2 c2 b2 tail N
+Q3 c3 c2 vp P
+Q4 vp c3 out N
+Itail tail vn 190u
+Rb1 b1 0 1k
+Rb2 inp b2 1k
+.model N NPN IS=1e-15 BF=100 BR=1
+.model P PNP IS=1e-15 BF=100 BR=1
+.options temp=27 reltol=1e-8 abstol=1e-13 vntol=1e-10 gmin=1e-14
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+wrdata ae-8.4.5-noninverting-op.dat v(b1) v(b2) v(c1) v(c2) v(c3) v(tail) v(out) @q1[ic] @q1[ib] @q1[ie] @q1[gm] @q1[gpi] @q1[gmu] @q1[go] @q2[ic] @q2[ib] @q2[ie] @q2[gm] @q2[gpi] @q2[gmu] @q2[go] @q3[ic] @q3[ib] @q3[ie] @q3[gm] @q3[gpi] @q3[gmu] @q3[go] @q4[ic] @q4[ib] @q4[ie] @q4[gm] @q4[gpi] @q4[gmu] @q4[go]
+ac dec 20 1 1meg
+let gain=v(out)
+wrdata ae-8.4.5-noninverting-ac.dat gain
+tran 2u 20m
+wrdata ae-8.4.5-noninverting-tran.dat v(inp) v(out)
+.endc
+.end

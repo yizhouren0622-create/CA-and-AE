@@ -1,0 +1,19 @@
+ae-6.3.5-midband; authored hybrid-pi AC model, NOT a manufacturer nonlinear BJT
+* Bias parameters computed separately using VT=26mV, VBE=0.7V
+Vin in 0 DC 0 AC 1
+Rsi in ext 5000
+Rbias ext 0 13200
+Rbb ext b 50
+Rpi b 0 9701.999999999996
+Rc out 0 4700
+Rl out 0 5100
+Ro out 0 300000
+Gm out 0 b 0 0.01236858379715523
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+ac dec 300 1 1000.0
+wrdata ae-6.3.5-midband.dat v(out) v(ext)
+.endc
+.end

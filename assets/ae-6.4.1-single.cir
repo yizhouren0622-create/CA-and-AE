@@ -1,0 +1,19 @@
+ae-6.4.1-single; authored hybrid-pi AC model, NOT a manufacturer nonlinear BJT
+* Bias parameters computed separately using VT=26mV, VBE=0.7V
+Vin in 0 DC 0 AC 1
+Rsi in ext 100
+Rbias ext 0 11888.319672131147
+Rbb1 ext b1 30
+Rpi1 b1 0 4009.2738831155943
+Cpi1 b1 0 3.5e-11
+Gm1 out 0 b1 0 0.037413258453532106
+Cmu1 b1 out 4e-12
+Rload out 0 3333.333333333333
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+ac dec 300 1 10000000000.0
+wrdata ae-6.4.1-single.dat v(out) v(ext)
+.endc
+.end

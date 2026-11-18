@@ -1,0 +1,24 @@
+ae-8.4.6-1p5-feedback; authored textbook approximation, not a manufacturer model
+Vdd dd 0 5
+Vin inp 0 DC 0 AC 1 SIN(0 1m 1k)
+Rsi inp c1 20k
+Cb1 c1 gate 10u
+Rg1 dd gate 350k
+Rg2 gate 0 150k
+Rd dd out 2k
+M1 out gate 0 0 N
+.model N NMOS LEVEL=1 VTO=.8 KP=0.003 LAMBDA=0 GAMMA=0
+Cb2 gate c2 10u
+Rf c2 out 47k
+.options temp=27 reltol=1e-8 abstol=1e-13 vntol=1e-10 gmin=1e-14
+.control
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+op
+wrdata ae-8.4.6-1p5-feedback-op.dat v(gate) v(out) @m1[id] @m1[gm] @m1[gds] @m1[gmbs] @m1[vgs] @m1[vds] @m1[von] @m1[vdsat]
+ac dec 20 1 1meg
+let gain=v(out)
+wrdata ae-8.4.6-1p5-feedback-ac.dat gain
+.endc
+.end

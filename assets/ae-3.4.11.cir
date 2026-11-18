@@ -1,0 +1,22 @@
+* Textbook exercise 3.4.11; authored circuit, ngspice 47.
+* Diode parameters: OUP Microelectronic Circuits 8e SPICE guide, PDF p.10.
+.model D1N4148 D(Is=2.682n N=1.836 Rs=.5664 Ikf=44.17m Xti=3 Eg=1.11 Cjo=4p
++ M=.3333 Vj=.5 Fc=.5 Isr=1.565n Nr=2 Bv=100 Ibv=100u Tt=11.54n)
+
+VIN in 0 SIN(0 4 1k)
+C1 in out 10u IC=-6.84579245964
+VREF ref 0 3
+D1 ref out D1N4148
+* Original circuit is unloaded. No artificial DC load is added.
+* IC is periodic charge obtained from zero cycle-average diode current.
+
+.control
+set noaskquit
+set wr_singlescale
+set wr_vecnames
+set numdgt=15
+tran 0.1u 10m uic
+wrdata ae-3.4.11-waveforms.dat v(in) v(out) i(VREF)
+quit
+.endc
+.end

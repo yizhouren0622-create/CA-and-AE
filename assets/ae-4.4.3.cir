@@ -1,0 +1,31 @@
+* Textbook exercise 4.4.3 part (4), 7th edition, printed pages 147-148.
+* LEVEL=1 KP is mu*Cox, not the textbook Kn coefficient.
+* The bias-divider node BIAS is distinct from source-resistor node SX.
+VDD vdd 0 20
+VIN in 0 DC 0 AC 1 SIN(0 10m 1k)
+C1 in g 0.02u
+RG1 vdd bias 300k
+RG2 bias 0 100k
+RG3 g bias 2Meg
+RD vdd d 10k
+M1 d g s s NCH W=40u L=2u
+R1 s sx 2k
+R2 sx 0 10k
+CS sx 0 47u
+C2 d out 4.7u
+* DC reference for otherwise open output, negligible AC loading.
+ROUTREF out 0 1e12
+.model NCH NMOS (LEVEL=1 KP=110u VTO=1.7 LAMBDA=0)
+.control
+set noaskquit
+op
+print v(g) v(s) v(d) @m1[id] @m1[gm]
+ac lin 1 1k 1k
+print v(out)
+tran 1u 10m
+set wr_singlescale
+set wr_vecnames
+wrdata ae-4.4.3-waveforms.dat v(in) v(out) v(g) v(s) v(d)
+quit
+.endc
+.end
