@@ -42,9 +42,9 @@ python3 test_math_typesetting.py
 
 ## GitHub Pages
 
-网站已发布：[在线学习站](https://yizhouren0622-create.github.io/CA-and-AE/)。当前 Pages 来源为 `codex/exam-study-site` 分支的 `/(root)`；更新该分支会自动部署。
+网站已发布：[在线学习站](https://yizhouren0622-create.github.io/CA-and-AE/)。当前 Pages 来源为 `main` 分支的 `/(root)`；更新主分支会自动部署。电路与模电内容及其提交历史已合并到主分支，后续直接在 `main` 维护。
 
-本目录可直接作为 GitHub Pages 的发布根目录，包含 `.nojekyll`，所有资源使用相对路径。若以后改用主分支，在仓库 Settings → Pages → Deploy from a branch 中切换发布分支即可。
+本目录可直接作为 GitHub Pages 的发布根目录，包含 `.nojekyll`，所有资源使用相对路径。发布设置为 Settings → Pages → Deploy from a branch → `main` → `/(root)`。
 
 ## English
 
